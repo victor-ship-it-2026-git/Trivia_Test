@@ -1,0 +1,813 @@
+
+[
+      {
+        "text": "What is the capital of France?",
+        "options": ["London", "Berlin", "Paris", "Madrid"],
+        "correctAnswer": 2,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which continent is the largest?",
+        "options": ["Africa", "Asia", "Europe", "North America"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Japan?",
+        "options": ["Beijing", "Tokyo", "Seoul", "Bangkok"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which ocean is the largest?",
+        "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
+        "correctAnswer": 2,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What country is famous for the pyramids?",
+        "options": ["India", "Egypt", "Mexico", "Greece"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which continent is known as the 'Dark Continent'?",
+        "options": ["Asia", "Africa", "Europe", "Australia"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of the United States?",
+        "options": ["New York", "Washington, D.C.", "Los Angeles", "Chicago"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Mount Everest is located on which continent?",
+        "options": ["Africa", "Europe", "Asia", "South America"],
+        "correctAnswer": 2,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country is shaped like a boot?",
+        "options": ["Italy", "Spain", "Greece", "Turkey"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of the United Kingdom?",
+        "options": ["London", "Manchester", "Birmingham", "Liverpool"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which continent is home to kangaroos?",
+        "options": ["Africa", "Asia", "Australia", "Europe"],
+        "correctAnswer": 2,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which desert is the largest in the world?",
+        "options": ["Sahara", "Gobi", "Kalahari", "Atacama"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Canada?",
+        "options": ["Toronto", "Ottawa", "Vancouver", "Montreal"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which river flows through Egypt?",
+        "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of China?",
+        "options": ["Shanghai", "Beijing", "Hong Kong", "Guangzhou"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which is the smallest continent?",
+        "options": ["Australia", "Europe", "South America", "Antarctica"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Spain?",
+        "options": ["Madrid", "Barcelona", "Seville", "Valencia"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country is famous for tulips and windmills?",
+        "options": ["Germany", "Netherlands", "Belgium", "Denmark"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Australia?",
+        "options": ["Sydney", "Canberra", "Melbourne", "Brisbane"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which sea is the saltiest in the world?",
+        "options": ["Caspian Sea", "Dead Sea", "Red Sea", "Mediterranean Sea"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+
+      {
+        "text": "What is the capital of Germany?",
+        "options": ["Munich", "Berlin", "Frankfurt", "Hamburg"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country is home to the Great Wall?",
+        "options": ["India", "China", "Mongolia", "Japan"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Russia?",
+        "options": ["Moscow", "St. Petersburg", "Kazan", "Sochi"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which continent is also a country?",
+        "options": ["Australia", "South America", "Europe", "Antarctica"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of India?",
+        "options": ["Mumbai", "Delhi", "Kolkata", "Bangalore"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+
+      {
+        "text": "Which country has the Eiffel Tower?",
+        "options": ["Italy", "France", "Spain", "Portugal"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of South Korea?",
+        "options": ["Seoul", "Tokyo", "Busan", "Pyongyang"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which continent is Egypt in?",
+        "options": ["Asia", "Africa", "Europe", "Middle East"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Brazil?",
+        "options": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+        "correctAnswer": 2,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country is known as the Land of the Rising Sun?",
+        "options": ["China", "Japan", "Thailand", "South Korea"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+
+      {
+        "text": "Which mountain is the highest in the world?",
+        "options": ["Mount Everest", "K2", "Kilimanjaro", "Denali"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which continent has the Amazon Rainforest?",
+        "options": ["Africa", "South America", "Asia", "Australia"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Thailand?",
+        "options": ["Phuket", "Bangkok", "Chiang Mai", "Pattaya"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country has Big Ben?",
+        "options": ["France", "United Kingdom", "Germany", "Ireland"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which continent is the Sahara Desert in?",
+        "options": ["Asia", "Australia", "Africa", "North America"],
+        "correctAnswer": 2,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+
+      {
+        "text": "What is the capital of Mexico?",
+        "options": ["Cancún", "Mexico City", "Guadalajara", "Monterrey"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country is known for maple syrup?",
+        "options": ["United States", "Canada", "Norway", "Sweden"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which continent is Antarctica closest to?",
+        "options": ["Africa", "South America", "Australia", "Europe"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Italy?",
+        "options": ["Rome", "Venice", "Milan", "Florence"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country is known for sushi?",
+        "options": ["China", "Japan", "Thailand", "Korea"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+
+      {
+        "text": "What is the capital of Argentina?",
+        "options": ["Buenos Aires", "Santiago", "Lima", "Montevideo"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which is the longest river in the world?",
+        "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country is known for pizza and pasta?",
+        "options": ["France", "Italy", "Spain", "Greece"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of South Africa?",
+        "options": ["Cape Town", "Pretoria", "Johannesburg", "Durban"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country has the Taj Mahal?",
+        "options": ["India", "Pakistan", "Bangladesh", "Nepal"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+
+      {
+        "text": "Which country is home to the Great Barrier Reef?",
+        "options": ["Indonesia", "Australia", "Philippines", "Fiji"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Egypt?",
+        "options": ["Cairo", "Alexandria", "Giza", "Luxor"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which ocean is between Africa and Australia?",
+        "options": ["Atlantic", "Pacific", "Indian", "Southern"],
+        "correctAnswer": 2,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country is home to Mount Fuji?",
+        "options": ["China", "Japan", "South Korea", "Philippines"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Turkey?",
+        "options": ["Ankara", "Istanbul", "Izmir", "Bursa"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+
+      {
+        "text": "Which country is known for the Eiffel Tower?",
+        "options": ["Germany", "France", "Spain", "Belgium"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country has the Amazon Rainforest?",
+        "options": ["Peru", "Brazil", "Colombia", "Ecuador"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Greece?",
+        "options": ["Athens", "Thessaloniki", "Patras", "Rhodes"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country is home to the Leaning Tower of Pisa?",
+        "options": ["Italy", "Spain", "France", "Switzerland"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which continent is Brazil in?",
+        "options": ["North America", "South America", "Africa", "Asia"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+
+      {
+        "text": "What is the capital of Indonesia?",
+        "options": ["Jakarta", "Bali", "Surabaya", "Bandung"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country has the city of Dubai?",
+        "options": ["Saudi Arabia", "United Arab Emirates", "Qatar", "Kuwait"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which continent has the Sahara Desert?",
+        "options": ["Asia", "Africa", "South America", "Australia"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country is known as 'Down Under'?",
+        "options": ["New Zealand", "Australia", "South Africa", "Argentina"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Portugal?",
+        "options": ["Lisbon", "Porto", "Madrid", "Seville"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+
+      {
+        "text": "Which country is famous for chocolate and watches?",
+        "options": ["Belgium", "Switzerland", "France", "Germany"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Nigeria?",
+        "options": ["Lagos", "Abuja", "Kano", "Ibadan"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which continent is the United States in?",
+        "options": ["Europe", "South America", "North America", "Australia"],
+        "correctAnswer": 2,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country is known for the Colosseum?",
+        "options": ["Spain", "Italy", "France", "Greece"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Kenya?",
+        "options": ["Nairobi", "Mombasa", "Kampala", "Dodoma"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+
+      {
+        "text": "Which continent is the North Pole in?",
+        "options": ["Antarctica", "Europe", "North America", "None"],
+        "correctAnswer": 3,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country has Mount Kilimanjaro?",
+        "options": ["Kenya", "Tanzania", "Uganda", "Ethiopia"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Saudi Arabia?",
+        "options": ["Riyadh", "Jeddah", "Mecca", "Medina"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country is home to Stonehenge?",
+        "options": ["Ireland", "Scotland", "United Kingdom", "Wales"],
+        "correctAnswer": 2,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which ocean is the smallest?",
+        "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+        "correctAnswer": 2,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+
+      {
+        "text": "What is the capital of Sweden?",
+        "options": ["Stockholm", "Oslo", "Helsinki", "Copenhagen"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country is known as the Netherlands?",
+        "options": ["Denmark", "Belgium", "Holland", "Luxembourg"],
+        "correctAnswer": 2,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which continent is the country of Morocco in?",
+        "options": ["Europe", "Asia", "Africa", "South America"],
+        "correctAnswer": 2,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Norway?",
+        "options": ["Oslo", "Stockholm", "Copenhagen", "Helsinki"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country is home to Machu Picchu?",
+        "options": ["Chile", "Peru", "Bolivia", "Ecuador"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+
+      {
+        "text": "What is the capital of Poland?",
+        "options": ["Warsaw", "Krakow", "Gdansk", "Poznan"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which continent is the Amazon River in?",
+        "options": ["South America", "North America", "Africa", "Asia"],
+        "correctAnswer": 0,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country has the Great Sphinx?",
+        "options": ["India", "Egypt", "Greece", "Turkey"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "What is the capital of Switzerland?",
+        "options": ["Zurich", "Bern", "Geneva", "Basel"],
+        "correctAnswer": 1,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+      {
+        "text": "Which country is known as the 'Land of a Thousand Lakes'?",
+        "options": ["Sweden", "Norway", "Finland", "Denmark"],
+        "correctAnswer": 2,
+        "category": "Geography",
+        "difficulty": "Easy"
+      },
+  {
+    "text": "What is the longest river in the world?",
+    "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Medium"
+  },
+  {
+    "text": "Which country has the most natural lakes?",
+    "options": ["USA", "Canada", "Russia", "Brazil"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Medium"
+  },
+  {
+    "text": "What is the smallest country in the world?",
+    "options": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Hard"
+  },
+  {
+    "text": "What is the largest planet in our solar system?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Easy"
+  },
+  {
+    "text": "Which element has the chemical symbol 'O'?",
+    "options": ["Gold", "Oxygen", "Silver", "Iron"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Easy"
+  },
+  {
+    "text": "How many bones are in the human body?",
+    "options": ["186", "206", "226", "246"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Easy"
+  },
+  {
+    "text": "What is the speed of light?",
+    "options": ["300,000 km/s", "150,000 km/s", "450,000 km/s", "600,000 km/s"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Medium"
+  },
+  {
+    "text": "What is the chemical symbol for gold?",
+    "options": ["Go", "Gd", "Au", "Ag"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Medium"
+  },
+  {
+    "text": "What is the half-life of Carbon-14?",
+    "options": ["5,730 years", "10,000 years", "2,500 years", "15,000 years"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Hard"
+  },
+  {
+    "text": "In what year did World War II end?",
+    "options": ["1943", "1944", "1945", "1946"],
+    "correctAnswer": 2,
+    "category": "History",
+    "difficulty": "Easy"
+  },
+  {
+    "text": "Who was the first President of the United States?",
+    "options": ["Thomas Jefferson", "George Washington", "John Adams", "Benjamin Franklin"],
+    "correctAnswer": 1,
+    "category": "History",
+    "difficulty": "Easy"
+  },
+  {
+    "text": "What year did the Berlin Wall fall?",
+    "options": ["1987", "1988", "1989", "1990"],
+    "correctAnswer": 2,
+    "category": "History",
+    "difficulty": "Medium"
+  },
+  {
+    "text": "Who was the first person to walk on the moon?",
+    "options": ["Buzz Aldrin", "Neil Armstrong", "John Glenn", "Yuri Gagarin"],
+    "correctAnswer": 1,
+    "category": "History",
+    "difficulty": "Medium"
+  },
+  {
+    "text": "What year was the Magna Carta signed?",
+    "options": ["1215", "1315", "1415", "1515"],
+    "correctAnswer": 0,
+    "category": "History",
+    "difficulty": "Hard"
+  },
+  {
+    "text": "Who painted the Mona Lisa?",
+    "options": ["Van Gogh", "Da Vinci", "Picasso", "Monet"],
+    "correctAnswer": 1,
+    "category": "Art",
+    "difficulty": "Easy"
+  },
+  {
+    "text": "What color do you get when you mix red and blue?",
+    "options": ["Green", "Purple", "Orange", "Brown"],
+    "correctAnswer": 1,
+    "category": "Art",
+    "difficulty": "Easy"
+  },
+  {
+    "text": "Who painted 'The Starry Night'?",
+    "options": ["Monet", "Van Gogh", "Rembrandt", "Picasso"],
+    "correctAnswer": 1,
+    "category": "Art",
+    "difficulty": "Medium"
+  },
+  {
+    "text": "What art movement was Pablo Picasso associated with?",
+    "options": ["Impressionism", "Cubism", "Surrealism", "Expressionism"],
+    "correctAnswer": 1,
+    "category": "Art",
+    "difficulty": "Hard"
+  },
+  {
+    "text": "Who wrote 'Romeo and Juliet'?",
+    "options": ["Dickens", "Hemingway", "Shakespeare", "Austen"],
+    "correctAnswer": 2,
+    "category": "Literature",
+    "difficulty": "Easy"
+  },
+  {
+    "text": "What is the first book in the Harry Potter series?",
+    "options": ["Chamber of Secrets", "Philosopher's Stone", "Prisoner of Azkaban", "Goblet of Fire"],
+    "correctAnswer": 1,
+    "category": "Literature",
+    "difficulty": "Easy"
+  },
+  {
+    "text": "Who wrote '1984'?",
+    "options": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "H.G. Wells"],
+    "correctAnswer": 1,
+    "category": "Literature",
+    "difficulty": "Medium"
+  },
+  {
+    "text": "What year was 'Moby Dick' published?",
+    "options": ["1841", "1851", "1861", "1871"],
+    "correctAnswer": 1,
+    "category": "Literature",
+    "difficulty": "Hard"
+  },
+  {
+    "text": "What is the smallest prime number?",
+    "options": ["0", "1", "2", "3"],
+    "correctAnswer": 2,
+    "category": "Math",
+    "difficulty": "Easy"
+  },
+  {
+    "text": "What is 12 × 12?",
+    "options": ["124", "144", "154", "164"],
+    "correctAnswer": 1,
+    "category": "Math",
+    "difficulty": "Easy"
+  },
+  {
+    "text": "What is the value of π (pi) to 2 decimal places?",
+    "options": ["3.12", "3.14", "3.16", "3.18"],
+    "correctAnswer": 1,
+    "category": "Math",
+    "difficulty": "Medium"
+  },
+  {
+    "text": "What is the square root of 169?",
+    "options": ["11", "12", "13", "14"],
+    "correctAnswer": 2,
+    "category": "Math",
+    "difficulty": "Hard"
+  },
+  {
+    "text": "How many players are on a soccer team?",
+    "options": ["9", "10", "11", "12"],
+    "correctAnswer": 2,
+    "category": "Sports",
+    "difficulty": "Easy"
+  },
+  {
+    "text": "What sport is played at Wimbledon?",
+    "options": ["Golf", "Tennis", "Cricket", "Badminton"],
+    "correctAnswer": 1,
+    "category": "Sports",
+    "difficulty": "Easy"
+  },
+  {
+    "text": "Which country won the FIFA World Cup in 2018?",
+    "options": ["Germany", "Brazil", "France", "Argentina"],
+    "correctAnswer": 2,
+    "category": "Sports",
+    "difficulty": "Medium"
+  },
+  {
+    "text": "What year were the first modern Olympic Games held?",
+    "options": ["1886", "1896", "1906", "1916"],
+    "correctAnswer": 1,
+    "category": "Sports",
+    "difficulty": "Hard"
+  },
+  {
+    "text": "What is the highest-grossing film of all time (unadjusted)?",
+    "options": ["Titanic", "Avatar", "Avengers: Endgame", "Star Wars"],
+    "correctAnswer": 1,
+    "category": "Movies",
+    "difficulty": "Easy"
+  },
+  {
+    "text": "Who played Iron Man in the Marvel movies?",
+    "options": ["Chris Evans", "Robert Downey Jr.", "Chris Hemsworth", "Mark Ruffalo"],
+    "correctAnswer": 1,
+    "category": "Movies",
+    "difficulty": "Easy"
+  },
+  {
+    "text": "What year was the first Toy Story movie released?",
+    "options": ["1993", "1995", "1997", "1999"],
+    "correctAnswer": 1,
+    "category": "Movies",
+    "difficulty": "Medium"
+  },
+  {
+    "text": "Who directed 'The Shawshank Redemption'?",
+    "options": ["Steven Spielberg", "Christopher Nolan", "Frank Darabont", "Martin Scorsese"],
+    "correctAnswer": 2,
+    "category": "Movies",
+    "difficulty": "Hard"
+  }
+]
