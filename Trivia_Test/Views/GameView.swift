@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)
 import SwiftUI
 
 struct GameView: View {
@@ -10,13 +17,108 @@ struct GameView: View {
     @State private var timeRemaining = 30
     @State private var timer: Timer?
     @State private var showQuestion = false
+<<<<<<< HEAD
     @State private var pulseTimer = false
     @State private var confettiTrigger = 0
     @State private var shakeEffect = false
+=======
+<<<<<<< HEAD
+=======
+    @State private var pulseTimer = false
+    @State private var confettiTrigger = 0
+    @State private var shakeEffect = false
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)
     
     var body: some View {
         GeometryReader { geometry in
             ZStack {
+<<<<<<< HEAD
+                // Animated Background
+                AnimatedBackground(isCorrect: presenter.showingAnswer && presenter.selectedAnswer == presenter.currentQuestion.correctAnswer)
+                    .ignoresSafeArea()
+=======
+<<<<<<< HEAD
+                // Background
+                LinearGradient(
+                    gradient: Gradient(colors: colorScheme == .dark ?
+                        [Color.blue.opacity(0.2), Color.purple.opacity(0.2)] :
+                        [Color.blue.opacity(0.3), Color.purple.opacity(0.3)]),
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                .ignoresSafeArea()
+>>>>>>> d8765c0 (Resolve merge)
+                
+                VStack(spacing: 0) {
+                    // Modern Header
+                    ModernGameHeader(
+                        presenter: presenter,
+                        timeRemaining: timeRemaining,
+                        pulseTimer: pulseTimer,
+                        goHome: {
+                            stopTimer()
+                            withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
+                                goHome()
+                            }
+                        }
+                    )
+                    .frame(height: 100)
+                    .padding(.horizontal)
+                    
+                    // Progress Bar
+                    GameProgressBar(
+                        currentQuestion: presenter.currentQuestionIndex + 1,
+                        totalQuestions: presenter.questions.count
+                    )
+                    .padding(.horizontal)
+                    .padding(.top, 8)
+                    
+                    // Timer Progress
+                    TimerProgressBar(timeRemaining: timeRemaining)
+                        .frame(height: 8)
+                        .padding(.horizontal)
+                        .padding(.vertical, 12)
+                    
+                    // Question Card
+                    ModernQuestionCard(
+                        presenter: presenter,
+                        showQuestion: showQuestion,
+                        shakeEffect: shakeEffect,
+                        onAnswerSelected: { index in
+                            withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
+                                presenter.selectAnswer(index)
+                            }
+                            stopTimer()
+                            
+                            // Trigger effects
+                            if index == presenter.currentQuestion.correctAnswer {
+                                triggerConfetti()
+                            } else {
+                                triggerShake()
+                            }
+                        }
+                    )
+                    .padding(.horizontal)
+                    .padding(.top, 16)
+                    
+                    Spacer(minLength: 20)
+                    
+                    // Lifeline Panel
+                    ModernLifelinePanel(
+                        presenter: presenter,
+                        onUseLifeline: handleLifelineUse
+                    )
+                    .padding(.horizontal)
+                    .padding(.bottom, 12)
+                    
+                    // Bottom Action Area
+<<<<<<< HEAD
+=======
+                    bottomActionArea
+                        .frame(height: 120)
+                        .frame(maxWidth: .infinity)
+=======
                 // Animated Background
                 AnimatedBackground(isCorrect: presenter.showingAnswer && presenter.selectedAnswer == presenter.currentQuestion.correctAnswer)
                     .ignoresSafeArea()
@@ -84,6 +186,7 @@ struct GameView: View {
                     .padding(.bottom, 12)
                     
                     // Bottom Action Area
+>>>>>>> d8765c0 (Resolve merge)
                     BottomActionArea(
                         presenter: presenter,
                         adMobManager: adMobManager,
@@ -105,10 +208,61 @@ struct GameView: View {
                         resetTimer: resetTimer
                     )
                     .frame(height: 140)
+<<<<<<< HEAD
+=======
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)
                 }
                 
                 // Bonus Points Animation
                 if presenter.bonusPoints > 10 {
+<<<<<<< HEAD
+                    BonusPointsFloating(
+                        points: presenter.bonusPoints,
+                        multiplier: presenter.streak.multiplier
+                    )
+                    .transition(.scale.combined(with: .opacity))
+=======
+<<<<<<< HEAD
+                    VStack {
+                        Spacer()
+                            .frame(height: geometry.size.height * 0.3)
+                        
+                        BonusPointsAnimation(
+                            points: presenter.bonusPoints,
+                            multiplier: presenter.streak.multiplier
+                        )
+                        
+                        Spacer()
+                    }
+>>>>>>> d8765c0 (Resolve merge)
+                }
+                
+                // Streak Animation Overlay
+                if presenter.showStreakAnimation {
+<<<<<<< HEAD
+=======
+                    ZStack {
+                        Color.black.opacity(0.3)
+                            .ignoresSafeArea()
+                        
+                        VStack(spacing: 20) {
+                            Text(presenter.streak.emoji)
+                                .font(.system(size: 100))
+                                .scaleEffect(1.5)
+                                .animation(.spring(response: 0.5), value: presenter.showStreakAnimation)
+                            
+                            Text("STREAK!")
+                                .font(.system(size: 48, weight: .bold))
+                                .foregroundColor(.white)
+                            
+                            Text("×\(presenter.streak.multiplier) Multiplier!")
+                                .font(.title2)
+                                .foregroundColor(.orange)
+                        }
+                    }
+                    .transition(.scale.combined(with: .opacity))
+=======
                     BonusPointsFloating(
                         points: presenter.bonusPoints,
                         multiplier: presenter.streak.multiplier
@@ -118,6 +272,7 @@ struct GameView: View {
                 
                 // Streak Animation Overlay
                 if presenter.showStreakAnimation {
+>>>>>>> d8765c0 (Resolve merge)
                     StreakCelebration(streak: presenter.streak)
                         .transition(.scale.combined(with: .opacity))
                 }
@@ -130,13 +285,27 @@ struct GameView: View {
                 if presenter.streak.currentStreak >= 5 {
                     ParticleEffect(type: .star)
                         .allowsHitTesting(false)
+<<<<<<< HEAD
+=======
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)
                 }
             }
         }
         .onAppear {
+<<<<<<< HEAD
             withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
                 showQuestion = true
             }
+=======
+<<<<<<< HEAD
+            withAnimation { showQuestion = true }
+=======
+            withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
+                showQuestion = true
+            }
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)
             startTimer()
         }
         .onDisappear {
@@ -144,6 +313,7 @@ struct GameView: View {
         }
     }
     
+<<<<<<< HEAD
     // MARK: - Timer Functions
     private func startTimer() {
         stopTimer()
@@ -191,6 +361,73 @@ struct GameView: View {
                 _ = presenter.useFiftyFifty()
             }
             
+=======
+<<<<<<< HEAD
+    // MARK: - Header Section
+    private var headerSection: some View {
+        HStack(spacing: 12) {
+            Button(action: {
+                stopTimer()
+                goHome()
+            }) {
+                Image(systemName: "house.fill")
+                    .font(.title3)
+                    .foregroundColor(.blue)
+                    .padding(10)
+                    .background(Circle().fill(Color.dynamicCardBackground))
+                    .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1), radius: 2)
+            }
+            
+            StreakDisplay(streak: presenter.streak, showAnimation: presenter.showStreakAnimation)
+=======
+    // MARK: - Timer Functions
+    private func startTimer() {
+        stopTimer()
+        timeRemaining = 30
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
+            if !presenter.showingAnswer && !presenter.needsToWatchAd {
+                if timeRemaining > 0 {
+                    timeRemaining -= 1
+                    if timeRemaining <= 10 {
+                        withAnimation(.easeInOut(duration: 0.3)) {
+                            pulseTimer.toggle()
+                        }
+                    }
+                } else {
+                    handleTimeExpired()
+                }
+            }
+        }
+    }
+    
+    private func stopTimer() {
+        timer?.invalidate()
+        timer = nil
+        pulseTimer = false
+    }
+    
+    private func resetTimer() {
+        stopTimer()
+        startTimer()
+    }
+    
+    private func handleTimeExpired() {
+        stopTimer()
+        triggerShake()
+        withAnimation {
+            presenter.handleTimeExpired()
+        }
+    }
+    
+    // MARK: - Lifeline Handler
+    private func handleLifelineUse(_ type: LifelineType) {
+        switch type {
+        case .fiftyFifty:
+            withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+                _ = presenter.useFiftyFifty()
+            }
+            
+>>>>>>> d8765c0 (Resolve merge)
         case .skip:
             if presenter.useSkip() {
                 withAnimation { showQuestion = false }
@@ -301,12 +538,26 @@ struct ModernGameHeader: View {
                         .fill(Color.orange.opacity(colorScheme == .dark ? 0.2 : 0.15))
                 )
             }
+<<<<<<< HEAD
+=======
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)
             
             Spacer()
             
             // Timer
+<<<<<<< HEAD
             HStack(spacing: 8) {
                 Image(systemName: timeRemaining <= 10 ? "clock.badge.exclamationmark.fill" : "clock.fill")
+=======
+<<<<<<< HEAD
+            HStack(spacing: 6) {
+                Image(systemName: "clock.fill")
+=======
+            HStack(spacing: 8) {
+                Image(systemName: timeRemaining <= 10 ? "clock.badge.exclamationmark.fill" : "clock.fill")
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)
                     .font(.title3)
                 Text("\(timeRemaining)s")
                     .font(.title3)
@@ -320,13 +571,109 @@ struct ModernGameHeader: View {
                 Capsule()
                     .fill((timeRemaining <= 10 ? Color.red : Color.blue).opacity(colorScheme == .dark ? 0.25 : 0.15))
             )
+<<<<<<< HEAD
             .scaleEffect(pulseTimer ? 1.1 : 1.0)
             .animation(.easeInOut(duration: 0.3), value: pulseTimer)
+=======
+<<<<<<< HEAD
+            .overlay(
+                Capsule()
+                    .stroke(timeRemaining <= 10 ? Color.red : Color.blue, lineWidth: 2)
+            )
+            .scaleEffect(timeRemaining <= 5 ? 1.1 : 1.0)
+            .animation(.spring(response: 0.3).repeatCount(timeRemaining <= 5 ? 10 : 1), value: timeRemaining)
+=======
+            .scaleEffect(pulseTimer ? 1.1 : 1.0)
+            .animation(.easeInOut(duration: 0.3), value: pulseTimer)
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)
             
             Spacer()
             
             // Score
             VStack(spacing: 2) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                Text("Score")
+                    .font(.caption2)
+                    .foregroundColor(.dynamicSecondaryText)
+>>>>>>> d8765c0 (Resolve merge)
+                Text("\(presenter.score)")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .foregroundColor(.dynamicText)
+                Text("pts")
+                    .font(.caption2)
+                    .foregroundColor(.dynamicSecondaryText)
+            }
+            .padding(.horizontal, 12)
+            .padding(.vertical, 8)
+            .background(
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color.dynamicCardBackground)
+                    .shadow(color: Color.black.opacity(0.1), radius: 4)
+            )
+        }
+    }
+}
+
+// MARK: - Game Progress Bar
+struct GameProgressBar: View {
+    let currentQuestion: Int
+    let totalQuestions: Int
+    
+    var body: some View {
+        VStack(spacing: 8) {
+            HStack {
+                Text("Question \(currentQuestion) of \(totalQuestions)")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.dynamicText)
+                Spacer()
+                Text("\(Int((Double(currentQuestion) / Double(totalQuestions)) * 100))%")
+                    .font(.caption)
+                    .fontWeight(.bold)
+                    .foregroundColor(.blue)
+            }
+            
+            GeometryReader { geometry in
+                ZStack(alignment: .leading) {
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.gray.opacity(0.2))
+                        .frame(height: 8)
+                    
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(
+                            LinearGradient(
+                                gradient: Gradient(colors: [Color.blue, Color.purple]),
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .frame(width: geometry.size.width * (Double(currentQuestion) / Double(totalQuestions)), height: 8)
+                        .animation(.spring(response: 0.5, dampingFraction: 0.7), value: currentQuestion)
+                }
+            }
+            .frame(height: 8)
+        }
+    }
+}
+
+// MARK: - Timer Progress Bar
+struct TimerProgressBar: View {
+    let timeRemaining: Int
+    
+    var body: some View {
+        GeometryReader { geometry in
+            ZStack(alignment: .leading) {
+                RoundedRectangle(cornerRadius: 4)
+<<<<<<< HEAD
+                    .fill(Color.gray.opacity(0.2))
+=======
+                    .fill(Color.gray.opacity(colorScheme == .dark ? 0.3 : 0.2))
+                    .frame(height: 6)
+=======
                 Text("\(presenter.score)")
                     .font(.title2)
                     .fontWeight(.bold)
@@ -397,6 +744,8 @@ struct TimerProgressBar: View {
             ZStack(alignment: .leading) {
                 RoundedRectangle(cornerRadius: 4)
                     .fill(Color.gray.opacity(0.2))
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)
                 
                 RoundedRectangle(cornerRadius: 4)
                     .fill(
@@ -407,6 +756,117 @@ struct TimerProgressBar: View {
                             endPoint: .trailing
                         )
                     )
+<<<<<<< HEAD
+                    .frame(width: geometry.size.width * (Double(timeRemaining) / 30.0))
+=======
+<<<<<<< HEAD
+                    .frame(width: geometry.size.width * (Double(timeRemaining) / 30.0), height: 6)
+>>>>>>> d8765c0 (Resolve merge)
+                    .animation(.linear(duration: 1), value: timeRemaining)
+            }
+        }
+    }
+}
+
+// MARK: - Modern Question Card
+struct ModernQuestionCard: View {
+    @ObservedObject var presenter: GamePresenter
+    let showQuestion: Bool
+    let shakeEffect: Bool
+    let onAnswerSelected: (Int) -> Void
+    @Environment(\.colorScheme) var colorScheme
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            // Category Badge
+            HStack(spacing: 8) {
+                Text(presenter.currentQuestion.category.emoji)
+                    .font(.title3)
+                Text(presenter.currentQuestion.category.rawValue)
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                
+                Spacer()
+                
+                Circle()
+                    .fill(presenter.currentQuestion.difficulty.color)
+                    .frame(width: 12, height: 12)
+                Text(presenter.currentQuestion.difficulty.rawValue)
+                    .font(.caption)
+                    .fontWeight(.semibold)
+                    .foregroundColor(presenter.currentQuestion.difficulty.color)
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 10)
+            .background(
+                Capsule()
+                    .fill(Color.dynamicCardBackground.opacity(0.5))
+            )
+            .opacity(showQuestion ? 1 : 0)
+            .offset(y: showQuestion ? 0 : -20)
+            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.1), value: showQuestion)
+            
+            // Question Text
+            ScrollView {
+                Text(presenter.currentQuestion.text)
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .foregroundColor(.dynamicText)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
+                    .padding(.vertical, 20)
+                    .opacity(showQuestion ? 1 : 0)
+                    .offset(y: showQuestion ? 0 : 20)
+                    .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2), value: showQuestion)
+                    .modifier(ShakeEffect(shakes: shakeEffect ? 3 : 0))
+            }
+            .frame(maxHeight: 120)
+            
+            // Answer Options
+            VStack(spacing: 12) {
+                ForEach(0..<presenter.currentQuestion.options.count, id: \.self) { index in
+                    if !presenter.hiddenOptions.contains(index) {
+                        ModernOptionButton(
+                            text: presenter.currentQuestion.options[index],
+                            index: index,
+                            isSelected: presenter.selectedAnswer == index,
+                            isCorrect: presenter.showingAnswer && index == presenter.currentQuestion.correctAnswer,
+                            isWrong: presenter.showingAnswer && presenter.selectedAnswer == index && index != presenter.currentQuestion.correctAnswer,
+                            isDisabled: presenter.showingAnswer || presenter.needsToWatchAd,
+                            action: { onAnswerSelected(index) }
+                        )
+                        .opacity(showQuestion ? 1 : 0)
+                        .offset(x: showQuestion ? 0 : -20)
+                        .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.3 + Double(index) * 0.1), value: showQuestion)
+                    }
+                }
+            }
+        }
+        .padding(20)
+        .background(
+            RoundedRectangle(cornerRadius: 24)
+                .fill(Color.dynamicCardBackground)
+                .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1), radius: 12, x: 0, y: 6)
+        )
+    }
+}
+
+// MARK: - Modern Option Button
+struct ModernOptionButton: View {
+    let text: String
+    let index: Int
+    let isSelected: Bool
+    let isCorrect: Bool
+    let isWrong: Bool
+    let isDisabled: Bool
+    let action: () -> Void
+    @State private var isPressed = false
+    @Environment(\.colorScheme) var colorScheme
+    
+<<<<<<< HEAD
+=======
+    private var bottomActionArea: some View {
+=======
                     .frame(width: geometry.size.width * (Double(timeRemaining) / 30.0))
                     .animation(.linear(duration: 1), value: timeRemaining)
             }
@@ -509,6 +969,7 @@ struct ModernOptionButton: View {
     @State private var isPressed = false
     @Environment(\.colorScheme) var colorScheme
     
+>>>>>>> d8765c0 (Resolve merge)
     var backgroundColor: Color {
         if isCorrect {
             return Color.green.opacity(colorScheme == .dark ? 0.3 : 0.2)
@@ -696,17 +1157,38 @@ struct BottomActionArea: View {
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
+<<<<<<< HEAD
+=======
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)
         ZStack {
             Color.dynamicCardBackground
                 .opacity(colorScheme == .dark ? 1.0 : 0.95)
                 .ignoresSafeArea(edges: .bottom)
             
+<<<<<<< HEAD
             VStack(spacing: 16) {
                 if presenter.needsToWatchAd {
+=======
+<<<<<<< HEAD
+            VStack(spacing: 0) {
+                if presenter.needsToWatchAd {
+                    VStack(spacing: 10) {
+                        HStack(spacing: 6) {
+                            Image(systemName: presenter.timeExpired ? "clock.badge.xmark" : "xmark.circle.fill")
+                                .font(.title3)
+=======
+            VStack(spacing: 16) {
+                if presenter.needsToWatchAd {
+>>>>>>> d8765c0 (Resolve merge)
                     VStack(spacing: 12) {
                         HStack(spacing: 8) {
                             Image(systemName: presenter.timeExpired ? "clock.badge.xmark.fill" : "xmark.circle.fill")
                                 .font(.title2)
+<<<<<<< HEAD
+=======
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)
                             Text(presenter.timeExpired ? "Time's Up!" : "Wrong Answer!")
                                 .font(.headline)
                                 .fontWeight(.bold)
@@ -727,6 +1209,70 @@ struct BottomActionArea: View {
                                 adMobManager.showAd(from: vc)
                             }
                         }) {
+<<<<<<< HEAD
+                            HStack(spacing: 10) {
+=======
+<<<<<<< HEAD
+                            HStack(spacing: 8) {
+>>>>>>> d8765c0 (Resolve merge)
+                                Image(systemName: "play.rectangle.fill")
+                                    .font(.title3)
+                                Text(adMobManager.isAdReady ? "Watch Ad to Continue" : "Loading Ad...")
+                                    .fontWeight(.semibold)
+                            }
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 52)
+                            .background(
+                                RoundedRectangle(cornerRadius: 26)
+                                    .fill(
+                                        LinearGradient(
+                                            gradient: Gradient(colors: adMobManager.isAdReady ?
+                                                [Color.red, Color.orange] :
+                                                [Color.gray, Color.gray.opacity(0.8)]),
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        )
+                                    )
+                            )
+                            .shadow(color: adMobManager.isAdReady ? Color.red.opacity(0.4) : Color.clear, radius: 8, x: 0, y: 4)
+                        }
+                        .disabled(!adMobManager.isAdReady)
+                    }
+                    .padding(.horizontal, 20)
+                } else if presenter.showingAnswer {
+                    Button(action: onNextQuestion) {
+                        HStack(spacing: 10) {
+                            Text(presenter.isLastQuestion ? "See Results" : "Next Question")
+                                .fontWeight(.semibold)
+                            Image(systemName: presenter.isLastQuestion ? "flag.checkered" : "arrow.right.circle.fill")
+                                .font(.title3)
+                        }
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 52)
+                        .background(
+                            RoundedRectangle(cornerRadius: 26)
+                                .fill(
+                                    LinearGradient(
+                                        gradient: Gradient(colors: [Color.blue, Color.purple]),
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
+                                )
+                        )
+                        .shadow(color: Color.blue.opacity(0.4), radius: 8, x: 0, y: 4)
+                    }
+                    .padding(.horizontal, 20)
+                }
+            }
+            .padding(.vertical, 16)
+        }
+    }
+}
+<<<<<<< HEAD
+=======
+=======
                             HStack(spacing: 10) {
                                 Image(systemName: "play.rectangle.fill")
                                     .font(.title3)
@@ -783,6 +1329,7 @@ struct BottomActionArea: View {
         }
     }
 }
+>>>>>>> d8765c0 (Resolve merge)
 
 // MARK: - Bonus Points Floating Animation
 struct BonusPointsFloating: View {
@@ -954,3 +1501,7 @@ struct StreakCelebration: View {
                                                 )
                                             }
                                         }
+<<<<<<< HEAD
+=======
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)

@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)
 import SwiftUI
 
 struct HomeView: View {
@@ -6,16 +13,152 @@ struct HomeView: View {
     @StateObject private var coinsManager = CoinsManager.shared
     @StateObject private var challengeManager = DailyChallengeManager.shared
     @StateObject private var lifelineManager = LifelineManager.shared
+<<<<<<< HEAD
     @StateObject private var gamePresenter = GamePresenter()
     @State private var showShop = false
     @State private var showDailyChallengeDetail = false
     @State private var showSettings = false
     @State private var selectedCategory: QuizCategory? = nil
     @State private var appearAnimation = false  // NEW: Add this
+=======
+<<<<<<< HEAD
+    @State private var showShop = false
+    @State private var showDailyChallengeDetail = false
+=======
+    @StateObject private var gamePresenter = GamePresenter()
+    @State private var showShop = false
+    @State private var showDailyChallengeDetail = false
+    @State private var showSettings = false
+    @State private var selectedCategory: QuizCategory? = nil
+    @State private var appearAnimation = false  // NEW: Add this
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         ZStack {
+<<<<<<< HEAD
+            Color.dynamicBackground
+                .ignoresSafeArea()
+=======
+<<<<<<< HEAD
+            LinearGradient(
+                gradient: Gradient(colors: [Color.blue, Color.purple]),
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .ignoresSafeArea()
+>>>>>>> d8765c0 (Resolve merge)
+            
+            VStack(spacing: 0) {
+                // Top Navigation Bar
+                HStack {
+                    Button(action: {}) {
+                        Image(systemName: "chevron.left")
+                            .font(.title2)
+                            .foregroundColor(.dynamicText)
+                    }
+                    
+                    Spacer()
+                    
+                    Text("Trivia App")
+                        .font(.headline)
+                        .foregroundColor(.dynamicText)
+                    
+                    Spacer()
+                    
+                    Button(action: { showSettings = true }) {
+                        Image(systemName: "gearshape.fill")
+                            .font(.title2)
+                            .foregroundColor(.dynamicText)
+                    }
+                }
+                .padding()
+                .opacity(appearAnimation ? 1 : 0)  // NEW
+                .offset(y: appearAnimation ? 0 : -20)  // NEW
+                
+                ScrollView(showsIndicators: false) {
+                    VStack(spacing: 25) {
+                        // Title
+                        Text("Choose a Category")
+                            .font(.system(size: 32, weight: .bold))
+                            .foregroundColor(.dynamicText)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.horizontal)
+                            .padding(.top, 10)
+                            .opacity(appearAnimation ? 1 : 0)  // NEW
+                            .offset(y: appearAnimation ? 0 : 20)  // NEW
+                            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.1), value: appearAnimation)  // NEW
+                        
+                        // Category Grid
+                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
+                            ForEach(Array([
+                                ("Science", "science_image", QuizCategory.science),
+                                ("History", "history_image", QuizCategory.history),
+                                ("Geography", "geography_image", QuizCategory.geography),
+                                ("Pop Culture", "popculture_image", QuizCategory.popCulture),
+                                ("Sports", "sports_image", QuizCategory.sports),
+                                ("General", "general_image", QuizCategory.all)
+                            ].enumerated()), id: \.offset) { index, item in
+                                CategoryCardWithImage(
+                                    title: item.0,
+                                    imageName: item.1,
+                                    isSelected: selectedCategory == item.2,
+                                    action: {
+                                        selectedCategory = item.2
+                                        gamePresenter.selectedCategory = item.2
+                                    }
+                                )
+                                .opacity(appearAnimation ? 1 : 0)  // NEW
+                                .offset(y: appearAnimation ? 0 : 30)  // NEW
+                                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2 + Double(index) * 0.1), value: appearAnimation)  // NEW
+                            }
+                        }
+                        .padding(.horizontal)
+                        
+                        // Next Button
+                        Button(action: {
+                            if selectedCategory != nil {
+                                withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
+                                    appearAnimation = false
+                                }
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                    startGame()
+                                }
+                            }
+                        }) {
+                            Text("Next")
+                                .font(.title3)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 56)
+                                .background(
+                                    LinearGradient(
+                                        gradient: Gradient(colors: selectedCategory != nil ?
+                                            [Color.blue, Color.purple] :
+                                            [Color.gray, Color.gray.opacity(0.8)]),
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
+                                )
+                                .cornerRadius(28)
+                                .shadow(color: selectedCategory != nil ? Color.blue.opacity(0.3) : Color.clear, radius: 8, x: 0, y: 4)
+                        }
+                        .disabled(selectedCategory == nil)
+                        .padding(.horizontal)
+                        .padding(.top, 20)
+                        .padding(.bottom, 30)
+                        .opacity(appearAnimation ? 1 : 0)  // NEW
+                        .offset(y: appearAnimation ? 0 : 30)  // NEW
+                        .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.8), value: appearAnimation)  // NEW
+                    }
+                }
+            }
+        }
+<<<<<<< HEAD
+=======
+=======
             Color.dynamicBackground
                 .ignoresSafeArea()
             
@@ -125,6 +268,7 @@ struct HomeView: View {
                 }
             }
         }
+>>>>>>> d8765c0 (Resolve merge)
         .onAppear {  // NEW
             withAnimation {
                 appearAnimation = true
@@ -137,6 +281,10 @@ struct HomeView: View {
                 showDailyChallengeDetail: $showDailyChallengeDetail
             )
         }
+<<<<<<< HEAD
+=======
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)
         .sheet(isPresented: $showShop) {
             ShopView()
         }
@@ -145,6 +293,11 @@ struct HomeView: View {
         }
     }
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> d8765c0 (Resolve merge)
 // Updated Category Card with Image and Selection State
 struct CategoryCardWithImage: View {
     let title: String
@@ -318,3 +471,7 @@ struct SettingsMenuItem: View {
         }
     }
 }
+<<<<<<< HEAD
+=======
+>>>>>>> f38f48a (Initial commit - Trivia app)
+>>>>>>> d8765c0 (Resolve merge)
