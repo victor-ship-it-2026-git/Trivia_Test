@@ -47,37 +47,17 @@ struct ContentView: View {
                     .transition(.opacity)
             } else if !hasSeenOnboarding {
                 OnboardingView(onComplete: {
-<<<<<<< HEAD
                     withAnimation(.easeInOut(duration: 0.5)) {
                         hasSeenOnboarding = true
                     }
-=======
-<<<<<<< HEAD
-                    hasSeenOnboarding = true
-=======
-                    withAnimation(.easeInOut(duration: 0.5)) {
-                        hasSeenOnboarding = true
-                    }
->>>>>>> f38f48a (Initial commit - Trivia app)
->>>>>>> d8765c0 (Resolve merge)
                 })
                 .transition(.opacity)
             } else {
                 mainContent
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                    .transition(.opacity)
-=======
->>>>>>> d8765c0 (Resolve merge)
                     .transition(.asymmetric(
                         insertion: .move(edge: .trailing).combined(with: .opacity),
                         removal: .move(edge: .leading).combined(with: .opacity)
                     ))
-<<<<<<< HEAD
-=======
->>>>>>> f38f48a (Initial commit - Trivia app)
->>>>>>> d8765c0 (Resolve merge)
             }
         }
         .onAppear {
@@ -91,48 +71,6 @@ struct ContentView: View {
     
     @ViewBuilder
     var mainContent: some View {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        switch currentScreen {
-        case .home:
-            HomeView(
-                startGame: { currentScreen = .categorySelection },
-                showLeaderboard: { currentScreen = .leaderboard }
-            )
-        case .categorySelection:
-            CategorySelectionView(
-                goHome: { currentScreen = .home },
-                goNext: { currentScreen = .difficultySelection },
-                presenter: gamePresenter
-            )
-        case .difficultySelection:
-            DifficultySelectionView(
-                goBack: { currentScreen = .categorySelection },
-                startGame: {
-                    gamePresenter.resetGame()
-                    currentScreen = .game
-                },
-                presenter: gamePresenter
-            )
-        case .game:
-            GameView(
-                presenter: gamePresenter,
-                adMobManager: adMobManager,
-                showResults: { currentScreen = .results },
-                goHome: { currentScreen = .home }
-            )
-        case .results:
-            ResultsView(
-                presenter: gamePresenter,
-                playAgain: { currentScreen = .categorySelection },
-                goHome: { currentScreen = .home },
-                showLeaderboard: { currentScreen = .leaderboard }
-            )
-        case .leaderboard:
-            LeaderboardView(goHome: { currentScreen = .home })
-=======
->>>>>>> d8765c0 (Resolve merge)
         ZStack {
             switch currentScreen {
             case .home:
@@ -249,10 +187,6 @@ struct ContentView: View {
                     removal: .move(edge: .trailing).combined(with: .opacity)
                 ))
             }
-<<<<<<< HEAD
-=======
->>>>>>> f38f48a (Initial commit - Trivia app)
->>>>>>> d8765c0 (Resolve merge)
         }
     }
 }

@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> f38f48a (Initial commit - Trivia app)
->>>>>>> d8765c0 (Resolve merge)
 import SwiftUI
 
 struct HomeView: View {
@@ -13,47 +6,25 @@ struct HomeView: View {
     @StateObject private var coinsManager = CoinsManager.shared
     @StateObject private var challengeManager = DailyChallengeManager.shared
     @StateObject private var lifelineManager = LifelineManager.shared
-<<<<<<< HEAD
     @StateObject private var gamePresenter = GamePresenter()
     @State private var showShop = false
     @State private var showDailyChallengeDetail = false
     @State private var showSettings = false
     @State private var selectedCategory: QuizCategory? = nil
-    @State private var appearAnimation = false  // NEW: Add this
-=======
-<<<<<<< HEAD
-    @State private var showShop = false
-    @State private var showDailyChallengeDetail = false
-=======
-    @StateObject private var gamePresenter = GamePresenter()
-    @State private var showShop = false
-    @State private var showDailyChallengeDetail = false
-    @State private var showSettings = false
-    @State private var selectedCategory: QuizCategory? = nil
-    @State private var appearAnimation = false  // NEW: Add this
->>>>>>> f38f48a (Initial commit - Trivia app)
->>>>>>> d8765c0 (Resolve merge)
+    @State private var appearAnimation = false
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         ZStack {
-<<<<<<< HEAD
             Color.dynamicBackground
                 .ignoresSafeArea()
-=======
-<<<<<<< HEAD
-            LinearGradient(
-                gradient: Gradient(colors: [Color.blue, Color.purple]),
-                startPoint: .top,
-                endPoint: .bottom
-            )
-            .ignoresSafeArea()
->>>>>>> d8765c0 (Resolve merge)
             
             VStack(spacing: 0) {
                 // Top Navigation Bar
                 HStack {
-                    Button(action: {}) {
+                    Button(action: {
+                        // Back action if needed
+                    }) {
                         Image(systemName: "chevron.left")
                             .font(.title2)
                             .foregroundColor(.dynamicText)
@@ -67,15 +38,17 @@ struct HomeView: View {
                     
                     Spacer()
                     
-                    Button(action: { showSettings = true }) {
+                    Button(action: {
+                        showSettings = true
+                    }) {
                         Image(systemName: "gearshape.fill")
                             .font(.title2)
                             .foregroundColor(.dynamicText)
                     }
                 }
                 .padding()
-                .opacity(appearAnimation ? 1 : 0)  // NEW
-                .offset(y: appearAnimation ? 0 : -20)  // NEW
+                .opacity(appearAnimation ? 1 : 0)
+                .offset(y: appearAnimation ? 0 : -20)
                 
                 ScrollView(showsIndicators: false) {
                     VStack(spacing: 25) {
@@ -86,9 +59,9 @@ struct HomeView: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.horizontal)
                             .padding(.top, 10)
-                            .opacity(appearAnimation ? 1 : 0)  // NEW
-                            .offset(y: appearAnimation ? 0 : 20)  // NEW
-                            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.1), value: appearAnimation)  // NEW
+                            .opacity(appearAnimation ? 1 : 0)
+                            .offset(y: appearAnimation ? 0 : 20)
+                            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.1), value: appearAnimation)
                         
                         // Category Grid
                         LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
@@ -109,9 +82,9 @@ struct HomeView: View {
                                         gamePresenter.selectedCategory = item.2
                                     }
                                 )
-                                .opacity(appearAnimation ? 1 : 0)  // NEW
-                                .offset(y: appearAnimation ? 0 : 30)  // NEW
-                                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2 + Double(index) * 0.1), value: appearAnimation)  // NEW
+                                .opacity(appearAnimation ? 1 : 0)
+                                .offset(y: appearAnimation ? 0 : 30)
+                                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2 + Double(index) * 0.1), value: appearAnimation)
                             }
                         }
                         .padding(.horizontal)
@@ -149,127 +122,14 @@ struct HomeView: View {
                         .padding(.horizontal)
                         .padding(.top, 20)
                         .padding(.bottom, 30)
-                        .opacity(appearAnimation ? 1 : 0)  // NEW
-                        .offset(y: appearAnimation ? 0 : 30)  // NEW
-                        .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.8), value: appearAnimation)  // NEW
+                        .opacity(appearAnimation ? 1 : 0)
+                        .offset(y: appearAnimation ? 0 : 30)
+                        .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.8), value: appearAnimation)
                     }
                 }
             }
         }
-<<<<<<< HEAD
-=======
-=======
-            Color.dynamicBackground
-                .ignoresSafeArea()
-            
-            VStack(spacing: 0) {
-                // Top Navigation Bar
-                HStack {
-                    Button(action: {}) {
-                        Image(systemName: "chevron.left")
-                            .font(.title2)
-                            .foregroundColor(.dynamicText)
-                    }
-                    
-                    Spacer()
-                    
-                    Text("Trivia App")
-                        .font(.headline)
-                        .foregroundColor(.dynamicText)
-                    
-                    Spacer()
-                    
-                    Button(action: { showSettings = true }) {
-                        Image(systemName: "gearshape.fill")
-                            .font(.title2)
-                            .foregroundColor(.dynamicText)
-                    }
-                }
-                .padding()
-                .opacity(appearAnimation ? 1 : 0)  // NEW
-                .offset(y: appearAnimation ? 0 : -20)  // NEW
-                
-                ScrollView(showsIndicators: false) {
-                    VStack(spacing: 25) {
-                        // Title
-                        Text("Choose a Category")
-                            .font(.system(size: 32, weight: .bold))
-                            .foregroundColor(.dynamicText)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(.horizontal)
-                            .padding(.top, 10)
-                            .opacity(appearAnimation ? 1 : 0)  // NEW
-                            .offset(y: appearAnimation ? 0 : 20)  // NEW
-                            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.1), value: appearAnimation)  // NEW
-                        
-                        // Category Grid
-                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
-                            ForEach(Array([
-                                ("Science", "science_image", QuizCategory.science),
-                                ("History", "history_image", QuizCategory.history),
-                                ("Geography", "geography_image", QuizCategory.geography),
-                                ("Pop Culture", "popculture_image", QuizCategory.popCulture),
-                                ("Sports", "sports_image", QuizCategory.sports),
-                                ("General", "general_image", QuizCategory.all)
-                            ].enumerated()), id: \.offset) { index, item in
-                                CategoryCardWithImage(
-                                    title: item.0,
-                                    imageName: item.1,
-                                    isSelected: selectedCategory == item.2,
-                                    action: {
-                                        selectedCategory = item.2
-                                        gamePresenter.selectedCategory = item.2
-                                    }
-                                )
-                                .opacity(appearAnimation ? 1 : 0)  // NEW
-                                .offset(y: appearAnimation ? 0 : 30)  // NEW
-                                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2 + Double(index) * 0.1), value: appearAnimation)  // NEW
-                            }
-                        }
-                        .padding(.horizontal)
-                        
-                        // Next Button
-                        Button(action: {
-                            if selectedCategory != nil {
-                                withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
-                                    appearAnimation = false
-                                }
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                                    startGame()
-                                }
-                            }
-                        }) {
-                            Text("Next")
-                                .font(.title3)
-                                .fontWeight(.semibold)
-                                .foregroundColor(.white)
-                                .frame(maxWidth: .infinity)
-                                .frame(height: 56)
-                                .background(
-                                    LinearGradient(
-                                        gradient: Gradient(colors: selectedCategory != nil ?
-                                            [Color.blue, Color.purple] :
-                                            [Color.gray, Color.gray.opacity(0.8)]),
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
-                                )
-                                .cornerRadius(28)
-                                .shadow(color: selectedCategory != nil ? Color.blue.opacity(0.3) : Color.clear, radius: 8, x: 0, y: 4)
-                        }
-                        .disabled(selectedCategory == nil)
-                        .padding(.horizontal)
-                        .padding(.top, 20)
-                        .padding(.bottom, 30)
-                        .opacity(appearAnimation ? 1 : 0)  // NEW
-                        .offset(y: appearAnimation ? 0 : 30)  // NEW
-                        .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.8), value: appearAnimation)  // NEW
-                    }
-                }
-            }
-        }
->>>>>>> d8765c0 (Resolve merge)
-        .onAppear {  // NEW
+        .onAppear {
             withAnimation {
                 appearAnimation = true
             }
@@ -281,10 +141,6 @@ struct HomeView: View {
                 showDailyChallengeDetail: $showDailyChallengeDetail
             )
         }
-<<<<<<< HEAD
-=======
->>>>>>> f38f48a (Initial commit - Trivia app)
->>>>>>> d8765c0 (Resolve merge)
         .sheet(isPresented: $showShop) {
             ShopView()
         }
@@ -293,12 +149,8 @@ struct HomeView: View {
         }
     }
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> d8765c0 (Resolve merge)
-// Updated Category Card with Image and Selection State
+
+// MARK: - Category Card with Image
 struct CategoryCardWithImage: View {
     let title: String
     let imageName: String
@@ -320,25 +172,37 @@ struct CategoryCardWithImage: View {
             VStack(spacing: 0) {
                 // Image container
                 ZStack {
-                    // Background for when image loads
                     RoundedRectangle(cornerRadius: 20)
                         .fill(Color.gray.opacity(0.2))
                         .frame(height: 140)
                     
-                    // Actual Image
-                    Image(imageName)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)  // IMPORTANT: Fill the space
-                        .frame(width: UIScreen.main.bounds.width / 2 - 30, height: 140)  // Set exact width & height
-                        .clipped()  // Clip overflow
-                        .cornerRadius(20)
-                        .overlay(
-                            // Darker overlay when selected
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(isSelected ? Color.blue.opacity(0.3) : Color.clear)
+                    // Check if image exists, otherwise use gradient + icon
+                    if let _ = UIImage(named: imageName) {
+                        Image(imageName)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: UIScreen.main.bounds.width / 2 - 30, height: 140)
+                            .clipped()
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .fill(isSelected ? Color.blue.opacity(0.3) : Color.clear)
+                            )
+                    } else {
+                        // Fallback: Gradient + Icon
+                        LinearGradient(
+                            gradient: Gradient(colors: getCategoryGradient(for: title)),
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
                         )
+                        .opacity(isSelected ? 1.0 : 0.7)
+                        
+                        Image(systemName: getCategoryIcon(for: title))
+                            .font(.system(size: 50))
+                            .foregroundColor(.white)
+                    }
                 }
                 .frame(height: 140)
+                .cornerRadius(20)
                 
                 // Title
                 Text(title)
@@ -372,9 +236,21 @@ struct CategoryCardWithImage: View {
         default: return "questionmark.circle.fill"
         }
     }
+    
+    private func getCategoryGradient(for title: String) -> [Color] {
+        switch title {
+        case "Science": return [Color.cyan, Color.blue]
+        case "History": return [Color.orange, Color.red]
+        case "Geography": return [Color.green, Color.teal]
+        case "Pop Culture": return [Color.pink, Color.purple]
+        case "Sports": return [Color.yellow, Color.orange]
+        case "General": return [Color.indigo, Color.purple]
+        default: return [Color.gray, Color.gray.opacity(0.5)]
+        }
+    }
 }
 
-// Settings Menu View (unchanged from before)
+// MARK: - Settings Menu View
 struct SettingsMenuView: View {
     @Binding var showShop: Bool
     let showLeaderboard: () -> Void
@@ -438,6 +314,7 @@ struct SettingsMenuView: View {
     }
 }
 
+// MARK: - Settings Menu Item
 struct SettingsMenuItem: View {
     let icon: String
     let title: String
@@ -471,7 +348,3 @@ struct SettingsMenuItem: View {
         }
     }
 }
-<<<<<<< HEAD
-=======
->>>>>>> f38f48a (Initial commit - Trivia app)
->>>>>>> d8765c0 (Resolve merge)

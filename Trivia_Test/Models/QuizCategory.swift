@@ -17,15 +17,8 @@ enum QuizCategory: String, CaseIterable, Codable {
     case math = "Math"
     case sports = "Sports"
     case movies = "Movies"
-<<<<<<< HEAD
-    case popCulture = "Pop Culture"  // NEW: Added Pop Culture
-=======
-<<<<<<< HEAD
-=======
-    case popCulture = "Pop Culture"  // NEW: Added Pop Culture
->>>>>>> f38f48a (Initial commit - Trivia app)
->>>>>>> d8765c0 (Resolve merge)
-    
+    case popCulture = "Pop Culture"
+
     var emoji: String {
         switch self {
         case .all: return "🌟"
@@ -37,14 +30,8 @@ enum QuizCategory: String, CaseIterable, Codable {
         case .math: return "🔢"
         case .sports: return "⚽️"
         case .movies: return "🎬"
-<<<<<<< HEAD
         case .popCulture: return "🎭"  // NEW: Added emoji for Pop Culture
-=======
-<<<<<<< HEAD
-=======
-        case .popCulture: return "🎭"  // NEW: Added emoji for Pop Culture
->>>>>>> f38f48a (Initial commit - Trivia app)
->>>>>>> d8765c0 (Resolve merge)
+
         }
     }
 }
