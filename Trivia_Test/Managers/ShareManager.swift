@@ -16,10 +16,14 @@ class ShareManager {
     
     // MARK: - Generate Share Image from View
     
+    @MainActor
     func generateShareImage(from view: AnyView, size: CGSize = CGSize(width: 1080, height: 1920)) -> UIImage? {
         let controller = UIHostingController(rootView: view)
         controller.view.bounds = CGRect(origin: .zero, size: size)
         controller.view.backgroundColor = .clear
+        
+        // Force layout
+        controller.view.layoutIfNeeded()
         
         let renderer = UIGraphicsImageRenderer(size: size)
         return renderer.image { _ in

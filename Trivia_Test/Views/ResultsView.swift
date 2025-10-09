@@ -13,6 +13,7 @@ struct ResultsView: View {
     @State private var isSavingToFirebase = false
     @State private var saveError: String?
     @State private var showSaveSuccess = false
+    @State private var isGeneratingShare = false
     @StateObject private var unlockManager = DifficultyUnlockManager.shared
     @StateObject private var firebaseManager = FirebaseLeaderboardManager.shared
     @Environment(\.colorScheme) var colorScheme
@@ -120,6 +121,33 @@ struct ResultsView: View {
                     .transition(.scale.combined(with: .opacity))
                 }
                 
+                // Share Button - Prominent Position
+                Button(action: shareAchievement) {
+                    HStack(spacing: 10) {
+                        if isGeneratingShare {
+                            ProgressView()
+                                .tint(.white)
+                        } else {
+                            Image(systemName: "square.and.arrow.up.fill")
+                                .font(.title3)
+                        }
+                        Text(isGeneratingShare ? "Generating..." : "Share My Score")
+                            .fontWeight(.bold)
+                    }
+                    .foregroundColor(.white)
+                    .frame(width: 280, height: 56)
+                    .background(
+                        LinearGradient(
+                            gradient: Gradient(colors: [Color.green, Color.teal]),
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .cornerRadius(28)
+                    .shadow(color: Color.green.opacity(0.5), radius: 15, x: 0, y: 5)
+                }
+                .disabled(isGeneratingShare)
+                
                 // Save to Leaderboard Button
                 if !savedToLeaderboard {
                     Button(action: { showNameInput = true }) {
@@ -207,6 +235,53 @@ struct ResultsView: View {
         } message: {
             if let error = saveError {
                 Text(error)
+            }
+        }
+    }
+    
+    // MARK: - Share Achievement
+    
+    func shareAchievement() {
+        isGeneratingShare = true
+        HapticManager.shared.success()
+        
+        // Use player name or default
+        let name = playerName.isEmpty ? "Player" : playerName
+        
+        // Generate share card
+        let shareCard = ResultsShareCard(
+            score: presenter.score,
+            totalQuestions: presenter.totalQuestions,
+            category: presenter.selectedCategory.rawValue,
+            difficulty: presenter.selectedDifficulty.rawValue,
+            playerName: name
+        )
+        
+        // Generate image on main thread
+        Task { @MainActor in
+            if let image = ShareManager.shared.generateShareImage(from: AnyView(shareCard)) {
+                let shareText = ShareManager.shared.generateShareText(
+                    score: presenter.score,
+                    total: presenter.totalQuestions,
+                    category: presenter.selectedCategory.rawValue,
+                    difficulty: presenter.selectedDifficulty.rawValue
+                )
+                
+                isGeneratingShare = false
+                
+                // Get root view controller
+                guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                      let rootVC = windowScene.windows.first?.rootViewController else {
+                    return
+                }
+                
+                ShareManager.shared.shareToSocialMedia(
+                    image: image,
+                    text: shareText,
+                    from: rootVC
+                )
+            } else {
+                isGeneratingShare = false
             }
         }
     }

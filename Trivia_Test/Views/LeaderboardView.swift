@@ -6,6 +6,8 @@ struct LeaderboardView: View {
     @State private var selectedFilter: LeaderboardFilter = .all
     @State private var filteredLeaderboard: [LeaderboardEntry] = []
     @State private var showFilterMenu = false
+    @State private var isGeneratingShare = false
+    @State private var selectedEntryForShare: LeaderboardEntry?
     @Environment(\.colorScheme) var colorScheme
     
     enum LeaderboardFilter: String, CaseIterable {
@@ -122,8 +124,14 @@ struct LeaderboardView: View {
                     ScrollView {
                         VStack(spacing: 12) {
                             ForEach(Array(filteredLeaderboard.enumerated()), id: \.element.id) { index, entry in
-                                LeaderboardRow(entry: entry, rank: index + 1)
-                                    .transition(.opacity.combined(with: .move(edge: .top)))
+                                LeaderboardRowWithShare(
+                                    entry: entry,
+                                    rank: index + 1,
+                                    onShare: {
+                                        shareLeaderboardEntry(entry: entry, rank: index + 1)
+                                    }
+                                )
+                                .transition(.opacity.combined(with: .move(edge: .top)))
                             }
                         }
                         .padding()
@@ -173,6 +181,144 @@ struct LeaderboardView: View {
             filteredLeaderboard = firebaseManager.leaderboard.filter { $0.difficulty == "Legend" }
         case .genius:
             filteredLeaderboard = firebaseManager.leaderboard.filter { $0.difficulty == "Genius" }
+        }
+    }
+    
+    // MARK: - Share Leaderboard Entry
+    
+    func shareLeaderboardEntry(entry: LeaderboardEntry, rank: Int) {
+        isGeneratingShare = true
+        HapticManager.shared.success()
+        
+        // Generate share card
+        let shareCard = LeaderboardShareCard(
+            playerName: entry.playerName,
+            rank: rank,
+            score: entry.score,
+            totalQuestions: entry.totalQuestions,
+            category: entry.category,
+            difficulty: entry.difficulty
+        )
+        
+        // Generate image on main thread
+        Task { @MainActor in
+            if let image = ShareManager.shared.generateShareImage(from: AnyView(shareCard)) {
+                let shareText = ShareManager.shared.generateLeaderboardShareText(
+                    playerName: entry.playerName,
+                    rank: rank,
+                    score: entry.score,
+                    total: entry.totalQuestions
+                )
+                
+                isGeneratingShare = false
+                
+                // Get root view controller
+                guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                      let rootVC = windowScene.windows.first?.rootViewController else {
+                    return
+                }
+                
+                ShareManager.shared.shareToSocialMedia(
+                    image: image,
+                    text: shareText,
+                    from: rootVC
+                )
+            } else {
+                isGeneratingShare = false
+            }
+        }
+    }
+}
+
+// MARK: - Leaderboard Row with Share Button
+struct LeaderboardRowWithShare: View {
+    let entry: LeaderboardEntry
+    let rank: Int
+    let onShare: () -> Void
+    @Environment(\.colorScheme) var colorScheme
+    
+    var rankEmoji: String {
+        switch rank {
+        case 1: return "🥇"
+        case 2: return "🥈"
+        case 3: return "🥉"
+        default: return "\(rank)"
+        }
+    }
+    
+    var body: some View {
+        HStack(spacing: 15) {
+            // Rank
+            Text(rankEmoji)
+                .font(.title)
+                .frame(width: 50)
+            
+            // Player Info
+            VStack(alignment: .leading, spacing: 4) {
+                Text(entry.playerName)
+                    .font(.headline)
+                    .foregroundColor(.dynamicText)
+                
+                HStack(spacing: 10) {
+                    Text(entry.category)
+                        .font(.caption)
+                        .foregroundColor(.dynamicText)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(Color.blue.opacity(colorScheme == .dark ? 0.25 : 0.2))
+                        .cornerRadius(8)
+                    
+                    Text(entry.difficulty)
+                        .font(.caption)
+                        .foregroundColor(.dynamicText)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(difficultyColor(entry.difficulty).opacity(colorScheme == .dark ? 0.25 : 0.2))
+                        .cornerRadius(8)
+                }
+            }
+            
+            Spacer()
+            
+            // Score
+            VStack(alignment: .trailing, spacing: 4) {
+                Text("\(entry.percentage)%")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .foregroundColor(.blue)
+                
+                Text("\(entry.score)/\(entry.totalQuestions)")
+                    .font(.caption)
+                    .foregroundColor(.dynamicSecondaryText)
+            }
+            
+            // Share Button
+            Button(action: onShare) {
+                Image(systemName: "square.and.arrow.up")
+                    .font(.title3)
+                    .foregroundColor(.blue)
+                    .padding(8)
+                    .background(
+                        Circle()
+                            .fill(Color.blue.opacity(colorScheme == .dark ? 0.25 : 0.15))
+                    )
+            }
+        }
+        .padding()
+        .background(Color.dynamicCardBackground)
+        .cornerRadius(15)
+        .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1), radius: 2)
+    }
+    
+    func difficultyColor(_ difficulty: String) -> Color {
+        switch difficulty {
+        case "Rookie": return .green
+        case "Amateur": return .cyan
+        case "Pro": return .blue
+        case "Master": return .purple
+        case "Legend": return .orange
+        case "Genius": return .red
+        default: return .gray
         }
     }
 }
