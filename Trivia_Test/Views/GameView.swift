@@ -330,67 +330,93 @@ struct GameView: View {
     }
     
     private var bottomActionArea: some View {
-        ZStack {
-            Color.dynamicCardBackground
-                .opacity(colorScheme == .dark ? 1.0 : 0.95)
-                .ignoresSafeArea(edges: .bottom)
-            
-            VStack(spacing: 0) {
-                if presenter.needsToWatchAd {
-                    VStack(spacing: 10) {
-                        HStack(spacing: 6) {
-                            Image(systemName: presenter.timeExpired ? "clock.badge.xmark" : "xmark.circle.fill")
-                                .font(.title3)
-                            Text(presenter.timeExpired ? "Time's Up!" : "Wrong Answer!")
-                                .font(.headline)
-                                .fontWeight(.bold)
-                        }
-                        .foregroundColor(.red)
-                        .scaleEffect(pulseEffect ? 1.1 : 1.0)
-                        .onAppear {
-                            withAnimation(.easeInOut(duration: 0.5).repeatForever(autoreverses: true)) {
-                                pulseEffect = true
-                            }
-                        }
-                        
-                        Button(action: {
-                            if let vc = viewControllerHolder.value {
-                                adMobManager.onAdRewarded = {
-                                    withAnimation {
-                                        presenter.needsToWatchAd = false
-                                        presenter.showingAnswer = false
-                                        presenter.selectedAnswer = nil
-                                        presenter.timeExpired = false
-                                    }
-                                    resetTimer()
-                                }
-                                adMobManager.showAd(from: vc)
-                            }
-                        }) {
-                            HStack(spacing: 8) {
-                                Image(systemName: "play.rectangle.fill")
-                                Text(adMobManager.isAdReady ? "Watch Ad to Continue" : "Loading...")
-                                    .fontWeight(.semibold)
-                            }
-                            .font(.subheadline)
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 48)
-                            .background(
-                                RoundedRectangle(cornerRadius: 24)
-                                    .fill(adMobManager.isAdReady ?
-                                        LinearGradient(gradient: Gradient(colors: [Color.red, Color.orange]), startPoint: .leading, endPoint: .trailing) :
-                                        LinearGradient(gradient: Gradient(colors: [Color.gray, Color.gray.opacity(0.8)]), startPoint: .leading, endPoint: .trailing)
-                                    )
-                            )
-                            .shadow(color: adMobManager.isAdReady ? Color.red.opacity(0.5) : Color.clear, radius: 10, x: 0, y: 5)
-                        }
-                        .disabled(!adMobManager.isAdReady)
-                        .padding(.horizontal, 30)
-                    }
-                    .padding(.vertical, 16)
-                    .transition(.move(edge: .bottom).combined(with: .opacity))
-                } else if presenter.showingAnswer {
+           ZStack {
+               Color.dynamicCardBackground
+                   .opacity(colorScheme == .dark ? 1.0 : 0.95)
+                   .ignoresSafeArea(edges: .bottom)
+               
+               VStack(spacing: 0) {
+                   if presenter.needsToWatchAd {
+                       VStack(spacing: 10) {
+                           HStack(spacing: 6) {
+                               Image(systemName: presenter.timeExpired ? "clock.badge.xmark" : "xmark.circle.fill")
+                                   .font(.title3)
+                               Text(presenter.timeExpired ? "Time's Up!" : "Wrong Answer!")
+                                   .font(.headline)
+                                   .fontWeight(.bold)
+                           }
+                           .foregroundColor(.red)
+                           .scaleEffect(pulseEffect ? 1.1 : 1.0)
+                           .onAppear {
+                               withAnimation(.easeInOut(duration: 0.5).repeatForever(autoreverses: true)) {
+                                   pulseEffect = true
+                               }
+                           }
+                           
+                           Button(action: {
+                               print("🎯 Watch Ad button tapped")
+                               print("📱 Ad ready state: \(adMobManager.isAdReady)")
+                               
+                               guard adMobManager.isAdReady else {
+                                   print("⚠️ Ad not ready yet")
+                                   return
+                               }
+                               
+                               // Get the view controller
+                               guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                                     let rootVC = windowScene.windows.first?.rootViewController else {
+                                   print("❌ Could not get root view controller")
+                                   return
+                               }
+                               
+                               print("✅ Showing ad...")
+                               HapticManager.shared.light()
+                               
+                               adMobManager.onAdRewarded = {
+                                   print("✅ Ad reward granted")
+                                   Task { @MainActor in
+                                       withAnimation {
+                                           presenter.needsToWatchAd = false
+                                           presenter.showingAnswer = false
+                                           presenter.selectedAnswer = nil
+                                           presenter.timeExpired = false
+                                       }
+                                       resetTimer()
+                                   }
+                               }
+                               
+                               adMobManager.onAdDismissed = {
+                                   print("📱 Ad dismissed")
+                               }
+                               
+                               adMobManager.showAd(from: rootVC)
+                           }) {
+                               HStack(spacing: 8) {
+                                   Image(systemName: "play.rectangle.fill")
+                                   Text(adMobManager.isAdReady ? "Watch Ad to Continue" : "Loading Ad...")
+                                       .fontWeight(.semibold)
+                               }
+                               .font(.subheadline)
+                               .foregroundColor(.white)
+                               .frame(maxWidth: .infinity)
+                               .frame(height: 48)
+                               .background(
+                                   RoundedRectangle(cornerRadius: 24)
+                                       .fill(adMobManager.isAdReady ?
+                                           LinearGradient(gradient: Gradient(colors: [Color.red, Color.orange]), startPoint: .leading, endPoint: .trailing) :
+                                           LinearGradient(gradient: Gradient(colors: [Color.gray, Color.gray.opacity(0.8)]), startPoint: .leading, endPoint: .trailing)
+                                       )
+                               )
+                               .shadow(color: adMobManager.isAdReady ? Color.red.opacity(0.5) : Color.clear, radius: 10, x: 0, y: 5)
+                           }
+                           .allowsHitTesting(true)
+                           .disabled(!adMobManager.isAdReady)
+                           .opacity(adMobManager.isAdReady ? 1.0 : 0.6)
+                           .padding(.horizontal, 30)
+                       }
+                       .padding(.vertical, 16)
+                       .transition(.move(edge: .bottom).combined(with: .opacity))
+                   } else if presenter.showingAnswer {
                     Button(action: {
                         withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
                             showQuestion = false
