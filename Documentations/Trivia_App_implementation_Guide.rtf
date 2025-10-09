@@ -1,0 +1,614 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\uc0\u55357 \u56538  TRIVIA APP IMPLEMENTATION GUIDE\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+Adding Categories & Questions - Complete Developer Reference\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\
+\uc0\u55357 \u56529  TABLE OF CONTENTS\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\
+Part 1: Adding New Categories\
+Part 2: Adding Questions  \
+Part 3: Question Guidelines by Difficulty\
+Part 4: Recommended Question Distribution\
+Part 5: Testing Your Additions\
+Part 6: JSON Question Template\
+Part 7: Pro Tips\
+Appendix: Full Example - Adding "Music" Category\
+\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\uc0\u55357 \u56513  PART 1: ADDING NEW CATEGORIES\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\
+STEP 1: UPDATE QuizCategory.swift\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+Location: Trivia_Test/Models/QuizCategory.swift\
+\
+enum QuizCategory: String, CaseIterable, Codable \{\
+    case all = "All Categories"\
+    case geography = "Geography"\
+    case science = "Science"\
+    case history = "History"\
+    case art = "Art"\
+    case literature = "Literature"\
+    case math = "Math"\
+    case sports = "Sports"\
+    case movies = "Movies"\
+    case popCulture = "Pop Culture"\
+    \
+    // ADD NEW CATEGORIES HERE:\
+    case music = "Music"              // NEW\
+    case technology = "Technology"    // NEW\
+    case food = "Food & Cooking"      // NEW\
+    case animals = "Animals"          // NEW\
+    case gaming = "Video Games"       // NEW\
+    \
+    var emoji: String \{\
+        switch self \{\
+        case .all: return "\uc0\u55356 \u57119 "\
+        case .geography: return "\uc0\u55356 \u57101 "\
+        case .science: return "\uc0\u55357 \u56620 "\
+        case .history: return "\uc0\u55357 \u56540 "\
+        case .art: return "\uc0\u55356 \u57256 "\
+        case .literature: return "\uc0\u55357 \u56538 "\
+        case .math: return "\uc0\u55357 \u56610 "\
+        case .sports: return "\uc0\u9917 \u65039 "\
+        case .movies: return "\uc0\u55356 \u57260 "\
+        case .popCulture: return "\uc0\u55356 \u57261 "\
+        \
+        // ADD EMOJIS FOR NEW CATEGORIES:\
+        case .music: return "\uc0\u55356 \u57269 "\
+        case .technology: return "\uc0\u55357 \u56507 "\
+        case .food: return "\uc0\u55356 \u57173 "\
+        case .animals: return "\uc0\u55357 \u56382 "\
+        case .gaming: return "\uc0\u55356 \u57262 "\
+        \}\
+    \}\
+\}\
+\
+STEP 2: ADD CATEGORY TO HOMEVIEW\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+Location: Trivia_Test/Views/HomeView.swift\
+\
+LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) \{\
+    ForEach(Array([\
+        ("Science", "science_image", QuizCategory.science),\
+        ("History", "history_image", QuizCategory.history),\
+        ("Geography", "geography_image", QuizCategory.geography),\
+        ("Pop Culture", "popculture_image", QuizCategory.popCulture),\
+        ("Sports", "sports_image", QuizCategory.sports),\
+        \
+        // ADD NEW CATEGORIES HERE:\
+        ("Music", "music_image", QuizCategory.music),\
+        ("Technology", "tech_image", QuizCategory.technology),\
+        ("Food", "food_image", QuizCategory.food),\
+        ("Animals", "animals_image", QuizCategory.animals),\
+        ("Gaming", "gaming_image", QuizCategory.gaming),\
+        \
+        ("General", "general_image", QuizCategory.all)\
+    ].enumerated()), id: \\.offset) \{ index, item in\
+        // ... category card code\
+    \}\
+\}\
+\
+STEP 3: ADD FALLBACK ICONS\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+Location: Same file, in CategoryCardWithImage\
+\
+private func getCategoryIcon(for title: String) -> String \{\
+    switch title \{\
+    case "Science": return "flask.fill"\
+    case "History": return "building.columns.fill"\
+    case "Geography": return "globe.americas.fill"\
+    case "Pop Culture": return "tv.fill"\
+    case "Sports": return "sportscourt.fill"\
+    \
+    // ADD NEW CATEGORY ICONS:\
+    case "Music": return "music.note"\
+    case "Technology": return "desktopcomputer"\
+    case "Food": return "fork.knife"\
+    case "Animals": return "pawprint.fill"\
+    case "Gaming": return "gamecontroller.fill"\
+    \
+    case "General": return "book.fill"\
+    default: return "questionmark.circle.fill"\
+    \}\
+\}\
+\
+private func getCategoryGradient(for title: String) -> [Color] \{\
+    switch title \{\
+    case "Science": return [Color.cyan, Color.blue]\
+    case "History": return [Color.orange, Color.red]\
+    case "Geography": return [Color.green, Color.teal]\
+    case "Pop Culture": return [Color.pink, Color.purple]\
+    case "Sports": return [Color.yellow, Color.orange]\
+    \
+    // ADD NEW CATEGORY GRADIENTS:\
+    case "Music": return [Color.purple, Color.pink]\
+    case "Technology": return [Color.blue, Color.cyan]\
+    case "Food": return [Color.orange, Color.yellow]\
+    case "Animals": return [Color.green, Color.mint]\
+    case "Gaming": return [Color.red, Color.orange]\
+    \
+    case "General": return [Color.indigo, Color.purple]\
+    default: return [Color.gray, Color.gray.opacity(0.5)]\
+    \}\
+\}\
+\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\uc0\u55357 \u56541  PART 2: ADDING QUESTIONS\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\
+METHOD 1: UPDATE JSON FILE (RECOMMENDED)\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+Location: Trivia_Test/Resources/questions.json\
+\
+Add questions to the JSON array:\
+\
+[\
+  \{\
+    "text": "Who composed the 'Four Seasons'?",\
+    "options": ["Mozart", "Vivaldi", "Bach", "Beethoven"],\
+    "correctAnswer": 1,\
+    "category": "Music",\
+    "difficulty": "Rookie"\
+  \},\
+  \{\
+    "text": "What year was the iPhone first released?",\
+    "options": ["2005", "2006", "2007", "2008"],\
+    "correctAnswer": 2,\
+    "category": "Technology",\
+    "difficulty": "Amateur"\
+  \},\
+  \{\
+    "text": "Which ingredient makes bread rise?",\
+    "options": ["Salt", "Sugar", "Yeast", "Flour"],\
+    "correctAnswer": 2,\
+    "category": "Food & Cooking",\
+    "difficulty": "Rookie"\
+  \},\
+  \{\
+    "text": "What is the largest land animal?",\
+    "options": ["Giraffe", "Rhino", "Elephant", "Hippo"],\
+    "correctAnswer": 2,\
+    "category": "Animals",\
+    "difficulty": "Rookie"\
+  \},\
+  \{\
+    "text": "What year was the original Super Mario Bros released?",\
+    "options": ["1983", "1985", "1987", "1989"],\
+    "correctAnswer": 1,\
+    "category": "Video Games",\
+    "difficulty": "Amateur"\
+  \}\
+]\
+\
+METHOD 2: UPDATE FALLBACK QUESTIONS (BACKUP)\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+Location: Trivia_Test/Managers/QuestionsManager.swift\
+\
+In the loadFallbackQuestions() function, add your questions:\
+\
+private func loadFallbackQuestions() \{\
+    allQuestions = [\
+        // Existing questions...\
+        \
+        // MUSIC CATEGORY\
+        Question(\
+            text: "Who is known as the 'King of Pop'?",\
+            options: ["Elvis Presley", "Michael Jackson", "Prince", "Freddie Mercury"],\
+            correctAnswer: 1,\
+            category: .music,\
+            difficulty: .rookie\
+        ),\
+        Question(\
+            text: "What instrument has 88 keys?",\
+            options: ["Guitar", "Piano", "Violin", "Drums"],\
+            correctAnswer: 1,\
+            category: .music,\
+            difficulty: .rookie\
+        ),\
+        \
+        // TECHNOLOGY CATEGORY\
+        Question(\
+            text: "What does 'CPU' stand for?",\
+            options: [\
+                "Central Processing Unit",\
+                "Computer Personal Unit",\
+                "Central Program Utility",\
+                "Control Processing Unit"\
+            ],\
+            correctAnswer: 0,\
+            category: .technology,\
+            difficulty: .amateur\
+        ),\
+        Question(\
+            text: "Who founded Apple Inc. with Steve Jobs?",\
+            options: ["Bill Gates", "Steve Wozniak", "Tim Cook", "Jeff Bezos"],\
+            correctAnswer: 1,\
+            category: .technology,\
+            difficulty: .pro\
+        ),\
+        \
+        // FOOD CATEGORY\
+        Question(\
+            text: "What is sushi traditionally wrapped in?",\
+            options: ["Lettuce", "Rice paper", "Seaweed", "Banana leaf"],\
+            correctAnswer: 2,\
+            category: .food,\
+            difficulty: .rookie\
+        ),\
+        \
+        // ANIMALS CATEGORY\
+        Question(\
+            text: "What is the largest land animal?",\
+            options: ["Giraffe", "Rhino", "Elephant", "Hippo"],\
+            correctAnswer: 2,\
+            category: .animals,\
+            difficulty: .rookie\
+        ),\
+        Question(\
+            text: "How many hearts does an octopus have?",\
+            options: ["1", "2", "3", "4"],\
+            correctAnswer: 2,\
+            category: .animals,\
+            difficulty: .master\
+        ),\
+        \
+        // GAMING CATEGORY\
+        Question(\
+            text: "What year was the original Super Mario Bros released?",\
+            options: ["1983", "1985", "1987", "1989"],\
+            correctAnswer: 1,\
+            category: .gaming,\
+            difficulty: .amateur\
+        ),\
+    ]\
+\}\
+\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\uc0\u55356 \u57235  PART 3: QUESTION GUIDELINES BY DIFFICULTY\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\
+\uc0\u55356 \u57137  ROOKIE (BEGINNER LEVEL)\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+Target: 8-12 year olds or complete beginners\
+Knowledge: Common knowledge, everyday facts\
+\
+Examples:\
+\'95 "What color is the sky?" (Science)\
+\'95 "How many days in a week?" (Math)\
+\'95 "What is the capital of France?" (Geography)\
+\
+\uc0\u10003  Tips:\
+  - Use simple vocabulary\
+  - Avoid trick questions\
+  - Make it educational\
+\
+\uc0\u55357 \u56538  AMATEUR (INTERMEDIATE)\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+Target: High school level\
+Knowledge: General education, popular facts\
+\
+Examples:\
+\'95 "Which planet is largest in our solar system?" (Science)\
+\'95 "Who painted the Mona Lisa?" (Art)\
+\'95 "What year did World War II end?" (History)\
+\
+\uc0\u10003  Tips:\
+  - Slightly more detailed\
+  - Require some thinking\
+  - Still accessible\
+\
+\uc0\u9889 \u65039  PRO (ADVANCED)\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+Target: College level or hobbyists\
+Knowledge: Specialized knowledge in the category\
+\
+Examples:\
+\'95 "What is the chemical symbol for Gold?" (Science)\
+\'95 "Who wrote '1984'?" (Literature)\
+\'95 "What is the longest river in the world?" (Geography)\
+\
+\uc0\u10003  Tips:\
+  - Specific facts\
+  - Require prior learning\
+  - Not guessable\
+\
+\uc0\u55357 \u56401  MASTER (EXPERT LEVEL)\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+Target: Enthusiasts, well-read individuals\
+Knowledge: Detailed, less common facts\
+\
+Examples:\
+\'95 "What is the smallest country by area?" (Geography)\
+\'95 "Who proved Fermat's Last Theorem?" (Math)\
+\'95 "What is the speed of light?" (Science)\
+\
+\uc0\u10003  Tips:\
+  - Very specific\
+  - Niche knowledge\
+  - Challenge even knowledgeable people\
+\
+\uc0\u55357 \u56613  LEGEND (NEAR-IMPOSSIBLE)\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+Target: True experts, scholars\
+Knowledge: Obscure facts, expert-level\
+\
+Examples:\
+\'95 "What is the capital of Kyrgyzstan?" (Geography)\
+\'95 "What is the half-life of Carbon-14?" (Science)\
+\'95 "In what year was the Magna Carta signed?" (History)\
+\
+\uc0\u10003  Tips:\
+  - Obscure but verifiable\
+  - Very specific details\
+  - Research-level knowledge\
+\
+\uc0\u55358 \u56800  GENIUS (EXPERT ONLY)\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+Target: Specialists, PhDs, true masters\
+Knowledge: Academic, cutting-edge\
+\
+Examples:\
+\'95 "What is the Heisenberg Uncertainty Principle about?" (Science)\
+\'95 "What is the rarest naturally occurring element?" (Science)\
+\'95 "Which mathematician proved Fermat's Last Theorem?" (Math)\
+\
+\uc0\u10003  Tips:\
+  - Professional-level\
+  - May require specialized education\
+  - Should be fair but extremely challenging\
+\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\uc0\u55357 \u56522  PART 4: RECOMMENDED QUESTION DISTRIBUTION\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\
+Per Category, aim for:\
+\
+Difficulty    | Questions      | Description\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+Rookie        | 20-30 questions| Most accessible\
+Amateur       | 15-25 questions| Intermediate volume\
+Pro           | 15-20 questions| Good variety\
+Master        | 10-15 questions| Expert knowledge\
+Legend        | 8-12 questions | Very challenging\
+Genius        | 5-10 questions | Most challenging\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+TOTAL         | 70-110 questions per category\
+\
+This ensures:\
+\uc0\u10003  Good variety at each level\
+\uc0\u10003  Replay value\
+\uc0\u10003  Progressive difficulty\
+\uc0\u10003  Fair competition\
+\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\uc0\u55357 \u56615  PART 5: TESTING YOUR ADDITIONS\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\
+1. BUILD TEST\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\uc0\u9744  Clean Build Folder (Cmd+Shift+K)\
+\uc0\u9744  Build (Cmd+B)\
+\uc0\u9744  Fix any errors\
+\
+2. CATEGORY TEST\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\uc0\u9744  New category appears in home screen\
+\uc0\u9744  Category icon/emoji shows correctly\
+\uc0\u9744  Can select new category\
+\uc0\u9744  Category name displays properly\
+\
+3. QUESTIONS TEST\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\uc0\u9744  Questions load for new category\
+\uc0\u9744  All 6 difficulty levels have questions\
+\uc0\u9744  Correct answers work properly\
+\uc0\u9744  Wrong answers show correctly\
+\uc0\u9744  No duplicate questions\
+\
+4. DIFFICULTY PROGRESSION TEST\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\uc0\u9744  Rookie unlocked by default\
+\uc0\u9744  Amateur unlocks after Rookie 70%+\
+\uc0\u9744  Pro unlocks after Amateur 70%+\
+\uc0\u9744  Master unlocks after Pro 70%+\
+\uc0\u9744  Legend unlocks after Master 70%+\
+\uc0\u9744  Genius unlocks after Legend 70%+\
+\
+5. FIREBASE INTEGRATION TEST\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\uc0\u9744  Scores save with new category name\
+\uc0\u9744  Leaderboard filters work\
+\uc0\u9744  Share cards show new category\
+\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\uc0\u55357 \u56541  PART 6: JSON QUESTION TEMPLATE\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\
+Copy this template for adding new questions:\
+\
+\{\
+  "text": "YOUR QUESTION HERE?",\
+  "options": [\
+    "Option A",\
+    "Option B", \
+    "Option C",\
+    "Option D"\
+  ],\
+  "correctAnswer": 0,\
+  "category": "CATEGORY_NAME",\
+  "difficulty": "DIFFICULTY_LEVEL"\
+\}\
+\
+VALID CATEGORIES:\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\'95 Geography\
+\'95 Science\
+\'95 History\
+\'95 Art\
+\'95 Literature\
+\'95 Math\
+\'95 Sports\
+\'95 Movies\
+\'95 Pop Culture\
+\'95 Music (if you added it)\
+\'95 Technology (if you added it)\
+\'95 Food & Cooking (if you added it)\
+\'95 Animals (if you added it)\
+\'95 Video Games (if you added it)\
+\
+VALID DIFFICULTIES:\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\'95 Rookie\
+\'95 Amateur\
+\'95 Pro\
+\'95 Master\
+\'95 Legend\
+\'95 Genius\
+\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\uc0\u55357 \u56481  PART 7: PRO TIPS\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\
+WRITING GOOD QUESTIONS\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+1. Be Clear: Avoid ambiguous wording\
+2. Be Fair: Don't use trick questions\
+3. Be Accurate: Verify all facts\
+4. Be Balanced: Make wrong answers plausible\
+5. Be Diverse: Cover different aspects of the category\
+\
+EXAMPLE OF GOOD QUESTION \uc0\u10003 \
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\{\
+  "text": "What is the chemical symbol for water?",\
+  "options": ["H2O", "O2", "CO2", "H2O2"],\
+  "correctAnswer": 0,\
+  "category": "Science",\
+  "difficulty": "Rookie"\
+\}\
+\
+\uc0\u10003  Clear question\
+\uc0\u10003  One obviously correct answer\
+\uc0\u10003  Plausible wrong answers\
+\uc0\u10003  Appropriate difficulty\
+\
+EXAMPLE OF BAD QUESTION \uc0\u10007 \
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+\{\
+  "text": "What is the thing?",\
+  "options": ["Yes", "No", "Maybe", "Sometimes"],\
+  "correctAnswer": 0,\
+  "category": "Science",\
+  "difficulty": "Rookie"\
+\}\
+\
+\uc0\u10007  Vague question\
+\uc0\u10007  Nonsensical answers\
+\uc0\u10007  Not educational\
+\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\uc0\u55357 \u56538  APPENDIX: FULL EXAMPLE - ADDING "MUSIC" CATEGORY\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\
+STEP 1: QuizCategory.swift\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+case music = "Music"\
+\
+var emoji: String \{\
+    case .music: return "\uc0\u55356 \u57269 "\
+\}\
+\
+STEP 2: HomeView.swift\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+// Add to category array\
+("Music", "music_image", QuizCategory.music),\
+\
+// Add icon\
+case "Music": return "music.note"\
+\
+// Add gradient\
+case "Music": return [Color.purple, Color.pink]\
+\
+STEP 3: questions.json (Sample Questions)\
+\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \
+[\
+  \{\
+    "text": "Who is known as the 'King of Pop'?",\
+    "options": ["Elvis", "Michael Jackson", "Prince", "Madonna"],\
+    "correctAnswer": 1,\
+    "category": "Music",\
+    "difficulty": "Rookie"\
+  \},\
+  \{\
+    "text": "What instrument has 88 keys?",\
+    "options": ["Guitar", "Piano", "Violin", "Drums"],\
+    "correctAnswer": 1,\
+    "category": "Music",\
+    "difficulty": "Rookie"\
+  \},\
+  \{\
+    "text": "Who composed 'The Four Seasons'?",\
+    "options": ["Mozart", "Vivaldi", "Bach", "Beethoven"],\
+    "correctAnswer": 1,\
+    "category": "Music",\
+    "difficulty": "Amateur"\
+  \},\
+  \{\
+    "text": "What does 'BPM' stand for in music?",\
+    "options": ["Bass Per Minute", "Beats Per Minute", "Band Per Music", "Best Play Music"],\
+    "correctAnswer": 1,\
+    "category": "Music",\
+    "difficulty": "Pro"\
+  \},\
+  \{\
+    "text": "Who wrote the opera 'The Magic Flute'?",\
+    "options": ["Beethoven", "Mozart", "Verdi", "Wagner"],\
+    "correctAnswer": 1,\
+    "category": "Music",\
+    "difficulty": "Master"\
+  \}\
+]\
+\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\uc0\u9989  QUICK REFERENCE CHECKLIST\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\
+When adding a new category:\
+\
+\uc0\u9744  Update QuizCategory.swift enum\
+\uc0\u9744  Add emoji in emoji var\
+\uc0\u9744  Add to HomeView category grid\
+\uc0\u9744  Add icon in getCategoryIcon\
+\uc0\u9744  Add gradient in getCategoryGradient\
+\uc0\u9744  Create 70-110 questions\
+\uc0\u9744  Distribute across all 6 difficulties\
+\uc0\u9744  Test all difficulty unlocks\
+\uc0\u9744  Test Firebase integration\
+\uc0\u9744  Test share functionality\
+\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\uc0\u55356 \u57225  YOU'RE READY!\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\
+You now know how to:\
+\uc0\u10003  Add new trivia categories\
+\uc0\u10003  Create questions for all difficulty levels\
+\uc0\u10003  Follow best practices\
+\uc0\u10003  Test your additions properly\
+\
+Happy creating! Your trivia app will keep growing! \uc0\u55357 \u56960 \u55357 \u56538 \
+\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+Trivia App Implementation Guide v1.0\
+\'a9 2025 - All Rights Reserved\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 }
