@@ -22,7 +22,10 @@ struct ViewControllerHolder {
 
 struct ViewControllerKey: EnvironmentKey {
     static var defaultValue: ViewControllerHolder {
-        return ViewControllerHolder(value: UIApplication.shared.windows.first?.rootViewController)
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            return ViewControllerHolder(value: windowScene.windows.first?.rootViewController)
+        }
+        return ViewControllerHolder(value: nil)
     }
 }
 

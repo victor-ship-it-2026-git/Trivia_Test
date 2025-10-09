@@ -61,8 +61,9 @@ struct ContentView: View {
                 }
             }
         }
-        .onChange(of: ratingManager.shouldShowRating) { shouldShow in
-            if shouldShow {
+        
+        .onChange(of: ratingManager.shouldShowRating) { oldValue, newValue in
+            if newValue {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     withAnimation(.spring(response: 0.5, dampingFraction: 0.7)) {
                         showRatingPopup = true
