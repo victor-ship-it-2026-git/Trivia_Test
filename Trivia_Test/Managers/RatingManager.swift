@@ -43,7 +43,12 @@ class RatingManager: ObservableObject {
     
     func requestAppStoreReview() {
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-            SKStoreReviewController.requestReview(in: windowScene)
+            if #available(iOS 18.0, *) {
+                AppStore.requestReview(in: windowScene)
+            } else {
+                SKStoreReviewController.requestReview(in: windowScene)
+            }
+            
         }
         userRatedApp()
     }
