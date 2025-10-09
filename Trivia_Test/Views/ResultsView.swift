@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct ResultsView: View {
     @ObservedObject var presenter: GamePresenter
     let playAgain: () -> Void
@@ -117,7 +116,7 @@ struct ResultsView: View {
                 
                 VStack(spacing: 15) {
                     Button(action: playAgain) {
-                        Text("Play Again")
+                        Text("Next Difficulty")
                             .font(.title3)
                             .fontWeight(.semibold)
                             .foregroundColor(colorScheme == .dark ? .white : .blue)
