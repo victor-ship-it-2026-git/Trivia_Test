@@ -1,4 +1,5 @@
 import SwiftUI
+
 struct ResultsView: View {
     @ObservedObject var presenter: GamePresenter
     let playAgain: () -> Void
@@ -9,7 +10,11 @@ struct ResultsView: View {
     @State private var savedToLeaderboard = false
     @State private var showUnlockAnimation = false
     @State private var unlockedDifficulty: Difficulty?
+    @State private var isSavingToFirebase = false
+    @State private var saveError: String?
+    @State private var showSaveSuccess = false
     @StateObject private var unlockManager = DifficultyUnlockManager.shared
+    @StateObject private var firebaseManager = FirebaseLeaderboardManager.shared
     @Environment(\.colorScheme) var colorScheme
     
     var percentage: Int {
@@ -98,18 +103,49 @@ struct ResultsView: View {
                     .transition(.scale.combined(with: .opacity))
                 }
                 
+                // Save Success Message
+                if showSaveSuccess {
+                    HStack(spacing: 10) {
+                        Image(systemName: "checkmark.circle.fill")
+                            .font(.title3)
+                        Text("Saved to Global Leaderboard!")
+                            .font(.headline)
+                    }
+                    .foregroundColor(.green)
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 12)
+                            .fill(Color.green.opacity(0.2))
+                    )
+                    .transition(.scale.combined(with: .opacity))
+                }
+                
+                // Save to Leaderboard Button
                 if !savedToLeaderboard {
                     Button(action: { showNameInput = true }) {
                         HStack {
-                            Image(systemName: "star.fill")
-                            Text("Save to Leaderboard")
+                            if isSavingToFirebase {
+                                ProgressView()
+                                    .tint(.white)
+                            } else {
+                                Image(systemName: "star.fill")
+                            }
+                            Text(isSavingToFirebase ? "Saving..." : "Save to Global Leaderboard")
                         }
                         .font(.headline)
                         .foregroundColor(.white)
-                        .frame(width: 250, height: 50)
-                        .background(Color.yellow.opacity(0.8))
+                        .frame(width: 280, height: 50)
+                        .background(
+                            LinearGradient(
+                                gradient: Gradient(colors: [Color.yellow.opacity(0.8), Color.orange.opacity(0.8)]),
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
                         .cornerRadius(25)
+                        .shadow(color: Color.yellow.opacity(0.4), radius: 10)
                     }
+                    .disabled(isSavingToFirebase)
                 }
                 
                 Spacer()
@@ -128,12 +164,12 @@ struct ResultsView: View {
                     Button(action: showLeaderboard) {
                         HStack {
                             Image(systemName: "trophy.fill")
-                            Text("View Leaderboard")
+                            Text("View Global Leaderboard")
                         }
                         .font(.title3)
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
-                        .frame(width: 250, height: 60)
+                        .frame(width: 280, height: 60)
                         .background(Color.white.opacity(0.3))
                         .cornerRadius(30)
                     }
@@ -159,15 +195,25 @@ struct ResultsView: View {
             NameInputView(
                 playerName: $playerName,
                 onSave: {
-                    saveToLeaderboard()
+                    saveToFirebaseLeaderboard()
                     showNameInput = false
-                    savedToLeaderboard = true
                 }
             )
         }
+        .alert("Error Saving", isPresented: .constant(saveError != nil)) {
+            Button("OK") {
+                saveError = nil
+            }
+        } message: {
+            if let error = saveError {
+                Text(error)
+            }
+        }
     }
     
-    func saveToLeaderboard() {
+    func saveToFirebaseLeaderboard() {
+        isSavingToFirebase = true
+        
         let entry = LeaderboardEntry(
             id: UUID(),
             playerName: playerName.isEmpty ? "Anonymous" : playerName,
@@ -178,7 +224,30 @@ struct ResultsView: View {
             date: Date()
         )
         
-        LeaderboardManager.shared.addEntry(entry)
+        // Save to Firebase
+        firebaseManager.addEntry(entry) { result in
+            DispatchQueue.main.async {
+                isSavingToFirebase = false
+                
+                switch result {
+                case .success:
+                    savedToLeaderboard = true
+                    withAnimation(.spring(response: 0.5, dampingFraction: 0.7)) {
+                        showSaveSuccess = true
+                    }
+                    
+                    // Hide success message after 3 seconds
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                        withAnimation {
+                            showSaveSuccess = false
+                        }
+                    }
+                    
+                case .failure(let error):
+                    saveError = "Failed to save: \(error.localizedDescription)"
+                }
+            }
+        }
     }
     
     func checkAndUnlockNextDifficulty() {
