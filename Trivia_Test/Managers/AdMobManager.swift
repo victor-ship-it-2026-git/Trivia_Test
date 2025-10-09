@@ -6,9 +6,10 @@ import GoogleMobileAds
 import SwiftUI
 internal import Combine
 
+@MainActor
 class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
-
-
+    static let shared = AdMobManager()
+    
     @Published var isAdReady = false
     @Published var isShowingAd = false
     private var rewardedAd: RewardedAd?
@@ -26,45 +27,58 @@ class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
     func loadRewardedAd() {
         let request = Request()
         RewardedAd.load(with: adUnitID, request: request) { [weak self] ad, error in
-            if let error = error {
-                print("Failed to load rewarded ad: \(error.localizedDescription)")
-                self?.isAdReady = false
-                return
+            guard let self = self else { return }
+            
+            Task { @MainActor in
+                if let error = error {
+                    print("Failed to load rewarded ad: \(error.localizedDescription)")
+                    self.isAdReady = false
+                    return
+                }
+                
+                self.rewardedAd = ad
+                self.rewardedAd?.fullScreenContentDelegate = self
+                self.isAdReady = true
+                print("✅ Rewarded ad loaded successfully - Ready: \(self.isAdReady)")
             }
-            self?.rewardedAd = ad
-            self?.rewardedAd?.fullScreenContentDelegate = self
-            self?.isAdReady = true
-            print("Rewarded ad loaded successfully")
         }
     }
     
     func showAd(from viewController: UIViewController) {
         guard let ad = rewardedAd else {
-            print("Ad not ready")
+            print("❌ Ad not ready - Loading new ad...")
             isAdReady = false
             loadRewardedAd()
             return
         }
         
+        print("🎬 Presenting ad...")
         isShowingAd = true
         ad.present(from: viewController) { [weak self] in
-            print("User earned reward")
-            self?.onAdRewarded?()
+            guard let self = self else { return }
+            Task { @MainActor in
+                print("✅ User earned reward")
+                self.onAdRewarded?()
+            }
         }
     }
     
     // MARK: - GADFullScreenContentDelegate
-    func adDidDismissFullScreenContent(_ ad: FullScreenPresentingAd) {
-        print("Ad dismissed")
-        isShowingAd = false
-        onAdDismissed?()
-        loadRewardedAd()
+    nonisolated func adDidDismissFullScreenContent(_ ad: FullScreenPresentingAd) {
+        Task { @MainActor in
+            print("📱 Ad dismissed")
+            self.isShowingAd = false
+            self.onAdDismissed?()
+            self.loadRewardedAd()
+        }
     }
     
-    func ad(_ ad: FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
-        print("Ad failed to present: \(error.localizedDescription)")
-        isShowingAd = false
-        isAdReady = false
-        loadRewardedAd()
+    nonisolated func ad(_ ad: FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+        Task { @MainActor in
+            print("❌ Ad failed to present: \(error.localizedDescription)")
+            self.isShowingAd = false
+            self.isAdReady = false
+            self.loadRewardedAd()
+        }
     }
 }

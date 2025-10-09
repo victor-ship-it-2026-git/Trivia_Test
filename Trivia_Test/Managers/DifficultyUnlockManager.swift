@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Combine
+internal import Combine
 
 class DifficultyUnlockManager: ObservableObject {
     static let shared = DifficultyUnlockManager()
@@ -52,19 +52,13 @@ class DifficultyUnlockManager: ObservableObject {
     
     // Check if difficulty is available (either unlocked or next in sequence)
     func isDifficultyAvailable(category: QuizCategory, difficulty: Difficulty) -> Bool {
-        let difficulties = Difficulty.allCases
-        guard let currentIndex = difficulties.firstIndex(of: difficulty) else {
-            return false
-        }
-        
         // Rookie is always available
-        if currentIndex == 0 {
+        if difficulty == .rookie {
             return true
         }
         
-        // Check if previous difficulty is unlocked
-        let previousDifficulty = difficulties[currentIndex - 1]
-        return isDifficultyUnlocked(category: category, difficulty: previousDifficulty)
+        // For other difficulties, they must be explicitly unlocked
+        return isDifficultyUnlocked(category: category, difficulty: difficulty)
     }
     
     // Unlock the next difficulty level for a category

@@ -1,3 +1,11 @@
+//
+//  RatingPopupView.swift
+//  Trivia_Test
+//
+//  Created by Win on 8/10/2568 BE.
+//
+
+
 // MARK: - RatingPopupView.swift
 import SwiftUI
 

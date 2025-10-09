@@ -9,15 +9,14 @@ import Foundation
 internal import Combine
 
 class ShopManager: ObservableObject {
-    // Remove this line - ObservableObject already provides objectWillChange
-    // var objectWillChange: ObservableObjectPublisher
-
     static let shared = ShopManager()
     
     @Published var shopItems: [ShopItem] = []
+    @Published var adRewards: [ShopAdReward] = []
     
     private init() {
         loadShopItems()
+        loadAdRewards()
     }
     
     func loadShopItems() {
@@ -36,6 +35,14 @@ class ShopManager: ObservableObject {
         ]
     }
     
+    func loadAdRewards() {
+        adRewards = [
+            ShopAdReward(lifelineType: .fiftyFifty, quantity: 1),
+            ShopAdReward(lifelineType: .skip, quantity: 1),
+            ShopAdReward(lifelineType: .extraTime, quantity: 1),
+        ]
+    }
+    
     func purchaseItem(_ item: ShopItem) -> Bool {
         guard CoinsManager.shared.spendCoins(item.price) else {
             return false
@@ -43,5 +50,18 @@ class ShopManager: ObservableObject {
         
         LifelineManager.shared.addLifeline(type: item.lifelineType, quantity: item.quantity)
         return true
+    }
+}
+
+// MARK: - Shop Ad Reward Model
+struct ShopAdReward: Identifiable {
+    let id: UUID
+    let lifelineType: LifelineType
+    let quantity: Int
+    
+    init(lifelineType: LifelineType, quantity: Int) {
+        self.id = UUID()
+        self.lifelineType = lifelineType
+        self.quantity = quantity
     }
 }
