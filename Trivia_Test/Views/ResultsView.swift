@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct ResultsView: View {
     @ObservedObject var presenter: GamePresenter
     let playAgain: () -> Void
@@ -8,6 +7,9 @@ struct ResultsView: View {
     @State private var showNameInput = false
     @State private var playerName = ""
     @State private var savedToLeaderboard = false
+    @State private var showUnlockAnimation = false
+    @State private var unlockedDifficulty: Difficulty?
+    @StateObject private var unlockManager = DifficultyUnlockManager.shared
     @Environment(\.colorScheme) var colorScheme
     
     var percentage: Int {
@@ -60,9 +62,8 @@ struct ResultsView: View {
                         }
                         
                         VStack {
-                            Circle()
-                                .fill(presenter.selectedDifficulty.color)
-                                .frame(width: 20, height: 20)
+                            Text(presenter.selectedDifficulty.emoji)
+                                .font(.title)
                             Text(presenter.selectedDifficulty.rawValue)
                                 .font(.caption)
                         }
@@ -72,6 +73,30 @@ struct ResultsView: View {
                 .padding(40)
                 .background(Color.white.opacity(colorScheme == .dark ? 0.15 : 0.2))
                 .cornerRadius(20)
+                
+                // Unlock notification
+                if let unlocked = unlockedDifficulty, showUnlockAnimation {
+                    VStack(spacing: 10) {
+                        Text("🎉 Level Unlocked!")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .foregroundColor(.yellow)
+                        
+                        HStack(spacing: 8) {
+                            Text(unlocked.emoji)
+                                .font(.title)
+                            Text(unlocked.rawValue)
+                                .font(.headline)
+                                .foregroundColor(.white)
+                        }
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 12)
+                                .fill(unlocked.color.opacity(0.3))
+                        )
+                    }
+                    .transition(.scale.combined(with: .opacity))
+                }
                 
                 if !savedToLeaderboard {
                     Button(action: { showNameInput = true }) {
@@ -91,7 +116,7 @@ struct ResultsView: View {
                 
                 VStack(spacing: 15) {
                     Button(action: playAgain) {
-                        Text("Play Again")
+                        Text("Next Difficulty")
                             .font(.title3)
                             .fontWeight(.semibold)
                             .foregroundColor(colorScheme == .dark ? .white : .blue)
@@ -127,6 +152,9 @@ struct ResultsView: View {
                 Spacer()
             }
         }
+        .onAppear {
+            checkAndUnlockNextDifficulty()
+        }
         .sheet(isPresented: $showNameInput) {
             NameInputView(
                 playerName: $playerName,
@@ -151,5 +179,31 @@ struct ResultsView: View {
         )
         
         LeaderboardManager.shared.addEntry(entry)
+    }
+    
+    func checkAndUnlockNextDifficulty() {
+        // Unlock next difficulty if score is 70% or higher
+        if percentage >= 70 {
+            let difficulties = Difficulty.allCases
+            guard let currentIndex = difficulties.firstIndex(of: presenter.selectedDifficulty),
+                  currentIndex < difficulties.count - 1 else {
+                return
+            }
+            
+            let nextDifficulty = difficulties[currentIndex + 1]
+            
+            // Check if not already unlocked
+            if !unlockManager.isDifficultyUnlocked(category: presenter.selectedCategory, difficulty: nextDifficulty) {
+                unlockManager.unlockNextDifficulty(category: presenter.selectedCategory, completedDifficulty: presenter.selectedDifficulty)
+                unlockedDifficulty = nextDifficulty
+                
+                // Show unlock animation after a delay
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {
+                        showUnlockAnimation = true
+                    }
+                }
+            }
+        }
     }
 }

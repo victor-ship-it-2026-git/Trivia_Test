@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		7D9F15C82E8C4A26007BDA83 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 7D9F15C72E8C4A26007BDA83 /* GoogleMobileAds */; };
+		7DE5FC962E9645A00016A365 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE5FC952E9645A00016A365 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7DDC9ACD2E8BC9A00078B359 /* Trivia_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trivia_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE5FC952E9645A00016A365 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DE5FC962E9645A00016A365 /* StoreKit.framework in Frameworks */,
 				7D9F15C82E8C4A26007BDA83 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,6 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				7DDC9ACF2E8BC9A00078B359 /* Trivia_Test */,
+				7DE5FC942E9645A00016A365 /* Frameworks */,
 				7DDC9ACE2E8BC9A00078B359 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +52,14 @@
 				7DDC9ACD2E8BC9A00078B359 /* Trivia_Test.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7DE5FC942E9645A00016A365 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DE5FC952E9645A00016A365 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

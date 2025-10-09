@@ -9,7 +9,7 @@ import SwiftUI
 internal import Combine
 
 class DifficultyPresenter: ObservableObject {
-    @Published var selectedDifficulty: Difficulty = .easy
+    @Published var selectedDifficulty: Difficulty = .rookie
     
     func selectDifficulty(_ difficulty: Difficulty) {
         selectedDifficulty = difficulty

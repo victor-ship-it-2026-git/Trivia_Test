@@ -4,78 +4,65 @@ struct DifficultySelectionView: View {
     let goBack: () -> Void
     let startGame: () -> Void
     @ObservedObject var presenter: GamePresenter
+    @StateObject private var unlockManager = DifficultyUnlockManager.shared
     @Environment(\.colorScheme) var colorScheme
     @State private var appearAnimation = false
+    @State private var showLockedAlert = false
+    @State private var lockedMessage = ""
     
     var body: some View {
-        ZStack {
-            Color.dynamicBackground
-                .ignoresSafeArea()
-            
-            VStack(spacing: 0) {
-                // Top Navigation Bar
-                HStack {
-                    Button(action: {
-                        withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
-                            appearAnimation = false
+        GeometryReader { geometry in
+            ZStack {
+                Color.dynamicBackground
+                    .ignoresSafeArea()
+                
+                VStack(spacing: 0) {
+                    // Top Navigation Bar - Fixed
+                    HStack {
+                        Button(action: {
+                            withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
+                                appearAnimation = false
+                            }
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                goBack()
+                            }
+                        }) {
+                            HStack(spacing: 5) {
+                                Image(systemName: "chevron.left")
+                                Text("Back")
+                            }
+                            .font(.headline)
+                            .foregroundColor(.blue)
                         }
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                            goBack()
-                        }
-                    }) {
+                        
+                        Spacer()
+                        
+                        Text("Trivia App")
+                            .font(.headline)
+                            .foregroundColor(.dynamicText)
+                        
+                        Spacer()
+                        
+                        // Placeholder for symmetry
                         HStack(spacing: 5) {
                             Image(systemName: "chevron.left")
                             Text("Back")
                         }
                         .font(.headline)
-                        .foregroundColor(.blue)
+                        .opacity(0)
                     }
+                    .padding()
+                    .frame(height: 60)
+                    .opacity(appearAnimation ? 1 : 0)
+                    .offset(y: appearAnimation ? 0 : -20)
                     
-                    Spacer()
-                    
-                    Text("Trivia App")
-                        .font(.headline)
-                        .foregroundColor(.dynamicText)
-                    
-                    Spacer()
-                    
-                    // Placeholder for symmetry
-                    HStack(spacing: 5) {
-                        Image(systemName: "chevron.left")
-                        Text("Back")
-                    }
-                    .font(.headline)
-                    .opacity(0)
-                }
-                .padding()
-                .opacity(appearAnimation ? 1 : 0)
-                .offset(y: appearAnimation ? 0 : -20)
-                
-                ScrollView(showsIndicators: false) {
-                    VStack(spacing: 25) {
-                        // Title
+                    // Content Area
+                    VStack(spacing: 16) {
+                        // Title & Category - Compact
                         VStack(spacing: 8) {
                             Text("Choose Difficulty")
-                                .font(.system(size: 32, weight: .bold))
+                                .font(.system(size: 28, weight: .bold))
                                 .foregroundColor(.dynamicText)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                            
-                            Text("Step 2 of 2")
-                                .font(.subheadline)
-                                .foregroundColor(.dynamicSecondaryText)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                        }
-                        .padding(.horizontal)
-                        .padding(.top, 10)
-                        .opacity(appearAnimation ? 1 : 0)
-                        .offset(y: appearAnimation ? 0 : 20)
-                        .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.1), value: appearAnimation)
-                        
-                        // Selected Category Display
-                        HStack(spacing: 12) {
-                            Text("Category:")
-                                .font(.subheadline)
-                                .foregroundColor(.dynamicSecondaryText)
                             
                             HStack(spacing: 8) {
                                 Text(presenter.selectedCategory.emoji)
@@ -85,180 +72,212 @@ struct DifficultySelectionView: View {
                                     .fontWeight(.semibold)
                                     .foregroundColor(.dynamicText)
                             }
-                            .padding(.horizontal, 16)
-                            .padding(.vertical, 8)
+                            .padding(.horizontal, 14)
+                            .padding(.vertical, 6)
                             .background(
                                 Capsule()
                                     .fill(Color.blue.opacity(colorScheme == .dark ? 0.25 : 0.15))
                             )
-                            
-                            Spacer()
                         }
-                        .padding(.horizontal)
                         .opacity(appearAnimation ? 1 : 0)
-                        .offset(x: appearAnimation ? 0 : -20)
-                        .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2), value: appearAnimation)
+                        .offset(y: appearAnimation ? 0 : 20)
+                        .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.1), value: appearAnimation)
                         
-                        // Difficulty Cards
-                        VStack(spacing: 16) {
+                        // Difficulty Grid - 3x2 layout (3 rows, 2 columns)
+                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
                             ForEach(Array(Difficulty.allCases.enumerated()), id: \.element) { index, difficulty in
-                                DifficultyCardModern(
+                                DifficultyCardMini(
                                     difficulty: difficulty,
                                     isSelected: presenter.selectedDifficulty == difficulty,
+                                    isLocked: !unlockManager.isDifficultyAvailable(category: presenter.selectedCategory, difficulty: difficulty),
                                     action: {
-                                        withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
-                                            presenter.selectedDifficulty = difficulty
+                                        if unlockManager.isDifficultyAvailable(category: presenter.selectedCategory, difficulty: difficulty) {
+                                            withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+                                                presenter.selectedDifficulty = difficulty
+                                            }
+                                        } else {
+                                            showLockedMessage(for: difficulty)
                                         }
                                     }
                                 )
                                 .opacity(appearAnimation ? 1 : 0)
-                                .offset(y: appearAnimation ? 0 : 30)
-                                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.3 + Double(index) * 0.1), value: appearAnimation)
+                                .offset(y: appearAnimation ? 0 : 20)
+                                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2 + Double(index) * 0.05), value: appearAnimation)
                             }
                         }
                         .padding(.horizontal)
                         
-                        // Available Questions Info
-                        HStack(spacing: 8) {
-                            Image(systemName: "info.circle.fill")
-                                .foregroundColor(.blue)
-                            Text("Available Questions: \(presenter.getFilteredQuestions().count)")
-                                .font(.subheadline)
-                                .foregroundColor(.dynamicSecondaryText)
-                        }
-                        .padding(.horizontal)
-                        .opacity(appearAnimation ? 1 : 0)
-                        .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.6), value: appearAnimation)
+                        Spacer()
                         
-                        // Start Game Button
-                        Button(action: {
-                            withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
-                                appearAnimation = false
+                        // Bottom Info & Button
+                        VStack(spacing: 12) {
+                            // Available Questions
+                            HStack(spacing: 6) {
+                                Image(systemName: "info.circle.fill")
+                                    .font(.caption)
+                                    .foregroundColor(.blue)
+                                Text("\(presenter.getFilteredQuestions().count) questions available")
+                                    .font(.caption)
+                                    .foregroundColor(.dynamicSecondaryText)
                             }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                                startGame()
-                            }
-                        }) {
-                            HStack(spacing: 12) {
-                                Image(systemName: "play.fill")
-                                Text("Start Game")
-                            }
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 56)
-                            .background(
-                                LinearGradient(
-                                    gradient: Gradient(colors: presenter.getFilteredQuestions().isEmpty ?
-                                        [Color.gray, Color.gray.opacity(0.8)] :
-                                        [Color.blue, Color.purple]),
-                                    startPoint: .leading,
-                                    endPoint: .trailing
+                            .opacity(appearAnimation ? 1 : 0)
+                            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.7), value: appearAnimation)
+                            
+                            // Start Button
+                            Button(action: {
+                                withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
+                                    appearAnimation = false
+                                }
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                    startGame()
+                                }
+                            }) {
+                                HStack(spacing: 10) {
+                                    Image(systemName: "play.fill")
+                                    Text("Start Game")
+                                }
+                                .font(.headline)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 52)
+                                .background(
+                                    LinearGradient(
+                                        gradient: Gradient(colors:
+                                            (presenter.getFilteredQuestions().isEmpty ||
+                                             !unlockManager.isDifficultyAvailable(category: presenter.selectedCategory, difficulty: presenter.selectedDifficulty)) ?
+                                            [Color.gray, Color.gray.opacity(0.8)] :
+                                            [Color.blue, Color.purple]),
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
                                 )
-                            )
-                            .cornerRadius(28)
-                            .shadow(color: presenter.getFilteredQuestions().isEmpty ? Color.clear : Color.blue.opacity(0.3), radius: 8, x: 0, y: 4)
+                                .cornerRadius(26)
+                                .shadow(color: (presenter.getFilteredQuestions().isEmpty ||
+                                                !unlockManager.isDifficultyAvailable(category: presenter.selectedCategory, difficulty: presenter.selectedDifficulty)) ?
+                                        Color.clear : Color.blue.opacity(0.3), radius: 8, x: 0, y: 4)
+                            }
+                            .disabled(presenter.getFilteredQuestions().isEmpty ||
+                                     !unlockManager.isDifficultyAvailable(category: presenter.selectedCategory, difficulty: presenter.selectedDifficulty))
+                            .padding(.horizontal, 30)
+                            .opacity(appearAnimation ? 1 : 0)
+                            .offset(y: appearAnimation ? 0 : 20)
+                            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.8), value: appearAnimation)
                         }
-                        .disabled(presenter.getFilteredQuestions().isEmpty)
-                        .padding(.horizontal)
-                        .padding(.top, 20)
                         .padding(.bottom, 30)
-                        .opacity(appearAnimation ? 1 : 0)
-                        .offset(y: appearAnimation ? 0 : 30)
-                        .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.7), value: appearAnimation)
                     }
+                    .padding(.top, 10)
                 }
             }
         }
         .onAppear {
+            // Auto-select highest unlocked difficulty
+            let highestUnlocked = unlockManager.getHighestUnlockedDifficulty(category: presenter.selectedCategory)
+            if !unlockManager.isDifficultyAvailable(category: presenter.selectedCategory, difficulty: presenter.selectedDifficulty) {
+                presenter.selectedDifficulty = highestUnlocked
+            }
+            
             withAnimation {
                 appearAnimation = true
             }
         }
+        .alert("Difficulty Locked", isPresented: $showLockedAlert) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text(lockedMessage)
+        }
+    }
+    
+    private func showLockedMessage(for difficulty: Difficulty) {
+        let difficulties = Difficulty.allCases
+        guard let index = difficulties.firstIndex(of: difficulty), index > 0 else {
+            return
+        }
+        
+        let previousDifficulty = difficulties[index - 1]
+        lockedMessage = "Complete \(previousDifficulty.rawValue) level in \(presenter.selectedCategory.rawValue) to unlock \(difficulty.rawValue)!"
+        showLockedAlert = true
     }
 }
 
-// Modern Difficulty Card
-struct DifficultyCardModern: View {
+// MARK: - Mini Difficulty Card (Fits on one screen)
+struct DifficultyCardMini: View {
     let difficulty: Difficulty
     let isSelected: Bool
+    let isLocked: Bool
     let action: () -> Void
     @Environment(\.colorScheme) var colorScheme
     @State private var isPressed = false
     
-    var difficultyIcon: String {
-        switch difficulty {
-        case .easy: return "🌱"
-        case .medium: return "⚡️"
-        case .hard: return "🔥"
-        }
-    }
-    
     var body: some View {
         Button(action: {
-            withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
-                isPressed = true
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                action()
-                isPressed = false
-            }
+            action() // Always call action (it handles locked logic)
         }) {
-            HStack(spacing: 16) {
-                // Icon
-                ZStack {
-                    Circle()
-                        .fill(difficulty.color.opacity(colorScheme == .dark ? 0.3 : 0.2))
-                        .frame(width: 60, height: 60)
-                    
-                    Text(difficultyIcon)
-                        .font(.system(size: 30))
-                }
-                
-                // Info
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(difficulty.rawValue)
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .foregroundColor(.dynamicText)
-                    
-                    Text(difficulty.description)
-                        .font(.subheadline)
-                        .foregroundColor(.dynamicSecondaryText)
-                }
-                
-                Spacer()
-                
-                // Checkmark
-                ZStack {
-                    Circle()
-                        .stroke(isSelected ? difficulty.color : Color.gray.opacity(0.3), lineWidth: 2)
-                        .frame(width: 28, height: 28)
-                    
-                    if isSelected {
+            ZStack {
+                VStack(spacing: 8) {
+                    // Emoji Icon - Smaller
+                    ZStack {
                         Circle()
-                            .fill(difficulty.color)
-                            .frame(width: 28, height: 28)
+                            .fill(difficulty.color.opacity(colorScheme == .dark ? 0.3 : 0.2))
+                            .frame(width: 50, height: 50)
                         
-                        Image(systemName: "checkmark")
-                            .font(.system(size: 14, weight: .bold))
-                            .foregroundColor(.white)
+                        if isLocked {
+                            Image(systemName: "lock.fill")
+                                .font(.system(size: 20))
+                                .foregroundColor(.gray)
+                        } else {
+                            Text(difficulty.emoji)
+                                .font(.system(size: 24))
+                        }
                     }
+                    
+                    // Title
+                    Text(difficulty.rawValue)
+                        .font(.subheadline)
+                        .fontWeight(.bold)
+                        .foregroundColor(isLocked ? .gray : .dynamicText)
+                    
+                    // Multiplier Badge - Compact
+                    HStack(spacing: 3) {
+                        Image(systemName: "star.fill")
+                            .font(.system(size: 8))
+                        Text("×\(difficulty.pointsMultiplier)")
+                            .font(.caption2)
+                            .fontWeight(.semibold)
+                    }
+                    .foregroundColor(isLocked ? .gray : difficulty.color)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 3)
+                    .background(
+                        Capsule()
+                            .fill((isLocked ? Color.gray : difficulty.color).opacity(0.15))
+                    )
+                }
+                .padding(.vertical, 12)
+                .padding(.horizontal, 8)
+                .frame(maxWidth: .infinity)
+                .frame(height: 130)
+                .background(
+                    RoundedRectangle(cornerRadius: 16)
+                        .fill(isLocked ? Color.gray.opacity(0.1) :
+                              (isSelected ? difficulty.color.opacity(colorScheme == .dark ? 0.15 : 0.1) : Color.dynamicCardBackground))
+                        .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1), radius: isSelected ? 6 : 3, x: 0, y: isSelected ? 3 : 2)
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(isLocked ? Color.gray.opacity(0.3) : (isSelected ? difficulty.color : Color.clear), lineWidth: 2)
+                )
+                .scaleEffect(isPressed ? 0.95 : (isSelected && !isLocked ? 1.05 : 1.0))
+                .grayscale(isLocked ? 1.0 : 0)
+                .opacity(isLocked ? 0.5 : 1.0)
+                
+                // Locked overlay
+                if isLocked {
+                    RoundedRectangle(cornerRadius: 16)
+                        .fill(Color.black.opacity(0.2))
                 }
             }
-            .padding(20)
-            .background(
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(isSelected ? difficulty.color.opacity(colorScheme == .dark ? 0.15 : 0.1) : Color.dynamicCardBackground)
-                    .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1), radius: isSelected ? 8 : 5, x: 0, y: isSelected ? 4 : 2)
-            )
-            .overlay(
-                RoundedRectangle(cornerRadius: 20)
-                    .stroke(isSelected ? difficulty.color : Color.clear, lineWidth: 2)
-            )
-            .scaleEffect(isPressed ? 0.97 : 1.0)
-            .scaleEffect(isSelected ? 1.02 : 1.0)
         }
+        .allowsHitTesting(true) // Always allow taps to show alert
     }
 }

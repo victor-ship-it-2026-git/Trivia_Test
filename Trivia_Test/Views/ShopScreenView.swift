@@ -2,7 +2,7 @@
 //  ShopScreenView.swift
 //  Trivia_Test
 //
-//  Created by Win
+//  Created by Win on 8/10/2568 BE.
 //
 
 import SwiftUI

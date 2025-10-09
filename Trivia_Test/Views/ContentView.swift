@@ -7,29 +7,15 @@
 
 import SwiftUI
 
-struct ViewControllerHolder {
-    weak var value: UIViewController?
-}
-
-struct ViewControllerKey: EnvironmentKey {
-    static var defaultValue: ViewControllerHolder {
-        return ViewControllerHolder(value: UIApplication.shared.windows.first?.rootViewController)
-    }
-}
-
-extension EnvironmentValues {
-    var viewController: ViewControllerHolder {
-        get { return self[ViewControllerKey.self] }
-        set { self[ViewControllerKey.self] = newValue }
-    }
-}
-
+// MARK: - ContentView
 struct ContentView: View {
     @StateObject private var gamePresenter = GamePresenter()
-    @StateObject private var adMobManager = AdMobManager()
+    @ObservedObject private var adMobManager = AdMobManager.shared
+    @StateObject private var ratingManager = RatingManager.shared
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
     @State private var showSplash = true
     @State private var currentScreen: Screen = .home
+    @State private var showRatingPopup = false
     
     enum Screen {
         case home
@@ -38,6 +24,7 @@ struct ContentView: View {
         case game
         case results
         case leaderboard
+        case shop
     }
     
     var body: some View {
@@ -59,11 +46,28 @@ struct ContentView: View {
                         removal: .move(edge: .leading).combined(with: .opacity)
                     ))
             }
+            
+            // Rating Popup Overlay
+            if showRatingPopup {
+                RatingPopupView(isPresented: $showRatingPopup)
+                    .transition(.opacity)
+                    .zIndex(1000)
+            }
         }
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                 withAnimation(.easeInOut(duration: 0.5)) {
                     showSplash = false
+                }
+            }
+        }
+        .onChange(of: ratingManager.shouldShowRating) { shouldShow in
+            if shouldShow {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    withAnimation(.spring(response: 0.5, dampingFraction: 0.7)) {
+                        showRatingPopup = true
+                    }
+                    ratingManager.shouldShowRating = false
                 }
             }
         }
@@ -84,7 +88,13 @@ struct ContentView: View {
                         withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
                             currentScreen = .leaderboard
                         }
-                    }
+                    },
+                    showShop: {
+                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
+                            currentScreen = .shop
+                        }
+                    },
+                    gamePresenter: gamePresenter
                 )
                 .transition(.asymmetric(
                     insertion: .move(edge: .leading).combined(with: .opacity),
@@ -135,6 +145,9 @@ struct ContentView: View {
                     presenter: gamePresenter,
                     adMobManager: adMobManager,
                     showResults: {
+                        // Check and show rating when moving to results
+                        RatingManager.shared.checkAndShowRating(difficulty: gamePresenter.selectedDifficulty)
+                        
                         withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
                             currentScreen = .results
                         }
@@ -154,11 +167,13 @@ struct ContentView: View {
                 ResultsView(
                     presenter: gamePresenter,
                     playAgain: {
+                        // Keep the current category, just go back to difficulty selection
                         withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
-                            currentScreen = .home
+                            currentScreen = .difficultySelection
                         }
                     },
                     goHome: {
+                        // Reset to home (category selection)
                         withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
                             currentScreen = .home
                         }
@@ -177,6 +192,19 @@ struct ContentView: View {
             case .leaderboard:
                 LeaderboardView(
                     goHome: {
+                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
+                            currentScreen = .home
+                        }
+                    }
+                )
+                .transition(.asymmetric(
+                    insertion: .move(edge: .trailing).combined(with: .opacity),
+                    removal: .move(edge: .trailing).combined(with: .opacity)
+                ))
+                
+            case .shop:
+                ShopScreenView(
+                    goBack: {
                         withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
                             currentScreen = .home
                         }

@@ -2,6 +2,7 @@
 import SwiftUI
 internal import Combine
 
+
 class GamePresenter: ObservableObject {
     @Published var questions: [Question] = []
     @Published var currentQuestionIndex: Int = 0
@@ -10,7 +11,7 @@ class GamePresenter: ObservableObject {
     @Published var showingAnswer: Bool = false
     @Published var totalQuestions: Int = 0
     @Published var selectedCategory: QuizCategory = .all
-    @Published var selectedDifficulty: Difficulty = .easy
+    @Published var selectedDifficulty: Difficulty = .rookie
     @Published var needsToWatchAd: Bool = false
     @Published var timeExpired: Bool = false
     
@@ -35,8 +36,9 @@ class GamePresenter: ObservableObject {
     
     var pointsForCorrectAnswer: Int {
         let basePoints = 10
+        let difficultyMultiplier = selectedDifficulty.pointsMultiplier
         let streakMultiplier = streak.multiplier
-        return basePoints * streakMultiplier
+        return basePoints * difficultyMultiplier * streakMultiplier
     }
     
     init() {
@@ -85,6 +87,7 @@ class GamePresenter: ObservableObject {
     }
     
     private func processCorrectAnswer() {
+        HapticManager.shared.success()
         let points = pointsForCorrectAnswer
         score += points
         bonusPoints = points - 10
@@ -119,15 +122,17 @@ class GamePresenter: ObservableObject {
         needsToWatchAd = false
         timeExpired = false
     }
-    
+
     private func processWrongAnswer() {
+        HapticManager.shared.error()
         streak.resetStreak()
         needsToWatchAd = true
         timeExpired = false
         bonusPoints = 0
     }
-    
+
     func handleTimeExpired() {
+        HapticManager.shared.warning()
         showingAnswer = true
         needsToWatchAd = true
         timeExpired = true

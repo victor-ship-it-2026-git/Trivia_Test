@@ -3,11 +3,11 @@ import SwiftUI
 struct HomeView: View {
     let startGame: () -> Void
     let showLeaderboard: () -> Void
+    let showShop: () -> Void
+    @ObservedObject var gamePresenter: GamePresenter
     @StateObject private var coinsManager = CoinsManager.shared
     @StateObject private var challengeManager = DailyChallengeManager.shared
     @StateObject private var lifelineManager = LifelineManager.shared
-    @StateObject private var gamePresenter = GamePresenter()
-    @State private var showShop = false
     @State private var showDailyChallengeDetail = false
     @State private var showSettings = false
     @State private var selectedCategory: QuizCategory? = nil
@@ -29,6 +29,7 @@ struct HomeView: View {
                             .font(.title2)
                             .foregroundColor(.dynamicText)
                     }
+                    .opacity(0) // Hidden but maintains spacing
                     
                     Spacer()
                     
@@ -130,19 +131,19 @@ struct HomeView: View {
             }
         }
         .onAppear {
+            // Sync with presenter's current selection
+            selectedCategory = gamePresenter.selectedCategory
+            
             withAnimation {
                 appearAnimation = true
             }
         }
         .sheet(isPresented: $showSettings) {
             SettingsMenuView(
-                showShop: $showShop,
-                showLeaderboard: { showLeaderboard() },
+                showShop: showShop,
+                showLeaderboard: showLeaderboard,
                 showDailyChallengeDetail: $showDailyChallengeDetail
             )
-        }
-        .sheet(isPresented: $showShop) {
-            ShopView()
         }
         .sheet(isPresented: $showDailyChallengeDetail) {
             DailyChallengeDetailView()
@@ -161,6 +162,7 @@ struct CategoryCardWithImage: View {
     
     var body: some View {
         Button(action: {
+            HapticManager.shared.selection()
             withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
                 isPressed = true
             }
@@ -221,7 +223,7 @@ struct CategoryCardWithImage: View {
                 RoundedRectangle(cornerRadius: 20)
                     .stroke(isSelected ? Color.blue : Color.clear, lineWidth: 3)
             )
-            .scaleEffect(isPressed ? 0.95 : 1.0)
+            .scaleEffect(isPressed ? 0.95 : (isSelected ? 1.05 : 1.0))
         }
     }
     
@@ -252,7 +254,7 @@ struct CategoryCardWithImage: View {
 
 // MARK: - Settings Menu View
 struct SettingsMenuView: View {
-    @Binding var showShop: Bool
+    let showShop: () -> Void
     let showLeaderboard: () -> Void
     @Binding var showDailyChallengeDetail: Bool
     @Environment(\.dismiss) var dismiss
@@ -288,7 +290,7 @@ struct SettingsMenuView: View {
                     VStack(spacing: 15) {
                         SettingsMenuItem(icon: "cart.fill", title: "Shop", color: .orange) {
                             dismiss()
-                            showShop = true
+                            showShop()
                         }
                         
                         SettingsMenuItem(icon: "trophy.fill", title: "Leaderboard", color: .blue) {
@@ -300,6 +302,10 @@ struct SettingsMenuView: View {
                             dismiss()
                             showDailyChallengeDetail = true
                         }
+                     //   Button("Reset Progress (Testing)") {
+                     //       DifficultyUnlockManager.shared.resetAllProgress()
+                       // }
+                         
                     }
                     .padding(.horizontal)
                     
