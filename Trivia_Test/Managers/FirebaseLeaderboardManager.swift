@@ -2,12 +2,19 @@
 //  FirebaseLeaderboardManager.swift
 //  Trivia_Test
 //
+//  Created by Win on 9/10/2568 BE.
+//
+
+
+//
+//  FirebaseLeaderboardManager.swift
+//  Trivia_Test
+//
 //  Created by Win
 //
 
 import Foundation
 import FirebaseDatabase
-import FirebaseDatabaseSwift
 internal import Combine
 
 class FirebaseLeaderboardManager: ObservableObject {
