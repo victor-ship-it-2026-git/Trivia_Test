@@ -13,6 +13,9 @@ struct HomeView: View {
     @State private var selectedCategory: QuizCategory? = nil
     @State private var appearAnimation = false
     @State private var showAdminReports = false  // ADD THIS LINE
+    @State private var showSuggestCategory = false  // ADD THIS
+
+
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
@@ -47,13 +50,7 @@ struct HomeView: View {
                             .font(.title2)
                             .foregroundColor(.dynamicText)
                     }
-                    Button("Test Analytics") {
-                        AnalyticsManager.shared.logCustomEvent(
-                            eventName: "test_button_pressed",
-                            parameters: ["timestamp": Date().timeIntervalSince1970]
-                        )
-                        print("🧪 Test event logged!")
-                    }
+                  
                 }
                 .padding()
                 .opacity(appearAnimation ? 1 : 0)
@@ -160,7 +157,9 @@ struct HomeView: View {
             SettingsMenuView(
                 showShop: showShop,
                 showLeaderboard: showLeaderboard,
-                showDailyChallengeDetail: $showDailyChallengeDetail
+                showDailyChallengeDetail: $showDailyChallengeDetail,
+                showSuggestCategory: $showSuggestCategory  // ADD THIS
+
             )
         }
         .sheet(isPresented: $showDailyChallengeDetail) {
@@ -169,6 +168,9 @@ struct HomeView: View {
         .sheet(isPresented: $showAdminReports) {  // ADD THIS
             AdminReportsView()
         }
+        .sheet(isPresented: $showSuggestCategory) {  // ADD THIS
+                   SuggestCategoryView()
+               }
     }
 }
 
@@ -278,6 +280,8 @@ struct SettingsMenuView: View {
     let showShop: () -> Void
     let showLeaderboard: () -> Void
     @Binding var showDailyChallengeDetail: Bool
+    @Binding var showSuggestCategory: Bool  // ADD THIS
+
     @State private var showAdminReports = false
     @State private var showNotificationSettings = false  // ADD THIS
     @Environment(\.dismiss) var dismiss
@@ -334,6 +338,13 @@ struct SettingsMenuView: View {
                         SettingsMenuItem(icon: "exclamationmark.triangle.fill", title: "View Reports", color: .orange) {
                             showAdminReports = true
                         }
+                        
+                        SettingsMenuItem(icon: "lightbulb.fill", title: "Suggest a Category", color: .yellow) {
+                            dismiss()
+                            showSuggestCategory = true
+                        }
+
+
                     }
                     .padding(.horizontal)
                     
@@ -350,6 +361,9 @@ struct SettingsMenuView: View {
         }
         .sheet(isPresented: $showNotificationSettings) {  // ADD THIS
             NotificationSettingsView()
+        }
+        .sheet(isPresented: $showSuggestCategory) {
+            SuggestCategoryView()
         }
     }
 }
