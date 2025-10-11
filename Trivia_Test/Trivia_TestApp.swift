@@ -3,6 +3,7 @@ import GoogleMobileAds
 import Firebase
 import FirebaseMessaging
 import UserNotifications
+import FirebaseCrashlytics
 import AppTrackingTransparency  // ← ADD THIS
 import AdSupport  // ← ADD THIS
 
@@ -75,6 +76,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         // Existing Firebase config
         FirebaseApp.configure()
+        configureCrashlytics()
         
         // ADD THIS: Track app opened
         AnalyticsManager.shared.logAppOpened()
@@ -83,6 +85,21 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         // ... rest of your code
         return true
     }
+    private func configureCrashlytics() {
+                // Enable Crashlytics collection
+                Crashlytics.crashlytics().setCrashlyticsCollectionEnabled(true)
+                
+                // Set user identifier (optional - helps track crashes per user)
+                let deviceId = UIDevice.current.identifierForVendor?.uuidString ?? "unknown"
+                Crashlytics.crashlytics().setUserID(deviceId)
+                
+                // Log that Crashlytics is configured
+                print("🔥 Firebase Crashlytics configured successfully")
+                
+                // Optional: Test crash (REMOVE THIS IN PRODUCTION!)
+                // Uncomment the line below to test if Crashlytics is working
+                // fatalError("Test Crashlytics - This is a test crash!")
+            }
     
     // ADD THIS: Track when app goes to background
     func applicationDidEnterBackground(_ application: UIApplication) {
