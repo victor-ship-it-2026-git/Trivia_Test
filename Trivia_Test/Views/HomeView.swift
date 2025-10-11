@@ -261,7 +261,8 @@ struct SettingsMenuView: View {
     let showShop: () -> Void
     let showLeaderboard: () -> Void
     @Binding var showDailyChallengeDetail: Bool
-    @State private var showAdminReports = false  // ADD THIS LINE ✅
+    @State private var showAdminReports = false
+    @State private var showNotificationSettings = false  // ADD THIS
     @Environment(\.dismiss) var dismiss
     @Environment(\.colorScheme) var colorScheme
     @StateObject private var coinsManager = CoinsManager.shared
@@ -308,8 +309,12 @@ struct SettingsMenuView: View {
                             showDailyChallengeDetail = true
                         }
                         
+                        // ADD THIS
+                        SettingsMenuItem(icon: "bell.badge.fill", title: "Notifications", color: .red) {
+                            showNotificationSettings = true
+                        }
+                        
                         SettingsMenuItem(icon: "exclamationmark.triangle.fill", title: "View Reports", color: .orange) {
-                           // dismiss()
                             showAdminReports = true
                         }
                     }
@@ -323,8 +328,11 @@ struct SettingsMenuView: View {
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: Button("Done") { dismiss() })
         }
-        .sheet(isPresented: $showAdminReports) {  // ADD THIS ✅
+        .sheet(isPresented: $showAdminReports) {
             AdminReportsView()
+        }
+        .sheet(isPresented: $showNotificationSettings) {  // ADD THIS
+            NotificationSettingsView()
         }
     }
 }

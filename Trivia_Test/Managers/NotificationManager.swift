@@ -8,8 +8,10 @@
 import Foundation
 import Firebase
 import FirebaseMessaging
+import FirebaseAuth  // ← ADD THIS
+import FirebaseDatabase  // ← ADD THIS
 import UserNotifications
-import Combine
+internal import Combine
 
 @MainActor
 class NotificationManager: NSObject, ObservableObject {
@@ -43,7 +45,7 @@ class NotificationManager: NSObject, ObservableObject {
                 
                 if granted {
                     print("✅ Notification permission granted")
-                    await UIApplication.shared.registerForRemoteNotifications()
+                    UIApplication.shared.registerForRemoteNotifications()
                 } else if let error = error {
                     print("❌ Notification permission error: \(error.localizedDescription)")
                 }
@@ -57,7 +59,7 @@ class NotificationManager: NSObject, ObservableObject {
                 self?.notificationPermissionGranted = settings.authorizationStatus == .authorized
                 
                 if settings.authorizationStatus == .authorized {
-                    await UIApplication.shared.registerForRemoteNotifications()
+                    UIApplication.shared.registerForRemoteNotifications()
                 }
             }
         }
@@ -108,12 +110,11 @@ class NotificationManager: NSObject, ObservableObject {
     // MARK: - Send Token to Server (Optional)
     
     func sendTokenToServer(_ token: String) {
-        // TODO: Implement your server API call here
-        // Example: Save token to Firebase Realtime Database
-        guard let userId = Auth.auth().currentUser?.uid else { return }
+        // Option 1: Anonymous save (without Auth)
+        let deviceId = UIDevice.current.identifierForVendor?.uuidString ?? UUID().uuidString
         
         let database = Database.database().reference()
-        database.child("user_tokens").child(userId).setValue([
+        database.child("user_tokens").child(deviceId).setValue([
             "fcm_token": token,
             "platform": "ios",
             "timestamp": Date().timeIntervalSince1970
@@ -124,6 +125,24 @@ class NotificationManager: NSObject, ObservableObject {
                 print("✅ Token saved to server")
             }
         }
+        
+        // Option 2: If you implement Firebase Auth later, use this:
+        /*
+        if let userId = Auth.auth().currentUser?.uid {
+            let database = Database.database().reference()
+            database.child("user_tokens").child(userId).setValue([
+                "fcm_token": token,
+                "platform": "ios",
+                "timestamp": Date().timeIntervalSince1970
+            ]) { error, _ in
+                if let error = error {
+                    print("❌ Error saving token to server: \(error.localizedDescription)")
+                } else {
+                    print("✅ Token saved to server")
+                }
+            }
+        }
+        */
     }
     
     // MARK: - Local Notifications (for testing)
