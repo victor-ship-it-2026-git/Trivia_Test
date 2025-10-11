@@ -99,6 +99,11 @@ class FirebaseLeaderboardManager: ObservableObject {
             if let error = error {
                 DispatchQueue.main.async {
                     self.errorMessage = "Failed to save: \(error.localizedDescription)"
+                    CrashlyticsManager.shared.logError(error, additionalInfo: [
+                                      "player_name": entry.playerName,
+                                      "category": entry.category,
+                                      "difficulty": entry.difficulty
+                                  ])
                     completion(.failure(error))
                 }
             } else {

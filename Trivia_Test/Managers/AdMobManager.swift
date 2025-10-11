@@ -55,6 +55,10 @@ class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
             Task { @MainActor in
                 if let error = error {
                     print("Failed to load rewarded ad: \(error.localizedDescription)")
+                    CrashlyticsManager.shared.logError(error, additionalInfo: [
+                                   "ad_unit_id": self.adUnitID,
+                                   "tracking_status": self.trackingStatus.rawValue
+                               ])
                     self.isAdReady = false
                     return
                 }
@@ -99,6 +103,10 @@ class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
     nonisolated func ad(_ ad: FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
         Task { @MainActor in
             print("❌ Ad failed to present: \(error.localizedDescription)")
+            CrashlyticsManager.shared.logError(error, additionalInfo: [
+                       "event": "ad_failed_to_present"
+                   ])
+                   
             self.isShowingAd = false
             self.isAdReady = false
             self.loadRewardedAd()

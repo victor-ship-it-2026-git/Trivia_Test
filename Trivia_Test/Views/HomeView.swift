@@ -41,6 +41,12 @@ struct HomeView: View {
                         .font(.headline)
                         .foregroundColor(.dynamicText)
                     
+                    Button(action: {
+                        fatalError("Test crash for Crashlytics")
+                    }) {
+                        Text("🔥 Test Crash (DEBUG ONLY)")
+                            .foregroundColor(.red)
+                    }
                     Spacer()
                     
                     Button(action: {
@@ -343,6 +349,7 @@ struct SettingsMenuView: View {
                             dismiss()
                             showSuggestCategory = true
                         }
+                        
 
 
                     }

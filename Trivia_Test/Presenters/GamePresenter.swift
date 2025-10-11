@@ -53,6 +53,10 @@ class GamePresenter: ObservableObject {
         self.totalQuestions = self.questions.count
         self.streak = Streak()
         quizStartTime = Date()
+        CrashlyticsManager.shared.logQuizStarted(
+                category: selectedCategory.rawValue,
+                difficulty: selectedDifficulty.rawValue
+            )
     }
     
     func getFilteredQuestions() -> [Question] {
@@ -127,6 +131,7 @@ class GamePresenter: ObservableObject {
         
         needsToWatchAd = false
         timeExpired = false
+        CrashlyticsManager.shared.log("Correct answer - Streak: \(streak.currentStreak)")
     }
 
     private func processWrongAnswer() {
@@ -179,6 +184,8 @@ class GamePresenter: ObservableObject {
               hiddenOptions.isEmpty else {
             return false
         }
+        CrashlyticsManager.shared.logLifelineUsed("50/50")
+
         
         let correctAnswer = currentQuestion.correctAnswer
         var wrongOptions = [0, 1, 2, 3].filter { $0 != correctAnswer }
