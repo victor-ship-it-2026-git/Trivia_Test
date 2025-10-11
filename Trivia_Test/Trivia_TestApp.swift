@@ -13,6 +13,8 @@ struct Trivia_TestApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @State private var hasRequestedATT = false  // ← ADD THIS
     
+
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

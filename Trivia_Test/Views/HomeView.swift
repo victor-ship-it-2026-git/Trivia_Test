@@ -47,6 +47,13 @@ struct HomeView: View {
                             .font(.title2)
                             .foregroundColor(.dynamicText)
                     }
+                    Button("Test Analytics") {
+                        AnalyticsManager.shared.logCustomEvent(
+                            eventName: "test_button_pressed",
+                            parameters: ["timestamp": Date().timeIntervalSince1970]
+                        )
+                        print("🧪 Test event logged!")
+                    }
                 }
                 .padding()
                 .opacity(appearAnimation ? 1 : 0)
@@ -382,6 +389,8 @@ struct SettingsMenuItem: View {
         }
     }
 }
+
+
 
 
 
