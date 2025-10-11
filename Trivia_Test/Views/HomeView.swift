@@ -12,6 +12,7 @@ struct HomeView: View {
     @State private var showSettings = false
     @State private var selectedCategory: QuizCategory? = nil
     @State private var appearAnimation = false
+    @State private var showAdminReports = false  // ADD THIS LINE
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
@@ -148,6 +149,9 @@ struct HomeView: View {
         .sheet(isPresented: $showDailyChallengeDetail) {
             DailyChallengeDetailView()
         }
+        .sheet(isPresented: $showAdminReports) {  // ADD THIS
+            AdminReportsView()
+        }
     }
 }
 
@@ -257,6 +261,7 @@ struct SettingsMenuView: View {
     let showShop: () -> Void
     let showLeaderboard: () -> Void
     @Binding var showDailyChallengeDetail: Bool
+    @State private var showAdminReports = false  // ADD THIS LINE ✅
     @Environment(\.dismiss) var dismiss
     @Environment(\.colorScheme) var colorScheme
     @StateObject private var coinsManager = CoinsManager.shared
@@ -302,10 +307,11 @@ struct SettingsMenuView: View {
                             dismiss()
                             showDailyChallengeDetail = true
                         }
-                     //   Button("Reset Progress (Testing)") {
-                     //       DifficultyUnlockManager.shared.resetAllProgress()
-                       // }
-                         
+                        
+                        SettingsMenuItem(icon: "exclamationmark.triangle.fill", title: "View Reports", color: .orange) {
+                           // dismiss()
+                            showAdminReports = true
+                        }
                     }
                     .padding(.horizontal)
                     
@@ -317,8 +323,12 @@ struct SettingsMenuView: View {
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: Button("Done") { dismiss() })
         }
+        .sheet(isPresented: $showAdminReports) {  // ADD THIS ✅
+            AdminReportsView()
+        }
     }
 }
+
 
 // MARK: - Settings Menu Item
 struct SettingsMenuItem: View {
@@ -354,3 +364,8 @@ struct SettingsMenuItem: View {
         }
     }
 }
+
+
+
+
+
