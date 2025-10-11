@@ -41,12 +41,12 @@ struct HomeView: View {
                         .font(.headline)
                         .foregroundColor(.dynamicText)
                     
-                    Button(action: {
+                   /* Button(action: {
                         fatalError("Test crash for Crashlytics")
                     }) {
                         Text("🔥 Test Crash (DEBUG ONLY)")
                             .foregroundColor(.red)
-                    }
+                    }*/
                     Spacer()
                     
                     Button(action: {
