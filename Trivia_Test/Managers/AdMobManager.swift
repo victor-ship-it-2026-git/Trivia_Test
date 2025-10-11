@@ -5,6 +5,8 @@
 import GoogleMobileAds
 import SwiftUI
 internal import Combine
+import AppTrackingTransparency  // ← ADD THIS
+import AdSupport  // ← ADD THIS
 
 @MainActor
 class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
@@ -12,20 +14,41 @@ class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
     
     @Published var isAdReady = false
     @Published var isShowingAd = false
+    @Published var trackingStatus: ATTrackingManager.AuthorizationStatus = .notDetermined  // ← ADD THIS
+    
     private var rewardedAd: RewardedAd?
     var onAdDismissed: (() -> Void)?
     var onAdRewarded: (() -> Void)?
     
-    // Test Ad Unit ID - Replace with your real ID in production
-    private let adUnitID = "ca-app-pub-3940256099942544/1712485313"
+    // Replace with your REAL Ad Unit ID before submission
+    private let adUnitID = "ca-app-pub-3940256099942544/1712485313"  // TEST ID
     
     override init() {
         super.init()
+        checkTrackingStatus()  // ← ADD THIS
         loadRewardedAd()
+    }
+    
+    // ← ADD THIS FUNCTION
+    func checkTrackingStatus() {
+        if #available(iOS 14.5, *) {
+            trackingStatus = ATTrackingManager.trackingAuthorizationStatus
+            print("📊 Current ATT Status: \(trackingStatus.description)")
+        }
     }
     
     func loadRewardedAd() {
         let request = Request()
+        
+        // ← ADD THIS: Set request parameters based on tracking status
+        if #available(iOS 14.5, *), trackingStatus == .denied {
+            // User denied tracking - request non-personalized ads
+            let extras = Extras()
+            extras.additionalParameters = ["npa": "1"]
+            request.register(extras)
+            print("📢 Requesting non-personalized ads")
+        }
+        
         RewardedAd.load(with: adUnitID, request: request) { [weak self] ad, error in
             guard let self = self else { return }
             
@@ -79,6 +102,19 @@ class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
             self.isShowingAd = false
             self.isAdReady = false
             self.loadRewardedAd()
+        }
+    }
+}
+
+@available(iOS 14.5, *)
+extension ATTrackingManager.AuthorizationStatus {
+    var description: String {
+        switch self {
+        case .notDetermined: return "Not Determined"
+        case .restricted: return "Restricted"
+        case .denied: return "Denied"
+        case .authorized: return "Authorized"
+        @unknown default: return "Unknown"
         }
     }
 }
