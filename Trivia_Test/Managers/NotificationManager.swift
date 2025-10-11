@@ -42,7 +42,8 @@ class NotificationManager: NSObject, ObservableObject {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { [weak self] granted, error in
             Task { @MainActor in
                 self?.notificationPermissionGranted = granted
-                
+                AnalyticsManager.shared.logNotificationPermissionResponse(granted: granted)
+
                 if granted {
                     print("✅ Notification permission granted")
                     UIApplication.shared.registerForRemoteNotifications()

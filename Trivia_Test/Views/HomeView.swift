@@ -80,8 +80,14 @@ struct HomeView: View {
                                     imageName: item.1,
                                     isSelected: selectedCategory == item.2,
                                     action: {
+                                        // ADD THIS
+                                        AnalyticsManager.shared.logCategoryClicked(category: item.2)
+                                        
                                         selectedCategory = item.2
                                         gamePresenter.selectedCategory = item.2
+                                        
+                                        // ADD THIS
+                                        AnalyticsManager.shared.logCategorySelected(category: item.2)
                                     }
                                 )
                                 .opacity(appearAnimation ? 1 : 0)
@@ -94,6 +100,9 @@ struct HomeView: View {
                         // Next Button
                         Button(action: {
                             if selectedCategory != nil {
+                                // ADD THIS
+                                AnalyticsManager.shared.logScreenView(screenName: "DifficultySelection")
+                                
                                 withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
                                     appearAnimation = false
                                 }
@@ -132,9 +141,10 @@ struct HomeView: View {
             }
         }
         .onAppear {
-            // Sync with presenter's current selection
-            selectedCategory = gamePresenter.selectedCategory
+            // ADD THIS
+            AnalyticsManager.shared.logScreenView(screenName: "Home")
             
+            selectedCategory = gamePresenter.selectedCategory
             withAnimation {
                 appearAnimation = true
             }

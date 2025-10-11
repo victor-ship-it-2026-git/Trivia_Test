@@ -217,7 +217,16 @@ struct ResultsView: View {
             }
         }
         .onAppear {
+            AnalyticsManager.shared.logScreenView(screenName: "Results")
+                AnalyticsManager.shared.logResultsScreenViewed(
+                    category: presenter.selectedCategory,
+                    difficulty: presenter.selectedDifficulty,
+                    score: presenter.score,
+                    totalQuestions: presenter.totalQuestions,
+                    percentage: percentage
+                )
             checkAndUnlockNextDifficulty()
+            
         }
         .sheet(isPresented: $showNameInput) {
             NameInputView(
@@ -242,8 +251,15 @@ struct ResultsView: View {
     // MARK: - Share Achievement
     
     func shareAchievement() {
-        isGeneratingShare = true
-        HapticManager.shared.success()
+        AnalyticsManager.shared.logShareInitiated(
+                shareType: "results",
+                category: presenter.selectedCategory,
+                difficulty: presenter.selectedDifficulty,
+                score: presenter.score
+            )
+            
+            isGeneratingShare = true
+            HapticManager.shared.success()
         
         // Use player name or default
         let name = playerName.isEmpty ? "Player" : playerName
@@ -259,12 +275,14 @@ struct ResultsView: View {
         
         // Generate image on main thread
         Task { @MainActor in
+            
             if let image = ShareManager.shared.generateShareImage(from: AnyView(shareCard)) {
                 let shareText = ShareManager.shared.generateShareText(
                     score: presenter.score,
                     total: presenter.totalQuestions,
                     category: presenter.selectedCategory.rawValue,
                     difficulty: presenter.selectedDifficulty.rawValue
+                    
                 )
                 
                 isGeneratingShare = false
@@ -274,7 +292,8 @@ struct ResultsView: View {
                       let rootVC = windowScene.windows.first?.rootViewController else {
                     return
                 }
-                
+                AnalyticsManager.shared.logShareCompleted(shareType: "results")
+
                 ShareManager.shared.shareToSocialMedia(
                     image: image,
                     text: shareText,
@@ -306,10 +325,19 @@ struct ResultsView: View {
                 
                 switch result {
                 case .success:
+                    AnalyticsManager.shared.logScoreSavedToLeaderboard(
+                                    playerName: playerName,
+                                    category: presenter.selectedCategory,
+                                    difficulty: presenter.selectedDifficulty,
+                                    score: presenter.score,
+                                    totalQuestions: presenter.totalQuestions,
+                                    percentage: percentage
+                                )
                     savedToLeaderboard = true
                     withAnimation(.spring(response: 0.5, dampingFraction: 0.7)) {
                         showSaveSuccess = true
                     }
+                    
                     
                     // Hide success message after 3 seconds
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
@@ -339,7 +367,13 @@ struct ResultsView: View {
             // Check if not already unlocked
             if !unlockManager.isDifficultyUnlocked(category: presenter.selectedCategory, difficulty: nextDifficulty) {
                 unlockManager.unlockNextDifficulty(category: presenter.selectedCategory, completedDifficulty: presenter.selectedDifficulty)
-                unlockedDifficulty = nextDifficulty
+                AnalyticsManager.shared.logDifficultyUnlocked(
+                       difficulty: nextDifficulty,
+                       category: presenter.selectedCategory,
+                       previousScore: percentage
+                   )
+                   
+                   unlockedDifficulty = nextDifficulty
                 
                 // Show unlock animation after a delay
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {

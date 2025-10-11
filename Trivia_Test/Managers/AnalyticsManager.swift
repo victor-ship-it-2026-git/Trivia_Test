@@ -2,6 +2,14 @@
 //  AnalyticsManager.swift
 //  Trivia_Test
 //
+//  Created by Win on 11/10/2568 BE.
+//
+
+
+//
+//  AnalyticsManager.swift
+//  Trivia_Test
+//
 //  Created by Win
 //
 
@@ -418,14 +426,14 @@ class AnalyticsManager {
     }
     
     func setFavoriteCategory(_ category: QuizCategory) {
-        setUserProperty(category.rawValue, forName: "favorite_category")
+        setUserProperty(value: category.rawValue, forName: "favorite_category")
     }
     
     func setHighestDifficultyCompleted(_ difficulty: Difficulty) {
-        setUserProperty(difficulty.rawValue, forName: "highest_difficulty")
+        setUserProperty(value: difficulty.rawValue, forName: "highest_difficulty")
     }
     
     func setTotalQuizzesCompleted(_ count: Int) {
-        setUserProperty(String(count), forName: "total_quizzes_completed")
+        setUserProperty(value: String(count), forName: "total_quizzes_completed")
     }
 }

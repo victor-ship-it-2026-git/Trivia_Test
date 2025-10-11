@@ -46,144 +46,147 @@ struct DailyChallengeDetailView: View {
                         
                         // Current Challenge
                         if let challenge = challengeManager.currentChallenge {
-                            VStack(spacing: 20) {
-                                // Challenge Card
-                                VStack(alignment: .leading, spacing: 15) {
-                                    HStack {
-                                        Image(systemName: challenge.challengeType.icon)
-                                            .font(.title)
-                                            .foregroundColor(.orange)
-                                        
-                                        VStack(alignment: .leading, spacing: 4) {
-                                            Text(challenge.challengeType.rawValue)
-                                                .font(.title2)
-                                                .fontWeight(.bold)
-                                                .foregroundColor(.dynamicText)
+
+                                
+                                VStack(spacing: 20) {
+                                    // Challenge Card
+                                    VStack(alignment: .leading, spacing: 15) {
+                                        HStack {
+                                            Image(systemName: challenge.challengeType.icon)
+                                                .font(.title)
+                                                .foregroundColor(.orange)
                                             
-                                            Text(challenge.challengeType.description)
-                                                .font(.subheadline)
+                                            VStack(alignment: .leading, spacing: 4) {
+                                                Text(challenge.challengeType.rawValue)
+                                                    .font(.title2)
+                                                    .fontWeight(.bold)
+                                                    .foregroundColor(.dynamicText)
+                                                
+                                                Text(challenge.challengeType.description)
+                                                    .font(.subheadline)
+                                                    .foregroundColor(.dynamicSecondaryText)
+                                            }
+                                            
+                                            Spacer()
+                                        }
+                                        
+                                        // Progress
+                                        VStack(alignment: .leading, spacing: 8) {
+                                            HStack {
+                                                Text("Progress")
+                                                    .font(.headline)
+                                                    .foregroundColor(.dynamicText)
+                                                
+                                                Spacer()
+                                                
+                                                Text("\(challenge.currentProgress)/\(challenge.targetValue)")
+                                                    .font(.headline)
+                                                    .foregroundColor(.blue)
+                                            }
+                                            
+                                            GeometryReader { geometry in
+                                                ZStack(alignment: .leading) {
+                                                    RoundedRectangle(cornerRadius: 6)
+                                                        .fill(Color.gray.opacity(0.2))
+                                                        .frame(height: 12)
+                                                    
+                                                    RoundedRectangle(cornerRadius: 6)
+                                                        .fill(
+                                                            LinearGradient(
+                                                                gradient: Gradient(colors: [.blue, .cyan]),
+                                                                startPoint: .leading,
+                                                                endPoint: .trailing
+                                                            )
+                                                        )
+                                                        .frame(width: geometry.size.width * challenge.progressPercentage, height: 12)
+                                                        .animation(.easeInOut, value: challenge.progressPercentage)
+                                                }
+                                            }
+                                            .frame(height: 12)
+                                            
+                                            Text("\(Int(challenge.progressPercentage * 100))% Complete")
+                                                .font(.caption)
                                                 .foregroundColor(.dynamicSecondaryText)
                                         }
                                         
-                                        Spacer()
-                                    }
-                                    
-                                    // Progress
-                                    VStack(alignment: .leading, spacing: 8) {
-                                        HStack {
-                                            Text("Progress")
-                                                .font(.headline)
-                                                .foregroundColor(.dynamicText)
-                                            
-                                            Spacer()
-                                            
-                                            Text("\(challenge.currentProgress)/\(challenge.targetValue)")
-                                                .font(.headline)
-                                                .foregroundColor(.blue)
-                                        }
-                                        
-                                        GeometryReader { geometry in
-                                            ZStack(alignment: .leading) {
-                                                RoundedRectangle(cornerRadius: 6)
-                                                    .fill(Color.gray.opacity(0.2))
-                                                    .frame(height: 12)
-                                                
-                                                RoundedRectangle(cornerRadius: 6)
-                                                    .fill(
-                                                        LinearGradient(
-                                                            gradient: Gradient(colors: [.blue, .cyan]),
-                                                            startPoint: .leading,
-                                                            endPoint: .trailing
-                                                        )
-                                                    )
-                                                    .frame(width: geometry.size.width * challenge.progressPercentage, height: 12)
-                                                    .animation(.easeInOut, value: challenge.progressPercentage)
+                                        // Completion Status
+                                        if challenge.isCompleted {
+                                            HStack {
+                                                Image(systemName: "checkmark.circle.fill")
+                                                    .foregroundColor(.green)
+                                                Text("Challenge Completed!")
+                                                    .fontWeight(.semibold)
+                                                    .foregroundColor(.green)
                                             }
+                                            .font(.headline)
                                         }
-                                        .frame(height: 12)
+                                    }
+                                    .padding()
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .fill(Color.dynamicCardBackground)
+                                            .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1), radius: 8)
+                                    )
+                                    .padding(.horizontal)
+                                    
+                                    // Rewards Section
+                                    VStack(alignment: .leading, spacing: 15) {
+                                        Text("🎁 Rewards")
+                                            .font(.title2)
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.dynamicText)
                                         
-                                        Text("\(Int(challenge.progressPercentage * 100))% Complete")
-                                            .font(.caption)
-                                            .foregroundColor(.dynamicSecondaryText)
-                                    }
-                                    
-                                    // Completion Status
-                                    if challenge.isCompleted {
-                                        HStack {
-                                            Image(systemName: "checkmark.circle.fill")
-                                                .foregroundColor(.green)
-                                            Text("Challenge Completed!")
-                                                .fontWeight(.semibold)
-                                                .foregroundColor(.green)
-                                        }
-                                        .font(.headline)
-                                    }
-                                }
-                                .padding()
-                                .background(
-                                    RoundedRectangle(cornerRadius: 20)
-                                        .fill(Color.dynamicCardBackground)
-                                        .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1), radius: 8)
-                                )
-                                .padding(.horizontal)
-                                
-                                // Rewards Section
-                                VStack(alignment: .leading, spacing: 15) {
-                                    Text("🎁 Rewards")
-                                        .font(.title2)
-                                        .fontWeight(.bold)
-                                        .foregroundColor(.dynamicText)
-                                    
-                                    VStack(spacing: 12) {
-                                        // Lifeline Rewards
-                                        ForEach(Array(challenge.reward.lifelines.keys), id: \.self) { type in
-                                            if let quantity = challenge.reward.lifelines[type] {
+                                        VStack(spacing: 12) {
+                                            // Lifeline Rewards
+                                            ForEach(Array(challenge.reward.lifelines.keys), id: \.self) { type in
+                                                if let quantity = challenge.reward.lifelines[type] {
+                                                    RewardRow(
+                                                        icon: type.icon,
+                                                        title: type.rawValue,
+                                                        quantity: quantity,
+                                                        color: getLifelineColor(type)
+                                                    )
+                                                }
+                                            }
+                                            
+                                            // Coins Reward
+                                            if challenge.reward.coins > 0 {
                                                 RewardRow(
-                                                    icon: type.icon,
-                                                    title: type.rawValue,
-                                                    quantity: quantity,
-                                                    color: getLifelineColor(type)
+                                                    icon: "dollarsign.circle.fill",
+                                                    title: "Coins",
+                                                    quantity: challenge.reward.coins,
+                                                    color: .yellow
                                                 )
                                             }
                                         }
-                                        
-                                        // Coins Reward
-                                        if challenge.reward.coins > 0 {
-                                            RewardRow(
-                                                icon: "dollarsign.circle.fill",
-                                                title: "Coins",
-                                                quantity: challenge.reward.coins,
-                                                color: .yellow
-                                            )
-                                        }
                                     }
-                                }
-                                .padding()
-                                .background(
-                                    RoundedRectangle(cornerRadius: 20)
-                                        .fill(Color.dynamicCardBackground)
-                                        .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1), radius: 8)
-                                )
-                                .padding(.horizontal)
-                                
-                                // Instructions
-                                VStack(alignment: .leading, spacing: 12) {
-                                    Text("💡 How to Complete")
-                                        .font(.headline)
-                                        .foregroundColor(.dynamicText)
+                                    .padding()
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .fill(Color.dynamicCardBackground)
+                                            .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1), radius: 8)
+                                    )
+                                    .padding(.horizontal)
                                     
-                                    Text(getChallengeInstructions(challenge.challengeType))
-                                        .font(.body)
-                                        .foregroundColor(.dynamicSecondaryText)
+                                    // Instructions
+                                    VStack(alignment: .leading, spacing: 12) {
+                                        Text("💡 How to Complete")
+                                            .font(.headline)
+                                            .foregroundColor(.dynamicText)
+                                        
+                                        Text(getChallengeInstructions(challenge.challengeType))
+                                            .font(.body)
+                                            .foregroundColor(.dynamicSecondaryText)
+                                    }
+                                    .padding()
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 16)
+                                            .fill(Color.blue.opacity(colorScheme == .dark ? 0.2 : 0.1))
+                                    )
+                                    .padding(.horizontal)
                                 }
-                                .padding()
-                                .background(
-                                    RoundedRectangle(cornerRadius: 16)
-                                        .fill(Color.blue.opacity(colorScheme == .dark ? 0.2 : 0.1))
-                                )
-                                .padding(.horizontal)
-                            }
                         }
+                    }
                         
                         Spacer(minLength: 50)
                     }
@@ -214,7 +217,8 @@ struct DailyChallengeDetailView: View {
             return "Answer questions within 10 seconds each. Quick thinking earns you progress toward the challenge!"
         }
     }
-}
+
+
 
 struct RewardRow: View {
     let icon: String

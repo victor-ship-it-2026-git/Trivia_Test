@@ -26,6 +26,9 @@ class GamePresenter: ObservableObject {
     private let challengeManager = DailyChallengeManager.shared
     private let coinsManager = CoinsManager.shared
     
+    private var quizStartTime: Date?
+
+    
     var currentQuestion: Question {
         questions[currentQuestionIndex]
     }
@@ -49,6 +52,7 @@ class GamePresenter: ObservableObject {
         self.questions = filteredQuestions.shuffled()
         self.totalQuestions = self.questions.count
         self.streak = Streak()
+        quizStartTime = Date()
     }
     
     func getFilteredQuestions() -> [Question] {
@@ -72,6 +76,8 @@ class GamePresenter: ObservableObject {
         hiddenOptions = []
         bonusPoints = 0
         coinsEarned = 0
+        quizStartTime = Date()
+
     }
     
     func selectAnswer(_ index: Int) {
@@ -149,9 +155,22 @@ class GamePresenter: ObservableObject {
         bonusPoints = 0
         
         if currentQuestionIndex == questions.count {
-            challengeManager.updateProgress(for: .completeQuizzes)
-            // Award total coins earned
-            coinsManager.addCoins(coinsEarned)
+            if let startTime = quizStartTime {
+                       let timeSpent = Date().timeIntervalSince(startTime)
+                       let percentage = totalQuestions > 0 ? (score * 100) / totalQuestions : 0
+                       
+                       AnalyticsManager.shared.logQuizCompleted(
+                           category: selectedCategory,
+                           difficulty: selectedDifficulty,
+                           score: score,
+                           totalQuestions: totalQuestions,
+                           percentage: percentage,
+                           timeSpent: timeSpent
+                       )
+                   }
+                   
+                   challengeManager.updateProgress(for: .completeQuizzes)
+                   coinsManager.addCoins(coinsEarned)
         }
     }
     
