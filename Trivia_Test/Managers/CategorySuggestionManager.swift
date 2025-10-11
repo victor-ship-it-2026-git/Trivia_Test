@@ -2,12 +2,20 @@
 //  CategorySuggestionManager.swift
 //  Trivia_Test
 //
+//  Created by Win on 11/10/2568 BE.
+//
+
+
+//
+//  CategorySuggestionManager.swift
+//  Trivia_Test
+//
 //  Created by Win
 //
 
 import Foundation
 import FirebaseDatabase
-import Combine
+internal import Combine
 
 @MainActor
 class CategorySuggestionManager: ObservableObject {
