@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D6880EE2E9A726A00EB7DF4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6880ED2E9A726A00EB7DF4 /* FirebaseAnalytics */; };
+		7D6880F02E9A726A00EB7DF4 /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6880EF2E9A726A00EB7DF4 /* FirebaseAnalyticsCore */; };
+		7D6880F22E9A726A00EB7DF4 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6880F12E9A726A00EB7DF4 /* FirebaseCrashlytics */; };
+		7D6880F42E9A726A00EB7DF4 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6880F32E9A726A00EB7DF4 /* FirebaseMessaging */; };
 		7D9F15C82E8C4A26007BDA83 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 7D9F15C72E8C4A26007BDA83 /* GoogleMobileAds */; };
 		7DBA77AF2E9820030034D6E8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7DBA77AE2E9820030034D6E8 /* FirebaseAuth */; };
 		7DBA77B12E9820030034D6E8 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7DBA77B02E9820030034D6E8 /* FirebaseDatabase */; };
@@ -31,9 +35,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6880F42E9A726A00EB7DF4 /* FirebaseMessaging in Frameworks */,
 				7DE5FC962E9645A00016A365 /* StoreKit.framework in Frameworks */,
+				7D6880F02E9A726A00EB7DF4 /* FirebaseAnalyticsCore in Frameworks */,
 				7DBA77AF2E9820030034D6E8 /* FirebaseAuth in Frameworks */,
+				7D6880F22E9A726A00EB7DF4 /* FirebaseCrashlytics in Frameworks */,
 				7DBA77B12E9820030034D6E8 /* FirebaseDatabase in Frameworks */,
+				7D6880EE2E9A726A00EB7DF4 /* FirebaseAnalytics in Frameworks */,
 				7D9F15C82E8C4A26007BDA83 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +97,10 @@
 				7D9F15C72E8C4A26007BDA83 /* GoogleMobileAds */,
 				7DBA77AE2E9820030034D6E8 /* FirebaseAuth */,
 				7DBA77B02E9820030034D6E8 /* FirebaseDatabase */,
+				7D6880ED2E9A726A00EB7DF4 /* FirebaseAnalytics */,
+				7D6880EF2E9A726A00EB7DF4 /* FirebaseAnalyticsCore */,
+				7D6880F12E9A726A00EB7DF4 /* FirebaseCrashlytics */,
+				7D6880F32E9A726A00EB7DF4 /* FirebaseMessaging */,
 			);
 			productName = Trivia_Test;
 			productReference = 7DDC9ACD2E8BC9A00078B359 /* Trivia_Test.app */;
@@ -383,6 +395,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7D6880ED2E9A726A00EB7DF4 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DBA77AD2E9820030034D6E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		7D6880EF2E9A726A00EB7DF4 /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DBA77AD2E9820030034D6E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		7D6880F12E9A726A00EB7DF4 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DBA77AD2E9820030034D6E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		7D6880F32E9A726A00EB7DF4 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DBA77AD2E9820030034D6E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
 		7D9F15C72E8C4A26007BDA83 /* GoogleMobileAds */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7D9F15C62E8C4A26007BDA83 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
