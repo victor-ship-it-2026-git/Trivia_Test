@@ -43,6 +43,7 @@ struct RatingPopupView: View {
             .opacity(animateStars ? 1.0 : 0)
         }
         .onAppear {
+            AnalyticsManager.shared.logRatingPopupShown(difficulty: .rookie)
             withAnimation(.spring(response: 0.5, dampingFraction: 0.7)) {
                 animateStars = true
             }
@@ -102,6 +103,7 @@ struct RatingPopupView: View {
             
             // Not Now Button
             Button(action: {
+                AnalyticsManager.shared.logRatingDismissed()
                 withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
                     isPresented = false
                 }
@@ -192,7 +194,8 @@ struct RatingPopupView: View {
     // MARK: - Handle Star Selection
     private func handleStarSelection(_ stars: Int) {
         if stars == 5 {
-            // Show native iOS rating popup
+            AnalyticsManager.shared.logRatingGiven(stars: 5, showedAppStoreReview: true)
+            
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                 RatingManager.shared.requestAppStoreReview()
                 withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
@@ -201,6 +204,7 @@ struct RatingPopupView: View {
             }
         } else if stars >= 1 && stars <= 4 {
             // Show thank you message
+            AnalyticsManager.shared.logRatingGiven(stars: stars, showedAppStoreReview: false)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 withAnimation(.spring(response: 0.5, dampingFraction: 0.7)) {
                     showThankYouMessage = true

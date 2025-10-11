@@ -14,6 +14,7 @@ struct GameView: View {
     @State private var rotationEffect: Double = 0
     @State private var confettiTrigger = false
     @State private var showReportSheet = false  // NEW: Report sheet state
+    @State private var questionStartTime: Date = Date()
     
     var body: some View {
         GeometryReader { geometry in
@@ -119,7 +120,10 @@ struct GameView: View {
             }
         }
         .onAppear {
+            AnalyticsManager.shared.logScreenView(screenName: "Game")
+
             withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {
+                
                 showQuestion = true
             }
             startTimer()
@@ -136,6 +140,12 @@ struct GameView: View {
     private var headerSection: some View {
         HStack(spacing: 12) {
             Button(action: {
+                AnalyticsManager.shared.logQuizAbandoned(
+                    category: presenter.selectedCategory,
+                    difficulty: presenter.selectedDifficulty,
+                    questionNumber: presenter.currentQuestionIndex + 1,
+                    totalQuestions: presenter.totalQuestions
+                )
                 withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
                     stopTimer()
                     goHome()
@@ -319,6 +329,15 @@ struct GameView: View {
                             isDisabled: presenter.showingAnswer || presenter.needsToWatchAd,
                             action: {
                                 withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
+                                    let timeSpent = Date().timeIntervalSince(questionStartTime)
+                                    AnalyticsManager.shared.logQuestionAnswered(
+                                        isCorrect: index == presenter.currentQuestion.correctAnswer,
+                                        questionNumber: presenter.currentQuestionIndex + 1,
+                                        category: presenter.selectedCategory,
+                                        difficulty: presenter.selectedDifficulty,
+                                        timeSpent: timeSpent
+                                    )
+
                                     presenter.selectAnswer(index)
                                     if index == presenter.currentQuestion.correctAnswer {
                                         confettiTrigger = true
@@ -483,6 +502,13 @@ struct GameView: View {
     
     // MARK: - Lifeline Handlers
     private func handleLifelineUse(_ type: LifelineType) {
+        AnalyticsManager.shared.logLifelineUsed(
+                lifelineType: type,
+                questionNumber: presenter.currentQuestionIndex + 1,
+                category: presenter.selectedCategory,
+                difficulty: presenter.selectedDifficulty
+            )
+            
         switch type {
         case .fiftyFifty:
             withAnimation(.spring(response: 0.4, dampingFraction: 0.6)) {
@@ -515,6 +541,7 @@ struct GameView: View {
     private func startTimer() {
         stopTimer()
         timeRemaining = 30
+        questionStartTime = Date()
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
             if !presenter.showingAnswer && !presenter.needsToWatchAd {
                 if timeRemaining > 0 {
@@ -592,6 +619,7 @@ struct EnhancedBonusPointsAnimation: View {
         .offset(y: offset)
         .opacity(opacity)
         .onAppear {
+            
             withAnimation(.spring(response: 0.6, dampingFraction: 0.6)) {
                 scale = 1.2
             }

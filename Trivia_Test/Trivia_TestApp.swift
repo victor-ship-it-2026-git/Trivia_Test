@@ -6,24 +6,7 @@ import UserNotifications
 import AppTrackingTransparency  // ← ADD THIS
 import AdSupport  // ← ADD THIS
 
-class AppDelegate: NSObject, UIApplicationDelegate {
-    func application(_ application: UIApplication,
-                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        // Configure Firebase
-        FirebaseApp.configure()
-        
-        // Setup notifications
-        Task { @MainActor in
-            NotificationManager.shared.setup()
-        }
-        
-        // ⚠️ DON'T START ADMOB HERE - Wait for ATT permission
-        
-        return true
-    }
-    
-    // ... rest of your code
-}
+
 
 @main
 struct Trivia_TestApp: App {
@@ -44,8 +27,6 @@ struct Trivia_TestApp: App {
                 }
         }
     }
-    
-    // ← ADD THIS FUNCTION
     private func requestTrackingPermission() {
         if #available(iOS 14.5, *) {
             ATTrackingManager.requestTrackingAuthorization { status in
@@ -84,6 +65,40 @@ struct Trivia_TestApp: App {
         }
     }
     
+    
+class AppDelegate: NSObject, UIApplicationDelegate {
+    private var appOpenedTime: Date?
+    
+    func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        // Existing Firebase config
+        FirebaseApp.configure()
+        
+        // ADD THIS: Track app opened
+        AnalyticsManager.shared.logAppOpened()
+        appOpenedTime = Date()
+        
+        // ... rest of your code
+        return true
+    }
+    
+    // ADD THIS: Track when app goes to background
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        if let startTime = appOpenedTime {
+            let sessionDuration = Date().timeIntervalSince(startTime)
+            AnalyticsManager.shared.logAppBackgrounded(sessionDuration: sessionDuration)
+        }
+    }
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        appOpenedTime = Date()
+        AnalyticsManager.shared.logAppOpened()
+    }
+}
+
+    // ← ADD THIS FUNCTION
+   
+    
     // ← ADD THIS FUNCTION
     private func initializeAdMob() {
         MobileAds.shared.start { status in
@@ -91,3 +106,5 @@ struct Trivia_TestApp: App {
         }
     }
 }
+
+

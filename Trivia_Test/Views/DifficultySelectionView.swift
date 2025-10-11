@@ -95,6 +95,12 @@ struct DifficultySelectionView: View {
                                             withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
                                                 presenter.selectedDifficulty = difficulty
                                             }
+                                            
+                                            // ADD THIS
+                                            AnalyticsManager.shared.logDifficultySelected(
+                                                difficulty: difficulty,
+                                                category: presenter.selectedCategory
+                                            )
                                         } else {
                                             showLockedMessage(for: difficulty)
                                         }
@@ -125,6 +131,13 @@ struct DifficultySelectionView: View {
                             
                             // Start Button
                             Button(action: {
+                                // ADD THIS
+                                AnalyticsManager.shared.logQuizStarted(
+                                    category: presenter.selectedCategory,
+                                    difficulty: presenter.selectedDifficulty,
+                                    totalQuestions: presenter.getFilteredQuestions().count
+                                )
+                                
                                 withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
                                     appearAnimation = false
                                 }
@@ -170,7 +183,11 @@ struct DifficultySelectionView: View {
                 }
             }
         }
+        
+
         .onAppear {
+            AnalyticsManager.shared.logScreenView(screenName: "DifficultySelection")
+
             // Auto-select highest unlocked difficulty
             let highestUnlocked = unlockManager.getHighestUnlockedDifficulty(category: presenter.selectedCategory)
             if !unlockManager.isDifficultyAvailable(category: presenter.selectedCategory, difficulty: presenter.selectedDifficulty) {

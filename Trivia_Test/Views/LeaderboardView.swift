@@ -141,6 +141,10 @@ struct LeaderboardView: View {
             }
         }
         .onAppear {
+            AnalyticsManager.shared.logScreenView(screenName: "Leaderboard")
+              AnalyticsManager.shared.logLeaderboardViewed(filter: selectedFilter.rawValue)
+              
+        
             applyFilter()
         }
         .onChange(of: firebaseManager.leaderboard) { oldValue, newValue in
@@ -150,6 +154,8 @@ struct LeaderboardView: View {
             withAnimation {
                 applyFilter()
             }
+            AnalyticsManager.shared.logLeaderboardViewed(filter: newValue.rawValue)
+
         }
         .sheet(isPresented: $showFilterMenu) {
             FilterMenuView(selectedFilter: $selectedFilter)
@@ -187,8 +193,19 @@ struct LeaderboardView: View {
     // MARK: - Share Leaderboard Entry
     
     func shareLeaderboardEntry(entry: LeaderboardEntry, rank: Int) {
+        
+        AnalyticsManager.shared.logShareInitiated(
+               shareType: "leaderboard",
+               category: QuizCategory(rawValue: entry.category),
+               difficulty: Difficulty(rawValue: entry.difficulty),
+               score: entry.score
+           )
+           AnalyticsManager.shared.logLeaderboardEntryShared(rank: rank)
+        
         isGeneratingShare = true
         HapticManager.shared.success()
+        
+        
         
         // Generate share card
         let shareCard = LeaderboardShareCard(
@@ -203,6 +220,8 @@ struct LeaderboardView: View {
         // Generate image on main thread
         Task { @MainActor in
             if let image = ShareManager.shared.generateShareImage(from: AnyView(shareCard)) {
+                AnalyticsManager.shared.logShareCompleted(shareType: "leaderboard")
+
                 let shareText = ShareManager.shared.generateLeaderboardShareText(
                     playerName: entry.playerName,
                     rank: rank,

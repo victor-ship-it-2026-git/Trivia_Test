@@ -189,7 +189,11 @@ struct ReportQuestionView: View {
     
     private func submitReport() {
         HapticManager.shared.light()
-        
+        AnalyticsManager.shared.logQuestionReported(
+            reason: selectedReason.rawValue,
+            category: question.category,
+            difficulty: question.difficulty
+        )
         reportManager.submitReport(
             question: question,
             reason: selectedReason,

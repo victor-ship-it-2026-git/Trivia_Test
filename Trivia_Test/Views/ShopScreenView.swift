@@ -85,6 +85,8 @@ struct ShopScreenView: View {
             }
         }
         .onAppear {
+            AnalyticsManager.shared.logScreenView(screenName: "Shop")
+               AnalyticsManager.shared.logShopViewed()
             withAnimation {
                 appearAnimation = true
             }
@@ -247,6 +249,11 @@ struct ShopScreenView: View {
     
     private func purchaseItem(_ item: ShopItem) {
         if shopManager.purchaseItem(item) {
+            AnalyticsManager.shared.logLifelinePurchased(
+                       lifelineType: item.lifelineType,
+                       quantity: item.quantity,
+                       cost: item.price
+                   )
             withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
                 purchaseSuccess = true
             }
@@ -277,7 +284,9 @@ struct ShopScreenView: View {
                 Task { @MainActor in
                     if let reward = self.pendingAdReward {
                         // Grant the reward
+                        AnalyticsManager.shared.logAdWatchedForReward(rewardType: reward.lifelineType)
                         LifelineManager.shared.addLifeline(type: reward.lifelineType, quantity: reward.quantity)
+                        
                         
                         // Show success message
                         self.adRewardMessage = "You received \(reward.quantity)x \(reward.lifelineType.rawValue)!"

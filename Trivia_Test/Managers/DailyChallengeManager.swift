@@ -69,6 +69,9 @@ class DailyChallengeManager: ObservableObject {
         
         if challenge.currentProgress >= challenge.targetValue {
             challenge.isCompleted = true
+            
+        
+             
             awardReward(challenge.reward)
         }
         
