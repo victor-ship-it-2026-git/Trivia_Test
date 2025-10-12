@@ -13,61 +13,107 @@ struct GameView: View {
     @State private var pulseEffect = false
     @State private var rotationEffect: Double = 0
     @State private var confettiTrigger = false
-    @State private var showReportSheet = false  // NEW: Report sheet state
+    @State private var showReportSheet = false
     @State private var questionStartTime: Date = Date()
     
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                // Animated Background
-                AnimatedBackgroundView(colorScheme: colorScheme)
+                // Clean Background
+                Color(red: 0.97, green: 0.97, blue: 0.96)
                     .ignoresSafeArea()
                 
                 VStack(spacing: 0) {
-                    // Header with Streak - Fixed Height
+                    // Header Section
                     headerSection
-                        .frame(height: 80)
-                        .zIndex(3)
+                        .padding(.horizontal, 16)
+                        .padding(.top, 8)
+                        .padding(.bottom, 12)
                     
-                    // Lifeline Panel - Fixed Height
-                    LifelinePanel(presenter: presenter, onUseLifeline: handleLifelineUse)
-                        .padding(.horizontal)
-                        .padding(.vertical, 8)
-                        .frame(height: 80)
-                        .zIndex(2)
-                    
-                    // Progress Info - Fixed Height
+                    // Progress Section
                     progressSection
-                        .frame(height: 35)
-                        .padding(.horizontal)
+                        .padding(.horizontal, 16)
+                        .padding(.bottom, 8)
                     
-                    // Timer Progress Bar - Fixed Height
-                    timerProgressBar
-                        .frame(height: 16)
-                        .padding(.horizontal)
-                        .padding(.vertical, 8)
+                    // Circular Timer
+                    circularTimer
+                        .frame(width: 110, height: 110)
+                        .padding(.vertical, 12)
                     
-                    // Question Card - Takes remaining space
-                    questionCard
-                        .frame(height: geometry.size.height * 0.45)
-                        .padding(.horizontal)
-                        .padding(.vertical, 10)
+                    // Category Badge
+                    categoryBadge
+                        .padding(.bottom, 16)
                     
-                    Spacer(minLength: 0)
+                    // Question Text
+                    questionText
+                        .padding(.horizontal, 24)
+                        .padding(.bottom, 16)
+                        .frame(height: 80)
                     
-                    // Bottom Action Area - Fixed Height
-                    bottomActionArea
-                        .frame(height: 120)
-                        .frame(maxWidth: .infinity)
+                    // Options (Fixed - No Scroll)
+                    VStack(spacing: 12) {
+                        ForEach(0..<presenter.currentQuestion.options.count, id: \.self) { index in
+                            if !presenter.hiddenOptions.contains(index) {
+                                OptionButtonModern(
+                                    text: presenter.currentQuestion.options[index],
+                                    letter: ["A", "B", "C", "D"][index],
+                                    isSelected: presenter.selectedAnswer == index,
+                                    isCorrect: presenter.showingAnswer && index == presenter.currentQuestion.correctAnswer,
+                                    isWrong: presenter.showingAnswer && presenter.selectedAnswer == index && index != presenter.currentQuestion.correctAnswer,
+                                    isDisabled: presenter.showingAnswer || presenter.needsToWatchAd,
+                                    action: {
+                                        let timeSpent = Date().timeIntervalSince(questionStartTime)
+                                        AnalyticsManager.shared.logQuestionAnswered(
+                                            isCorrect: index == presenter.currentQuestion.correctAnswer,
+                                            questionNumber: presenter.currentQuestionIndex + 1,
+                                            category: presenter.selectedCategory,
+                                            difficulty: presenter.selectedDifficulty,
+                                            timeSpent: timeSpent
+                                        )
+
+                                        presenter.selectAnswer(index)
+                                        if index == presenter.currentQuestion.correctAnswer {
+                                            confettiTrigger = true
+                                            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                                confettiTrigger = false
+                                            }
+                                        }
+                                        stopTimer()
+                                    }
+                                )
+                                .opacity(showQuestion ? 1 : 0)
+                                .offset(y: showQuestion ? 0 : 30)
+                                .animation(.spring(response: 0.6, dampingFraction: 0.7).delay(0.3 + Double(index) * 0.1), value: showQuestion)
+                            }
+                        }
+                    }
+                    .padding(.horizontal, 16)
+                    
+                    Spacer()
                 }
                 
-                // Confetti Effect for correct answers
+                // Lifeline Panel (Bottom Fixed) - Hide when showing CTAs
+                VStack {
+                    Spacer()
+                    if !presenter.needsToWatchAd && !presenter.showingAnswer {
+                        lifelinePanel
+                            .padding(.horizontal, 16)
+                            .padding(.bottom, 16)
+                            .background(
+                                Color(red: 0.97, green: 0.97, blue: 0.96)
+                                    .ignoresSafeArea(edges: .bottom)
+                            )
+                            .transition(.move(edge: .bottom).combined(with: .opacity))
+                    }
+                }
+                
+                // Confetti Effect
                 if confettiTrigger && presenter.showingAnswer && presenter.selectedAnswer == presenter.currentQuestion.correctAnswer {
                     ConfettiView()
                         .allowsHitTesting(false)
                 }
                 
-                // Bonus Points Animation with enhanced effect
+                // Bonus Points Animation
                 if presenter.bonusPoints > 10 {
                     VStack {
                         Spacer()
@@ -82,7 +128,7 @@ struct GameView: View {
                     }
                 }
                 
-                // Enhanced Streak Animation
+                // Streak Animation
                 if presenter.showStreakAnimation {
                     ZStack {
                         Color.black.opacity(0.4)
@@ -117,13 +163,22 @@ struct GameView: View {
                     }
                     .transition(.scale.combined(with: .opacity))
                 }
+                
+                // Ad/Next Button Overlay
+                if presenter.needsToWatchAd || presenter.showingAnswer {
+                    VStack {
+                        Spacer()
+                        bottomActionArea
+                            .padding(.horizontal, 16)
+                            .padding(.bottom, 16)
+                    }
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                }
             }
         }
         .onAppear {
             AnalyticsManager.shared.logScreenView(screenName: "Game")
-
             withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {
-                
                 showQuestion = true
             }
             startTimer()
@@ -146,356 +201,267 @@ struct GameView: View {
                     questionNumber: presenter.currentQuestionIndex + 1,
                     totalQuestions: presenter.totalQuestions
                 )
-                withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
-                    stopTimer()
-                    goHome()
-                }
+                HapticManager.shared.selection()
+                stopTimer()
+                goHome()
             }) {
-                Image(systemName: "house.fill")
-                    .font(.title3)
-                    .foregroundColor(.blue)
-                    .padding(10)
-                    .background(
-                        Circle()
-                            .fill(Color.dynamicCardBackground)
-                            .shadow(color: Color.blue.opacity(0.3), radius: 5)
-                    )
+                Image(systemName: "chevron.left")
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+                    .frame(width: 44, height: 44)
+                    .background(Color.white)
+                    .clipShape(Circle())
+                    .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
             }
-            .scaleEffect(showQuestion ? 1.0 : 0.5)
-            .animation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.1), value: showQuestion)
-            
-            StreakDisplay(streak: presenter.streak, showAnimation: presenter.showStreakAnimation)
-                .scaleEffect(showQuestion ? 1.0 : 0.5)
-                .animation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.2), value: showQuestion)
             
             Spacer()
             
-            // Report Button - NEW
+            // Score with coin icon
+            HStack(spacing: 6) {
+                Image(systemName: "star.circle.fill")
+                    .font(.system(size: 20))
+                    .foregroundColor(.yellow)
+                
+                Text("\(presenter.score)")
+                    .font(.system(size: 18, weight: .bold))
+                    .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 10)
+            .background(Color.white)
+            .cornerRadius(22)
+            .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
+            
+            Spacer()
+            
+            // Streak multiplier
+            HStack(spacing: 6) {
+                Text("x\(presenter.streak.multiplier)")
+                    .font(.system(size: 18, weight: .bold))
+                    .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+                
+                Text(presenter.streak.emoji)
+                    .font(.system(size: 18))
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 10)
+            .background(Color.white)
+            .cornerRadius(22)
+            .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
+        }
+    }
+    
+    // MARK: - Progress Section
+    private var progressSection: some View {
+        HStack(spacing: 0) {
+            Text("Question \(presenter.currentQuestionIndex + 1)/\(presenter.questions.count)")
+                .font(.system(size: 14, weight: .medium))
+                .foregroundColor(Color.gray)
+            
+            Spacer()
+        }
+    }
+    
+    // MARK: - Progress Bar
+    private var progressBar: some View {
+        GeometryReader { geometry in
+            ZStack(alignment: .leading) {
+                RoundedRectangle(cornerRadius: 4)
+                    .fill(Color.gray.opacity(0.2))
+                    .frame(height: 8)
+                
+                RoundedRectangle(cornerRadius: 4)
+                    .fill(Color.yellow)
+                    .frame(width: geometry.size.width * CGFloat(presenter.currentQuestionIndex + 1) / CGFloat(presenter.questions.count), height: 8)
+                    .animation(.spring(response: 0.5, dampingFraction: 0.7), value: presenter.currentQuestionIndex)
+            }
+        }
+        .frame(height: 8)
+    }
+    
+    // MARK: - Circular Timer
+    private var circularTimer: some View {
+        ZStack {
+            // Background circle
+            Circle()
+                .stroke(Color.gray.opacity(0.2), lineWidth: 8)
+            
+            // Progress circle
+            Circle()
+                .trim(from: 0, to: CGFloat(timeRemaining) / 30.0)
+                .stroke(
+                    timeRemaining <= 10 ? Color.red : Color.yellow,
+                    style: StrokeStyle(lineWidth: 8, lineCap: .round)
+                )
+                .rotationEffect(.degrees(-90))
+                .animation(.linear(duration: 1), value: timeRemaining)
+            
+            // Timer content
+            VStack(spacing: 2) {
+                Image(systemName: "timer")
+                    .font(.system(size: 14))
+                    .foregroundColor(timeRemaining <= 10 ? .red : Color.yellow)
+                
+                Text("\(timeRemaining)s")
+                    .font(.system(size: 28, weight: .bold))
+                    .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+                    .monospacedDigit()
+            }
+            .scaleEffect(timeRemaining <= 5 ? 1.1 : 1.0)
+            .animation(.spring(response: 0.3).repeatCount(timeRemaining <= 5 ? 100 : 1), value: timeRemaining)
+        }
+        .frame(width: 110, height: 110)
+    }
+    
+    // MARK: - Category Badge
+    private var categoryBadge: some View {
+        Text("\(presenter.currentQuestion.category.rawValue) | \(presenter.currentQuestion.difficulty.rawValue)")
+            .font(.system(size: 14, weight: .semibold))
+            .foregroundColor(Color.gray)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 8)
+            .background(Color.white)
+            .cornerRadius(20)
+            .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
+    }
+    
+    // MARK: - Question Text
+    private var questionText: some View {
+        Text(presenter.currentQuestion.text)
+            .font(.system(size: 24, weight: .bold))
+            .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+            .multilineTextAlignment(.center)
+            .lineLimit(4)
+            .minimumScaleFactor(0.8)
+            .opacity(showQuestion ? 1 : 0)
+            .scaleEffect(showQuestion ? 1.0 : 0.8)
+            .animation(.spring(response: 0.6, dampingFraction: 0.7).delay(0.2), value: showQuestion)
+    }
+    
+    // MARK: - Lifeline Panel
+    private var lifelinePanel: some View {
+        HStack(spacing: 12) {
+            LifelineButtonModern(
+                icon: "xmark",
+                label: "50/50",
+                count: presenter.getLifelineQuantity(.fiftyFifty),
+                color: Color(red: 0.6, green: 0.9, blue: 0.8),
+                isDisabled: presenter.showingAnswer || presenter.needsToWatchAd || presenter.getLifelineQuantity(.fiftyFifty) == 0,
+                action: {
+                    HapticManager.shared.selection()
+                    handleLifelineUse(.fiftyFifty)
+                }
+            )
+            
+            LifelineButtonModern(
+                icon: "forward.end.fill",
+                label: "Skip",
+                count: presenter.getLifelineQuantity(.skip),
+                color: Color(red: 0.7, green: 0.8, blue: 0.95),
+                isDisabled: presenter.showingAnswer || presenter.needsToWatchAd || presenter.getLifelineQuantity(.skip) == 0,
+                action: {
+                    HapticManager.shared.selection()
+                    handleLifelineUse(.skip)
+                }
+            )
+            
+            LifelineButtonModern(
+                icon: "hourglass",
+                label: "+15s",
+                count: presenter.getLifelineQuantity(.extraTime),
+                color: Color(red: 0.95, green: 0.8, blue: 0.8),
+                isDisabled: presenter.showingAnswer || presenter.needsToWatchAd || presenter.getLifelineQuantity(.extraTime) == 0,
+                action: {
+                    HapticManager.shared.selection()
+                    handleLifelineUse(.extraTime)
+                }
+            )
+        }
+    }
+    
+    // MARK: - Bottom Action Area
+    private var bottomActionArea: some View {
+        VStack(spacing: 12) {
+            if presenter.needsToWatchAd {
+                Button(action: {
+                    guard adMobManager.isAdReady else { return }
+                    
+                    guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                          let rootVC = windowScene.windows.first?.rootViewController else {
+                        return
+                    }
+                    
+                    HapticManager.shared.light()
+                    
+                    adMobManager.onAdRewarded = {
+                        Task { @MainActor in
+                            withAnimation {
+                                presenter.needsToWatchAd = false
+                                presenter.showingAnswer = false
+                                presenter.selectedAnswer = nil
+                                presenter.timeExpired = false
+                            }
+                            resetTimer()
+                        }
+                    }
+                    
+                    adMobManager.showAd(from: rootVC)
+                }) {
+                    HStack(spacing: 8) {
+                        Image(systemName: "play.rectangle.fill")
+                        Text(adMobManager.isAdReady ? "Watch Ad to Continue" : "Loading Ad...")
+                            .fontWeight(.bold)
+                    }
+                    .font(.system(size: 18))
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 56)
+                    .background(adMobManager.isAdReady ? Color.red : Color.gray)
+                    .cornerRadius(16)
+                }
+                .disabled(!adMobManager.isAdReady)
+            } else if presenter.showingAnswer {
+                Button(action: {
+                    HapticManager.shared.selection()
+                    withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+                        showQuestion = false
+                    }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                        if presenter.isLastQuestion {
+                            stopTimer()
+                            presenter.finalizeGameCoins()
+                            showResults()
+                        } else {
+                            presenter.nextQuestion()
+                            resetTimer()
+                            withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {
+                                showQuestion = true
+                            }
+                        }
+                    }
+                }) {
+                    HStack(spacing: 8) {
+                        Text(presenter.isLastQuestion ? "See Results" : "Next Question")
+                            .fontWeight(.bold)
+                        Image(systemName: presenter.isLastQuestion ? "flag.checkered" : "arrow.right")
+                    }
+                    .font(.system(size: 18))
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 56)
+                    .background(Color.orange)
+                    .cornerRadius(16)
+                }
+            }
+            
+            // Report Button
             Button(action: {
                 HapticManager.shared.light()
                 showReportSheet = true
             }) {
-                Image(systemName: "exclamationmark.triangle")
-                    .font(.title3)
-                    .foregroundColor(.orange)
-                    .padding(10)
-                    .background(
-                        Circle()
-                            .fill(Color.dynamicCardBackground)
-                            .shadow(color: Color.orange.opacity(0.3), radius: 5)
-                    )
-            }
-            .scaleEffect(showQuestion ? 1.0 : 0.5)
-            .animation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.3), value: showQuestion)
-            
-            // Animated Timer
-            HStack(spacing: 6) {
-                Image(systemName: "clock.fill")
-                    .font(.title3)
-                    .rotationEffect(.degrees(timeRemaining <= 5 ? -10 : 0))
-                    .animation(.spring(response: 0.3).repeatCount(timeRemaining <= 5 ? 100 : 1), value: timeRemaining)
-                
-                Text("\(timeRemaining)s")
-                    .font(.title3)
-                    .fontWeight(.bold)
-                    .monospacedDigit()
-            }
-            .foregroundColor(timeRemaining <= 10 ? .red : .blue)
-            .padding(.horizontal, 16)
-            .padding(.vertical, 10)
-            .background(
-                Capsule()
-                    .fill((timeRemaining <= 10 ? Color.red : Color.blue).opacity(colorScheme == .dark ? 0.25 : 0.15))
-                    .shadow(color: timeRemaining <= 10 ? Color.red.opacity(0.5) : Color.blue.opacity(0.3), radius: 8)
-            )
-            .overlay(
-                Capsule()
-                    .stroke(timeRemaining <= 10 ? Color.red : Color.blue, lineWidth: 2)
-            )
-            .scaleEffect(timeRemaining <= 5 ? 1.15 : 1.0)
-            .animation(.spring(response: 0.3).repeatCount(timeRemaining <= 5 ? 100 : 1), value: timeRemaining)
-            .scaleEffect(showQuestion ? 1.0 : 0.5)
-            .animation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.4), value: showQuestion)
-            
-            Spacer()
-            
-            // Animated Score
-            VStack(spacing: 2) {
-                Text("Score")
-                    .font(.caption2)
-                    .foregroundColor(.dynamicSecondaryText)
-                Text("\(presenter.score)")
-                    .font(.title3)
-                    .fontWeight(.bold)
-                    .foregroundColor(.dynamicText)
-            }
-            .padding(10)
-            .background(
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(Color.dynamicCardBackground)
-                    .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1), radius: 2)
-            )
-            .scaleEffect(showQuestion ? 1.0 : 0.5)
-            .animation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.5), value: showQuestion)
-        }
-        .padding(.horizontal)
-    }
-    
-    private var progressSection: some View {
-        HStack {
-            Text("Q \(presenter.currentQuestionIndex + 1)/\(presenter.questions.count)")
-                .font(.subheadline)
-                .foregroundColor(.dynamicSecondaryText)
-                .opacity(showQuestion ? 1 : 0)
-                .animation(.easeIn(duration: 0.3).delay(0.5), value: showQuestion)
-            
-            Spacer()
-            
-            HStack(spacing: 6) {
-                Text(presenter.currentQuestion.category.emoji)
-                    .font(.caption)
-                Text(presenter.currentQuestion.category.rawValue)
-                    .font(.caption)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.dynamicText)
-            }
-            .padding(.horizontal, 10)
-            .padding(.vertical, 4)
-            .background(Color.blue.opacity(colorScheme == .dark ? 0.25 : 0.15))
-            .cornerRadius(10)
-            .scaleEffect(showQuestion ? 1.0 : 0.8)
-            .animation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.6), value: showQuestion)
-            
-            Circle()
-                .fill(presenter.currentQuestion.difficulty.color)
-                .frame(width: 10, height: 10)
-                .scaleEffect(showQuestion ? 1.0 : 0)
-                .animation(.spring(response: 0.5, dampingFraction: 0.6).delay(0.7), value: showQuestion)
-        }
-    }
-    
-    private var timerProgressBar: some View {
-        GeometryReader { geometry in
-            ZStack(alignment: .leading) {
-                RoundedRectangle(cornerRadius: 4)
-                    .fill(Color.gray.opacity(colorScheme == .dark ? 0.3 : 0.2))
-                    .frame(height: 6)
-                
-                RoundedRectangle(cornerRadius: 4)
-                    .fill(
-                        LinearGradient(
-                            gradient: Gradient(colors: timeRemaining <= 10 ?
-                                [Color.red, Color.orange] : [Color.blue, Color.cyan]),
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
-                    .frame(width: geometry.size.width * (Double(timeRemaining) / 30.0), height: 6)
-                    .animation(.linear(duration: 1), value: timeRemaining)
-                    .shadow(color: timeRemaining <= 10 ? Color.red.opacity(0.6) : Color.blue.opacity(0.3), radius: 4)
-            }
-        }
-        .frame(height: 6)
-    }
-    
-    private var questionCard: some View {
-        VStack(spacing: 0) {
-            // Question text area - fixed height
-            VStack {
-                Text(presenter.currentQuestion.text)
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(.dynamicText)
-                    .lineLimit(4)
-                    .minimumScaleFactor(0.8)
-                    .opacity(showQuestion ? 1 : 0)
-                    .scaleEffect(showQuestion ? 1.0 : 0.8)
-                    .animation(.spring(response: 0.6, dampingFraction: 0.7).delay(0.2), value: showQuestion)
-            }
-            .frame(height: 120)
-            .frame(maxWidth: .infinity)
-            .padding(.top)
-            
-            // Options area - fixed spacing
-            VStack(spacing: 10) {
-                ForEach(0..<presenter.currentQuestion.options.count, id: \.self) { index in
-                    if !presenter.hiddenOptions.contains(index) {
-                        OptionButtonAnimated(
-                            text: presenter.currentQuestion.options[index],
-                            isSelected: presenter.selectedAnswer == index,
-                            isCorrect: presenter.showingAnswer && index == presenter.currentQuestion.correctAnswer,
-                            isWrong: presenter.showingAnswer && presenter.selectedAnswer == index && index != presenter.currentQuestion.correctAnswer,
-                            isDisabled: presenter.showingAnswer || presenter.needsToWatchAd,
-                            action: {
-                                withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
-                                    let timeSpent = Date().timeIntervalSince(questionStartTime)
-                                    AnalyticsManager.shared.logQuestionAnswered(
-                                        isCorrect: index == presenter.currentQuestion.correctAnswer,
-                                        questionNumber: presenter.currentQuestionIndex + 1,
-                                        category: presenter.selectedCategory,
-                                        difficulty: presenter.selectedDifficulty,
-                                        timeSpent: timeSpent
-                                    )
-
-                                    presenter.selectAnswer(index)
-                                    if index == presenter.currentQuestion.correctAnswer {
-                                        confettiTrigger = true
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                                            confettiTrigger = false
-                                        }
-                                    }
-                                }
-                                stopTimer()
-                            }
-                        )
-                        .opacity(showQuestion ? 1 : 0)
-                        .offset(x: showQuestion ? 0 : -50)
-                        .rotationEffect(.degrees(showQuestion ? 0 : -10))
-                        .animation(.spring(response: 0.6, dampingFraction: 0.7).delay(0.3 + Double(index) * 0.1), value: showQuestion)
-                    }
-                }
-            }
-            .padding(.horizontal)
-            .padding(.bottom)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-            RoundedRectangle(cornerRadius: 20)
-                .fill(Color.dynamicCardBackground)
-                .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.4 : 0.15), radius: 10, x: 0, y: 5)
-                .opacity(showQuestion ? 1 : 0)
-                .scaleEffect(showQuestion ? 1.0 : 0.9)
-                .animation(.spring(response: 0.6, dampingFraction: 0.7), value: showQuestion)
-        )
-    }
-    
-    private var bottomActionArea: some View {
-        ZStack {
-            Color.dynamicCardBackground
-                .opacity(colorScheme == .dark ? 1.0 : 0.95)
-                .ignoresSafeArea(edges: .bottom)
-            
-            VStack(spacing: 0) {
-                if presenter.needsToWatchAd {
-                    VStack(spacing: 10) {
-                        HStack(spacing: 6) {
-                            Image(systemName: presenter.timeExpired ? "clock.badge.xmark" : "xmark.circle.fill")
-                                .font(.title3)
-                            Text(presenter.timeExpired ? "Time's Up!" : "Wrong Answer!")
-                                .font(.headline)
-                                .fontWeight(.bold)
-                        }
-                        .foregroundColor(.red)
-                        .scaleEffect(pulseEffect ? 1.1 : 1.0)
-                        .onAppear {
-                            withAnimation(.easeInOut(duration: 0.5).repeatForever(autoreverses: true)) {
-                                pulseEffect = true
-                            }
-                        }
-                        
-                        Button(action: {
-                            print("🎯 Watch Ad button tapped")
-                            print("📱 Ad ready state: \(adMobManager.isAdReady)")
-                            
-                            guard adMobManager.isAdReady else {
-                                print("⚠️ Ad not ready yet")
-                                return
-                            }
-                            
-                            // Get the view controller
-                            guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-                                  let rootVC = windowScene.windows.first?.rootViewController else {
-                                print("❌ Could not get root view controller")
-                                return
-                            }
-                            
-                            print("✅ Showing ad...")
-                            HapticManager.shared.light()
-                            
-                            adMobManager.onAdRewarded = {
-                                print("✅ Ad reward granted")
-                                Task { @MainActor in
-                                    withAnimation {
-                                        presenter.needsToWatchAd = false
-                                        presenter.showingAnswer = false
-                                        presenter.selectedAnswer = nil
-                                        presenter.timeExpired = false
-                                    }
-                                    resetTimer()
-                                }
-                            }
-                            
-                            adMobManager.onAdDismissed = {
-                                print("📱 Ad dismissed")
-                            }
-                            
-                            adMobManager.showAd(from: rootVC)
-                        }) {
-                            HStack(spacing: 8) {
-                                Image(systemName: "play.rectangle.fill")
-                                Text(adMobManager.isAdReady ? "Watch Ad to Continue" : "Loading Ad...")
-                                    .fontWeight(.semibold)
-                            }
-                            .font(.subheadline)
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 48)
-                            .background(
-                                RoundedRectangle(cornerRadius: 24)
-                                    .fill(adMobManager.isAdReady ?
-                                        LinearGradient(gradient: Gradient(colors: [Color.red, Color.orange]), startPoint: .leading, endPoint: .trailing) :
-                                        LinearGradient(gradient: Gradient(colors: [Color.gray, Color.gray.opacity(0.8)]), startPoint: .leading, endPoint: .trailing)
-                                    )
-                            )
-                            .shadow(color: adMobManager.isAdReady ? Color.red.opacity(0.5) : Color.clear, radius: 10, x: 0, y: 5)
-                        }
-                        .allowsHitTesting(true)
-                        .disabled(!adMobManager.isAdReady)
-                        .opacity(adMobManager.isAdReady ? 1.0 : 0.6)
-                        .padding(.horizontal, 30)
-                    }
-                    .padding(.vertical, 16)
-                    .transition(.move(edge: .bottom).combined(with: .opacity))
-                } else if presenter.showingAnswer {
-                    Button(action: {
-                        withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
-                            showQuestion = false
-                        }
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                            if presenter.isLastQuestion {
-                                stopTimer()
-                                presenter.finalizeGameCoins()
-                                showResults()
-                            } else {
-                                presenter.nextQuestion()
-                                resetTimer()
-                                withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {
-                                    showQuestion = true
-                                }
-                            }
-                        }
-                    }) {
-                        HStack(spacing: 8) {
-                            Text(presenter.isLastQuestion ? "See Results" : "Next Question")
-                                .fontWeight(.semibold)
-                            Image(systemName: presenter.isLastQuestion ? "flag.checkered" : "arrow.right")
-                        }
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 48)
-                        .background(
-                            RoundedRectangle(cornerRadius: 24)
-                                .fill(
-                                    LinearGradient(gradient: Gradient(colors: [Color.blue, Color.cyan]), startPoint: .leading, endPoint: .trailing)
-                                )
-                        )
-                        .shadow(color: Color.blue.opacity(0.5), radius: 10, x: 0, y: 5)
-                    }
-                    .padding(.horizontal, 30)
-                    .padding(.vertical, 16)
-                    .transition(.move(edge: .bottom).combined(with: .opacity))
-                }
+                Text("Report a Bug")
+                    .font(.system(size: 14))
+                    .foregroundColor(Color.black)
             }
         }
     }
@@ -503,12 +469,12 @@ struct GameView: View {
     // MARK: - Lifeline Handlers
     private func handleLifelineUse(_ type: LifelineType) {
         AnalyticsManager.shared.logLifelineUsed(
-                lifelineType: type,
-                questionNumber: presenter.currentQuestionIndex + 1,
-                category: presenter.selectedCategory,
-                difficulty: presenter.selectedDifficulty
-            )
-            
+            lifelineType: type,
+            questionNumber: presenter.currentQuestionIndex + 1,
+            category: presenter.selectedCategory,
+            difficulty: presenter.selectedDifficulty
+        )
+        
         switch type {
         case .fiftyFifty:
             withAnimation(.spring(response: 0.4, dampingFraction: 0.6)) {
@@ -571,24 +537,105 @@ struct GameView: View {
     }
 }
 
-// MARK: - Animated Background
-struct AnimatedBackgroundView: View {
-    let colorScheme: ColorScheme
-    @State private var animateGradient = false
+// MARK: - Modern Option Button
+struct OptionButtonModern: View {
+    let text: String
+    let letter: String
+    let isSelected: Bool
+    let isCorrect: Bool
+    let isWrong: Bool
+    let isDisabled: Bool
+    let action: () -> Void
     
     var body: some View {
-        LinearGradient(
-            gradient: Gradient(colors: colorScheme == .dark ?
-                [Color.blue.opacity(0.2), Color.purple.opacity(0.2)] :
-                [Color.blue.opacity(0.3), Color.purple.opacity(0.3)]),
-            startPoint: animateGradient ? .topLeading : .bottomLeading,
-            endPoint: animateGradient ? .bottomTrailing : .topTrailing
-        )
-        .onAppear {
-            withAnimation(.easeInOut(duration: 3.0).repeatForever(autoreverses: true)) {
-                animateGradient = true
+        Button(action: {
+            if !isDisabled {
+                HapticManager.shared.selection()
+                action()
             }
+        }) {
+            HStack(spacing: 12) {
+                // Letter badge
+                Text(letter + ".")
+                    .font(.system(size: 16, weight: .bold))
+                    .foregroundColor(
+                        isCorrect ? .white :
+                        isWrong ? .white :
+                        isSelected ? .white :
+                        Color(red: 0.5, green: 0.4, blue: 0.7)
+                    )
+                    .frame(width: 32, height: 32)
+                
+                Text(text)
+                    .font(.system(size: 16, weight: .medium))
+                    .foregroundColor(
+                        isCorrect ? .white :
+                        isWrong ? .white :
+                        isSelected ? .white :
+                        Color(red: 0.1, green: 0.1, blue: 0.2)
+                    )
+                    .multilineTextAlignment(.leading)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                
+                Spacer()
+            }
+            .padding(.horizontal, 20)
+            .padding(.vertical, 16)
+            .background(
+                isCorrect ? Color.green :
+                isWrong ? Color.red :
+                isSelected ? Color.yellow :
+                Color.white
+            )
+            .cornerRadius(20)
+            .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(
+                        isCorrect ? Color.green :
+                        isWrong ? Color.red :
+                        isSelected ? Color.yellow :
+                        Color.gray.opacity(0.2),
+                        lineWidth: 2
+                    )
+            )
+            .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
         }
+        .disabled(isDisabled)
+        .animation(.spring(response: 0.3, dampingFraction: 0.7), value: isSelected)
+        .animation(.spring(response: 0.3, dampingFraction: 0.7), value: isCorrect)
+        .animation(.spring(response: 0.3, dampingFraction: 0.7), value: isWrong)
+    }
+}
+
+// MARK: - Modern Lifeline Button
+struct LifelineButtonModern: View {
+    let icon: String
+    let label: String
+    let count: Int
+    let color: Color
+    let isDisabled: Bool
+    let action: () -> Void
+    
+    var body: some View {
+        Button(action: action) {
+            VStack(spacing: 4) {
+                ZStack {
+                    Circle()
+                        .fill(isDisabled ? Color.gray.opacity(0.3) : color)
+                        .frame(width: 50, height: 50)
+                    
+                    Image(systemName: icon)
+                        .font(.system(size: 16, weight: .bold))
+                        .foregroundColor(isDisabled ? .gray : Color(red: 0.1, green: 0.1, blue: 0.2))
+                }
+                
+                Text(label)
+                    .font(.system(size: 10, weight: .bold))
+                    .foregroundColor(isDisabled ? .gray : Color(red: 0.1, green: 0.1, blue: 0.2))
+            }
+            .opacity(isDisabled ? 0.5 : 1.0)
+        }
+        .disabled(isDisabled)
     }
 }
 
@@ -619,7 +666,6 @@ struct EnhancedBonusPointsAnimation: View {
         .offset(y: offset)
         .opacity(opacity)
         .onAppear {
-            
             withAnimation(.spring(response: 0.6, dampingFraction: 0.6)) {
                 scale = 1.2
             }

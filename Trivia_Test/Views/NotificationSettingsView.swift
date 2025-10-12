@@ -106,13 +106,13 @@ struct NotificationSettingsView: View {
                         }
                         
                         // Test Notification Button
-                        Button(action: {
+                      /*  Button(action: {
                             notificationManager.scheduleLocalNotification(
                                 title: "🎉 Test Notification",
                                 body: "This is a test notification from Trivia App! It will appear in 5 seconds.",
                                 delay: 5
                             )
-                        }) {
+                        } ) {
                             HStack {
                                 Image(systemName: "paperplane.fill")
                                 Text("Send Test Notification (5s)")
@@ -131,10 +131,10 @@ struct NotificationSettingsView: View {
                             .cornerRadius(24)
                             .shadow(color: Color.orange.opacity(0.3), radius: 5)
                         }
-                        .padding(.horizontal)
+                        .padding(.horizontal)*/
                         
                         // FCM Token Section - PROMINENTLY DISPLAYED
-                        if let token = notificationManager.fcmToken {
+                        /*  if let token = notificationManager.fcmToken {
                             VStack(alignment: .leading, spacing: 15) {
                                 HStack {
                                     Image(systemName: "key.fill")
@@ -247,7 +247,7 @@ struct NotificationSettingsView: View {
                             )
                             .padding(.horizontal)
                         }
-                        
+                       */
                         Spacer(minLength: 50)
                     }
                 }
