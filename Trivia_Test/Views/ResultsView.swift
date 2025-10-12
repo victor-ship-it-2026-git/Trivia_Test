@@ -27,206 +27,240 @@ struct ResultsView: View {
         switch percentage {
         case 90...100: return "Outstanding! 🏆"
         case 70..<90: return "Great Job! 🎉"
-        case 50..<70: return "Good Effort! 👍"
+        case 50..<70: return "Good Effort! 💪"
         default: return "Keep Practicing! 💪"
         }
     }
     
     var body: some View {
         ZStack {
-            LinearGradient(
-                gradient: Gradient(colors: colorScheme == .dark ?
-                    [Color.blue.opacity(0.4), Color.purple.opacity(0.4)] :
-                    [Color.blue, Color.purple]),
-                startPoint: .top,
-                endPoint: .bottom
-            )
-            .ignoresSafeArea()
+            Color(red: 0.97, green: 0.97, blue: 0.96)
+                .ignoresSafeArea()
             
-            VStack(spacing: 30) {
-                Spacer()
-                
-                Text(message)
-                    .font(.system(size: 36, weight: .bold))
-                    .foregroundColor(.white)
-                
-                VStack(spacing: 15) {
-                    Text("\(presenter.score)/\(presenter.totalQuestions)")
-                        .font(.system(size: 72, weight: .bold))
-                        .foregroundColor(.white)
+            VStack(spacing: 0) {
+                // Top Navigation Bar
+                HStack {
+                    Button(action: goHome) {
+                        Image(systemName: "xmark")
+                            .font(.system(size: 18, weight: .semibold))
+                            .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+                            .frame(width: 44, height: 44)
+                            .background(Color.white)
+                            .clipShape(Circle())
+                            .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
+                    }
                     
-                    Text("\(percentage)% Correct")
-                        .font(.title2)
-                        .foregroundColor(.white.opacity(0.9))
-                    
-                    HStack(spacing: 20) {
-                        VStack {
-                            Text(presenter.selectedCategory.emoji)
-                                .font(.title)
-                            Text(presenter.selectedCategory.rawValue)
-                                .font(.caption)
-                        }
-                        
-                        VStack {
-                            Text(presenter.selectedDifficulty.emoji)
-                                .font(.title)
-                            Text(presenter.selectedDifficulty.rawValue)
-                                .font(.caption)
-                        }
-                    }
-                    .foregroundColor(.white.opacity(0.9))
-                }
-                .padding(40)
-                .background(Color.white.opacity(colorScheme == .dark ? 0.15 : 0.2))
-                .cornerRadius(20)
-                
-                // Unlock notification
-                if let unlocked = unlockedDifficulty, showUnlockAnimation {
-                    VStack(spacing: 10) {
-                        Text("🎉 Level Unlocked!")
-                            .font(.title2)
-                            .fontWeight(.bold)
-                            .foregroundColor(.yellow)
-                        
-                        HStack(spacing: 8) {
-                            Text(unlocked.emoji)
-                                .font(.title)
-                            Text(unlocked.rawValue)
-                                .font(.headline)
-                                .foregroundColor(.white)
-                        }
-                        .padding()
-                        .background(
-                            RoundedRectangle(cornerRadius: 12)
-                                .fill(unlocked.color.opacity(0.3))
-                        )
-                    }
-                    .transition(.scale.combined(with: .opacity))
-                }
-                
-                // Save Success Message
-                if showSaveSuccess {
-                    HStack(spacing: 10) {
-                        Image(systemName: "checkmark.circle.fill")
-                            .font(.title3)
-                        Text("Saved to Global Leaderboard!")
-                            .font(.headline)
-                    }
-                    .foregroundColor(.green)
-                    .padding()
-                    .background(
-                        RoundedRectangle(cornerRadius: 12)
-                            .fill(Color.green.opacity(0.2))
-                    )
-                    .transition(.scale.combined(with: .opacity))
-                }
-                
-                // Share Button - Prominent Position
-                Button(action: shareAchievement) {
-                    HStack(spacing: 10) {
-                        if isGeneratingShare {
-                            ProgressView()
-                                .tint(.white)
-                        } else {
-                            Image(systemName: "square.and.arrow.up.fill")
-                                .font(.title3)
-                        }
-                        Text(isGeneratingShare ? "Generating..." : "Share My Score")
-                            .fontWeight(.bold)
-                    }
-                    .foregroundColor(.white)
-                    .frame(width: 280, height: 56)
-                    .background(
-                        LinearGradient(
-                            gradient: Gradient(colors: [Color.green, Color.teal]),
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
-                    .cornerRadius(28)
-                    .shadow(color: Color.green.opacity(0.5), radius: 15, x: 0, y: 5)
-                }
-                .disabled(isGeneratingShare)
-                
-                // Save to Leaderboard Button
-                if !savedToLeaderboard {
-                    Button(action: { showNameInput = true }) {
-                        HStack {
-                            if isSavingToFirebase {
-                                ProgressView()
-                                    .tint(.white)
-                            } else {
-                                Image(systemName: "star.fill")
-                            }
-                            Text(isSavingToFirebase ? "Saving..." : "Save to Global Leaderboard")
-                        }
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .frame(width: 280, height: 50)
-                        .background(
-                            LinearGradient(
-                                gradient: Gradient(colors: [Color.yellow.opacity(0.8), Color.orange.opacity(0.8)]),
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
-                        )
-                        .cornerRadius(25)
-                        .shadow(color: Color.yellow.opacity(0.4), radius: 10)
-                    }
-                    .disabled(isSavingToFirebase)
-                }
-                
-                Spacer()
-                
-                VStack(spacing: 15) {
-                    Button(action: playAgain) {
-                        Text("Next Difficulty")
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                            .foregroundColor(colorScheme == .dark ? .white : .blue)
-                            .frame(width: 250, height: 60)
-                            .background(colorScheme == .dark ? Color.white.opacity(0.2) : Color.white)
-                            .cornerRadius(30)
-                    }
+                    Spacer()
                     
                     Button(action: showLeaderboard) {
-                        HStack {
-                            Image(systemName: "trophy.fill")
-                            Text("View Global Leaderboard")
-                        }
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                        .frame(width: 280, height: 60)
-                        .background(Color.white.opacity(0.3))
-                        .cornerRadius(30)
-                    }
-                    
-                    Button(action: goHome) {
-                        Text("Home")
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                            .foregroundColor(.white)
-                            .frame(width: 250, height: 60)
-                            .background(Color.white.opacity(0.2))
-                            .cornerRadius(30)
+                        Image(systemName: "trophy.fill")
+                            .font(.system(size: 18, weight: .semibold))
+                            .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+                            .frame(width: 44, height: 44)
+                            .background(Color.white)
+                            .clipShape(Circle())
+                            .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
                     }
                 }
+                .padding(.horizontal, 16)
+                .padding(.top, 8)
                 
-                Spacer()
+                ScrollView(showsIndicators: false) {
+                    VStack(spacing: 24) {
+                        // Success Icon
+                        ZStack {
+                            Circle()
+                                .fill(Color.yellow)
+                                .frame(width: 80, height: 80)
+                            
+                            Image(systemName: "medal.fill")
+                                .font(.system(size: 35))
+                                .foregroundColor(.white)
+                        }
+                        .padding(.top, 12)
+                        
+                        // Title
+                        Text("\(presenter.selectedDifficulty.rawValue) - \(presenter.selectedCategory.rawValue) Passed!")
+                            .font(.system(size: 24, weight: .bold))
+                            .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 32)
+                        
+                        // Stats Cards
+                        HStack(spacing: 16) {
+                            // Points Earned
+                            VStack(spacing: 8) {
+                                Text("Points Earned")
+                                    .font(.system(size: 13))
+                                    .foregroundColor(Color.gray)
+                                
+                                Text("\(presenter.score)")
+                                    .font(.system(size: 36, weight: .bold))
+                                    .foregroundColor(Color.purple)
+                            }
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 110)
+                            .background(Color.white)
+                            .cornerRadius(16)
+                            .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 2)
+                            
+                            // Current Streaks
+                            VStack(spacing: 8) {
+                                Text("Current Streaks")
+                                    .font(.system(size: 13))
+                                    .foregroundColor(Color.gray)
+                                
+                                VStack(spacing: 2) {
+                                    Text("\(presenter.streak.currentStreak)")
+                                        .font(.system(size: 36, weight: .bold))
+                                        .foregroundColor(Color.yellow)
+                                    
+                                    Text("Streaks")
+                                        .font(.system(size: 14, weight: .bold))
+                                        .foregroundColor(Color.yellow)
+                                }
+                            }
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 110)
+                            .background(Color.white)
+                            .cornerRadius(16)
+                            .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 2)
+                        }
+                        .padding(.horizontal, 16)
+                        
+                        // Unlock notification
+                        if let unlocked = unlockedDifficulty, showUnlockAnimation {
+                            HStack(spacing: 12) {
+                                ZStack {
+                                    Circle()
+                                        .fill(Color.orange.opacity(0.2))
+                                        .frame(width: 50, height: 50)
+                                    
+                                    Text(unlocked.emoji)
+                                        .font(.system(size: 24))
+                                }
+                                
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text("NEW")
+                                        .font(.system(size: 11, weight: .bold))
+                                        .foregroundColor(Color.purple)
+                                    
+                                    Text("\(unlocked.rawValue) Difficulty Unlocked")
+                                        .font(.system(size: 14, weight: .bold))
+                                        .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+                                }
+                                
+                                Spacer()
+                            }
+                            .padding(12)
+                            .background(Color.white)
+                            .cornerRadius(16)
+                            .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 2)
+                            .padding(.horizontal, 16)
+                            .transition(.scale.combined(with: .opacity))
+                        }
+                        
+                        // Save Success Message
+                        if showSaveSuccess {
+                            HStack(spacing: 10) {
+                                Image(systemName: "checkmark.circle.fill")
+                                    .font(.title3)
+                                Text("Saved to Global Leaderboard!")
+                                    .font(.headline)
+                            }
+                            .foregroundColor(.green)
+                            .padding()
+                            .background(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(Color.green.opacity(0.2))
+                            )
+                            .padding(.horizontal, 16)
+                            .transition(.scale.combined(with: .opacity))
+                        }
+                        
+                        // Action Buttons
+                        VStack(spacing: 12) {
+                            // Play Now (if unlocked)
+                            if unlockedDifficulty != nil && showUnlockAnimation {
+                                Button(action: playAgain) {
+                                    Text("Play Now")
+                                        .font(.system(size: 17, weight: .bold))
+                                        .foregroundColor(Color.purple)
+                                        .frame(maxWidth: .infinity)
+                                        .frame(height: 52)
+                                        .background(Color.purple.opacity(0.15))
+                                        .cornerRadius(16)
+                                }
+                            }
+                            
+                            // Save to Leaderboard
+                            if !savedToLeaderboard {
+                                Button(action: { showNameInput = true }) {
+                                    HStack {
+                                        if isSavingToFirebase {
+                                            ProgressView()
+                                                .tint(.white)
+                                        } else {
+                                            Text("Claim Your Spot")
+                                                .font(.system(size: 17, weight: .bold))
+                                        }
+                                    }
+                                    .foregroundColor(.white)
+                                    .frame(maxWidth: .infinity)
+                                    .frame(height: 52)
+                                    .background(Color.purple)
+                                    .cornerRadius(16)
+                                }
+                                .disabled(isSavingToFirebase)
+                            }
+                            
+                            // Next Difficulty
+                            Button(action: playAgain) {
+                                Text("Next Difficulty")
+                                    .font(.system(size: 17, weight: .bold))
+                                    .foregroundColor(.white)
+                                    .frame(maxWidth: .infinity)
+                                    .frame(height: 52)
+                                    .background(Color.blue)
+                                    .cornerRadius(16)
+                            }
+                            
+                            // Share Score
+                            Button(action: shareAchievement) {
+                                HStack(spacing: 8) {
+                                    if isGeneratingShare {
+                                        ProgressView()
+                                            .tint(.white)
+                                    } else {
+                                        Image(systemName: "square.and.arrow.up")
+                                        Text("Share Score")
+                                            .font(.system(size: 17, weight: .bold))
+                                    }
+                                }
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 52)
+                                .background(Color.orange)
+                                .cornerRadius(16)
+                            }
+                            .disabled(isGeneratingShare)
+                        }
+                        .padding(.horizontal, 16)
+                        .padding(.bottom, 24)
+                    }
+                }
             }
         }
         .onAppear {
             AnalyticsManager.shared.logScreenView(screenName: "Results")
-                AnalyticsManager.shared.logResultsScreenViewed(
-                    category: presenter.selectedCategory,
-                    difficulty: presenter.selectedDifficulty,
-                    score: presenter.score,
-                    totalQuestions: presenter.totalQuestions,
-                    percentage: percentage
-                )
+            AnalyticsManager.shared.logResultsScreenViewed(
+                category: presenter.selectedCategory,
+                difficulty: presenter.selectedDifficulty,
+                score: presenter.score,
+                totalQuestions: presenter.totalQuestions,
+                percentage: percentage
+            )
             checkAndUnlockNextDifficulty()
-            
         }
         .sheet(isPresented: $showNameInput) {
             NameInputView(
@@ -249,22 +283,19 @@ struct ResultsView: View {
     }
     
     // MARK: - Share Achievement
-    
     func shareAchievement() {
         AnalyticsManager.shared.logShareInitiated(
-                shareType: "results",
-                category: presenter.selectedCategory,
-                difficulty: presenter.selectedDifficulty,
-                score: presenter.score
-            )
-            
-            isGeneratingShare = true
-            HapticManager.shared.success()
+            shareType: "results",
+            category: presenter.selectedCategory,
+            difficulty: presenter.selectedDifficulty,
+            score: presenter.score
+        )
         
-        // Use player name or default
+        isGeneratingShare = true
+        HapticManager.shared.success()
+        
         let name = playerName.isEmpty ? "Player" : playerName
         
-        // Generate share card
         let shareCard = ResultsShareCard(
             score: presenter.score,
             totalQuestions: presenter.totalQuestions,
@@ -273,27 +304,24 @@ struct ResultsView: View {
             playerName: name
         )
         
-        // Generate image on main thread
         Task { @MainActor in
-            
             if let image = ShareManager.shared.generateShareImage(from: AnyView(shareCard)) {
                 let shareText = ShareManager.shared.generateShareText(
                     score: presenter.score,
                     total: presenter.totalQuestions,
                     category: presenter.selectedCategory.rawValue,
                     difficulty: presenter.selectedDifficulty.rawValue
-                    
                 )
                 
                 isGeneratingShare = false
                 
-                // Get root view controller
                 guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
                       let rootVC = windowScene.windows.first?.rootViewController else {
                     return
                 }
+                
                 AnalyticsManager.shared.logShareCompleted(shareType: "results")
-
+                
                 ShareManager.shared.shareToSocialMedia(
                     image: image,
                     text: shareText,
@@ -308,9 +336,14 @@ struct ResultsView: View {
     func saveToFirebaseLeaderboard() {
         isSavingToFirebase = true
         
+        let finalPlayerName = playerName.isEmpty ? "Anonymous" : playerName
+        
+        // Save player name for leaderboard identification
+        UserDefaults.standard.set(finalPlayerName, forKey: "LastSavedPlayerName")
+        
         let entry = LeaderboardEntry(
             id: UUID(),
-            playerName: playerName.isEmpty ? "Anonymous" : playerName,
+            playerName: finalPlayerName,
             score: presenter.score,
             totalQuestions: presenter.totalQuestions,
             category: presenter.selectedCategory.rawValue,
@@ -318,7 +351,6 @@ struct ResultsView: View {
             date: Date()
         )
         
-        // Save to Firebase
         firebaseManager.addEntry(entry) { result in
             DispatchQueue.main.async {
                 isSavingToFirebase = false
@@ -326,20 +358,18 @@ struct ResultsView: View {
                 switch result {
                 case .success:
                     AnalyticsManager.shared.logScoreSavedToLeaderboard(
-                                    playerName: playerName,
-                                    category: presenter.selectedCategory,
-                                    difficulty: presenter.selectedDifficulty,
-                                    score: presenter.score,
-                                    totalQuestions: presenter.totalQuestions,
-                                    percentage: percentage
-                                )
+                        playerName: playerName,
+                        category: presenter.selectedCategory,
+                        difficulty: presenter.selectedDifficulty,
+                        score: presenter.score,
+                        totalQuestions: presenter.totalQuestions,
+                        percentage: percentage
+                    )
                     savedToLeaderboard = true
                     withAnimation(.spring(response: 0.5, dampingFraction: 0.7)) {
                         showSaveSuccess = true
                     }
                     
-                    
-                    // Hide success message after 3 seconds
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         withAnimation {
                             showSaveSuccess = false
@@ -354,7 +384,6 @@ struct ResultsView: View {
     }
     
     func checkAndUnlockNextDifficulty() {
-        // Unlock next difficulty if score is 70% or higher
         if percentage >= 70 {
             let difficulties = Difficulty.allCases
             guard let currentIndex = difficulties.firstIndex(of: presenter.selectedDifficulty),
@@ -364,18 +393,16 @@ struct ResultsView: View {
             
             let nextDifficulty = difficulties[currentIndex + 1]
             
-            // Check if not already unlocked
             if !unlockManager.isDifficultyUnlocked(category: presenter.selectedCategory, difficulty: nextDifficulty) {
                 unlockManager.unlockNextDifficulty(category: presenter.selectedCategory, completedDifficulty: presenter.selectedDifficulty)
                 AnalyticsManager.shared.logDifficultyUnlocked(
-                       difficulty: nextDifficulty,
-                       category: presenter.selectedCategory,
-                       previousScore: percentage
-                   )
-                   
-                   unlockedDifficulty = nextDifficulty
+                    difficulty: nextDifficulty,
+                    category: presenter.selectedCategory,
+                    previousScore: percentage
+                )
                 
-                // Show unlock animation after a delay
+                unlockedDifficulty = nextDifficulty
+                
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {
                         showUnlockAnimation = true

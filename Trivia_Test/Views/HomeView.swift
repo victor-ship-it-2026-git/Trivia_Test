@@ -12,146 +12,138 @@ struct HomeView: View {
     @State private var showSettings = false
     @State private var selectedCategory: QuizCategory? = nil
     @State private var appearAnimation = false
-    @State private var showAdminReports = false  // ADD THIS LINE
-    @State private var showSuggestCategory = false  // ADD THIS
-
+    @State private var showAdminReports = false
+    @State private var showSuggestCategory = false
 
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         ZStack {
-            Color.dynamicBackground
+            Color(red: 0.97, green: 0.97, blue: 0.96)
                 .ignoresSafeArea()
             
             VStack(spacing: 0) {
                 // Top Navigation Bar
                 HStack {
-                    Button(action: {
-                        // Back action if needed
-                    }) {
-                        Image(systemName: "chevron.left")
-                            .font(.title2)
-                            .foregroundColor(.dynamicText)
-                    }
-                    .opacity(0) // Hidden but maintains spacing
+                    Spacer()
+                        .frame(width: 44)
                     
                     Spacer()
                     
-                    Text("Trivia App")
-                        .font(.headline)
-                        .foregroundColor(.dynamicText)
+                    Text("Trivia")
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
                     
-                   /* Button(action: {
-                        fatalError("Test crash for Crashlytics")
-                    }) {
-                        Text("🔥 Test Crash (DEBUG ONLY)")
-                            .foregroundColor(.red)
-                    }*/
                     Spacer()
                     
                     Button(action: {
                         showSettings = true
                     }) {
-                        Image(systemName: "gearshape.fill")
-                            .font(.title2)
-                            .foregroundColor(.dynamicText)
+                        ZStack {
+                            Circle()
+                                .fill(Color.orange.opacity(0.1))
+                                .frame(width: 44, height: 44)
+                            
+                            Image(systemName: "gearshape.fill")
+                                .font(.system(size: 20))
+                                .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+                        }
                     }
-                  
                 }
-                .padding()
+                .padding(.horizontal, 16)
+                .padding(.top, 8)
+                .padding(.bottom, 16)
                 .opacity(appearAnimation ? 1 : 0)
                 .offset(y: appearAnimation ? 0 : -20)
                 
                 ScrollView(showsIndicators: false) {
-                    VStack(spacing: 25) {
+                    VStack(spacing: 20) {
                         // Title
-                        Text("Choose a Category")
-                            .font(.system(size: 32, weight: .bold))
-                            .foregroundColor(.dynamicText)
+                        Text("Categories")
+                            .font(.system(size: 36, weight: .bold))
+                            .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(.horizontal)
-                            .padding(.top, 10)
+                            .padding(.horizontal, 16)
+                            .padding(.top, 8)
                             .opacity(appearAnimation ? 1 : 0)
                             .offset(y: appearAnimation ? 0 : 20)
                             .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.1), value: appearAnimation)
                         
                         // Category Grid
-                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
+                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
                             ForEach(Array([
+                                ("General", "general_image", QuizCategory.all),
                                 ("Science", "science_image", QuizCategory.science),
                                 ("History", "history_image", QuizCategory.history),
                                 ("Geography", "geography_image", QuizCategory.geography),
                                 ("Pop Culture", "popculture_image", QuizCategory.popCulture),
                                 ("Sports", "sports_image", QuizCategory.sports),
-                                ("General", "general_image", QuizCategory.all)
+                                ("Art & Literature", "art_image", QuizCategory.art),
+                                ("Movies", "movies_image", QuizCategory.movies)
                             ].enumerated()), id: \.offset) { index, item in
-                                CategoryCardWithImage(
+                                CategoryCardModern(
                                     title: item.0,
                                     imageName: item.1,
                                     isSelected: selectedCategory == item.2,
                                     action: {
-                                        // ADD THIS
                                         AnalyticsManager.shared.logCategoryClicked(category: item.2)
                                         
-                                        selectedCategory = item.2
+                                        withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+                                            selectedCategory = item.2
+                                        }
                                         gamePresenter.selectedCategory = item.2
                                         
-                                        // ADD THIS
                                         AnalyticsManager.shared.logCategorySelected(category: item.2)
                                     }
                                 )
                                 .opacity(appearAnimation ? 1 : 0)
                                 .offset(y: appearAnimation ? 0 : 30)
-                                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2 + Double(index) * 0.1), value: appearAnimation)
+                                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2 + Double(index) * 0.08), value: appearAnimation)
                             }
                         }
-                        .padding(.horizontal)
-                        
-                        // Next Button
-                        Button(action: {
-                            if selectedCategory != nil {
-                                // ADD THIS
-                                AnalyticsManager.shared.logScreenView(screenName: "DifficultySelection")
-                                
-                                withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
-                                    appearAnimation = false
-                                }
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                                    startGame()
-                                }
-                            }
-                        }) {
-                            Text("Next")
-                                .font(.title3)
-                                .fontWeight(.semibold)
-                                .foregroundColor(.white)
-                                .frame(maxWidth: .infinity)
-                                .frame(height: 56)
-                                .background(
-                                    LinearGradient(
-                                        gradient: Gradient(colors: selectedCategory != nil ?
-                                            [Color.blue, Color.purple] :
-                                            [Color.gray, Color.gray.opacity(0.8)]),
-                                        startPoint: .leading,
-                                        endPoint: .trailing
-                                    )
-                                )
-                                .cornerRadius(28)
-                                .shadow(color: selectedCategory != nil ? Color.blue.opacity(0.3) : Color.clear, radius: 8, x: 0, y: 4)
-                        }
-                        .disabled(selectedCategory == nil)
-                        .padding(.horizontal)
-                        .padding(.top, 20)
-                        .padding(.bottom, 30)
-                        .opacity(appearAnimation ? 1 : 0)
-                        .offset(y: appearAnimation ? 0 : 30)
-                        .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.8), value: appearAnimation)
+                        .padding(.horizontal, 16)
+                        .padding(.bottom, 100) // Add padding at bottom so content isn't hidden behind Next button
                     }
                 }
+                
+                // Next Button (Fixed at bottom)
+                VStack {
+                    Button(action: {
+                        if selectedCategory != nil {
+                            AnalyticsManager.shared.logScreenView(screenName: "DifficultySelection")
+                            
+                            HapticManager.shared.selection()
+                            withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
+                                appearAnimation = false
+                            }
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                startGame()
+                            }
+                        }
+                    }) {
+                        Text("Next")
+                            .font(.system(size: 18, weight: .bold))
+                            .foregroundColor(selectedCategory != nil ? .white : Color.gray.opacity(0.5))
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 56)
+                            .background(
+                                selectedCategory != nil ?
+                                    Color.orange :
+                                    Color.gray.opacity(0.3)
+                            )
+                            .cornerRadius(16)
+                    }
+                    .disabled(selectedCategory == nil)
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 16)
+                    .opacity(appearAnimation ? 1 : 0)
+                    .offset(y: appearAnimation ? 0 : 30)
+                    .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.7), value: appearAnimation)
+                }
+                .background(Color(red: 0.97, green: 0.97, blue: 0.96))
             }
         }
         .onAppear {
-            // ADD THIS
             AnalyticsManager.shared.logScreenView(screenName: "Home")
             
             selectedCategory = gamePresenter.selectedCategory
@@ -164,96 +156,105 @@ struct HomeView: View {
                 showShop: showShop,
                 showLeaderboard: showLeaderboard,
                 showDailyChallengeDetail: $showDailyChallengeDetail,
-                showSuggestCategory: $showSuggestCategory  // ADD THIS
-
+                showSuggestCategory: $showSuggestCategory
             )
         }
         .sheet(isPresented: $showDailyChallengeDetail) {
             DailyChallengeDetailView()
         }
-        .sheet(isPresented: $showAdminReports) {  // ADD THIS
+        .sheet(isPresented: $showAdminReports) {
             AdminReportsView()
         }
-        .sheet(isPresented: $showSuggestCategory) {  // ADD THIS
-                   SuggestCategoryView()
-               }
+        .sheet(isPresented: $showSuggestCategory) {
+            SuggestCategoryView()
+        }
     }
 }
 
-// MARK: - Category Card with Image
-struct CategoryCardWithImage: View {
+// MARK: - Modern Category Card
+struct CategoryCardModern: View {
     let title: String
     let imageName: String
     let isSelected: Bool
     let action: () -> Void
-    @Environment(\.colorScheme) var colorScheme
     @State private var isPressed = false
     
     var body: some View {
         Button(action: {
             HapticManager.shared.selection()
-            withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
-                isPressed = true
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                action()
-                isPressed = false
-            }
+            action()
         }) {
             VStack(spacing: 0) {
                 // Image container
-                ZStack {
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.gray.opacity(0.2))
-                        .frame(height: 140)
-                    
-                    // Check if image exists, otherwise use gradient + icon
+                ZStack(alignment: .topTrailing) {
+                    // Image or gradient background
                     if let _ = UIImage(named: imageName) {
                         Image(imageName)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: UIScreen.main.bounds.width / 2 - 30, height: 140)
+                            .frame(height: 140)
                             .clipped()
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .fill(isSelected ? Color.blue.opacity(0.3) : Color.clear)
-                            )
                     } else {
-                        // Fallback: Gradient + Icon
+                        // Fallback gradient
                         LinearGradient(
                             gradient: Gradient(colors: getCategoryGradient(for: title)),
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
-                        .opacity(isSelected ? 1.0 : 0.7)
+                        .frame(height: 140)
                         
                         Image(systemName: getCategoryIcon(for: title))
                             .font(.system(size: 50))
                             .foregroundColor(.white)
                     }
+                    
+                    // Checkmark badge
+                    if isSelected {
+                        ZStack {
+                            Circle()
+                                .fill(Color.orange)
+                                .frame(width: 24, height: 24)
+                            
+                            Image(systemName: "checkmark")
+                                .font(.system(size: 12, weight: .bold))
+                                .foregroundColor(.white)
+                        }
+                        .padding(8)
+                        .transition(.scale.combined(with: .opacity))
+                    }
                 }
                 .frame(height: 140)
-                .cornerRadius(20)
+                .cornerRadius(16)
                 
                 // Title
                 Text(title)
-                    .font(.headline)
-                    .fontWeight(.semibold)
-                    .foregroundColor(isSelected ? .blue : .dynamicText)
-                    .padding(.top, 12)
-                    .padding(.bottom, 8)
+                    .font(.system(size: 14, weight: .bold))
+                    .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+                    .padding(.top, 8)
+                    .padding(.bottom, 12)
             }
-            .background(
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(Color.dynamicCardBackground)
-                    .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1), radius: 5, x: 0, y: 2)
-            )
+            .background(Color.white)
+            .cornerRadius(16)
             .overlay(
-                RoundedRectangle(cornerRadius: 20)
-                    .stroke(isSelected ? Color.blue : Color.clear, lineWidth: 3)
+                RoundedRectangle(cornerRadius: 16)
+                    .stroke(isSelected ? Color.orange : Color.gray.opacity(0.2), lineWidth: isSelected ? 2 : 1)
             )
-            .scaleEffect(isPressed ? 0.95 : (isSelected ? 1.05 : 1.0))
+            .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 2)
+            .scaleEffect(isPressed ? 0.95 : 1.0)
+            .scaleEffect(isSelected ? 1.05 : 1.0)
+            .animation(.spring(response: 0.3, dampingFraction: 0.6), value: isSelected)
+            .animation(.spring(response: 0.2, dampingFraction: 0.6), value: isPressed)
         }
+        .buttonStyle(PlainButtonStyle())
+        .simultaneousGesture(
+            DragGesture(minimumDistance: 0)
+                .onChanged { _ in
+                    isPressed = true
+                }
+                .onEnded { _ in
+                    isPressed = false
+                }
+        )
     }
     
     private func getCategoryIcon(for title: String) -> String {
@@ -264,19 +265,23 @@ struct CategoryCardWithImage: View {
         case "Pop Culture": return "tv.fill"
         case "Sports": return "sportscourt.fill"
         case "General": return "book.fill"
+        case "Art & Literature": return "paintpalette.fill"
+        case "Movies": return "film.fill"
         default: return "questionmark.circle.fill"
         }
     }
     
     private func getCategoryGradient(for title: String) -> [Color] {
         switch title {
-        case "Science": return [Color.cyan, Color.blue]
-        case "History": return [Color.orange, Color.red]
-        case "Geography": return [Color.green, Color.teal]
-        case "Pop Culture": return [Color.pink, Color.purple]
-        case "Sports": return [Color.yellow, Color.orange]
-        case "General": return [Color.indigo, Color.purple]
-        default: return [Color.gray, Color.gray.opacity(0.5)]
+        case "Science": return [Color(red: 0.2, green: 0.4, blue: 0.6), Color(red: 0.1, green: 0.3, blue: 0.5)]
+        case "History": return [Color(red: 0.3, green: 0.5, blue: 0.3), Color(red: 0.2, green: 0.4, blue: 0.2)]
+        case "Geography": return [Color(red: 0.2, green: 0.5, blue: 0.6), Color(red: 0.1, green: 0.4, blue: 0.5)]
+        case "Pop Culture": return [Color(red: 0.9, green: 0.8, blue: 0.7), Color(red: 0.8, green: 0.7, blue: 0.6)]
+        case "Sports": return [Color(red: 0.7, green: 0.8, blue: 0.6), Color(red: 0.6, green: 0.7, blue: 0.5)]
+        case "General": return [Color(red: 0.3, green: 0.3, blue: 0.3), Color(red: 0.2, green: 0.2, blue: 0.2)]
+        case "Art & Literature": return [Color(red: 0.9, green: 0.6, blue: 0.7), Color(red: 0.8, green: 0.5, blue: 0.6)]
+        case "Movies": return [Color(red: 0.5, green: 0.3, blue: 0.6), Color(red: 0.4, green: 0.2, blue: 0.5)]
+        default: return [Color.gray, Color.gray.opacity(0.7)]
         }
     }
 }
@@ -286,10 +291,9 @@ struct SettingsMenuView: View {
     let showShop: () -> Void
     let showLeaderboard: () -> Void
     @Binding var showDailyChallengeDetail: Bool
-    @Binding var showSuggestCategory: Bool  // ADD THIS
-
+    @Binding var showSuggestCategory: Bool
     @State private var showAdminReports = false
-    @State private var showNotificationSettings = false  // ADD THIS
+    @State private var showNotificationSettings = false
     @Environment(\.dismiss) var dismiss
     @Environment(\.colorScheme) var colorScheme
     @StateObject private var coinsManager = CoinsManager.shared
@@ -297,25 +301,27 @@ struct SettingsMenuView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.dynamicBackground.ignoresSafeArea()
+                Color(red: 0.97, green: 0.97, blue: 0.96)
+                    .ignoresSafeArea()
                 
                 VStack(spacing: 20) {
                     // Coins Display
                     HStack(spacing: 8) {
                         Image(systemName: "dollarsign.circle.fill")
                             .font(.title2)
-                            .foregroundColor(.yellow)
+                            .foregroundColor(.orange)
                         
                         Text("\(coinsManager.coins) Coins")
                             .font(.title3)
                             .fontWeight(.bold)
-                            .foregroundColor(.dynamicText)
+                            .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
                     }
                     .padding()
                     .frame(maxWidth: .infinity)
                     .background(
                         RoundedRectangle(cornerRadius: 15)
-                            .fill(Color.dynamicCardBackground)
+                            .fill(Color.white)
+                            .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 2)
                     )
                     .padding(.horizontal)
                     
@@ -330,28 +336,24 @@ struct SettingsMenuView: View {
                             dismiss()
                             showLeaderboard()
                         }
-                        
+                        /* Daily Challenge is not working yet. :D 
                         SettingsMenuItem(icon: "calendar.badge.clock", title: "Daily Challenge", color: .purple) {
                             dismiss()
                             showDailyChallengeDetail = true
-                        }
+                        }*/
                         
-                        // ADD THIS
                         SettingsMenuItem(icon: "bell.badge.fill", title: "Notifications", color: .red) {
                             showNotificationSettings = true
                         }
                         
-                        SettingsMenuItem(icon: "exclamationmark.triangle.fill", title: "View Reports", color: .orange) {
+                        // Code for testing View Reports
+                       /* SettingsMenuItem(icon: "exclamationmark.triangle.fill", title: "View Reports", color: .orange) {
                             showAdminReports = true
-                        }
+                        }*/
                         
                         SettingsMenuItem(icon: "lightbulb.fill", title: "Suggest a Category", color: .yellow) {
-                            dismiss()
                             showSuggestCategory = true
                         }
-                        
-
-
                     }
                     .padding(.horizontal)
                     
@@ -366,7 +368,7 @@ struct SettingsMenuView: View {
         .sheet(isPresented: $showAdminReports) {
             AdminReportsView()
         }
-        .sheet(isPresented: $showNotificationSettings) {  // ADD THIS
+        .sheet(isPresented: $showNotificationSettings) {
             NotificationSettingsView()
         }
         .sheet(isPresented: $showSuggestCategory) {
@@ -375,14 +377,12 @@ struct SettingsMenuView: View {
     }
 }
 
-
 // MARK: - Settings Menu Item
 struct SettingsMenuItem: View {
     let icon: String
     let title: String
     let color: Color
     let action: () -> Void
-    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         Button(action: action) {
@@ -394,7 +394,7 @@ struct SettingsMenuItem: View {
                 
                 Text(title)
                     .font(.headline)
-                    .foregroundColor(.dynamicText)
+                    .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
                 
                 Spacer()
                 
@@ -404,16 +404,9 @@ struct SettingsMenuItem: View {
             .padding()
             .background(
                 RoundedRectangle(cornerRadius: 12)
-                    .fill(Color.dynamicCardBackground)
-                    .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1), radius: 3)
+                    .fill(Color.white)
+                    .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
             )
         }
     }
 }
-
-
-
-
-
-
-

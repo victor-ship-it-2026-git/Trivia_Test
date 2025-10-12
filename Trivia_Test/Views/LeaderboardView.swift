@@ -8,6 +8,7 @@ struct LeaderboardView: View {
     @State private var showFilterMenu = false
     @State private var isGeneratingShare = false
     @State private var selectedEntryForShare: LeaderboardEntry?
+    @State private var currentUserName: String = ""
     @Environment(\.colorScheme) var colorScheme
     
     enum LeaderboardFilter: String, CaseIterable {
@@ -34,107 +35,101 @@ struct LeaderboardView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(
-                gradient: Gradient(colors: colorScheme == .dark ?
-                    [Color.blue.opacity(0.2), Color.purple.opacity(0.2)] :
-                    [Color.blue.opacity(0.3), Color.purple.opacity(0.3)]),
-                startPoint: .top,
-                endPoint: .bottom
-            )
-            .ignoresSafeArea()
+            Color(red: 0.97, green: 0.97, blue: 0.96)
+                .ignoresSafeArea()
             
-            VStack(spacing: 20) {
-                // Header
+            VStack(spacing: 0) {
+                // Top Navigation Bar
                 HStack {
-                    Button(action: goHome) {
-                        Image(systemName: "arrow.left")
-                            .font(.title2)
-                            .foregroundColor(.blue)
+                    Button(action: {
+                        HapticManager.shared.selection()
+                        goHome()
+                    }) {
+                        Image(systemName: "chevron.left")
+                            .font(.system(size: 18, weight: .semibold))
+                            .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+                            .frame(width: 44, height: 44)
+                            .background(Color.white)
+                            .clipShape(Circle())
+                            .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
                     }
                     
                     Spacer()
                     
                     // Filter Button
                     Button(action: {
+                        HapticManager.shared.selection()
                         showFilterMenu = true
                     }) {
-                        HStack(spacing: 6) {
-                            if selectedFilter == .all {
-                                Image(systemName: selectedFilter.icon)
-                            } else {
-                                Text(selectedFilter.icon)
-                            }
+                        HStack(spacing: 8) {
                             Text(selectedFilter.rawValue)
-                                .font(.subheadline)
-                                .fontWeight(.semibold)
+                                .font(.system(size: 16, weight: .semibold))
                             Image(systemName: "chevron.down")
-                                .font(.caption)
+                                .font(.system(size: 12, weight: .semibold))
                         }
-                        .foregroundColor(.blue)
-                        .padding(.horizontal, 12)
-                        .padding(.vertical, 8)
-                        .background(
-                            Capsule()
-                                .fill(Color.blue.opacity(colorScheme == .dark ? 0.25 : 0.15))
-                        )
+                        .foregroundColor(Color.purple)
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 10)
+                        .background(Color.purple.opacity(0.15))
+                        .cornerRadius(22)
                     }
                 }
-                .padding()
+                .padding(.horizontal, 16)
+                .padding(.top, 8)
+                .padding(.bottom, 16)
+                
+                // Trophy Icon
+                ZStack {
+                    Circle()
+                        .fill(Color.yellow)
+                        .frame(width: 80, height: 80)
+                    
+                    Image(systemName: "trophy.fill")
+                        .font(.system(size: 40))
+                        .foregroundColor(.white)
+                }
+                .padding(.bottom, 16)
                 
                 // Title
-                VStack(spacing: 8) {
-                    Text("🏆")
-                        .font(.system(size: 50))
-                    
-                    Text("Global Leaderboard")
-                        .font(.system(size: 32, weight: .bold))
-                        .foregroundColor(.dynamicText)
-                    
-                    Text("\(filteredLeaderboard.count) players")
-                        .font(.subheadline)
-                        .foregroundColor(.dynamicSecondaryText)
-                }
+                Text("Global Leaderboard")
+                    .font(.system(size: 32, weight: .bold))
+                    .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+                    .padding(.bottom, 20)
                 
                 // Loading Indicator
                 if firebaseManager.isLoading && filteredLeaderboard.isEmpty {
                     Spacer()
-                    ProgressView()
-                        .scaleEffect(1.5)
-                        .tint(.blue)
-                    Text("Loading leaderboard...")
-                        .font(.subheadline)
-                        .foregroundColor(.dynamicSecondaryText)
-                        .padding(.top)
+                    VStack(spacing: 16) {
+                        ProgressView()
+                            .scaleEffect(1.5)
+                            .tint(.purple)
+                        Text("Loading leaderboard...")
+                            .font(.subheadline)
+                            .foregroundColor(Color.gray)
+                    }
                     Spacer()
                 } else if filteredLeaderboard.isEmpty {
                     Spacer()
                     VStack(spacing: 15) {
                         Image(systemName: "trophy.slash")
                             .font(.system(size: 60))
-                            .foregroundColor(.dynamicSecondaryText)
+                            .foregroundColor(Color.gray)
                         Text("No scores yet!")
                             .font(.title2)
-                            .foregroundColor(.dynamicSecondaryText)
+                            .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
                         Text("Play a game to get on the leaderboard")
                             .font(.subheadline)
-                            .foregroundColor(.dynamicSecondaryText.opacity(0.7))
+                            .foregroundColor(Color.gray)
                     }
                     Spacer()
                 } else {
-                    ScrollView {
+                    ScrollView(showsIndicators: false) {
                         VStack(spacing: 12) {
                             ForEach(Array(filteredLeaderboard.enumerated()), id: \.element.id) { index, entry in
-                                LeaderboardRowWithShare(
-                                    entry: entry,
-                                    rank: index + 1,
-                                    onShare: {
-                                        shareLeaderboardEntry(entry: entry, rank: index + 1)
-                                    }
-                                )
-                                .transition(.opacity.combined(with: .move(edge: .top)))
+                                makeLeaderboardRow(entry: entry, rank: index + 1)
                             }
                         }
-                        .padding()
+                        .padding(.horizontal, 16)
                         .padding(.bottom, 20)
                     }
                 }
@@ -142,9 +137,12 @@ struct LeaderboardView: View {
         }
         .onAppear {
             AnalyticsManager.shared.logScreenView(screenName: "Leaderboard")
-              AnalyticsManager.shared.logLeaderboardViewed(filter: selectedFilter.rawValue)
-              
-        
+            AnalyticsManager.shared.logLeaderboardViewed(filter: selectedFilter.rawValue)
+            
+            // Get current user name from UserDefaults
+            currentUserName = UserDefaults.standard.string(forKey: "LastSavedPlayerName") ?? ""
+            print("🔍 Current user name from UserDefaults: '\(currentUserName)'")
+            
             applyFilter()
         }
         .onChange(of: firebaseManager.leaderboard) { oldValue, newValue in
@@ -155,7 +153,6 @@ struct LeaderboardView: View {
                 applyFilter()
             }
             AnalyticsManager.shared.logLeaderboardViewed(filter: newValue.rawValue)
-
         }
         .sheet(isPresented: $showFilterMenu) {
             FilterMenuView(selectedFilter: $selectedFilter)
@@ -169,6 +166,21 @@ struct LeaderboardView: View {
                 Text(error)
             }
         }
+    }
+    
+    @ViewBuilder
+    private func makeLeaderboardRow(entry: LeaderboardEntry, rank: Int) -> some View {
+        let isUserEntry = !currentUserName.isEmpty && entry.playerName == currentUserName
+        
+        LeaderboardRowModern(
+            entry: entry,
+            rank: rank,
+            isCurrentUser: isUserEntry,
+            onShare: {
+                shareLeaderboardEntry(entry: entry, rank: rank)
+            }
+        )
+        .transition(.opacity.combined(with: .move(edge: .top)))
     }
     
     private func applyFilter() {
@@ -191,23 +203,18 @@ struct LeaderboardView: View {
     }
     
     // MARK: - Share Leaderboard Entry
-    
     func shareLeaderboardEntry(entry: LeaderboardEntry, rank: Int) {
-        
         AnalyticsManager.shared.logShareInitiated(
-               shareType: "leaderboard",
-               category: QuizCategory(rawValue: entry.category),
-               difficulty: Difficulty(rawValue: entry.difficulty),
-               score: entry.score
-           )
-           AnalyticsManager.shared.logLeaderboardEntryShared(rank: rank)
+            shareType: "leaderboard",
+            category: QuizCategory(rawValue: entry.category),
+            difficulty: Difficulty(rawValue: entry.difficulty),
+            score: entry.score
+        )
+        AnalyticsManager.shared.logLeaderboardEntryShared(rank: rank)
         
         isGeneratingShare = true
         HapticManager.shared.success()
         
-        
-        
-        // Generate share card
         let shareCard = LeaderboardShareCard(
             playerName: entry.playerName,
             rank: rank,
@@ -217,11 +224,10 @@ struct LeaderboardView: View {
             difficulty: entry.difficulty
         )
         
-        // Generate image on main thread
         Task { @MainActor in
             if let image = ShareManager.shared.generateShareImage(from: AnyView(shareCard)) {
                 AnalyticsManager.shared.logShareCompleted(shareType: "leaderboard")
-
+                
                 let shareText = ShareManager.shared.generateLeaderboardShareText(
                     playerName: entry.playerName,
                     rank: rank,
@@ -231,7 +237,6 @@ struct LeaderboardView: View {
                 
                 isGeneratingShare = false
                 
-                // Get root view controller
                 guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
                       let rootVC = windowScene.windows.first?.rootViewController else {
                     return
@@ -249,96 +254,81 @@ struct LeaderboardView: View {
     }
 }
 
-// MARK: - Leaderboard Row with Share Button
-struct LeaderboardRowWithShare: View {
+// MARK: - Modern Leaderboard Row
+struct LeaderboardRowModern: View {
     let entry: LeaderboardEntry
     let rank: Int
+    let isCurrentUser: Bool
     let onShare: () -> Void
-    @Environment(\.colorScheme) var colorScheme
     
-    var rankEmoji: String {
+    var rankBadgeColor: Color {
         switch rank {
-        case 1: return "🥇"
-        case 2: return "🥈"
-        case 3: return "🥉"
-        default: return "\(rank)"
+        case 1: return Color.yellow
+        case 2: return Color.gray.opacity(0.7)
+        case 3: return Color.orange.opacity(0.7)
+        default: return Color.white
         }
     }
     
     var body: some View {
-        HStack(spacing: 15) {
-            // Rank
-            Text(rankEmoji)
-                .font(.title)
-                .frame(width: 50)
+        HStack(spacing: 12) {
+            // Rank Badge
+            ZStack {
+                Circle()
+                    .fill(rankBadgeColor)
+                    .frame(width: 44, height: 44)
+                
+                Text("\(rank)")
+                    .font(.system(size: 18, weight: .bold))
+                    .foregroundColor(rank <= 3 ? .white : Color(red: 0.1, green: 0.1, blue: 0.2))
+            }
             
             // Player Info
             VStack(alignment: .leading, spacing: 4) {
                 Text(entry.playerName)
-                    .font(.headline)
-                    .foregroundColor(.dynamicText)
+                    .font(.system(size: 16, weight: .bold))
+                    .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
                 
-                HStack(spacing: 10) {
-                    Text(entry.category)
-                        .font(.caption)
-                        .foregroundColor(.dynamicText)
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 4)
-                        .background(Color.blue.opacity(colorScheme == .dark ? 0.25 : 0.2))
-                        .cornerRadius(8)
-                    
-                    Text(entry.difficulty)
-                        .font(.caption)
-                        .foregroundColor(.dynamicText)
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 4)
-                        .background(difficultyColor(entry.difficulty).opacity(colorScheme == .dark ? 0.25 : 0.2))
-                        .cornerRadius(8)
-                }
+                Text("\(entry.difficulty) of \(entry.category)")
+                    .font(.system(size: 13))
+                    .foregroundColor(Color.gray)
+                    .lineLimit(1)
             }
             
             Spacer()
             
             // Score
-            VStack(alignment: .trailing, spacing: 4) {
-                Text("\(entry.percentage)%")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .foregroundColor(.blue)
+            VStack(alignment: .trailing, spacing: 2) {
+                Text("\(entry.score)")
+                    .font(.system(size: 20, weight: .bold))
+                    .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
                 
-                Text("\(entry.score)/\(entry.totalQuestions)")
-                    .font(.caption)
-                    .foregroundColor(.dynamicSecondaryText)
+                Text("pts")
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
             }
             
-            // Share Button
-            Button(action: onShare) {
-                Image(systemName: "square.and.arrow.up")
-                    .font(.title3)
-                    .foregroundColor(.blue)
-                    .padding(8)
-                    .background(
-                        Circle()
-                            .fill(Color.blue.opacity(colorScheme == .dark ? 0.25 : 0.15))
-                    )
+            // Share Button (only for current user)
+            if isCurrentUser {
+                Button(action: {
+                    HapticManager.shared.selection()
+                    onShare()
+                }) {
+                    Image(systemName: "square.and.arrow.up")
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundColor(Color.purple)
+                        .frame(width: 36, height: 36)
+                        .background(Color.purple.opacity(0.15))
+                        .clipShape(Circle())
+                }
             }
         }
-        .padding()
-        .background(Color.dynamicCardBackground)
-        .cornerRadius(15)
-        .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1), radius: 2)
-    }
-    
-    func difficultyColor(_ difficulty: String) -> Color {
-        switch difficulty {
-        case "Rookie": return .green
-        case "Amateur": return .cyan
-        case "Pro": return .blue
-        case "Master": return .purple
-        case "Legend": return .orange
-        case "Genius": return .red
-        default: return .gray
-        }
+        .padding(16)
+        .background(
+            rank <= 3 ? Color.purple.opacity(0.1) : Color.white
+        )
+        .cornerRadius(16)
+        .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
     }
 }
 
@@ -346,17 +336,18 @@ struct LeaderboardRowWithShare: View {
 struct FilterMenuView: View {
     @Binding var selectedFilter: LeaderboardView.LeaderboardFilter
     @Environment(\.dismiss) var dismiss
-    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationView {
             ZStack {
-                Color.dynamicBackground.ignoresSafeArea()
+                Color(red: 0.97, green: 0.97, blue: 0.96)
+                    .ignoresSafeArea()
                 
                 ScrollView {
                     VStack(spacing: 12) {
                         ForEach(LeaderboardView.LeaderboardFilter.allCases, id: \.self) { filter in
                             Button(action: {
+                                HapticManager.shared.selection()
                                 selectedFilter = filter
                                 dismiss()
                             }) {
@@ -364,7 +355,7 @@ struct FilterMenuView: View {
                                     if filter == .all {
                                         Image(systemName: filter.icon)
                                             .font(.title3)
-                                            .foregroundColor(.blue)
+                                            .foregroundColor(Color.purple)
                                             .frame(width: 30)
                                     } else {
                                         Text(filter.icon)
@@ -374,22 +365,20 @@ struct FilterMenuView: View {
                                     
                                     Text(filter.rawValue)
                                         .font(.headline)
-                                        .foregroundColor(.dynamicText)
+                                        .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
                                     
                                     Spacer()
                                     
                                     if selectedFilter == filter {
                                         Image(systemName: "checkmark.circle.fill")
-                                            .foregroundColor(.blue)
+                                            .foregroundColor(Color.purple)
                                     }
                                 }
                                 .padding()
                                 .background(
                                     RoundedRectangle(cornerRadius: 12)
-                                        .fill(selectedFilter == filter ?
-                                            Color.blue.opacity(colorScheme == .dark ? 0.25 : 0.15) :
-                                            Color.dynamicCardBackground)
-                                        .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1), radius: 3)
+                                        .fill(selectedFilter == filter ? Color.purple.opacity(0.15) : Color.white)
+                                        .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
                                 )
                             }
                         }
