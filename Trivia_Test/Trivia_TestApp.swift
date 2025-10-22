@@ -82,6 +82,19 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         AnalyticsManager.shared.logAppOpened()
         appOpenedTime = Date()
         
+        print("📱 Bundle ID from Info.plist: \(Bundle.main.bundleIdentifier ?? "nil")")
+
+        if let path = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist"),
+           let dict = NSDictionary(contentsOfFile: path),
+           let bundleId = dict["BUNDLE_ID"] as? String {
+            print("📱 Bundle ID from GoogleService-Info.plist: \(bundleId)")
+            
+            if bundleId != Bundle.main.bundleIdentifier {
+                print("⚠️ WARNING: Bundle IDs don't match!")
+            } else {
+                print("✅ Bundle IDs match!")
+            }
+        }
         // ... rest of your code
         return true
     }
@@ -124,6 +137,9 @@ class AppDelegate: NSObject, UIApplicationDelegate {
             print("✅ AdMob initialized with status: \(status)")
         }
     }
+    
 }
+
+
 
 
