@@ -1,17 +1,3 @@
-//
-//  HapticManager.swift
-//  Trivia_Test
-//
-//  Created by Win on 9/10/2568 BE.
-//
-
-
-//
-//  HapticManager.swift
-//  Trivia_Test
-//
-//  Created by Win
-//
 
 import UIKit
 

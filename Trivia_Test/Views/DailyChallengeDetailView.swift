@@ -1,10 +1,3 @@
-//
-//  DailyChallengeDetailView.swift
-//  Trivia_Test
-//
-//  Created by Win on 5/10/2568 BE.
-//
-
 
 
 import SwiftUI

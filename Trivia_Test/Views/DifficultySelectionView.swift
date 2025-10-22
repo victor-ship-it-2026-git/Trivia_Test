@@ -218,7 +218,7 @@ struct DifficultySelectionView: View {
     }
 }
 
-// MARK: - Modern Difficulty Card
+// Modern Difficulty Card
 struct DifficultyCardModern: View {
     let difficulty: Difficulty
     let isSelected: Bool

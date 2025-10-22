@@ -1,17 +1,3 @@
-//
-//  ReportManager.swift
-//  Trivia_Test
-//
-//  Created by Win on 11/10/2568 BE.
-//
-
-
-//
-//  ReportManager.swift
-//  Trivia_Test
-//
-//  Created by Win
-//
 
 import Foundation
 import FirebaseDatabase
@@ -27,7 +13,7 @@ class ReportManager: ObservableObject {
     
     private init() {}
     
-    // MARK: - Submit Report
+    // Submit Report
     
     func submitReport(
         question: Question,
@@ -50,7 +36,7 @@ class ReportManager: ObservableObject {
             "additionalDetails": additionalDetails,
             "reporterName": reporterName,
             "timestamp": Date().timeIntervalSince1970,
-            "status": "pending" // pending, reviewed, resolved
+            "status": "pending" // Status: pending, reviewed, resolved
         ]
         
         reportRef.setValue(reportData) { [weak self] error, _ in
@@ -70,7 +56,7 @@ class ReportManager: ObservableObject {
         }
     }
     
-    // MARK: - Get All Reports (Admin use)
+    // Get All Reports (For Admin use)
     
     func getAllReports(completion: @escaping ([QuestionReport]) -> Void) {
         database.child("question_reports")
@@ -95,7 +81,7 @@ class ReportManager: ObservableObject {
             }
     }
     
-    // MARK: - Get Pending Reports Count
+    // Get Pending Reports Count
     
     func getPendingReportsCount(completion: @escaping (Int) -> Void) {
         database.child("question_reports")
@@ -109,7 +95,7 @@ class ReportManager: ObservableObject {
     }
 }
 
-// MARK: - Report Models
+// Report Models
 
 enum ReportReason: String, CaseIterable {
     case wrongAnswer = "Wrong Answer"

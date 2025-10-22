@@ -1,9 +1,3 @@
-//
-//  ShopManager.swift
-//  Trivia_Test
-//
-//  Created by Win on 5/10/2568 BE.
-//
 
 import Foundation
 internal import Combine
@@ -53,7 +47,7 @@ class ShopManager: ObservableObject {
     }
 }
 
-// MARK: - Shop Ad Reward Model
+// Shop Ad Reward Model
 struct ShopAdReward: Identifiable {
     let id: UUID
     let lifelineType: LifelineType

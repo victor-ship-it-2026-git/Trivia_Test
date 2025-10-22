@@ -1,11 +1,6 @@
-//
-//  ShopScreenView.swift
-//  Trivia_Test
-//
-//  Created by Win on 8/10/2568 BE.
-//
 
 import SwiftUI
+internal import Combine
 
 struct ShopScreenView: View {
     let goBack: () -> Void
@@ -106,7 +101,7 @@ struct ShopScreenView: View {
         }
     }
     
-    // MARK: - View Components
+    // View Components
     
     private var headerSection: some View {
         VStack(spacing: 10) {
@@ -245,24 +240,34 @@ struct ShopScreenView: View {
         .padding(.horizontal)
     }
     
-    // MARK: - Helper Methods
+    // Helper Methods
     
     private func purchaseItem(_ item: ShopItem) {
-        if shopManager.purchaseItem(item) {
-            AnalyticsManager.shared.logLifelinePurchased(
-                       lifelineType: item.lifelineType,
-                       quantity: item.quantity,
-                       cost: item.price
-                   )
-            withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
-                purchaseSuccess = true
-            }
-        } else {
-            withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
-                showInsufficientCoins = true
-            }
-        }
-    }
+          print("💰 Attempting purchase: \(item.lifelineType.rawValue) x\(item.quantity) for \(item.price) coins")
+          print("💰 Current coins: \(coinsManager.coins)")
+          
+          if shopManager.purchaseItem(item) {
+              print("✅ Purchase successful!")
+              AnalyticsManager.shared.logLifelinePurchased(
+                         lifelineType: item.lifelineType,
+                         quantity: item.quantity,
+                         cost: item.price
+                     )
+              HapticManager.shared.success()
+              withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+                  purchaseSuccess = true
+              }
+              // Force refresh the UI
+              coinsManager.objectWillChange.send()
+              lifelineManager.objectWillChange.send()
+          } else {
+              print("❌ Purchase failed - insufficient coins")
+              HapticManager.shared.error()
+              withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+                  showInsufficientCoins = true
+              }
+          }
+      }
     
     private func watchAdForReward(_ reward: ShopAdReward) {
         Task { @MainActor in

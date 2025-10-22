@@ -70,6 +70,287 @@
             "category": "Geography",
             "difficulty": "Rookie"
           },
+          {
+            "text": "Which continent is the largest by land area?",
+            "options": ["Africa", "Asia", "Europe", "South America"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "What is the capital of France?",
+            "options": ["Madrid", "Berlin", "Paris", "Lisbon"],
+            "correctAnswer": 2,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which ocean is the largest on Earth?",
+            "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"],
+            "correctAnswer": 2,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which continent is known as the 'Dark Continent'?",
+            "options": ["Europe", "Africa", "Asia", "Australia"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Mount Everest is located in which mountain range?",
+            "options": ["Andes", "Rockies", "Himalayas", "Alps"],
+            "correctAnswer": 2,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which country is shaped like a boot?",
+            "options": ["Italy", "Spain", "Thailand", "Brazil"],
+            "correctAnswer": 0,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "What is the capital of Japan?",
+            "options": ["Seoul", "Tokyo", "Beijing", "Kyoto"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "What is the largest desert in the world?",
+            "options": ["Gobi Desert", "Sahara Desert", "Mojave Desert", "Arabian Desert"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which country is famous for the Great Wall?",
+            "options": ["China", "Japan", "India", "Mongolia"],
+            "correctAnswer": 0,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which continent is also a country?",
+            "options": ["Europe", "Australia", "Antarctica", "South America"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which river is the longest in the world?",
+            "options": ["Amazon River", "Nile River", "Yangtze River", "Mississippi River"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which is the smallest continent?",
+            "options": ["Antarctica", "Australia", "Europe", "South America"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which country is known for maple syrup?",
+            "options": ["United States", "Canada", "Finland", "United Kingdom"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "What is the capital of the United Kingdom?",
+            "options": ["London", "Manchester", "Edinburgh", "Birmingham"],
+            "correctAnswer": 0,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which ocean is the smallest?",
+            "options": ["Indian Ocean", "Arctic Ocean", "Atlantic Ocean", "Pacific Ocean"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which continent is home to the Amazon rainforest?",
+            "options": ["Asia", "South America", "Africa", "Australia"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which U.S. state is the largest by area?",
+            "options": ["Texas", "California", "Alaska", "Montana"],
+            "correctAnswer": 2,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "What is the largest country in the world by land area?",
+            "options": ["China", "United States", "Russia", "Canada"],
+            "correctAnswer": 2,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "What is the capital of Thailand?",
+            "options": ["Bangkok", "Hanoi", "Phnom Penh", "Vientiane"],
+            "correctAnswer": 0,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "What is the largest lake in the world by surface area?",
+            "options": ["Lake Superior", "Caspian Sea", "Lake Victoria", "Lake Baikal"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+
+          {
+            "text": "Which country is known as the Land of the Rising Sun?",
+            "options": ["China", "Japan", "South Korea", "Philippines"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which continent is Egypt located in?",
+            "options": ["Africa", "Asia", "Europe", "South America"],
+            "correctAnswer": 0,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "What is the capital of Australia?",
+            "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+            "correctAnswer": 2,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which river flows through Egypt?",
+            "options": ["Amazon", "Nile", "Danube", "Rhine"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which country is famous for the Eiffel Tower?",
+            "options": ["Italy", "Spain", "France", "Germany"],
+            "correctAnswer": 2,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which African desert is the hottest in the world?",
+            "options": ["Sahara Desert", "Gobi Desert", "Kalahari Desert", "Great Victoria Desert"],
+            "correctAnswer": 0,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which country has the most population?",
+            "options": ["India", "China", "United States", "Indonesia"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "What is the capital of Canada?",
+            "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+            "correctAnswer": 2,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which continent is Brazil in?",
+            "options": ["Africa", "Europe", "Asia", "South America"],
+            "correctAnswer": 3,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which ocean borders California?",
+            "options": ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean"],
+            "correctAnswer": 0,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "What is the capital of South Korea?",
+            "options": ["Seoul", "Tokyo", "Busan", "Pyongyang"],
+            "correctAnswer": 0,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which sea separates Europe and Africa?",
+            "options": ["Caribbean Sea", "Mediterranean Sea", "Red Sea", "Black Sea"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which country is known for the Taj Mahal?",
+            "options": ["Pakistan", "India", "Bangladesh", "Nepal"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which is the largest island in the world?",
+            "options": ["Greenland", "Borneo", "Madagascar", "Sumatra"],
+            "correctAnswer": 0,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "What is the capital of Russia?",
+            "options": ["Moscow", "Saint Petersburg", "Kyiv", "Minsk"],
+            "correctAnswer": 0,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which U.S. state is known as the Sunshine State?",
+            "options": ["Florida", "California", "Hawaii", "Texas"],
+            "correctAnswer": 0,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "What is the capital of Germany?",
+            "options": ["Munich", "Berlin", "Frankfurt", "Hamburg"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which continent is the Sahara Desert located in?",
+            "options": ["Asia", "Africa", "Australia", "Europe"],
+            "correctAnswer": 1,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "Which country is home to the Colosseum?",
+            "options": ["Italy", "Greece", "Spain", "Portugal"],
+            "correctAnswer": 0,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
+          {
+            "text": "What is the capital of Spain?",
+            "options": ["Barcelona", "Valencia", "Madrid", "Seville"],
+            "correctAnswer": 2,
+            "category": "Geography",
+            "difficulty": "Rookie"
+          },
   {
     "text": "What is the capital of France?",
     "options": ["London", "Berlin", "Paris", "Madrid"],

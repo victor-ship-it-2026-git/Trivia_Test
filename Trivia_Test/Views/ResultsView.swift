@@ -282,7 +282,7 @@ struct ResultsView: View {
         }
     }
     
-    // MARK: - Share Achievement
+    // Share Achievement
     func shareAchievement() {
         AnalyticsManager.shared.logShareInitiated(
             shareType: "results",

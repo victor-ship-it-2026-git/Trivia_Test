@@ -258,7 +258,7 @@ struct NotificationSettingsView: View {
     }
 }
 
-// MARK: - Instruction Row
+// Instruction Row
 
 struct InstructionRow: View {
     let number: String
@@ -278,7 +278,7 @@ struct InstructionRow: View {
     }
 }
 
-// MARK: - Notification Toggle
+// Notification Toggle
 
 struct NotificationToggle: View {
     let icon: String
@@ -330,7 +330,7 @@ struct NotificationToggle: View {
     }
 }
 
-// MARK: - Preview
+// Preview
 
 struct NotificationSettingsView_Previews: PreviewProvider {
     static var previews: some View {

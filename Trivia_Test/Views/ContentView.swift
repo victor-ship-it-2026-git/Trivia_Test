@@ -1,13 +1,7 @@
-//
-//  ContentView.swift
-//  Trivia_Test
-//
-//  Created by Win on 4/10/2568 BE.
-//
 
 import SwiftUI
 
-// MARK: - ContentView
+// ContentView
 struct ContentView: View {
     @StateObject private var gamePresenter = GamePresenter()
     @ObservedObject private var adMobManager = AdMobManager.shared

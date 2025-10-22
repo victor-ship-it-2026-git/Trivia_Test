@@ -1,9 +1,3 @@
-//
-//  RatingManager.swift
-//  Trivia_Test
-//
-//  Created by Win on [Date]
-//
 
 import Foundation
 import StoreKit
@@ -53,9 +47,9 @@ class RatingManager: ObservableObject {
         userRatedApp()
     }
     
-    func resetRating() {
-        // For testing purposes only - remove in production
+    /*func resetRating() {
+        // For testing purposes only
         defaults.set(false, forKey: hasRatedKey)
         defaults.set(0, forKey: easyModeCompletedKey)
-    }
+    }*/
 }

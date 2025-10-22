@@ -1,11 +1,3 @@
-//
-//  asdf.swift
-//  Trivia_Test
-//
-//  Created by Win on 4/10/2568 BE.
-//
-
-
 import SwiftUI
 
 extension Color {
@@ -16,7 +8,7 @@ extension Color {
     static let adaptiveBorder = Color("AdaptiveBorder")
 }
 
-// If you don't want to use Asset Catalog, use these:
+// Use these in case not to use Asset Catalog.
 extension Color {
     static var dynamicBackground: Color {
         Color(UIColor { traitCollection in

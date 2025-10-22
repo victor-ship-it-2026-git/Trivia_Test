@@ -1,9 +1,3 @@
-//
-//  QuestionsManager.swift
-//  Trivia_Test
-//
-//  Created by Win on 4/10/2568 BE.
-//
 
 import Foundation
 

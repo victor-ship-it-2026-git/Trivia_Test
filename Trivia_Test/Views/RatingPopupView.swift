@@ -1,12 +1,5 @@
-//
-//  RatingPopupView.swift
-//  Trivia_Test
-//
-//  Created by Win on 8/10/2568 BE.
-//
 
 
-// MARK: - RatingPopupView.swift
 import SwiftUI
 
 struct RatingPopupView: View {
@@ -50,7 +43,7 @@ struct RatingPopupView: View {
         }
     }
     
-    // MARK: - Rating View
+    // Rating View
     private var ratingView: some View {
         VStack(spacing: 25) {
             // Icon
@@ -117,7 +110,7 @@ struct RatingPopupView: View {
         }
     }
     
-    // MARK: - Thank You View
+    // Thank You View
     private var thankYouView: some View {
         VStack(spacing: 25) {
             // Icon
@@ -191,7 +184,7 @@ struct RatingPopupView: View {
         }
     }
     
-    // MARK: - Handle Star Selection
+    // Handle Star Selection
     private func handleStarSelection(_ stars: Int) {
         if stars == 5 {
             AnalyticsManager.shared.logRatingGiven(stars: 5, showedAppStoreReview: true)

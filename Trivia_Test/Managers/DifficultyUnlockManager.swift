@@ -1,9 +1,3 @@
-//
-//  DifficultyUnlockManager.swift
-//  Trivia_Test
-//
-//  Created by Win
-//
 
 import Foundation
 internal import Combine
@@ -18,15 +12,15 @@ class DifficultyUnlockManager: ObservableObject {
         loadUnlockedDifficulties()
     }
     
-    // Key format: "difficulty_unlocked_{category}_{difficulty}"
+    // Note for self - Key format: "difficulty_unlocked_{category}_{difficulty}"
     private func getKey(category: QuizCategory, difficulty: Difficulty) -> String {
         return "difficulty_unlocked_\(category.rawValue)_\(difficulty.rawValue)"
     }
     
-    // Load all unlocked difficulties for all categories
+    // Note: Load all unlocked difficulties for all categories
     func loadUnlockedDifficulties() {
         for category in QuizCategory.allCases {
-            var unlocked: [Difficulty] = [.rookie] // Rookie is always unlocked
+            var unlocked: [Difficulty] = [.rookie] // Here, to make Rookie is always unlocked
             
             for difficulty in Difficulty.allCases where difficulty != .rookie {
                 let key = getKey(category: category, difficulty: difficulty)
@@ -41,7 +35,7 @@ class DifficultyUnlockManager: ObservableObject {
     
     // Check if a difficulty is unlocked for a category
     func isDifficultyUnlocked(category: QuizCategory, difficulty: Difficulty) -> Bool {
-        // Rookie is always unlocked
+        // Rookie is always unlocked so that user can play
         if difficulty == .rookie {
             return true
         }
@@ -94,7 +88,7 @@ class DifficultyUnlockManager: ObservableObject {
     }
     
     // Reset all progress (for testing)
-    func resetAllProgress() {
+  /*  func resetAllProgress() {
         for category in QuizCategory.allCases {
             for difficulty in Difficulty.allCases where difficulty != .rookie {
                 let key = getKey(category: category, difficulty: difficulty)
@@ -103,5 +97,5 @@ class DifficultyUnlockManager: ObservableObject {
         }
         loadUnlockedDifficulties()
         print("🔄 Reset all difficulty progress")
-    }
+    }*/
 }

@@ -1,18 +1,3 @@
-//
-//  ViewControllerHolder.swift
-//  Trivia_Test
-//
-//  Created by Win on 8/10/2568 BE.
-//
-
-
-//
-//  ViewControllerHolder.swift
-//  Trivia_Test
-//
-//  Created by Win
-//
-
 import SwiftUI
 import UIKit
 

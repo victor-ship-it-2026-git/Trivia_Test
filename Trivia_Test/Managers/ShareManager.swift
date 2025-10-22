@@ -1,9 +1,4 @@
-//
-//  ShareManager.swift
-//  Trivia_Test
-//
-//  Created by Win
-//
+
 
 import Foundation
 import UIKit
@@ -14,7 +9,7 @@ class ShareManager {
     
     private init() {}
     
-    // MARK: - Generate Share Image from View
+    // Generate Share Image from View
     
     @MainActor
     func generateShareImage(from view: AnyView, size: CGSize = CGSize(width: 1080, height: 1920)) -> UIImage? {
@@ -31,7 +26,7 @@ class ShareManager {
         }
     }
     
-    // MARK: - Share to Social Media
+    // Share to Social Media
     
     func shareToSocialMedia(image: UIImage, text: String, from viewController: UIViewController) {
         let activityItems: [Any] = [text, image]
@@ -59,7 +54,7 @@ class ShareManager {
         viewController.present(activityViewController, animated: true)
     }
     
-    // MARK: - Generate Share Text
+    // Generate Share Text
     
     func generateShareText(score: Int, total: Int, category: String, difficulty: String, rank: Int? = nil) -> String {
         let percentage = total > 0 ? (score * 100) / total : 0
@@ -77,7 +72,7 @@ class ShareManager {
         return text
     }
     
-    // MARK: - Generate Leaderboard Share Text
+    // Generate Leaderboard Share Text
     
     func generateLeaderboardShareText(playerName: String, rank: Int, score: Int, total: Int) -> String {
         let percentage = total > 0 ? (score * 100) / total : 0
@@ -93,7 +88,7 @@ class ShareManager {
     }
 }
 
-// MARK: - Share Card Views
+//  Share Card Views
 
 struct ResultsShareCard: View {
     let score: Int

@@ -1,9 +1,3 @@
-//
-//  ShopView.swift
-//  Trivia_Test
-//
-//  Created by Win on 5/10/2568 BE.
-//
 
 import SwiftUI
 
@@ -58,7 +52,7 @@ struct ShopView: View {
         }
     }
     
-    // MARK: - View Components
+    // View Components
     
     private var backgroundGradient: some View {
         LinearGradient(
@@ -189,7 +183,7 @@ struct ShopView: View {
         .padding(.horizontal)
     }
     
-    // MARK: - Helper Methods
+    // Helper Methods
     
     private func purchaseItem(_ item: ShopItem) {
         if shopManager.purchaseItem(item) {
@@ -262,7 +256,7 @@ struct ShopView: View {
     }
 }
 
-// MARK: - Ad Reward Card
+//  Ad Reward Card
 struct AdRewardCard: View {
     let reward: ShopAdReward
     let isAdReady: Bool

@@ -202,7 +202,7 @@ struct LeaderboardView: View {
         }
     }
     
-    // MARK: - Share Leaderboard Entry
+    // Share Leaderboard Entry
     func shareLeaderboardEntry(entry: LeaderboardEntry, rank: Int) {
         AnalyticsManager.shared.logShareInitiated(
             shareType: "leaderboard",
@@ -254,7 +254,7 @@ struct LeaderboardView: View {
     }
 }
 
-// MARK: - Modern Leaderboard Row
+// Modern Leaderboard Row
 struct LeaderboardRowModern: View {
     let entry: LeaderboardEntry
     let rank: Int
@@ -332,7 +332,7 @@ struct LeaderboardRowModern: View {
     }
 }
 
-// MARK: - Filter Menu View
+// Filter Menu View
 struct FilterMenuView: View {
     @Binding var selectedFilter: LeaderboardView.LeaderboardFilter
     @Environment(\.dismiss) var dismiss

@@ -1,17 +1,3 @@
-//
-//  AdminReportsView.swift
-//  Trivia_Test
-//
-//  Created by Win on 11/10/2568 BE.
-//
-
-
-//
-//  AdminReportsView.swift
-//  Trivia_Test
-//
-//  Created by Win
-//
 
 import SwiftUI
 
@@ -128,7 +114,7 @@ struct AdminReportsView: View {
     }
 }
 
-// MARK: - Filter Tab
+// Filter Tab
 struct FilterTab: View {
     let title: String
     let count: Int
@@ -164,7 +150,7 @@ struct FilterTab: View {
     }
 }
 
-// MARK: - Report Card
+// Report Card
 struct ReportCard: View {
     let report: QuestionReport
     @State private var isExpanded = false
@@ -330,7 +316,7 @@ struct ReportCard: View {
     }
 }
 
-// MARK: - Preview
+// Preview
 struct AdminReportsView_Previews: PreviewProvider {
     static var previews: some View {
         AdminReportsView()

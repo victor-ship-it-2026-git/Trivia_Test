@@ -1,18 +1,3 @@
-//
-//  CrashlyticsManager.swift
-//  Trivia_Test
-//
-//  Created by Win on 11/10/2568 BE.
-//
-
-
-//
-//  CrashlyticsManager.swift
-//  Trivia_Test
-//
-//  Created by Win
-//
-
 import Foundation
 import FirebaseCrashlytics
 
@@ -21,9 +6,9 @@ class CrashlyticsManager {
     
     private init() {}
     
-    // MARK: - Log Non-Fatal Errors
+    // Log Non-Fatal Errors
     
-    /// Log a non-fatal error to Crashlytics
+    // Log a non-fatal error to Crashlytics
     func logError(_ error: Error, additionalInfo: [String: Any]? = nil) {
         let nsError = error as NSError
         Crashlytics.crashlytics().record(error: nsError)
@@ -37,15 +22,15 @@ class CrashlyticsManager {
         print("🔥 Logged error to Crashlytics: \(error.localizedDescription)")
     }
     
-    // MARK: - Log Custom Messages
+    // Log Custom Messages
     
-    /// Log a custom message to Crashlytics (appears in crash breadcrumbs)
+    // Log a custom message to Crashlytics (appears in crash breadcrumbs)
     func log(_ message: String) {
         Crashlytics.crashlytics().log(message)
         print("🔥 Crashlytics log: \(message)")
     }
     
-    // MARK: - Set User Information
+    // Set User Information
     
     func setUserID(_ userID: String) {
         Crashlytics.crashlytics().setUserID(userID)
@@ -59,13 +44,13 @@ class CrashlyticsManager {
         Crashlytics.crashlytics().setCustomValue(name, forKey: "username")
     }
     
-    // MARK: - Set Custom Keys
+    //  Set Custom Keys
     
     func setCustomValue(_ value: Any, forKey key: String) {
         Crashlytics.crashlytics().setCustomValue(value, forKey: key)
     }
     
-    // MARK: - Game-Specific Tracking
+    //  Game-Specific Tracking
     
     func logQuizStarted(category: String, difficulty: String) {
         setCustomValue(category, forKey: "current_category")

@@ -1,18 +1,3 @@
-//
-//  ReportQuestionView.swift
-//  Trivia_Test
-//
-//  Created by Win on 11/10/2568 BE.
-//
-
-
-//
-//  ReportQuestionView.swift
-//  Trivia_Test
-//
-//  Created by Win
-//
-
 import SwiftUI
 
 struct ReportQuestionView: View {
@@ -211,7 +196,7 @@ struct ReportQuestionView: View {
     }
 }
 
-// MARK: - Report Reason Button
+// Report Reason Button
 struct ReportReasonButton: View {
     let reason: ReportReason
     let isSelected: Bool
@@ -263,7 +248,7 @@ struct ReportReasonButton: View {
     }
 }
 
-// MARK: - Preview
+// Preview
 struct ReportQuestionView_Previews: PreviewProvider {
     static var previews: some View {
         ReportQuestionView(

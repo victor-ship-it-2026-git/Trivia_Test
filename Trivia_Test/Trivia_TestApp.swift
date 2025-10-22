@@ -4,15 +4,15 @@ import Firebase
 import FirebaseMessaging
 import UserNotifications
 import FirebaseCrashlytics
-import AppTrackingTransparency  // ← ADD THIS
-import AdSupport  // ← ADD THIS
+import AppTrackingTransparency
+import AdSupport
 
 
 
 @main
 struct Trivia_TestApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    @State private var hasRequestedATT = false  // ← ADD THIS
+    @State private var hasRequestedATT = false
     
 
     
@@ -20,7 +20,7 @@ struct Trivia_TestApp: App {
         WindowGroup {
             ContentView()
                 .onAppear {
-                    // Request ATT permission after a short delay
+                    // To Request ATT permission after a short delay
                     if !hasRequestedATT {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                             requestTrackingPermission()
@@ -78,7 +78,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         FirebaseApp.configure()
         configureCrashlytics()
         
-        // ADD THIS: Track app opened
+        // Track app opened
         AnalyticsManager.shared.logAppOpened()
         appOpenedTime = Date()
         
@@ -95,14 +95,14 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                 print("✅ Bundle IDs match!")
             }
         }
-        // ... rest of your code
+
         return true
     }
     private func configureCrashlytics() {
                 // Enable Crashlytics collection
                 Crashlytics.crashlytics().setCrashlyticsCollectionEnabled(true)
                 
-                // Set user identifier (optional - helps track crashes per user)
+                // Set user identifier which helps track crashes per user
                 let deviceId = UIDevice.current.identifierForVendor?.uuidString ?? "unknown"
                 Crashlytics.crashlytics().setUserID(deviceId)
                 
@@ -114,7 +114,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                 // fatalError("Test Crashlytics - This is a test crash!")
             }
     
-    // ADD THIS: Track when app goes to background
+    // Track when app goes to background
     func applicationDidEnterBackground(_ application: UIApplication) {
         if let startTime = appOpenedTime {
             let sessionDuration = Date().timeIntervalSince(startTime)
@@ -128,10 +128,9 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     }
 }
 
-    // ← ADD THIS FUNCTION
+
    
     
-    // ← ADD THIS FUNCTION
     private func initializeAdMob() {
         MobileAds.shared.start { status in
             print("✅ AdMob initialized with status: \(status)")

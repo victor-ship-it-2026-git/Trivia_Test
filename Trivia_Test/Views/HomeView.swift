@@ -72,7 +72,7 @@ struct HomeView: View {
                         // Category Grid
                         LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
                             ForEach(Array([
-                                ("General", "general_image", QuizCategory.all),
+                                ("All Categories", "general_image", QuizCategory.all),
                                 ("Science", "science_image", QuizCategory.science),
                                 ("History", "history_image", QuizCategory.history),
                                 ("Geography", "geography_image", QuizCategory.geography),
@@ -171,7 +171,7 @@ struct HomeView: View {
     }
 }
 
-// MARK: - Modern Category Card
+// Modern Category Card
 struct CategoryCardModern: View {
     let title: String
     let imageName: String
@@ -264,7 +264,7 @@ struct CategoryCardModern: View {
         case "Geography": return "globe.americas.fill"
         case "Pop Culture": return "tv.fill"
         case "Sports": return "sportscourt.fill"
-        case "General": return "book.fill"
+        case "All Categories": return "book.fill"
         case "Art & Literature": return "paintpalette.fill"
         case "Movies": return "film.fill"
         default: return "questionmark.circle.fill"
@@ -278,7 +278,7 @@ struct CategoryCardModern: View {
         case "Geography": return [Color(red: 0.2, green: 0.5, blue: 0.6), Color(red: 0.1, green: 0.4, blue: 0.5)]
         case "Pop Culture": return [Color(red: 0.9, green: 0.8, blue: 0.7), Color(red: 0.8, green: 0.7, blue: 0.6)]
         case "Sports": return [Color(red: 0.7, green: 0.8, blue: 0.6), Color(red: 0.6, green: 0.7, blue: 0.5)]
-        case "General": return [Color(red: 0.3, green: 0.3, blue: 0.3), Color(red: 0.2, green: 0.2, blue: 0.2)]
+        case "All Categories": return [Color(red: 0.3, green: 0.3, blue: 0.3), Color(red: 0.2, green: 0.2, blue: 0.2)]
         case "Art & Literature": return [Color(red: 0.9, green: 0.6, blue: 0.7), Color(red: 0.8, green: 0.5, blue: 0.6)]
         case "Movies": return [Color(red: 0.5, green: 0.3, blue: 0.6), Color(red: 0.4, green: 0.2, blue: 0.5)]
         default: return [Color.gray, Color.gray.opacity(0.7)]
@@ -286,7 +286,7 @@ struct CategoryCardModern: View {
     }
 }
 
-// MARK: - Settings Menu View
+// Settings Menu View
 struct SettingsMenuView: View {
     let showShop: () -> Void
     let showLeaderboard: () -> Void
@@ -294,6 +294,8 @@ struct SettingsMenuView: View {
     @Binding var showSuggestCategory: Bool
     @State private var showAdminReports = false
     @State private var showNotificationSettings = false
+    @State private var showPrivacyPolicy = false
+    @State private var showTermsAndConditions = false
     @Environment(\.dismiss) var dismiss
     @Environment(\.colorScheme) var colorScheme
     @StateObject private var coinsManager = CoinsManager.shared
@@ -336,7 +338,8 @@ struct SettingsMenuView: View {
                             dismiss()
                             showLeaderboard()
                         }
-                        /* Daily Challenge is not working yet. :D 
+                        
+                        /* Daily Challenge is not working yet. :D
                         SettingsMenuItem(icon: "calendar.badge.clock", title: "Daily Challenge", color: .purple) {
                             dismiss()
                             showDailyChallengeDetail = true
@@ -353,6 +356,19 @@ struct SettingsMenuView: View {
                         
                         SettingsMenuItem(icon: "lightbulb.fill", title: "Suggest a Category", color: .yellow) {
                             showSuggestCategory = true
+                        }
+                        
+                        // Divider between game features and legal items
+                        Divider()
+                            .padding(.vertical, 5)
+                        
+                        // Legal items
+                        SettingsMenuItem(icon: "doc.text.fill", title: "Terms & Conditions", color: .indigo) {
+                            showTermsAndConditions = true
+                        }
+                        
+                        SettingsMenuItem(icon: "hand.raised.fill", title: "Privacy Policy", color: .green) {
+                            showPrivacyPolicy = true
                         }
                     }
                     .padding(.horizontal)
@@ -374,10 +390,16 @@ struct SettingsMenuView: View {
         .sheet(isPresented: $showSuggestCategory) {
             SuggestCategoryView()
         }
+        .sheet(isPresented: $showPrivacyPolicy) {
+            PrivacyPolicyView()
+        }
+        .sheet(isPresented: $showTermsAndConditions) {
+            TermsAndConditionsView()
+        }
     }
 }
 
-// MARK: - Settings Menu Item
+// Settings Menu Item
 struct SettingsMenuItem: View {
     let icon: String
     let title: String

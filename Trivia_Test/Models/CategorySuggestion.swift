@@ -1,18 +1,3 @@
-//
-//  CategorySuggestion.swift
-//  Trivia_Test
-//
-//  Created by Win on 11/10/2568 BE.
-//
-
-
-//
-//  CategorySuggestion.swift
-//  Trivia_Test
-//
-//  Created by Win
-//
-
 import Foundation
 
 struct CategorySuggestion: Identifiable, Codable {
@@ -20,7 +5,7 @@ struct CategorySuggestion: Identifiable, Codable {
     let categoryName: String
     let userName: String
     let timestamp: Date
-    let status: String // "pending", "approved", "rejected"
+    let status: String // Status: "pending", "approved", "rejected"
     
     init(categoryName: String, userName: String) {
         self.id = UUID().uuidString

@@ -1,12 +1,3 @@
-//
-//  CoinsManager.swift
-//  Trivia_Test
-//
-//  Created by Win on 5/10/2568 BE.
-//
-
-
-
 import Foundation
 internal import Combine
 
@@ -15,7 +6,11 @@ class CoinsManager: ObservableObject {
     private let defaults = UserDefaults.standard
     private let key = "user_coins"
     
-    @Published var coins: Int = 0
+    @Published var coins: Int = 0 {
+        didSet {
+            saveCoins()
+        }
+    }
     
     private init() {
         loadCoins()
@@ -23,6 +18,12 @@ class CoinsManager: ObservableObject {
     
     func loadCoins() {
         coins = defaults.integer(forKey: key)
+        // Add some default coins if this is first launch
+        if coins == 0 && !defaults.bool(forKey: "has_launched_before") {
+            coins = 500 // Give 500 coins to start with
+            defaults.set(true, forKey: "has_launched_before")
+            saveCoins()
+        }
     }
     
     func saveCoins() {
@@ -31,13 +32,16 @@ class CoinsManager: ObservableObject {
     
     func addCoins(_ amount: Int) {
         coins += amount
-        saveCoins()
+        print("💰 Added \(amount) coins. Total: \(coins)")
     }
     
     func spendCoins(_ amount: Int) -> Bool {
-        guard coins >= amount else { return false }
+        guard coins >= amount else {
+            print("❌ Not enough coins. Has: \(coins), Needs: \(amount)")
+            return false
+        }
         coins -= amount
-        saveCoins()
+        print("💰 Spent \(amount) coins. Remaining: \(coins)")
         return true
     }
     

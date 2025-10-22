@@ -1,9 +1,4 @@
-//
-//  LeaderboardEntry.swift
-//  Trivia_Test
-//
-//  Created by Win on 4/10/2568 BE.
-//
+
 import Foundation
 
 struct LeaderboardEntry: Identifiable, Codable, Equatable {
@@ -20,7 +15,7 @@ struct LeaderboardEntry: Identifiable, Codable, Equatable {
         return (score * 100) / totalQuestions
     }
     
-    // Equatable conformance
+
     static func == (lhs: LeaderboardEntry, rhs: LeaderboardEntry) -> Bool {
         return lhs.id == rhs.id &&
                lhs.playerName == rhs.playerName &&

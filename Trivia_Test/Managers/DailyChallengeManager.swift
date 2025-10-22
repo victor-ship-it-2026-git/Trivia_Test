@@ -80,12 +80,12 @@ class DailyChallengeManager: ObservableObject {
     }
     
     private func awardReward(_ reward: ChallengeReward) {
-        // Award lifelines
+        // Note: Award lifelines
         for (type, quantity) in reward.lifelines {
             LifelineManager.shared.addLifeline(type: type, quantity: quantity)
         }
         
-        // Award coins
+        // Note: Award coins
         CoinsManager.shared.addCoins(reward.coins)
     }
     

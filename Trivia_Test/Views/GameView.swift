@@ -191,7 +191,7 @@ struct GameView: View {
         }
     }
     
-    // MARK: - Header Section
+    // Header Section
     private var headerSection: some View {
         HStack(spacing: 12) {
             Button(action: {
@@ -251,7 +251,7 @@ struct GameView: View {
         }
     }
     
-    // MARK: - Progress Section
+    // Progress Section
     private var progressSection: some View {
         HStack(spacing: 0) {
             Text("Question \(presenter.currentQuestionIndex + 1)/\(presenter.questions.count)")
@@ -262,7 +262,7 @@ struct GameView: View {
         }
     }
     
-    // MARK: - Progress Bar
+    // Progress Bar
     private var progressBar: some View {
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
@@ -279,7 +279,7 @@ struct GameView: View {
         .frame(height: 8)
     }
     
-    // MARK: - Circular Timer
+    // Circular Timer
     private var circularTimer: some View {
         ZStack {
             // Background circle
@@ -313,7 +313,7 @@ struct GameView: View {
         .frame(width: 110, height: 110)
     }
     
-    // MARK: - Category Badge
+    // Category Badge
     private var categoryBadge: some View {
         Text("\(presenter.currentQuestion.category.rawValue) | \(presenter.currentQuestion.difficulty.rawValue)")
             .font(.system(size: 14, weight: .semibold))
@@ -325,7 +325,7 @@ struct GameView: View {
             .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
     }
     
-    // MARK: - Question Text
+    // Question Text
     private var questionText: some View {
         Text(presenter.currentQuestion.text)
             .font(.system(size: 24, weight: .bold))
@@ -338,7 +338,7 @@ struct GameView: View {
             .animation(.spring(response: 0.6, dampingFraction: 0.7).delay(0.2), value: showQuestion)
     }
     
-    // MARK: - Lifeline Panel
+    // Lifeline Panel
     private var lifelinePanel: some View {
         HStack(spacing: 12) {
             LifelineButtonModern(
@@ -379,7 +379,7 @@ struct GameView: View {
         }
     }
     
-    // MARK: - Bottom Action Area
+    // Bottom Action Area
     private var bottomActionArea: some View {
         VStack(spacing: 12) {
             if presenter.needsToWatchAd {
@@ -466,7 +466,7 @@ struct GameView: View {
         }
     }
     
-    // MARK: - Lifeline Handlers
+    // Lifeline Handlers
     private func handleLifelineUse(_ type: LifelineType) {
         AnalyticsManager.shared.logLifelineUsed(
             lifelineType: type,
@@ -503,7 +503,7 @@ struct GameView: View {
         }
     }
     
-    // MARK: - Timer Functions
+    //  Timer Functions
     private func startTimer() {
         stopTimer()
         timeRemaining = 30
@@ -537,7 +537,7 @@ struct GameView: View {
     }
 }
 
-// MARK: - Modern Option Button
+//  Modern Option Button
 struct OptionButtonModern: View {
     let text: String
     let letter: String
@@ -607,7 +607,7 @@ struct OptionButtonModern: View {
     }
 }
 
-// MARK: - Modern Lifeline Button
+// Modern Lifeline Button
 struct LifelineButtonModern: View {
     let icon: String
     let label: String
@@ -639,7 +639,7 @@ struct LifelineButtonModern: View {
     }
 }
 
-// MARK: - Enhanced Bonus Points Animation
+// Enhanced Bonus Points Animation
 struct EnhancedBonusPointsAnimation: View {
     let points: Int
     let multiplier: Int
@@ -678,7 +678,7 @@ struct EnhancedBonusPointsAnimation: View {
     }
 }
 
-// MARK: - Confetti View
+// Confetti View
 struct ConfettiView: View {
     @State private var particles: [ConfettiParticle] = []
     

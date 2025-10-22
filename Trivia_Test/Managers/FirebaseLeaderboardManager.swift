@@ -1,17 +1,3 @@
-//
-//  FirebaseLeaderboardManager.swift
-//  Trivia_Test
-//
-//  Created by Win on 9/10/2568 BE.
-//
-
-
-//
-//  FirebaseLeaderboardManager.swift
-//  Trivia_Test
-//
-//  Created by Win
-//
 
 import Foundation
 import FirebaseDatabase
@@ -31,7 +17,7 @@ class FirebaseLeaderboardManager: ObservableObject {
         observeLeaderboard()
     }
     
-    // MARK: - Observe Leaderboard (Real-time Updates)
+    //  Observe Leaderboard (Real-time Updates)
     
     func observeLeaderboard() {
         isLoading = true
@@ -70,7 +56,7 @@ class FirebaseLeaderboardManager: ObservableObject {
                     }
                 }
                 
-                // Sort by percentage (highest first)
+                // Note: Sort by percentage (highest first)
                 entries.sort { $0.percentage > $1.percentage }
                 
                 DispatchQueue.main.async {
@@ -80,7 +66,7 @@ class FirebaseLeaderboardManager: ObservableObject {
             }
     }
     
-    // MARK: - Add Entry to Leaderboard
+    //  Add Entry to Leaderboard
     
     func addEntry(_ entry: LeaderboardEntry, completion: @escaping (Result<Void, Error>) -> Void) {
         let entryRef = database.child("leaderboard").childByAutoId()
@@ -114,7 +100,7 @@ class FirebaseLeaderboardManager: ObservableObject {
         }
     }
     
-    // MARK: - Get Leaderboard by Category
+    // Get Leaderboard by Category
     
     func getLeaderboardByCategory(_ category: String, completion: @escaping ([LeaderboardEntry]) -> Void) {
         database.child("leaderboard")
@@ -157,7 +143,7 @@ class FirebaseLeaderboardManager: ObservableObject {
             }
     }
     
-    // MARK: - Get Leaderboard by Difficulty
+    // Get Leaderboard by Difficulty
     
     func getLeaderboardByDifficulty(_ difficulty: String, completion: @escaping ([LeaderboardEntry]) -> Void) {
         database.child("leaderboard")
@@ -200,7 +186,7 @@ class FirebaseLeaderboardManager: ObservableObject {
             }
     }
     
-    // MARK: - Get Top Players (Global)
+    // Get Top Players (Global)
     
     func getTopPlayers(limit: Int = 50, completion: @escaping ([LeaderboardEntry]) -> Void) {
         database.child("leaderboard")
@@ -243,13 +229,13 @@ class FirebaseLeaderboardManager: ObservableObject {
             }
     }
     
-    // MARK: - Clear Local Cache (for testing)
+    // Clear Local Cache (for testing)
     
     func clearLocalCache() {
         leaderboard = []
     }
     
-    // MARK: - Stop Observing
+    // Stop Observing
     
     func stopObserving() {
         if let handle = leaderboardHandle {

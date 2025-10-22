@@ -1,15 +1,9 @@
-//
-//  NotificationManager.swift
-//  Trivia_Test
-//
-//  Created by Win
-//
 
 import Foundation
 import Firebase
 import FirebaseMessaging
-import FirebaseAuth  // ← ADD THIS
-import FirebaseDatabase  // ← ADD THIS
+import FirebaseAuth
+import FirebaseDatabase
 import UserNotifications
 internal import Combine
 
@@ -28,7 +22,7 @@ class NotificationManager: NSObject, ObservableObject {
         loadStoredToken()
     }
     
-    // MARK: - Setup
+    // Setup
     
     func setup() {
         UNUserNotificationCenter.current().delegate = self
@@ -36,7 +30,7 @@ class NotificationManager: NSObject, ObservableObject {
         checkNotificationPermission()
     }
     
-    // MARK: - Request Permission
+    //  Request Permission
     
     func requestNotificationPermission() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { [weak self] granted, error in
@@ -66,7 +60,7 @@ class NotificationManager: NSObject, ObservableObject {
         }
     }
     
-    // MARK: - Token Management
+    // Token Management
     
     private func loadStoredToken() {
         fcmToken = defaults.string(forKey: fcmTokenKey)
@@ -78,7 +72,7 @@ class NotificationManager: NSObject, ObservableObject {
         print("✅ FCM Token saved: \(token)")
     }
     
-    // MARK: - Subscribe to Topics
+    // Subscribe to Topics
     
     func subscribeToTopic(_ topic: String) {
         Messaging.messaging().subscribe(toTopic: topic) { error in
@@ -100,7 +94,7 @@ class NotificationManager: NSObject, ObservableObject {
         }
     }
     
-    // MARK: - Default Topics
+    // Default Topics
     
     func subscribeToDefaultTopics() {
         subscribeToTopic("all_users")
@@ -108,7 +102,7 @@ class NotificationManager: NSObject, ObservableObject {
         subscribeToTopic("new_questions")
     }
     
-    // MARK: - Send Token to Server (Optional)
+    // Send Token to Server (Optional)
     
     func sendTokenToServer(_ token: String) {
         // Option 1: Anonymous save (without Auth)
@@ -127,7 +121,7 @@ class NotificationManager: NSObject, ObservableObject {
             }
         }
         
-        // Option 2: If you implement Firebase Auth later, use this:
+        // Option 2: For firebase auth later.
         /*
         if let userId = Auth.auth().currentUser?.uid {
             let database = Database.database().reference()
@@ -146,7 +140,7 @@ class NotificationManager: NSObject, ObservableObject {
         */
     }
     
-    // MARK: - Local Notifications (for testing)
+    // Local Notifications (for testing)
     
     func scheduleLocalNotification(title: String, body: String, delay: TimeInterval = 5) {
         let content = UNMutableNotificationContent()
@@ -167,7 +161,7 @@ class NotificationManager: NSObject, ObservableObject {
         }
     }
     
-    // MARK: - Badge Management
+    // Badge Management
     
     func clearBadge() {
         Task { @MainActor in
@@ -176,7 +170,7 @@ class NotificationManager: NSObject, ObservableObject {
     }
 }
 
-// MARK: - UNUserNotificationCenterDelegate
+// UNUserNotificationCenterDelegate
 
 extension NotificationManager: UNUserNotificationCenterDelegate {
     
@@ -238,7 +232,7 @@ extension NotificationManager: UNUserNotificationCenterDelegate {
     }
 }
 
-// MARK: - MessagingDelegate
+// MessagingDelegate
 
 extension NotificationManager: MessagingDelegate {
     
@@ -254,7 +248,7 @@ extension NotificationManager: MessagingDelegate {
     }
 }
 
-// MARK: - Notification Names
+// Notification Names
 
 extension Notification.Name {
     static let showDailyChallenge = Notification.Name("showDailyChallenge")

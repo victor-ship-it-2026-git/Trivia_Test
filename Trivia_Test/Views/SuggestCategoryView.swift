@@ -1,17 +1,3 @@
-//
-//  SuggestCategoryView.swift
-//  Trivia_Test
-//
-//  Created by Win on 11/10/2568 BE.
-//
-
-
-//
-//  SuggestCategoryView.swift
-//  Trivia_Test
-//
-//  Created by Win
-//
 
 import SwiftUI
 
@@ -173,7 +159,7 @@ struct SuggestCategoryView: View {
     }
 }
 
-// MARK: - Preview
+//  Preview
 struct SuggestCategoryView_Previews: PreviewProvider {
     static var previews: some View {
         SuggestCategoryView()

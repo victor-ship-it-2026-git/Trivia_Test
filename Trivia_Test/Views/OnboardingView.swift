@@ -412,7 +412,10 @@ struct Triangle: Shape {
     }
 }
 
-// MARK: - Onboarding Notification View
+
+
+
+// Onboarding Notification View
 struct OnboardingNotificationView: View {
     let onComplete: () -> Void
     @StateObject private var notificationManager = NotificationManager.shared
@@ -522,7 +525,9 @@ struct OnboardingNotificationView: View {
     }
 }
 
-// MARK: - Notification Benefit Row
+
+
+// Notification Benefit Row
 struct NotificationBenefit: View {
     let icon: String
     let text: String

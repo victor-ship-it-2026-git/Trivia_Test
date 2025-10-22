@@ -1,19 +1,3 @@
-//
-//  AnalyticsManager.swift
-//  Trivia_Test
-//
-//  Created by Win on 11/10/2568 BE.
-//
-
-
-//
-//  AnalyticsManager.swift
-//  Trivia_Test
-//
-//  Created by Win
-//
-
-
 import Foundation
 import FirebaseAnalytics
 
@@ -24,7 +8,7 @@ class AnalyticsManager {
         print("📊 Analytics Manager initialized")
     }
     
-    // MARK: - Screen Views
+    // Screen Views
     
     func logScreenView(screenName: String) {
         Analytics.logEvent(AnalyticsEventScreenView, parameters: [
@@ -34,7 +18,7 @@ class AnalyticsManager {
         print("📱 Screen View: \(screenName)")
     }
     
-    // MARK: - Category Selection
+    // Category Selection
     
     func logCategorySelected(category: QuizCategory) {
         Analytics.logEvent("category_selected", parameters: [
@@ -52,7 +36,7 @@ class AnalyticsManager {
         print("👆 Category Clicked: \(category.rawValue)")
     }
     
-    // MARK: - Difficulty Selection
+    // Difficulty Selection
     
     func logDifficultySelected(difficulty: Difficulty, category: QuizCategory) {
         Analytics.logEvent("difficulty_selected", parameters: [
@@ -63,7 +47,7 @@ class AnalyticsManager {
         print("⚡️ Difficulty Selected: \(difficulty.rawValue) for \(category.rawValue)")
     }
     
-    // MARK: - Quiz Completion
+    // Quiz Completion
     
     func logQuizStarted(category: QuizCategory, difficulty: Difficulty, totalQuestions: Int) {
         Analytics.logEvent("quiz_started", parameters: [
@@ -90,7 +74,7 @@ class AnalyticsManager {
             "total_questions": totalQuestions,
             "percentage": percentage,
             "time_spent_seconds": Int(timeSpent),
-            "success": percentage >= 70 // 70% or higher is success
+            "success": percentage >= 70 // 70% or higher is success case here.
         ])
         print("✅ Quiz Completed: \(category.rawValue) - \(difficulty.rawValue) - Score: \(score)/\(totalQuestions)")
     }
@@ -111,7 +95,7 @@ class AnalyticsManager {
         print("❌ Quiz Abandoned: \(category.rawValue) at question \(questionNumber)")
     }
     
-    // MARK: - Question Interactions
+    // Question Interactions
     
     func logQuestionAnswered(
         isCorrect: Bool,
@@ -130,7 +114,7 @@ class AnalyticsManager {
         print("💡 Question Answered: \(isCorrect ? "✅" : "❌")")
     }
     
-    // MARK: - Lifeline Usage
+    // Lifeline Usage
     
     func logLifelineUsed(
         lifelineType: LifelineType,
@@ -156,7 +140,7 @@ class AnalyticsManager {
         print("🛒 Lifeline Purchased: \(quantity)x \(lifelineType.rawValue) for \(cost) coins")
     }
     
-    // MARK: - Results Screen
+    // Results Screen
     
     func logResultsScreenViewed(
         category: QuizCategory,
@@ -184,7 +168,7 @@ class AnalyticsManager {
         percentage: Int
     ) {
         Analytics.logEvent("score_saved_to_leaderboard", parameters: [
-            "player_name_length": playerName.count, // Don't log actual name for privacy
+            "player_name_length": playerName.count,
             "is_anonymous": playerName.isEmpty || playerName == "Anonymous",
             "category": category.rawValue,
             "difficulty": difficulty.rawValue,
@@ -195,10 +179,10 @@ class AnalyticsManager {
         print("🏆 Score Saved to Leaderboard: \(percentage)%")
     }
     
-    // MARK: - Sharing
+    // Sharing
     
     func logShareInitiated(
-        shareType: String, // "results" or "leaderboard"
+        shareType: String, // This is either "results" or "leaderboard"
         category: QuizCategory? = nil,
         difficulty: Difficulty? = nil,
         score: Int? = nil
@@ -223,7 +207,7 @@ class AnalyticsManager {
     
     func logShareCompleted(
         shareType: String,
-        method: String? = nil // "instagram", "twitter", "messages", etc.
+        method: String? = nil // This is for "instagram", "twitter", "messages", etc.
     ) {
         var parameters: [String: Any] = [
             "share_type": shareType
@@ -244,7 +228,7 @@ class AnalyticsManager {
         print("❌ Share Cancelled: \(shareType)")
     }
     
-    // MARK: - Rating
+    //  Rating
     
     func logRatingPopupShown(difficulty: Difficulty) {
         Analytics.logEvent("rating_popup_shown", parameters: [
@@ -269,7 +253,7 @@ class AnalyticsManager {
         print("❌ Rating Dismissed")
     }
     
-    // MARK: - Leaderboard
+    // Leaderboard
     
     func logLeaderboardViewed(filter: String = "all") {
         Analytics.logEvent("leaderboard_viewed", parameters: [
@@ -285,7 +269,7 @@ class AnalyticsManager {
         print("📤 Leaderboard Entry Shared: Rank #\(rank)")
     }
     
-    // MARK: - Shop
+    // Shop
     
     func logShopViewed() {
         Analytics.logEvent("shop_viewed", parameters: [:])
@@ -307,7 +291,7 @@ class AnalyticsManager {
         print("❌ Ad Failed to Load: \(error)")
     }
     
-    // MARK: - Daily Challenge
+    // Daily Challenge
     
     func logDailyChallengeViewed(challengeType: String) {
         Analytics.logEvent("daily_challenge_viewed", parameters: [
@@ -334,7 +318,7 @@ class AnalyticsManager {
         print("✅ Daily Challenge Completed: \(challengeType)")
     }
     
-    // MARK: - Difficulty Unlocked
+    // Difficulty Unlocked
     
     func logDifficultyUnlocked(
         difficulty: Difficulty,
@@ -349,7 +333,7 @@ class AnalyticsManager {
         print("🔓 Difficulty Unlocked: \(difficulty.rawValue) for \(category.rawValue)")
     }
     
-    // MARK: - Notifications
+    // Notifications
     
     func logNotificationPermissionRequested() {
         Analytics.logEvent("notification_permission_requested", parameters: [
@@ -365,7 +349,7 @@ class AnalyticsManager {
         print("🔔 Notification Permission: \(granted ? "Granted" : "Denied")")
     }
     
-    // MARK: - Question Reporting
+    // Question Reporting
     
     func logQuestionReported(
         reason: String,
@@ -380,7 +364,7 @@ class AnalyticsManager {
         print("⚠️ Question Reported: \(reason)")
     }
     
-    // MARK: - User Engagement
+    // User Engagement
     
     func logAppOpened() {
         Analytics.logEvent("app_opened", parameters: [
@@ -396,7 +380,7 @@ class AnalyticsManager {
         print("💤 App Backgrounded - Session: \(Int(sessionDuration))s")
     }
     
-    // MARK: - Onboarding
+    // Onboarding
     
     func logOnboardingCompleted() {
         Analytics.logEvent("onboarding_completed", parameters: [
@@ -412,14 +396,14 @@ class AnalyticsManager {
         print("⏭ Onboarding Skipped at page \(atPage)")
     }
     
-    // MARK: - Custom Events
+    // Custom Events
     
     func logCustomEvent(eventName: String, parameters: [String: Any] = [:]) {
         Analytics.logEvent(eventName, parameters: parameters)
         print("📊 Custom Event: \(eventName)")
     }
     
-    // MARK: - User Properties
+    // User Properties
     
     func setUserProperty(value: String?, forName: String) {
         Analytics.setUserProperty(value, forName: forName)

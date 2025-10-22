@@ -1,12 +1,9 @@
-//
-//  AdMobManager.swift
-//
 
 import GoogleMobileAds
 import SwiftUI
 internal import Combine
-import AppTrackingTransparency  // ← ADD THIS
-import AdSupport  // ← ADD THIS
+import AppTrackingTransparency
+import AdSupport
 
 @MainActor
 class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
@@ -14,22 +11,21 @@ class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
     
     @Published var isAdReady = false
     @Published var isShowingAd = false
-    @Published var trackingStatus: ATTrackingManager.AuthorizationStatus = .notDetermined  // ← ADD THIS
+    @Published var trackingStatus: ATTrackingManager.AuthorizationStatus = .notDetermined
     
     private var rewardedAd: RewardedAd?
     var onAdDismissed: (() -> Void)?
     var onAdRewarded: (() -> Void)?
     
-    // Replace with your REAL Ad Unit ID before submission
-    private let adUnitID = "ca-app-pub-3940256099942544/1712485313"  // TEST ID
+    // Replace this with Real Admob Ad Unit ID
+    private let adUnitID = "ca-app-pub-3940256099942544/1712485313"  // This is Admob Test ID
     
     override init() {
         super.init()
-        checkTrackingStatus()  // ← ADD THIS
+        checkTrackingStatus()
         loadRewardedAd()
     }
     
-    // ← ADD THIS FUNCTION
     func checkTrackingStatus() {
         if #available(iOS 14.5, *) {
             trackingStatus = ATTrackingManager.trackingAuthorizationStatus
@@ -40,7 +36,7 @@ class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
     func loadRewardedAd() {
         let request = Request()
         
-        // ← ADD THIS: Set request parameters based on tracking status
+        // Set request parameters based on tracking status
         if #available(iOS 14.5, *), trackingStatus == .denied {
             // User denied tracking - request non-personalized ads
             let extras = Extras()
@@ -90,7 +86,6 @@ class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
         }
     }
     
-    // MARK: - GADFullScreenContentDelegate
     nonisolated func adDidDismissFullScreenContent(_ ad: FullScreenPresentingAd) {
         Task { @MainActor in
             print("📱 Ad dismissed")

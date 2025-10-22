@@ -1,18 +1,3 @@
-//
-//  ParticleEffect.swift
-//  Trivia_Test
-//
-//  Created by Win on 8/10/2568 BE.
-//
-
-
-//
-//  ParticleEffect.swift
-//  Trivia_Test
-//
-//  Created by Win on 4/10/2568 BE.
-//
-
 import SwiftUI
 
 struct ParticleEffect: View {

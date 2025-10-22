@@ -1,17 +1,3 @@
-//
-//  CategorySuggestionManager.swift
-//  Trivia_Test
-//
-//  Created by Win on 11/10/2568 BE.
-//
-
-
-//
-//  CategorySuggestionManager.swift
-//  Trivia_Test
-//
-//  Created by Win
-//
 
 import Foundation
 import FirebaseDatabase
@@ -28,7 +14,7 @@ class CategorySuggestionManager: ObservableObject {
     
     private init() {}
     
-    // MARK: - Submit Category Suggestion
+    // Submit Category Suggestion
     
     func submitSuggestion(
         categoryName: String,
@@ -81,7 +67,7 @@ class CategorySuggestionManager: ObservableObject {
         }
     }
     
-    // MARK: - Get All Suggestions (for admin view)
+    // Get All Suggestions (for admin view)
     
     func getAllSuggestions(completion: @escaping ([CategorySuggestion]) -> Void) {
         database.child("category_suggestions")
@@ -104,7 +90,7 @@ class CategorySuggestionManager: ObservableObject {
                     }
                 }
                 
-                // Sort by most recent first
+                // Note: Sort by most recent first
                 suggestions.sort { $0.timestamp > $1.timestamp }
                 
                 DispatchQueue.main.async {
