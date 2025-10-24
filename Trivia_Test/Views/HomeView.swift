@@ -363,9 +363,9 @@ struct SettingsMenuView: View {
                             .padding(.vertical, 5)
                         
                         // Legal items
-                        SettingsMenuItem(icon: "doc.text.fill", title: "Terms & Conditions", color: .indigo) {
+                     /*   SettingsMenuItem(icon: "doc.text.fill", title: "Terms & Conditions", color: .indigo) {
                             showTermsAndConditions = true
-                        }
+                        }*/
                         
                         SettingsMenuItem(icon: "hand.raised.fill", title: "Privacy Policy", color: .green) {
                             showPrivacyPolicy = true
@@ -393,9 +393,9 @@ struct SettingsMenuView: View {
         .sheet(isPresented: $showPrivacyPolicy) {
             PrivacyPolicyView()
         }
-        .sheet(isPresented: $showTermsAndConditions) {
+        /*.sheet(isPresented: $showTermsAndConditions) {
             TermsAndConditionsView()
-        }
+        }*/
     }
 }
 

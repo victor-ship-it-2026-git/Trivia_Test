@@ -1,5 +1,3 @@
-
-
 import SwiftUI
 
 // Privacy Policy View
@@ -18,7 +16,7 @@ struct PrivacyPolicyView: View {
                             .fontWeight(.bold)
                             .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
                         
-                        Text("Last updated: \(formattedDate)")
+                        Text("Last updated: October 25, 2025")
                             .font(.caption)
                             .foregroundColor(.gray)
                     }
@@ -32,10 +30,13 @@ struct PrivacyPolicyView: View {
                         
                         • Game progress and scores
                         • User preferences and settings
-                        • Device information for analytics
+                        • Device information (device type, operating system version, unique device identifiers)
+                        • Usage data and analytics (gameplay statistics, session duration, features used)
                         • Crash reports and performance data
+                        • IP address and approximate location (for analytics purposes)
+                        • Advertising identifiers (IDFA on iOS) for personalized ads
                         
-                        We do not collect personally identifiable information unless explicitly provided by you.
+                        We do not collect personally identifiable information such as your name, email address, or phone number unless explicitly provided by you for support purposes.
                         """
                     )
                     
@@ -67,24 +68,34 @@ struct PrivacyPolicyView: View {
                     privacySection(
                         title: "Third-Party Services",
                         content: """
-                        We use the following third-party services:
+                        We use the following third-party services that may collect and process your information:
                         
-                        • Google AdMob for advertising
-                        • Analytics services for app improvement
-                        • Cloud services for data backup
+                        • Google AdSense/AdMob: For displaying advertisements. Google may use cookies and advertising identifiers to show personalized ads based on your interests.
                         
-                        These services have their own privacy policies and data handling practices.
+                        • Google Analytics: For analyzing app usage, user behavior, and improving our services. Google Analytics collects anonymous usage statistics.
+                        
+                        • Firebase: For app analytics, crash reporting, and performance monitoring. Firebase is a Google service that helps us understand how users interact with our app.
+                        
+                        • Cloud Storage Services: For secure data backup and synchronization across devices.
+                        
+                        These services have their own privacy policies and data handling practices. We encourage you to review their policies at:
+                        • Google Privacy Policy: https://policies.google.com/privacy
+                        • Firebase Privacy Policy: https://firebase.google.com/support/privacy
                         """
                     )
                     
                     privacySection(
                         title: "Children's Privacy",
                         content: """
-                        We are committed to protecting children's privacy:
+                        Our app is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13 years of age.
                         
-                        • We do not knowingly collect personal information from children under 13
-                        • Parental consent is required for users under 13
-                        • Parents can request deletion of their child's data
+                        If you are a parent or guardian and believe that your child under 13 has provided us with personal information, please contact us immediately at ryan.myo.han@gmail.com, and we will take steps to delete such information from our systems.
+                        
+                        In compliance with the Children's Online Privacy Protection Act (COPPA), we:
+                        
+                        • Do not require children to provide more information than necessary to use the app
+                        • Do not knowingly collect, use, or disclose personal information from children under 13
+                        • Will delete any information we discover was collected from a child under 13
                         """
                     )
                     
@@ -93,11 +104,54 @@ struct PrivacyPolicyView: View {
                         content: """
                         You have the right to:
                         
-                        • Access your personal data
+                        • Access your personal data that we have collected
                         • Request correction of inaccurate data
                         • Request deletion of your data
-                        • Opt-out of data collection
-                        • Export your data in a portable format
+                        • Opt-out of data collection and personalized advertising
+                        
+                        To exercise these rights, please contact us at ryan.myo.han@gmail.com.
+                        """
+                    )
+                    
+                    privacySection(
+                        title: "California Privacy Rights (CCPA/CPRA)",
+                        content: """
+                        If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA):
+                        
+                        Right to Know: You have the right to request information about the categories and specific pieces of personal information we have collected about you.
+                        
+                        Right to Delete: You have the right to request deletion of your personal information, subject to certain exceptions.
+                        
+                        Right to Opt-Out: You have the right to opt-out of the sale or sharing of your personal information. While we do not "sell" your personal information in the traditional sense, we do share information with advertising partners which may be considered a "sale" under CCPA. You can opt-out by:
+                        • Disabling personalized ads in your device settings (iOS: Settings > Privacy > Tracking)
+                        • Contacting us at ryan.myo.han@gmail.com
+                        
+                        Right to Non-Discrimination: We will not discriminate against you for exercising any of your CCPA/CPRA rights.
+                        
+                        Categories of Personal Information We Collect:
+                        • Identifiers (device ID, advertising ID, IP address)
+                        • Internet or network activity (usage data, interactions with ads)
+                        • Geolocation data (approximate location based on IP address)
+                        • Inferences (preferences, behavior patterns)
+                        
+                        How to Exercise Your Rights: To submit a request, please email us at ryan.myo.han@gmail.com with the subject line "California Privacy Rights Request." We will respond to your request within 45 days.
+                        """
+                    )
+                    
+                    privacySection(
+                        title: "California Online Privacy Protection Act (CalOPPA) Compliance",
+                        content: """
+                        In compliance with CalOPPA, we agree to the following:
+                        
+                        Do Not Track Signals: Our app does not currently respond to "Do Not Track" (DNT) signals. However, you can opt-out of personalized advertising through your device settings.
+                        
+                        Third-Party Behavioral Tracking: We allow third-party companies (Google AdSense/AdMob, Google Analytics, Firebase) to collect information about your online activities over time and across different websites and apps when you use our service.
+                        
+                        Changes to Privacy Policy: Users will be notified of any privacy policy changes on this page. The "Last Updated" date at the top of this policy will be revised when changes are made.
+                        
+                        How to Opt-Out of Interest-Based Advertising:
+                        • iOS Users: Go to Settings > Privacy > Tracking, and disable "Allow Apps to Request to Track"
+                        • You can also reset your advertising identifier in Settings > Privacy > Apple Advertising
                         """
                     )
                     
@@ -132,247 +186,16 @@ struct PrivacyPolicyView: View {
                 .font(.headline)
                 .fontWeight(.semibold)
                 .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+                .frame(maxWidth: .infinity, alignment: .leading)
             
             Text(content)
                 .font(.body)
-                .foregroundColor(.secondary)
+                .foregroundColor(Color(red: 0.4, green: 0.4, blue: 0.4))
                 .lineSpacing(4)
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .padding()
-        .background(
-            RoundedRectangle(cornerRadius: 12)
-                .fill(Color.white)
-                .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 2)
-        )
-    }
-    
-    private var formattedDate: String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MMMM d, yyyy"
-        return formatter.string(from: Date())
-    }
-}
-
-// Terms and Conditions View
-struct TermsAndConditionsView: View {
-    @Environment(\.dismiss) var dismiss
-    @Environment(\.colorScheme) var colorScheme
-    @State private var acceptedTerms = false
-    
-    var body: some View {
-        NavigationView {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
-                    // Header
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text("Terms & Conditions")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
-                        
-                        Text("Last updated: \(formattedDate)")
-                            .font(.caption)
-                            .foregroundColor(.gray)
-                    }
-                    .padding(.bottom, 10)
-                    
-                    // Agreement notice
-                    HStack {
-                        Image(systemName: "info.circle.fill")
-                            .foregroundColor(.blue)
-                        Text("By using this app, you agree to these Terms & Conditions")
-                            .font(.caption)
-                            .foregroundColor(.blue)
-                    }
-                    .padding()
-                    .background(
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(Color.blue.opacity(0.1))
-                    )
-                    
-                    // Content sections
-                    termsSection(
-                        title: "1. Acceptance of Terms",
-                        content: """
-                        By downloading, installing, or using the Trivia Game app, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the app.
-                        """
-                    )
-                    
-                    termsSection(
-                        title: "2. Use License",
-                        content: """
-                        Permission is granted to temporarily download one copy of the app for personal, non-commercial use only. This is a grant of a license, not a transfer of title, and under this license you may not:
-                        
-                        • Modify or copy the materials
-                        • Use the materials for commercial purposes
-                        • Attempt to reverse engineer any software
-                        • Remove any copyright or proprietary notations
-                        """
-                    )
-                    
-                    termsSection(
-                        title: "3. User Accounts",
-                        content: """
-                        • You are responsible for maintaining the confidentiality of your account
-                        • You must provide accurate and complete information
-                        • You are responsible for all activities under your account
-                        • You must notify us immediately of any unauthorized use
-                        • One account per user is permitted
-                        """
-                    )
-                    
-                    termsSection(
-                        title: "4. Game Rules and Fair Play",
-                        content: """
-                        Users agree to:
-                        
-                        • Play fairly and not use cheats, hacks, or exploits
-                        • Not manipulate scores or game results
-                        • Not share accounts or transfer game items
-                        • Respect other players in multiplayer features
-                        • Not use automated scripts or bots
-                        
-                        Violation of these rules may result in account suspension or termination.
-                        """
-                    )
-                    
-                    termsSection(
-                        title: "5. In-App Purchases",
-                        content: """
-                        • All purchases are final and non-refundable
-                        • Virtual items have no real-world value
-                        • We reserve the right to modify prices
-                        • Parents are responsible for minor's purchases
-                        • Lost items due to account issues may not be restored
-                        """
-                    )
-                    
-                    termsSection(
-                        title: "6. Intellectual Property",
-                        content: """
-                        All content in this app, including but not limited to:
-                        
-                        • Text, graphics, logos, images
-                        • Audio, video, and software
-                        • Game questions and answers
-                        • User interface design
-                        
-                        Is the property of the app developer and protected by intellectual property laws.
-                        """
-                    )
-                    
-                    termsSection(
-                        title: "7. Disclaimer",
-                        content: """
-                        • The app is provided "as is" without warranties
-                        • We do not guarantee uninterrupted service
-                        • We are not liable for any damages from app use
-                        • Quiz content is for entertainment purposes only
-                        • We reserve the right to modify or discontinue features
-                        """
-                    )
-                    
-                    termsSection(
-                        title: "8. Limitation of Liability",
-                        content: """
-                        In no event shall our company be liable for any:
-                        
-                        • Direct, indirect, incidental, or consequential damages
-                        • Loss of data, profits, or game progress
-                        • Damages arising from use or inability to use the app
-                        • Damages exceeding the amount paid by the user
-                        """
-                    )
-                    
-                    termsSection(
-                        title: "9. Privacy",
-                        content: """
-                        Your use of our app is also governed by our Privacy Policy. Please review our Privacy Policy, which also governs the app and informs users of our data collection practices.
-                        """
-                    )
-                    
-                    termsSection(
-                        title: "10. Termination",
-                        content: """
-                        We may terminate or suspend your account and access to the app immediately, without prior notice or liability, for any reason, including breach of these Terms.
-                        
-                        Upon termination, your right to use the app will cease immediately.
-                        """
-                    )
-                    
-                    termsSection(
-                        title: "11. Changes to Terms",
-                        content: """
-                        We reserve the right to modify these terms at any time. We will notify users of any changes by:
-                        
-                        • Updating the "Last updated" date
-                        • Sending in-app notifications
-                        • Requiring acceptance for continued use
-                        
-                        Continued use after changes constitutes acceptance.
-                        """
-                    )
-                    
-                    termsSection(
-                        title: "12. Contact Information",
-                        content: """
-                        For questions about these Terms & Conditions, contact us at:
-                        
-                        Email: ryan.myo.han@gmail.com
-                        
-                        We aim to respond within 2-3 business days.
-                        """
-                    )
-                    
-                    // Acceptance checkbox
-                    HStack {
-                        Button(action: {
-                            acceptedTerms.toggle()
-                        }) {
-                            Image(systemName: acceptedTerms ? "checkmark.square.fill" : "square")
-                                .foregroundColor(acceptedTerms ? .green : .gray)
-                                .font(.title2)
-                        }
-                        
-                        Text("I have read and accept the Terms & Conditions")
-                            .font(.footnote)
-                            .foregroundColor(.secondary)
-                        
-                        Spacer()
-                    }
-                    .padding()
-                    .background(
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(Color.gray.opacity(0.1))
-                    )
-                }
-                .padding()
-            }
-            .background(Color(red: 0.97, green: 0.97, blue: 0.96))
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Done") {
-                        dismiss()
-                    }
-                }
-            }
-        }
-    }
-    
-    private func termsSection(title: String, content: String) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text(title)
-                .font(.headline)
-                .fontWeight(.semibold)
-                .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
-            
-            Text(content)
-                .font(.body)
-                .foregroundColor(.secondary)
-                .lineSpacing(4)
-        }
-        .padding()
+        .padding(20)
+        .frame(maxWidth: .infinity)
         .background(
             RoundedRectangle(cornerRadius: 12)
                 .fill(Color.white)
@@ -388,11 +211,8 @@ struct TermsAndConditionsView: View {
 }
 
 // Preview
-struct LegalViews_Previews: PreviewProvider {
+struct PrivacyPolicyView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            PrivacyPolicyView()
-            TermsAndConditionsView()
-        }
+        PrivacyPolicyView()
     }
 }
