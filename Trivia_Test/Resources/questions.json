@@ -1,676 +1,423 @@
 
 [
-    {
-            "text": "What is the capital of France?",
-            "options": ["London", "Berlin", "Paris", "Madrid"],
-            "correctAnswer": 2,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which continent is the largest?",
-            "options": ["Africa", "Asia", "Europe", "North America"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the capital of Japan?",
-            "options": ["Beijing", "Tokyo", "Seoul", "Bangkok"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which ocean is the largest?",
-            "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
-            "correctAnswer": 2,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What country is famous for the pyramids?",
-            "options": ["India", "Egypt", "Mexico", "Greece"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which continent is known as the 'Dark Continent'?",
-            "options": ["Asia", "Africa", "Europe", "Australia"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the capital of the United States?",
-            "options": ["New York", "Washington, D.C.", "Los Angeles", "Chicago"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Mount Everest is located on which continent?",
-            "options": ["Africa", "Europe", "Asia", "South America"],
-            "correctAnswer": 2,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which country is shaped like a boot?",
-            "options": ["Italy", "Spain", "Greece", "Turkey"],
-            "correctAnswer": 0,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the capital of the United Kingdom?",
-            "options": ["London", "Manchester", "Birmingham", "Liverpool"],
-            "correctAnswer": 0,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which continent is the largest by land area?",
-            "options": ["Africa", "Asia", "Europe", "South America"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the capital of France?",
-            "options": ["Madrid", "Berlin", "Paris", "Lisbon"],
-            "correctAnswer": 2,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which ocean is the largest on Earth?",
-            "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"],
-            "correctAnswer": 2,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which continent is known as the 'Dark Continent'?",
-            "options": ["Europe", "Africa", "Asia", "Australia"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Mount Everest is located in which mountain range?",
-            "options": ["Andes", "Rockies", "Himalayas", "Alps"],
-            "correctAnswer": 2,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which country is shaped like a boot?",
-            "options": ["Italy", "Spain", "Thailand", "Brazil"],
-            "correctAnswer": 0,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the capital of Japan?",
-            "options": ["Seoul", "Tokyo", "Beijing", "Kyoto"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the largest desert in the world?",
-            "options": ["Gobi Desert", "Sahara Desert", "Mojave Desert", "Arabian Desert"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which country is famous for the Great Wall?",
-            "options": ["China", "Japan", "India", "Mongolia"],
-            "correctAnswer": 0,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which continent is also a country?",
-            "options": ["Europe", "Australia", "Antarctica", "South America"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which river is the longest in the world?",
-            "options": ["Amazon River", "Nile River", "Yangtze River", "Mississippi River"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which is the smallest continent?",
-            "options": ["Antarctica", "Australia", "Europe", "South America"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which country is known for maple syrup?",
-            "options": ["United States", "Canada", "Finland", "United Kingdom"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the capital of the United Kingdom?",
-            "options": ["London", "Manchester", "Edinburgh", "Birmingham"],
-            "correctAnswer": 0,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which ocean is the smallest?",
-            "options": ["Indian Ocean", "Arctic Ocean", "Atlantic Ocean", "Pacific Ocean"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which continent is home to the Amazon rainforest?",
-            "options": ["Asia", "South America", "Africa", "Australia"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which U.S. state is the largest by area?",
-            "options": ["Texas", "California", "Alaska", "Montana"],
-            "correctAnswer": 2,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the largest country in the world by land area?",
-            "options": ["China", "United States", "Russia", "Canada"],
-            "correctAnswer": 2,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the capital of Thailand?",
-            "options": ["Bangkok", "Hanoi", "Phnom Penh", "Vientiane"],
-            "correctAnswer": 0,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the largest lake in the world by surface area?",
-            "options": ["Lake Superior", "Caspian Sea", "Lake Victoria", "Lake Baikal"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-
-          {
-            "text": "Which country is known as the Land of the Rising Sun?",
-            "options": ["China", "Japan", "South Korea", "Philippines"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which continent is Egypt located in?",
-            "options": ["Africa", "Asia", "Europe", "South America"],
-            "correctAnswer": 0,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the capital of Australia?",
-            "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
-            "correctAnswer": 2,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which river flows through Egypt?",
-            "options": ["Amazon", "Nile", "Danube", "Rhine"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which country is famous for the Eiffel Tower?",
-            "options": ["Italy", "Spain", "France", "Germany"],
-            "correctAnswer": 2,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which African desert is the hottest in the world?",
-            "options": ["Sahara Desert", "Gobi Desert", "Kalahari Desert", "Great Victoria Desert"],
-            "correctAnswer": 0,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which country has the most population?",
-            "options": ["India", "China", "United States", "Indonesia"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the capital of Canada?",
-            "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
-            "correctAnswer": 2,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which continent is Brazil in?",
-            "options": ["Africa", "Europe", "Asia", "South America"],
-            "correctAnswer": 3,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which ocean borders California?",
-            "options": ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean"],
-            "correctAnswer": 0,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the capital of South Korea?",
-            "options": ["Seoul", "Tokyo", "Busan", "Pyongyang"],
-            "correctAnswer": 0,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which sea separates Europe and Africa?",
-            "options": ["Caribbean Sea", "Mediterranean Sea", "Red Sea", "Black Sea"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which country is known for the Taj Mahal?",
-            "options": ["Pakistan", "India", "Bangladesh", "Nepal"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which is the largest island in the world?",
-            "options": ["Greenland", "Borneo", "Madagascar", "Sumatra"],
-            "correctAnswer": 0,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the capital of Russia?",
-            "options": ["Moscow", "Saint Petersburg", "Kyiv", "Minsk"],
-            "correctAnswer": 0,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which U.S. state is known as the Sunshine State?",
-            "options": ["Florida", "California", "Hawaii", "Texas"],
-            "correctAnswer": 0,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the capital of Germany?",
-            "options": ["Munich", "Berlin", "Frankfurt", "Hamburg"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which continent is the Sahara Desert located in?",
-            "options": ["Asia", "Africa", "Australia", "Europe"],
-            "correctAnswer": 1,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "Which country is home to the Colosseum?",
-            "options": ["Italy", "Greece", "Spain", "Portugal"],
-            "correctAnswer": 0,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
-          {
-            "text": "What is the capital of Spain?",
-            "options": ["Barcelona", "Valencia", "Madrid", "Seville"],
-            "correctAnswer": 2,
-            "category": "Geography",
-            "difficulty": "Rookie"
-          },
   {
-    "text": "What is the capital of France?",
-    "options": ["London", "Berlin", "Paris", "Madrid"],
+    "text": "Which U.S. state is known as the 'Sunshine State'?",
+    "options": ["California", "Florida", "Hawaii", "Arizona"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the largest ocean on Earth?",
+    "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+    "correctAnswer": 3,
+    "category": "Geography",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which continent is home to the Amazon Rainforest?",
+    "options": ["Africa", "Asia", "South America", "Australia"],
     "correctAnswer": 2,
     "category": "Geography",
     "difficulty": "Rookie"
   },
   {
-    "text": "What color is the sky on a clear day?",
-    "options": ["Green", "Blue", "Red", "Yellow"],
-    "correctAnswer": 1,
-    "category": "Science",
-    "difficulty": "Rookie"
-  },
-  {
-    "text": "How many days are in a week?",
-    "options": ["5", "6", "7", "8"],
+    "text": "What is the capital of Italy?",
+    "options": ["Milan", "Venice", "Rome", "Florence"],
     "correctAnswer": 2,
-    "category": "Math",
+    "category": "Geography",
     "difficulty": "Rookie"
   },
   {
-    "text": "Which continent is the largest?",
-    "options": ["Africa", "Asia", "Europe", "North America"],
+    "text": "Which river is the longest in South America?",
+    "options": ["Amazon River", "Paraná River", "Orinoco River", "São Francisco River"],
+    "correctAnswer": 0,
+    "category": "Geography",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the smallest continent by land area?",
+    "options": ["Europe", "Australia", "Antarctica", "South America"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which country is famous for tulips and windmills?",
+    "options": ["Belgium", "Netherlands", "Denmark", "Switzerland"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the capital of Mexico?",
+    "options": ["Guadalajara", "Cancun", "Mexico City", "Monterrey"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which desert is the largest hot desert in the world?",
+    "options": ["Gobi Desert", "Sahara Desert", "Arabian Desert", "Kalahari Desert"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the capital of Brazil?",
+    "options": ["São Paulo", "Rio de Janeiro", "Brasília", "Salvador"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which mountain range separates Europe and Asia?",
+    "options": ["Himalayas", "Alps", "Ural Mountains", "Andes"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the capital of New Zealand?",
+    "options": ["Auckland", "Wellington", "Christchurch", "Hamilton"],
     "correctAnswer": 1,
     "category": "Geography",
     "difficulty": "Amateur"
   },
   {
-    "text": "What is the largest planet in our solar system?",
-    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "text": "Which African country was formerly known as Abyssinia?",
+    "options": ["Somalia", "Kenya", "Ethiopia", "Sudan"],
     "correctAnswer": 2,
-    "category": "Science",
+    "category": "Geography",
     "difficulty": "Amateur"
   },
   {
-    "text": "Who painted the Mona Lisa?",
-    "options": ["Van Gogh", "Da Vinci", "Picasso", "Monet"],
+    "text": "What is the deepest ocean trench in the world?",
+    "options": ["Java Trench", "Puerto Rico Trench", "Mariana Trench", "Tonga Trench"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which European city is divided by the Danube River?",
+    "options": ["Vienna", "Budapest", "Belgrade", "Bratislava"],
     "correctAnswer": 1,
-    "category": "Art",
+    "category": "Geography",
     "difficulty": "Amateur"
   },
   {
-    "text": "What is the longest river in the world?",
-    "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+    "text": "What is the largest island in the Mediterranean Sea?",
+    "options": ["Crete", "Cyprus", "Sicily", "Sardinia"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which country has the most natural lakes?",
+    "options": ["United States", "Russia", "Canada", "Finland"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the capital of Switzerland?",
+    "options": ["Zurich", "Geneva", "Bern", "Basel"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which strait connects the Black Sea to the Mediterranean?",
+    "options": ["Strait of Gibraltar", "Bosphorus Strait", "Strait of Hormuz", "Bering Strait"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the highest mountain in Africa?",
+    "options": ["Mount Kenya", "Mount Kilimanjaro", "Mount Stanley", "Ras Dashen"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which country has the longest coastline in the world?",
+    "options": ["Russia", "Indonesia", "Canada", "Norway"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the only country that borders both the Atlantic and Indian Oceans?",
+    "options": ["South Africa", "Namibia", "Mozambique", "Madagascar"],
+    "correctAnswer": 0,
+    "category": "Geography",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which capital city is located at the highest altitude?",
+    "options": ["Quito", "Bogotá", "La Paz", "Addis Ababa"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the largest lake entirely within Canada?",
+    "options": ["Great Bear Lake", "Great Slave Lake", "Lake Winnipeg", "Lake Athabasca"],
+    "correctAnswer": 0,
+    "category": "Geography",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which sea has no coastline?",
+    "options": ["Dead Sea", "Sargasso Sea", "Caspian Sea", "Aral Sea"],
     "correctAnswer": 1,
     "category": "Geography",
     "difficulty": "Pro"
   },
   {
-    "text": "Which element has the chemical symbol 'Au'?",
-    "options": ["Silver", "Gold", "Aluminum", "Argon"],
+    "text": "What is the driest place on Earth?",
+    "options": ["Death Valley", "Atacama Desert", "Sahara Desert", "McMurdo Dry Valleys"],
+    "correctAnswer": 3,
+    "category": "Geography",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which European country has the most volcanoes?",
+    "options": ["Italy", "Iceland", "Greece", "Spain"],
     "correctAnswer": 1,
-    "category": "Science",
+    "category": "Geography",
     "difficulty": "Pro"
   },
   {
-    "text": "In what year did World War II end?",
-    "options": ["1943", "1944", "1945", "1946"],
+    "text": "What is the southernmost capital city in the world?",
+    "options": ["Canberra", "Wellington", "Buenos Aires", "Wellington"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which country has territory on three different continents?",
+    "options": ["Russia", "United Kingdom", "France", "United States"],
     "correctAnswer": 2,
-    "category": "History",
+    "category": "Geography",
     "difficulty": "Pro"
   },
   {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Rookie"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Rookie"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Rookie"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Amateur"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Amateur"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Amateur"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
+    "text": "What is the largest country without a single river?",
+    "options": ["Libya", "Saudi Arabia", "Kuwait", "Bahrain"],
+    "correctAnswer": 1,
+    "category": "Geography",
     "difficulty": "Pro"
   },
   {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Pro"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Pro"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Master"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Master"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Master"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Master"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Master"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Master"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Legend"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Legend"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Legend"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Genius"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Genius"
-  },
-  {
-    "text": "A is the Answer",
-    "options": ["A", "B", "C", "D"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Genius"
-  },
-  {
-    "text": "What is the smallest country in the world by area?",
-    "options": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
+    "text": "Which landlocked country has a navy?",
+    "options": ["Switzerland", "Bolivia", "Mongolia", "Paraguay"],
     "correctAnswer": 1,
     "category": "Geography",
     "difficulty": "Master"
   },
   {
-    "text": "What is the speed of light in a vacuum?",
-    "options": ["300,000 km/s", "150,000 km/s", "450,000 km/s", "600,000 km/s"],
+    "text": "What is the only country to be crossed by both the Equator and the Tropic of Capricorn?",
+    "options": ["Brazil", "Indonesia", "Colombia", "Kenya"],
     "correctAnswer": 0,
-    "category": "Science",
+    "category": "Geography",
     "difficulty": "Master"
   },
   {
-    "text": "Who wrote 'One Hundred Years of Solitude'?",
-    "options": ["Pablo Neruda", "Gabriel García Márquez", "Jorge Luis Borges", "Octavio Paz"],
+    "text": "Which island nation has more languages per capita than any other country?",
+    "options": ["Indonesia", "Philippines", "Papua New Guinea", "Madagascar"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the only city located on two continents?",
+    "options": ["Cairo", "Istanbul", "Moscow", "Suez"],
     "correctAnswer": 1,
-    "category": "Literature",
+    "category": "Geography",
     "difficulty": "Master"
   },
   {
-    "text": "What is the capital of Kyrgyzstan?",
-    "options": ["Bishkek", "Tashkent", "Dushanbe", "Astana"],
+    "text": "Which country has the most UNESCO World Heritage Sites?",
+    "options": ["China", "Italy", "Spain", "France"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the capital of Bhutan?",
+    "options": ["Kathmandu", "Thimphu", "Dhaka", "Paro"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which ocean has the deepest average depth?",
+    "options": ["Atlantic Ocean", "Pacific Ocean", "Indian Ocean", "Southern Ocean"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the only river that flows both north and south of the equator?",
+    "options": ["Amazon River", "Nile River", "Congo River", "Mekong River"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which country has the most time zones?",
+    "options": ["Russia", "United States", "France", "United Kingdom"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the world's smallest independent nation?",
+    "options": ["Monaco", "Vatican City", "San Marino", "Nauru"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the capital of Turkmenistan?",
+    "options": ["Tashkent", "Ashgabat", "Bishkek", "Dushanbe"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which country has the highest number of active volcanoes?",
+    "options": ["Japan", "Indonesia", "United States", "Chile"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the only sea without any coasts?",
+    "options": ["Dead Sea", "Red Sea", "Sargasso Sea", "Aral Sea"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which country's capital is Ngerulmud?",
+    "options": ["Tuvalu", "Nauru", "Palau", "Kiribati"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the most remote inhabited island in the world?",
+    "options": ["Easter Island", "Tristan da Cunha", "Pitcairn Islands", "Svalbard"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which African country has never been colonized?",
+    "options": ["Liberia", "Ethiopia", "South Africa", "Kenya"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the deepest lake in the world?",
+    "options": ["Lake Tanganyika", "Crater Lake", "Lake Baikal", "Caspian Sea"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which country has a non-rectangular flag?",
+    "options": ["Nepal", "Switzerland", "Vatican City", "Qatar"],
     "correctAnswer": 0,
     "category": "Geography",
     "difficulty": "Legend"
   },
   {
-    "text": "What is the half-life of Carbon-14?",
-    "options": ["5,730 years", "10,000 years", "2,500 years", "15,000 years"],
-    "correctAnswer": 0,
-    "category": "Science",
-    "difficulty": "Legend"
-  },
-  {
-    "text": "In what year was the Magna Carta signed?",
-    "options": ["1215", "1315", "1415", "1515"],
-    "correctAnswer": 0,
-    "category": "History",
-    "difficulty": "Legend"
-  },
-  {
-    "text": "What is the Heisenberg Uncertainty Principle about?",
-    "options": ["Energy and time", "Position and momentum", "Mass and velocity", "Temperature and pressure"],
-    "correctAnswer": 1,
-    "category": "Science",
-    "difficulty": "Genius"
-  },
-  {
-    "text": "Which mathematician proved Fermat's Last Theorem?",
-    "options": ["Andrew Wiles", "Grigori Perelman", "Terence Tao", "Maryam Mirzakhani"],
-    "correctAnswer": 0,
-    "category": "Math",
-    "difficulty": "Genius"
-  },
-  {
-    "text": "What is the rarest naturally occurring element on Earth?",
-    "options": ["Astatine", "Francium", "Promethium", "Technetium"],
-    "correctAnswer": 0,
-    "category": "Science",
-    "difficulty": "Genius"
-  },
-  {
-    "text": "What is 2 + 2?",
-    "options": ["3", "4", "5", "6"],
-    "correctAnswer": 1,
-    "category": "Math",
-    "difficulty": "Rookie"
-  },
-  {
-    "text": "What sport is played at Wimbledon?",
-    "options": ["Golf", "Tennis", "Cricket", "Badminton"],
-    "correctAnswer": 1,
-    "category": "Sports",
-    "difficulty": "Rookie"
-  },
-  {
-    "text": "Which country won the FIFA World Cup in 2018?",
-    "options": ["Germany", "Brazil", "France", "Argentina"],
+    "text": "What is the highest capital city in Europe?",
+    "options": ["Madrid", "Athens", "Andorra la Vella", "Bern"],
     "correctAnswer": 2,
-    "category": "Sports",
-    "difficulty": "Amateur"
-  },
-  {
-    "text": "What year were the first modern Olympic Games held?",
-    "options": ["1886", "1896", "1906", "1916"],
-    "correctAnswer": 1,
-    "category": "Sports",
-    "difficulty": "Pro"
-  },
-  {
-    "text": "Who directed 'The Shawshank Redemption'?",
-    "options": ["Steven Spielberg", "Christopher Nolan", "Frank Darabont", "Martin Scorsese"],
-    "correctAnswer": 2,
-    "category": "Movies",
-    "difficulty": "Master"
-  },
-  {
-    "text": "What is the rarest blood type?",
-    "options": ["AB-", "O-", "B-", "A-"],
-    "correctAnswer": 0,
-    "category": "Science",
+    "category": "Geography",
     "difficulty": "Legend"
   },
   {
-    "text": "What is the quantum chromodynamics coupling constant at low energies approximately?",
-    "options": ["0.1", "1.0", "10.0", "0.01"],
+    "text": "Which strait is the narrowest navigable strait in the world?",
+    "options": ["Bosphorus", "Strait of Gibraltar", "Palk Strait", "Bab-el-Mandeb"],
+    "correctAnswer": 0,
+    "category": "Geography",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the only country whose name is a single syllable in its native language?",
+    "options": ["Chad", "Laos", "France", "Greece"],
+    "correctAnswer": 2,
+    "category": "Geography",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which oceanic trench is the second deepest in the world?",
+    "options": ["Tonga Trench", "Kuril-Kamchatka Trench", "Philippine Trench", "Kermadec Trench"],
+    "correctAnswer": 0,
+    "category": "Geography",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the antipodal point of Madrid, Spain?",
+    "options": ["Auckland, New Zealand", "Wellington, New Zealand", "Sydney, Australia", "Pacific Ocean near New Zealand"],
+    "correctAnswer": 3,
+    "category": "Geography",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which country has the highest percentage of its territory covered by forests?",
+    "options": ["Finland", "Suriname", "Micronesia", "Gabon"],
     "correctAnswer": 1,
-    "category": "Science",
+    "category": "Geography",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the only place on Earth where you can find wild lemurs?",
+    "options": ["Comoros", "Madagascar", "Seychelles", "Mauritius"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which country has the world's longest undefended border?",
+    "options": ["USA and Mexico", "USA and Canada", "Russia and Kazakhstan", "China and Mongolia"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the lowest point on Earth's land surface?",
+    "options": ["Dead Sea shore", "Lake Assal", "Death Valley", "Turpan Depression"],
+    "correctAnswer": 0,
+    "category": "Geography",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which island is shared by three countries?",
+    "options": ["Hispaniola", "Borneo", "New Guinea", "Timor"],
+    "correctAnswer": 1,
+    "category": "Geography",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the capital of the Maldives?",
+    "options": ["Malé", "Addu City", "Fuvahmulah", "Hithadhoo"],
+    "correctAnswer": 0,
+    "category": "Geography",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which river has the largest discharge volume in the world?",
+    "options": ["Nile", "Amazon", "Congo", "Ganges"],
+    "correctAnswer": 1,
+    "category": "Geography",
     "difficulty": "Genius"
   }
 ]
