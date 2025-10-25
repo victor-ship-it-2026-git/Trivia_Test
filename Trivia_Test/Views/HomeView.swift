@@ -62,7 +62,7 @@ struct HomeView: View {
                     VStack(spacing: 20) {
                         // Title
                         Text("Categories to choose from")
-                            .font(.system(size: 24, weight: .bold))
+                            .font(.system(size: 20, weight: .bold))
                             .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.horizontal, 16)
