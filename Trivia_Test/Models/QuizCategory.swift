@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 enum QuizCategory: String, CaseIterable, Codable {
@@ -6,12 +5,15 @@ enum QuizCategory: String, CaseIterable, Codable {
     case geography = "Geography"
     case science = "Science"
     case history = "History"
-    case art = "Art"
-    case literature = "Literature"
-    case math = "Math"
-    case sports = "Sports"
     case movies = "Movies"
+    case math = "Math"
+    case music = "Music"
+    case sports = "Sports"
     case popCulture = "Pop Culture"
+    case celebrities = "Celebrities"
+    case the90s = "The 90s"
+    case the2000s = "2000s Era"
+    case genZ = "Gen Z"
 
     var emoji: String {
         switch self {
@@ -19,13 +21,15 @@ enum QuizCategory: String, CaseIterable, Codable {
         case .geography: return "🌍"
         case .science: return "🔬"
         case .history: return "📜"
-        case .art: return "🎨"
-        case .literature: return "📚"
-        case .math: return "🔢"
-        case .sports: return "⚽️"
         case .movies: return "🎬"
-        case .popCulture: return "🎭"  // NEW: Added emoji for Pop Culture
-
+        case .math: return "🔢"
+        case .music: return "🎵"
+        case .sports: return "⚽️"
+        case .popCulture: return "🎭"
+        case .celebrities: return "⭐️"
+        case .the90s: return "📼"
+        case .the2000s: return "📱"
+        case .genZ: return "🔥"
         }
     }
 }

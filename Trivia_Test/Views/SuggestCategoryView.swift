@@ -119,6 +119,7 @@ struct SuggestCategoryView: View {
             }
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: Button("Close") { dismiss() })
+            .preferredColorScheme(.light)
             .alert("Thank You! 🎉", isPresented: $showSuccess) {
                 Button("OK") {
                     dismiss()

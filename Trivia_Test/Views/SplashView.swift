@@ -54,7 +54,7 @@ struct SplashView: View {
                 .frame(height: 150)
                 
                 // App Title
-                Text("Trivia Time")
+                Text("It's Trivia Time!")
                     .font(.system(size: 48, weight: .heavy))
                     .foregroundColor(Color(red: 0.12, green: 0.07, blue: 0.21))
                     .opacity(opacity)

@@ -14,6 +14,8 @@ struct HomeView: View {
     @State private var appearAnimation = false
     @State private var showAdminReports = false
     @State private var showSuggestCategory = false
+    @State private var categoryOrder: [(String, String, QuizCategory)] = []
+    @AppStorage("hasShuffledCategories") private var hasShuffledCategories = false
 
     @Environment(\.colorScheme) var colorScheme
     
@@ -30,7 +32,7 @@ struct HomeView: View {
                     
                     Spacer()
                     
-                    Text("Trivia")
+                    Text("Trivia Quest")
                         .font(.system(size: 20, weight: .bold))
                         .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
                     
@@ -59,8 +61,8 @@ struct HomeView: View {
                 ScrollView(showsIndicators: false) {
                     VStack(spacing: 20) {
                         // Title
-                        Text("Categories")
-                            .font(.system(size: 36, weight: .bold))
+                        Text("Categories to choose from")
+                            .font(.system(size: 24, weight: .bold))
                             .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.horizontal, 16)
@@ -71,16 +73,7 @@ struct HomeView: View {
                         
                         // Category Grid
                         LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
-                            ForEach(Array([
-                                ("All Categories", "general_image", QuizCategory.all),
-                                ("Science", "science_image", QuizCategory.science),
-                                ("History", "history_image", QuizCategory.history),
-                                ("Geography", "geography_image", QuizCategory.geography),
-                                ("Pop Culture", "popculture_image", QuizCategory.popCulture),
-                                ("Sports", "sports_image", QuizCategory.sports),
-                                ("Art & Literature", "art_image", QuizCategory.art),
-                                ("Movies", "movies_image", QuizCategory.movies)
-                            ].enumerated()), id: \.offset) { index, item in
+                            ForEach(Array(categoryOrder.enumerated()), id: \.offset) { index, item in
                                 CategoryCardModern(
                                     title: item.0,
                                     imageName: item.1,
@@ -102,7 +95,7 @@ struct HomeView: View {
                             }
                         }
                         .padding(.horizontal, 16)
-                        .padding(.bottom, 100) // Add padding at bottom so content isn't hidden behind Next button
+                        .padding(.bottom, 100)
                     }
                 }
                 
@@ -146,6 +139,11 @@ struct HomeView: View {
         .onAppear {
             AnalyticsManager.shared.logScreenView(screenName: "Home")
             
+            // Initialize category order
+            if categoryOrder.isEmpty {
+                setupCategoryOrder()
+            }
+            
             selectedCategory = gamePresenter.selectedCategory
             withAnimation {
                 appearAnimation = true
@@ -168,6 +166,36 @@ struct HomeView: View {
         .sheet(isPresented: $showSuggestCategory) {
             SuggestCategoryView()
         }
+    }
+    
+    // Setup category order - randomize on first launch
+    private func setupCategoryOrder() {
+        let allCategory = ("All Categories", "general_image", QuizCategory.all)
+        
+        var otherCategories = [
+            ("Geography", "geography_image", QuizCategory.geography),
+            ("Science", "science_image", QuizCategory.science),
+            ("History", "history_image", QuizCategory.history),
+            ("Movies", "movies_image", QuizCategory.movies),
+            ("Math", "math_image", QuizCategory.math),
+            ("Music", "music_image", QuizCategory.music),
+            ("Sports", "sports_image", QuizCategory.sports),
+            ("Pop Culture", "popculture_image", QuizCategory.popCulture),
+            ("Celebrities", "celebrities_image", QuizCategory.celebrities),
+            ("The 90s", "90s_image", QuizCategory.the90s),
+            ("2000s Era", "2000s_image", QuizCategory.the2000s),
+            ("Gen Z", "genz_image", QuizCategory.genZ)
+        ]
+        
+        // Only shuffle on first launch
+        if !hasShuffledCategories {
+            otherCategories.shuffle()
+            hasShuffledCategories = true
+            print("🎲 Categories shuffled for first time!")
+        }
+        
+        // Always put "All Categories" first
+        categoryOrder = [allCategory] + otherCategories
     }
 }
 
@@ -259,28 +287,38 @@ struct CategoryCardModern: View {
     
     private func getCategoryIcon(for title: String) -> String {
         switch title {
+        case "Geography": return "globe.americas.fill"
         case "Science": return "flask.fill"
         case "History": return "building.columns.fill"
-        case "Geography": return "globe.americas.fill"
-        case "Pop Culture": return "tv.fill"
-        case "Sports": return "sportscourt.fill"
-        case "All Categories": return "book.fill"
-        case "Art & Literature": return "paintpalette.fill"
         case "Movies": return "film.fill"
+        case "Math": return "function"
+        case "Music": return "music.note"
+        case "Sports": return "sportscourt.fill"
+        case "Pop Culture": return "tv.fill"
+        case "Celebrities": return "star.fill"
+        case "The 90s": return "vhs.fill"
+        case "2000s Era": return "iphone.gen1"
+        case "Gen Z": return "flame.fill"
+        case "All Categories": return "square.grid.2x2.fill"
         default: return "questionmark.circle.fill"
         }
     }
     
     private func getCategoryGradient(for title: String) -> [Color] {
         switch title {
+        case "Geography": return [Color(red: 0.2, green: 0.5, blue: 0.6), Color(red: 0.1, green: 0.4, blue: 0.5)]
         case "Science": return [Color(red: 0.2, green: 0.4, blue: 0.6), Color(red: 0.1, green: 0.3, blue: 0.5)]
         case "History": return [Color(red: 0.3, green: 0.5, blue: 0.3), Color(red: 0.2, green: 0.4, blue: 0.2)]
-        case "Geography": return [Color(red: 0.2, green: 0.5, blue: 0.6), Color(red: 0.1, green: 0.4, blue: 0.5)]
-        case "Pop Culture": return [Color(red: 0.9, green: 0.8, blue: 0.7), Color(red: 0.8, green: 0.7, blue: 0.6)]
-        case "Sports": return [Color(red: 0.7, green: 0.8, blue: 0.6), Color(red: 0.6, green: 0.7, blue: 0.5)]
-        case "All Categories": return [Color(red: 0.3, green: 0.3, blue: 0.3), Color(red: 0.2, green: 0.2, blue: 0.2)]
-        case "Art & Literature": return [Color(red: 0.9, green: 0.6, blue: 0.7), Color(red: 0.8, green: 0.5, blue: 0.6)]
         case "Movies": return [Color(red: 0.5, green: 0.3, blue: 0.6), Color(red: 0.4, green: 0.2, blue: 0.5)]
+        case "Math": return [Color(red: 0.1, green: 0.3, blue: 0.7), Color(red: 0.0, green: 0.2, blue: 0.6)]
+        case "Music": return [Color(red: 0.8, green: 0.2, blue: 0.5), Color(red: 0.7, green: 0.1, blue: 0.4)]
+        case "Sports": return [Color(red: 0.7, green: 0.8, blue: 0.6), Color(red: 0.6, green: 0.7, blue: 0.5)]
+        case "Pop Culture": return [Color(red: 0.9, green: 0.8, blue: 0.7), Color(red: 0.8, green: 0.7, blue: 0.6)]
+        case "Celebrities": return [Color(red: 0.9, green: 0.6, blue: 0.2), Color(red: 0.8, green: 0.5, blue: 0.1)]
+        case "The 90s": return [Color(red: 0.6, green: 0.3, blue: 0.8), Color(red: 0.5, green: 0.2, blue: 0.7)]
+        case "2000s Era": return [Color(red: 0.2, green: 0.7, blue: 0.9), Color(red: 0.1, green: 0.6, blue: 0.8)]
+        case "Gen Z": return [Color(red: 0.9, green: 0.3, blue: 0.3), Color(red: 0.8, green: 0.2, blue: 0.2)]
+        case "All Categories": return [Color(red: 0.3, green: 0.3, blue: 0.3), Color(red: 0.2, green: 0.2, blue: 0.2)]
         default: return [Color.gray, Color.gray.opacity(0.7)]
         }
     }
@@ -295,10 +333,15 @@ struct SettingsMenuView: View {
     @State private var showAdminReports = false
     @State private var showNotificationSettings = false
     @State private var showPrivacyPolicy = false
-    @State private var showTermsAndConditions = false
+    @State private var showDeleteDataConfirmation = false
+    @State private var isDeletingData = false
+    @State private var deleteSuccess = false
+    @State private var deleteError: String?
+    @State private var showQuestionsDiagnostic = false  // ADD THIS LINE
     @Environment(\.dismiss) var dismiss
     @Environment(\.colorScheme) var colorScheme
     @StateObject private var coinsManager = CoinsManager.shared
+    @StateObject private var firebaseManager = FirebaseLeaderboardManager.shared
     
     var body: some View {
         NavigationView {
@@ -339,33 +382,28 @@ struct SettingsMenuView: View {
                             showLeaderboard()
                         }
                         
-                        /* Daily Challenge is not working yet. :D
-                        SettingsMenuItem(icon: "calendar.badge.clock", title: "Daily Challenge", color: .purple) {
-                            dismiss()
-                            showDailyChallengeDetail = true
-                        }*/
-                        
                         SettingsMenuItem(icon: "bell.badge.fill", title: "Notifications", color: .red) {
                             showNotificationSettings = true
                         }
                         
-                        // Code for testing View Reports
-                       /* SettingsMenuItem(icon: "exclamationmark.triangle.fill", title: "View Reports", color: .orange) {
-                            showAdminReports = true
+                        // Debug Questions Button
+                       /* SettingsMenuItem(icon: "wrench.fill", title: "Debug Questions", color: .purple) {
+                            showQuestionsDiagnostic = true
                         }*/
                         
                         SettingsMenuItem(icon: "lightbulb.fill", title: "Suggest a Category", color: .yellow) {
                             showSuggestCategory = true
                         }
                         
-                        // Divider between game features and legal items
+                      
+                        // Divider between game features and data/legal items
                         Divider()
                             .padding(.vertical, 5)
                         
-                        // Legal items
-                     /*   SettingsMenuItem(icon: "doc.text.fill", title: "Terms & Conditions", color: .indigo) {
-                            showTermsAndConditions = true
-                        }*/
+                        // Delete Personal Data - THE CTA IS HERE!
+                        SettingsMenuItem(icon: "trash.fill", title: "Delete Personal Data", color: .red) {
+                            showDeleteDataConfirmation = true
+                        }
                         
                         SettingsMenuItem(icon: "hand.raised.fill", title: "Privacy Policy", color: .green) {
                             showPrivacyPolicy = true
@@ -393,9 +431,90 @@ struct SettingsMenuView: View {
         .sheet(isPresented: $showPrivacyPolicy) {
             PrivacyPolicyView()
         }
-        /*.sheet(isPresented: $showTermsAndConditions) {
-            TermsAndConditionsView()
+       /* .sheet(isPresented: $showQuestionsDiagnostic) {
+            QuestionsDiagnosticView()
         }*/
+        .confirmationDialog("Delete Personal Data", isPresented: $showDeleteDataConfirmation, titleVisibility: .visible) {
+            Button("Delete My Data", role: .destructive) {
+                deletePersonalData()
+            }
+            Button("Cancel", role: .cancel) { }
+        } message: {
+            Text("This will permanently delete your name from the global leaderboard. This action cannot be undone.")
+        }
+        .alert("Data Deleted", isPresented: $deleteSuccess) {
+            Button("OK") {
+                deleteSuccess = false
+            }
+        } message: {
+            Text("Your personal data has been successfully deleted from the leaderboard.")
+        }
+        .alert("Error", isPresented: .constant(deleteError != nil)) {
+            Button("OK") {
+                deleteError = nil
+            }
+        } message: {
+            if let error = deleteError {
+                Text(error)
+            }
+        }
+        .overlay {
+            if isDeletingData {
+                ZStack {
+                    Color.black.opacity(0.4)
+                        .ignoresSafeArea()
+                    
+                    VStack(spacing: 20) {
+                        ProgressView()
+                            .scaleEffect(1.5)
+                            .tint(.white)
+                        
+                        Text("Deleting data...")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                    }
+                    .padding(40)
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Color(red: 0.1, green: 0.1, blue: 0.2))
+                    )
+                }
+            }
+        }
+    }
+    
+    private func deletePersonalData() {
+        // Get the saved player name
+        guard let playerName = UserDefaults.standard.string(forKey: "LastSavedPlayerName"),
+              !playerName.isEmpty else {
+            deleteError = "No personal data found to delete."
+            return
+        }
+        
+        isDeletingData = true
+        
+        firebaseManager.deleteUserEntries(playerName: playerName) { result in
+            DispatchQueue.main.async {
+                isDeletingData = false
+                
+                switch result {
+                case .success(let count):
+                    if count > 0 {
+                        // Clear the saved player name from UserDefaults
+                        UserDefaults.standard.removeObject(forKey: "LastSavedPlayerName")
+                        
+                        deleteSuccess = true
+                        print("✅ Successfully deleted \(count) entries for \(playerName)")
+                    } else {
+                        deleteError = "No leaderboard entries found for your name."
+                    }
+                    
+                case .failure(let error):
+                    deleteError = "Failed to delete data: \(error.localizedDescription)"
+                    print("❌ Error deleting entries: \(error.localizedDescription)")
+                }
+            }
+        }
     }
 }
 

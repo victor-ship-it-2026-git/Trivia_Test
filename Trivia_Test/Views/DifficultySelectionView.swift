@@ -39,7 +39,7 @@ struct DifficultySelectionView: View {
                         
                         Spacer()
                         
-                        Text("Trivia")
+                        Text("Trivia Quest")
                             .font(.system(size: 20, weight: .bold))
                             .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
                         

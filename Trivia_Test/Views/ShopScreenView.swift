@@ -79,6 +79,7 @@ struct ShopScreenView: View {
                 }
             }
         }
+        .preferredColorScheme(.light) 
         .onAppear {
             AnalyticsManager.shared.logScreenView(screenName: "Shop")
                AnalyticsManager.shared.logShopViewed()

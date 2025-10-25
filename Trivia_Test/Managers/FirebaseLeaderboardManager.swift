@@ -1,4 +1,3 @@
-
 import Foundation
 import FirebaseDatabase
 internal import Combine
@@ -17,14 +16,14 @@ class FirebaseLeaderboardManager: ObservableObject {
         observeLeaderboard()
     }
     
-    //  Observe Leaderboard (Real-time Updates)
+    // MARK: - Observe Leaderboard (Real-time Updates)
     
     func observeLeaderboard() {
         isLoading = true
         
         leaderboardHandle = database.child("leaderboard")
             .queryOrdered(byChild: "percentage")
-            .queryLimited(toLast: 100) // Get top 100 entries
+            .queryLimited(toLast: 100)
             .observe(.value) { [weak self] snapshot in
                 guard let self = self else { return }
                 
@@ -34,7 +33,6 @@ class FirebaseLeaderboardManager: ObservableObject {
                     if let snapshot = child as? DataSnapshot,
                        let dict = snapshot.value as? [String: Any] {
                         
-                        // Parse the entry
                         if let playerName = dict["playerName"] as? String,
                            let score = dict["score"] as? Int,
                            let totalQuestions = dict["totalQuestions"] as? Int,
@@ -56,7 +54,6 @@ class FirebaseLeaderboardManager: ObservableObject {
                     }
                 }
                 
-                // Note: Sort by percentage (highest first)
                 entries.sort { $0.percentage > $1.percentage }
                 
                 DispatchQueue.main.async {
@@ -66,7 +63,7 @@ class FirebaseLeaderboardManager: ObservableObject {
             }
     }
     
-    //  Add Entry to Leaderboard
+    // MARK: - Add Entry to Leaderboard
     
     func addEntry(_ entry: LeaderboardEntry, completion: @escaping (Result<Void, Error>) -> Void) {
         let entryRef = database.child("leaderboard").childByAutoId()
@@ -86,10 +83,10 @@ class FirebaseLeaderboardManager: ObservableObject {
                 DispatchQueue.main.async {
                     self.errorMessage = "Failed to save: \(error.localizedDescription)"
                     CrashlyticsManager.shared.logError(error, additionalInfo: [
-                                      "player_name": entry.playerName,
-                                      "category": entry.category,
-                                      "difficulty": entry.difficulty
-                                  ])
+                        "player_name": entry.playerName,
+                        "category": entry.category,
+                        "difficulty": entry.difficulty
+                    ])
                     completion(.failure(error))
                 }
             } else {
@@ -100,7 +97,61 @@ class FirebaseLeaderboardManager: ObservableObject {
         }
     }
     
-    // Get Leaderboard by Category
+    // MARK: - Delete User Entries
+    
+    func deleteUserEntries(playerName: String, completion: @escaping (Result<Int, Error>) -> Void) {
+        database.child("leaderboard")
+            .queryOrdered(byChild: "playerName")
+            .queryEqual(toValue: playerName)
+            .observeSingleEvent(of: .value) { snapshot in
+                guard snapshot.exists() else {
+                    DispatchQueue.main.async {
+                        completion(.success(0))
+                    }
+                    return
+                }
+                
+                var deletedCount = 0
+                let dispatchGroup = DispatchGroup()
+                var lastError: Error?
+                
+                for child in snapshot.children {
+                    if let snapshot = child as? DataSnapshot {
+                        dispatchGroup.enter()
+                        snapshot.ref.removeValue { error, _ in
+                            if let error = error {
+                                lastError = error
+                                CrashlyticsManager.shared.logError(error, additionalInfo: [
+                                    "action": "delete_user_entries",
+                                    "player_name": playerName
+                                ])
+                            } else {
+                                deletedCount += 1
+                            }
+                            dispatchGroup.leave()
+                        }
+                    }
+                }
+                
+                dispatchGroup.notify(queue: .main) {
+                    if let error = lastError {
+                        completion(.failure(error))
+                    } else {
+                        // Log analytics
+                        AnalyticsManager.shared.logCustomEvent(
+                            eventName: "user_data_deleted",
+                            parameters: [
+                                "player_name": playerName,
+                                "entries_deleted": deletedCount
+                            ]
+                        )
+                        completion(.success(deletedCount))
+                    }
+                }
+            }
+    }
+    
+    // MARK: - Get Leaderboard by Category
     
     func getLeaderboardByCategory(_ category: String, completion: @escaping ([LeaderboardEntry]) -> Void) {
         database.child("leaderboard")
@@ -134,7 +185,6 @@ class FirebaseLeaderboardManager: ObservableObject {
                     }
                 }
                 
-                // Sort by percentage
                 entries.sort { $0.percentage > $1.percentage }
                 
                 DispatchQueue.main.async {
@@ -143,7 +193,7 @@ class FirebaseLeaderboardManager: ObservableObject {
             }
     }
     
-    // Get Leaderboard by Difficulty
+    // MARK: - Get Leaderboard by Difficulty
     
     func getLeaderboardByDifficulty(_ difficulty: String, completion: @escaping ([LeaderboardEntry]) -> Void) {
         database.child("leaderboard")
@@ -177,7 +227,6 @@ class FirebaseLeaderboardManager: ObservableObject {
                     }
                 }
                 
-                // Sort by percentage
                 entries.sort { $0.percentage > $1.percentage }
                 
                 DispatchQueue.main.async {
@@ -186,7 +235,7 @@ class FirebaseLeaderboardManager: ObservableObject {
             }
     }
     
-    // Get Top Players (Global)
+    // MARK: - Get Top Players
     
     func getTopPlayers(limit: Int = 50, completion: @escaping ([LeaderboardEntry]) -> Void) {
         database.child("leaderboard")
@@ -220,7 +269,6 @@ class FirebaseLeaderboardManager: ObservableObject {
                     }
                 }
                 
-                // Sort by percentage (highest first)
                 entries.sort { $0.percentage > $1.percentage }
                 
                 DispatchQueue.main.async {
@@ -229,13 +277,13 @@ class FirebaseLeaderboardManager: ObservableObject {
             }
     }
     
-    // Clear Local Cache (for testing)
+    // MARK: - Clear Local Cache
     
     func clearLocalCache() {
         leaderboard = []
     }
     
-    // Stop Observing
+    // MARK: - Stop Observing
     
     func stopObserving() {
         if let handle = leaderboardHandle {

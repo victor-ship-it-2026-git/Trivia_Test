@@ -254,7 +254,9 @@ struct NotificationSettingsView: View {
             }
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: Button("Done") { dismiss() })
+            
         }
+        .preferredColorScheme(.light)
     }
 }
 

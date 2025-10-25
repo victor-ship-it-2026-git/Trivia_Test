@@ -620,13 +620,36 @@ struct LifelineButtonModern: View {
         Button(action: action) {
             VStack(spacing: 4) {
                 ZStack {
+                    // Circle background
                     Circle()
                         .fill(isDisabled ? Color.gray.opacity(0.3) : color)
                         .frame(width: 50, height: 50)
                     
+                    // Icon (centered)
                     Image(systemName: icon)
                         .font(.system(size: 16, weight: .bold))
                         .foregroundColor(isDisabled ? .gray : Color(red: 0.1, green: 0.1, blue: 0.2))
+                    
+                    // Quantity Badge (top-right corner)
+                    if count > 0 {
+                        VStack {
+                            HStack {
+                                Spacer()
+                                ZStack {
+                                    Circle()
+                                        .fill(Color(red: 0.1, green: 0.1, blue: 0.2))
+                                        .frame(width: 20, height: 20)
+                                    
+                                    Text("\(count)")
+                                        .font(.system(size: 11, weight: .bold))
+                                        .foregroundColor(.white)
+                                }
+                            }
+                            Spacer()
+                        }
+                        .frame(width: 50, height: 50)
+                        .offset(x: 8, y: -8)
+                    }
                 }
                 
                 Text(label)

@@ -720,6 +720,726 @@
     "difficulty": "Genius"
   },
   {
+     "text": "Which ocean is the smallest by area?",
+     "options": [
+       "Indian Ocean",
+       "Arctic Ocean",
+       "Atlantic Ocean",
+       "Southern Ocean"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Rookie"
+   },
+   {
+     "text": "What is the capital of Spain?",
+     "options": [
+       "Barcelona",
+       "Madrid",
+       "Seville",
+       "Valencia"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Rookie"
+   },
+   {
+     "text": "Which continent is Egypt located on?",
+     "options": [
+       "Asia",
+       "Africa",
+       "Europe",
+       "Middle East"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Rookie"
+   },
+   {
+     "text": "What is the largest island in the world?",
+     "options": [
+       "Iceland",
+       "Madagascar",
+       "Greenland",
+       "New Guinea"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Rookie"
+   },
+   {
+     "text": "Which country is home to the kangaroo?",
+     "options": [
+       "New Zealand",
+       "South Africa",
+       "Australia",
+       "Argentina"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Rookie"
+   },
+   {
+     "text": "What is the capital of Canada?",
+     "options": [
+       "Toronto",
+       "Vancouver",
+       "Montreal",
+       "Ottawa"
+     ],
+     "correctAnswer": 3,
+     "category": "Geography",
+     "difficulty": "Rookie"
+   },
+   {
+     "text": "Which river flows through London?",
+     "options": [
+       "Seine",
+       "Rhine",
+       "Thames",
+       "Danube"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Rookie"
+   },
+   {
+     "text": "How many continents are there on Earth?",
+     "options": [
+       "5",
+       "6",
+       "7",
+       "8"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Rookie"
+   },
+   {
+     "text": "Which country is famous for the Eiffel Tower?",
+     "options": [
+       "Italy",
+       "Spain",
+       "France",
+       "Germany"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Rookie"
+   },
+   {
+     "text": "What is the capital of Japan?",
+     "options": [
+       "Osaka",
+       "Kyoto",
+       "Tokyo",
+       "Hiroshima"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Rookie"
+   },
+   {
+     "text": "Which African country has the largest population?",
+     "options": [
+       "Egypt",
+       "South Africa",
+       "Nigeria",
+       "Ethiopia"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Amateur"
+   },
+   {
+     "text": "What is the longest river in Europe?",
+     "options": [
+       "Danube",
+       "Rhine",
+       "Volga",
+       "Thames"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Amateur"
+   },
+   {
+     "text": "Which US state is the Grand Canyon located in?",
+     "options": [
+       "Utah",
+       "Colorado",
+       "Arizona",
+       "Nevada"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Amateur"
+   },
+   {
+     "text": "What is the capital of South Korea?",
+     "options": [
+       "Busan",
+       "Seoul",
+       "Incheon",
+       "Daegu"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Amateur"
+   },
+   {
+     "text": "Which country is both in Europe and Asia?",
+     "options": [
+       "Kazakhstan",
+       "Turkey",
+       "Georgia",
+       "Azerbaijan"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Amateur"
+   },
+   {
+     "text": "What is the largest desert in Asia?",
+     "options": [
+       "Thar Desert",
+       "Gobi Desert",
+       "Karakum Desert",
+       "Arabian Desert"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Amateur"
+   },
+   {
+     "text": "Which is the smallest country in South America?",
+     "options": [
+       "Uruguay",
+       "Suriname",
+       "French Guiana",
+       "Ecuador"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Amateur"
+   },
+   {
+     "text": "What is the capital of Norway?",
+     "options": [
+       "Bergen",
+       "Oslo",
+       "Stockholm",
+       "Helsinki"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Amateur"
+   },
+   {
+     "text": "Which ocean borders California?",
+     "options": [
+       "Atlantic Ocean",
+       "Arctic Ocean",
+       "Pacific Ocean",
+       "Indian Ocean"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Amateur"
+   },
+   {
+     "text": "What is the world's largest coral reef system?",
+     "options": [
+       "Red Sea Coral Reef",
+       "Great Barrier Reef",
+       "Belize Barrier Reef",
+       "New Caledonia Barrier Reef"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Amateur"
+   },
+   {
+     "text": "Which country has the most islands in the world?",
+     "options": [
+       "Philippines",
+       "Indonesia",
+       "Sweden",
+       "Norway"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Pro"
+   },
+   {
+     "text": "What is the capital of Mongolia?",
+     "options": [
+       "Astana",
+       "Bishkek",
+       "Ulaanbaatar",
+       "Tashkent"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Pro"
+   },
+   {
+     "text": "Which two countries share the longest international border?",
+     "options": [
+       "USA and Mexico",
+       "Russia and China",
+       "USA and Canada",
+       "Brazil and Argentina"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Pro"
+   },
+   {
+     "text": "What is the most densely populated country in the world?",
+     "options": [
+       "Singapore",
+       "Monaco",
+       "Hong Kong",
+       "Bahrain"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Pro"
+   },
+   {
+     "text": "Which African lake is the second deepest in the world?",
+     "options": [
+       "Lake Victoria",
+       "Lake Malawi",
+       "Lake Tanganyika",
+       "Lake Turkana"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Pro"
+   },
+   {
+     "text": "What is the driest non-polar desert in the world?",
+     "options": [
+       "Mojave Desert",
+       "Atacama Desert",
+       "Namib Desert",
+       "Kalahari Desert"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Pro"
+   },
+   {
+     "text": "Which European country has the most UNESCO World Heritage Sites?",
+     "options": [
+       "France",
+       "Italy",
+       "Spain",
+       "Germany"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Pro"
+   },
+   {
+     "text": "What is the second highest mountain in the world?",
+     "options": [
+       "Kangchenjunga",
+       "K2",
+       "Lhotse",
+       "Makalu"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Pro"
+   },
+   {
+     "text": "Which country has territory on four different continents?",
+     "options": [
+       "United Kingdom",
+       "United States",
+       "France",
+       "Netherlands"
+     ],
+     "correctAnswer": 0,
+     "category": "Geography",
+     "difficulty": "Pro"
+   },
+   {
+     "text": "What is the capital of Kazakhstan?",
+     "options": [
+       "Almaty",
+       "Astana",
+       "Nur-Sultan",
+       "Shymkent"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Pro"
+   },
+   {
+     "text": "Which country contains the most freshwater resources?",
+     "options": [
+       "Canada",
+       "Russia",
+       "Brazil",
+       "United States"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Master"
+   },
+   {
+     "text": "What is the only country with a coastline on both the Red Sea and the Persian Gulf?",
+     "options": [
+       "Yemen",
+       "Oman",
+       "Saudi Arabia",
+       "Egypt"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Master"
+   },
+   {
+     "text": "Which is the world's most northern capital city?",
+     "options": [
+       "Helsinki",
+       "Oslo",
+       "Reykjavik",
+       "Stockholm"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Master"
+   },
+   {
+     "text": "What is the largest lake in Africa?",
+     "options": [
+       "Lake Tanganyika",
+       "Lake Malawi",
+       "Lake Victoria",
+       "Lake Turkana"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Master"
+   },
+   {
+     "text": "Which river forms most of the border between Laos and Thailand?",
+     "options": [
+       "Irrawaddy",
+       "Salween",
+       "Mekong",
+       "Chao Phraya"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Master"
+   },
+   {
+     "text": "What is the only country that lies in all four hemispheres?",
+     "options": [
+       "Indonesia",
+       "Ecuador",
+       "Kiribati",
+       "Maldives"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Master"
+   },
+   {
+     "text": "Which country has the most pyramids?",
+     "options": [
+       "Egypt",
+       "Sudan",
+       "Mexico",
+       "Guatemala"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Master"
+   },
+   {
+     "text": "What is the lowest point in North America?",
+     "options": [
+       "Death Valley",
+       "Badwater Basin",
+       "Salton Sea",
+       "New Orleans"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Master"
+   },
+   {
+     "text": "Which European country has the longest coastline?",
+     "options": [
+       "Greece",
+       "Italy",
+       "Norway",
+       "United Kingdom"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Master"
+   },
+   {
+     "text": "What is the capital of Vanuatu?",
+     "options": [
+       "Suva",
+       "Port Moresby",
+       "Port Vila",
+       "Apia"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Master"
+   },
+   {
+     "text": "Which country has the highest percentage of land covered by water?",
+     "options": [
+       "Bangladesh",
+       "Netherlands",
+       "Maldives",
+       "Indonesia"
+     ],
+     "correctAnswer": 0,
+     "category": "Geography",
+     "difficulty": "Legend"
+   },
+   {
+     "text": "What is the only river that flows in reverse due to tidal forces?",
+     "options": [
+       "Seine River",
+       "Tonlé Sap River",
+       "Amazon River",
+       "St. Lawrence River"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Legend"
+   },
+   {
+     "text": "Which country has the most diverse ecosystem types within its borders?",
+     "options": [
+       "Australia",
+       "Indonesia",
+       "Brazil",
+       "China"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Legend"
+   },
+   {
+     "text": "What is the world's smallest island nation by land area?",
+     "options": [
+       "Monaco",
+       "Nauru",
+       "Tuvalu",
+       "Vatican City"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Legend"
+   },
+   {
+     "text": "Which desert receives rainfall only once every 5-20 years?",
+     "options": [
+       "Atacama Desert",
+       "Namib Desert",
+       "Sahara Desert",
+       "Arabian Desert"
+     ],
+     "correctAnswer": 0,
+     "category": "Geography",
+     "difficulty": "Legend"
+   },
+   {
+     "text": "What is the antipodal point of New York City?",
+     "options": [
+       "Perth, Australia",
+       "Indian Ocean near Australia",
+       "Tokyo, Japan",
+       "Buenos Aires, Argentina"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Legend"
+   },
+   {
+     "text": "Which country's entire territory is below 200 meters elevation?",
+     "options": [
+       "Maldives",
+       "Bahamas",
+       "Tuvalu",
+       "Marshall Islands"
+     ],
+     "correctAnswer": 0,
+     "category": "Geography",
+     "difficulty": "Legend"
+   },
+   {
+     "text": "What is the only capital city that borders two countries?",
+     "options": [
+       "Vienna",
+       "Geneva",
+       "Bratislava",
+       "Luxembourg City"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Legend"
+   },
+   {
+     "text": "Which African country has never changed its name since independence?",
+     "options": [
+       "Ethiopia",
+       "Liberia",
+       "South Africa",
+       "Egypt"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Legend"
+   },
+   {
+     "text": "What is the largest lake island in the world?",
+     "options": [
+       "Isle Royale",
+       "Manitoulin Island",
+       "Olkhon Island",
+       "Ukerewe Island"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Legend"
+   },
+   {
+     "text": "Which ocean current is the fastest in the world?",
+     "options": [
+       "Gulf Stream",
+       "Kuroshio Current",
+       "Agulhas Current",
+       "Antarctic Circumpolar Current"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Genius"
+   },
+   {
+     "text": "What is the triple point border between Argentina, Brazil, and Paraguay called?",
+     "options": [
+       "Três Fronteiras",
+       "Triple Frontera",
+       "Hito Tres Fronteras",
+       "Marco das Três Fronteiras"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Genius"
+   },
+   {
+     "text": "Which country has the highest concentration of endemic species?",
+     "options": [
+       "Australia",
+       "Madagascar",
+       "New Zealand",
+       "Galapagos Islands"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Genius"
+   },
+   {
+     "text": "What is the deepest point on land (excluding underwater)?",
+     "options": [
+       "Bentley Subglacial Trench",
+       "Dead Sea shore",
+       "Lake Baikal bottom",
+       "Turpan Depression"
+     ],
+     "correctAnswer": 0,
+     "category": "Geography",
+     "difficulty": "Genius"
+   },
+   {
+     "text": "Which is the only sea that has no coastlines?",
+     "options": [
+       "Dead Sea",
+       "Sargasso Sea",
+       "Salton Sea",
+       "Aral Sea"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Genius"
+   },
+   {
+     "text": "What percentage of Russia's territory is in Asia?",
+     "options": [
+       "65%",
+       "72%",
+       "77%",
+       "81%"
+     ],
+     "correctAnswer": 2,
+     "category": "Geography",
+     "difficulty": "Genius"
+   },
+   {
+     "text": "Which country has the most distinct climate zones?",
+     "options": [
+       "United States",
+       "China",
+       "Russia",
+       "Australia"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Genius"
+   },
+   {
+     "text": "What is the only place where you can find four corners of different US states meeting at one point?",
+     "options": [
+       "Four States Area",
+       "Four Corners",
+       "Quad Point",
+       "Corner Junction"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Genius"
+   },
+   {
+     "text": "Which mountain has the greatest vertical relief (base to summit) on Earth?",
+     "options": [
+       "Mount Everest",
+       "Mauna Kea",
+       "Denali",
+       "K2"
+     ],
+     "correctAnswer": 1,
+     "category": "Geography",
+     "difficulty": "Genius"
+   },
+   {
+     "text": "What is the only country whose name starts with 'O'?",
+     "options": [
+       "Oman",
+       "Osterreich",
+       "Ottoman",
+       "Oceania"
+     ],
+     "correctAnswer": 0,
+     "category": "Geography",
+     "difficulty": "Genius"
+   },
+  {
     "text": "What is the chemical symbol for water?",
     "options": [
       "H2O",
