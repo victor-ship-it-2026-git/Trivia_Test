@@ -31,23 +31,7 @@ struct Trivia_TestApp: App {
         }
     }
     
-    func testAlternateIcons() {
-        guard UIApplication.shared.supportsAlternateIcons else {
-            print("Alternate icons not supported")
-            return
-        }
 
-        let alternates = ["TestA", "TestB"]
-        for name in alternates {
-            UIApplication.shared.setAlternateIconName(name) { error in
-                if let error = error {
-                    print("❌ Failed to change to \(name): \(error.localizedDescription)")
-                } else {
-                    print("✅ Successfully changed to \(name)")
-                }
-            }
-        }
-    }
     
     private func requestTrackingPermission() {
         if #available(iOS 14.5, *) {
