@@ -1,6 +1,36 @@
 
 import SwiftUI
 
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        testAlternateIcons()
+    }
+
+    func testAlternateIcons() {
+        guard UIApplication.shared.supportsAlternateIcons else {
+            print("Alternate icons not supported on this device")
+            return
+        }
+
+        let alternates = ["AppIcon-Alt1", "AppIcon-Alt2"]
+
+        // Test switching through all alternate icons
+        for name in alternates {
+            UIApplication.shared.setAlternateIconName(name) { error in
+                if let error = error {
+                    print("❌ Failed to change to \(name): \(error.localizedDescription)")
+                } else {
+                    print("✅ Successfully changed to \(name)")
+                }
+            }
+        }
+    }
+}
+
 struct SplashView: View {
     @State private var opacity: Double = 0
     @State private var rotation: Double = 0
