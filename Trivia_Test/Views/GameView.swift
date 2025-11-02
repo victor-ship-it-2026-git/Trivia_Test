@@ -7,6 +7,7 @@ struct GameView: View {
     let goHome: () -> Void
     @Environment(\.viewController) var viewControllerHolder: ViewControllerHolder
     @Environment(\.colorScheme) var colorScheme
+    @StateObject private var networkMonitor = NetworkMonitor.shared
     @State private var timeRemaining = 30
     @State private var timer: Timer?
     @State private var showQuestion = false
@@ -262,23 +263,6 @@ struct GameView: View {
         }
     }
     
-    // Progress Bar
-    private var progressBar: some View {
-        GeometryReader { geometry in
-            ZStack(alignment: .leading) {
-                RoundedRectangle(cornerRadius: 4)
-                    .fill(Color.gray.opacity(0.2))
-                    .frame(height: 8)
-                
-                RoundedRectangle(cornerRadius: 4)
-                    .fill(Color.yellow)
-                    .frame(width: geometry.size.width * CGFloat(presenter.currentQuestionIndex + 1) / CGFloat(presenter.questions.count), height: 8)
-                    .animation(.spring(response: 0.5, dampingFraction: 0.7), value: presenter.currentQuestionIndex)
-            }
-        }
-        .frame(height: 8)
-    }
-    
     // Circular Timer
     private var circularTimer: some View {
         ZStack {
@@ -383,49 +367,120 @@ struct GameView: View {
     private var bottomActionArea: some View {
         VStack(spacing: 12) {
             if presenter.needsToWatchAd {
-                Button(action: {
-                    guard adMobManager.isAdReady else { return }
-                    
-                    guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-                          let rootVC = windowScene.windows.first?.rootViewController else {
-                        return
-                    }
-                    
-                    HapticManager.shared.light()
-                    
-                    adMobManager.onAdRewarded = {
-                        Task { @MainActor in
-                            withAnimation {
-                                presenter.needsToWatchAd = false
-                                presenter.showingAnswer = false
-                                presenter.selectedAnswer = nil
-                                presenter.timeExpired = false
+                // Check if ad is available or if there's no internet
+                if !networkMonitor.isConnected || !adMobManager.isAdReady {
+                    // No Internet or No Ad Available - Show Skip Option
+                    VStack(spacing: 16) {
+                        // Info message
+                        HStack(spacing: 10) {
+                            Image(systemName: networkMonitor.isConnected ? "exclamationmark.triangle.fill" : "wifi.slash")
+                                .font(.title3)
+                            Text(networkMonitor.isConnected ? "Ad not available" : "No internet connection")
+                                .font(.subheadline)
+                                .fontWeight(.medium)
+                        }
+                        .foregroundColor(.orange)
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 12)
+                        .background(
+                            RoundedRectangle(cornerRadius: 12)
+                                .fill(Color.orange.opacity(0.15))
+                        )
+                        
+                        // Skip Challenge Button
+                        Button(action: {
+                            HapticManager.shared.light()
+                            withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+                                showQuestion = false
                             }
-                            resetTimer()
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                                // Move to next question without awarding points
+                                if presenter.isLastQuestion {
+                                    stopTimer()
+                                    presenter.finalizeGameCoins()
+                                    showResults()
+                                } else {
+                                    // Reset state for next question
+                                    presenter.needsToWatchAd = false
+                                    presenter.showingAnswer = false
+                                    presenter.selectedAnswer = nil
+                                    presenter.timeExpired = false
+                                    
+                                    // Move to next question
+                                    presenter.nextQuestion()
+                                    resetTimer()
+                                    
+                                    withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {
+                                        showQuestion = true
+                                    }
+                                }
+                            }
+                        }) {
+                            HStack(spacing: 8) {
+                                Image(systemName: "forward.fill")
+                                Text(presenter.isLastQuestion ? "Skip to Results" : "Skip Challenge")
+                                    .fontWeight(.bold)
+                            }
+                            .font(.system(size: 18))
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 56)
+                            .background(Color.blue)
+                            .cornerRadius(16)
                         }
                     }
-                    
-                    adMobManager.showAd(from: rootVC)
-                }) {
-                    HStack(spacing: 8) {
-                        Image(systemName: "play.rectangle.fill")
-                        Text(adMobManager.isAdReady ? "Watch Ad to Continue" : "Loading Ad...")
-                            .fontWeight(.bold)
+                } else {
+                    // Ad is ready - Show Watch Ad Button
+                    Button(action: {
+                        guard adMobManager.isAdReady else { return }
+                        
+                        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                              let rootVC = windowScene.windows.first?.rootViewController else {
+                            return
+                        }
+                        
+                        HapticManager.shared.light()
+                        
+                        adMobManager.onAdRewarded = {
+                            Task { @MainActor in
+                                withAnimation {
+                                    presenter.needsToWatchAd = false
+                                    presenter.showingAnswer = false
+                                    presenter.selectedAnswer = nil
+                                    presenter.timeExpired = false
+                                }
+                                resetTimer()
+                            }
+                        }
+                        
+                        adMobManager.showAd(from: rootVC)
+                    }) {
+                        HStack(spacing: 8) {
+                            Image(systemName: "play.rectangle.fill")
+                            Text("Watch Ad to Continue")
+                                .fontWeight(.bold)
+                        }
+                        .font(.system(size: 18))
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 56)
+                        .background(Color.red)
+                        .cornerRadius(16)
                     }
-                    .font(.system(size: 18))
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 56)
-                    .background(adMobManager.isAdReady ? Color.red : Color.gray)
-                    .cornerRadius(16)
                 }
-                .disabled(!adMobManager.isAdReady)
             } else if presenter.showingAnswer {
                 Button(action: {
                     HapticManager.shared.selection()
+                    
+                    // First, reset the answer states to clear visual feedback
+                    presenter.showingAnswer = false
+                    presenter.selectedAnswer = nil
+                    
+                    // Then animate out
                     withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
                         showQuestion = false
                     }
+                    
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                         if presenter.isLastQuestion {
                             stopTimer()
@@ -503,7 +558,7 @@ struct GameView: View {
         }
     }
     
-    //  Timer Functions
+    // Timer Functions
     private func startTimer() {
         stopTimer()
         timeRemaining = 30
@@ -537,7 +592,7 @@ struct GameView: View {
     }
 }
 
-//  Modern Option Button
+// Modern Option Button
 struct OptionButtonModern: View {
     let text: String
     let letter: String

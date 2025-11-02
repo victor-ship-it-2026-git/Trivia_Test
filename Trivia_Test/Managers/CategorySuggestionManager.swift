@@ -1,4 +1,3 @@
-
 import Foundation
 import FirebaseDatabase
 internal import Combine
@@ -78,14 +77,10 @@ class CategorySuggestionManager: ObservableObject {
                 for child in snapshot.children {
                     if let snapshot = child as? DataSnapshot,
                        let dict = snapshot.value as? [String: Any],
-                       let id = dict["id"] as? String,
                        let categoryName = dict["categoryName"] as? String,
-                       let userName = dict["userName"] as? String,
-                       let timestamp = dict["timestamp"] as? TimeInterval,
-                       let status = dict["status"] as? String {
+                       let userName = dict["userName"] as? String {
                         
-                        var suggestion = CategorySuggestion(categoryName: categoryName, userName: userName)
-                        // Note: We can't modify the struct properties directly, so we create a custom init or use a class
+                        let suggestion = CategorySuggestion(categoryName: categoryName, userName: userName)
                         suggestions.append(suggestion)
                     }
                 }

@@ -1,5 +1,5 @@
 import Network
-import Combine
+internal import Combine
 
 @MainActor
 class NetworkMonitor: ObservableObject {
@@ -17,11 +17,17 @@ class NetworkMonitor: ObservableObject {
     
     func startMonitoring() {
         monitor.pathUpdateHandler = { [weak self] path in
-            Task { @MainActor in
-                self?.isConnected = path.status == .satisfied
-                self?.connectionType = path.availableInterfaces.first?.type
+            guard let self = self else { return }
+            
+            let isConnected = path.status == .satisfied
+            let connectionType = path.availableInterfaces.first?.type
+            
+            Task { @MainActor [weak self] in
+                guard let self = self else { return }
+                self.isConnected = isConnected
+                self.connectionType = connectionType
                 
-                if path.status == .satisfied {
+                if isConnected {
                     print("✅ Network connected")
                 } else {
                     print("❌ Network disconnected")
@@ -31,7 +37,7 @@ class NetworkMonitor: ObservableObject {
         monitor.start(queue: queue)
     }
     
-    func stopMonitoring() {
+    nonisolated func stopMonitoring() {
         monitor.cancel()
     }
     

@@ -1,3 +1,5 @@
+import SwiftUI
+
 struct SettingsMenuView: View {
     let showShop: () -> Void
     let showLeaderboard: () -> Void

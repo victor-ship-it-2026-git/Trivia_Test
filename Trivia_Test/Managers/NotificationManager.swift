@@ -1,4 +1,3 @@
-
 import Foundation
 import Firebase
 import FirebaseMessaging
@@ -33,9 +32,10 @@ class NotificationManager: NSObject, ObservableObject {
     //  Request Permission
     
     func requestNotificationPermission() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { [weak self] granted, error in
-            Task { @MainActor in
-                self?.notificationPermissionGranted = granted
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            Task { @MainActor [weak self] in
+                guard let self else { return }
+                self.notificationPermissionGranted = granted
                 AnalyticsManager.shared.logNotificationPermissionResponse(granted: granted)
 
                 if granted {
@@ -49,9 +49,10 @@ class NotificationManager: NSObject, ObservableObject {
     }
     
     private func checkNotificationPermission() {
-        UNUserNotificationCenter.current().getNotificationSettings { [weak self] settings in
-            Task { @MainActor in
-                self?.notificationPermissionGranted = settings.authorizationStatus == .authorized
+        UNUserNotificationCenter.current().getNotificationSettings { settings in
+            Task { @MainActor [weak self] in
+                guard let self else { return }
+                self.notificationPermissionGranted = settings.authorizationStatus == .authorized
                 
                 if settings.authorizationStatus == .authorized {
                     UIApplication.shared.registerForRemoteNotifications()
@@ -165,7 +166,11 @@ class NotificationManager: NSObject, ObservableObject {
     
     func clearBadge() {
         Task { @MainActor in
-            UIApplication.shared.applicationIconBadgeNumber = 0
+            UNUserNotificationCenter.current().setBadgeCount(0) { error in
+                if let error = error {
+                    print("❌ Error clearing badge: \(error.localizedDescription)")
+                }
+            }
         }
     }
 }
@@ -196,17 +201,24 @@ extension NotificationManager: UNUserNotificationCenterDelegate {
         let userInfo = response.notification.request.content.userInfo
         print("👆 Notification tapped: \(userInfo)")
         
+        // Convert to Sendable dictionary
+        let userInfoDict = userInfo.reduce(into: [String: Any]()) { result, element in
+            if let key = element.key as? String {
+                result[key] = element.value
+            }
+        }
+        
         Task { @MainActor in
             // Handle notification action based on type
-            if let notificationType = userInfo["type"] as? String {
-                handleNotificationAction(type: notificationType, userInfo: userInfo)
+            if let notificationType = userInfoDict["type"] as? String {
+                self.handleNotificationAction(type: notificationType, userInfo: userInfoDict)
             }
         }
         
         completionHandler()
     }
     
-    private func handleNotificationAction(type: String, userInfo: [AnyHashable: Any]) {
+    private func handleNotificationAction(type: String, userInfo: [String: Any]) {
         switch type {
         case "daily_challenge":
             // Navigate to daily challenge
