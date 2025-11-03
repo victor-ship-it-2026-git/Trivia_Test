@@ -1,0 +1,5411 @@
+[{
+    "text": "What is the chemical symbol for water?",
+    "options": [
+      "H2O",
+      "CO2",
+      "O2",
+      "H2"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What planet is known as the Red Planet?",
+    "options": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "How many bones are in the adult human body?",
+    "options": [
+      "196",
+      "206",
+      "216",
+      "226"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What gas do plants absorb from the atmosphere?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon Dioxide",
+      "Hydrogen"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the center of an atom called?",
+    "options": [
+      "Electron",
+      "Proton",
+      "Nucleus",
+      "Neutron"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the largest organ in the human body?",
+    "options": [
+      "Heart",
+      "Brain",
+      "Liver",
+      "Skin"
+    ],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the boiling point of water in Celsius?",
+    "options": [
+      "90°C",
+      "100°C",
+      "110°C",
+      "120°C"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What force keeps us on the ground?",
+    "options": [
+      "Magnetism",
+      "Gravity",
+      "Friction",
+      "Inertia"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the closest star to Earth?",
+    "options": [
+      "Alpha Centauri",
+      "Sirius",
+      "The Sun",
+      "Polaris"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "How many legs does a spider have?",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the hardest natural substance on Earth?",
+    "options": [
+      "Gold",
+      "Iron",
+      "Diamond",
+      "Quartz"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do bees collect from flowers?",
+    "options": [
+      "Water",
+      "Nectar",
+      "Seeds",
+      "Leaves"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the main gas in Earth's atmosphere?",
+    "options": [
+      "Oxygen",
+      "Carbon Dioxide",
+      "Nitrogen",
+      "Hydrogen"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "How many teeth does an adult human have?",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What type of animal is a dolphin?",
+    "options": [
+      "Fish",
+      "Mammal",
+      "Reptile",
+      "Amphibian"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the freezing point of water in Celsius?",
+    "options": [
+      "-10°C",
+      "0°C",
+      "10°C",
+      "32°C"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What part of the plant conducts photosynthesis?",
+    "options": [
+      "Roots",
+      "Stem",
+      "Leaves",
+      "Flowers"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the speed of light approximately?",
+    "options": [
+      "300,000 km/s",
+      "150,000 km/s",
+      "500,000 km/s",
+      "1,000,000 km/s"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What organ pumps blood through the body?",
+    "options": [
+      "Lungs",
+      "Brain",
+      "Heart",
+      "Liver"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the chemical symbol for gold?",
+    "options": [
+      "Go",
+      "Gd",
+      "Au",
+      "Ag"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the most abundant element in the universe?",
+    "options": [
+      "Oxygen",
+      "Carbon",
+      "Hydrogen",
+      "Helium"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the powerhouse of the cell?",
+    "options": [
+      "Nucleus",
+      "Ribosome",
+      "Mitochondria",
+      "Chloroplast"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What type of rock is formed by volcanic activity?",
+    "options": [
+      "Sedimentary",
+      "Metamorphic",
+      "Igneous",
+      "Limestone"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the pH of pure water?",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "11"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "How many chromosomes do humans have?",
+    "options": [
+      "23",
+      "46",
+      "48",
+      "64"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the study of fungi called?",
+    "options": [
+      "Botany",
+      "Mycology",
+      "Zoology",
+      "Microbiology"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What layer of Earth's atmosphere contains the ozone layer?",
+    "options": [
+      "Troposphere",
+      "Stratosphere",
+      "Mesosphere",
+      "Thermosphere"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the smallest unit of life?",
+    "options": [
+      "Atom",
+      "Molecule",
+      "Cell",
+      "Tissue"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What element is essential for nuclear reactors?",
+    "options": [
+      "Carbon",
+      "Uranium",
+      "Iron",
+      "Silicon"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the largest bone in the human body?",
+    "options": [
+      "Tibia",
+      "Humerus",
+      "Femur",
+      "Fibula"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What causes tides on Earth?",
+    "options": [
+      "Earth's rotation",
+      "Wind patterns",
+      "Moon's gravity",
+      "Sun's heat"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the process by which plants make food called?",
+    "options": [
+      "Respiration",
+      "Photosynthesis",
+      "Digestion",
+      "Fermentation"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "How many chambers does the human heart have?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What gas is produced during photosynthesis?",
+    "options": [
+      "Carbon Dioxide",
+      "Nitrogen",
+      "Oxygen",
+      "Hydrogen"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the smallest planet in our solar system?",
+    "options": [
+      "Mars",
+      "Mercury",
+      "Venus",
+      "Pluto"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the study of earthquakes called?",
+    "options": [
+      "Meteorology",
+      "Seismology",
+      "Geology",
+      "Volcanology"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What particle has a negative charge?",
+    "options": [
+      "Proton",
+      "Neutron",
+      "Electron",
+      "Positron"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the largest internal organ in the human body?",
+    "options": [
+      "Heart",
+      "Stomach",
+      "Liver",
+      "Lungs"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What type of bond involves sharing electrons?",
+    "options": [
+      "Ionic",
+      "Covalent",
+      "Metallic",
+      "Hydrogen"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the only metal that is liquid at room temperature?",
+    "options": [
+      "Lead",
+      "Mercury",
+      "Gallium",
+      "Cesium"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Avogadro's number approximately?",
+    "options": [
+      "6.02 × 10²³",
+      "3.14 × 10²³",
+      "9.81 × 10²³",
+      "1.62 × 10²³"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the process of cell division that produces gametes?",
+    "options": [
+      "Mitosis",
+      "Meiosis",
+      "Binary fission",
+      "Cytokinesis"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the Mohs hardness of diamond?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What enzyme breaks down starch in the mouth?",
+    "options": [
+      "Pepsin",
+      "Lipase",
+      "Amylase",
+      "Trypsin"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the most electronegative element?",
+    "options": [
+      "Oxygen",
+      "Fluorine",
+      "Chlorine",
+      "Nitrogen"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What particle mediates the electromagnetic force?",
+    "options": [
+      "Gluon",
+      "Photon",
+      "W boson",
+      "Graviton"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the first element in the periodic table with a stable isotope?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Beryllium"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the theory that explains continental drift?",
+    "options": [
+      "Plate tectonics",
+      "Continental shift",
+      "Pangaea theory",
+      "Seafloor spreading"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the half-life of Carbon-14?",
+    "options": [
+      "5,730 years",
+      "10,000 years",
+      "2,500 years",
+      "15,000 years"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the universal gas constant (R) value?",
+    "options": [
+      "8.314 J/(mol·K)",
+      "6.626 J/(mol·K)",
+      "9.81 J/(mol·K)",
+      "3.14 J/(mol·K)"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What structure in the cell synthesizes proteins?",
+    "options": [
+      "Golgi apparatus",
+      "Endoplasmic reticulum",
+      "Ribosome",
+      "Lysosome"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the SI unit of electric current?",
+    "options": [
+      "Volt",
+      "Ohm",
+      "Ampere",
+      "Watt"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What type of radiation has no mass or charge?",
+    "options": [
+      "Alpha",
+      "Beta",
+      "Gamma",
+      "Neutron"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the normal blood pressure in humans (systolic/diastolic)?",
+    "options": [
+      "100/60 mmHg",
+      "120/80 mmHg",
+      "140/90 mmHg",
+      "160/100 mmHg"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the process of converting nitrogen gas into ammonia called?",
+    "options": [
+      "Nitrogen cycle",
+      "Nitrogen fixation",
+      "Nitrification",
+      "Denitrification"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the strongest type of intermolecular force?",
+    "options": [
+      "Van der Waals",
+      "Dipole-dipole",
+      "Hydrogen bonding",
+      "London dispersion"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the critical angle for total internal reflection in water?",
+    "options": [
+      "42°",
+      "48.6°",
+      "60°",
+      "90°"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What organelle is responsible for autophagy?",
+    "options": [
+      "Mitochondria",
+      "Lysosome",
+      "Peroxisome",
+      "Vacuole"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the boundary where two tectonic plates slide past each other?",
+    "options": [
+      "Divergent boundary",
+      "Convergent boundary",
+      "Transform boundary",
+      "Subduction zone"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the activation energy?",
+    "options": [
+      "Energy released in a reaction",
+      "Energy required to start a reaction",
+      "Total energy of products",
+      "Heat capacity"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the uncertainty principle proposed by?",
+    "options": [
+      "Einstein",
+      "Bohr",
+      "Heisenberg",
+      "Schrödinger"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Chandrasekhar limit?",
+    "options": [
+      "1.4 solar masses",
+      "2.0 solar masses",
+      "3.0 solar masses",
+      "5.0 solar masses"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the process where mRNA is created from DNA?",
+    "options": [
+      "Translation",
+      "Transcription",
+      "Replication",
+      "Translocation"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Pauli exclusion principle?",
+    "options": [
+      "No two electrons can have the same quantum numbers",
+      "Energy is quantized",
+      "Matter and energy are equivalent",
+      "Light has wave-particle duality"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Krebs cycle also known as?",
+    "options": [
+      "Calvin cycle",
+      "Citric acid cycle",
+      "Glycolysis",
+      "Electron transport chain"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the oxidation state of manganese in KMnO₄?",
+    "options": [
+      "+4",
+      "+5",
+      "+6",
+      "+7"
+    ],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the fine structure constant approximately?",
+    "options": [
+      "1/137",
+      "1/100",
+      "1/200",
+      "1/50"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What type of bond is found in benzene?",
+    "options": [
+      "Single bonds",
+      "Double bonds",
+      "Triple bonds",
+      "Delocalized pi bonds"
+    ],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Rydberg constant used to calculate?",
+    "options": [
+      "Atomic mass",
+      "Electron energy levels",
+      "Nuclear forces",
+      "Chemical bonds"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the phenomenon where light bends around obstacles?",
+    "options": [
+      "Reflection",
+      "Refraction",
+      "Diffraction",
+      "Dispersion"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the enzyme that unwinds DNA during replication?",
+    "options": [
+      "DNA polymerase",
+      "Helicase",
+      "Ligase",
+      "Primase"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the SI unit of radioactivity?",
+    "options": [
+      "Curie",
+      "Becquerel",
+      "Gray",
+      "Sievert"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Henderson-Hasselbalch equation used for?",
+    "options": [
+      "Calculating pH of buffer solutions",
+      "Determining reaction rates",
+      "Finding equilibrium constants",
+      "Measuring pressure"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What particle is exchanged in beta decay?",
+    "options": [
+      "Photon",
+      "Gluon",
+      "W boson",
+      "Z boson"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the valence electron configuration of transition metals?",
+    "options": [
+      "ns¹",
+      "ns²",
+      "(n-1)d¹⁰ns²",
+      "Variable (n-1)d and ns"
+    ],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the metabolic pathway that produces acetyl-CoA from pyruvate?",
+    "options": [
+      "Glycolysis",
+      "Krebs cycle",
+      "Pyruvate decarboxylation",
+      "Fermentation"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Bohr radius?",
+    "options": [
+      "0.529 Å",
+      "1.0 Å",
+      "2.0 Å",
+      "0.1 Å"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What type of crystal structure does diamond have?",
+    "options": [
+      "Face-centered cubic",
+      "Body-centered cubic",
+      "Hexagonal",
+      "Face-centered cubic with tetrahedral bonding"
+    ],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the primary neurotransmitter in the parasympathetic nervous system?",
+    "options": [
+      "Dopamine",
+      "Serotonin",
+      "Acetylcholine",
+      "Norepinephrine"
+    ],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Schwarzschild radius?",
+    "options": [
+      "Distance from singularity to event horizon",
+      "Distance to nearest star",
+      "Orbital radius of planets",
+      "Distance light travels in a year"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the standard enthalpy of formation of elements in their standard state?",
+    "options": [
+      "-1 kJ/mol",
+      "0 kJ/mol",
+      "1 kJ/mol",
+      "Varies"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Berry phase in quantum mechanics?",
+    "options": [
+      "A geometric phase",
+      "A decay rate",
+      "An energy level",
+      "A particle spin"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the critical temperature of superconductivity for mercury?",
+    "options": [
+      "2.17 K",
+      "4.15 K",
+      "7.19 K",
+      "9.25 K"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Fermi energy?",
+    "options": [
+      "Highest occupied energy level at absolute zero",
+      "Lowest energy state",
+      "Average kinetic energy",
+      "Thermal energy"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the mechanism of enzyme inhibition where inhibitor binds to allosteric site?",
+    "options": [
+      "Competitive inhibition",
+      "Non-competitive inhibition",
+      "Uncompetitive inhibition",
+      "Mixed inhibition"
+    ],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Lamb shift?",
+    "options": [
+      "Energy difference between hydrogen orbitals",
+      "Electron spin shift",
+      "Nuclear magnetic moment",
+      "Photon scattering"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the coordination number of an FCC crystal structure?",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Jahn-Teller effect?",
+    "options": [
+      "Geometric distortion in degenerate electronic states",
+      "Nuclear spin coupling",
+      "Photon emission",
+      "Electron tunneling"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Debye temperature for diamond?",
+    "options": [
+      "1860 K",
+      "500 K",
+      "273 K",
+      "100 K"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Compton wavelength of an electron?",
+    "options": [
+      "2.43 × 10⁻¹² m",
+      "5.29 × 10⁻¹¹ m",
+      "1.00 × 10⁻¹⁰ m",
+      "6.63 × 10⁻³⁴ m"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Woodward-Hoffmann rules used for?",
+    "options": [
+      "Predicting pericyclic reaction stereochemistry",
+      "Calculating bond energies",
+      "Determining protein folding",
+      "Analyzing crystal structures"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the phenomenon of Cooper pair formation?",
+    "options": [
+      "Basis of superconductivity",
+      "Nuclear fusion",
+      "Electron emission",
+      "Chemical bonding"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Zeeman effect?",
+    "options": [
+      "Splitting of spectral lines in magnetic field",
+      "Electron diffraction",
+      "Nuclear decay",
+      "Chemical shift"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the chiral anomaly in quantum field theory?",
+    "options": [
+      "Breaking of classical chiral symmetry",
+      "Particle spin flip",
+      "Energy conservation violation",
+      "Wave function collapse"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the London penetration depth?",
+    "options": [
+      "Distance magnetic field penetrates superconductor",
+      "Atomic radius",
+      "Nuclear force range",
+      "Photon wavelength"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Casimir effect?",
+    "options": [
+      "Force from quantum vacuum fluctuations",
+      "Gravitational lensing",
+      "Nuclear fission",
+      "Chemical bonding"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Born-Oppenheimer approximation?",
+    "options": [
+      "Separating nuclear and electronic motion",
+      "Calculating energy levels",
+      "Determining reaction rates",
+      "Measuring pressure"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Fermi golden rule used to calculate?",
+    "options": [
+      "Transition rates in quantum mechanics",
+      "Chemical equilibrium",
+      "Thermodynamic properties",
+      "Elastic constants"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Stark effect?",
+    "options": [
+      "Splitting of spectral lines in electric field",
+      "Magnetic resonance",
+      "Nuclear decay",
+      "Photon absorption"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Thomas precession?",
+    "options": [
+      "Relativistic correction to electron spin",
+      "Nuclear rotation",
+      "Orbital mechanics",
+      "Wave interference"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Gross-Pitaevskii equation used to describe?",
+    "options": [
+      "Bose-Einstein condensates",
+      "Black holes",
+      "Chemical reactions",
+      "Crystal structures"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Aharonov-Bohm effect?",
+    "options": [
+      "Quantum interference from electromagnetic potentials",
+      "Gravitational waves",
+      "Nuclear fusion",
+      "Electron emission"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Kauzmann paradox?",
+    "options": [
+      "Entropy crisis in supercooled liquids",
+      "Black hole information loss",
+      "Quantum measurement problem",
+      "Dark matter distribution"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Kondo effect?",
+    "options": [
+      "Resistance minimum in metals with magnetic impurities",
+      "Superconductivity",
+      "Nuclear magnetism",
+      "Chemical catalysis"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Peierls transition?",
+    "options": [
+      "Structural phase transition in 1D conductors",
+      "Nuclear decay",
+      "Chemical reaction",
+      "Optical phenomenon"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the RKKY interaction?",
+    "options": [
+      "Indirect exchange between magnetic moments",
+      "Nuclear force",
+      "Chemical bonding",
+      "Gravitational coupling"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Schwinger limit?",
+    "options": [
+      "Critical electric field strength for pair production",
+      "Maximum temperature",
+      "Minimum energy",
+      "Gravitational constant"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Kibble-Zurek mechanism?",
+    "options": [
+      "Defect formation in phase transitions",
+      "Particle creation",
+      "Nuclear decay",
+      "Chemical synthesis"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Berezinskii-Kosterlitz-Thouless transition?",
+    "options": [
+      "Topological phase transition in 2D systems",
+      "Chemical reaction",
+      "Nuclear process",
+      "Gravitational collapse"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Unruh effect?",
+    "options": [
+      "Accelerating observers detect thermal radiation",
+      "Black hole evaporation",
+      "Particle decay",
+      "Nuclear fission"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Efimov state?",
+    "options": [
+      "Three-body bound state with scale invariance",
+      "Atomic orbital",
+      "Molecular bond",
+      "Nuclear configuration"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Chern number?",
+    "options": [
+      "Topological invariant in quantum systems",
+      "Atomic number",
+      "Coordination number",
+      "Quantum number"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Sachdev-Ye-Kitaev model?",
+    "options": [
+      "Model of quantum chaos and black holes",
+      "Crystal structure",
+      "Chemical reaction",
+      "Astrophysical system"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Witten index?",
+    "options": [
+      "Topological invariant in supersymmetry",
+      "Refractive index",
+      "pH value",
+      "Atomic mass"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Luttinger liquid?",
+    "options": [
+      "Non-Fermi liquid in 1D systems",
+      "Supercooled fluid",
+      "Molten metal",
+      "Aqueous solution"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Wigner crystal?",
+    "options": [
+      "Crystalline phase of electrons at low density",
+      "Ice crystal",
+      "Metal lattice",
+      "Ionic solid"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Hofstadter butterfly?",
+    "options": [
+      "Fractal energy spectrum of 2D electrons in magnetic field",
+      "Insect species",
+      "Chemical structure",
+      "Astronomical object"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Landau-Zener formula?",
+    "options": [
+      "Transition probability in avoided crossing",
+      "Chemical rate equation",
+      "Nuclear decay law",
+      "Gravitational formula"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Majorana fermion?",
+    "options": [
+      "Particle that is its own antiparticle",
+      "Nuclear particle",
+      "Chemical species",
+      "Cosmic ray"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Wess-Zumino-Witten model?",
+    "options": [
+      "Conformal field theory describing symmetries",
+      "Cosmological model",
+      "Chemical kinetics",
+      "Nuclear structure"
+    ],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },{
+    "text": "What is the largest mammal in the world?",
+    "options": ["Elephant", "Blue Whale", "Giraffe", "Polar Bear"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "How many continents are there on Earth?",
+    "options": ["5", "6", "7", "8"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do plants need to make food?",
+    "options": ["Soil only", "Water only", "Sunlight, water, and air", "Fertilizer"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which planet is closest to the Sun?",
+    "options": ["Venus", "Earth", "Mercury", "Mars"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is ice made of?",
+    "options": ["Frozen water", "Frozen air", "Frozen salt", "Frozen sugar"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "How many legs does an insect have?",
+    "options": ["4", "6", "8", "10"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do you call a baby dog?",
+    "options": ["Kitten", "Calf", "Puppy", "Cub"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which season comes after winter?",
+    "options": ["Summer", "Fall", "Spring", "Autumn"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What color is chlorophyll in plants?",
+    "options": ["Red", "Green", "Blue", "Yellow"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "How many planets are in our solar system?",
+    "options": ["7", "8", "9", "10"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the main source of energy for Earth?",
+    "options": ["The Moon", "The Sun", "Stars", "Wind"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do bees make?",
+    "options": ["Milk", "Honey", "Butter", "Cheese"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which body part pumps blood?",
+    "options": ["Brain", "Lungs", "Heart", "Stomach"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What are clouds made of?",
+    "options": ["Cotton", "Water droplets", "Smoke", "Air"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "How many wings does a butterfly have?",
+    "options": ["2", "4", "6", "8"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the largest land animal?",
+    "options": ["Rhino", "Hippopotamus", "Elephant", "Giraffe"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do fish use to breathe underwater?",
+    "options": ["Lungs", "Nose", "Gills", "Skin"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which shape is the Earth?",
+    "options": ["Flat", "Square", "Round", "Triangle"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the opposite of hot?",
+    "options": ["Warm", "Cool", "Cold", "Freezing"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Where do most plants grow from?",
+    "options": ["Rocks", "Seeds", "Air", "Metal"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do we use to see?",
+    "options": ["Ears", "Eyes", "Nose", "Mouth"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which animal is known for its long neck?",
+    "options": ["Zebra", "Lion", "Giraffe", "Elephant"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the weather like when it snows?",
+    "options": ["Hot", "Cold", "Warm", "Humid"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "How many senses do humans have?",
+    "options": ["3", "5", "7", "10"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do caterpillars turn into?",
+    "options": ["Birds", "Butterflies", "Bees", "Beetles"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which part of the plant grows underground?",
+    "options": ["Leaves", "Flowers", "Roots", "Stem"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do you call frozen rain?",
+    "options": ["Snow", "Hail", "Sleet", "Fog"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which bird cannot fly?",
+    "options": ["Eagle", "Penguin", "Sparrow", "Parrot"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of Earth's natural satellite?",
+    "options": ["Sun", "Mars", "Moon", "Star"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which is the fastest land animal?",
+    "options": ["Lion", "Cheetah", "Horse", "Deer"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do we call a scientist who studies rocks?",
+    "options": ["Biologist", "Geologist", "Chemist", "Astronomer"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which animal is known as the king of the jungle?",
+    "options": ["Tiger", "Elephant", "Lion", "Bear"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do plants release into the air?",
+    "options": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Helium"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "How many teeth does an adult human typically have?",
+    "options": ["20", "28", "32", "36"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which planet is known for its rings?",
+    "options": ["Mars", "Jupiter", "Saturn", "Neptune"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the process by which water turns into vapor?",
+    "options": ["Condensation", "Evaporation", "Precipitation", "Freezing"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which sense do you use to taste food?",
+    "options": ["Touch", "Smell", "Taste", "Hearing"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the tallest type of grass?",
+    "options": ["Wheat", "Bamboo", "Corn", "Rice"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which gas do humans breathe out?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the outer layer of Earth called?",
+    "options": ["Core", "Mantle", "Crust", "Surface"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "How many hours are in a day?",
+    "options": ["12", "24", "36", "48"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do you call animals that eat only plants?",
+    "options": ["Carnivores", "Herbivores", "Omnivores", "Insectivores"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which organ helps you breathe?",
+    "options": ["Heart", "Lungs", "Liver", "Kidney"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the center of a flower called?",
+    "options": ["Petal", "Stem", "Pistil", "Leaf"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which animal has a pouch?",
+    "options": ["Kangaroo", "Elephant", "Bear", "Monkey"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the study of weather called?",
+    "options": ["Biology", "Geology", "Meteorology", "Astronomy"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "How many colors are in a rainbow?",
+    "options": ["5", "6", "7", "8"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which metal is liquid at room temperature?",
+    "options": ["Iron", "Mercury", "Gold", "Silver"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the hardest mineral?",
+    "options": ["Quartz", "Gold", "Diamond", "Iron"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which animal can change its color?",
+    "options": ["Dog", "Cat", "Chameleon", "Bird"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do we call baby cats?",
+    "options": ["Puppies", "Kittens", "Cubs", "Chicks"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which planet is the hottest in our solar system?",
+    "options": ["Mercury", "Venus", "Mars", "Jupiter"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name for a group of stars forming a pattern?",
+    "options": ["Galaxy", "Constellation", "Nebula", "Comet"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which fruit is yellow and curved?",
+    "options": ["Apple", "Orange", "Banana", "Grape"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do you call a baby sheep?",
+    "options": ["Calf", "Foal", "Lamb", "Kid"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which is the lightest gas?",
+    "options": ["Oxygen", "Nitrogen", "Hydrogen", "Helium"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the process of a tadpole becoming a frog called?",
+    "options": ["Evolution", "Metamorphosis", "Transformation", "Growth"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which bird is known for its colorful tail feathers?",
+    "options": ["Peacock", "Eagle", "Crow", "Sparrow"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do plants need to grow besides water and sunlight?",
+    "options": ["Sand", "Nutrients", "Salt", "Sugar"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which organ filters blood in the body?",
+    "options": ["Heart", "Lungs", "Kidney", "Liver"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the main ingredient in bread?",
+    "options": ["Rice", "Flour", "Sugar", "Salt"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which animal is known for storing food in its cheeks?",
+    "options": ["Rabbit", "Hamster", "Mouse", "Squirrel"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name for molten rock under Earth's surface?",
+    "options": ["Lava", "Magma", "Stone", "Ash"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which animal has black and white stripes?",
+    "options": ["Horse", "Zebra", "Tiger", "Leopard"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the body's largest organ?",
+    "options": ["Heart", "Brain", "Liver", "Skin"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which season has the shortest days?",
+    "options": ["Spring", "Summer", "Fall", "Winter"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do you call a baby horse?",
+    "options": ["Calf", "Foal", "Pup", "Kid"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which sense do you use to hear?",
+    "options": ["Touch", "Sight", "Hearing", "Smell"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the force that pulls objects toward Earth?",
+    "options": ["Magnetism", "Gravity", "Friction", "Pressure"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which animal lives both on land and in water?",
+    "options": ["Dog", "Cat", "Frog", "Bird"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do we call the path a planet takes around the Sun?",
+    "options": ["Circle", "Orbit", "Route", "Track"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which is the smallest ocean?",
+    "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What type of animal is a whale?",
+    "options": ["Fish", "Mammal", "Reptile", "Amphibian"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which part of the plant takes in water?",
+    "options": ["Leaves", "Stem", "Roots", "Flowers"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do you call animals that are active at night?",
+    "options": ["Diurnal", "Nocturnal", "Crepuscular", "Dormant"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which gas makes soda fizzy?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the center of an atom called?",
+    "options": ["Electron", "Proton", "Nucleus", "Neutron"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which animal is the largest living reptile?",
+    "options": ["Python", "Alligator", "Saltwater Crocodile", "Komodo Dragon"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name for water in its solid form?",
+    "options": ["Steam", "Ice", "Vapor", "Dew"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which planet is known as the Blue Planet?",
+    "options": ["Mars", "Neptune", "Earth", "Uranus"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do you call a baby cow?",
+    "options": ["Foal", "Calf", "Kid", "Lamb"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which organ controls your thoughts and movements?",
+    "options": ["Heart", "Lungs", "Brain", "Stomach"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the opposite of liquid?",
+    "options": ["Gas", "Solid", "Plasma", "Vapor"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which fruit is known for having seeds on the outside?",
+    "options": ["Apple", "Banana", "Strawberry", "Orange"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do you call a scientist who studies space?",
+    "options": ["Geologist", "Biologist", "Astronomer", "Chemist"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which is the largest desert in the world?",
+    "options": ["Sahara", "Gobi", "Antarctic", "Arabian"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the main gas that makes up Earth's atmosphere?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which animal produces milk?",
+    "options": ["Chicken", "Cow", "Snake", "Fish"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the hottest part of a flame?",
+    "options": ["Bottom", "Middle", "Top", "Outside"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which bird is a symbol of peace?",
+    "options": ["Eagle", "Dove", "Hawk", "Owl"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What do you call a baby kangaroo?",
+    "options": ["Cub", "Joey", "Pup", "Kit"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which planet has the most moons?",
+    "options": ["Earth", "Mars", "Saturn", "Venus"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name for animals without backbones?",
+    "options": ["Vertebrates", "Invertebrates", "Mammals", "Reptiles"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which sense do you use to smell?",
+    "options": ["Sight", "Touch", "Smell", "Taste"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the smallest unit of life?",
+    "options": ["Atom", "Molecule", "Cell", "Tissue"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which animal is known for building dams?",
+    "options": ["Otter", "Beaver", "Muskrat", "Platypus"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Rookie"
+  }, {
+    "text": "What is the process by which plants convert sunlight into energy?",
+    "options": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which vitamin is produced when skin is exposed to sunlight?",
+    "options": ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin E"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the chemical formula for table salt?",
+    "options": ["H2O", "NaCl", "CO2", "HCl"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "How many bones does an adult human have?",
+    "options": ["196", "206", "216", "226"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the largest planet in our solar system?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which blood type is known as the universal donor?",
+    "options": ["A", "B", "AB", "O"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the study of insects called?",
+    "options": ["Ornithology", "Entomology", "Herpetology", "Ichthyology"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "How many chambers does the human heart have?",
+    "options": ["2", "3", "4", "5"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the speed of sound in air at sea level?",
+    "options": ["343 m/s", "500 m/s", "1000 m/s", "299,792 km/s"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which planet is tilted on its side?",
+    "options": ["Mars", "Venus", "Uranus", "Neptune"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the most abundant gas in the atmosphere?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What type of rock is formed by cooling lava?",
+    "options": ["Sedimentary", "Metamorphic", "Igneous", "Limestone"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which organ produces insulin?",
+    "options": ["Liver", "Pancreas", "Kidney", "Stomach"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the smallest bone in the human body?",
+    "options": ["Stapes", "Femur", "Radius", "Patella"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "How many teeth does an adult human typically have?",
+    "options": ["28", "30", "32", "34"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the galaxy that contains our solar system?",
+    "options": ["Andromeda", "Milky Way", "Sombrero", "Whirlpool"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which element has the atomic number 1?",
+    "options": ["Helium", "Hydrogen", "Lithium", "Carbon"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the main component of natural gas?",
+    "options": ["Ethane", "Propane", "Methane", "Butane"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which layer of Earth's atmosphere contains the ozone layer?",
+    "options": ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the largest artery in the human body?",
+    "options": ["Carotid", "Aorta", "Pulmonary", "Femoral"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which scientist developed the three laws of motion?",
+    "options": ["Einstein", "Galileo", "Newton", "Kepler"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the pH of pure water?",
+    "options": ["5", "7", "9", "11"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which planet rotates fastest on its axis?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the study of birds called?",
+    "options": ["Ornithology", "Entomology", "Ichthyology", "Herpetology"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which organ stores bile?",
+    "options": ["Liver", "Pancreas", "Gallbladder", "Spleen"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name for a young frog?",
+    "options": ["Tadpole", "Polliwog", "Larvae", "Both A and B"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which metal is liquid at room temperature besides mercury?",
+    "options": ["Gallium", "Cesium", "Lead", "None"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the primary pigment in green plants?",
+    "options": ["Carotene", "Xanthophyll", "Chlorophyll", "Anthocyanin"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "How many planets in our solar system have rings?",
+    "options": ["1", "2", "3", "4"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the longest bone in the human body?",
+    "options": ["Tibia", "Humerus", "Femur", "Fibula"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which gas do plants absorb during photosynthesis?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the unit of electrical resistance?",
+    "options": ["Volt", "Ampere", "Ohm", "Watt"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which planet has the Great Red Spot?",
+    "options": ["Mars", "Saturn", "Jupiter", "Neptune"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What percentage of Earth's surface is covered by water?",
+    "options": ["50%", "60%", "71%", "80%"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which vitamin is also known as ascorbic acid?",
+    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the process by which water moves through a plant?",
+    "options": ["Osmosis", "Diffusion", "Transpiration", "Absorption"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which element is necessary for thyroid function?",
+    "options": ["Iron", "Calcium", "Iodine", "Zinc"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the first cloned mammal?",
+    "options": ["Polly", "Dolly", "Molly", "Holly"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which organelle is known as the powerhouse of the cell?",
+    "options": ["Nucleus", "Ribosome", "Mitochondria", "Chloroplast"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What type of animal is a salamander?",
+    "options": ["Reptile", "Amphibian", "Fish", "Mammal"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which scientist is credited with discovering penicillin?",
+    "options": ["Louis Pasteur", "Alexander Fleming", "Marie Curie", "Robert Koch"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the most common element in the human body?",
+    "options": ["Carbon", "Hydrogen", "Oxygen", "Nitrogen"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which moon is the largest in our solar system?",
+    "options": ["Titan", "Europa", "Ganymede", "Callisto"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the process by which rocks are broken down?",
+    "options": ["Erosion", "Weathering", "Sedimentation", "Deposition"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which blood cells help fight infection?",
+    "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the main gas used in light bulbs?",
+    "options": ["Oxygen", "Nitrogen", "Argon", "Helium"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which hormone regulates blood sugar levels?",
+    "options": ["Adrenaline", "Testosterone", "Insulin", "Estrogen"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the nearest star to Earth?",
+    "options": ["Alpha Centauri", "Sirius", "The Sun", "Polaris"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which scientist proposed the theory of evolution?",
+    "options": ["Charles Darwin", "Gregor Mendel", "Louis Pasteur", "Alfred Wallace"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the colored part of the eye?",
+    "options": ["Pupil", "Cornea", "Iris", "Retina"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which planet is known as Earth's twin?",
+    "options": ["Mars", "Venus", "Mercury", "Neptune"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the term for animals that eat both plants and meat?",
+    "options": ["Carnivores", "Herbivores", "Omnivores", "Insectivores"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which element is the main component of diamonds?",
+    "options": ["Silicon", "Carbon", "Oxygen", "Nitrogen"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the normal human body temperature in Celsius?",
+    "options": ["35°C", "36°C", "37°C", "38°C"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which force causes tides on Earth?",
+    "options": ["Wind", "Earth's rotation", "Moon's gravity", "Sun's heat"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the study of fossils called?",
+    "options": ["Archaeology", "Paleontology", "Geology", "Anthropology"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which organ is responsible for detoxifying chemicals?",
+    "options": ["Heart", "Lungs", "Liver", "Kidney"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the smallest planet in our solar system?",
+    "options": ["Mars", "Mercury", "Venus", "Pluto"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which particle has a negative charge?",
+    "options": ["Proton", "Neutron", "Electron", "Positron"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the pigment that gives blood its red color?",
+    "options": ["Chlorophyll", "Melanin", "Hemoglobin", "Carotene"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which planet has the shortest day?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the process that breaks down food in the body?",
+    "options": ["Respiration", "Circulation", "Digestion", "Excretion"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which metal is the best conductor of electricity?",
+    "options": ["Copper", "Gold", "Silver", "Aluminum"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the term for a baby marsupial?",
+    "options": ["Cub", "Joey", "Kit", "Pup"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which vitamin helps with blood clotting?",
+    "options": ["Vitamin A", "Vitamin C", "Vitamin K", "Vitamin D"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the largest internal organ?",
+    "options": ["Heart", "Stomach", "Liver", "Lungs"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which element is most abundant in Earth's crust?",
+    "options": ["Silicon", "Iron", "Oxygen", "Aluminum"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the term for animals that are cold-blooded?",
+    "options": ["Endotherms", "Ectotherms", "Homeotherms", "Poikilotherms"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which planet has the most extreme temperature variations?",
+    "options": ["Venus", "Mercury", "Mars", "Jupiter"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the chemical symbol for iron?",
+    "options": ["Ir", "In", "Fe", "Fr"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which part of the brain controls balance and coordination?",
+    "options": ["Cerebrum", "Cerebellum", "Medulla", "Hypothalamus"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name for a group of fish?",
+    "options": ["Flock", "Herd", "School", "Pack"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which gas is released during respiration?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the term for molten rock that reaches Earth's surface?",
+    "options": ["Magma", "Lava", "Sediment", "Ash"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which organ produces red blood cells?",
+    "options": ["Liver", "Heart", "Bone marrow", "Spleen"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the process by which cells divide?",
+    "options": ["Meiosis", "Mitosis", "Fusion", "Fission"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which constellation contains the North Star?",
+    "options": ["Orion", "Ursa Major", "Ursa Minor", "Cassiopeia"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the main component of air?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which animal has the longest lifespan?",
+    "options": ["Elephant", "Tortoise", "Bowhead Whale", "Human"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the chemical formula for carbon dioxide?",
+    "options": ["CO", "CO2", "C2O", "CO3"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which planet has the most volcanoes?",
+    "options": ["Earth", "Mars", "Venus", "Io (Jupiter's moon)"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the tube that connects the mouth to the stomach?",
+    "options": ["Trachea", "Esophagus", "Intestine", "Colon"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which element is essential for making proteins?",
+    "options": ["Carbon", "Hydrogen", "Nitrogen", "Oxygen"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the study of earthquakes called?",
+    "options": ["Meteorology", "Seismology", "Geology", "Volcanology"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which blood cells are responsible for clotting?",
+    "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the largest reef system in the world?",
+    "options": ["Maldives Reef", "Great Barrier Reef", "Red Sea Reef", "Caribbean Reef"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which planet has a day longer than its year?",
+    "options": ["Mercury", "Venus", "Mars", "Neptune"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the process by which plants lose water?",
+    "options": ["Evaporation", "Condensation", "Transpiration", "Precipitation"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which element has the highest melting point?",
+    "options": ["Iron", "Platinum", "Tungsten", "Gold"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the layer of gases surrounding Earth?",
+    "options": ["Biosphere", "Hydrosphere", "Atmosphere", "Lithosphere"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which organ filters waste from the blood?",
+    "options": ["Liver", "Pancreas", "Kidney", "Spleen"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the sugar found in DNA?",
+    "options": ["Glucose", "Fructose", "Deoxyribose", "Sucrose"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which planet has the coldest average temperature?",
+    "options": ["Neptune", "Uranus", "Pluto", "Saturn"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the term for animals that only eat insects?",
+    "options": ["Carnivores", "Herbivores", "Insectivores", "Omnivores"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which part of the cell contains genetic material?",
+    "options": ["Cytoplasm", "Mitochondria", "Nucleus", "Ribosome"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the bright streak of light produced by a meteor?",
+    "options": ["Comet", "Shooting star", "Asteroid", "Meteorite"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Amateur"
+  },{
+    "text": "What is Avogadro's number approximately?",
+    "options": ["6.02 × 10²³", "3.14 × 10²³", "9.81 × 10²³", "1.62 × 10²³"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which enzyme breaks down starch in the mouth?",
+    "options": ["Pepsin", "Lipase", "Amylase", "Trypsin"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the most electronegative element?",
+    "options": ["Oxygen", "Fluorine", "Chlorine", "Nitrogen"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the half-life of Carbon-14?",
+    "options": ["5,730 years", "10,000 years", "2,500 years", "15,000 years"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which particle mediates the electromagnetic force?",
+    "options": ["Gluon", "Photon", "W boson", "Graviton"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the SI unit of electric current?",
+    "options": ["Volt", "Ohm", "Ampere", "Watt"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which organelle is responsible for protein synthesis?",
+    "options": ["Golgi apparatus", "Endoplasmic reticulum", "Ribosome", "Lysosome"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the process where mRNA is created from DNA?",
+    "options": ["Translation", "Transcription", "Replication", "Translocation"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the universal gas constant (R) value?",
+    "options": ["8.314 J/(mol·K)", "6.626 J/(mol·K)", "9.81 J/(mol·K)", "3.14 J/(mol·K)"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which type of radiation has no mass or charge?",
+    "options": ["Alpha", "Beta", "Gamma", "Neutron"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the normal blood pressure in humans (systolic/diastolic)?",
+    "options": ["100/60 mmHg", "120/80 mmHg", "140/90 mmHg", "160/100 mmHg"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the activation energy?",
+    "options": ["Energy released in a reaction", "Energy required to start a reaction", "Total energy of products", "Heat capacity"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which element is essential for nuclear reactors?",
+    "options": ["Carbon", "Uranium", "Iron", "Silicon"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the Mohs hardness of diamond?",
+    "options": ["8", "9", "10", "11"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the process of converting nitrogen gas into ammonia called?",
+    "options": ["Nitrogen cycle", "Nitrogen fixation", "Nitrification", "Denitrification"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which blood type is known as the universal recipient?",
+    "options": ["A", "B", "AB", "O"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the boundary between two tectonic plates that slide past each other?",
+    "options": ["Divergent boundary", "Convergent boundary", "Transform boundary", "Subduction zone"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the critical angle for total internal reflection in water?",
+    "options": ["42°", "48.6°", "60°", "90°"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which organelle is responsible for autophagy?",
+    "options": ["Mitochondria", "Lysosome", "Peroxisome", "Vacuole"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the strongest type of intermolecular force?",
+    "options": ["Van der Waals", "Dipole-dipole", "Hydrogen bonding", "London dispersion"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the process where cells divide to produce gametes?",
+    "options": ["Mitosis", "Meiosis", "Binary fission", "Cytokinesis"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which planet has the most eccentric orbit?",
+    "options": ["Mercury", "Mars", "Pluto", "Venus"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the primary neurotransmitter in the parasympathetic nervous system?",
+    "options": ["Dopamine", "Serotonin", "Acetylcholine", "Norepinephrine"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the theory that explains continental drift?",
+    "options": ["Plate tectonics", "Continental shift", "Pangaea theory", "Seafloor spreading"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which enzyme unwinds DNA during replication?",
+    "options": ["DNA polymerase", "Helicase", "Ligase", "Primase"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the oxidation state of manganese in KMnO₄?",
+    "options": ["+4", "+5", "+6", "+7"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the effect where light bends around obstacles?",
+    "options": ["Reflection", "Refraction", "Diffraction", "Dispersion"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which organ in the body has the highest metabolic rate per unit mass?",
+    "options": ["Brain", "Heart", "Liver", "Kidney"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the Henderson-Hasselbalch equation used for?",
+    "options": ["Calculating pH of buffer solutions", "Determining reaction rates", "Finding equilibrium constants", "Measuring pressure"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the cycle that converts pyruvate into CO₂?",
+    "options": ["Calvin cycle", "Citric acid cycle", "Glycolysis", "Electron transport chain"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which particle is exchanged in beta decay?",
+    "options": ["Photon", "Gluon", "W boson", "Z boson"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the first element in the periodic table with a stable isotope?",
+    "options": ["Hydrogen", "Helium", "Lithium", "Beryllium"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the SI unit of radioactivity?",
+    "options": ["Curie", "Becquerel", "Gray", "Sievert"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which type of bond is found in benzene?",
+    "options": ["Single bonds", "Double bonds", "Triple bonds", "Delocalized pi bonds"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the valence electron configuration of transition metals?",
+    "options": ["ns¹", "ns²", "(n-1)d¹⁰ns²", "Variable (n-1)d and ns"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the metabolic pathway that produces acetyl-CoA from pyruvate?",
+    "options": ["Glycolysis", "Krebs cycle", "Pyruvate decarboxylation", "Fermentation"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which law states that the total pressure of a gas mixture equals the sum of partial pressures?",
+    "options": ["Boyle's Law", "Charles's Law", "Dalton's Law", "Gay-Lussac's Law"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the tube connecting the kidney to the bladder?",
+    "options": ["Urethra", "Ureter", "Nephron", "Glomerulus"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the speed of light in a vacuum?",
+    "options": ["299,792 km/s", "300,000 km/s", "186,000 mi/s", "All of the above"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which hormone stimulates milk production?",
+    "options": ["Estrogen", "Progesterone", "Prolactin", "Oxytocin"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the electromagnetic spectrum region with the shortest wavelength?",
+    "options": ["X-rays", "Gamma rays", "Ultraviolet", "Infrared"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which planet has the fastest winds in the solar system?",
+    "options": ["Jupiter", "Saturn", "Neptune", "Uranus"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the process where antibodies bind to antigens?",
+    "options": ["Phagocytosis", "Agglutination", "Inflammation", "Opsonization"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the Rydberg constant used to calculate?",
+    "options": ["Atomic mass", "Electron energy levels", "Nuclear forces", "Chemical bonds"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which vitamin deficiency causes scurvy?",
+    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the fluid that cushions the brain and spinal cord?",
+    "options": ["Synovial fluid", "Cerebrospinal fluid", "Lymph", "Plasma"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which element has the electron configuration [Ar] 3d¹⁰ 4s¹?",
+    "options": ["Zinc", "Copper", "Nickel", "Iron"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the reaction where water is added across a double bond?",
+    "options": ["Hydration", "Hydrolysis", "Dehydration", "Condensation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which cells in the eye detect color?",
+    "options": ["Rods", "Cones", "Ganglion cells", "Bipolar cells"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the instrument used to measure atmospheric pressure?",
+    "options": ["Thermometer", "Barometer", "Hygrometer", "Anemometer"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which amino acid is coded by only one codon?",
+    "options": ["Leucine", "Serine", "Methionine", "Arginine"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the boundary where cold air displaces warm air?",
+    "options": ["Warm front", "Cold front", "Occluded front", "Stationary front"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which structure connects the two hemispheres of the brain?",
+    "options": ["Cerebellum", "Corpus callosum", "Thalamus", "Hippocampus"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the process where rocks change form due to heat and pressure?",
+    "options": ["Weathering", "Erosion", "Metamorphism", "Lithification"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which hormone regulates calcium levels in blood?",
+    "options": ["Insulin", "Thyroxine", "Parathyroid hormone", "Calcitonin"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the point where a lever pivots?",
+    "options": ["Load", "Effort", "Fulcrum", "Moment"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which subatomic particle has approximately the same mass as a proton?",
+    "options": ["Electron", "Neutron", "Positron", "Neutrino"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the process where plants open and close their stomata?",
+    "options": ["Respiration", "Transpiration", "Photosynthesis", "Guard cell regulation"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which element is the most abundant in the universe by mass?",
+    "options": ["Hydrogen", "Helium", "Oxygen", "Carbon"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the vessel that carries blood from the heart to the lungs?",
+    "options": ["Aorta", "Vena cava", "Pulmonary artery", "Carotid artery"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which law states that energy cannot be created or destroyed?",
+    "options": ["First Law of Thermodynamics", "Second Law of Thermodynamics", "Law of Conservation of Mass", "Newton's First Law"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the functional unit of the kidney?",
+    "options": ["Alveolus", "Nephron", "Glomerulus", "Tubule"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which vitamin is essential for proper blood clotting?",
+    "options": ["Vitamin A", "Vitamin C", "Vitamin K", "Vitamin E"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the effect where moving charges experience a force in a magnetic field?",
+    "options": ["Faraday effect", "Hall effect", "Lorentz force", "Doppler effect"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which cell organelle contains digestive enzymes?",
+    "options": ["Mitochondria", "Ribosome", "Lysosome", "Peroxisome"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the principle that states you cannot know both position and momentum precisely?",
+    "options": ["Uncertainty Principle", "Exclusion Principle", "Superposition Principle", "Correspondence Principle"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which metal is the main component of brass?",
+    "options": ["Iron", "Aluminum", "Copper", "Tin"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the tissue that connects muscle to bone?",
+    "options": ["Ligament", "Tendon", "Cartilage", "Fascia"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which element has the highest atomic number that occurs naturally?",
+    "options": ["Plutonium", "Uranium", "Thorium", "Neptunium"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the wave that travels along the surface of Earth during an earthquake?",
+    "options": ["P-wave", "S-wave", "Surface wave", "Love wave"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which gland is known as the master gland?",
+    "options": ["Thyroid", "Adrenal", "Pituitary", "Pineal"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the pigment in plants that absorbs red and blue light?",
+    "options": ["Carotene", "Xanthophyll", "Chlorophyll", "Anthocyanin"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which force is responsible for holding atomic nuclei together?",
+    "options": ["Electromagnetic force", "Weak force", "Strong nuclear force", "Gravitational force"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the largest asteroid in the asteroid belt?",
+    "options": ["Vesta", "Pallas", "Ceres", "Hygiea"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which type of RNA carries amino acids to the ribosome?",
+    "options": ["mRNA", "rRNA", "tRNA", "snRNA"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the scale used to measure the acidity of a solution?",
+    "options": ["Kelvin scale", "pH scale", "Richter scale", "Mohs scale"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which part of the neuron receives signals from other neurons?",
+    "options": ["Axon", "Dendrite", "Soma", "Synapse"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the process where liquid turns directly into gas?",
+    "options": ["Evaporation", "Sublimation", "Vaporization", "Condensation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which element is named after the sun?",
+    "options": ["Selenium", "Helium", "Uranium", "Plutonium"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the valve between the left atrium and left ventricle?",
+    "options": ["Tricuspid valve", "Pulmonary valve", "Mitral valve", "Aortic valve"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which type of eclipse occurs when the Moon passes between Earth and the Sun?",
+    "options": ["Lunar eclipse", "Solar eclipse", "Annular eclipse", "Partial eclipse"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the principle that states no two electrons can have identical quantum numbers?",
+    "options": ["Heisenberg Principle", "Pauli Exclusion Principle", "Aufbau Principle", "Hund's Rule"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which mineral is the primary component of bone?",
+    "options": ["Calcium carbonate", "Calcium phosphate", "Calcium sulfate", "Calcium chloride"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the point in orbit closest to Earth?",
+    "options": ["Aphelion", "Perihelion", "Apogee", "Perigee"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which gas is responsible for the greenhouse effect on Venus?",
+    "options": ["Nitrogen", "Oxygen", "Carbon dioxide", "Methane"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the process where solid turns directly into gas?",
+    "options": ["Evaporation", "Sublimation", "Deposition", "Vaporization"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which blood vessel has the thickest walls?",
+    "options": ["Vein", "Artery", "Capillary", "Venule"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the effect where frequency changes due to relative motion?",
+    "options": ["Doppler effect", "Photoelectric effect", "Compton effect", "Zeeman effect"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which element is essential for hemoglobin production?",
+    "options": ["Calcium", "Sodium", "Iron", "Zinc"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the layer between Earth's crust and core?",
+    "options": ["Asthenosphere", "Lithosphere", "Mantle", "Mesosphere"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which hormone is released in response to stress?",
+    "options": ["Insulin", "Thyroxine", "Cortisol", "Melatonin"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the study of the immune system?",
+    "options": ["Hematology", "Immunology", "Pathology", "Oncology"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which particle has no electric charge?",
+    "options": ["Proton", "Electron", "Neutron", "Positron"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the functional unit of muscle contraction?",
+    "options": ["Myofibril", "Sarcomere", "Actin", "Myosin"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Pro"
+  },{
+    "text": "What is the Schwarzschild radius?",
+    "options": ["Distance from singularity to event horizon", "Distance to nearest star", "Orbital radius of planets", "Distance light travels in a year"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Chandrasekhar limit?",
+    "options": ["1.4 solar masses", "2.0 solar masses", "3.0 solar masses", "5.0 solar masses"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Pauli exclusion principle?",
+    "options": ["No two electrons can have the same quantum numbers", "Energy is quantized", "Matter and energy are equivalent", "Light has wave-particle duality"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Krebs cycle also known as?",
+    "options": ["Calvin cycle", "Citric acid cycle", "Glycolysis", "Electron transport chain"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the fine structure constant approximately?",
+    "options": ["1/137", "1/100", "1/200", "1/50"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Bohr radius?",
+    "options": ["0.529 Å", "1.0 Å", "2.0 Å", "0.1 Å"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What type of crystal structure does diamond have?",
+    "options": ["Face-centered cubic", "Body-centered cubic", "Hexagonal", "Face-centered cubic with tetrahedral bonding"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the standard enthalpy of formation of elements in their standard state?",
+    "options": ["-1 kJ/mol", "0 kJ/mol", "1 kJ/mol", "Varies"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the reaction mechanism involving carbocation intermediates?",
+    "options": ["SN1", "SN2", "E1", "Both A and C"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the electron transport chain's final electron acceptor?",
+    "options": ["NAD+", "FAD", "Oxygen", "Water"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the equation describing wave-particle duality?",
+    "options": ["Schrödinger equation", "Dirac equation", "De Broglie relation", "Klein-Gordon equation"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the coordination number of an FCC crystal structure?",
+    "options": ["6", "8", "10", "12"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Lamb shift?",
+    "options": ["Energy difference between hydrogen orbitals", "Electron spin shift", "Nuclear magnetic moment", "Photon scattering"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the phase transition from liquid to gas below boiling point?",
+    "options": ["Boiling", "Evaporation", "Vaporization", "Sublimation"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the mechanism of enzyme inhibition where inhibitor binds to allosteric site?",
+    "options": ["Competitive inhibition", "Non-competitive inhibition", "Uncompetitive inhibition", "Mixed inhibition"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Debye temperature for diamond?",
+    "options": ["1860 K", "500 K", "273 K", "100 K"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Compton wavelength of an electron?",
+    "options": ["2.43 × 10⁻¹² m", "5.29 × 10⁻¹¹ m", "1.00 × 10⁻¹⁰ m", "6.63 × 10⁻³⁴ m"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Jahn-Teller effect?",
+    "options": ["Geometric distortion in degenerate electronic states", "Nuclear spin coupling", "Photon emission", "Electron tunneling"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Woodward-Hoffmann rules used for?",
+    "options": ["Predicting pericyclic reaction stereochemistry", "Calculating bond energies", "Determining protein folding", "Analyzing crystal structures"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Zeeman effect?",
+    "options": ["Splitting of spectral lines in magnetic field", "Electron diffraction", "Nuclear decay", "Chemical shift"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Born-Oppenheimer approximation?",
+    "options": ["Separating nuclear and electronic motion", "Calculating energy levels", "Determining reaction rates", "Measuring pressure"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Fermi golden rule used to calculate?",
+    "options": ["Transition rates in quantum mechanics", "Chemical equilibrium", "Thermodynamic properties", "Elastic constants"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Stark effect?",
+    "options": ["Splitting of spectral lines in electric field", "Magnetic resonance", "Nuclear decay", "Photon absorption"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Thomas precession?",
+    "options": ["Relativistic correction to electron spin", "Nuclear rotation", "Orbital mechanics", "Wave interference"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the model describing electron behavior in solids?",
+    "options": ["Bohr model", "Band theory", "Shell model", "Liquid drop model"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the London penetration depth?",
+    "options": ["Distance magnetic field penetrates superconductor", "Atomic radius", "Nuclear force range", "Photon wavelength"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Casimir effect?",
+    "options": ["Force from quantum vacuum fluctuations", "Gravitational lensing", "Nuclear fission", "Chemical bonding"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the phenomenon of Cooper pair formation?",
+    "options": ["Basis of superconductivity", "Nuclear fusion", "Electron emission", "Chemical bonding"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the equation describing the evolution of quantum states?",
+    "options": ["Newton's equation", "Maxwell's equation", "Schrödinger equation", "Einstein's equation"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the gyromagnetic ratio of a proton?",
+    "options": ["42.58 MHz/T", "28.03 MHz/T", "67.28 MHz/T", "100 MHz/T"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the force carrier for the weak nuclear force?",
+    "options": ["Photon", "Gluon", "W and Z bosons", "Graviton"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Fermi energy?",
+    "options": ["Highest occupied energy level at absolute zero", "Lowest energy state", "Average kinetic energy", "Thermal energy"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the critical temperature of superconductivity for mercury?",
+    "options": ["2.17 K", "4.15 K", "7.19 K", "9.25 K"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Berry phase in quantum mechanics?",
+    "options": ["A geometric phase", "A decay rate", "An energy level", "A particle spin"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the process where two atomic nuclei combine?",
+    "options": ["Fission", "Fusion", "Decay", "Transmutation"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the chiral anomaly in quantum field theory?",
+    "options": ["Breaking of classical chiral symmetry", "Particle spin flip", "Energy conservation violation", "Wave function collapse"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the particle that mediates the strong nuclear force?",
+    "options": ["Photon", "Gluon", "W boson", "Graviton"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Stokes shift?",
+    "options": ["Difference between absorption and emission wavelengths", "Electron energy difference", "Nuclear transition", "Photon scattering"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the effect where voltage is generated across a conductor in a magnetic field?",
+    "options": ["Photoelectric effect", "Hall effect", "Compton effect", "Zeeman effect"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Mössbauer effect?",
+    "options": ["Recoilless nuclear resonance fluorescence", "Electron diffraction", "X-ray scattering", "Photon absorption"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the quantum number that describes orbital angular momentum?",
+    "options": ["Principal quantum number", "Azimuthal quantum number", "Magnetic quantum number", "Spin quantum number"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Gibbs free energy equation?",
+    "options": ["G = H - TS", "G = H + TS", "G = E - TS", "G = E + PV"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the constant relating energy and frequency?",
+    "options": ["Boltzmann constant", "Planck constant", "Rydberg constant", "Gas constant"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Nernst equation used for?",
+    "options": ["Calculating cell potential", "Determining pH", "Measuring temperature", "Finding pressure"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the postulate stating that wave functions must be antisymmetric for fermions?",
+    "options": ["Heisenberg principle", "Pauli principle", "Superposition principle", "Correspondence principle"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Franck-Condon principle?",
+    "options": ["Electronic transitions occur faster than nuclear motion", "Energy is conserved", "Momentum is quantized", "Spin is conserved"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the effect where light creates electron-hole pairs?",
+    "options": ["Photovoltaic effect", "Photoelectric effect", "Compton effect", "Raman effect"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Debye-Hückel theory used for?",
+    "options": ["Describing electrolyte solutions", "Quantum mechanics", "Nuclear physics", "Crystal structure"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the quantum state where bosons occupy the same state?",
+    "options": ["Fermi state", "Bose-Einstein condensate", "Plasma state", "Superfluid"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Arrhenius equation used for?",
+    "options": ["Calculating reaction rates", "Determining pH", "Measuring pressure", "Finding equilibrium"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the symmetry operation in crystals?",
+    "options": ["Translation", "Rotation", "Reflection", "All of the above"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Josephson effect?",
+    "options": ["Tunneling of Cooper pairs through insulator", "Electron emission", "Photon absorption", "Nuclear decay"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Curie temperature?",
+    "options": ["Temperature where ferromagnetism disappears", "Absolute zero", "Boiling point", "Melting point"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the principle stating that all inertial frames are equivalent?",
+    "options": ["Equivalence principle", "Relativity principle", "Uncertainty principle", "Superposition principle"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Stefan-Boltzmann law?",
+    "options": ["Relates power radiated to temperature", "Describes gas behavior", "Explains photoelectric effect", "Defines entropy"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the quantum mechanical tunneling through a barrier?",
+    "options": ["Classical crossing", "Quantum tunneling", "Wave propagation", "Diffraction"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Carnot efficiency formula?",
+    "options": ["1 - Tc/Th", "1 - Th/Tc", "Tc/Th", "Th/Tc"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the effect where nuclei align in a magnetic field?",
+    "options": ["Zeeman effect", "Stark effect", "Nuclear magnetic resonance", "Electron spin resonance"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Bragg's law equation?",
+    "options": ["nλ = 2d sin θ", "nλ = d sin θ", "nλ = 2d cos θ", "nλ = d cos θ"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the antisymmetric wave function for fermions?",
+    "options": ["Slater determinant", "Hartree product", "Gaussian function", "Orbital"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Poisson ratio?",
+    "options": ["Ratio of lateral to axial strain", "Ratio of stress to strain", "Ratio of force to area", "Ratio of energy to power"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the approximation treating electrons independently?",
+    "options": ["Hartree-Fock approximation", "Born-Oppenheimer approximation", "WKB approximation", "Tight-binding approximation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Raman effect?",
+    "options": ["Inelastic scattering of photons", "Elastic scattering", "Absorption", "Emission"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the state where material has zero electrical resistance?",
+    "options": ["Conductor", "Semiconductor", "Superconductor", "Insulator"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Boltzmann distribution equation?",
+    "options": ["P(E) ∝ exp(-E/kT)", "P(E) ∝ exp(E/kT)", "P(E) ∝ E/kT", "P(E) ∝ kT/E"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the symmetry relating particles and antiparticles?",
+    "options": ["Charge conjugation", "Parity", "Time reversal", "CPT symmetry"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Fermi-Dirac distribution?",
+    "options": ["Distribution for fermions", "Distribution for bosons", "Distribution for photons", "Distribution for phonons"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the quantum number describing electron spin?",
+    "options": ["n", "l", "m", "s"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Clausius-Clapeyron equation used for?",
+    "options": ["Phase transitions", "Chemical reactions", "Nuclear decay", "Electromagnetic waves"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the principle stating entropy always increases?",
+    "options": ["First law of thermodynamics", "Second law of thermodynamics", "Third law of thermodynamics", "Zeroth law"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Hund's rule?",
+    "options": ["Maximize total spin in degenerate orbitals", "Minimize energy", "Maximize angular momentum", "Minimize spin"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the effect where circularly polarized light creates magnetization?",
+    "options": ["Faraday effect", "Kerr effect", "Inverse Faraday effect", "Zeeman effect"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Onsager reciprocal relations?",
+    "options": ["Symmetry in irreversible thermodynamics", "Chemical equilibrium", "Phase transitions", "Quantum mechanics"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the approximation for weakly interacting gases?",
+    "options": ["Ideal gas approximation", "Van der Waals approximation", "Virial expansion", "Mean field theory"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Larmor frequency?",
+    "options": ["Precession frequency of magnetic moment", "Rotation frequency", "Oscillation frequency", "Resonance frequency"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the quantum state with definite angular momentum?",
+    "options": ["Eigenstate", "Orbital", "Wave packet", "Coherent state"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Landau theory of phase transitions based on?",
+    "options": ["Order parameter", "Free energy", "Entropy", "Both A and B"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the scattering where photon energy is conserved?",
+    "options": ["Compton scattering", "Rayleigh scattering", "Raman scattering", "Thomson scattering"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Bloch theorem?",
+    "options": ["Wave functions in periodic potentials", "Conservation of energy", "Uncertainty principle", "Wave-particle duality"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the force between neutral atoms?",
+    "options": ["Ionic force", "Covalent force", "Van der Waals force", "Metallic force"],
+    "correctAnswer": 2,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Einstein relation for diffusion?",
+    "options": ["D = μkT", "D = kT/μ", "D = μ/kT", "D = kT²/μ"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the quantum mechanical operator for position?",
+    "options": ["x", "p", "H", "L"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Goldstone theorem?",
+    "options": ["Spontaneously broken symmetry creates massless bosons", "Energy conservation", "Momentum conservation", "Charge conservation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the approximation treating molecules as rigid rotors?",
+    "options": ["Rigid rotor approximation", "Harmonic oscillator", "Free particle", "Hydrogen atom"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Kohn anomaly?",
+    "options": ["Anomaly in phonon dispersion", "Electronic transition", "Nuclear decay", "Magnetic ordering"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the theorem relating microscopic reversibility to equilibrium?",
+    "options": ["Detailed balance", "Boltzmann H-theorem", "Fluctuation-dissipation", "Onsager relations"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Peierls instability?",
+    "options": ["Lattice distortion in 1D metals", "Superconductivity", "Magnetism", "Ferroelectricity"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the quantum field describing electromagnetic interactions?",
+    "options": ["Scalar field", "Vector field", "Spinor field", "Tensor field"],
+    "correctAnswer": 1,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Drude model used for?",
+    "options": ["Electrical conductivity in metals", "Superconductivity", "Semiconductors", "Insulators"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the approximation for many-body systems using single-particle wave functions?",
+    "options": ["Mean field approximation", "Perturbation theory", "Variational method", "WKB approximation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the Frenkel exciton?",
+    "options": ["Bound electron-hole pair in molecular crystal", "Free electron", "Phonon", "Plasmon"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is the name of the quantum correction to classical partition function?",
+    "options": ["Quantum statistics", "Bose-Einstein", "Fermi-Dirac", "All of the above"],
+    "correctAnswer": 3,
+    "category": "Science",
+    "difficulty": "Master"
+  }, {
+    "text": "What is the Gross-Pitaevskii equation used to describe?",
+    "options": ["Bose-Einstein condensates", "Black holes", "Chemical reactions", "Crystal structures"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Aharonov-Bohm effect?",
+    "options": ["Quantum interference from electromagnetic potentials", "Gravitational waves", "Nuclear fusion", "Electron emission"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Kauzmann paradox?",
+    "options": ["Entropy crisis in supercooled liquids", "Black hole information loss", "Quantum measurement problem", "Dark matter distribution"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Kondo effect?",
+    "options": ["Resistance minimum in metals with magnetic impurities", "Superconductivity", "Nuclear magnetism", "Chemical catalysis"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Peierls transition?",
+    "options": ["Structural phase transition in 1D conductors", "Nuclear decay", "Chemical reaction", "Optical phenomenon"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the RKKY interaction?",
+    "options": ["Indirect exchange between magnetic moments", "Nuclear force", "Chemical bonding", "Gravitational coupling"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Schwinger limit?",
+    "options": ["Critical electric field strength for pair production", "Maximum temperature", "Minimum energy", "Gravitational constant"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Kibble-Zurek mechanism?",
+    "options": ["Defect formation in phase transitions", "Particle creation", "Nuclear decay", "Chemical synthesis"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Berezinskii-Kosterlitz-Thouless transition?",
+    "options": ["Topological phase transition in 2D systems", "Chemical reaction", "Nuclear process", "Gravitational collapse"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Unruh effect?",
+    "options": ["Accelerating observers detect thermal radiation", "Black hole evaporation", "Particle decay", "Nuclear fission"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Efimov state?",
+    "options": ["Three-body bound state with scale invariance", "Atomic orbital", "Molecular bond", "Nuclear configuration"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Chern number?",
+    "options": ["Topological invariant in quantum systems", "Atomic number", "Coordination number", "Quantum number"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Sachdev-Ye-Kitaev model?",
+    "options": ["Model of quantum chaos and black holes", "Crystal structure", "Chemical reaction", "Astrophysical system"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Witten index?",
+    "options": ["Topological invariant in supersymmetry", "Refractive index", "pH value", "Atomic mass"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Luttinger liquid?",
+    "options": ["Non-Fermi liquid in 1D systems", "Supercooled fluid", "Molten metal", "Aqueous solution"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Wigner crystal?",
+    "options": ["Crystalline phase of electrons at low density", "Ice crystal", "Metal lattice", "Ionic solid"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Hofstadter butterfly?",
+    "options": ["Fractal energy spectrum of 2D electrons in magnetic field", "Insect species", "Chemical structure", "Astronomical object"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Landau-Zener formula?",
+    "options": ["Transition probability in avoided crossing", "Chemical rate equation", "Nuclear decay law", "Gravitational formula"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Majorana fermion?",
+    "options": ["Particle that is its own antiparticle", "Nuclear particle", "Chemical species", "Cosmic ray"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Wess-Zumino-Witten model?",
+    "options": ["Conformal field theory describing symmetries", "Cosmological model", "Chemical kinetics", "Nuclear structure"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Hubbard model used to describe?",
+    "options": ["Strongly correlated electron systems", "Gas dynamics", "Chemical bonds", "Nuclear forces"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Dirac equation's main achievement?",
+    "options": ["Predicting antimatter", "Explaining gravity", "Describing nuclear forces", "Modeling chemical bonds"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Yang-Mills theory?",
+    "options": ["Non-abelian gauge theory", "Quantum gravity", "String theory", "Loop quantum gravity"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Anderson localization?",
+    "options": ["Wave localization due to disorder", "Superconductivity", "Ferromagnetism", "Superfluidity"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Fano resonance?",
+    "options": ["Asymmetric line shape in scattering", "Symmetric peak", "Exponential decay", "Linear response"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Kohn-Sham equation?",
+    "options": ["Equation in density functional theory", "Wave equation", "Heat equation", "Diffusion equation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Green-Kubo relation?",
+    "options": ["Relates transport coefficients to correlation functions", "Chemical equilibrium", "Phase transition", "Quantum tunneling"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Dyson equation?",
+    "options": ["Renormalization in quantum field theory", "Maxwell equation", "Schrödinger equation", "Dirac equation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Ginzburg-Landau theory?",
+    "options": ["Phenomenological theory of superconductivity", "Quantum gravity", "String theory", "Nuclear structure"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Kitaev model?",
+    "options": ["Exactly solvable model with topological order", "Standard model", "Cosmological model", "Atomic model"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Laughlin wave function?",
+    "options": ["Ground state of fractional quantum Hall effect", "Atomic orbital", "Molecular orbital", "Crystal wave function"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Montroll-Weiss equation?",
+    "options": ["Continuous time random walk", "Quantum walk", "Chemical diffusion", "Nuclear decay"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Pfaffian state?",
+    "options": ["Non-abelian quantum Hall state", "Electronic state", "Nuclear state", "Chemical state"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Quantum Zeno effect?",
+    "options": ["Frequent measurements slow quantum evolution", "Time dilation", "Particle acceleration", "Wave collapse"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Renormalization group?",
+    "options": ["Mathematical framework for scale transformations", "Symmetry group", "Rotation group", "Translation group"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Stoner criterion?",
+    "options": ["Condition for ferromagnetism in metals", "Superconductivity criterion", "Phase transition criterion", "Chemical stability"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Thouless energy?",
+    "options": ["Energy scale in mesoscopic systems", "Planck energy", "Fermi energy", "Rest mass energy"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Universal conductance fluctuations?",
+    "options": ["Quantum interference in mesoscopic systems", "Classical noise", "Thermal fluctuations", "Shot noise"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Villain model?",
+    "options": ["Lattice model with continuous symmetry", "Standard model", "Atomic model", "Nuclear model"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Ward-Takahashi identity?",
+    "options": ["Conservation law in quantum field theory", "Thermodynamic identity", "Chemical equilibrium", "Nuclear relation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Zwanzig projection operator?",
+    "options": ["Mathematical tool in statistical mechanics", "Quantum operator", "Rotation operator", "Translation operator"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Kubo formula?",
+    "options": ["Linear response theory", "Quantum tunneling", "Phase transition", "Chemical kinetics"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Mott transition?",
+    "options": ["Metal-insulator transition", "Phase transition", "Chemical transition", "Nuclear transition"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Nakajima-Zwanzig equation?",
+    "options": ["Generalized master equation", "Schrödinger equation", "Heat equation", "Wave equation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Onsager solution?",
+    "options": ["Exact solution of 2D Ising model", "Hydrogen atom solution", "Harmonic oscillator", "Free particle"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Parisi replica symmetry breaking?",
+    "options": ["Solution to spin glass problem", "Crystal symmetry", "Nuclear symmetry", "Molecular symmetry"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Quantum Monte Carlo method?",
+    "options": ["Computational technique for many-body systems", "Classical simulation", "Molecular dynamics", "Finite element"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Rashba effect?",
+    "options": ["Spin-orbit coupling in 2D systems", "Zeeman effect", "Stark effect", "Doppler effect"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Schwinger-Dyson equation?",
+    "options": ["Equation of motion in quantum field theory", "Classical equation", "Thermodynamic relation", "Chemical kinetics"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Tomonaga-Luttinger liquid?",
+    "options": ["1D interacting fermion system", "3D Fermi liquid", "Superfluid", "Superconductor"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Umklapp process?",
+    "options": ["Scattering process involving reciprocal lattice vector", "Chemical reaction", "Nuclear process", "Photon emission"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Van Hove singularity?",
+    "options": ["Singularity in density of states", "Black hole singularity", "Chemical singularity", "Phase singularity"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Ward identity?",
+    "options": ["Consequence of gauge symmetry", "Conservation law", "Thermodynamic relation", "Chemical equilibrium"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the XY model?",
+    "options": ["2D planar spin model", "Ising model", "Heisenberg model", "Potts model"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Yosida function?",
+    "options": ["Function describing Kondo effect", "Wave function", "Partition function", "Correlation function"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Zitterbewegung?",
+    "options": ["Rapid oscillation of relativistic particle position", "Nuclear vibration", "Molecular motion", "Crystal vibration"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the AdS/CFT correspondence?",
+    "options": ["Duality between gravity and quantum field theory", "Equivalence principle", "CPT theorem", "Gauge symmetry"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Affleck-Kennedy-Lieb-Tasaki state?",
+    "options": ["Ground state of spin-1 chain", "Atomic ground state", "Nuclear ground state", "Molecular ground state"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Baym-Kadanoff formalism?",
+    "options": ["Conserving approximations in many-body theory", "Quantum field theory", "Statistical mechanics", "Thermodynamics"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Callan-Symanzik equation?",
+    "options": ["Renormalization group equation", "Wave equation", "Field equation", "Transport equation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Dzyaloshinskii-Moriya interaction?",
+    "options": ["Antisymmetric exchange in magnetic systems", "Coulomb interaction", "Van der Waals force", "Chemical bonding"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Elliott-Yafet mechanism?",
+    "options": ["Spin relaxation in metals", "Nuclear decay", "Chemical reaction", "Phase transition"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Faddeev-Popov ghost?",
+    "options": ["Auxiliary field in gauge theory", "Real particle", "Virtual particle", "Force carrier"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Gutzwiller approximation?",
+    "options": ["Variational method for strongly correlated systems", "Perturbation theory", "Mean field theory", "WKB approximation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Heisenberg-Euler Lagrangian?",
+    "options": ["Effective action for quantum electrodynamics", "Classical mechanics", "General relativity", "String theory"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Ising gauge theory?",
+    "options": ["Lattice gauge theory with discrete symmetry", "Continuous symmetry", "String theory", "M-theory"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Jastrow factor?",
+    "options": ["Correlation factor in many-body wave function", "Form factor", "Structure factor", "Scattering factor"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Keldysh formalism?",
+    "options": ["Non-equilibrium quantum field theory", "Equilibrium theory", "Classical theory", "Thermodynamics"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Luttinger theorem?",
+    "options": ["Relates Fermi surface volume to particle density", "Energy conservation", "Momentum conservation", "Charge conservation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Migdal-Eliashberg theory?",
+    "options": ["Theory of electron-phonon interactions", "Gravity theory", "Electromagnetism", "Weak force"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Nozières-Schmitt-Rink theory?",
+    "options": ["Crossover from BCS to BEC", "Phase transition", "Chemical reaction", "Nuclear process"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Okubo-Zweig-Iizuka rule?",
+    "options": ["Suppression of certain quark processes", "Selection rule", "Conservation law", "Symmetry principle"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Peierls substitution?",
+    "options": ["Method for including magnetic field in tight-binding", "Gauge transformation", "Coordinate transformation", "Basis transformation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Quantum spin Hall effect?",
+    "options": ["Topological insulator with edge states", "Classical Hall effect", "Integer quantum Hall", "Fractional quantum Hall"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Rabi oscillation?",
+    "options": ["Oscillation between quantum states", "Classical oscillation", "Pendulum motion", "Planetary motion"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Slater-Koster method?",
+    "options": ["Tight-binding parametrization", "Density functional theory", "Hartree-Fock method", "Molecular dynamics"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Thirring model?",
+    "options": ["Interacting fermion model in 1+1 dimensions", "Standard model", "Ising model", "Heisenberg model"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Uehling potential?",
+    "options": ["Vacuum polarization correction", "Coulomb potential", "Yukawa potential", "Lennard-Jones potential"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Vortex lattice?",
+    "options": ["Periodic array of vortices in superconductors", "Crystal lattice", "Atomic lattice", "Molecular lattice"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Weyl semimetal?",
+    "options": ["Material with Weyl fermion excitations", "Metal", "Insulator", "Semiconductor"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the X-ray edge singularity?",
+    "options": ["Divergence in X-ray absorption", "Emission line", "Scattering peak", "Diffraction spot"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Yamada model?",
+    "options": ["Model for itinerant ferromagnetism", "Localized magnetism", "Superconductivity", "Superfluidity"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Zeno line?",
+    "options": ["Line in phase diagram where gases behave ideally", "Phase boundary", "Critical line", "Binodal line"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Abrikosov vortex?",
+    "options": ["Quantized magnetic flux in type-II superconductor", "Fluid vortex", "Atmospheric vortex", "Quantum vortex"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Bardeen-Cooper-Schrieffer theory?",
+    "options": ["Microscopic theory of superconductivity", "Atomic theory", "Nuclear theory", "Molecular theory"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Cabibbo angle?",
+    "options": ["Mixing angle for quark flavors", "Scattering angle", "Diffraction angle", "Rotation angle"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Dirac monopole?",
+    "options": ["Hypothetical magnetic charge", "Electric charge", "Color charge", "Weak charge"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Emery model?",
+    "options": ["Model for cuprate superconductors", "Atomic model", "Nuclear model", "Molecular model"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Friedel oscillations?",
+    "options": ["Oscillations in electron density near impurity", "Sound waves", "Light waves", "Matter waves"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the GW approximation?",
+    "options": ["Many-body perturbation theory method", "Mean field theory", "Density functional theory", "Hartree-Fock"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Haldane gap?",
+    "options": ["Energy gap in integer spin chains", "Band gap", "Superconducting gap", "Mass gap"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Ioffe-Regel criterion?",
+    "options": ["Limit for coherent wave propagation", "Localization criterion", "Phase transition criterion", "Stability criterion"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Jahn-Teller distortion?",
+    "options": ["Structural distortion removing electronic degeneracy", "Crystal defect", "Thermal expansion", "Elastic deformation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Kane-Mele model?",
+    "options": ["Model for graphene with spin-orbit coupling", "Ising model", "Hubbard model", "Heisenberg model"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Lindhard function?",
+    "options": ["Response function for electron gas", "Wave function", "Partition function", "Green's function"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Maki parameter?",
+    "options": ["Parameter in superconductivity theory", "Coupling constant", "Fine structure constant", "Gravitational constant"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the Nambu-Goldstone boson?",
+    "options": ["Massless particle from spontaneous symmetry breaking", "Massive boson", "Fermion", "Gauge boson"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Legend"
+  },{
+    "text": "What is the Affleck-Dine mechanism?",
+    "options": ["Baryogenesis via scalar fields", "Nucleosynthesis", "Stellar formation", "Chemical synthesis"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Altarelli-Parisi equation?",
+    "options": ["Evolution of parton distribution functions", "Wave equation", "Diffusion equation", "Transport equation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Ashkin-Teller model?",
+    "options": ["Generalization of Ising model with two spins", "Single spin model", "Quantum spin model", "Classical field theory"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Balian-Low theorem?",
+    "options": ["Limitation on time-frequency localization", "Uncertainty principle", "Sampling theorem", "Fourier theorem"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Bateman-Horn conjecture?",
+    "options": ["Distribution of prime values of polynomials", "Prime number theorem", "Riemann hypothesis", "Goldbach conjecture"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Brezin-Gross-Witten model?",
+    "options": ["Exactly solvable gauge theory", "String theory", "Quantum gravity", "Grand unified theory"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Calabi-Yau manifold?",
+    "options": ["Complex manifold used in string theory", "Riemannian manifold", "Euclidean space", "Hilbert space"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Coleman-Mandula theorem?",
+    "options": ["Limits on symmetries of S-matrix", "CPT theorem", "Spin-statistics theorem", "Noether's theorem"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Donaldson invariants?",
+    "options": ["Topological invariants of 4-manifolds", "Knot invariants", "Link invariants", "Graph invariants"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Eguchi-Kawai reduction?",
+    "options": ["Large N reduction of gauge theories", "Dimensional reduction", "Symmetry breaking", "Phase transition"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Floquet theory?",
+    "options": ["Analysis of periodically driven systems", "Static systems", "Chaotic systems", "Integrable systems"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Georgi-Glashow model?",
+    "options": ["SU(5) grand unification", "Standard model", "Electroweak theory", "QCD"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Haag-Łopuszański-Sohnius theorem?",
+    "options": ["Extension of Coleman-Mandula with supersymmetry", "CPT theorem", "Spin-statistics", "Gauge symmetry"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Inverse scattering transform?",
+    "options": ["Method for solving nonlinear PDEs", "Fourier transform", "Laplace transform", "Wavelet transform"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Jackiw-Rebbi solution?",
+    "options": ["Fractional fermion number in soliton", "Integer charge", "Quantized flux", "Discrete energy"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Kaluza-Klein theory?",
+    "options": ["Unification via extra dimensions", "4D field theory", "String theory", "Loop quantum gravity"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Lieb-Robinson bound?",
+    "options": ["Speed limit for information propagation", "Uncertainty bound", "Energy bound", "Entropy bound"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Mathieu function?",
+    "options": ["Solution to Mathieu differential equation", "Bessel function", "Legendre function", "Hermite function"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Nielsen-Ninomiya theorem?",
+    "options": ["No-go theorem for chiral lattice fermions", "CPT theorem", "Spin-statistics", "Gauge anomaly"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Ogievetsky-Polubarinov formalism?",
+    "options": ["Description of massless spin-2 particles", "Spin-1/2 fermions", "Scalar fields", "Vector bosons"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Polyakov action?",
+    "options": ["Action for string theory", "Einstein-Hilbert action", "Yang-Mills action", "Chern-Simons action"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Quantum chromodynamics beta function?",
+    "options": ["Running of strong coupling constant", "Fine structure running", "Weak coupling", "Gravitational coupling"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Ramond-Neveu-Schwarz formalism?",
+    "options": ["Formulation of superstring theory", "String field theory", "M-theory", "F-theory"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Sine-Gordon model?",
+    "options": ["Integrable field theory in 1+1D", "Ising model", "XY model", "Heisenberg model"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the 't Hooft anomaly matching?",
+    "options": ["Constraint on symmetry realization", "Gauge anomaly", "Gravitational anomaly", "Chiral anomaly"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Unruh-DeWitt detector?",
+    "options": ["Idealized particle detector in QFT", "Geiger counter", "Cloud chamber", "Scintillator"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Verlinde entropy formula?",
+    "options": ["Horizon entropy in Chern-Simons theory", "Boltzmann entropy", "Shannon entropy", "Von Neumann entropy"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Wigner-Eckart theorem?",
+    "options": ["Factorization of matrix elements", "Uncertainty relation", "Selection rule", "Conservation law"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the XXZ model?",
+    "options": ["Anisotropic Heisenberg spin chain", "Isotropic model", "Ising chain", "XY chain"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Yang-Baxter equation?",
+    "options": ["Consistency condition for integrable systems", "Wave equation", "Heat equation", "Schrödinger equation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Zamolodchikov c-theorem?",
+    "options": ["Monotonicity of central charge in RG flow", "Thermodynamic theorem", "Optical theorem", "Fluctuation theorem"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the ADHM construction?",
+    "options": ["Construction of instantons", "Monopole construction", "Soliton construction", "Skyrmion construction"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the BFSS matrix model?",
+    "options": ["Matrix theory approach to M-theory", "String theory", "Loop quantum gravity", "Supergravity"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Cardy formula?",
+    "options": ["Asymptotic density of states in CFT", "Partition function", "Correlation function", "S-matrix"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Dijkgraaf-Witten theory?",
+    "options": ["Topological field theory", "Conformal field theory", "Yang-Mills theory", "Gravity theory"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Elliptic genus?",
+    "options": ["Topological invariant from string theory", "Euler characteristic", "Chern number", "Pontryagin class"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the F-theory?",
+    "options": ["12-dimensional formulation of string theory", "10D string theory", "11D M-theory", "26D bosonic string"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Gopakumar-Vafa invariants?",
+    "options": ["Integer invariants counting BPS states", "Topological invariants", "Knot invariants", "Graph invariants"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Hitchin system?",
+    "options": ["Integrable system in gauge theory", "Chaotic system", "Random system", "Dissipative system"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Instanton moduli space?",
+    "options": ["Space of instanton solutions", "Phase space", "Configuration space", "Hilbert space"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Jones polynomial?",
+    "options": ["Knot invariant from quantum groups", "Characteristic polynomial", "Minimal polynomial", "Chromatic polynomial"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Kontsevich integral?",
+    "options": ["Universal knot invariant", "Path integral", "Feynman integral", "Functional integral"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Liouville theory?",
+    "options": ["2D conformal field theory", "3D gauge theory", "4D gravity", "String theory"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Monster group?",
+    "options": ["Largest sporadic simple group", "Lie group", "Permutation group", "Crystallographic group"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Nekrasov partition function?",
+    "options": ["Equivariant instanton partition function", "Canonical partition function", "Grand canonical", "Microcanonical"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Ooguri-Vafa conjecture?",
+    "options": ["Relation between topological string and Chern-Simons", "AdS/CFT", "Mirror symmetry", "Modularity conjecture"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Penrose twistor theory?",
+    "options": ["Geometric approach to spacetime", "Loop quantum gravity", "String theory", "Causal sets"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Quantum Toda lattice?",
+    "options": ["Integrable system of particles", "Spin chain", "Gauge theory", "Gravity model"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Reshetikhin-Turaev invariant?",
+    "options": ["3-manifold invariant from quantum groups", "Knot invariant", "Link invariant", "Graph invariant"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Seiberg-Witten theory?",
+    "options": ["Exact solution to N=2 supersymmetric Yang-Mills", "Perturbative QCD", "Lattice gauge theory", "String field theory"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Temperley-Lieb algebra?",
+    "options": ["Algebra appearing in statistical mechanics", "Lie algebra", "Clifford algebra", "Grassmann algebra"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Uq(sl2) quantum group?",
+    "options": ["Quantum deformation of SU(2)", "Classical SU(2)", "SO(3)", "SL(2,C)"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Virasoro algebra?",
+    "options": ["Infinite-dimensional Lie algebra in CFT", "Finite Lie algebra", "Kac-Moody algebra", "Affine algebra"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Witten index for supersymmetric theories?",
+    "options": ["Tr(-1)^F", "Tr(1)", "Tr(F)", "Tr(F^2)"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Yangian symmetry?",
+    "options": ["Hidden symmetry in integrable systems", "Gauge symmetry", "Lorentz symmetry", "Conformal symmetry"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Zamolodchikov-Faddeev algebra?",
+    "options": ["Algebraic structure in integrable field theory", "Lie algebra", "Clifford algebra", "Quaternion algebra"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the ABCDEFG classification?",
+    "options": ["Classification of simple Lie algebras", "Particle classification", "Crystal classification", "Galaxy classification"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Bogomolny-Prasad-Sommerfield bound?",
+    "options": ["Mass bound for solitons", "Energy bound", "Momentum bound", "Charge bound"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Chern-Simons-Witten theory?",
+    "options": ["3D topological gauge theory", "4D Yang-Mills", "String theory", "Gravity theory"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Drinfeld-Sokolov reduction?",
+    "options": ["Construction of W-algebras", "Lie algebra reduction", "Gauge fixing", "Symmetry breaking"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Enriques-Kodaira classification?",
+    "options": ["Classification of algebraic surfaces", "Knot classification", "Group classification", "Manifold classification"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Freed-Hopkins-Teleman theorem?",
+    "options": ["Loop group representation theory result", "Representation of Lie groups", "Galois theory", "Module theory"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Gromov-Witten invariant?",
+    "options": ["Curve counting in symplectic geometry", "Knot invariant", "Graph invariant", "Group invariant"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Hecke algebra?",
+    "options": ["Deformation of group algebra", "Lie algebra", "Clifford algebra", "Exterior algebra"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Ishibashi state?",
+    "options": ["Boundary state in conformal field theory", "Ground state", "Excited state", "Coherent state"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Jimbo-Drinfeld quantum group?",
+    "options": ["Quantization of universal enveloping algebra", "Classical group", "Lie group", "Topological group"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Knizhnik-Zamolodchikov equation?",
+    "options": ["Differential equation for conformal blocks", "Wave equation", "Heat equation", "Diffusion equation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Langlands program?",
+    "options": ["Deep connections between number theory and representation theory", "Hilbert's problems", "Millennium problems", "Clay problems"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Moore-Seiberg equations?",
+    "options": ["Consistency conditions in RCFT", "Maxwell equations", "Einstein equations", "Yang-Mills equations"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Nahm transform?",
+    "options": ["Duality between monopoles and calorons", "Fourier transform", "Legendre transform", "Bogoliubov transform"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Onsager algebra?",
+    "options": ["Symmetry algebra of 2D Ising model", "Virasoro algebra", "Kac-Moody algebra", "Yangian"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Plancherel measure?",
+    "options": ["Measure on representation space", "Probability measure", "Counting measure", "Lebesgue measure"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Quantum affine algebra?",
+    "options": ["Quantum group associated to affine Lie algebra", "Classical Lie algebra", "Simple Lie algebra", "Solvable algebra"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Rozansky-Witten invariant?",
+    "options": ["3-manifold invariant from hyperkähler geometry", "Knot invariant", "Surface invariant", "Graph invariant"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Skyrme model?",
+    "options": ["Nonlinear field theory of baryons", "Linear model", "Perturbative model", "Lattice model"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Taubes-Seiberg-Witten equations?",
+    "options": ["Equations for smooth 4-manifold invariants", "Einstein equations", "Maxwell equations", "Yang-Mills equations"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Universal R-matrix?",
+    "options": ["Element encoding quantum group structure", "S-matrix", "Transfer matrix", "Density matrix"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Verlinde formula?",
+    "options": ["Fusion rule coefficients in CFT", "Clebsch-Gordan coefficients", "6j symbols", "9j symbols"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Wakimoto representation?",
+    "options": ["Free field realization of affine algebras", "Adjoint representation", "Fundamental representation", "Spinor representation"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Xiao's formula?",
+    "options": ["Fibered surface canonical bundle formula", "Riemann-Roch formula", "Atiyah-Singer index", "Gauss-Bonnet theorem"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Yau-Zaslow formula?",
+    "options": ["Counting rational curves on K3 surfaces", "Counting points", "Counting primes", "Counting partitions"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Zariski tangent space?",
+    "options": ["Tangent space in algebraic geometry", "Euclidean tangent space", "Riemannian tangent space", "Hilbert space"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the AGT correspondence?",
+    "options": ["Relation between 4D gauge theory and 2D CFT", "AdS/CFT", "Holographic principle", "Gauge/gravity duality"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the BMS symmetry?",
+    "options": ["Asymptotic symmetry of asymptotically flat spacetime", "Conformal symmetry", "Poincaré symmetry", "Galilean symmetry"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Coulomb branch?",
+    "options": ["Moduli space in supersymmetric gauge theory", "Higgs branch", "Mixed branch", "Confined phase"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Duistermaat-Heckman formula?",
+    "options": ["Exact localization formula for certain integrals", "Fourier transform", "Residue theorem", "Cauchy integral"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the E8 lattice?",
+    "options": ["Densest 8D sphere packing", "Simple cubic", "FCC", "BCC"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Fukaya category?",
+    "options": ["Category of Lagrangian submanifolds", "Category of sheaves", "Category of modules", "Category of representations"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the GKZ hypergeometric system?",
+    "options": ["Generalized hypergeometric functions", "Bessel functions", "Legendre functions", "Airy functions"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Hall-Littlewood polynomial?",
+    "options": ["Symmetric function generalizing Schur functions", "Hermite polynomial", "Laguerre polynomial", "Chebyshev polynomial"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the IKKT matrix model?",
+    "options": ["Matrix model for IIB string theory", "BFSS model", "M-theory matrix model", "Type I matrix model"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Jeffrey-Kirwan residue?",
+    "options": ["Localization technique in equivariant cohomology", "Cauchy residue", "Residue theorem", "Laurent expansion"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is the Koszul duality?",
+    "options": ["Duality between algebras and coalgebras", "Poincaré duality", "Serre duality", "Pontryagin duality"],
+    "correctAnswer": 0,
+    "category": "Science",
+    "difficulty": "Genius"
+  }
+  ]

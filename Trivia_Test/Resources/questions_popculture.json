@@ -1,0 +1,5446 @@
+[
+{
+    "text": "What streaming service produces 'Stranger Things'?",
+    "options": [
+      "Hulu",
+      "Netflix",
+      "Disney+",
+      "Amazon Prime"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Iron Man in the Marvel Cinematic Universe?",
+    "options": [
+      "Chris Evans",
+      "Chris Hemsworth",
+      "Robert Downey Jr.",
+      "Mark Ruffalo"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the coffee shop in 'Friends'?",
+    "options": [
+      "Central Perk",
+      "Coffee Central",
+      "Java Jive",
+      "The Coffee House"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who directed 'Titanic'?",
+    "options": [
+      "Steven Spielberg",
+      "James Cameron",
+      "Christopher Nolan",
+      "Peter Jackson"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What city is the setting for 'The Office' (US)?",
+    "options": [
+      "New York",
+      "Scranton",
+      "Chicago",
+      "Philadelphia"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Jack Dawson in 'Titanic'?",
+    "options": [
+      "Brad Pitt",
+      "Tom Cruise",
+      "Leonardo DiCaprio",
+      "Johnny Depp"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What year did 'Breaking Bad' end?",
+    "options": [
+      "2011",
+      "2012",
+      "2013",
+      "2014"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Forrest Gump?",
+    "options": [
+      "Tom Cruise",
+      "Tom Hanks",
+      "Brad Pitt",
+      "Harrison Ford"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is Walter White's alias in 'Breaking Bad'?",
+    "options": [
+      "The Cook",
+      "Heisenberg",
+      "Mr. White",
+      "Cap'n Cook"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who directed 'Jurassic Park'?",
+    "options": [
+      "George Lucas",
+      "Steven Spielberg",
+      "James Cameron",
+      "Ridley Scott"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What year did 'Game of Thrones' premiere?",
+    "options": [
+      "2009",
+      "2010",
+      "2011",
+      "2012"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played the Joker in 'The Dark Knight'?",
+    "options": [
+      "Jared Leto",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Joaquin Phoenix"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What streaming service produces 'The Mandalorian'?",
+    "options": [
+      "Netflix",
+      "Hulu",
+      "Disney+",
+      "HBO Max"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Tony Soprano in 'The Sopranos'?",
+    "options": [
+      "James Gandolfini",
+      "Robert De Niro",
+      "Al Pacino",
+      "Joe Pesci"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What year did 'Friends' end?",
+    "options": [
+      "2002",
+      "2003",
+      "2004",
+      "2005"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who directed 'The Shawshank Redemption'?",
+    "options": [
+      "Martin Scorsese",
+      "Francis Ford Coppola",
+      "Frank Darabont",
+      "Quentin Tarantino"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the highest-grossing film of all time?",
+    "options": [
+      "Titanic",
+      "Avatar",
+      "Avengers: Endgame",
+      "Star Wars: The Force Awakens"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Rachel Green in 'Friends'?",
+    "options": [
+      "Courteney Cox",
+      "Lisa Kudrow",
+      "Jennifer Aniston",
+      "Reese Witherspoon"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What city is 'Seinfeld' set in?",
+    "options": [
+      "Boston",
+      "New York City",
+      "Los Angeles",
+      "Chicago"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who directed 'E.T. the Extra-Terrestrial'?",
+    "options": [
+      "George Lucas",
+      "James Cameron",
+      "Steven Spielberg",
+      "Robert Zemeckis"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What year did 'The Sopranos' premiere?",
+    "options": [
+      "1997",
+      "1998",
+      "1999",
+      "2000"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who created 'Breaking Bad'?",
+    "options": [
+      "David Chase",
+      "Vince Gilligan",
+      "David Simon",
+      "Matthew Weiner"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did 'The Office' (US) premiere?",
+    "options": [
+      "2003",
+      "2004",
+      "2005",
+      "2006"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who directed 'Pulp Fiction'?",
+    "options": [
+      "Martin Scorsese",
+      "Quentin Tarantino",
+      "Paul Thomas Anderson",
+      "David Fincher"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of Ross's pet monkey in 'Friends'?",
+    "options": [
+      "Marcel",
+      "Maurice",
+      "Marvin",
+      "Marcus"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who created 'The Simpsons'?",
+    "options": [
+      "Seth MacFarlane",
+      "Matt Groening",
+      "Trey Parker",
+      "Mike Judge"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did 'Seinfeld' end?",
+    "options": [
+      "1996",
+      "1997",
+      "1998",
+      "1999"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who directed 'The Dark Knight' trilogy?",
+    "options": [
+      "Zack Snyder",
+      "Christopher Nolan",
+      "Tim Burton",
+      "James Gunn"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did 'Lost' premiere?",
+    "options": [
+      "2002",
+      "2003",
+      "2004",
+      "2005"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who played Vito Corleone in 'The Godfather'?",
+    "options": [
+      "Al Pacino",
+      "Robert De Niro",
+      "Marlon Brando",
+      "James Caan"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the bar in 'How I Met Your Mother'?",
+    "options": [
+      "MacLaren's Pub",
+      "McGee's",
+      "Murphy's",
+      "O'Malley's"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who played Andy Dufresne in 'The Shawshank Redemption'?",
+    "options": [
+      "Morgan Freeman",
+      "Tim Robbins",
+      "Kevin Costner",
+      "Harrison Ford"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year was 'The Matrix' released?",
+    "options": [
+      "1997",
+      "1998",
+      "1999",
+      "2000"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who created 'Lost'?",
+    "options": [
+      "J.J. Abrams & Damon Lindelof",
+      "Vince Gilligan",
+      "David Chase",
+      "Joss Whedon"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the fictional paper company in 'The Office'?",
+    "options": [
+      "Dunder Mifflin",
+      "Sabre",
+      "Staples",
+      "Office Depot"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who played Travis Bickle in 'Taxi Driver'?",
+    "options": [
+      "Al Pacino",
+      "Robert De Niro",
+      "Dustin Hoffman",
+      "Jack Nicholson"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did 'Mad Men' premiere?",
+    "options": [
+      "2005",
+      "2006",
+      "2007",
+      "2008"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who directed 'Schindler's List'?",
+    "options": [
+      "Martin Scorsese",
+      "Steven Spielberg",
+      "Roman Polanski",
+      "Oliver Stone"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the main character in 'Dexter'?",
+    "options": [
+      "Dexter Morgan",
+      "Dexter Miller",
+      "Dexter Matthews",
+      "Dexter Marshall"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who created 'The Wire'?",
+    "options": [
+      "David Chase",
+      "Vince Gilligan",
+      "David Simon",
+      "Matthew Weiner"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who created 'Mad Men'?",
+    "options": [
+      "David Chase",
+      "Vince Gilligan",
+      "David Simon",
+      "Matthew Weiner"
+    ],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did 'The Wire' premiere?",
+    "options": [
+      "2000",
+      "2001",
+      "2002",
+      "2003"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was the cinematographer for 'The Shawshank Redemption'?",
+    "options": [
+      "Roger Deakins",
+      "Emmanuel Lubezki",
+      "Robert Richardson",
+      "Conrad Hall"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did 'Twin Peaks' premiere?",
+    "options": [
+      "1988",
+      "1989",
+      "1990",
+      "1991"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who created 'Twin Peaks'?",
+    "options": [
+      "David Lynch & Mark Frost",
+      "David Chase",
+      "Vince Gilligan",
+      "J.J. Abrams"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the runtime of 'The Godfather'?",
+    "options": [
+      "165 minutes",
+      "175 minutes",
+      "185 minutes",
+      "195 minutes"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who wrote the screenplay for 'Chinatown'?",
+    "options": [
+      "Robert Towne",
+      "Paul Schrader",
+      "William Goldman",
+      "Ernest Lehman"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year was 'Citizen Kane' released?",
+    "options": [
+      "1939",
+      "1941",
+      "1943",
+      "1945"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who composed the score for 'The Dark Knight'?",
+    "options": [
+      "John Williams",
+      "Hans Zimmer",
+      "James Newton Howard",
+      "Hans Zimmer & James Newton Howard"
+    ],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did 'The West Wing' premiere?",
+    "options": [
+      "1997",
+      "1998",
+      "1999",
+      "2000"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who created 'The West Wing'?",
+    "options": [
+      "David Chase",
+      "Aaron Sorkin",
+      "David Simon",
+      "Matthew Weiner"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the name of the fictional advertising agency in 'Mad Men'?",
+    "options": [
+      "Sterling Cooper",
+      "Draper & Associates",
+      "Madison Avenue Partners",
+      "Campbell Advertising"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who directed 'Apocalypse Now'?",
+    "options": [
+      "Stanley Kubrick",
+      "Francis Ford Coppola",
+      "Michael Cimino",
+      "Oliver Stone"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did 'Frasier' premiere?",
+    "options": [
+      "1991",
+      "1992",
+      "1993",
+      "1994"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who played Michael Corleone in 'The Godfather'?",
+    "options": [
+      "Robert De Niro",
+      "Al Pacino",
+      "James Caan",
+      "John Cazale"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did 'Cheers' premiere?",
+    "options": [
+      "1980",
+      "1981",
+      "1982",
+      "1983"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who edited 'Raging Bull'?",
+    "options": [
+      "Michael Kahn",
+      "Thelma Schoonmaker",
+      "Walter Murch",
+      "Sally Menke"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did 'The X-Files' premiere?",
+    "options": [
+      "1991",
+      "1992",
+      "1993",
+      "1994"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who created 'The X-Files'?",
+    "options": [
+      "Chris Carter",
+      "J.J. Abrams",
+      "Joss Whedon",
+      "J. Michael Straczynski"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who composed the score for 'Vertigo'?",
+    "options": [
+      "Bernard Herrmann",
+      "Max Steiner",
+      "Franz Waxman",
+      "Miklós Rózsa"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was the cinematographer for 'The Godfather'?",
+    "options": [
+      "Gordon Willis",
+      "Conrad Hall",
+      "Vittorio Storaro",
+      "Vilmos Zsigmond"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did 'Hill Street Blues' premiere?",
+    "options": [
+      "1979",
+      "1980",
+      "1981",
+      "1982"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who created 'Hill Street Blues'?",
+    "options": [
+      "Steven Bochco & Michael Kozoll",
+      "David Chase",
+      "David Simon",
+      "Dick Wolf"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the original runtime of 'The Magnificent Ambersons' before studio cuts?",
+    "options": [
+      "132 minutes",
+      "148 minutes",
+      "156 minutes",
+      "165 minutes"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the supervising sound editor on 'Apocalypse Now'?",
+    "options": [
+      "Ben Burtt",
+      "Walter Murch",
+      "Gary Rydstrom",
+      "Richard Beggs"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did 'St. Elsewhere' premiere?",
+    "options": [
+      "1980",
+      "1981",
+      "1982",
+      "1983"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the production designer on 'Blade Runner'?",
+    "options": [
+      "Ken Adam",
+      "Syd Mead",
+      "Lawrence G. Paull",
+      "Anton Furst"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did 'NYPD Blue' premiere?",
+    "options": [
+      "1991",
+      "1992",
+      "1993",
+      "1994"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who created 'NYPD Blue'?",
+    "options": [
+      "Steven Bochco & David Milch",
+      "David Chase",
+      "David Simon",
+      "Dick Wolf"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the assistant director on 'Citizen Kane'?",
+    "options": [
+      "John Ford",
+      "William Wyler",
+      "John Houseman",
+      "Richard Wilson"
+    ],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did 'The Mary Tyler Moore Show' premiere?",
+    "options": [
+      "1968",
+      "1969",
+      "1970",
+      "1971"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who created 'The Mary Tyler Moore Show'?",
+    "options": [
+      "James L. Brooks & Allan Burns",
+      "Norman Lear",
+      "Larry Gelbart",
+      "Garry Marshall"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the cinematographer for 'The Conformist'?",
+    "options": [
+      "Vittorio Storaro",
+      "Giuseppe Rotunno",
+      "Carlo Di Palma",
+      "Gianni Di Venanzo"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did 'All in the Family' premiere?",
+    "options": [
+      "1969",
+      "1970",
+      "1971",
+      "1972"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who created 'All in the Family'?",
+    "options": [
+      "Norman Lear",
+      "James L. Brooks",
+      "Larry Gelbart",
+      "Garry Marshall"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did 'M*A*S*H' premiere?",
+    "options": [
+      "1970",
+      "1971",
+      "1972",
+      "1973"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who created the TV series 'M*A*S*H'?",
+    "options": [
+      "Norman Lear",
+      "James L. Brooks",
+      "Larry Gelbart",
+      "Garry Marshall"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who designed the costumes for 'Barry Lyndon'?",
+    "options": [
+      "Milena Canonero",
+      "Ulla-Britt Söderlund",
+      "Anthony Powell",
+      "Sandy Powell"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did 'The Twilight Zone' premiere?",
+    "options": [
+      "1957",
+      "1959",
+      "1961",
+      "1963"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who edited 'Once Upon a Time in the West'?",
+    "options": [
+      "Nino Baragli",
+      "Gabriella Cristiani",
+      "Franco Arcalli",
+      "Roberto Silvi"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did 'The Honeymooners' premiere?",
+    "options": [
+      "1953",
+      "1954",
+      "1955",
+      "1956"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who created 'The Honeymooners'?",
+    "options": [
+      "Jackie Gleason",
+      "Art Carney",
+      "Sid Caesar",
+      "Milton Berle"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did 'I Love Lucy' premiere?",
+    "options": [
+      "1949",
+      "1951",
+      "1953",
+      "1955"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was the cinematographer on 'Sunrise: A Song of Two Humans'?",
+    "options": [
+      "Gregg Toland",
+      "Karl Struss & Charles Rosher",
+      "James Wong Howe",
+      "Lee Garmes"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year was 'Sunrise: A Song of Two Humans' released?",
+    "options": [
+      "1925",
+      "1927",
+      "1929",
+      "1931"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did 'The Tonight Show' premiere?",
+    "options": [
+      "1952",
+      "1954",
+      "1956",
+      "1958"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was the original host of 'The Tonight Show'?",
+    "options": [
+      "Jack Paar",
+      "Steve Allen",
+      "Johnny Carson",
+      "Jay Leno"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did 'The Ed Sullivan Show' premiere?",
+    "options": [
+      "1946",
+      "1948",
+      "1950",
+      "1952"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the original title of 'The Ed Sullivan Show'?",
+    "options": [
+      "Toast of the Town",
+      "The Big Show",
+      "Sunday Night Variety",
+      "Ed Sullivan's Hour"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was the production designer on 'Metropolis' (1927)?",
+    "options": [
+      "Erich Kettelhut",
+      "Otto Hunte",
+      "Karl Vollbrecht",
+      "All three"
+    ],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did 'The Jack Benny Program' premiere on TV?",
+    "options": [
+      "1948",
+      "1950",
+      "1952",
+      "1954"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did 'Gunsmoke' premiere on TV?",
+    "options": [
+      "1953",
+      "1955",
+      "1957",
+      "1959"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was the matte painter on 'Citizen Kane'?",
+    "options": [
+      "Mario Larrinaga",
+      "Albert Whitlock",
+      "Peter Ellenshaw",
+      "Matthew Yuricich"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did 'The Fugitive' premiere?",
+    "options": [
+      "1961",
+      "1962",
+      "1963",
+      "1964"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did 'Dragnet' premiere on TV?",
+    "options": [
+      "1949",
+      "1951",
+      "1953",
+      "1955"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who created 'Dragnet'?",
+    "options": [
+      "Jack Webb",
+      "Quinn Martin",
+      "Rod Serling",
+      "Gene Roddenberry"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did 'The Defenders' premiere?",
+    "options": [
+      "1959",
+      "1960",
+      "1961",
+      "1962"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did 'Playhouse 90' premiere?",
+    "options": [
+      "1954",
+      "1955",
+      "1956",
+      "1957"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did 'The Outer Limits' premiere?",
+    "options": [
+      "1961",
+      "1962",
+      "1963",
+      "1964"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who created 'The Outer Limits'?",
+    "options": [
+      "Rod Serling",
+      "Leslie Stevens",
+      "Gene Roddenberry",
+      "Irwin Allen"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was the cinematographer for 'Citizen Kane'?",
+    "options": [
+      "James Wong Howe",
+      "Gregg Toland",
+      "John Alton",
+      "Stanley Cortez"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did 'The Philco Television Playhouse' premiere?",
+    "options": [
+      "1946",
+      "1947",
+      "1948",
+      "1949"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did 'Studio One' premiere?",
+    "options": [
+      "1946",
+      "1947",
+      "1948",
+      "1949"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the first dramatic anthology series on television?",
+    "options": [
+      "Studio One",
+      "Kraft Television Theatre",
+      "Philco Television Playhouse",
+      "Playhouse 90"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did 'Kraft Television Theatre' premiere?",
+    "options": [
+      "1945",
+      "1946",
+      "1947",
+      "1948"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who directed 'The Birth of a Nation' (1915)?",
+    "options": [
+      "D.W. Griffith",
+      "Cecil B. DeMille",
+      "Edwin S. Porter",
+      "Sergei Eisenstein"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did 'Texaco Star Theater' premiere?",
+    "options": [
+      "1946",
+      "1947",
+      "1948",
+      "1949"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who hosted 'Texaco Star Theater'?",
+    "options": [
+      "Milton Berle",
+      "Sid Caesar",
+      "Jackie Gleason",
+      "Red Skelton"
+    ],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did 'Your Show of Shows' premiere?",
+    "options": [
+      "1948",
+      "1949",
+      "1950",
+      "1951"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who starred in 'Your Show of Shows'?",
+    "options": [
+      "Milton Berle",
+      "Sid Caesar",
+      "Jackie Gleason",
+      "Red Skelton"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did 'The Colgate Comedy Hour' premiere?",
+    "options": [
+      "1948",
+      "1949",
+      "1950",
+      "1951"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the first regularly scheduled television drama series?",
+    "options": [
+      "Studio One",
+      "Kraft Television Theatre",
+      "Faraway Hill",
+      "The Guiding Light"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did 'Faraway Hill' premiere?",
+    "options": [
+      "1944",
+      "1945",
+      "1946",
+      "1947"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the first television network evening news program?",
+    "options": [
+      "CBS Evening News",
+      "NBC Nightly News",
+      "ABC World News",
+      "CBS-TV News"
+    ],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did 'CBS-TV News' premiere?",
+    "options": [
+      "1946",
+      "1947",
+      "1948",
+      "1949"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the first television sitcom?",
+    "options": [
+      "I Love Lucy",
+      "The Goldbergs",
+      "Mary Kay and Johnny",
+      "The Honeymooners"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did 'Mary Kay and Johnny' premiere?",
+    "options": [
+      "1946",
+      "1947",
+      "1948",
+      "1949"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the first network television western series?",
+    "options": [
+      "Gunsmoke",
+      "The Lone Ranger",
+      "Hopalong Cassidy",
+      "Bonanza"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did 'Hopalong Cassidy' premiere on TV?",
+    "options": [
+      "1947",
+      "1948",
+      "1949",
+      "1950"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who directed 'The Great Train Robbery' (1903)?",
+    "options": [
+      "D.W. Griffith",
+      "Edwin S. Porter",
+      "Georges Méliès",
+      "Cecil Hepworth"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the first American film with sound?",
+    "options": [
+      "The Jazz Singer",
+      "Lights of New York",
+      "Don Juan",
+      "The Singing Fool"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year was 'Don Juan' released?",
+    "options": [
+      "1924",
+      "1925",
+      "1926",
+      "1927"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the first all-talking feature film?",
+    "options": [
+      "The Jazz Singer",
+      "Lights of New York",
+      "The Singing Fool",
+      "Broadway Melody"
+    ],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year was 'Lights of New York' released?",
+    "options": [
+      "1926",
+      "1927",
+      "1928",
+      "1929"
+    ],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },{
+    "text": "What social media platform has a blue bird as its logo?",
+    "options": ["Facebook", "Instagram", "Twitter", "TikTok"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which superhero is known as the 'Man of Steel'?",
+    "options": ["Batman", "Superman", "Spider-Man", "Iron Man"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What color is Mickey Mouse's shorts?",
+    "options": ["Blue", "Red", "Yellow", "Green"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sings 'Shake It Off'?",
+    "options": ["Katy Perry", "Taylor Swift", "Ariana Grande", "Selena Gomez"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What streaming service has a red 'N' logo?",
+    "options": ["Hulu", "Netflix", "Disney+", "HBO Max"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which Disney princess has long magical hair?",
+    "options": ["Cinderella", "Belle", "Rapunzel", "Ariel"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is Superman's weakness?",
+    "options": ["Water", "Fire", "Kryptonite", "Magic"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which video game features a plumber named Mario?",
+    "options": ["Sonic", "Super Mario Bros", "Pac-Man", "Donkey Kong"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What color is Shrek?",
+    "options": ["Blue", "Green", "Purple", "Yellow"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which boy band sang 'What Makes You Beautiful'?",
+    "options": ["Backstreet Boys", "NSYNC", "One Direction", "BTS"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of Harry Potter's owl?",
+    "options": ["Hedwig", "Scabbers", "Crookshanks", "Fawkes"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which superhero has a shield with a star?",
+    "options": ["Iron Man", "Thor", "Captain America", "Hulk"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the Lion King?",
+    "options": ["Mufasa", "Simba", "Scar", "Timon"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which social media app is known for short dance videos?",
+    "options": ["Instagram", "Snapchat", "TikTok", "YouTube"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is Spider-Man's real name?",
+    "options": ["Bruce Banner", "Tony Stark", "Peter Parker", "Clark Kent"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which animated family lives in Springfield?",
+    "options": ["The Griffins", "The Simpsons", "The Belchers", "The Smiths"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the wizarding school in Harry Potter?",
+    "options": ["Beauxbatons", "Durmstrang", "Hogwarts", "Ilvermorny"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which Disney movie features Elsa and Anna?",
+    "options": ["Tangled", "Moana", "Frozen", "Brave"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What color is the Incredible Hulk?",
+    "options": ["Red", "Blue", "Green", "Purple"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which pop star is known as the 'King of Pop'?",
+    "options": ["Elvis Presley", "Michael Jackson", "Prince", "Madonna"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is Batman's real name?",
+    "options": ["Bruce Wayne", "Clark Kent", "Peter Parker", "Tony Stark"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a talking snowman named Olaf?",
+    "options": ["Frozen", "Toy Story", "Shrek", "Moana"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the fairy in Peter Pan?",
+    "options": ["Flora", "Fauna", "Tinker Bell", "Merryweather"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which superhero team includes Iron Man and Captain America?",
+    "options": ["Justice League", "X-Men", "Avengers", "Guardians"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of Aladdin's monkey?",
+    "options": ["Rajah", "Abu", "Iago", "Jafar"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer had a hit with 'Umbrella'?",
+    "options": ["Beyoncé", "Rihanna", "Lady Gaga", "Katy Perry"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the mermaid in The Little Mermaid?",
+    "options": ["Ariel", "Belle", "Jasmine", "Aurora"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features toys that come to life?",
+    "options": ["Toy Story", "Cars", "Finding Nemo", "Monsters Inc"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of Simba's father?",
+    "options": ["Scar", "Mufasa", "Timon", "Pumbaa"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which platform is used for posting photos and stories?",
+    "options": ["Twitter", "LinkedIn", "Instagram", "Reddit"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the cowboy in Toy Story?",
+    "options": ["Woody", "Buzz", "Rex", "Hamm"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which superhero wears a red and gold suit?",
+    "options": ["Captain America", "Thor", "Iron Man", "Hulk"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What color hair does Ariel have?",
+    "options": ["Blonde", "Brown", "Red", "Black"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a fish named Nemo?",
+    "options": ["The Little Mermaid", "Finding Nemo", "Shark Tale", "Moana"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the space ranger in Toy Story?",
+    "options": ["Woody", "Buzz Lightyear", "Rex", "Slinky"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which princess kisses a frog?",
+    "options": ["Snow White", "Cinderella", "Tiana", "Belle"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of Shrek's donkey friend?",
+    "options": ["Puss", "Donkey", "Dragon", "Fiona"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer is known for the song 'Baby'?",
+    "options": ["Justin Bieber", "Ed Sheeran", "Shawn Mendes", "Harry Styles"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the villain in The Little Mermaid?",
+    "options": ["Maleficent", "Ursula", "Cruella", "Jafar"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a rat who wants to be a chef?",
+    "options": ["Ratatouille", "Stuart Little", "Flushed Away", "The Tale of Despereaux"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is Wonder Woman's weapon?",
+    "options": ["Sword", "Lasso of Truth", "Shield", "Bow"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a video game villain named Ralph?",
+    "options": ["Pixels", "Ready Player One", "Wreck-It Ralph", "Tron"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the villain in Aladdin?",
+    "options": ["Jafar", "Scar", "Gaston", "Hades"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which superhero has claws made of adamantium?",
+    "options": ["Spider-Man", "Wolverine", "Iron Man", "Batman"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the princess in Beauty and the Beast?",
+    "options": ["Aurora", "Belle", "Cinderella", "Jasmine"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features minions?",
+    "options": ["Shrek", "Despicable Me", "Megamind", "Monsters Inc"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the dragon in Mulan?",
+    "options": ["Khan", "Cri-Kee", "Mushu", "Shan Yu"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer performed at the 2020 Super Bowl halftime show?",
+    "options": ["Beyoncé", "Taylor Swift", "Shakira", "Ariana Grande"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What color is Big Bird from Sesame Street?",
+    "options": ["Blue", "Red", "Yellow", "Green"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a genie who grants three wishes?",
+    "options": ["Aladdin", "Shazam", "The Wizard of Oz", "Harry Potter"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the school in High School Musical?",
+    "options": ["West High", "North High", "East High", "South High"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which superhero can climb walls?",
+    "options": ["Superman", "Batman", "Spider-Man", "The Flash"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the snowman in Frozen?",
+    "options": ["Hans", "Kristoff", "Olaf", "Sven"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a blue genie voiced by Will Smith?",
+    "options": ["Aladdin (2019)", "The Mask", "Shazam", "Genie in a Bottle"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of Rapunzel's chameleon?",
+    "options": ["Pascal", "Maximus", "Flynn", "Mother Gothel"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which princess has a raccoon friend named Meeko?",
+    "options": ["Pocahontas", "Mulan", "Moana", "Merida"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the villain in Sleeping Beauty?",
+    "options": ["Ursula", "Maleficent", "Cruella", "Evil Queen"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a clownfish father?",
+    "options": ["Shark Tale", "Finding Nemo", "The Little Mermaid", "Moana"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is Thor's hammer called?",
+    "options": ["Mjolnir", "Stormbreaker", "Gungnir", "Hofund"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a house lifted by balloons?",
+    "options": ["Up", "Wall-E", "Inside Out", "Brave"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of Moana's rooster?",
+    "options": ["Pua", "Hei Hei", "Maui", "Tamatoa"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which superhero is known as the 'Dark Knight'?",
+    "options": ["Superman", "Batman", "Spider-Man", "Iron Man"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What color is the Grinch?",
+    "options": ["Blue", "Green", "Purple", "Yellow"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a panda named Po?",
+    "options": ["Kung Fu Panda", "Madagascar", "Ice Age", "Rio"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of Cinderella's fairy godmother's magic word?",
+    "options": ["Abracadabra", "Bibbidi-Bobbidi-Boo", "Hocus Pocus", "Alakazam"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which princess has seven dwarf friends?",
+    "options": ["Cinderella", "Aurora", "Snow White", "Belle"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the lion in The Chronicles of Narnia?",
+    "options": ["Simba", "Mufasa", "Aslan", "Alex"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features emotions inside a girl's head?",
+    "options": ["Inside Out", "Soul", "Coco", "Turning Red"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of Ariel's fish friend?",
+    "options": ["Sebastian", "Scuttle", "Flounder", "Triton"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which superhero is from the planet Krypton?",
+    "options": ["Batman", "Spider-Man", "Superman", "Wonder Woman"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the Beast's real name in Beauty and the Beast?",
+    "options": ["Adam", "Eric", "Phillip", "Kristoff"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a blue alien who says 'Ohana means family'?",
+    "options": ["Monsters Inc", "Lilo & Stitch", "Toy Story", "Finding Nemo"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of Harry Potter's best friend?",
+    "options": ["Draco", "Neville", "Ron", "Seamus"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a blue hedgehog?",
+    "options": ["Sonic the Hedgehog", "Detective Pikachu", "Pokémon", "Mario Bros"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the teapot in Beauty and the Beast?",
+    "options": ["Cogsworth", "Lumiere", "Mrs. Potts", "Chip"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which princess has a pet tiger named Rajah?",
+    "options": ["Belle", "Jasmine", "Mulan", "Pocahontas"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the robot in Wall-E?",
+    "options": ["EVE", "Wall-E", "Auto", "M-O"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a family of superheroes?",
+    "options": ["Sky High", "The Incredibles", "Big Hero 6", "Megamind"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the cricket in Mulan?",
+    "options": ["Mushu", "Cri-Kee", "Khan", "Little Brother"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which princess sleeps for 100 years?",
+    "options": ["Cinderella", "Aurora", "Snow White", "Belle"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the forgetful fish in Finding Nemo?",
+    "options": ["Dory", "Nemo", "Marlin", "Bruce"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a mammoth, a sloth, and a saber-toothed tiger?",
+    "options": ["Madagascar", "Ice Age", "Rio", "Kung Fu Panda"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the candlestick in Beauty and the Beast?",
+    "options": ["Cogsworth", "Lumiere", "Mrs. Potts", "Gaston"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which superhero has a suit that shrinks?",
+    "options": ["Iron Man", "Ant-Man", "Spider-Man", "Captain America"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the princess in Brave?",
+    "options": ["Moana", "Merida", "Anna", "Elsa"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a singing competition with animals?",
+    "options": ["Sing", "Zootopia", "The Secret Life of Pets", "Ferdinand"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of Kristoff's reindeer in Frozen?",
+    "options": ["Olaf", "Hans", "Sven", "Marshmallow"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which princess lives in New Orleans?",
+    "options": ["Belle", "Tiana", "Jasmine", "Ariel"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the boy who owns Woody and Buzz?",
+    "options": ["Andy", "Sid", "Bonnie", "Rex"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a girl who turns into a red panda?",
+    "options": ["Brave", "Moana", "Turning Red", "Encanto"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the demigod in Moana?",
+    "options": ["Maui", "Tamatoa", "Hei Hei", "Pua"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which superhero wears a suit with a lightning bolt?",
+    "options": ["Thor", "The Flash", "Static Shock", "Black Lightning"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the villain in 101 Dalmatians?",
+    "options": ["Maleficent", "Ursula", "Cruella de Vil", "Evil Queen"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a family with magical gifts?",
+    "options": ["Coco", "Encanto", "Moana", "Frozen"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is the name of the kingdom in Frozen?",
+    "options": ["Corona", "Arendelle", "DunBroch", "Agrabah"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which movie features a city of talking animals?",
+    "options": ["Zootopia", "Madagascar", "Sing", "The Secret Life of Pets"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Rookie"
+  }, {
+    "text": "What year did the first iPhone launch?",
+    "options": ["2005", "2007", "2009", "2011"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who voices Woody in the Toy Story films?",
+    "options": ["Tom Cruise", "Tom Hanks", "Brad Pitt", "George Clooney"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of Beyoncé's fanbase?",
+    "options": ["Beyhive", "Bey Army", "Queen Bees", "Beyoncé Nation"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which band sang 'Bohemian Rhapsody'?",
+    "options": ["The Beatles", "Led Zeppelin", "Queen", "Pink Floyd"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the kingdom where Frozen takes place?",
+    "options": ["Arendelle", "Corona", "Agrabah", "DunBroch"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who played Jack in Titanic?",
+    "options": ["Brad Pitt", "Leonardo DiCaprio", "Matt Damon", "Johnny Depp"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Lady Gaga's real first name?",
+    "options": ["Stephanie", "Stefani", "Sofia", "Samantha"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which Avenger is a Norse god?",
+    "options": ["Hulk", "Thor", "Iron Man", "Captain America"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year was Facebook founded?",
+    "options": ["2002", "2004", "2006", "2008"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who sang 'Hotline Bling'?",
+    "options": ["The Weeknd", "Drake", "Post Malone", "Travis Scott"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the school in Hogwarts' rival French school?",
+    "options": ["Ilvermorny", "Beauxbatons", "Durmstrang", "Castelobruxo"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which Disney movie was the first full-length animated feature?",
+    "options": ["Pinocchio", "Fantasia", "Snow White", "Bambi"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is the creator of Star Wars?",
+    "options": ["Steven Spielberg", "George Lucas", "James Cameron", "Ridley Scott"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Batman's butler's name?",
+    "options": ["James", "Alfred", "Sebastian", "Jeeves"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which social media platform was bought by Elon Musk?",
+    "options": ["Facebook", "Instagram", "Twitter", "TikTok"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the possessed doll in The Conjuring universe?",
+    "options": ["Chucky", "Annabelle", "Billy", "Tiffany"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who sang 'Rolling in the Deep'?",
+    "options": ["Amy Winehouse", "Adele", "Sam Smith", "Sia"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What planet is Superman from?",
+    "options": ["Mars", "Krypton", "Asgard", "Tatooine"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which streaming service is 'The Mandalorian' on?",
+    "options": ["Netflix", "Hulu", "Disney+", "HBO Max"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who played Eleven in Stranger Things?",
+    "options": ["Sadie Sink", "Millie Bobby Brown", "Natalia Dyer", "Maya Hawke"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the highest-grossing animated movie of all time?",
+    "options": ["Toy Story 4", "The Lion King (2019)", "Frozen II", "Incredibles 2"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who voices Buzz Lightyear in Toy Story?",
+    "options": ["Tim Allen", "Tom Hanks", "Billy Crystal", "Steve Buscemi"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of Thor's home planet?",
+    "options": ["Earth", "Asgard", "Krypton", "Sakaar"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which artist has the most Grammy wins of all time?",
+    "options": ["Michael Jackson", "Beyoncé", "Taylor Swift", "Quincy Jones"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of Han Solo's ship in Star Wars?",
+    "options": ["X-Wing", "TIE Fighter", "Millennium Falcon", "Star Destroyer"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who played Hermione in the Harry Potter films?",
+    "options": ["Emma Stone", "Emma Roberts", "Emma Watson", "Emily Blunt"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did YouTube launch?",
+    "options": ["2003", "2005", "2007", "2009"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which rapper's real name is Marshall Mathers?",
+    "options": ["Drake", "Eminem", "50 Cent", "Snoop Dogg"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the coffee shop in Friends?",
+    "options": ["Central Perk", "Java Joe's", "The Coffee House", "Café Americano"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who directed Jurassic Park?",
+    "options": ["James Cameron", "Steven Spielberg", "George Lucas", "Ridley Scott"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Rihanna's home country?",
+    "options": ["Jamaica", "Trinidad", "Barbados", "Haiti"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which Marvel movie was the first to earn $1 billion?",
+    "options": ["Iron Man", "The Avengers", "Black Panther", "Spider-Man"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the wizarding bank in Harry Potter?",
+    "options": ["Gringotts", "Flourish & Blotts", "Ollivanders", "The Leaky Cauldron"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who sang 'Thriller'?",
+    "options": ["Prince", "Michael Jackson", "Stevie Wonder", "James Brown"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the nation Black Panther rules?",
+    "options": ["Wakanda", "Zamunda", "Genosha", "Latveria"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which Disney princess has a tattoo?",
+    "options": ["Moana", "Pocahontas", "Mulan", "Merida"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who played Edward in Twilight?",
+    "options": ["Taylor Lautner", "Robert Pattinson", "Kellan Lutz", "Jackson Rathbone"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the alternate dimension in Stranger Things?",
+    "options": ["The Shadow Realm", "The Upside Down", "The Other Side", "The Dark World"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which Kardashian sister is the oldest?",
+    "options": ["Kim", "Kourtney", "Khloé", "Kendall"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of Iron Man's AI assistant?",
+    "options": ["JARVIS", "FRIDAY", "EDITH", "KAREN"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who sang 'Bad Romance'?",
+    "options": ["Katy Perry", "Lady Gaga", "Madonna", "Pink"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Minecraft officially release?",
+    "options": ["2009", "2011", "2013", "2015"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor plays Deadpool?",
+    "options": ["Chris Pratt", "Ryan Reynolds", "Ryan Gosling", "Jake Gyllenhaal"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the fictional African country in Coming to America?",
+    "options": ["Wakanda", "Zamunda", "Genovia", "Elbonia"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who directed The Dark Knight trilogy?",
+    "options": ["Zack Snyder", "Christopher Nolan", "Tim Burton", "Sam Raimi"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Ariana Grande's signature hairstyle?",
+    "options": ["Bob cut", "High ponytail", "Braids", "Curls"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which Marvel character is known as the 'Merc with a Mouth'?",
+    "options": ["Spider-Man", "Deadpool", "Ant-Man", "Star-Lord"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the sequel to Finding Nemo?",
+    "options": ["Finding Marlin", "Finding Dory", "Finding Nemo 2", "Lost and Found"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who played Captain Jack Sparrow?",
+    "options": ["Orlando Bloom", "Johnny Depp", "Geoffrey Rush", "Javier Bardem"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the clown in Stephen King's It?",
+    "options": ["Bozo", "Pennywise", "Krusty", "Ronald"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which band sang 'Wonderwall'?",
+    "options": ["Blur", "Oasis", "Radiohead", "The Verve"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the dog in The Nightmare Before Christmas?",
+    "options": ["Zero", "Scratch", "Boo", "Max"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who played Katniss Everdeen in The Hunger Games?",
+    "options": ["Emma Stone", "Jennifer Lawrence", "Shailene Woodley", "Emma Watson"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did the original Star Wars movie release?",
+    "options": ["1975", "1977", "1979", "1980"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which song did Luis Fonsi and Daddy Yankee make famous in 2017?",
+    "options": ["Bailando", "Despacito", "Dura", "Mi Gente"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of Shrek's wife?",
+    "options": ["Princess Fiona", "Princess Peach", "Princess Zelda", "Princess Tiana"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who voices Elsa in Frozen?",
+    "options": ["Kristen Bell", "Idina Menzel", "Mandy Moore", "Anika Noni Rose"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Instagram launch?",
+    "options": ["2008", "2010", "2012", "2014"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which Pixar movie features a rat chef?",
+    "options": ["Ratatouille", "The Incredibles", "Up", "Inside Out"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the evil corporation in Resident Evil?",
+    "options": ["Weyland-Yutani", "Tyrell Corporation", "Umbrella Corporation", "Cyberdyne"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who sang 'Single Ladies'?",
+    "options": ["Rihanna", "Beyoncé", "Ciara", "Alicia Keys"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the kingdom in Tangled?",
+    "options": ["Arendelle", "Corona", "DunBroch", "Agrabah"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actress plays Wonder Woman?",
+    "options": ["Margot Robbie", "Scarlett Johansson", "Gal Gadot", "Brie Larson"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the evil lion in The Lion King?",
+    "options": ["Mufasa", "Scar", "Simba", "Kovu"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who sang 'Firework'?",
+    "options": ["Taylor Swift", "Katy Perry", "Miley Cyrus", "Selena Gomez"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the school bus in The Magic School Bus?",
+    "options": ["Ms. Frizzle", "The Magic Bus", "Liz", "No specific name"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which Marvel superhero is blind?",
+    "options": ["Hawkeye", "Daredevil", "Nick Fury", "Doctor Strange"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did TikTok launch internationally?",
+    "options": ["2016", "2017", "2018", "2019"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who played Forrest Gump?",
+    "options": ["Tom Cruise", "Tom Hanks", "Brad Pitt", "Matt Damon"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of Elsa's sister in Frozen?",
+    "options": ["Emma", "Anna", "Alice", "Amy"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which video game franchise features Master Chief?",
+    "options": ["Call of Duty", "Halo", "Gears of War", "Destiny"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who sang 'Uptown Funk'?",
+    "options": ["Bruno Mars", "Pharrell", "Justin Timberlake", "The Weeknd"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the kingdom in The Little Mermaid?",
+    "options": ["Atlantica", "Atlantis", "Oceania", "Aquatica"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor plays Thor?",
+    "options": ["Chris Pratt", "Chris Pine", "Chris Evans", "Chris Hemsworth"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the main character in The Matrix?",
+    "options": ["Trinity", "Morpheus", "Neo", "Agent Smith"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who sang 'Hello' in 2015?",
+    "options": ["Sam Smith", "Adele", "Ed Sheeran", "John Legend"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the wizarding newspaper in Harry Potter?",
+    "options": ["The Daily Prophet", "The Quibbler", "Witch Weekly", "The Evening Prophet"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which Disney movie features 'Be Our Guest'?",
+    "options": ["Aladdin", "Beauty and the Beast", "The Little Mermaid", "Tangled"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Voldemort's real name?",
+    "options": ["Tom Riddle", "James Potter", "Severus Snape", "Sirius Black"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who played Black Widow in the MCU?",
+    "options": ["Scarlett Johansson", "Emily Blunt", "Charlize Theron", "Jessica Chastain"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Breaking Bad end?",
+    "options": ["2011", "2012", "2013", "2014"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which singer's real name is Stefani Germanotta?",
+    "options": ["Madonna", "Pink", "Lady Gaga", "Kesha"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the horse in Tangled?",
+    "options": ["Maximus", "Philippe", "Khan", "Samson"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who directed Avatar?",
+    "options": ["Steven Spielberg", "James Cameron", "Peter Jackson", "George Lucas"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the island in Jurassic Park?",
+    "options": ["Isla Sorna", "Isla Nublar", "Skull Island", "Paradise Island"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which band sang 'Livin' on a Prayer'?",
+    "options": ["Bon Jovi", "Journey", "Def Leppard", "Guns N' Roses"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the pig in Moana?",
+    "options": ["Pumbaa", "Pua", "Porky", "Wilbur"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who played Han Solo in Star Wars?",
+    "options": ["Mark Hamill", "Harrison Ford", "Alec Guinness", "Billy Dee Williams"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Spotify launch?",
+    "options": ["2006", "2008", "2010", "2012"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which movie won Best Picture at the 2020 Oscars?",
+    "options": ["1917", "Joker", "Parasite", "Once Upon a Time in Hollywood"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the villain in The Incredibles?",
+    "options": ["Syndrome", "Underminer", "Bomb Voyage", "Screen Slaver"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who sang 'Poker Face'?",
+    "options": ["Britney Spears", "Christina Aguilera", "Lady Gaga", "Kesha"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the fictional metal in Black Panther?",
+    "options": ["Adamantium", "Vibranium", "Unobtanium", "Mithril"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which Disney princess has a chameleon sidekick?",
+    "options": ["Moana", "Rapunzel", "Tiana", "Merida"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Game of Thrones premiere?",
+    "options": ["2009", "2010", "2011", "2012"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who played Wolverine in the X-Men films?",
+    "options": ["Hugh Jackman", "Russell Crowe", "Christian Bale", "Gerard Butler"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is the name of the space station in Star Wars?",
+    "options": ["Star Forge", "Death Star", "Star Killer", "Cloud City"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Amateur"
+  },{
+    "text": "What was the first video ever uploaded to YouTube?",
+    "options": ["Charlie Bit My Finger", "Me at the zoo", "Evolution of Dance", "Chocolate Rain"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which K-pop group has the most YouTube subscribers?",
+    "options": ["BTS", "BLACKPINK", "TWICE", "EXO"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Vine shut down?",
+    "options": ["2015", "2016", "2017", "2018"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who composed the score for Inception?",
+    "options": ["John Williams", "Hans Zimmer", "Howard Shore", "Alexandre Desplat"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Dwayne Johnson's wrestler name?",
+    "options": ["The Rock", "Stone Cold", "The Boulder", "Rocky Maivia"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which Avengers movie had the highest opening weekend box office?",
+    "options": ["The Avengers", "Age of Ultron", "Infinity War", "Endgame"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the real name of The Weeknd?",
+    "options": ["Abel Tesfaye", "Abel Makkonen", "Abel Thomas", "Abel Morrison"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which Disney park opened first?",
+    "options": ["Disney World", "Disneyland", "Tokyo Disney", "Disneyland Paris"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year was the first iPod released?",
+    "options": ["1999", "2001", "2003", "2005"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was the first winner of American Idol?",
+    "options": ["Carrie Underwood", "Kelly Clarkson", "Ruben Studdard", "Fantasia Barrino"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the highest-grossing R-rated movie of all time?",
+    "options": ["Deadpool", "Joker", "The Matrix", "Logan"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which Beatles album features 'Lucy in the Sky with Diamonds'?",
+    "options": ["Abbey Road", "The White Album", "Sgt. Pepper's Lonely Hearts Club Band", "Revolver"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was Twitter's original character limit?",
+    "options": ["120", "140", "160", "180"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who voices Maui in Moana?",
+    "options": ["Dwayne Johnson", "Vin Diesel", "Jason Momoa", "Dave Bautista"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did the first Harry Potter book publish in the US?",
+    "options": ["1997", "1998", "1999", "2000"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which Marvel movie introduced Spider-Man to the MCU?",
+    "options": ["Spider-Man: Homecoming", "Captain America: Civil War", "Avengers: Age of Ultron", "Spider-Man: Far From Home"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first Pixar movie?",
+    "options": ["A Bug's Life", "Toy Story", "Finding Nemo", "Monsters Inc"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which song spent the most weeks at #1 on the Billboard Hot 100?",
+    "options": ["Old Town Road", "One Sweet Day", "Despacito", "Uptown Funk"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Friends end?",
+    "options": ["2002", "2003", "2004", "2005"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was the first Disney princess to have a duet with a villain?",
+    "options": ["Ariel", "Belle", "Jasmine", "Anna"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Post Malone's real first name?",
+    "options": ["Austin", "Andrew", "Aaron", "Adam"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which movie won the first ever Oscar for Best Animated Feature?",
+    "options": ["Toy Story", "Shrek", "Monsters Inc", "Finding Nemo"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Snapchat launch?",
+    "options": ["2009", "2011", "2013", "2015"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who played the Genie in the 1992 Aladdin?",
+    "options": ["Eddie Murphy", "Robin Williams", "Jim Carrey", "Steve Martin"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first Marvel Cinematic Universe film?",
+    "options": ["The Incredible Hulk", "Iron Man", "Captain America", "Thor"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which artist has won Album of the Year at the Grammys four times?",
+    "options": ["Beyoncé", "Taylor Swift", "Adele", "Frank Sinatra"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was Netflix's first original series?",
+    "options": ["Orange is the New Black", "House of Cards", "Stranger Things", "Narcos"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which Disney movie was the first to be nominated for Best Picture?",
+    "options": ["Beauty and the Beast", "The Lion King", "Toy Story", "Up"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did the original Nintendo Entertainment System release in North America?",
+    "options": ["1983", "1985", "1987", "1989"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who voices Joy in Inside Out?",
+    "options": ["Amy Poehler", "Tina Fey", "Kristen Wiig", "Maya Rudolph"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first song to be performed in outer space?",
+    "options": ["Imagine", "Happy Birthday", "Space Oddity", "Fly Me to the Moon"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which horror franchise has the most sequels?",
+    "options": ["Friday the 13th", "Halloween", "A Nightmare on Elm Street", "Child's Play"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did MTV launch?",
+    "options": ["1979", "1981", "1983", "1985"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who directed Get Out?",
+    "options": ["Spike Lee", "Jordan Peele", "Ava DuVernay", "Ryan Coogler"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first music video to air on MTV?",
+    "options": ["Thriller", "Video Killed the Radio Star", "Take On Me", "Money for Nothing"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which Marvel character did Stan Lee NOT co-create?",
+    "options": ["Spider-Man", "Iron Man", "Wonder Woman", "Black Panther"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did the original Pokemon games release in Japan?",
+    "options": ["1994", "1996", "1998", "2000"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who composed the music for The Lion King?",
+    "options": ["Alan Menken", "Hans Zimmer", "John Williams", "Howard Shore"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first feature-length computer-animated movie?",
+    "options": ["A Bug's Life", "Toy Story", "Shrek", "Antz"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which band's concert film was titled 'Stop Making Sense'?",
+    "options": ["R.E.M.", "The Clash", "Talking Heads", "The Smiths"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did The Simpsons first air?",
+    "options": ["1987", "1989", "1991", "1993"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was the youngest person to host Saturday Night Live?",
+    "options": ["Drew Barrymore", "Macaulay Culkin", "Jodie Foster", "Mary-Kate and Ashley Olsen"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which Pixar movie features the song 'Remember Me'?",
+    "options": ["Up", "Inside Out", "Coco", "Soul"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did the first Toy Story movie release?",
+    "options": ["1993", "1995", "1997", "1999"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who voices Groot in the Guardians of the Galaxy films?",
+    "options": ["Chris Pratt", "Dave Bautista", "Vin Diesel", "Bradley Cooper"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first non-English language film to win Best Picture?",
+    "options": ["Life is Beautiful", "Crouching Tiger Hidden Dragon", "Parasite", "Amélie"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which Disney villain never appears on screen?",
+    "options": ["The Horned King", "Man", "Mor'du", "The Headless Horseman"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Fortnite Battle Royale release?",
+    "options": ["2015", "2016", "2017", "2018"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who directed The Grand Budapest Hotel?",
+    "options": ["Wes Anderson", "Christopher Nolan", "Quentin Tarantino", "Paul Thomas Anderson"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first song to reach 1 billion streams on Spotify?",
+    "options": ["Shape of You", "Closer", "One Dance", "Rockstar"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which Marvel movie was the first to feature a post-credits scene?",
+    "options": ["Iron Man", "The Incredible Hulk", "Thor", "Captain America"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Twitch launch?",
+    "options": ["2009", "2011", "2013", "2015"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who voices Rocket Raccoon in Guardians of the Galaxy?",
+    "options": ["Bradley Cooper", "Vin Diesel", "Chris Pratt", "Dave Bautista"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first Disney Channel Original Movie?",
+    "options": ["High School Musical", "The Cheetah Girls", "Under Wraps", "Zenon: Girl of the 21st Century"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which artist has the most streams on Spotify as of 2023?",
+    "options": ["Drake", "Bad Bunny", "Taylor Swift", "The Weeknd"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did The Office (US) premiere?",
+    "options": ["2003", "2005", "2007", "2009"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who directed Blade Runner 2049?",
+    "options": ["Ridley Scott", "Denis Villeneuve", "Christopher Nolan", "Alex Garland"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is the longest-running American animated TV series?",
+    "options": ["The Simpsons", "South Park", "Family Guy", "SpongeBob SquarePants"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which Disney park opened second?",
+    "options": ["Epcot", "Magic Kingdom", "Tokyo Disneyland", "Disneyland Paris"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did the PlayStation 2 release?",
+    "options": ["1998", "2000", "2002", "2004"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who voices Edna Mode in The Incredibles?",
+    "options": ["Holly Hunter", "Sarah Vowell", "Brad Bird", "Samuel L. Jackson"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first movie in the Marvel Cinematic Universe to gross $1 billion?",
+    "options": ["Iron Man 3", "The Avengers", "Captain America: Civil War", "Thor: Ragnarok"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which rapper has the most Grammy nominations without a win?",
+    "options": ["Snoop Dogg", "Nas", "Busta Rhymes", "Nicki Minaj"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Roblox officially release?",
+    "options": ["2004", "2006", "2008", "2010"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who directed Moonlight?",
+    "options": ["Steve McQueen", "Barry Jenkins", "Ava DuVernay", "Ryan Coogler"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first movie to gross $2 billion worldwide?",
+    "options": ["Titanic", "Avatar", "Avengers: Endgame", "Star Wars: The Force Awakens"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which Beatles album was released first?",
+    "options": ["Please Please Me", "With the Beatles", "A Hard Day's Night", "Help!"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Discord launch?",
+    "options": ["2013", "2015", "2017", "2019"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who composed the theme for Game of Thrones?",
+    "options": ["Hans Zimmer", "Ramin Djawadi", "Howard Shore", "John Williams"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was Disney's first R-rated film release?",
+    "options": ["Who Framed Roger Rabbit", "Down and Out in Beverly Hills", "The Color of Money", "Good Morning, Vietnam"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which artist broke the record for most albums sold in one week?",
+    "options": ["Adele", "Taylor Swift", "Beyoncé", "NSYNC"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did World of Warcraft launch?",
+    "options": ["2002", "2004", "2006", "2008"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who directed La La Land?",
+    "options": ["Damien Chazelle", "Denis Villeneuve", "Wes Anderson", "Christopher Nolan"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first Nintendo console to use optical discs?",
+    "options": ["Nintendo 64", "GameCube", "Wii", "Wii U"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which Disney princess is left-handed?",
+    "options": ["Ariel", "Mulan", "Tiana", "Merida"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did League of Legends release?",
+    "options": ["2007", "2009", "2011", "2013"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who voices Scar in the original Lion King?",
+    "options": ["James Earl Jones", "Jeremy Irons", "Jim Cummings", "Nathan Lane"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first Xbox console to include a hard drive?",
+    "options": ["Original Xbox", "Xbox 360", "Xbox One", "Xbox Series X"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which Marvel movie has the shortest runtime?",
+    "options": ["Thor: The Dark World", "The Incredible Hulk", "Ant-Man", "Captain Marvel"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Reddit launch?",
+    "options": ["2003", "2005", "2007", "2009"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who directed Whiplash?",
+    "options": ["Damien Chazelle", "Denis Villeneuve", "Paul Thomas Anderson", "David Fincher"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first video game to feature a playable female character?",
+    "options": ["Metroid", "Ms. Pac-Man", "Tomb Raider", "Street Fighter"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which Disney movie features the most songs?",
+    "options": ["Frozen", "The Lion King", "Beauty and the Beast", "Alice in Wonderland"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Among Us release?",
+    "options": ["2016", "2017", "2018", "2019"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who voices Mufasa in the original Lion King?",
+    "options": ["James Earl Jones", "Morgan Freeman", "Samuel L. Jackson", "Laurence Fishburne"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first animated film to be nominated for Best Picture at the Oscars?",
+    "options": ["Toy Story", "Beauty and the Beast", "The Lion King", "Shrek"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which streaming service did Quibi compete against before shutting down?",
+    "options": ["All of them", "TikTok", "YouTube", "Netflix"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did the Xbox 360 release?",
+    "options": ["2003", "2005", "2007", "2009"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who directed Birdman?",
+    "options": ["Alfonso Cuarón", "Alejandro González Iñárritu", "Guillermo del Toro", "Denis Villeneuve"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first movie to use CGI?",
+    "options": ["Tron", "Star Wars", "Westworld", "The Matrix"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which Disney movie was the first to cost over $100 million to produce?",
+    "options": ["The Lion King", "Beauty and the Beast", "Pocahontas", "Aladdin"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Counter-Strike: Global Offensive release?",
+    "options": ["2010", "2012", "2014", "2016"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who directed There Will Be Blood?",
+    "options": ["Martin Scorsese", "Paul Thomas Anderson", "David Fincher", "Quentin Tarantino"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What was the first movie to gross $1 billion worldwide?",
+    "options": ["Jurassic Park", "Titanic", "Star Wars", "Avatar"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Pro"
+  },{
+    "text": "What was the original name of Twitter before it officially launched?",
+    "options": ["twttr", "Chirp", "Flutter", "Status"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which Pixar film was the first to win the Academy Award for Best Animated Feature?",
+    "options": ["Toy Story 2", "Monsters Inc", "Finding Nemo", "Up"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first video game to include an Easter egg?",
+    "options": ["Pong", "Space Invaders", "Adventure", "Pac-Man"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first actor to play James Bond?",
+    "options": ["Sean Connery", "Barry Nelson", "Roger Moore", "David Niven"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did the Walkman first release?",
+    "options": ["1977", "1979", "1981", "1983"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which Disney film was the first to use xerography in animation?",
+    "options": ["Sleeping Beauty", "101 Dalmatians", "The Jungle Book", "The Aristocats"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was Madonna's first top 10 hit?",
+    "options": ["Holiday", "Borderline", "Lucky Star", "Like a Virgin"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who directed the music video for Michael Jackson's 'Thriller'?",
+    "options": ["Martin Scorsese", "John Landis", "Spike Lee", "Francis Ford Coppola"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first movie to be released on VHS?",
+    "options": ["Star Wars", "Jaws", "The Godfather", "The Sound of Music"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which video game console sold the most units of all time?",
+    "options": ["PlayStation 2", "Nintendo DS", "Game Boy", "PlayStation 4"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first film to use Dolby Stereo?",
+    "options": ["Star Wars", "A Clockwork Orange", "The Godfather", "Jaws"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first person to have 100 million followers on Instagram?",
+    "options": ["Cristiano Ronaldo", "Selena Gomez", "Ariana Grande", "Kylie Jenner"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first CGI character to receive an Academy Award nomination?",
+    "options": ["Gollum", "The Terminator", "Jar Jar Binks", "The T-Rex from Jurassic Park"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which Beatles song was the first to use backwards recording?",
+    "options": ["Strawberry Fields Forever", "Tomorrow Never Knows", "Revolution 9", "I Am the Walrus"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Pac-Man first release in arcades?",
+    "options": ["1978", "1980", "1982", "1984"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who composed the score for Blade Runner?",
+    "options": ["Vangelis", "Hans Zimmer", "John Carpenter", "Giorgio Moroder"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first movie to gross over $100 million?",
+    "options": ["Gone with the Wind", "Star Wars", "Jaws", "The Godfather"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which artist has the most Billboard Hot 100 entries of all time?",
+    "options": ["Drake", "Taylor Swift", "Lil Wayne", "Elvis Presley"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first cartoon to air on Nickelodeon?",
+    "options": ["Doug", "Rugrats", "The Ren & Stimpy Show", "Hey Arnold!"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first woman to be inducted into the Rock and Roll Hall of Fame?",
+    "options": ["Tina Turner", "Diana Ross", "Aretha Franklin", "Janis Joplin"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first Disney movie to be rated PG?",
+    "options": ["The Black Cauldron", "Something Wicked This Way Comes", "Dragonslayer", "Return to Oz"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which game was Sonic the Hedgehog created to compete with?",
+    "options": ["Super Mario Bros", "Mega Man", "Crash Bandicoot", "Donkey Kong"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first music video to air on MTV2?",
+    "options": ["The Prodigy - Breathe", "Fatboy Slim - Praise You", "The Chemical Brothers - Block Rockin' Beats", "Daft Punk - Around the World"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who directed the first episode of Game of Thrones?",
+    "options": ["David Benioff", "D.B. Weiss", "Tim Van Patten", "Alan Taylor"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first video game to feature a soundtrack album release?",
+    "options": ["Final Fantasy VII", "The Legend of Zelda", "Dragon Quest", "Street Fighter II"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which Disney film was the last to be approved by Walt Disney before his death?",
+    "options": ["The Jungle Book", "The Aristocats", "Robin Hood", "Winnie the Pooh"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first Saturday Night Live musical guest?",
+    "options": ["The Rolling Stones", "Billy Preston", "Janis Ian", "Paul Simon"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first fictional character to receive a star on the Hollywood Walk of Fame?",
+    "options": ["Mickey Mouse", "Big Bird", "Bugs Bunny", "Kermit the Frog"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the original title of Star Wars: A New Hope?",
+    "options": ["Adventures of Luke Starkiller", "The Star Wars", "Journey to the Stars", "A Galaxy Far Away"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which console was the first to have a built-in modem?",
+    "options": ["Dreamcast", "PlayStation 2", "Xbox", "Nintendo 64"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did the Game Boy Color release?",
+    "options": ["1996", "1998", "2000", "2002"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first guest on The Tonight Show with Jay Leno?",
+    "options": ["Billy Crystal", "Jerry Seinfeld", "Robin Williams", "Tom Cruise"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first movie to use motion capture technology?",
+    "options": ["The Polar Express", "The Lord of the Rings", "Avatar", "Beowulf"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which band's album was the first to be released on CD?",
+    "options": ["The Beatles", "Pink Floyd", "ABBA", "Michael Jackson"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first PlayStation game to sell over 1 million copies?",
+    "options": ["Final Fantasy VII", "Crash Bandicoot", "Tekken", "Gran Turismo"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the youngest person to win an Oscar?",
+    "options": ["Shirley Temple", "Tatum O'Neal", "Anna Paquin", "Patty Duke"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first anime to air on American television?",
+    "options": ["Speed Racer", "Astro Boy", "Gigantor", "Kimba the White Lion"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which movie has the longest theatrical run in history?",
+    "options": ["The Sound of Music", "Gone with the Wind", "Star Wars", "The Rocky Horror Picture Show"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first video game to be played in space?",
+    "options": ["Tetris", "Game Boy version of Tetris", "Space Invaders", "Pac-Man"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first host of Jeopardy!?",
+    "options": ["Alex Trebek", "Art Fleming", "Pat Sajak", "Bob Barker"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first TV show to show a toilet flushing?",
+    "options": ["All in the Family", "The Honeymooners", "I Love Lucy", "Leave It to Beaver"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which Disney film was the first to be completely hand-drawn digitally?",
+    "options": ["The Little Mermaid", "Beauty and the Beast", "The Rescuers Down Under", "Aladdin"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first song released by The Beatles in America?",
+    "options": ["Love Me Do", "Please Please Me", "I Want to Hold Your Hand", "She Loves You"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first African American to host Saturday Night Live?",
+    "options": ["Richard Pryor", "Eddie Murphy", "Bill Cosby", "Flip Wilson"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first movie to use a Steadicam?",
+    "options": ["The Shining", "Rocky", "Halloween", "Marathon Man"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which video game character was originally called Jumpman?",
+    "options": ["Sonic", "Mario", "Luigi", "Donkey Kong"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first animated film to be nominated for Best Picture at the Oscars after the Animated Feature category was created?",
+    "options": ["Finding Nemo", "WALL-E", "Up", "Toy Story 3"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first musician to perform at the Super Bowl halftime show?",
+    "options": ["Carol Channing", "Al Hirt", "Ella Fitzgerald", "Judy Garland"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did the Sega Genesis release in North America?",
+    "options": ["1987", "1989", "1991", "1993"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which film was the first to gross over $500 million worldwide?",
+    "options": ["Star Wars", "E.T.", "Jaws", "Jurassic Park"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first Disney movie to receive a PG-13 rating?",
+    "options": ["Pirates of the Caribbean", "The Sixth Sense", "Signs", "Unbreakable"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first person to win an Emmy, Grammy, Oscar, and Tony award?",
+    "options": ["Audrey Hepburn", "Richard Rodgers", "Helen Hayes", "Rita Moreno"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first video game to include a save feature?",
+    "options": ["The Legend of Zelda", "Final Fantasy", "Dragon Quest", "Metroid"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which Disney park attraction was the first to use Audio-Animatronics?",
+    "options": ["It's a Small World", "Pirates of the Caribbean", "Enchanted Tiki Room", "Haunted Mansion"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first music video to win a Grammy?",
+    "options": ["Thriller", "Money for Nothing", "Sledgehammer", "Vogue"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first director to win an Oscar for a horror film?",
+    "options": ["William Friedkin", "Roman Polanski", "Jonathan Demme", "James Wan"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first video game to feature a named playable female character?",
+    "options": ["Ms. Pac-Man", "Metroid", "Tomb Raider", "Street Fighter"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which Beatles album was the first to not include their name on the cover?",
+    "options": ["Revolver", "Rubber Soul", "Sgt. Pepper's", "Abbey Road"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did the PlayStation Portable (PSP) release?",
+    "options": ["2003", "2004", "2005", "2006"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first woman to headline Coachella?",
+    "options": ["Beyoncé", "Lady Gaga", "Björk", "Billie Eilish"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first Marvel comic book?",
+    "options": ["The Fantastic Four", "The Amazing Spider-Man", "Marvel Comics #1", "The Avengers"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which film was the first to use green screen technology?",
+    "options": ["The Wizard of Oz", "King Kong (1933)", "The Thief of Bagdad", "Metropolis"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first song to be certified diamond by the RIAA?",
+    "options": ["Candle in the Wind 1997", "White Christmas", "We Are the World", "Rock Around the Clock"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first person to win an Oscar for a streaming service film?",
+    "options": ["Mahershala Ali", "Allison Janney", "Gary Oldman", "Frances McDormand"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first Nintendo game to use the Rumble Pak?",
+    "options": ["Star Fox 64", "GoldenEye 007", "The Legend of Zelda: Ocarina of Time", "Super Mario 64"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which TV show was the first to use the word 'pregnant'?",
+    "options": ["I Love Lucy", "The Dick Van Dyke Show", "Leave It to Beaver", "Father Knows Best"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first movie to win the 'Big Five' Oscars?",
+    "options": ["One Flew Over the Cuckoo's Nest", "It Happened One Night", "The Silence of the Lambs", "Midnight Cowboy"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first person to have a #1 album and #1 movie simultaneously?",
+    "options": ["Elvis Presley", "Frank Sinatra", "Madonna", "Whitney Houston"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did the Nintendo 64 release in North America?",
+    "options": ["1994", "1996", "1998", "2000"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which Disney film was the first to have a complete digital color correction?",
+    "options": ["Toy Story", "Pocahontas", "Mulan", "Tarzan"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first film to gross over $200 million in a single weekend?",
+    "options": ["The Avengers", "Avengers: Infinity War", "Avengers: Endgame", "Star Wars: The Force Awakens"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first person to say 'Live from New York, it's Saturday Night!'?",
+    "options": ["Chevy Chase", "John Belushi", "Dan Aykroyd", "Gilda Radner"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first video game to include an end credits sequence?",
+    "options": ["Pac-Man", "Donkey Kong", "Super Mario Bros", "The Legend of Zelda"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which artist has the most diamond-certified songs in RIAA history?",
+    "options": ["Drake", "Bruno Mars", "Katy Perry", "Rihanna"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first animated feature film to be nominated for Best Picture?",
+    "options": ["Snow White and the Seven Dwarfs", "Fantasia", "Pinocchio", "Bambi"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first woman to win the MTV Video Vanguard Award?",
+    "options": ["Madonna", "Bette Midler", "Cyndi Lauper", "Tina Turner"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did the original Xbox release?",
+    "options": ["1999", "2001", "2003", "2005"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which film was the first to be digitally projected in theaters?",
+    "options": ["Toy Story", "Star Wars: Episode I", "The Matrix", "Toy Story 2"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first music video to be banned by MTV?",
+    "options": ["Girls on Film", "Relax", "I Want Your Sex", "Like a Prayer"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first person to win an Oscar for a foreign language performance?",
+    "options": ["Sophia Loren", "Roberto Benigni", "Marion Cotillard", "Javier Bardem"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first video game to feature branching storylines?",
+    "options": ["The Secret of Monkey Island", "Chrono Trigger", "Final Fantasy VI", "Dragon Quest V"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which Beatles song was the first to use electronic feedback?",
+    "options": ["I Feel Fine", "Revolution", "Helter Skelter", "Tomorrow Never Knows"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did the Game Boy Advance release?",
+    "options": ["1999", "2001", "2003", "2005"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first animated character to receive an Academy Award?",
+    "options": ["Mickey Mouse", "Donald Duck", "Bugs Bunny", "Tom and Jerry"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first film to use surround sound?",
+    "options": ["Apocalypse Now", "Star Wars", "Close Encounters of the Third Kind", "Superman"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which TV show was the first to show a married couple in bed together?",
+    "options": ["I Love Lucy", "The Flintstones", "Mary Kay and Johnny", "The Dick Van Dyke Show"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first Disney movie to have a sequel?",
+    "options": ["The Lion King", "Aladdin", "The Rescuers", "Fantasia"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first person to appear on the cover of Rolling Stone magazine?",
+    "options": ["Bob Dylan", "John Lennon", "Mick Jagger", "Jimi Hendrix"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did the Nintendo DS release?",
+    "options": ["2002", "2004", "2006", "2008"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which film was the first to gross over $300 million domestically?",
+    "options": ["Jurassic Park", "Star Wars", "E.T.", "Titanic"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first video game to feature multiple playable characters?",
+    "options": ["Contra", "Double Dragon", "Teenage Mutant Ninja Turtles", "Final Fantasy"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was the first rapper to win a Grammy?",
+    "options": ["Run-DMC", "LL Cool J", "DJ Jazzy Jeff & The Fresh Prince", "Public Enemy"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What was the first Disney Channel Original Series?",
+    "options": ["Good Morning, Miss Bliss", "The Famous Jett Jackson", "Flash Forward", "Lizzie McGuire"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which movie was the first to be released in IMAX?",
+    "options": ["Apollo 13", "Beauty and the Beast", "The Lion King", "Fantasia 2000"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Master"
+  },{
+    "text": "What was the original working title of E.T. the Extra-Terrestrial?",
+    "options": ["A Boy's Life", "The Visitor", "Close Encounters Part II", "The Friend"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which video game was originally called 'Puckman' in Japan?",
+    "options": ["Ms. Pac-Man", "Pac-Man", "Dig Dug", "Galaga"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first product ever sold on Amazon?",
+    "options": ["A book", "A CD", "A computer", "A DVD"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was the original voice of Mickey Mouse?",
+    "options": ["Clarence Nash", "Walt Disney", "Pinto Colvig", "Jim Macdonald"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the LaserDisc format first release?",
+    "options": ["1975", "1978", "1981", "1984"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which Beatles song has the most cover versions ever recorded?",
+    "options": ["Hey Jude", "Let It Be", "Yesterday", "All You Need Is Love"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first commercially successful video game?",
+    "options": ["Pong", "Space Invaders", "Computer Space", "Asteroids"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who designed the iconic 'I ❤️ NY' logo?",
+    "options": ["Saul Bass", "Milton Glaser", "Paul Rand", "Massimo Vignelli"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first film to win all five major Academy Awards (Big Five)?",
+    "options": ["It Happened One Night", "One Flew Over the Cuckoo's Nest", "The Silence of the Lambs", "Gone with the Wind"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which Disney animator is credited with creating Mickey Mouse's design?",
+    "options": ["Walt Disney", "Ub Iwerks", "Les Clark", "Floyd Gottfredson"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first video game console to have internet connectivity?",
+    "options": ["Dreamcast", "Sega Saturn", "PlayStation 2", "Xbox"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who composed the iconic NBC chimes?",
+    "options": ["John Williams", "No one knows", "RCA engineers", "David Sarnoff"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the Atari 2600 first release?",
+    "options": ["1975", "1977", "1979", "1981"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which film held the box office record before Gone with the Wind?",
+    "options": ["The Birth of a Nation", "Snow White and the Seven Dwarfs", "King Kong", "The Wizard of Oz"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the original name of Google?",
+    "options": ["BackRub", "SearchEngine", "WebCrawler", "PageRank"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who invented the Rubik's Cube?",
+    "options": ["Erno Rubik", "László Rubik", "Peter Rubik", "István Rubik"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first arcade game to have a joystick?",
+    "options": ["Pong", "Space Race", "Asteroids", "Missile Command"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which TV show had the most expensive pilot episode ever made?",
+    "options": ["Lost", "Game of Thrones", "ER", "Friends"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first feature film to be completely digitally colored?",
+    "options": ["O Brother, Where Art Thou?", "Sin City", "Pleasantville", "The Matrix"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who designed the original Apple logo?",
+    "options": ["Steve Jobs", "Ron Wayne", "Steve Wozniak", "Rob Janoff"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the Commodore 64 release?",
+    "options": ["1980", "1982", "1984", "1986"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which Beatles album was originally titled 'A Doll's House'?",
+    "options": ["Rubber Soul", "Revolver", "The White Album", "Magical Mystery Tour"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first video game to feature a boss battle?",
+    "options": ["Space Invaders", "Donkey Kong", "Phoenix", "Galaxian"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who created the first emoticon?",
+    "options": ["Scott Fahlman", "Kevin MacKenzie", "Ray Tomlinson", "Alan Perlis"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first film to have a synchronized soundtrack?",
+    "options": ["The Jazz Singer", "Don Juan", "Lights of New York", "The Singing Fool"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which video game system was the first to use cartridges?",
+    "options": ["Atari 2600", "Fairchild Channel F", "Magnavox Odyssey", "Colecovision"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the TRS-80 personal computer release?",
+    "options": ["1975", "1977", "1979", "1981"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who designed the original Pac-Man character?",
+    "options": ["Shigeru Miyamoto", "Toru Iwatani", "Gunpei Yokoi", "Satoshi Tajiri"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the original name of the band Queen?",
+    "options": ["The Opposition", "Smile", "The Reaction", "The Originals"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which film was the first to gross $10 million in its opening weekend?",
+    "options": ["Jaws", "Star Wars", "Superman", "The Godfather"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first video game to use polygonal 3D graphics?",
+    "options": ["Battlezone", "I, Robot", "Star Wars", "Tempest"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who designed the original Nike swoosh logo?",
+    "options": ["Phil Knight", "Carolyn Davidson", "Bill Bowerman", "Rob Strasser"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the Betamax format first release?",
+    "options": ["1973", "1975", "1977", "1979"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which Disney film was the first to feature the Disney castle logo?",
+    "options": ["Cinderella", "Sleeping Beauty", "The Little Mermaid", "Beauty and the Beast"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first computer virus called?",
+    "options": ["Creeper", "Brain", "Morris Worm", "Elk Cloner"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who invented the Barbie doll?",
+    "options": ["Ruth Handler", "Mattel Inc", "Barbara Millicent Roberts", "Charlotte Johnson"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first video game to use digitized speech?",
+    "options": ["Berzerk", "Q*bert", "Dragon's Lair", "Sinistar"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which Pink Floyd album was originally going to be called 'Eclipse'?",
+    "options": ["Wish You Were Here", "The Wall", "The Dark Side of the Moon", "Animals"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the ZX Spectrum computer release?",
+    "options": ["1980", "1982", "1984", "1986"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who designed the Twitter bird logo?",
+    "options": ["Jack Dorsey", "Biz Stone", "Simon Oxley", "Douglas Bowman"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first film to use computer-generated imagery?",
+    "options": ["Tron", "Westworld", "Star Wars", "The Last Starfighter"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which video game was the first to have a continue feature?",
+    "options": ["Dragon's Lair", "Fantasy", "Gauntlet", "Vanguard"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the original name of Hewlett-Packard?",
+    "options": ["It never had another name", "Packard-Hewlett", "HP Electronics", "Pacific Electronics"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who composed the theme for The Pink Panther?",
+    "options": ["Henry Mancini", "John Williams", "Elmer Bernstein", "Jerry Goldsmith"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the Sega Master System release in North America?",
+    "options": ["1984", "1986", "1988", "1990"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which film was the first to use the 'Wilhelm Scream'?",
+    "options": ["The Charge at Feather River", "Distant Drums", "Them!", "The Beast from 20,000 Fathoms"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first video game to feature animated cutscenes?",
+    "options": ["Pac-Man", "Donkey Kong", "Karate Champ", "Maniac Mansion"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who designed the Coca-Cola logo typography?",
+    "options": ["Frank M. Robinson", "Pemberton", "Candler", "Woodruff"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first magazine to publish a color photograph?",
+    "options": ["Life", "National Geographic", "Time", "The Illustrated London News"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which video game console was the first to support online gaming?",
+    "options": ["Sega Saturn", "Dreamcast", "XBAND for SNES", "Famicom"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the Sinclair ZX81 computer release?",
+    "options": ["1979", "1981", "1983", "1985"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who invented the QWERTY keyboard layout?",
+    "options": ["Christopher Latham Sholes", "Thomas Edison", "Remington", "Alexander Graham Bell"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first video game to feature a health bar?",
+    "options": ["Dragon Buster", "Zelda II", "Hydlide", "The Tower of Druaga"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which Beatles song was the first to use a sitar?",
+    "options": ["Norwegian Wood", "Within You Without You", "Love You To", "The Inner Light"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the original name of eBay?",
+    "options": ["AuctionWeb", "BiddingPost", "SellSite", "WebBay"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who designed the original McDonald's golden arches?",
+    "options": ["Ray Kroc", "Richard and Maurice McDonald", "Stanley Meston", "George Dexter"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the Intellivision console release?",
+    "options": ["1977", "1979", "1981", "1983"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which film was the first to be released on DVD?",
+    "options": ["The Matrix", "Twister", "Apollo 13", "Blade Runner"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first video game to use voice synthesis in gameplay?",
+    "options": ["Berzerk", "Stratovox", "Q*bert", "Sinistar"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who invented the Frisbee?",
+    "options": ["Walter Morrison", "Warren Franscioni", "Fred Morrison", "William Russell Frisbie"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the original name of Yahoo!?",
+    "options": ["Jerry's Guide to the World Wide Web", "David's Directory", "The Web Guide", "Yahoo Directory"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which arcade game was the first to use a trackball?",
+    "options": ["Centipede", "Missile Command", "Football", "Tempest"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the Apple II computer release?",
+    "options": ["1975", "1977", "1979", "1981"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who designed the Peace symbol?",
+    "options": ["Gerald Holtom", "Pablo Picasso", "Joan Baez", "Martin Luther King Jr."],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first video game to have a two-player cooperative mode?",
+    "options": ["Space Invaders", "Gauntlet", "Fire Truck", "Contra"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which Led Zeppelin album was originally titled 'Four Symbols'?",
+    "options": ["Led Zeppelin III", "Led Zeppelin IV", "Houses of the Holy", "Physical Graffiti"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first video game to feature ragdoll physics?",
+    "options": ["Half-Life", "Jurassic Park: Trespasser", "Max Payne", "Grand Theft Auto III"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who invented the Slinky?",
+    "options": ["Richard James", "Charles Pajeau", "George Clooney", "A.C. Gilbert"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the ColecoVision console release?",
+    "options": ["1980", "1982", "1984", "1986"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which film was the first to use THX sound?",
+    "options": ["Star Wars: Return of the Jedi", "E.T.", "Raiders of the Lost Ark", "The Empire Strikes Back"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first video game to feature a mini-map?",
+    "options": ["Zelda", "Metroid", "Ultima", "Defender"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who designed the FedEx logo with the hidden arrow?",
+    "options": ["Lindon Leader", "Paul Rand", "Saul Bass", "Milton Glaser"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the original name of Pepsi?",
+    "options": ["Brad's Drink", "Pepsi-Cola", "Cola-Pep", "Dr. Brad's"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which video game was the first to use motion capture?",
+    "options": ["Prince of Persia", "Mortal Kombat", "Alone in the Dark", "Flashback"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the Vectrex console release?",
+    "options": ["1980", "1982", "1984", "1986"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who invented the Post-it Note?",
+    "options": ["Spencer Silver and Art Fry", "George de Mestral", "3M Labs", "Richard Drew"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first video game to use texture mapping?",
+    "options": ["Doom", "Wolfenstein 3D", "Ultima Underworld", "Star Fox"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which Rolling Stones album was originally going to be called 'Cosmic Christmas'?",
+    "options": ["Let It Bleed", "Sticky Fingers", "Exile on Main St.", "Goats Head Soup"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first video game to use cel-shading?",
+    "options": ["Jet Set Radio", "The Legend of Zelda: The Wind Waker", "Auto Modellista", "XIII"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who designed the original Amazon logo with the arrow from A to Z?",
+    "options": ["Jeff Bezos", "Turner Duckworth", "Anthony Batt", "Amazon design team"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the TurboGrafx-16 release in North America?",
+    "options": ["1987", "1989", "1991", "1993"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which film was the first to use bullet time photography?",
+    "options": ["The Matrix", "Blade", "Lost in Space", "Buffalo Bill and the Indians"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first video game to feature an inventory system?",
+    "options": ["Zork", "Adventure", "Mystery House", "Ultima"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who invented the Super Soaker?",
+    "options": ["Lonnie Johnson", "Larami Corporation", "Parker Brothers", "Hasbro"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the original name of Hot Wheels?",
+    "options": ["Speed Wheels", "Hot Wheels (always)", "Custom Motors", "California Custom Miniatures"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which video game was the first to use isometric perspective?",
+    "options": ["Q*bert", "Zaxxon", "Marble Madness", "Populous"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the Neo Geo console release?",
+    "options": ["1988", "1990", "1992", "1994"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who designed the London Underground map?",
+    "options": ["Harry Beck", "Frank Pick", "Edward Johnston", "Charles Holden"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first video game to use full motion video?",
+    "options": ["Dragon's Lair", "Night Trap", "The 7th Guest", "Phantasmagoria"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Which David Bowie album was originally titled 'George Orwell's 1984'?",
+    "options": ["Low", "Heroes", "Lodger", "Diamond Dogs"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was the first video game to feature parallax scrolling?",
+    "options": ["Moon Patrol", "Jungle Hunt", "Defender", "Space Harrier"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who invented Velcro?",
+    "options": ["George de Mestral", "Jacques Brandenberger", "Leo Baekeland", "Charles Goodyear"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the Sega CD add-on release?",
+    "options": ["1989", "1991", "1993", "1995"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Legend"
+  }, {
+    "text": "What was the production code for the original Star Trek pilot 'The Cage'?",
+    "options": ["6149-01", "6149-02", "6149-03", "6149-04"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which video game was the first to use parallax scrolling on multiple layers?",
+    "options": ["Moon Patrol", "Jungle Hunt", "Scramble", "Jump Bug"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the original file extension for GIF images?",
+    "options": [".gif (always)", ".grf", ".gip", ".g87"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who designed the original Atari logo?",
+    "options": ["George Opperman", "Nolan Bushnell", "Evelyn Seto", "Jack Tramiel"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the frame rate of the original Game Boy?",
+    "options": ["59.7 Hz", "60 Hz", "59.73 Hz", "50 Hz"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which Disney animator created the original design for Tinker Bell?",
+    "options": ["Marc Davis", "Mary Blair", "Margaret Kerry", "Milt Kahl"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the original sample rate of the CD audio standard?",
+    "options": ["44.1 kHz", "48 kHz", "44.056 kHz", "44.8 kHz"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who composed the original Windows 95 startup sound?",
+    "options": ["Bill Gates", "Brian Eno", "Robert Fripp", "Hans Zimmer"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the processor speed of the original NES?",
+    "options": ["1.79 MHz", "3.58 MHz", "7.16 MHz", "10.74 MHz"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which film editor invented the fade to black technique?",
+    "options": ["D.W. Griffith", "Edwin S. Porter", "Georges Méliès", "Slavko Vorkapić"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the resolution of the original Macintosh screen?",
+    "options": ["512×342", "640×480", "800×600", "320×240"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who designed the original IBM logo?",
+    "options": ["Paul Rand", "Saul Bass", "Massimo Vignelli", "Eliot Noyes"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the pixel resolution of the original Game Boy screen?",
+    "options": ["160×144", "256×192", "320×240", "128×128"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which Beatles song was recorded with the most takes?",
+    "options": ["Strawberry Fields Forever", "A Day in the Life", "Revolution 9", "Tomorrow Never Knows"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the clock speed of the Commodore 64's CPU?",
+    "options": ["1.023 MHz", "2.046 MHz", "0.985 MHz", "1.5 MHz"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who invented the barcode?",
+    "options": ["Norman Joseph Woodland", "Bernard Silver", "Both Woodland and Silver", "IBM"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the original color depth of the Atari 2600?",
+    "options": ["128 colors", "256 colors", "16 colors", "64 colors"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which film was the first to use the Schüfftan process?",
+    "options": ["Metropolis", "The Cabinet of Dr. Caligari", "Nosferatu", "M"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the RAM capacity of the original PlayStation?",
+    "options": ["1 MB", "2 MB", "4 MB", "8 MB"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who designed the original Intel logo?",
+    "options": ["Robert Noyce", "Gordon Moore", "Walter Landor", "Arthur Rock"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the polygon count limit per second on the PlayStation 1?",
+    "options": ["360,000", "500,000", "180,000", "1,000,000"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which animator created the 12 principles of animation?",
+    "options": ["Frank Thomas and Ollie Johnston", "Walt Disney", "Chuck Jones", "Tex Avery"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the bit rate of MP3 files when the format was first released?",
+    "options": ["128 kbps", "192 kbps", "Various rates", "96 kbps"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who created the first computer mouse?",
+    "options": ["Douglas Engelbart", "Bill English", "Xerox PARC", "Steve Jobs"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the processor speed of the Sega Genesis?",
+    "options": ["7.67 MHz", "3.58 MHz", "10 MHz", "16 MHz"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which film technique did Sergei Eisenstein pioneer?",
+    "options": ["Montage theory", "Method acting", "Deep focus", "Jump cuts"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the color palette size of the Super Nintendo?",
+    "options": ["32,768 colors", "65,536 colors", "256 colors", "16,777,216 colors"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who designed the original Xerox logo?",
+    "options": ["Chermayeff & Geismar", "Landor Associates", "Paul Rand", "Lippincott"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the maximum sprite size on the NES?",
+    "options": ["8×8 pixels", "8×16 pixels", "16×16 pixels", "32×32 pixels"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which video game was the first to use skeletal animation?",
+    "options": ["Virtua Fighter", "Tekken", "Tomb Raider", "Alone in the Dark"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the horizontal resolution of VHS tapes?",
+    "options": ["240 lines", "320 lines", "400 lines", "480 lines"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who invented the TCP/IP protocol?",
+    "options": ["Tim Berners-Lee", "Vint Cerf and Bob Kahn", "Ray Tomlinson", "Larry Roberts"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the clock speed of the original Xbox CPU?",
+    "options": ["600 MHz", "733 MHz", "866 MHz", "1 GHz"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which film was the first to use the Technicolor three-strip process?",
+    "options": ["The Wizard of Oz", "Gone with the Wind", "Becky Sharp", "Snow White"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the frame rate of the Atari 2600?",
+    "options": ["60 Hz", "50 Hz", "59.94 Hz", "Both NTSC and PAL varied"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who designed the original NASA logo (the 'meatball')?",
+    "options": ["James Modarelli", "Richard Danne", "Bruce Blackburn", "NASA design team"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the maximum number of sprites the NES could display per scanline?",
+    "options": ["8", "16", "32", "64"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which video game was the first to implement bump mapping?",
+    "options": ["Unreal", "Quake II", "Forsaken", "Incoming"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the CPU speed of the Neo Geo?",
+    "options": ["12 MHz", "24 MHz", "6 MHz", "8 MHz"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who invented the synthesizer?",
+    "options": ["Robert Moog", "Leon Theremin", "Don Buchla", "Moog and Buchla independently"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the color depth of the Sega Game Gear?",
+    "options": ["4,096 colors", "32,768 colors", "256 colors", "65,536 colors"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which film editor pioneered the match cut technique?",
+    "options": ["D.W. Griffith", "Sergei Eisenstein", "Edwin S. Porter", "Georges Méliès"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the RAM capacity of the Sega Saturn?",
+    "options": ["1 MB", "2 MB", "4 MB", "8 MB"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who designed the original Volkswagen logo?",
+    "options": ["Franz Xaver Reimspiess", "Ferdinand Porsche", "Adolf Hitler", "Martin Freyer"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the processor speed of the TurboGrafx-16?",
+    "options": ["1.79 MHz", "3.58 MHz", "7.16 MHz", "10.74 MHz"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which video game was the first to use real-time radiosity?",
+    "options": ["Half-Life 2", "Doom 3", "Quake III", "Unreal"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the horizontal resolution of Betamax tapes?",
+    "options": ["250 lines", "280 lines", "330 lines", "400 lines"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who invented the LED?",
+    "options": ["Nick Holonyak Jr.", "Shuji Nakamura", "Oleg Losev", "H.J. Round"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the clock speed of the Nintendo 64 CPU?",
+    "options": ["93.75 MHz", "62.5 MHz", "100 MHz", "125 MHz"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which film was the first to use the blue screen technique?",
+    "options": ["The Thief of Bagdad (1940)", "King Kong (1933)", "The Invisible Man", "Things to Come"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the maximum number of colors the Game Boy could display simultaneously?",
+    "options": ["2", "4", "16", "8"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who designed the original Shell logo?",
+    "options": ["Raymond Loewy", "Unknown", "Paul Rand", "Herbert Bayer"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the polygon throughput of the Nintendo 64?",
+    "options": ["100,000 per second", "150,000 per second", "250,000 per second", "500,000 per second"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which video game was the first to use environment mapping?",
+    "options": ["Mario Kart 64", "Wave Race 64", "Turok", "Pilotwings 64"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the RAM capacity of the original Game Boy?",
+    "options": ["4 KB", "8 KB", "16 KB", "32 KB"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who invented the microchip?",
+    "options": ["Jack Kilby", "Robert Noyce", "Both independently", "Fairchild Semiconductor"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the sample rate of the Super Nintendo's audio chip?",
+    "options": ["16 kHz", "22 kHz", "32 kHz", "44.1 kHz"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which film technique did Orson Welles pioneer in Citizen Kane?",
+    "options": ["Deep focus photography", "Montage", "Jump cuts", "Handheld camera"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the color palette of the Sega Master System?",
+    "options": ["32 colors", "64 colors", "128 colors", "256 colors"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who designed the original BMW logo?",
+    "options": ["Franz Josef Popp", "Unknown", "Camillo Castiglioni", "Max Friz"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the processor speed of the Sega Dreamcast?",
+    "options": ["133 MHz", "166 MHz", "200 MHz", "233 MHz"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which video game was the first to use normal mapping?",
+    "options": ["Doom 3", "Half-Life 2", "Far Cry", "Halo 2"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the maximum sprite count on the Sega Genesis?",
+    "options": ["64", "80", "128", "256"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who invented the floppy disk?",
+    "options": ["Alan Shugart", "IBM team", "Yoshiro Nakamatsu", "Disputed patent"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the RAM capacity of the PlayStation 2?",
+    "options": ["16 MB", "24 MB", "32 MB", "64 MB"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which film was the first to use anamorphic widescreen?",
+    "options": ["The Robe", "Ben-Hur", "How the West Was Won", "Shane"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the pixel fill rate of the original PlayStation?",
+    "options": ["30 million per second", "60 million per second", "120 million per second", "180 million per second"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who designed the original London 2012 Olympic logo?",
+    "options": ["Wolff Olins", "Pentagram", "Landor", "Futurebrand"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the clock speed of the Atari Jaguar?",
+    "options": ["13.295 MHz", "26.59 MHz", "52 MHz", "64 MHz"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which video game was the first to use deferred shading?",
+    "options": ["Killzone", "S.T.A.L.K.E.R.", "Shrek", "Unreal Engine 3"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the audio channels count on the Commodore Amiga?",
+    "options": ["2", "4", "8", "16"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who invented the transistor?",
+    "options": ["William Shockley", "John Bardeen and Walter Brattain", "All three at Bell Labs", "Robert Noyce"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the RAM capacity of the Sega Dreamcast?",
+    "options": ["8 MB", "16 MB", "24 MB", "32 MB"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which cinematographer invented the matte box?",
+    "options": ["Gregg Toland", "William Daniels", "James Wong Howe", "No single inventor"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the processor speed of the Game Boy Color?",
+    "options": ["4.19 MHz", "8.38 MHz", "4.194304 MHz", "8 MHz"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who designed the original Adidas logo?",
+    "options": ["Adi Dassler", "Käthe Dassler", "Horst Dassler", "Unknown designer"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the polygon throughput of the Sega Dreamcast?",
+    "options": ["3 million per second", "5 million per second", "7 million per second", "10 million per second"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which video game was the first to use subsurface scattering?",
+    "options": ["Half-Life 2", "Crysis", "The Matrix: Path of Neo", "Unreal Engine 3 demo"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the maximum number of voices the Sega Genesis could produce simultaneously?",
+    "options": ["6", "8", "10", "11"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who invented the World Wide Web?",
+    "options": ["Tim Berners-Lee", "Vint Cerf", "Robert Cailliau", "CERN team"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the RAM capacity of the Nintendo GameCube?",
+    "options": ["24 MB", "40 MB", "43 MB", "64 MB"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which film was the first to use time-lapse photography?",
+    "options": ["Fantasia", "Koyaanisqatsi", "La Jetée", "Le Prince's Roundhay Garden Scene"],
+    "correctAnswer": 3,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the clock speed of the Game Boy Advance CPU?",
+    "options": ["16.78 MHz", "24 MHz", "32 MHz", "16.777216 MHz"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who designed the original Starbucks logo?",
+    "options": ["Terry Heckler", "Howard Schultz", "Gordon Bowker", "Lippincott"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the polygon throughput of the PlayStation 2?",
+    "options": ["50 million per second", "66 million per second", "75 million per second", "150 million per second"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which video game was the first to use high dynamic range rendering?",
+    "options": ["Half-Life 2: Lost Coast", "Far Cry", "Splinter Cell", "Halo 2"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the maximum simultaneous sprite count on the Super Nintendo?",
+    "options": ["64", "128", "256", "512"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who invented the ZIP file format?",
+    "options": ["Phil Katz", "Eugene Roshal", "PKWARE team", "WinZip"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the RAM capacity of the original Xbox 360?",
+    "options": ["256 MB", "512 MB", "1 GB", "2 GB"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which film technique did Jean-Luc Godard pioneer?",
+    "options": ["Jump cuts", "Long takes", "Steadicam", "Dutch angles"],
+    "correctAnswer": 0,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the processor speed of the PlayStation 3's Cell processor?",
+    "options": ["3.0 GHz", "3.2 GHz", "3.5 GHz", "4.0 GHz"],
+    "correctAnswer": 1,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who designed the original London Tube roundel?",
+    "options": ["Edward Johnston", "Harry Beck", "Frank Pick", "Charles Holden"],
+    "correctAnswer": 2,
+    "category": "Pop Culture",
+    "difficulty": "Genius"
+  }
+]

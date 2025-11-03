@@ -13,46 +13,83 @@ class QuestionsManager {
     static let shared = QuestionsManager()
     private var allQuestions: [Question] = []
     
+    // Map each category to its JSON filename
+    private let categoryFileNames: [QuizCategory: String] = [
+        .geography: "questions_geography",
+        .science: "questions_science",
+        .history: "questions_history",
+        .movies: "questions_movies",
+        .math: "questions_math",
+        .music: "questions_music",
+        .sports: "questions_sports",
+        .popCulture: "questions_popculture",
+        .celebrities: "questions_celebrities",
+        .the90s: "questions_90s",
+        .the2000s: "questions_2000s",
+        .genZ: "questions_genz"
+    ]
+    
     private init() {
         loadQuestions()
     }
     
     func loadQuestions() {
-        if let url = Bundle.main.url(forResource: "questions", withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: url)
-                let decoder = JSONDecoder()
-                
-                // Decode as QuestionJSON first
-                let questionsJSON = try decoder.decode([QuestionJSON].self, from: data)
-                
-                // Convert to Question objects
-                for questionJSON in questionsJSON {
-                    if let question = convertToQuestion(questionJSON) {
-                        allQuestions.append(question)
-                    } else {
-                        print("⚠️ Skipped question: '\(questionJSON.text)' - Category: \(questionJSON.category), Difficulty: \(questionJSON.difficulty)")
-                    }
+        allQuestions.removeAll()
+        
+        // Load questions from each category file
+        for (category, fileName) in categoryFileNames {
+            loadQuestionsFromFile(fileName: fileName, expectedCategory: category)
+        }
+        
+        print("✅ Successfully loaded \(allQuestions.count) total questions from all category files")
+        printBreakdown()
+    }
+    
+    private func loadQuestionsFromFile(fileName: String, expectedCategory: QuizCategory) {
+        guard let url = Bundle.main.url(forResource: fileName, withExtension: "json") else {
+            print("⚠️ Warning: \(fileName).json not found - skipping this category")
+            return
+        }
+        
+        do {
+            let data = try Data(contentsOf: url)
+            let decoder = JSONDecoder()
+            
+            // Decode as QuestionJSON first
+            let questionsJSON = try decoder.decode([QuestionJSON].self, from: data)
+            
+            var loadedCount = 0
+            var skippedCount = 0
+            
+            // Convert to Question objects
+            for questionJSON in questionsJSON {
+                if let question = convertToQuestion(questionJSON, expectedCategory: expectedCategory) {
+                    allQuestions.append(question)
+                    loadedCount += 1
+                } else {
+                    skippedCount += 1
+                    print("⚠️ Skipped question in \(fileName): '\(questionJSON.text)' - Category: \(questionJSON.category), Difficulty: \(questionJSON.difficulty)")
                 }
-                
-                print("✅ Successfully loaded \(allQuestions.count) questions from JSON")
-                printBreakdown()
-                
-            } catch {
-                print("❌ Error loading questions from JSON: \(error)")
-                print("❌ Error details: \(error.localizedDescription)")
-                loadFallbackQuestions()
             }
-        } else {
-            print("⚠️ questions.json not found, using fallback questions")
-            loadFallbackQuestions()
+            
+            print("✅ Loaded \(loadedCount) questions from \(fileName).json" + (skippedCount > 0 ? " (skipped \(skippedCount))" : ""))
+            
+        } catch {
+            print("❌ Error loading questions from \(fileName).json: \(error)")
+            print("❌ Error details: \(error.localizedDescription)")
         }
     }
     
-    private func convertToQuestion(_ json: QuestionJSON) -> Question? {
+    private func convertToQuestion(_ json: QuestionJSON, expectedCategory: QuizCategory) -> Question? {
         // Convert string category to enum
         guard let category = mapCategory(json.category) else {
             print("⚠️ Unknown category: '\(json.category)'")
+            return nil
+        }
+        
+        // Validate category matches expected file
+        if category != expectedCategory {
+            print("⚠️ Category mismatch in file: Expected \(expectedCategory.rawValue), got \(category.rawValue)")
             return nil
         }
         
@@ -152,30 +189,33 @@ class QuestionsManager {
         return filtered
     }
     
-    private func loadFallbackQuestions() {
-        allQuestions = [
-            // Rookie Questions
-            Question(text: "What is the capital of France?", options: ["London", "Berlin", "Paris", "Madrid"], correctAnswer: 2, category: .geography, difficulty: .rookie),
-            Question(text: "What color is the sky on a clear day?", options: ["Green", "Blue", "Red", "Yellow"], correctAnswer: 1, category: .science, difficulty: .rookie),
-            Question(text: "How many days are in a week?", options: ["5", "6", "7", "8"], correctAnswer: 2, category: .math, difficulty: .rookie),
-            
-            // Amateur Questions
-            Question(text: "Which continent is the largest by area?", options: ["Africa", "Asia", "Europe", "North America"], correctAnswer: 1, category: .geography, difficulty: .amateur),
-            Question(text: "What is the largest planet in our solar system?", options: ["Earth", "Mars", "Jupiter", "Saturn"], correctAnswer: 2, category: .science, difficulty: .amateur),
-            
-            // Pro Questions
-            Question(text: "What is the longest river in the world?", options: ["Amazon", "Nile", "Yangtze", "Mississippi"], correctAnswer: 1, category: .geography, difficulty: .pro),
-            Question(text: "Which element has the chemical symbol 'Au'?", options: ["Silver", "Gold", "Aluminum", "Argon"], correctAnswer: 1, category: .science, difficulty: .pro),
-            
-            // Master Questions
-            Question(text: "What is the smallest country in the world?", options: ["Monaco", "Vatican City", "San Marino", "Liechtenstein"], correctAnswer: 1, category: .geography, difficulty: .master),
-            
-            // Legend Questions
-            Question(text: "What is the capital of Kyrgyzstan?", options: ["Bishkek", "Tashkent", "Dushanbe", "Astana"], correctAnswer: 0, category: .geography, difficulty: .legend),
-            
-            // Genius Questions
-            Question(text: "What is the Heisenberg Uncertainty Principle about?", options: ["Energy and time", "Position and momentum", "Mass and velocity", "Temperature and pressure"], correctAnswer: 1, category: .science, difficulty: .genius),
-        ]
-        print("ℹ️ Loaded \(allQuestions.count) fallback questions")
+    // Reload specific category (useful for updates)
+    func reloadCategory(_ category: QuizCategory) {
+        guard let fileName = categoryFileNames[category] else {
+            print("⚠️ No file mapping found for category: \(category.rawValue)")
+            return
+        }
+        
+        // Remove existing questions for this category
+        allQuestions.removeAll { $0.category == category }
+        
+        // Reload from file
+        loadQuestionsFromFile(fileName: fileName, expectedCategory: category)
+        
+        print("🔄 Reloaded category: \(category.rawValue)")
+    }
+    
+    // Get statistics for a specific category
+    func getCategoryStats(_ category: QuizCategory) -> [Difficulty: Int] {
+        var stats: [Difficulty: Int] = [:]
+        
+        let categoryQuestions = allQuestions.filter { $0.category == category }
+        
+        for difficulty in Difficulty.allCases {
+            let count = categoryQuestions.filter { $0.difficulty == difficulty }.count
+            stats[difficulty] = count
+        }
+        
+        return stats
     }
 }

@@ -1,0 +1,8180 @@
+[
+{
+    "text": "What app is known for short-form videos and viral dances?",
+    "options": [
+      "Instagram",
+      "Snapchat",
+      "TikTok",
+      "YouTube Shorts"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'GOAT' stand for?",
+    "options": [
+      "Go On And Try",
+      "Greatest Of All Time",
+      "Game Over All Together",
+      "Going Out After Ten"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What streaming platform is known for 'binge-watching' shows?",
+    "options": [
+      "Hulu",
+      "Netflix",
+      "Disney+",
+      "HBO Max"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'NPC' mean in internet slang?",
+    "options": [
+      "No Problem Child",
+      "Non-Player Character",
+      "Not Particularly Cool",
+      "New Gen Z"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What singer is known as 'Blondie' by Gen Z?",
+    "options": [
+      "Taylor Swift",
+      "Ariana Grande",
+      "Billie Eilish",
+      "Olivia Rodrigo"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'sus' mean?",
+    "options": [
+      "Super",
+      "Suspicious",
+      "Sustain",
+      "Success"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What game became a cultural phenomenon during the pandemic?",
+    "options": [
+      "Fortnite",
+      "Minecraft",
+      "Among Us",
+      "Roblox"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'FR' mean in texting?",
+    "options": [
+      "For Real",
+      "Free Ride",
+      "Friday",
+      "France"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What YouTuber is known for his massive giveaways?",
+    "options": [
+      "PewDiePie",
+      "MrBeast",
+      "KSI",
+      "Markiplier"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'slay' mean?",
+    "options": [
+      "To kill",
+      "To do something well",
+      "To sleep",
+      "To leave"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What platform is known for disappearing messages?",
+    "options": [
+      "Instagram",
+      "Snapchat",
+      "TikTok",
+      "Twitter"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'lowkey' mean?",
+    "options": [
+      "Very obvious",
+      "Kind of/secretly",
+      "Not important",
+      "Low volume"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What artist sang 'drivers license'?",
+    "options": [
+      "Sabrina Carpenter",
+      "Olivia Rodrigo",
+      "Taylor Swift",
+      "Billie Eilish"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'cap' mean?",
+    "options": [
+      "Truth",
+      "Lie",
+      "Hat",
+      "Maximum"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What app features a green icon with a white ghost?",
+    "options": [
+      "WhatsApp",
+      "Snapchat",
+      "Signal",
+      "Telegram"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'vibe check' mean?",
+    "options": [
+      "Testing the mood",
+      "Checking vibrations",
+      "Musical taste",
+      "Phone check"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What game involves building with blocks?",
+    "options": [
+      "Fortnite",
+      "Minecraft",
+      "Roblox",
+      "Terraria"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'ghosting' mean?",
+    "options": [
+      "Playing a ghost",
+      "Ignoring someone",
+      "Being invisible",
+      "Haunting"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What platform is known for 'Stories'?",
+    "options": [
+      "Instagram",
+      "Facebook",
+      "Snapchat",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'bet' mean?",
+    "options": [
+      "Gamble",
+      "Okay/sure",
+      "Better",
+      "Bet you won't"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What year did TikTok launch globally?",
+    "options": [
+      "2016",
+      "2017",
+      "2018",
+      "2019"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'rizz' mean?",
+    "options": [
+      "Respect",
+      "Charisma",
+      "Food",
+      "Money"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Vine shut down?",
+    "options": [
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'cheugy' describe?",
+    "options": [
+      "Cool",
+      "Outdated/trying too hard",
+      "Trendy",
+      "Expensive"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What was TikTok originally called?",
+    "options": [
+      "Musical.ly",
+      "Vine",
+      "Byte",
+      "Triller"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'bussin' mean?",
+    "options": [
+      "Broken",
+      "Really good",
+      "Busy",
+      "Transportation"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What YouTuber is known for boxing matches?",
+    "options": [
+      "KSI",
+      "Logan Paul",
+      "Jake Paul",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'mid' mean?",
+    "options": [
+      "Middle",
+      "Mediocre/not good",
+      "Midnight",
+      "Average"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What streaming service has 'The Mandalorian'?",
+    "options": [
+      "Netflix",
+      "Hulu",
+      "Disney+",
+      "HBO Max"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'no cap' mean?",
+    "options": [
+      "No hat",
+      "No lying",
+      "No limit",
+      "No problem"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Among Us become popular?",
+    "options": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'main character energy' mean?",
+    "options": [
+      "Being dramatic",
+      "Acting confident/important",
+      "Being selfish",
+      "Leading a group"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What influencer is known for 'It's giving...'?",
+    "options": [
+      "Charli D'Amelio",
+      "Emma Chamberlain",
+      "Various creators",
+      "Addison Rae"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'sheesh' express?",
+    "options": [
+      "Anger",
+      "Amazement/excitement",
+      "Confusion",
+      "Disappointment"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did 'Old Town Road' go viral?",
+    "options": [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'gatekeep, gaslight, girlboss' parody?",
+    "options": [
+      "Toxic positivity",
+      "Corporate feminism",
+      "Social media",
+      "Politics"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What platform is known for Substack?",
+    "options": [
+      "Newsletter platform",
+      "Video platform",
+      "Photo platform",
+      "Music platform"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'stan' mean?",
+    "options": [
+      "Stand",
+      "Obsessive fan",
+      "To stare",
+      "To stay"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Billie Eilish release 'bad guy'?",
+    "options": [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'slaps' mean?",
+    "options": [
+      "Hits",
+      "Really good (usually music)",
+      "Claps",
+      "Disappointing"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'simp' mean?",
+    "options": [
+      "Simple",
+      "Someone who does too much for someone they like",
+      "Sympathy",
+      "Similar"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Discord launch?",
+    "options": [
+      "2013",
+      "2014",
+      "2015",
+      "2016"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'based' mean?",
+    "options": [
+      "Facts",
+      "Being yourself/authentic",
+      "Home location",
+      "Foundation"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did 'Squid Game' premiere?",
+    "options": [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'ratio' mean on Twitter?",
+    "options": [
+      "Mathematics",
+      "When a reply gets more engagement than original tweet",
+      "Proportion",
+      "Balance"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Fortnite release?",
+    "options": [
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'CEO of...' mean?",
+    "options": [
+      "Actual CEO",
+      "Being the best at something",
+      "Starting a company",
+      "Making money"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did BeReal launch?",
+    "options": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'touch grass' mean?",
+    "options": [
+      "Go outside",
+      "Gardening",
+      "Feel nature",
+      "Sports"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What platform popularized 'duets' and 'stitches'?",
+    "options": [
+      "Instagram",
+      "YouTube",
+      "TikTok",
+      "Snapchat"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'understood the assignment' mean?",
+    "options": [
+      "Did homework",
+      "Exceeded expectations",
+      "Following rules",
+      "Being smart"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did TikTok surpass 1 billion users?",
+    "options": [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'periodt' emphasize?",
+    "options": [
+      "Time",
+      "End of discussion",
+      "Menstruation",
+      "Grammar"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What platform is known for 'Reels'?",
+    "options": [
+      "TikTok",
+      "Instagram",
+      "YouTube",
+      "Snapchat"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'rent free' mean?",
+    "options": [
+      "Free housing",
+      "Living in someone's mind constantly",
+      "No cost",
+      "Thinking"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Twitch start becoming mainstream?",
+    "options": [
+      "2016",
+      "2017",
+      "2018",
+      "2019"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'ick' mean?",
+    "options": [
+      "Sick",
+      "Turn-off/dealbreaker",
+      "Sticky",
+      "Disgust"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What platform did Clubhouse popularize?",
+    "options": [
+      "Video chat",
+      "Audio-only chat rooms",
+      "Text forums",
+      "Gaming"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'delulu' mean?",
+    "options": [
+      "Delusional",
+      "Delicious",
+      "Delayed",
+      "Deleted"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Lil Nas X release 'Old Town Road'?",
+    "options": [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'finna' mean?",
+    "options": [
+      "Finished",
+      "Going to/about to",
+      "Fine",
+      "Final"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did TikTok ban in India?",
+    "options": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'aura points' refer to?",
+    "options": [
+      "Energy levels",
+      "Coolness score/vibe",
+      "Game points",
+      "Health"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What platform did Byte try to replace?",
+    "options": [
+      "TikTok",
+      "Vine",
+      "Instagram",
+      "Snapchat"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'hits different' mean?",
+    "options": [
+      "Violence",
+      "Has a unique/special effect",
+      "Music",
+      "Sports"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Emma Chamberlain start YouTube?",
+    "options": [
+      "2016",
+      "2017",
+      "2018",
+      "2019"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'living in a simulation' refer to?",
+    "options": [
+      "Video games",
+      "Matrix theory",
+      "Surreal experiences",
+      "Virtual reality"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What platform is known for 'For You Page' (FYP)?",
+    "options": [
+      "Instagram",
+      "TikTok",
+      "YouTube",
+      "Twitter"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'left on read' mean?",
+    "options": [
+      "Reading left to right",
+      "Message seen but not replied to",
+      "Turning left",
+      "Reading habit"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Charli D'Amelio become TikTok's most followed?",
+    "options": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'W' mean in chat?",
+    "options": [
+      "West",
+      "Win",
+      "What",
+      "Why"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What platform is known for 'Spaces'?",
+    "options": [
+      "Discord",
+      "Twitter",
+      "Clubhouse",
+      "Reddit"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'it's giving' mean?",
+    "options": [
+      "Donating",
+      "It resembles/gives off vibes of",
+      "Providing",
+      "Generosity"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did YouTube Shorts launch?",
+    "options": [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'sending me' mean?",
+    "options": [
+      "Mailing",
+      "Making me laugh uncontrollably",
+      "Texting",
+      "Shipping"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What platform is Hype House associated with?",
+    "options": [
+      "Instagram",
+      "YouTube",
+      "TikTok",
+      "Snapchat"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'ate and left no crumbs' mean?",
+    "options": [
+      "Finished food",
+      "Did something perfectly",
+      "Being hungry",
+      "Cleaning"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Clubhouse peak in popularity?",
+    "options": [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'unhinged' mean positively?",
+    "options": [
+      "Broken",
+      "Wildly entertaining/authentic",
+      "Crazy",
+      "Door problem"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What platform did Zuck create as a 'Twitter killer'?",
+    "options": [
+      "Instagram",
+      "Threads",
+      "Meta",
+      "WhatsApp"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'boujee' mean?",
+    "options": [
+      "Fancy/high-class",
+      "Bouquet",
+      "French",
+      "Elegant"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Peloton become a pandemic trend?",
+    "options": [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'that's on period' mean?",
+    "options": [
+      "Menstruation",
+      "Emphasizing a point",
+      "Time",
+      "Grammar"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What platform did Lemon8 try to compete with?",
+    "options": [
+      "TikTok",
+      "Instagram",
+      "Pinterest",
+      "All of the above"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'valid' mean as slang?",
+    "options": [
+      "Legal",
+      "Acceptable/understandable",
+      "Real",
+      "Correct"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Threads launch?",
+    "options": [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'giving main character' mean?",
+    "options": [
+      "Acting",
+      "Living confidently/standing out",
+      "Drama",
+      "Leading"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What platform popularized 'photo dumps'?",
+    "options": [
+      "Instagram",
+      "TikTok",
+      "BeReal",
+      "VSCO"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'crashout' mean?",
+    "options": [
+      "Sleep",
+      "Lose control/have a breakdown",
+      "Car accident",
+      "Party ending"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Bluesky open to the public?",
+    "options": [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "correctAnswer": 3,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'Roman Empire' mean in the trend?",
+    "options": [
+      "History",
+      "Something you think about constantly",
+      "Ancient Rome",
+      "Empire building"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What platform is known for 'link in bio'?",
+    "options": [
+      "Instagram",
+      "TikTok",
+      "Twitter",
+      "Both A and B"
+    ],
+    "correctAnswer": 3,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'girlboss' originally mean (unironically)?",
+    "options": [
+      "Female boss",
+      "Empowered woman in business",
+      "Mean girl",
+      "Fashion"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Mastodon gain users after Elon's Twitter takeover?",
+    "options": [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'no thoughts, head empty' express?",
+    "options": [
+      "Stupidity",
+      "Blissful mindlessness",
+      "Meditation",
+      "Confusion"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What platform is known for 'green screen' feature?",
+    "options": [
+      "TikTok",
+      "Instagram",
+      "Snapchat",
+      "YouTube"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'girl dinner' refer to?",
+    "options": [
+      "Formal dinner",
+      "Random snacks as a meal",
+      "Girls night",
+      "Cooking"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did X (formerly Twitter) rebrand?",
+    "options": [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'serving' mean?",
+    "options": [
+      "Waitress",
+      "Looking amazing",
+      "Providing",
+      "Sports"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What platform popularized 'micro-blogging'?",
+    "options": [
+      "Facebook",
+      "Twitter",
+      "Tumblr",
+      "Medium"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'caught in 4K' mean?",
+    "options": [
+      "High resolution",
+      "Caught red-handed with evidence",
+      "Photography",
+      "Gaming"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Vine officially shut down?",
+    "options": [
+      "January 2017",
+      "June 2017",
+      "December 2016",
+      "March 2017"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'demure' mean in the viral trend?",
+    "options": [
+      "Shy",
+      "Modest/mindful in a trendy way",
+      "Quiet",
+      "Elegant"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What platform did Caffeine try to compete with?",
+    "options": [
+      "YouTube",
+      "Twitch",
+      "TikTok",
+      "Instagram"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'oomf' stand for?",
+    "options": [
+      "One Of My Friends",
+      "Out Of My Face",
+      "One Of My Followers",
+      "On My Feed"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Dispo (David Dobrik's app) launch?",
+    "options": [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'sksksk' express?",
+    "options": [
+      "Laughter",
+      "Excitement/VSCO girl phrase",
+      "Typing error",
+      "Disgust"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What platform is Substack's main competitor?",
+    "options": [
+      "Medium",
+      "Ghost",
+      "Patreon",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'he's a 10 but...' trend do?",
+    "options": [
+      "Rate attractiveness",
+      "Add deal-breakers to perfect person",
+      "Math",
+      "Sports"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },{
+    "text": "What year did TikTok officially merge with Musical.ly?",
+    "options": [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'oomfie' mean?",
+    "options": [
+      "One of my followers",
+      "One of my friends endearingly",
+      "Out of my face",
+      "Only on my feed"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'Tumblr famous' referring to?",
+    "options": [
+      "Website celebrity",
+      "2010s Tumblr micro-celebrity culture",
+      "Popular blogger",
+      "Social media star"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was 'the dress' color debate?",
+    "options": [
+      "Red or green",
+      "Blue/black or white/gold",
+      "Pink or purple",
+      "Yellow or orange"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did 'the dress' go viral?",
+    "options": [
+      "2013",
+      "2015",
+      "2017",
+      "2019"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'Yanny or Laurel' audio illusion?",
+    "options": [
+      "Music debate",
+      "Viral audio debate about what you hear",
+      "Song lyrics",
+      "Names"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did the Ice Bucket Challenge go viral?",
+    "options": [
+      "2012",
+      "2014",
+      "2016",
+      "2018"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What disease did Ice Bucket Challenge raise awareness for?",
+    "options": [
+      "Cancer",
+      "ALS",
+      "Alzheimer's",
+      "Diabetes"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'Kombucha girl' meme from?",
+    "options": [
+      "Advertisement",
+      "Viral reaction video",
+      "Movie",
+      "TV show"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Harambe incident occur?",
+    "options": [
+      "2014",
+      "2016",
+      "2018",
+      "2020"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'RIP Harambe' reference?",
+    "options": [
+      "Celebrity",
+      "Gorilla shot at Cincinnati Zoo",
+      "Musician",
+      "Athlete"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'dat boi' meme?",
+    "options": [
+      "Person",
+      "Frog on unicycle",
+      "Dog",
+      "Cat"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What phrase accompanies 'dat boi'?",
+    "options": [
+      "Here come dat boi, o shit waddup",
+      "Dat boi is here",
+      "Look at dat boi",
+      "Hey dat boi"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'the he will not divide us' project?",
+    "options": [
+      "Math project",
+      "Shia LaBeouf anti-Trump art project",
+      "Division campaign",
+      "Unity movement"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who created the 'he will not divide us' project?",
+    "options": [
+      "Anonymous artist",
+      "Shia LaBeouf",
+      "Banksy",
+      "Political group"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'loss' meme originally from?",
+    "options": [
+      "Movie",
+      "Ctrl+Alt+Del webcomic",
+      "Video game",
+      "Book"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'is this loss?' meme reference?",
+    "options": [
+      "Losing game",
+      "Miscarriage comic strip pattern",
+      "Getting lost",
+      "Missing items"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'ligma' joke setup?",
+    "options": [
+      "Real disease",
+      "Sounds like 'lick my' prank",
+      "Greek letter",
+      "Math term"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'sugma' joke?",
+    "options": [
+      "Sugar mama",
+      "Variation of ligma (suck my)",
+      "Greek letter",
+      "Math term"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'updog' joke setup?",
+    "options": [
+      "Dog breed",
+      "Sounds like 'what's up dog'",
+      "Upward dog",
+      "Yoga pose"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'bofa' joke?",
+    "options": [
+      "Bank of America",
+      "Sounds like 'both of'",
+      "Food item",
+      "Acronym"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'deez nuts' joke trace back to?",
+    "options": [
+      "Modern invention",
+      "Dr. Dre 1992, viral 2015",
+      "Recent meme",
+      "2020s joke"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'planking' trend?",
+    "options": [
+      "Exercise",
+      "Lying flat in unusual places for photos",
+      "Woodworking",
+      "Yoga"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year was planking trend peak?",
+    "options": [
+      "2009",
+      "2011",
+      "2013",
+      "2015"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'owling' trend?",
+    "options": [
+      "Bird watching",
+      "Crouching like an owl in photos",
+      "Night activity",
+      "Hooting"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'Tebowing' pose?",
+    "options": [
+      "Football celebration",
+      "Kneeling prayer pose after Tim Tebow",
+      "Exercise",
+      "Dance move"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'Milkshake Duck' phenomenon?",
+    "options": [
+      "Drink recipe",
+      "Someone beloved revealed to be problematic",
+      "Duck species",
+      "Food trend"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is origin of 'Milkshake Duck' term?",
+    "options": [
+      "Restaurant",
+      "2016 Twitter joke",
+      "Movie",
+      "Song"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'the Streisand Effect'?",
+    "options": [
+      "Music effect",
+      "Censorship attempt causing more attention",
+      "Celebrity phenomenon",
+      "Sound effect"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year was Area 51 raid planned for?",
+    "options": [
+      "2017",
+      "2019",
+      "2021",
+      "2023"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was 'Storm Area 51' event about?",
+    "options": [
+      "Weather",
+      "Joke Facebook event to raid military base",
+      "Actual raid",
+      "Concert"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'the backrooms' internet lore?",
+    "options": [
+      "Real place",
+      "Creepypasta about liminal spaces",
+      "House rooms",
+      "Storage area"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What are 'liminal spaces'?",
+    "options": [
+      "Limited areas",
+      "Transitional, eerie empty spaces",
+      "Thresholds",
+      "Boundaries"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'SCP Foundation' internet fiction?",
+    "options": [
+      "Science foundation",
+      "Collaborative horror wiki about containment",
+      "Real organization",
+      "Government agency"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'SCP' stand for?",
+    "options": [
+      "Science Control Protocol",
+      "Secure, Contain, Protect",
+      "Special Case Protocol",
+      "Secret Containment Procedure"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'Slenderman' origin?",
+    "options": [
+      "Urban legend",
+      "2009 Something Awful forum creation",
+      "Real creature",
+      "Movie character"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year was Slenderman created?",
+    "options": [
+      "2007",
+      "2009",
+      "2011",
+      "2013"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'Jeff the Killer' creepypasta?",
+    "options": [
+      "Real person",
+      "Internet horror story with edited image",
+      "Movie villain",
+      "Video game"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What phrase is Jeff the Killer known for?",
+    "options": [
+      "Come with me",
+      "Go to sleep",
+      "You're next",
+      "Look at me"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'Momo Challenge' hoax about?",
+    "options": [
+      "Real challenge",
+      "Fake viral scare about creepy image",
+      "Game",
+      "App"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'Elsagate' controversy?",
+    "options": [
+      "Disney scandal",
+      "Disturbing kids content on YouTube",
+      "Movie controversy",
+      "Frozen debate"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'cursed image' aesthetic?",
+    "options": [
+      "Hexed photos",
+      "Unsettling, confusing images",
+      "Dark pictures",
+      "Evil images"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'blessed image' opposite of?",
+    "options": [
+      "Religious photo",
+      "Cursed image (wholesome version)",
+      "Happy picture",
+      "Sacred image"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'blursed' image combination?",
+    "options": [
+      "Blurry",
+      "Blessed and cursed mixed",
+      "Unclear photo",
+      "Both meanings"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'deep fried' meme aesthetic?",
+    "options": [
+      "Food meme",
+      "Over-edited distorted meme",
+      "Cooking joke",
+      "Fried image"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'nuked' meme?",
+    "options": [
+      "Microwave meme",
+      "Extremely deep fried meme",
+      "Destroyed image",
+      "Radioactive"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'surreal memes' genre?",
+    "options": [
+      "Real memes",
+      "Abstract, nonsensical humor",
+      "Realistic jokes",
+      "Serious memes"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'antimeme' format?",
+    "options": [
+      "Against memes",
+      "Literal interpretation subverting expectation",
+      "Hate memes",
+      "No memes"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'bone hurting juice' meme?",
+    "options": [
+      "Calcium drink",
+      "Meme using template incorrectly on purpose",
+      "Medical condition",
+      "Painful beverage"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'speedrun' terminology origin?",
+    "options": [
+      "Track and field",
+      "Video game completion competition",
+      "Fast running",
+      "Marathon"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'speedrunning' mean in meme context?",
+    "options": [
+      "Running fast",
+      "Doing something quickly/efficiently",
+      "Racing",
+      "Gaming"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'any%' speedrun mean?",
+    "options": [
+      "Any percentage",
+      "Complete game by any means necessary",
+      "Random percent",
+      "All options"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is '100%' speedrun?",
+    "options": [
+      "Perfect score",
+      "Complete everything in game fastest",
+      "Full completion",
+      "All achievements"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'glitchless' speedrun?",
+    "options": [
+      "No errors",
+      "Speedrun without exploiting glitches",
+      "Perfect run",
+      "Clean gameplay"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'RNG' in gaming?",
+    "options": [
+      "Running game",
+      "Random Number Generator",
+      "Really nice graphics",
+      "Role playing game"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'copium' mean?",
+    "options": [
+      "Medicine",
+      "Coping mechanism denial (meme drug)",
+      "Copy item",
+      "Opium reference"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'hopium' mean?",
+    "options": [
+      "Hope medicine",
+      "False hope (meme drug)",
+      "Happy opium",
+      "Optimism"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'touch grass' origin?",
+    "options": [
+      "Gardening advice",
+      "Telling chronically online people to go outside",
+      "Nature therapy",
+      "Lawn care"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'terminally online' mean?",
+    "options": [
+      "Internet addiction",
+      "So online it's like a disease",
+      "Always connected",
+      "Terminal computer"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'parasocial relationship'?",
+    "options": [
+      "Social parasite",
+      "One-sided relationship with media figure",
+      "Parallel relationship",
+      "Partner relationship"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'para-friend' phenomenon?",
+    "options": [
+      "Parachute friend",
+      "Feeling friendship with content creator",
+      "Parallel friend",
+      "Partner friend"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'discord kitten' stereotype?",
+    "options": [
+      "Cat lover",
+      "Young person groomed online",
+      "Discord pet",
+      "Server mascot"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'discord mod' stereotype?",
+    "options": [
+      "Server moderator",
+      "Power-tripping online moderator caricature",
+      "Discord employee",
+      "Administrator"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'reddit moment'?",
+    "options": [
+      "Good post",
+      "Stereotypical cringe Reddit behavior",
+      "Popular thread",
+      "Time on Reddit"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'wholesome 100' mocking?",
+    "options": [
+      "Wholesomeness",
+      "Forced Reddit positivity culture",
+      "Good content",
+      "Score system"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'big chungus' meme?",
+    "options": [
+      "Large animal",
+      "Fat Bugs Bunny image",
+      "Video game",
+      "Character name"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Big Chungus meme peak?",
+    "options": [
+      "2016",
+      "2018",
+      "2020",
+      "2022"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'Ugandan Knuckles' meme?",
+    "options": [
+      "African tradition",
+      "VRChat character asking 'do you know the way'",
+      "Video game boss",
+      "Dance move"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What phrase is Ugandan Knuckles known for?",
+    "options": [
+      "Follow me",
+      "Do you know the way",
+      "Come with me",
+      "Show me"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'Pepe the Frog' original context?",
+    "options": [
+      "Hate symbol",
+      "Boy's Club comic character",
+      "Political mascot",
+      "Internet creation"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who created Pepe the Frog?",
+    "options": [
+      "Anonymous",
+      "Matt Furie",
+      "Internet collective",
+      "Unknown"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'feels good man' Pepe catchphrase?",
+    "options": [
+      "Happy greeting",
+      "Original Pepe comic line",
+      "Meme caption",
+      "Slang phrase"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'Wojak' character?",
+    "options": [
+      "Video game character",
+      "Feels guy - simple meme face",
+      "Cartoon person",
+      "Comic character"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'doomer' wojak?",
+    "options": [
+      "Doom player",
+      "Pessimistic depressed wojak variant",
+      "End times believer",
+      "Gloomy person"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'bloomer' wojak?",
+    "options": [
+      "Flower person",
+      "Optimistic self-improvement wojak variant",
+      "Late bloomer",
+      "Garden enthusiast"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'zoomer' wojak?",
+    "options": [
+      "Fast person",
+      "Gen Z wojak variant",
+      "Zooming in",
+      "Quick mover"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'boomer' wojak?",
+    "options": [
+      "Baby boomer",
+      "Grumpy old person wojak variant",
+      "Explosion",
+      "Loud person"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'coomer' wojak?",
+    "options": [
+      "Comb user",
+      "Porn-addicted wojak variant",
+      "Consumer",
+      "Coming person"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'giga chad' meme?",
+    "options": [
+      "Strong man",
+      "Idealized masculine man meme",
+      "Bodybuilder",
+      "Alpha male"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is the 'virgin vs chad' meme format?",
+    "options": [
+      "Dating advice",
+      "Comparison meme format",
+      "Masculinity scale",
+      "Relationship status"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'sigma grindset' meme?",
+    "options": [
+      "Business advice",
+      "Mocking hustle culture",
+      "Work ethic",
+      "Grinding"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'sigma male' originally?",
+    "options": [
+      "Fraternity",
+      "Supposed lone wolf archetype",
+      "Greek letter",
+      "Math term"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'based and redpilled' mean?",
+    "options": [
+      "Based in reality",
+      "Authentic and aware (political connotation)",
+      "Foundation",
+      "Red pill medicine"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'redpill' reference origin?",
+    "options": [
+      "Medicine",
+      "The Matrix movie",
+      "Political pill",
+      "Red medication"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'blackpill' ideology?",
+    "options": [
+      "Black medicine",
+      "Extreme nihilistic pessimism",
+      "Dark thoughts",
+      "Goth culture"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'bluepill' in meme context?",
+    "options": [
+      "Blue medicine",
+      "Remaining ignorant/mainstream beliefs",
+      "Depression pill",
+      "Matrix reference"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'based' origin?",
+    "options": [
+      "Foundation",
+      "Rapper Lil B 'Based God'",
+      "Database",
+      "Military base"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What does 'gonk' mean in the viral audio?",
+    "options": [
+      "Real word",
+      "Mispronunciation of 'going' in TikTok sound",
+      "Noise",
+      "Slang"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'heehee' Michael Jackson laugh used for?",
+    "options": [
+      "Comedy",
+      "Awkward/chaotic energy in videos",
+      "Music",
+      "Dance"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is 'sped up' or 'slowed + reverb' trend?",
+    "options": [
+      "Music genre",
+      "Editing songs for different vibe",
+      "Audio effect",
+      "Speed control"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Legend"
+  },{
+    "text": "What does 'bffr' stand for?",
+    "options": [
+      "Best Friends Forever Right",
+      "Be Fucking For Real",
+      "Big Friends For Real",
+      "Best Food For Real"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'ijbol' stand for?",
+    "options": [
+      "I Just Burst Out Laughing",
+      "I Jump But Only Later",
+      "In July Buy Online",
+      "I Just Beat One Level"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'yktvs' stand for?",
+    "options": [
+      "You Know The Vibe Starts",
+      "You Know The Vibes",
+      "Your Kind Television Shows",
+      "You Keep The Video Safe"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'ngl' stand for?",
+    "options": [
+      "Not Gonna Lie",
+      "Never Get Lost",
+      "New Game Launch",
+      "No Good Luck"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'smh' stand for?",
+    "options": [
+      "So Much Hate",
+      "Shaking My Head",
+      "Send Me Help",
+      "See My House"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'fy' mean on TikTok?",
+    "options": [
+      "For You",
+      "Follow Yes",
+      "First Year",
+      "Frozen Yogurt"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'fyp' stand for on TikTok?",
+    "options": [
+      "For Your Page",
+      "Find Your Posts",
+      "Follow Your Profile",
+      "First Year Problems"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'fy' page mean?",
+    "options": [
+      "Friend's Yearbook",
+      "For You algorithm page",
+      "First Year",
+      "Funny Videos"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'dc' mean in TikTok captions?",
+    "options": [
+      "Dance Challenge",
+      "Dance Credit",
+      "Don't Care",
+      "District of Columbia"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'duet' feature do on TikTok?",
+    "options": [
+      "Sing together",
+      "Create split-screen response video",
+      "Collaboration",
+      "Music harmony"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'stitch' feature do on TikTok?",
+    "options": [
+      "Sewing tutorial",
+      "Clip and respond to part of video",
+      "Edit videos",
+      "Connect content"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'greenscreen' effect do?",
+    "options": [
+      "Green filter",
+      "Replace background with image/video",
+      "Eco-friendly",
+      "Screen color"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'BookTok'?",
+    "options": [
+      "Book shop",
+      "Book community on TikTok",
+      "Reading app",
+      "Library service"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'CleanTok'?",
+    "options": [
+      "Hygiene products",
+      "Cleaning community on TikTok",
+      "Clear content",
+      "Detergent brand"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'FoodTok'?",
+    "options": [
+      "Restaurant reviews",
+      "Food content community on TikTok",
+      "Cooking app",
+      "Recipe book"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'alt' mean in 'alt TikTok'?",
+    "options": [
+      "Altitude",
+      "Alternative",
+      "Alternate account",
+      "All the time"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'straight TikTok' vs 'alt TikTok'?",
+    "options": [
+      "Orientation",
+      "Mainstream vs niche content",
+      "Video angle",
+      "Direction"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'algospeak' refer to?",
+    "options": [
+      "Algorithm language",
+      "Coded language to avoid censorship",
+      "Speaking algorithms",
+      "Tech jargon"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'unalive' mean in algospeak?",
+    "options": [
+      "Not alive",
+      "Censorship workaround for death/suicide",
+      "Dead battery",
+      "Lifeless"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'seggs' mean in algospeak?",
+    "options": [
+      "Eggs",
+      "Censorship workaround for sex",
+      "Segments",
+      "Legs"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'le dollar bean' refer to in algospeak?",
+    "options": [
+      "Coffee",
+      "Lesbian (censorship workaround)",
+      "Currency",
+      "Plant"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'corn' mean in algospeak?",
+    "options": [
+      "Vegetable",
+      "Porn (censorship workaround)",
+      "Food",
+      "Kernel"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'accountant' mean in algospeak?",
+    "options": [
+      "Financial professional",
+      "Sex worker (censorship workaround)",
+      "Bookkeeper",
+      "Calculator"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'shifting' in Gen Z spirituality?",
+    "options": [
+      "Moving objects",
+      "Believing you can shift to alternate reality",
+      "Changing position",
+      "Transportation"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'reality shifting'?",
+    "options": [
+      "Changing perspective",
+      "Practice of mentally going to alternate realities",
+      "Magic trick",
+      "Virtual reality"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'dr' mean in shifting community?",
+    "options": [
+      "Doctor",
+      "Desired Reality",
+      "Dream",
+      "Direction"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'cr' mean in shifting community?",
+    "options": [
+      "Crazy",
+      "Current Reality",
+      "Create",
+      "Chrome"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'scripting' mean in shifting?",
+    "options": [
+      "Writing code",
+      "Writing details about desired reality",
+      "Movie script",
+      "Programming"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'WR' in shifting community?",
+    "options": [
+      "World Record",
+      "Waiting Room",
+      "Write",
+      "Weird Reality"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'angel numbers' refer to?",
+    "options": [
+      "Math",
+      "Repeating numbers with spiritual meaning",
+      "Phone numbers",
+      "Religious text"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does '111' commonly mean as angel number?",
+    "options": [
+      "Emergency number",
+      "Manifestation and new beginnings",
+      "One hundred eleven",
+      "Binary code"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does '222' commonly mean as angel number?",
+    "options": [
+      "Two hundred twenty-two",
+      "Trust and balance",
+      "Double trouble",
+      "Even number"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does '444' commonly mean as angel number?",
+    "options": [
+      "Four fours",
+      "Protection and stability",
+      "Error code",
+      "Counting"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'shadow work' in Gen Z spirituality?",
+    "options": [
+      "Working in shadows",
+      "Confronting hidden parts of yourself",
+      "Dark room work",
+      "Night shift"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'gremlin mode' mean?",
+    "options": [
+      "Movie character",
+      "Chaotic, mischievous energy",
+      "Creature",
+      "Evil mode"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'rat girl summer' parody?",
+    "options": [
+      "Rodents",
+      "Hot girl summer",
+      "Vermin",
+      "Pets"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'tomato girl summer' aesthetic represent?",
+    "options": [
+      "Gardening",
+      "Mediterranean coastal vibes",
+      "Red color",
+      "Vegetables"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'blueberry milk nails' refer to?",
+    "options": [
+      "Food",
+      "Periwinkle blue nail trend",
+      "Beverage",
+      "Stained nails"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'glazed donut nails' describe?",
+    "options": [
+      "Food art",
+      "Glossy, iridescent nail look",
+      "Donut shop",
+      "Sticky nails"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'strawberry girl' aesthetic represent?",
+    "options": [
+      "Fruit lover",
+      "Sweet, feminine, red-themed aesthetic",
+      "Farm girl",
+      "Berry picking"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'vanilla girl' aesthetic?",
+    "options": [
+      "Ice cream",
+      "Neutral, minimalist, cozy style",
+      "Basic",
+      "Flavor"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'coquette' aesthetic?",
+    "options": [
+      "French word",
+      "Feminine, bow-focused, doll-like style",
+      "Ballet",
+      "Flirty"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'balletcore' aesthetic?",
+    "options": [
+      "Dance class",
+      "Ballet-inspired fashion and lifestyle",
+      "Exercise",
+      "Performance"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'barbiecore' trend?",
+    "options": [
+      "Doll collection",
+      "All-pink, hyper-feminine aesthetic",
+      "Toy store",
+      "Children's play"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'coastal granddaughter' aesthetic?",
+    "options": [
+      "Beach family",
+      "Preppy coastal style",
+      "Seaside vacation",
+      "Grandmother's house"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'mob wife' aesthetic?",
+    "options": [
+      "Criminal",
+      "Luxurious, fur coat, bold style",
+      "Mafia",
+      "Married"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'old money' aesthetic?",
+    "options": [
+      "Antique coins",
+      "Understated wealthy elegance",
+      "Vintage money",
+      "Rich history"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'quiet luxury' trend?",
+    "options": [
+      "Silent wealth",
+      "Expensive but understated style",
+      "Whisper",
+      "Peaceful living"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'stealth wealth'?",
+    "options": [
+      "Hidden money",
+      "Rich but doesn't show it",
+      "Secret savings",
+      "Invisible"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'office siren' aesthetic represent?",
+    "options": [
+      "Workplace alarm",
+      "Sexy, professional corporate style",
+      "Emergency",
+      "Boss lady"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'twee' aesthetic?",
+    "options": [
+      "Two",
+      "Quirky, vintage, childlike style",
+      "Tweet",
+      "Small"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'normcore' aesthetic?",
+    "options": [
+      "Normal people",
+      "Deliberately ordinary/basic style",
+      "Core values",
+      "Average"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'gorpcore' aesthetic?",
+    "options": [
+      "Gore content",
+      "Outdoor/hiking fashion trend",
+      "Food core",
+      "Gross style"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'GORP' stand for in gorpcore?",
+    "options": [
+      "Go Outside Right Please",
+      "Good Old Raisins and Peanuts",
+      "Great Outdoor Recreation Products",
+      "Gear Of Regular People"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'blokecore' aesthetic?",
+    "options": [
+      "Broken core",
+      "British lad culture/football casual style",
+      "Block style",
+      "Male fashion"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'sad beige' aesthetic (often criticized)?",
+    "options": [
+      "Depression color",
+      "Minimalist neutral parenting style",
+      "Dull paint",
+      "Boring design"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'scandi' aesthetic?",
+    "options": [
+      "Scandal",
+      "Scandinavian minimalist design",
+      "Northern Europe",
+      "Clean style"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'maximalism' as trend?",
+    "options": [
+      "Maximum effort",
+      "Bold, excessive, layered aesthetic",
+      "Lots of stuff",
+      "Extra large"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'cluttercore' aesthetic?",
+    "options": [
+      "Messy room",
+      "Intentionally busy, collected aesthetic",
+      "Hoarding",
+      "Disorganized"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'kidcore' aesthetic?",
+    "options": [
+      "Children's fashion",
+      "Nostalgic childhood-themed bright style",
+      "Kid-friendly",
+      "Young core"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'clowncore' aesthetic?",
+    "options": [
+      "Circus performers",
+      "Colorful, playful, chaotic clown-inspired style",
+      "Comedy",
+      "Jokes"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'fairycore' aesthetic?",
+    "options": [
+      "Fairy tales",
+      "Whimsical, nature-inspired mystical style",
+      "Magic",
+      "Wings"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'goblincore' aesthetic?",
+    "options": [
+      "Monsters",
+      "Earthy, nature-loving, collecting aesthetic",
+      "Fantasy creatures",
+      "Ugly things"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'weirdcore' aesthetic?",
+    "options": [
+      "Strange people",
+      "Unsettling, dreamlike, nostalgic imagery",
+      "Odd style",
+      "Unique core"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'traumacore' aesthetic?",
+    "options": [
+      "Medical trauma",
+      "Dark aesthetic expressing mental health struggles",
+      "Injury",
+      "Hospital"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'angelcore' aesthetic?",
+    "options": [
+      "Religious",
+      "Ethereal, heavenly, soft aesthetic",
+      "Angels",
+      "Pure white"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'devilcore' aesthetic?",
+    "options": [
+      "Evil",
+      "Dark, edgy, devil-inspired aesthetic",
+      "Demons",
+      "Red and black"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'royalcore' aesthetic?",
+    "options": [
+      "Monarchs",
+      "Regal, luxurious, palace-inspired style",
+      "Kings and queens",
+      "Crown"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'regencycore' aesthetic?",
+    "options": [
+      "Hotel",
+      "Bridgerton-era inspired historical style",
+      "Regent",
+      "Old fashioned"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'Y2K' aesthetic?",
+    "options": [
+      "Year 2000",
+      "Late 90s/early 2000s nostalgic style",
+      "Millennium bug",
+      "Computer error"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'McBling' aesthetic?",
+    "options": [
+      "McDonald's bling",
+      "2000s Paris Hilton-era glamorous style",
+      "Shiny burgers",
+      "Fast food jewelry"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'indie sleaze' aesthetic?",
+    "options": [
+      "Independent films",
+      "Messy 2000s-2010s hipster style",
+      "Dirty indie",
+      "Alternative music"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'grunge' aesthetic origin?",
+    "options": [
+      "Dirty clothes",
+      "1990s Seattle music scene style",
+      "Grime",
+      "Messy"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'soft grunge' aesthetic?",
+    "options": [
+      "Gentle dirt",
+      "Tumblr-era lighter grunge style",
+      "Soft clothing",
+      "Easy grunge"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'e-girl' aesthetic?",
+    "options": [
+      "Electronic girl",
+      "Alternative online-influenced style",
+      "Email girl",
+      "East girl"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'e-boy' aesthetic?",
+    "options": [
+      "Electronic boy",
+      "Alternative online-influenced boy style",
+      "Email boy",
+      "East boy"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'cheugy' describe?",
+    "options": [
+      "Cool",
+      "Outdated millennial trends",
+      "Trendy",
+      "Chewy"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is considered 'cheugy'?",
+    "options": [
+      "New trends",
+      "Live Laugh Love signs, girlboss culture",
+      "Fresh style",
+      "Modern"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'basic' mean as insult?",
+    "options": [
+      "Simple",
+      "Following mainstream trends uncritically",
+      "Elementary",
+      "Foundation"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is a 'basic' stereotype item?",
+    "options": [
+      "Water",
+      "Pumpkin spice latte",
+      "Bread",
+      "Plain shirt"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'no thoughts just vibes' express?",
+    "options": [
+      "Stupidity",
+      "Living in the moment without overthinking",
+      "Empty mind",
+      "Music only"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'intrusive thoughts won' mean?",
+    "options": [
+      "Mental illness",
+      "Did the impulsive thing",
+      "Thoughts invaded",
+      "Victory"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'hear me out' usually precede?",
+    "options": [
+      "Good idea",
+      "Controversial/weird opinion",
+      "Listen closely",
+      "Sound check"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'its giving' mean when left unfinished?",
+    "options": [
+      "Donating",
+      "Expressing a vibe you can't quite name",
+      "Gifts",
+      "Providing"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'the lip combo' usually refer to?",
+    "options": [
+      "Makeup",
+      "Viral lipstick and liner combination",
+      "Mouth",
+      "Cosmetics"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'latte makeup'?",
+    "options": [
+      "Coffee-stained",
+      "Warm, neutral brown-toned look",
+      "Beverage",
+      "Morning routine"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'soap brows' trend?",
+    "options": [
+      "Clean eyebrows",
+      "Using soap to style brows upward",
+      "Washing face",
+      "Hygiene"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'slugging' in skincare?",
+    "options": [
+      "Slow movement",
+      "Coating face in petroleum jelly overnight",
+      "Snail mucin",
+      "Lazy routine"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'skin cycling'?",
+    "options": [
+      "Bike exercise",
+      "Rotating skincare actives strategically",
+      "Skin rotation",
+      "Exercise"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'glass skin' refer to?",
+    "options": [
+      "Fragile skin",
+      "Dewy, luminous complexion",
+      "Transparent",
+      "Broken skin"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'cloud skin' trend?",
+    "options": [
+      "Sky makeup",
+      "Soft, blurred, matte complexion",
+      "Fluffy skin",
+      "Weather"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'strawberry makeup' look?",
+    "options": [
+      "Fruit-themed",
+      "Pink, flushed, fresh aesthetic",
+      "Red dots",
+      "Berry stains"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'no makeup makeup' mean?",
+    "options": [
+      "No cosmetics",
+      "Natural-looking makeup",
+      "Bare face",
+      "Lazy routine"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'the TikTok pasta' (baked feta)?",
+    "options": [
+      "Italian cuisine",
+      "Viral feta tomato pasta recipe",
+      "Social media food",
+      "Noodles"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'nature's cereal' trend?",
+    "options": [
+      "Healthy breakfast",
+      "Berries in coconut water",
+      "Outdoor food",
+      "Grain-free"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is 'butter board' trend?",
+    "options": [
+      "Cutting board",
+      "Butter spread on board with toppings",
+      "Dairy product",
+      "Wooden board"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What does 'little treat' culture mean?",
+    "options": [
+      "Small gifts",
+      "Justifying frequent small indulgences",
+      "Desserts",
+      "Rewards"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Master"
+  },  {
+    "text": "What does 'aura points' refer to?",
+    "options": [
+      "Energy levels",
+      "Coolness/vibe score",
+      "Game points",
+      "Spiritual power"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'crashout' mean?",
+    "options": [
+      "Sleep",
+      "Lose control/have breakdown",
+      "Car accident",
+      "Party ending"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'Roman Empire' mean in the trend?",
+    "options": [
+      "History",
+      "Something you think about constantly",
+      "Ancient Rome",
+      "Empire building"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'demure' mean in the viral trend context?",
+    "options": [
+      "Shy",
+      "Modest/mindful in trendy way",
+      "Quiet",
+      "Elegant"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'delulu' mean?",
+    "options": [
+      "Delusional",
+      "Delicious",
+      "Delayed",
+      "Deleted"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'girl dinner' refer to?",
+    "options": [
+      "Fancy dinner",
+      "Random snacks as meal",
+      "Girls night",
+      "Cooking"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'girl math' mean?",
+    "options": [
+      "Female mathematicians",
+      "Justifying purchases with flawed logic",
+      "Math class",
+      "Calculator"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'gatekeep, gaslight, girlboss' parody?",
+    "options": [
+      "Toxic positivity",
+      "Corporate feminism",
+      "Social media",
+      "Politics"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'oomf' stand for?",
+    "options": [
+      "One Of My Friends",
+      "Out Of My Face",
+      "One Of My Followers",
+      "On My Feed"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'he's a 10 but...' trend do?",
+    "options": [
+      "Rate attractiveness",
+      "Add dealbreakers to perfect person",
+      "Math problem",
+      "Sports scoring"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'core' mean when added to aesthetics?",
+    "options": [
+      "Center",
+      "Aesthetic style/vibe",
+      "Apple center",
+      "Essential"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is 'cottagecore'?",
+    "options": [
+      "Small house",
+      "Romanticized rural living aesthetic",
+      "Cheese type",
+      "Architecture"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'ratio' mean on Twitter?",
+    "options": [
+      "Mathematics",
+      "Reply gets more engagement than original",
+      "Proportion",
+      "Balance"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'CEO of...' mean?",
+    "options": [
+      "Actual CEO",
+      "Best at something",
+      "Company owner",
+      "Business leader"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'caught in 4K' mean?",
+    "options": [
+      "High resolution camera",
+      "Caught with clear evidence",
+      "Photography",
+      "Video quality"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'very mindful, very demure' reference?",
+    "options": [
+      "Meditation",
+      "Viral TikTok trend",
+      "Etiquette",
+      "Fashion"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'let him cook' mean?",
+    "options": [
+      "Let him prepare food",
+      "Let him work/finish his idea",
+      "Kitchen permission",
+      "Culinary skills"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'cooked' mean?",
+    "options": [
+      "Prepared food",
+      "Done for/ruined",
+      "Ready",
+      "Hot"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'im cooked' mean?",
+    "options": [
+      "Tired from cooking",
+      "In trouble/done for",
+      "Hot",
+      "Finished meal"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'brainrot' mean?",
+    "options": [
+      "Brain disease",
+      "Too much mindless content consumption",
+      "Thinking too much",
+      "Studying"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'Fanum tax' refer to?",
+    "options": [
+      "Government tax",
+      "Taking someone's food",
+      "Financial charge",
+      "Tax season"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'gyat' express?",
+    "options": [
+      "Excitement",
+      "Admiring someone's appearance",
+      "Surprise",
+      "God"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'sigma' mean in Gen Z context?",
+    "options": [
+      "Greek letter",
+      "Lone wolf/independent person",
+      "Smart",
+      "Strong"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'alpha' mean in meme culture?",
+    "options": [
+      "First letter",
+      "Dominant/leader type",
+      "Software version",
+      "Wolf rank"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'beta' mean in internet slang?",
+    "options": [
+      "Testing phase",
+      "Submissive/follower type",
+      "Second",
+      "Fish"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'skibidi' refer to?",
+    "options": [
+      "Dance move",
+      "Viral toilet meme series",
+      "Song",
+      "Nonsense word"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'Ohio' mean as slang?",
+    "options": [
+      "US state",
+      "Weird/chaotic",
+      "Hello",
+      "Goodbye"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'only in Ohio' imply?",
+    "options": [
+      "State-specific",
+      "Bizarre things happen there",
+      "Geographic location",
+      "Regional"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'mewing' refer to?",
+    "options": [
+      "Cat sound",
+      "Tongue posture for jawline",
+      "Music",
+      "Crying"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'mogging' mean?",
+    "options": [
+      "Jogging",
+      "Being more attractive than someone",
+      "Mugging",
+      "Modeling"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'looksmaxxing' mean?",
+    "options": [
+      "Looking around",
+      "Maximizing physical attractiveness",
+      "Makeup",
+      "Fashion"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'pov' stand for in content?",
+    "options": [
+      "Power of voice",
+      "Point of view",
+      "Picture of video",
+      "Part of vlog"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'fboi' or 'fboy' mean?",
+    "options": [
+      "Facebook boy",
+      "Player who leads people on",
+      "Friend boy",
+      "Funny boy"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'pick me girl' mean?",
+    "options": [
+      "Choose me",
+      "Girl who puts others down for male attention",
+      "Selection",
+      "Dating game"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'material girl' refer to?",
+    "options": [
+      "Fabric",
+      "Loves luxury/expensive things",
+      "Clothing",
+      "Madonna song"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'that girl' aesthetic mean?",
+    "options": [
+      "Specific person",
+      "Aspirational wellness lifestyle",
+      "Random girl",
+      "Popular girl"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'clean girl' aesthetic refer to?",
+    "options": [
+      "Good hygiene",
+      "Minimalist beauty look",
+      "Neat person",
+      "Organized"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'dark academia' represent?",
+    "options": [
+      "Night school",
+      "Gothic scholarly aesthetic",
+      "Evil education",
+      "Black clothing"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'light academia' represent?",
+    "options": [
+      "Easy classes",
+      "Bright scholarly aesthetic",
+      "Daytime school",
+      "Simple learning"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'goblin mode' mean?",
+    "options": [
+      "Playing as goblin",
+      "Embracing messy/lazy behavior",
+      "Fantasy game",
+      "Halloween costume"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'beige flag' mean in dating?",
+    "options": [
+      "Tan color",
+      "Quirky but not dealbreaker trait",
+      "Warning sign",
+      "Neutral"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'green flag' mean?",
+    "options": [
+      "Go signal",
+      "Positive trait in person",
+      "Environmental",
+      "Color green"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'red flag' mean in relationships?",
+    "options": [
+      "Stop sign",
+      "Warning sign of problem",
+      "Red color",
+      "Flag waving"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'orange peel theory' test?",
+    "options": [
+      "Fruit peeling",
+      "Partner's willingness to do small acts",
+      "Citrus knowledge",
+      "Cooking skills"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'golden retriever boyfriend' mean?",
+    "options": [
+      "Has a dog",
+      "Loyal, energetic, enthusiastic partner",
+      "Dog breed",
+      "Pet owner"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'black cat girlfriend' mean?",
+    "options": [
+      "Has a cat",
+      "Independent, mysterious partner",
+      "Cat breed",
+      "Pet owner"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'soft launch' mean in relationships?",
+    "options": [
+      "Gentle start",
+      "Subtly revealing relationship on social media",
+      "Product launch",
+      "Soft opening"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'hard launch' mean in relationships?",
+    "options": [
+      "Difficult start",
+      "Publicly announcing relationship clearly",
+      "Product launch",
+      "Grand opening"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'situationship' mean?",
+    "options": [
+      "Difficult situation",
+      "Undefined romantic relationship",
+      "Work situation",
+      "Problem"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'talking stage' mean?",
+    "options": [
+      "Conversation",
+      "Getting to know before dating",
+      "Speech phase",
+      "Discussion"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'breadcrumbing' mean in dating?",
+    "options": [
+      "Feeding birds",
+      "Giving minimal attention to string along",
+      "Cooking",
+      "Leaving trails"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'love bombing' mean?",
+    "options": [
+      "Explosive love",
+      "Overwhelming with affection early on",
+      "War term",
+      "Valentine's Day"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'orbiting' mean in dating?",
+    "options": [
+      "Space",
+      "Watching socials without direct contact",
+      "Circling",
+      "Planets"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'haunting' mean in dating?",
+    "options": [
+      "Ghost stories",
+      "Ex watching your stories",
+      "Scary",
+      "Halloween"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'zombieing' mean?",
+    "options": [
+      "Undead",
+      "Coming back after ghosting",
+      "Horror movies",
+      "Walking dead"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'benching' mean in dating?",
+    "options": [
+      "Sitting on bench",
+      "Keeping someone as backup option",
+      "Sports term",
+      "Furniture"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'cushioning' mean in relationships?",
+    "options": [
+      "Comfortable",
+      "Maintaining backups while in relationship",
+      "Pillow",
+      "Soft"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'stashing' mean in dating?",
+    "options": [
+      "Hiding items",
+      "Hiding partner from friends/family",
+      "Storage",
+      "Saving"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'submarining' mean?",
+    "options": [
+      "Underwater",
+      "Disappearing then resurfacing",
+      "Navy",
+      "Diving"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'phubbing' mean?",
+    "options": [
+      "Clubbing",
+      "Ignoring someone for phone",
+      "Snubbing",
+      "Rubbing"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'cuffing season' refer to?",
+    "options": [
+      "Handcuffs",
+      "Finding partner for cold months",
+      "Winter fashion",
+      "Police season"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'hot girl walk' mean?",
+    "options": [
+      "Runway walk",
+      "Confidence-boosting walk routine",
+      "Summer stroll",
+      "Fashion show"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'sunday scaries' mean?",
+    "options": [
+      "Horror movies",
+      "Anxiety about upcoming work week",
+      "Weekend fear",
+      "Scary Sunday"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'girl boss' originally mean (unironically)?",
+    "options": [
+      "Female boss",
+      "Empowered woman in business",
+      "Mean girl",
+      "Manager"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'gaslight gatekeep girlboss' mock?",
+    "options": [
+      "Girl power",
+      "Toxic corporate feminism",
+      "Business women",
+      "Female leaders"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'it girl' mean?",
+    "options": [
+      "IT professional",
+      "Trendsetting influencer",
+      "Computer girl",
+      "Popular girl"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'nepotism baby' or 'nepo baby' mean?",
+    "options": [
+      "Baby name",
+      "Successful due to famous parents",
+      "Nephew",
+      "Spoiled child"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'chronically online' mean?",
+    "options": [
+      "Always connected",
+      "Too invested in internet culture",
+      "Good internet",
+      "Social media addict"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'touch grass' suggest?",
+    "options": [
+      "Gardening",
+      "Go outside/get offline",
+      "Feel nature",
+      "Lawn care"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'grass is greener' refer to?",
+    "options": [
+      "Lawn color",
+      "Thinking other options are better",
+      "Spring",
+      "Envy"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'ick' mean in dating?",
+    "options": [
+      "Sick",
+      "Sudden turn-off/dealbreaker",
+      "Gross",
+      "Disgusting"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'get the ick' mean?",
+    "options": [
+      "Get sick",
+      "Suddenly feel turned off",
+      "Catch illness",
+      "Feel disgusted"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'delulu is the solulu' mean?",
+    "options": [
+      "Nonsense phrase",
+      "Being delusional is the solution",
+      "Confusion",
+      "Crazy thinking"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'manifest' mean in Gen Z context?",
+    "options": [
+      "Show up",
+      "Attract desires through positive thinking",
+      "Make obvious",
+      "Appear"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'manifesting' involve?",
+    "options": [
+      "Documentation",
+      "Believing you'll achieve goals",
+      "Making lists",
+      "Planning"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does '5-9 before 9-5' refer to?",
+    "options": [
+      "Time zones",
+      "Productive morning routine before work",
+      "Clock times",
+      "Schedule"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'hot girl summer' mean?",
+    "options": [
+      "Warm weather",
+      "Confident, carefree summer attitude",
+      "Beach season",
+      "Attractive girls"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'sad girl autumn' mean?",
+    "options": [
+      "Depression",
+      "Melancholic fall aesthetic",
+      "Sad season",
+      "Crying"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'winter arc' mean?",
+    "options": [
+      "Snow season",
+      "Self-improvement period in winter",
+      "Story arc",
+      "Cold months"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'seasonal depression' commonly refer to?",
+    "options": [
+      "Weather sadness",
+      "SAD - reduced sunlight affecting mood",
+      "Winter blues",
+      "Cold weather"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'trauma dumping' mean?",
+    "options": [
+      "Garbage disposal",
+      "Oversharing trauma inappropriately",
+      "Emotional release",
+      "Therapy"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'emotional support' item mean?",
+    "options": [
+      "Therapy tool",
+      "Comfort object",
+      "Medical device",
+      "Support group"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'maladaptive daydreaming' refer to?",
+    "options": [
+      "Bad dreams",
+      "Excessive fantasy that interferes with life",
+      "Sleeping disorder",
+      "Nightmares"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'grwm' stand for?",
+    "options": [
+      "Great Weather Monday",
+      "Get Ready With Me",
+      "Going Really Wild Monday",
+      "Grow With Me"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'asmr' stand for?",
+    "options": [
+      "A Super Magic Recording",
+      "Autonomous Sensory Meridian Response",
+      "Audio Sound Music Rhythm",
+      "All Sounds Must Relax"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'thirst trap' mean?",
+    "options": [
+      "Dehydration",
+      "Attention-seeking attractive photo",
+      "Water shortage",
+      "Drink container"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'sliding into DMs' mean?",
+    "options": [
+      "Playground slide",
+      "Messaging someone privately/flirtatiously",
+      "Dancing",
+      "Smooth movement"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'double texting' mean?",
+    "options": [
+      "Two phones",
+      "Sending second message before reply",
+      "Texting twice daily",
+      "Two conversations"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'dry texting' mean?",
+    "options": [
+      "No emojis",
+      "Short, unengaged responses",
+      "Dehydrated",
+      "Boring messages"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'blue bubbles vs green bubbles' debate involve?",
+    "options": [
+      "Soap bubbles",
+      "iPhone vs Android texting",
+      "Color preference",
+      "Bubble game"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'stan twitter' refer to?",
+    "options": [
+      "Twitter CEO",
+      "Intense fan communities on Twitter",
+      "Stan's account",
+      "Username"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'reply guy' mean?",
+    "options": [
+      "Helpful person",
+      "Man who annoyingly replies to posts",
+      "Customer service",
+      "Good responder"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'main character syndrome' mean?",
+    "options": [
+      "Movie protagonist",
+      "Thinking world revolves around you",
+      "Acting career",
+      "Story writing"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'npc energy' mean?",
+    "options": [
+      "Video game",
+      "Acting robotic/no personality",
+      "Power level",
+      "Non-playing character"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'villain era' mean?",
+    "options": [
+      "Evil phase",
+      "Prioritizing yourself unapologetically",
+      "Movie villain",
+      "Bad behavior"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What does 'healed era' mean?",
+    "options": [
+      "Medical recovery",
+      "Personal growth/better mental state",
+      "Fixed injury",
+      "Health improvement"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Pro"
+  }, {
+    "text": "What does 'rent free' in someone's head mean?",
+    "options": [
+      "Free housing",
+      "Constantly thinking about something",
+      "Mental space",
+      "Forgetting"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'that's on period' mean?",
+    "options": [
+      "Menstruation",
+      "Emphasizing finality/truth",
+      "Time marker",
+      "Punctuation"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'cleared' mean in stan culture?",
+    "options": [
+      "Cleaned",
+      "Was better than/defeated",
+      "Transparent",
+      "Removed"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+{
+  "text": "What does 'finsta' mean?",
+    "options": [
+      "Finish Instagram",
+      "Fake Instagram account",
+      "First Instagram",
+      "Final Instagram post"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'tea' mean in Gen Z slang?",
+    "options": [
+      "The beverage",
+      "Gossip or drama",
+      "A type of party",
+      "Technology"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'salty' mean?",
+    "options": [
+      "Tastes like salt",
+      "Upset or bitter",
+      "Ocean water",
+      "Sweaty"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'flex' mean?",
+    "options": [
+      "Exercise",
+      "Show off",
+      "Be flexible",
+      "Bend something"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'periodt' mean?",
+    "options": [
+      "A typo for period",
+      "Emphasis on end of statement",
+      "A time period",
+      "Menstruation"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'iykyk' stand for?",
+    "options": [
+      "If You Know You Know",
+      "I Yell Kill Your Kids",
+      "In Your Kitchen You Knit",
+      "Is Your Karma Your King"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'wig' mean?",
+    "options": [
+      "A hairpiece",
+      "Something so good it snatched your wig",
+      "Weird",
+      "Winning"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'mood' mean when commenting?",
+    "options": [
+      "Feeling emotional",
+      "Relatable/same",
+      "Angry",
+      "Happy"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'snack' mean when referring to a person?",
+    "options": [
+      "They're hungry",
+      "They're attractive",
+      "They eat a lot",
+      "They're small"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'clout' mean?",
+    "options": [
+      "A punch",
+      "Influence or fame",
+      "Clothing",
+      "Cloud computing"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'yeet' mean?",
+    "options": [
+      "Yes",
+      "To throw with force",
+      "Eat",
+      "Meet"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'highkey' mean?",
+    "options": [
+      "Very obvious/really",
+      "A musical note",
+      "High in the sky",
+      "A house key"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'fire' mean when describing something?",
+    "options": [
+      "Hot temperature",
+      "Really good/cool",
+      "Dangerous",
+      "Burning"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'lit' mean?",
+    "options": [
+      "Illuminated",
+      "Exciting or excellent",
+      "Literature",
+      "Lightweight"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'savage' mean?",
+    "options": [
+      "Wild animal",
+      "Brutally honest or badass",
+      "Mean person",
+      "Uncivilized"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'snatched' mean?",
+    "options": [
+      "Stolen",
+      "Looking really good",
+      "Grabbed",
+      "Angry"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'woke' mean?",
+    "options": [
+      "Past tense of wake",
+      "Socially aware",
+      "Awake",
+      "Broke"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'extra' mean when describing someone?",
+    "options": [
+      "Additional",
+      "Over the top or dramatic",
+      "More than needed",
+      "Very large"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'ship' mean?",
+    "options": [
+      "A boat",
+      "Support a romantic relationship",
+      "Send something",
+      "Friendship"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'vibe' mean?",
+    "options": [
+      "Vibration",
+      "Mood or atmosphere",
+      "Video",
+      "Tribe"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'slay' mean?",
+    "options": [
+      "Kill",
+      "Do something exceptionally well",
+      "Sleep all day",
+      "Stay"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'drag' mean when talking about roasting?",
+    "options": [
+      "Pull something",
+      "Criticize or make fun of harshly",
+      "Slow down",
+      "A type of performance"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'shook' mean?",
+    "options": [
+      "Past tense of shake",
+      "Shocked or surprised",
+      "Cold",
+      "Hands shaking"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'stan' mean?",
+    "options": [
+      "Stand",
+      "Obsessed fan",
+      "A person's name",
+      "Standard"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'throw shade' mean?",
+    "options": [
+      "Make a shadow",
+      "Subtly insult someone",
+      "Throw something dark",
+      "Block sunlight"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'deadass' mean?",
+    "options": [
+      "Really dead",
+      "Seriously/for real",
+      "Dead donkey",
+      "No emotion"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'big mood' mean?",
+    "options": [
+      "Very emotional",
+      "Extremely relatable",
+      "Large feeling",
+      "Happy"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'slay queen' mean?",
+    "options": [
+      "Kill a queen",
+      "Empowering term for someone doing great",
+      "Chess move",
+      "Royal title"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'spill the tea' mean?",
+    "options": [
+      "Accidentally knock over tea",
+      "Share the gossip",
+      "Make a mess",
+      "Pour tea"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'no cap' mean?",
+    "options": [
+      "No hat",
+      "No lie/for real",
+      "No limit",
+      "No capital letters"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'glow up' mean?",
+    "options": [
+      "Start glowing",
+      "Positive transformation",
+      "Turn on lights",
+      "Grow upward"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'cancel' mean in cancel culture?",
+    "options": [
+      "Delete",
+      "Boycott someone for problematic behavior",
+      "Stop an event",
+      "Cross out"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'living rent free' mean?",
+    "options": [
+      "Free housing",
+      "Can't stop thinking about something",
+      "Not paying rent",
+      "Living with parents"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'ok boomer' mean?",
+    "options": [
+      "Greeting to older person",
+      "Dismissive response to out-of-touch comment",
+      "Baby boom generation",
+      "Explosion sound"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'hits different' mean?",
+    "options": [
+      "Punches differently",
+      "Has unique impact/effect",
+      "Music genre",
+      "Sports term"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'say less' mean?",
+    "options": [
+      "Stop talking",
+      "I understand, I'm in",
+      "Be quiet",
+      "Fewer words"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'slaps' mean when referring to music?",
+    "options": [
+      "Violent",
+      "Really good",
+      "Clapping sound",
+      "Bass heavy"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'receipts' mean?",
+    "options": [
+      "Store receipts",
+      "Proof/evidence",
+      "Money received",
+      "Text messages"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'fire emoji' typically mean?",
+    "options": [
+      "Hot weather",
+      "Something is amazing",
+      "Actual fire",
+      "Spicy food"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'F in the chat' mean?",
+    "options": [
+      "F grade",
+      "Pay respects",
+      "Type F key",
+      "Profanity"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'sending me' mean?",
+    "options": [
+      "Mailing something",
+      "Making me laugh hard",
+      "Texting me",
+      "Shipping me"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'it's giving' mean?",
+    "options": [
+      "Donating",
+      "It has a certain vibe/energy",
+      "Gift giving",
+      "Providing"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'purr' mean in Gen Z slang?",
+    "options": [
+      "Cat sound",
+      "Expression of approval/agreement",
+      "Soft sound",
+      "Period"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'dupe' mean in social media?",
+    "options": [
+      "Fool someone",
+      "Affordable alternative",
+      "Duplicate",
+      "Stupid"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'ate' mean when someone did something?",
+    "options": [
+      "Had a meal",
+      "Did something perfectly",
+      "Consumed",
+      "Past tense of eat"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'not me' usually start?",
+    "options": [
+      "Denial",
+      "Admitting you did something embarrassing",
+      "Someone else",
+      "Confusion"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'understood the assignment' mean?",
+    "options": [
+      "Did homework",
+      "Exceeded expectations perfectly",
+      "Comprehended task",
+      "Passed a test"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'slayed' mean?",
+    "options": [
+      "Killed",
+      "Did something amazingly",
+      "Laid down",
+      "Stayed"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'go off' mean?",
+    "options": [
+      "Leave",
+      "Express yourself/do your thing",
+      "Explode",
+      "Turn off"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'bussin' mean?",
+    "options": [
+      "Taking the bus",
+      "Really good (usually food)",
+      "Busy",
+      "Broken"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'no thoughts head empty' express?",
+    "options": [
+      "Stupidity",
+      "Blissful mindlessness",
+      "Forgetfulness",
+      "Meditation"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'valid' mean as slang?",
+    "options": [
+      "Legal",
+      "Acceptable/understandable",
+      "Correct",
+      "Real"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'serving' mean?",
+    "options": [
+      "Waitressing",
+      "Looking really good",
+      "Providing food",
+      "Sports move"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'the way' typically start?",
+    "options": [
+      "Directions",
+      "Emphasizing something notable",
+      "A path",
+      "Instructions"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'bop' mean when referring to music?",
+    "options": [
+      "Dance move",
+      "Catchy song",
+      "Hit someone",
+      "Bounce"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'hits' mean regarding content?",
+    "options": [
+      "Strikes",
+      "Resonates/connects",
+      "Views",
+      "Popular"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'idk lol' typically convey?",
+    "options": [
+      "Genuine confusion",
+      "Casual dismissiveness",
+      "Don't care",
+      "Nervous laugh"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'pressed' mean?",
+    "options": [
+      "Ironed clothes",
+      "Upset or bothered",
+      "Pushed",
+      "Stressed"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'W' mean in gaming/chat?",
+    "options": [
+      "West",
+      "Win",
+      "What",
+      "Walk"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'L' mean in gaming/chat?",
+    "options": [
+      "Left",
+      "Loss",
+      "Last",
+      "Late"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'unhinged' mean positively?",
+    "options": [
+      "Broken door",
+      "Wildly entertaining",
+      "Crazy",
+      "Unstable"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'rent free in my head' mean?",
+    "options": [
+      "Free rent",
+      "Can't stop thinking about it",
+      "Empty mind",
+      "No thoughts"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'main character energy' mean?",
+    "options": [
+      "Acting",
+      "Confident/standing out",
+      "Drama",
+      "Protagonist"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'he ate that' mean?",
+    "options": [
+      "Had a meal",
+      "Did that perfectly",
+      "Consumed food",
+      "Was hungry"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'your fav could never' mean?",
+    "options": [
+      "Never happening",
+      "My favorite is better than yours",
+      "Favorite thing",
+      "Can't do it"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'ate and left no crumbs' mean?",
+    "options": [
+      "Finished food",
+      "Did something perfectly/completely",
+      "Clean eating",
+      "Hungry"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'respectfully' often precede?",
+    "options": [
+      "Polite request",
+      "Blunt/rude opinion",
+      "Formal greeting",
+      "Apology"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'it's the ___ for me' format do?",
+    "options": [
+      "Explain preference",
+      "Point out specific thing you noticed",
+      "Shopping list",
+      "Recipe"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'bestie' mean?",
+    "options": [
+      "Best friend",
+      "Beast mode",
+      "Testing",
+      "Rest easy"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'giving main character' mean?",
+    "options": [
+      "Acting role",
+      "Having confident energy",
+      "Donation",
+      "Film production"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'bestie vibes' mean?",
+    "options": [
+      "Best friend energy",
+      "Musical vibrations",
+      "Good mood",
+      "Friendship bracelet"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'not the' usually introduce?",
+    "options": [
+      "Negative statement",
+      "Pointing out something outrageous",
+      "Denial",
+      "Confusion"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'this is so me coded' mean?",
+    "options": [
+      "Computer programming",
+      "This relates to my personality",
+      "Secret message",
+      "My style"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'lived' mean?",
+    "options": [
+      "Was alive",
+      "Loved an experience",
+      "Survived",
+      "Resided"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'the bare minimum' mean?",
+    "options": [
+      "Naked",
+      "Least effort possible",
+      "Empty",
+      "Very little"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'iconic' mean?",
+    "options": [
+      "Historic",
+      "Memorable/legendary",
+      "Computer icon",
+      "Religious image"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'energy' mean when describing someone?",
+    "options": [
+      "Physical energy",
+      "Their vibe/aura",
+      "Electricity",
+      "Enthusiasm"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'we love to see it' mean?",
+    "options": [
+      "Enjoy watching",
+      "Approve/celebrate something",
+      "Vision",
+      "Good sight"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'you dropped this 👑' mean?",
+    "options": [
+      "Lost crown",
+      "Compliment/you're amazing",
+      "Royalty",
+      "Pick it up"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'felt that' mean?",
+    "options": [
+      "Touched something",
+      "Deeply relatable",
+      "Physical feeling",
+      "Emotion"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'sending this to the group chat' mean?",
+    "options": [
+      "Forwarding message",
+      "This is worth sharing",
+      "Text message",
+      "Email"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'unfollow' typically express?",
+    "options": [
+      "Stop following on social media",
+      "Disapprove/distance from",
+      "Lost",
+      "Behind"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'this sent me' mean?",
+    "options": [
+      "Mailed to me",
+      "Made me laugh hard",
+      "Delivered",
+      "Texted me"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'i'm weak' mean?",
+    "options": [
+      "No strength",
+      "Laughing really hard",
+      "Tired",
+      "Sick"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'i'm done' usually express?",
+    "options": [
+      "Finished task",
+      "Can't handle this/overwhelmed",
+      "Game over",
+      "Completed"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'no literally' emphasize?",
+    "options": [
+      "Not joking",
+      "Extra emphasis on truth",
+      "Without exaggeration",
+      "Serious"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'and what about it' express?",
+    "options": [
+      "Question",
+      "Defiant/owning something",
+      "Curiosity",
+      "Confusion"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'the trend' usually refer to?",
+    "options": [
+      "Fashion",
+      "Viral social media challenge",
+      "Popular item",
+      "Direction"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'coded' mean when describing personality?",
+    "options": [
+      "Programming",
+      "Has characteristics of",
+      "Secret",
+      "Encrypted"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'living for this' mean?",
+    "options": [
+      "Survival",
+      "Really loving/enjoying it",
+      "Life purpose",
+      "Existing"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'the audacity' express?",
+    "options": [
+      "Bravery",
+      "Shocked disbelief at boldness",
+      "Hearing",
+      "Confidence"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'doing the most' mean?",
+    "options": [
+      "Hard worker",
+      "Being extra/over the top",
+      "Maximum effort",
+      "Overachiever"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What does 'pop off' mean?",
+    "options": [
+      "Explode",
+      "Do really well/succeed",
+      "Leave quickly",
+      "Snap"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Amateur"
+  }, {
+    "text": "What does 'LOL' stand for?",
+    "options": [
+      "Lots of Love",
+      "Laugh Out Loud",
+      "Living On Life",
+      "Look Out Later"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which emoji is commonly used to show you're crying from laughter?",
+    "options": [
+      "😂",
+      "😭",
+      "😅",
+      "🤣"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'Pls' mean in texting?",
+    "options": [
+      "Please",
+      "Plus",
+      "Plans",
+      "Place"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What emoji shows skepticism or side-eye?",
+    "options": [
+      "😒",
+      "😊",
+      "😂",
+      "😎"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'BRB' mean?",
+    "options": [
+      "Be Right Back",
+      "Big Red Balloon",
+      "Better Run Back",
+      "Break Room Break"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What platform is known for 6-second videos (before it shut down)?",
+    "options": [
+      "TikTok",
+      "Vine",
+      "Instagram",
+      "YouTube"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'OMG' stand for?",
+    "options": [
+      "On My Grind",
+      "Oh My Gosh",
+      "Over My Game",
+      "Only My Group"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What color is the Instagram logo?",
+    "options": [
+      "Blue",
+      "Rainbow gradient",
+      "Red",
+      "Green"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'DM' stand for on social media?",
+    "options": [
+      "Daily Message",
+      "Direct Message",
+      "Delete Message",
+      "Dumb Moment"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which app has a blue bird as its logo?",
+    "options": [
+      "Facebook",
+      "Twitter",
+      "Instagram",
+      "TikTok"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'FOMO' stand for?",
+    "options": [
+      "Fear Of Missing Out",
+      "Forget Our Main Objective",
+      "Finding Only My Opinion",
+      "Fun On Monday Only"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'TBH' mean?",
+    "options": [
+      "The Best Hour",
+      "To Be Honest",
+      "Time Before Happy",
+      "Take Back Hope"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What platform is known for its 'Like' button?",
+    "options": [
+      "Snapchat",
+      "Facebook",
+      "WhatsApp",
+      "Discord"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'IRL' stand for?",
+    "options": [
+      "In Real Life",
+      "I Really Like",
+      "Internet Reading List",
+      "I Regret Living"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'RN' mean in texting?",
+    "options": [
+      "Really Nice",
+      "Right Now",
+      "Random Number",
+      "Real Name"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which platform is known for filters and lenses?",
+    "options": [
+      "Snapchat",
+      "Twitter",
+      "LinkedIn",
+      "Reddit"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'SMH' stand for?",
+    "options": [
+      "So Much Homework",
+      "Shaking My Head",
+      "Send Me Help",
+      "Show Me How"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What color is the YouTube play button?",
+    "options": [
+      "Blue",
+      "Red",
+      "Green",
+      "Yellow"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'BTW' mean?",
+    "options": [
+      "Be The Winner",
+      "By The Way",
+      "Bring The Water",
+      "Better Than Worst"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What platform do you use to watch livestreams of people playing video games?",
+    "options": [
+      "Netflix",
+      "Twitch",
+      "HBO",
+      "Disney+"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'YOLO' stand for?",
+    "options": [
+      "You Only Live Once",
+      "Your Own Life Online",
+      "Yes Or Leave Out",
+      "Young Or Look Old"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'IDK' stand for?",
+    "options": [
+      "I Don't Know",
+      "I Do Karate",
+      "It's Different Kids",
+      "I Dance Kindly"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'TMI' stand for?",
+    "options": [
+      "Tell Me Information",
+      "Too Much Information",
+      "Take My Ice",
+      "Time More Inside"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which app has a camera as its logo?",
+    "options": [
+      "Twitter",
+      "Instagram",
+      "Facebook",
+      "LinkedIn"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'JK' mean?",
+    "options": [
+      "Just Kidding",
+      "Jump Kick",
+      "Jack King",
+      "Join Kids"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What platform is known for having 'subreddits'?",
+    "options": [
+      "Twitter",
+      "Reddit",
+      "Instagram",
+      "TikTok"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'ASAP' stand for?",
+    "options": [
+      "Always Say A Prayer",
+      "As Soon As Possible",
+      "After School At Park",
+      "All Students Are Present"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What platform lets you create 'boards' to save images?",
+    "options": [
+      "Pinterest",
+      "Twitter",
+      "Snapchat",
+      "Discord"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'IMO' stand for?",
+    "options": [
+      "In My Opinion",
+      "I Made Out",
+      "Internet Makes Opinions",
+      "I'm Moving On"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'BAE' mean?",
+    "options": [
+      "Before Anyone Else",
+      "Best At Everything",
+      "Buy All Eggs",
+      "Bring A Friend"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which platform is known for 'tweets'?",
+    "options": [
+      "Instagram",
+      "Twitter",
+      "Snapchat",
+      "TikTok"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'WYD' mean in texting?",
+    "options": [
+      "What You Doing",
+      "Where You Dine",
+      "When You Dance",
+      "Why You Different"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What color is the TikTok logo?",
+    "options": [
+      "Red and blue",
+      "Black and white",
+      "Blue and pink",
+      "Green and yellow"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'TTYL' stand for?",
+    "options": [
+      "Talk To You Later",
+      "Take The Yellow Lamp",
+      "Turn To Your Left",
+      "Try The Young Lion"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What platform is known for professional networking?",
+    "options": [
+      "TikTok",
+      "LinkedIn",
+      "Snapchat",
+      "Instagram"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'OOTD' stand for?",
+    "options": [
+      "Out Of The Door",
+      "Outfit Of The Day",
+      "Only On The Dance",
+      "Over On The Deck"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'LMK' mean?",
+    "options": [
+      "Like My Kicks",
+      "Let Me Know",
+      "Love My Kids",
+      "Last Minute Key"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What platform uses hashtags (#) to categorize content?",
+    "options": [
+      "All social media",
+      "Only Twitter",
+      "Only Instagram",
+      "Only TikTok"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'BBL' mean?",
+    "options": [
+      "Be Back Later",
+      "Big Blue Lion",
+      "Bring Both Laptops",
+      "Better Buy Lunch"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'WBU' stand for?",
+    "options": [
+      "Where Be You",
+      "What About You",
+      "When Buy Umbrellas",
+      "Who Brings Urchins"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'THX' mean?",
+    "options": [
+      "The Hex",
+      "Thanks",
+      "Think X",
+      "Three X"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What platform is known for sharing photos and videos?",
+    "options": [
+      "WhatsApp",
+      "Instagram",
+      "Email",
+      "LinkedIn"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'NVM' stand for?",
+    "options": [
+      "Never Visit Mars",
+      "Nevermind",
+      "New Video Message",
+      "Not Very Much"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'TY' mean?",
+    "options": [
+      "Thank You",
+      "Take Yours",
+      "Truly Young",
+      "Try Yesterday"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'GTG' stand for?",
+    "options": [
+      "Going To Games",
+      "Got To Go",
+      "Get The Glue",
+      "Give To Grandma"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'HBU' mean?",
+    "options": [
+      "How About You",
+      "Have Better Umbrellas",
+      "Happy Birthday Unknown",
+      "Honestly Be Useful"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What platform is known for sending disappearing photos?",
+    "options": [
+      "Facebook",
+      "Snapchat",
+      "LinkedIn",
+      "Twitter"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'ILY' stand for?",
+    "options": [
+      "I Love You",
+      "I Like Yaks",
+      "Inside Large Yards",
+      "I'm Leaving You"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'NP' mean?",
+    "options": [
+      "New Phone",
+      "No Problem",
+      "Nice Person",
+      "Next Page"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'AFK' stand for?",
+    "options": [
+      "Always From Kansas",
+      "Away From Keyboard",
+      "After Finding Keys",
+      "All For Kindness"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What emoji is commonly used to show love?",
+    "options": [
+      "💕",
+      "😊",
+      "🔥",
+      "👍"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'BFF' stand for?",
+    "options": [
+      "Best Friends Forever",
+      "Big Fast Food",
+      "Before Friday Finishes",
+      "Bring Four Friends"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What platform is known for messaging with green and blue bubbles?",
+    "options": [
+      "WhatsApp",
+      "iMessage",
+      "Facebook Messenger",
+      "Telegram"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'NBD' stand for?",
+    "options": [
+      "No Big Deal",
+      "Never Be Different",
+      "New Baby Dragon",
+      "Next Best Day"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'LMAO' stand for?",
+    "options": [
+      "Leave Me Alone Only",
+      "Laughing My Ass Off",
+      "Let's Make An Offer",
+      "Like My Amazing Outfit"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What emoji is used to show something is fire/cool?",
+    "options": [
+      "💧",
+      "🔥",
+      "❄️",
+      "🌟"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'Thx' or 'Thnx' mean?",
+    "options": [
+      "Thanks",
+      "Think Extra",
+      "Three Max",
+      "The Next"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'IKR' stand for?",
+    "options": [
+      "I Know Right",
+      "I Keep Running",
+      "Inside Kitchen Room",
+      "I'm Keeping Receipts"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What platform is known for creating 'groups' to chat?",
+    "options": [
+      "Twitter",
+      "Facebook",
+      "Instagram",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'OMW' stand for?",
+    "options": [
+      "On My Way",
+      "Over My Wall",
+      "Open More Windows",
+      "Only Me Wins"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'ROFL' stand for?",
+    "options": [
+      "Right On For Life",
+      "Rolling On Floor Laughing",
+      "Reach Out For Love",
+      "Really Old For Lunch"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What emoji is commonly used to show approval?",
+    "options": [
+      "👍",
+      "👎",
+      "🙏",
+      "👋"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'Pic' mean?",
+    "options": [
+      "Picture",
+      "Pick It Carefully",
+      "Person In Charge",
+      "Paint In Color"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'Msg' mean?",
+    "options": [
+      "Message",
+      "Monosodium Glutamate",
+      "My Special Gift",
+      "More Sugar Given"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'FYI' stand for?",
+    "options": [
+      "For Your Information",
+      "Find Your Ice",
+      "Free Yellow Ink",
+      "From Your Imagination"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What emoji shows you're thinking?",
+    "options": [
+      "🤔",
+      "😴",
+      "😱",
+      "😊"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'PLZ' or 'PLS' mean?",
+    "options": [
+      "Please",
+      "Plus",
+      "Place",
+      "Plan"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'B4' mean in texting?",
+    "options": [
+      "Be Four",
+      "Before",
+      "By Four",
+      "Box Four"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What emoji is used to show sadness?",
+    "options": [
+      "😊",
+      "😢",
+      "😂",
+      "😎"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'K' mean in texting?",
+    "options": [
+      "Okay",
+      "Keyboard",
+      "Kite",
+      "Kick"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What platform is known for voice and video calls with friends?",
+    "options": [
+      "Twitter",
+      "Discord",
+      "Instagram",
+      "LinkedIn"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'GR8' mean?",
+    "options": [
+      "Great",
+      "Grade Eight",
+      "Green Rate",
+      "Grate"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What emoji shows celebration?",
+    "options": [
+      "😢",
+      "🎉",
+      "😴",
+      "😡"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'U' mean in texting?",
+    "options": [
+      "You",
+      "Under",
+      "University",
+      "Umbrella"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'R' mean in texting?",
+    "options": [
+      "Are",
+      "Run",
+      "Right",
+      "Read"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What emoji is used to show surprise?",
+    "options": [
+      "😮",
+      "😴",
+      "😊",
+      "😎"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'IC' stand for in texting?",
+    "options": [
+      "I See",
+      "Ice Cream",
+      "In Case",
+      "I Care"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does '2DAY' mean?",
+    "options": [
+      "Today",
+      "Two Days",
+      "To Day",
+      "Tuesday"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What emoji is used to show anger?",
+    "options": [
+      "😊",
+      "😡",
+      "😢",
+      "😴"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'B-DAY' mean?",
+    "options": [
+      "Birthday",
+      "Business Day",
+      "Bad Day",
+      "Before Day"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'W8' mean in texting?",
+    "options": [
+      "Wait",
+      "Weight",
+      "Went Eight",
+      "Window Eight"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What emoji shows something is funny?",
+    "options": [
+      "😂",
+      "😢",
+      "😡",
+      "😴"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'L8R' mean?",
+    "options": [
+      "Later",
+      "Lighter",
+      "Let Eight Run",
+      "Last Rate"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What emoji shows you're sleeping?",
+    "options": [
+      "😴",
+      "😊",
+      "😡",
+      "😮"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'M8' mean in texting?",
+    "options": [
+      "Mate",
+      "Meight",
+      "Month Eight",
+      "Make Eight"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What emoji shows you're being cool or confident?",
+    "options": [
+      "😎",
+      "😢",
+      "😡",
+      "😴"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'CU' mean in texting?",
+    "options": [
+      "See You",
+      "Care Unit",
+      "Copper",
+      "Can't Understand"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'L8' mean in texting?",
+    "options": [
+      "Late",
+      "Light",
+      "Let",
+      "Last"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What emoji shows you're praying or saying thank you?",
+    "options": [
+      "🙏",
+      "👍",
+      "😊",
+      "😎"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'THO' mean in texting?",
+    "options": [
+      "Though",
+      "The Honest One",
+      "Three Hours Off",
+      "That Has Over"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'BRO' mean?",
+    "options": [
+      "Brother/Friend",
+      "Brown",
+      "Broken",
+      "Broadcast"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What emoji shows you're waving hello or goodbye?",
+    "options": [
+      "👋",
+      "👍",
+      "🙏",
+      "😊"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'YW' stand for?",
+    "options": [
+      "You're Welcome",
+      "Yellow Wall",
+      "Your Wish",
+      "Young Wolf"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What does 'NM' mean in texting?",
+    "options": [
+      "Not Much/Nothing Much",
+      "New Mexico",
+      "Never Mind",
+      "No More"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Rookie"
+  },{
+    "text": "What year did the 'Harlem Shake' meme go viral?",
+    "options": [
+      "2012",
+      "2013",
+      "2014",
+      "2015"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Vibe Check' literally mean?",
+    "options": [
+      "Testing music",
+      "Assessing someone's mood/energy",
+      "Phone vibration test",
+      "Dance move"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which app did Lemon8 try to position itself as?",
+    "options": [
+      "TikTok alternative",
+      "Instagram/Pinterest hybrid",
+      "YouTube competitor",
+      "Twitter replacement"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'Buss It' challenge trend?",
+    "options": [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Gaslight' in the girlboss phrase mean?",
+    "options": [
+      "Light a gas stove",
+      "Manipulate someone's reality",
+      "Shine bright",
+      "Provide guidance"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which creator started the 'Hype House'?",
+    "options": [
+      "Charli D'Amelio",
+      "Chase Hudson and Thomas Petrou",
+      "Addison Rae",
+      "Dixie D'Amelio"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Instagram hide like counts in some regions?",
+    "options": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Accountant' mean in TikTok context (2020)?",
+    "options": [
+      "Actual accountant",
+      "Code for OnlyFans creator",
+      "Financial advisor",
+      "Bean counter"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which platform did Byte try to recreate?",
+    "options": [
+      "TikTok",
+      "Vine",
+      "Instagram",
+      "Snapchat"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'Corn Kid' video go viral?",
+    "options": [
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Understood the Assignment' praise?",
+    "options": [
+      "Good homework",
+      "Exceeding expectations perfectly",
+      "Following rules",
+      "Being smart"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which YouTuber coined 'Sister'?",
+    "options": [
+      "Jeffree Star",
+      "James Charles",
+      "Tati Westbrook",
+      "NikkieTutorials"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Wordle go viral?",
+    "options": [
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Caught in 4K' mean?",
+    "options": [
+      "High resolution photo",
+      "Caught with clear evidence",
+      "Video quality",
+      "Gaming graphics"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'ASL' stand for in early 2000s internet slang?",
+    "options": [
+      "Always Stay Lit",
+      "Age/Sex/Location",
+      "After School Laughs",
+      "All Systems Live"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the original name of Discord before it became a chat platform?",
+    "options": [
+      "Wyvern",
+      "Hammer & Chisel",
+      "Fates Forever",
+      "OpenFeint"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which Vine creator coined the phrase 'Road work ahead'?",
+    "options": [
+      "Drew Gooden",
+      "Danny Gonzalez",
+      "Thomas Sanders",
+      "Cody Ko"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Tumblr ban adult content?",
+    "options": [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the first K-pop group to perform at Coachella?",
+    "options": [
+      "BTS",
+      "BLACKPINK",
+      "BIGBANG",
+      "2NE1"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'VSCO girl' aesthetic NOT typically include?",
+    "options": [
+      "Scrunchies",
+      "Hydroflask",
+      "Puka shell necklaces",
+      "Heavy makeup"
+    ],
+    "correctAnswer": 3,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which year did the Ice Bucket Challenge go viral?",
+    "options": [
+      "2013",
+      "2014",
+      "2015",
+      "2016"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the name of the first YouTube Rewind video?",
+    "options": [
+      "YouTube Rewind 2010",
+      "A Year in Review",
+      "Turn Down for 2014",
+      "The Ultimate 2010"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'F in the chat' originate from?",
+    "options": [
+      "Fortnite",
+      "Call of Duty: Advanced Warfare",
+      "Minecraft",
+      "League of Legends"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which app did TikTok merge with to expand globally?",
+    "options": [
+      "Vine",
+      "Musical.ly",
+      "Dubsmash",
+      "Likee"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Harambe the gorilla die?",
+    "options": [
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'copypasta' refer to?",
+    "options": [
+      "Italian food memes",
+      "Text that gets copied and pasted repeatedly",
+      "Plagiarized content",
+      "Recipe sharing"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which social media platform introduced 'Stories' first?",
+    "options": [
+      "Instagram",
+      "Snapchat",
+      "Facebook",
+      "WhatsApp"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the original character limit for tweets?",
+    "options": [
+      "100 characters",
+      "140 characters",
+      "160 characters",
+      "280 characters"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'What are those?' meme originate?",
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which Minecraft YouTuber was known for the 'Fallen Kingdom' music video series?",
+    "options": [
+      "Dream",
+      "CaptainSparklez",
+      "DanTDM",
+      "Stampy"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'PogChamp' mean on Twitch?",
+    "options": [
+      "A type of game",
+      "An expression of excitement",
+      "A user rank",
+      "A donation amount"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Flappy Bird get removed from app stores?",
+    "options": [
+      "2013",
+      "2014",
+      "2015",
+      "2016"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which content creator started the 'Don't Judge Me Challenge'?",
+    "options": [
+      "Liza Koshy",
+      "David Dobrik",
+      "It started on Vine collectively",
+      "James Charles"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Yeet' originally mean?",
+    "options": [
+      "To throw something with force",
+      "To leave quickly",
+      "To express excitement",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which year did Pokémon GO release?",
+    "options": [
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was the name of the blue/gold dress debate year?",
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which app was known for 'streaks' before Snapchat popularized it?",
+    "options": [
+      "Kik",
+      "Snapchat was the first",
+      "Instagram",
+      "WhatsApp"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'Salt Bae' meme go viral?",
+    "options": [
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Karen' as a meme specifically refer to?",
+    "options": [
+      "Any middle-aged woman",
+      "Entitled, demanding behavior",
+      "A specific person",
+      "Soccer moms"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which platform did Ninja famously leave for an exclusive deal in 2019?",
+    "options": [
+      "Facebook Gaming",
+      "YouTube Gaming",
+      "Mixer",
+      "Kick"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the mannequin challenge trend?",
+    "options": [
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Finsta' stand for?",
+    "options": [
+      "Final Instagram",
+      "Fake Instagram",
+      "Finished Instagram",
+      "Friend Instagram"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which Vine featured 'Why you always lying'?",
+    "options": [
+      "Nicholas Fraser",
+      "King Bach",
+      "Lele Pons",
+      "Cameron Dallas"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'Tide Pod Challenge' become a concern?",
+    "options": [
+      "2016",
+      "2017",
+      "2018",
+      "2019"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'BBL' stand for in social media slang?",
+    "options": [
+      "Be Back Later",
+      "Brazilian Butt Lift",
+      "Big Beautiful Life",
+      "Both A and B"
+    ],
+    "correctAnswer": 3,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which YouTuber started the '$10,000 Challenge' trend?",
+    "options": [
+      "PewDiePie",
+      "MrBeast",
+      "David Dobrik",
+      "Logan Paul"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'Bottle Flip Challenge' peak?",
+    "options": [
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Clout' mean in Gen Z slang?",
+    "options": [
+      "Money",
+      "Influence or fame",
+      "Clothing brand",
+      "Cloud computing"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which dance did 'The Renegade' originate from?",
+    "options": [
+      "Fortnite",
+      "TikTok (by Jalaiah Harmon)",
+      "YouTube",
+      "Instagram"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did YouTube remove the dislike count?",
+    "options": [
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Sheesh' typically express?",
+    "options": [
+      "Disappointment",
+      "Amazement or approval",
+      "Confusion",
+      "Anger"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which platform did Clubhouse compete with in 2021?",
+    "options": [
+      "Zoom",
+      "Discord",
+      "Twitter Spaces",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'Area 51 Raid' meme event occur?",
+    "options": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'CEO of' format mean?",
+    "options": [
+      "Actual business owner",
+      "Being the best at something",
+      "Starting a company",
+      "Making money"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which app popularized 'BeReal' style authentic photos?",
+    "options": [
+      "Instagram",
+      "VSCO",
+      "BeReal",
+      "Snapchat"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did TikTok reach 1 billion monthly active users?",
+    "options": [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Stan Twitter' refer to?",
+    "options": [
+      "Twitter in Stanford",
+      "Dedicated fan communities on Twitter",
+      "A Twitter founder",
+      "Statistical analysis"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which YouTuber had the 'Try Not to Laugh' series first?",
+    "options": [
+      "Markiplier",
+      "Jacksepticeye",
+      "PewDiePie",
+      "Multiple creators simultaneously"
+    ],
+    "correctAnswer": 3,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'In My Feelings' challenge go viral?",
+    "options": [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Bop' mean when referring to music?",
+    "options": [
+      "Bad song",
+      "Really good song",
+      "Dance move",
+      "Music genre"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which platform did Lil Nas X use to promote 'Old Town Road'?",
+    "options": [
+      "Instagram",
+      "Twitter",
+      "TikTok",
+      "YouTube"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Twitter/X rebrand happen?",
+    "options": [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Dupe' mean in beauty/fashion context?",
+    "options": [
+      "Duplicate",
+      "Affordable alternative",
+      "Fake product",
+      "Both A and B"
+    ],
+    "correctAnswer": 3,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which app introduced the 'Reels' feature to compete with TikTok?",
+    "options": [
+      "Facebook",
+      "Instagram",
+      "YouTube",
+      "Snapchat"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'Zoom' platform become mainstream?",
+    "options": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Moots' mean on Twitter?",
+    "options": [
+      "Muted accounts",
+      "Mutuals (people who follow each other)",
+      "Multiple accounts",
+      "Mood posts"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which creator coined 'That's Hot' as a phrase?",
+    "options": [
+      "Kim Kardashian",
+      "Paris Hilton",
+      "Nicole Richie",
+      "Lindsay Lohan"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'Bird Box Challenge' trend?",
+    "options": [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Pick Me' girl/boy mean?",
+    "options": [
+      "Someone who wants attention",
+      "Someone who puts down others to seem different",
+      "Dating preference",
+      "All of the above"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which game popularized 'Battle Royale' genre?",
+    "options": [
+      "PUBG",
+      "Fortnite",
+      "Apex Legends",
+      "H1Z1"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Instagram launch IGTV?",
+    "options": [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'For You Page' algorithm on TikTok prioritize?",
+    "options": [
+      "Follower count",
+      "User engagement and interests",
+      "Post time",
+      "Location"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which YouTuber started the 'Mukbang' trend in the West?",
+    "options": [
+      "Nikocado Avocado",
+      "Trisha Paytas",
+      "Multiple creators from Korea",
+      "Stephanie Soo"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'Kylie Jenner Lip Challenge' trend?",
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Heather' reference in the TikTok song?",
+    "options": [
+      "A flower",
+      "Someone you wish you were",
+      "A person's name",
+      "A sweater"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which platform did Quibi try to compete with?",
+    "options": [
+      "TikTok and YouTube",
+      "Netflix and Hulu",
+      "Snapchat and Instagram",
+      "Twitter and Facebook"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'Kiki Challenge' (In My Feelings) peak?",
+    "options": [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Zaddy' mean?",
+    "options": [
+      "Young father",
+      "Stylish, attractive man",
+      "Sugar daddy",
+      "Nickname for grandfather"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which app popularized the 'green screen' effect for regular users?",
+    "options": [
+      "Snapchat",
+      "Instagram",
+      "TikTok",
+      "YouTube"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Twitter increase character limit to 280?",
+    "options": [
+      "2016",
+      "2017",
+      "2018",
+      "2019"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Alt TikTok' refer to?",
+    "options": [
+      "Alternative music",
+      "Weird, niche content side of TikTok",
+      "Alt-right politics",
+      "Alternate accounts"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which creator popularized 'Cottagecore' aesthetic?",
+    "options": [
+      "Emma Chamberlain",
+      "It emerged collectively on Tumblr/TikTok",
+      "Taylor Swift",
+      "Lana Del Rey"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'Coffin Dance' meme go viral?",
+    "options": [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Glowed Up' mean?",
+    "options": [
+      "Started glowing",
+      "Improved appearance/life significantly",
+      "Became famous",
+      "Got a tan"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which platform did Parler try to compete with?",
+    "options": [
+      "Instagram",
+      "Twitter",
+      "Facebook",
+      "TikTok"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'Plant Parenthood' trend surge?",
+    "options": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Gatekeep' in 'Gaslight, Gatekeep, Girlboss' mean?",
+    "options": [
+      "Guard a gate",
+      "Restrict access to something",
+      "Security job",
+      "Keep secrets"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which YouTuber started the '24 Hours in...' challenge trend?",
+    "options": [
+      "MrBeast",
+      "Multiple creators simultaneously",
+      "David Dobrik",
+      "Ryan Trahan"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did 'WAP' by Cardi B go viral on TikTok?",
+    "options": [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Unalived' mean in TikTok speak?",
+    "options": [
+      "Not alive (euphemism to avoid censorship)",
+      "Zombie",
+      "Ghost",
+      "Video game death"
+    ],
+    "correctAnswer": 0,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which app did HQ Trivia compete with?",
+    "options": [
+      "Kahoot",
+      "Trivia apps in general",
+      "TikTok",
+      "Twitch"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'Dolly Parton Challenge' trend?",
+    "options": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Periodt' add to a statement?",
+    "options": [
+      "Question mark",
+      "Emphasis/finality",
+      "Punctuation error",
+      "Time reference"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which streaming service created 'Queer Eye' reboot?",
+    "options": [
+      "Hulu",
+      "Netflix",
+      "HBO Max",
+      "Amazon Prime"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the 'Silhouette Challenge' trend on TikTok?",
+    "options": [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'Hits Different' express?",
+    "options": [
+      "Violence",
+      "Something has unique/special impact",
+      "Music preference",
+      "Sports term"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which platform did Caffeine try to compete with?",
+    "options": [
+      "YouTube",
+      "Twitch",
+      "TikTok",
+      "Instagram"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did OnlyFans become mainstream news?",
+    "options": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "correctAnswer": 2,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What does 'No Thoughts, Head Empty' express?",
+    "options": [
+      "Stupidity",
+      "Blissful mindlessness/relaxation",
+      "Meditation",
+      "Confusion"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Which YouTuber popularized the 'Vlog Squad' concept?",
+    "options": [
+      "Casey Neistat",
+      "David Dobrik",
+      "Liza Koshy",
+      "Shane Dawson"
+    ],
+    "correctAnswer": 1,
+    "category": "Gen Z",
+    "difficulty": "Genius"
+  }
+]

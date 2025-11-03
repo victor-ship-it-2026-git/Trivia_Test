@@ -1,0 +1,8205 @@
+[{
+    "text": "Who is known as 'Queen Bey'?",
+    "options": [
+      "Rihanna",
+      "Beyoncé",
+      "Nicki Minaj",
+      "Ariana Grande"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is married to Kim Kardashian (as of 2020)?",
+    "options": [
+      "Kanye West",
+      "Travis Scott",
+      "Drake",
+      "Jay-Z"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Spider-Man in the Marvel Cinematic Universe?",
+    "options": [
+      "Andrew Garfield",
+      "Tobey Maguire",
+      "Tom Holland",
+      "Miles Teller"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Shake It Off'?",
+    "options": [
+      "Katy Perry",
+      "Taylor Swift",
+      "Ariana Grande",
+      "Selena Gomez"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the richest person in the world (as of 2023)?",
+    "options": [
+      "Jeff Bezos",
+      "Elon Musk",
+      "Bill Gates",
+      "Mark Zuckerberg"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Iron Man in the Marvel Celebrities?",
+    "options": [
+      "Chris Evans",
+      "Chris Hemsworth",
+      "Robert Downey Jr.",
+      "Mark Ruffalo"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is married to Jay-Z?",
+    "options": [
+      "Rihanna",
+      "Beyoncé",
+      "Nicki Minaj",
+      "Alicia Keys"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the most-followed person on Instagram (as of 2024)?",
+    "options": [
+      "Kylie Jenner",
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Selena Gomez"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Bad Guy'?",
+    "options": [
+      "Billie Eilish",
+      "Ariana Grande",
+      "Dua Lipa",
+      "Halsey"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the founder of Tesla?",
+    "options": [
+      "Jeff Bezos",
+      "Elon Musk",
+      "Bill Gates",
+      "Steve Jobs"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Jack in 'Titanic'?",
+    "options": [
+      "Brad Pitt",
+      "Tom Cruise",
+      "Leonardo DiCaprio",
+      "Johnny Depp"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is Kylie Jenner's famous sister?",
+    "options": [
+      "Kourtney",
+      "Kim",
+      "Khloé",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Uptown Funk'?",
+    "options": [
+      "Bruno Mars",
+      "Justin Timberlake",
+      "Pharrell Williams",
+      "The Weeknd"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the founder of Facebook?",
+    "options": [
+      "Bill Gates",
+      "Steve Jobs",
+      "Mark Zuckerberg",
+      "Elon Musk"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Black Panther?",
+    "options": [
+      "Michael B. Jordan",
+      "Chadwick Boseman",
+      "Idris Elba",
+      "John Boyega"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the lead singer of Coldplay?",
+    "options": [
+      "Chris Martin",
+      "Bono",
+      "Brandon Flowers",
+      "Adam Levine"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is known as 'The Rock'?",
+    "options": [
+      "John Cena",
+      "Dave Bautista",
+      "Dwayne Johnson",
+      "Vin Diesel"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Shape of You'?",
+    "options": [
+      "Justin Bieber",
+      "Ed Sheeran",
+      "Shawn Mendes",
+      "Charlie Puth"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is Ariana Grande's ex-fiancé?",
+    "options": [
+      "Pete Davidson",
+      "Mac Miller",
+      "Big Sean",
+      "The Weeknd"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the founder of Amazon?",
+    "options": [
+      "Bill Gates",
+      "Elon Musk",
+      "Jeff Bezos",
+      "Steve Jobs"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "What is Taylor Swift's middle name?",
+    "options": [
+      "Anne",
+      "Marie",
+      "Alison",
+      "Elizabeth"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Gigi Hadid's famous sister?",
+    "options": [
+      "Bella Hadid",
+      "Kendall Jenner",
+      "Hailey Bieber",
+      "Sofia Richie"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year was Kim Kardashian born?",
+    "options": [
+      "1978",
+      "1980",
+      "1982",
+      "1984"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who was the first winner of 'American Idol'?",
+    "options": [
+      "Carrie Underwood",
+      "Kelly Clarkson",
+      "Fantasia Barrino",
+      "Ruben Studdard"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Lady Gaga's real name?",
+    "options": [
+      "Stephanie Germanotta",
+      "Stefani Joanne Germanotta",
+      "Stella Germanotta",
+      "Sarah Germanotta"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Justin Bieber married to?",
+    "options": [
+      "Selena Gomez",
+      "Hailey Baldwin",
+      "Sofia Richie",
+      "Madison Beer"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is The Weeknd's real name?",
+    "options": [
+      "Abel Tesfaye",
+      "Adam Tesfaye",
+      "Andrew Tesfaye",
+      "Anthony Tesfaye"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Miley Cyrus's famous father?",
+    "options": [
+      "Billy Ray Cyrus",
+      "Tim McGraw",
+      "Keith Urban",
+      "Blake Shelton"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Michael Jackson die?",
+    "options": [
+      "2007",
+      "2008",
+      "2009",
+      "2010"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Jennifer Lopez's ex-husband (baseball player)?",
+    "options": [
+      "Derek Jeter",
+      "Alex Rodriguez",
+      "Mark McGwire",
+      "David Ortiz"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Drake's real name?",
+    "options": [
+      "Aubrey Graham",
+      "Andrew Graham",
+      "Anthony Graham",
+      "Adrian Graham"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who was married to Brad Pitt before Angelina Jolie?",
+    "options": [
+      "Gwyneth Paltrow",
+      "Jennifer Aniston",
+      "Cameron Diaz",
+      "Julia Roberts"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Rihanna's home country?",
+    "options": [
+      "Jamaica",
+      "Trinidad",
+      "Barbados",
+      "Haiti"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Tom Cruise's ex-wife (actress)?",
+    "options": [
+      "Nicole Kidman",
+      "Katie Holmes",
+      "Mimi Rogers",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Cardi B's real name?",
+    "options": [
+      "Belcalis Almánzar",
+      "Carla Almánzar",
+      "Carmen Almánzar",
+      "Carolina Almánzar"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Zayn Malik's ex-girlfriend (model)?",
+    "options": [
+      "Kendall Jenner",
+      "Gigi Hadid",
+      "Bella Hadid",
+      "Hailey Bieber"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year was Beyoncé born?",
+    "options": [
+      "1979",
+      "1980",
+      "1981",
+      "1982"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Kanye West's mother?",
+    "options": [
+      "Diana West",
+      "Dorothy West",
+      "Donda West",
+      "Donna West"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Bruno Mars's real name?",
+    "options": [
+      "Peter Hernandez",
+      "Paul Hernandez",
+      "Patrick Hernandez",
+      "Pablo Hernandez"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Travis Scott's daughter's mother?",
+    "options": [
+      "Kendall Jenner",
+      "Kylie Jenner",
+      "Khloé Kardashian",
+      "Kourtney Kardashian"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Nicki Minaj's real name?",
+    "options": [
+      "Onika Maraj",
+      "Nicole Maraj",
+      "Natasha Maraj",
+      "Naomi Maraj"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who is George Clooney's wife?",
+    "options": [
+      "Amal Alamuddin",
+      "Stacy Keibler",
+      "Elisabetta Canalis",
+      "Sarah Larson"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Prince die?",
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who is Ryan Reynolds married to?",
+    "options": [
+      "Scarlett Johansson",
+      "Blake Lively",
+      "Sandra Bullock",
+      "Rachel McAdams"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Katy Perry's real name?",
+    "options": [
+      "Katherine Hudson",
+      "Katheryn Hudson",
+      "Kate Hudson",
+      "Katrina Hudson"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who did Britney Spears marry for 55 hours?",
+    "options": [
+      "Jason Alexander",
+      "Kevin Federline",
+      "Justin Timberlake",
+      "Sam Asghari"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Whitney Houston die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who is Bradley Cooper's ex-girlfriend (model)?",
+    "options": [
+      "Gigi Hadid",
+      "Bella Hadid",
+      "Irina Shayk",
+      "Kendall Jenner"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Alicia Keys's real name?",
+    "options": [
+      "Alicia Cook",
+      "Alicia Dean",
+      "Alicia Augello Cook",
+      "Alicia Jones"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was John Lennon married to when he died?",
+    "options": [
+      "Cynthia Powell",
+      "Yoko Ono",
+      "May Pang",
+      "Linda McCartney"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Jennifer Aniston's godfather's name?",
+    "options": [
+      "Telly Savalas",
+      "George Clooney",
+      "Bob Saget",
+      "John Stamos"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who is Orlando Bloom's ex-wife?",
+    "options": [
+      "Miranda Kerr",
+      "Katy Perry",
+      "Heidi Klum",
+      "Naomi Campbell"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Amy Winehouse die?",
+    "options": [
+      "2009",
+      "2010",
+      "2011",
+      "2012"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who is Ashton Kutcher's ex-wife?",
+    "options": [
+      "Demi Moore",
+      "Mila Kunis",
+      "January Jones",
+      "Brittany Murphy"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is P. Diddy's real name?",
+    "options": [
+      "Sean Combs",
+      "Shawn Combs",
+      "Steven Combs",
+      "Samuel Combs"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who is David Beckham married to?",
+    "options": [
+      "Victoria Adams",
+      "Emma Bunton",
+      "Melanie Chisholm",
+      "Geri Halliwell"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did David Bowie die?",
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who is Priyanka Chopra married to?",
+    "options": [
+      "Joe Jonas",
+      "Nick Jonas",
+      "Kevin Jonas",
+      "Frankie Jonas"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Snoop Dogg's real name?",
+    "options": [
+      "Calvin Broadus",
+      "Carl Broadus",
+      "Curtis Broadus",
+      "Cameron Broadus"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Prince married to?",
+    "options": [
+      "Mayte Garcia",
+      "Manuela Testolini",
+      "Both A and B",
+      "Vanity"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Cher's last name?",
+    "options": [
+      "Sarkisian",
+      "Bono",
+      "LaPiere",
+      "All are correct"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Elizabeth Taylor married to twice?",
+    "options": [
+      "Richard Burton",
+      "Eddie Fisher",
+      "Michael Todd",
+      "Mike Wilding"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Marilyn Monroe die?",
+    "options": [
+      "1960",
+      "1961",
+      "1962",
+      "1963"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Frank Sinatra married to (actress)?",
+    "options": [
+      "Ava Gardner",
+      "Mia Farrow",
+      "Nancy Barbato",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Bob Dylan's real name?",
+    "options": [
+      "Robert Zimmerman",
+      "Robert Dylan",
+      "Robert Allen",
+      "Robert Smith"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was married to both Mickey Rooney and Frank Sinatra?",
+    "options": [
+      "Marilyn Monroe",
+      "Ava Gardner",
+      "Judy Garland",
+      "Lana Turner"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Elvis Presley die?",
+    "options": [
+      "1975",
+      "1976",
+      "1977",
+      "1978"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Humphrey Bogart married to (actress)?",
+    "options": [
+      "Lauren Bacall",
+      "Ingrid Bergman",
+      "Katharine Hepburn",
+      "Bette Davis"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Elton John's real name?",
+    "options": [
+      "Reginald Dwight",
+      "Richard Dwight",
+      "Ronald Dwight",
+      "Raymond Dwight"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was James Dean's last girlfriend?",
+    "options": [
+      "Natalie Wood",
+      "Ursula Andress",
+      "Pier Angeli",
+      "Elizabeth Taylor"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did John Lennon die?",
+    "options": [
+      "1978",
+      "1979",
+      "1980",
+      "1981"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Judy Garland's daughter?",
+    "options": [
+      "Lorna Luft",
+      "Liza Minnelli",
+      "Both A and B",
+      "Neither"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Freddie Mercury's real name?",
+    "options": [
+      "Farrokh Bulsara",
+      "Frederick Bulsara",
+      "Francis Bulsara",
+      "Fernando Bulsara"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Cary Grant married to (actress)?",
+    "options": [
+      "Virginia Cherrill",
+      "Dyan Cannon",
+      "Betsy Drake",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Janis Joplin die?",
+    "options": [
+      "1968",
+      "1969",
+      "1970",
+      "1971"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Charlie Chaplin married to (last wife)?",
+    "options": [
+      "Paulette Goddard",
+      "Oona O'Neill",
+      "Lita Grey",
+      "Mildred Harris"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Tina Turner's real name?",
+    "options": [
+      "Anna Mae Bullock",
+      "Tina Bullock",
+      "Annie Bullock",
+      "Angela Bullock"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was married to both Artie Shaw and Frank Sinatra?",
+    "options": [
+      "Lana Turner",
+      "Ava Gardner",
+      "Rita Hayworth",
+      "Betty Grable"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Kurt Cobain die?",
+    "options": [
+      "1992",
+      "1993",
+      "1994",
+      "1995"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Orson Welles married to (actress)?",
+    "options": [
+      "Rita Hayworth",
+      "Dolores del Río",
+      "Paola Mori",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Joan Crawford's real name?",
+    "options": [
+      "Lucille LeSueur",
+      "Lucille Fay",
+      "Lucille Cassin",
+      "All are correct"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was married to both Douglas Fairbanks and Buddy Rogers?",
+    "options": [
+      "Gloria Swanson",
+      "Mary Pickford",
+      "Lillian Gish",
+      "Norma Talmadge"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Rudolph Valentino die?",
+    "options": [
+      "1924",
+      "1925",
+      "1926",
+      "1927"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Greta Garbo's leading man in 'Anna Christie'?",
+    "options": [
+      "John Gilbert",
+      "Clark Gable",
+      "Charles Bickford",
+      "Ramon Novarro"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is Bette Davis's real name?",
+    "options": [
+      "Ruth Elizabeth Davis",
+      "Betty Davis",
+      "Elizabeth Davis",
+      "Barbara Davis"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Jean Harlow married to (MGM executive)?",
+    "options": [
+      "Paul Bern",
+      "Harold Rosson",
+      "Both",
+      "Neither"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Jean Harlow die?",
+    "options": [
+      "1935",
+      "1936",
+      "1937",
+      "1938"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Clara Bow known as?",
+    "options": [
+      "The It Girl",
+      "The Vamp",
+      "The Flapper",
+      "America's Sweetheart"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Judy Garland die?",
+    "options": [
+      "1967",
+      "1968",
+      "1969",
+      "1970"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Marlene Dietrich's frequent collaborator (director)?",
+    "options": [
+      "Ernst Lubitsch",
+      "Josef von Sternberg",
+      "Fritz Lang",
+      "Billy Wilder"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is Rita Hayworth's real name?",
+    "options": [
+      "Margarita Cansino",
+      "Rita Cansino",
+      "Margaret Cansino",
+      "Maria Cansino"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was married to both Artie Shaw and Mickey Rooney?",
+    "options": [
+      "Lana Turner",
+      "Ava Gardner",
+      "Both",
+      "Neither"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Clark Gable die?",
+    "options": [
+      "1958",
+      "1959",
+      "1960",
+      "1961"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Carole Lombard married to when she died?",
+    "options": [
+      "William Powell",
+      "Clark Gable",
+      "Russ Columbo",
+      "Gary Cooper"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Carole Lombard die?",
+    "options": [
+      "1940",
+      "1941",
+      "1942",
+      "1943"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Theda Bara known as?",
+    "options": [
+      "The It Girl",
+      "The Vamp",
+      "The Flapper",
+      "America's Sweetheart"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is Theda Bara's real name?",
+    "options": [
+      "Theodosia Goodman",
+      "Theda Goodman",
+      "Theodora Bara",
+      "Theresa Goodman"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Mary Pickford known as?",
+    "options": [
+      "The It Girl",
+      "The Vamp",
+      "America's Sweetheart",
+      "The Flapper"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Lon Chaney die?",
+    "options": [
+      "1928",
+      "1929",
+      "1930",
+      "1931"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was known as 'The Man of a Thousand Faces'?",
+    "options": [
+      "Lon Chaney",
+      "Lon Chaney Jr.",
+      "Boris Karloff",
+      "Bela Lugosi"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What is Lillian Gish's birth name?",
+    "options": [
+      "Lillian de Guiche",
+      "Lillian Diana Gish",
+      "Lillian Dorothy Gish",
+      "Lillian Grace Gish"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Florence Lawrence known as?",
+    "options": [
+      "The Biograph Girl",
+      "The Vitagraph Girl",
+      "The It Girl",
+      "The Vamp"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Florence Lawrence die?",
+    "options": [
+      "1936",
+      "1937",
+      "1938",
+      "1939"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was the first major film star to be identified by name?",
+    "options": [
+      "Mary Pickford",
+      "Florence Lawrence",
+      "Theda Bara",
+      "Lillian Gish"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is Buster Keaton's real first name?",
+    "options": [
+      "Joseph",
+      "James",
+      "John",
+      "Jack"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Olive Thomas married to (Ziegfeld star)?",
+    "options": [
+      "Jack Pickford",
+      "Douglas Fairbanks",
+      "Charlie Chaplin",
+      "Rudolph Valentino"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Olive Thomas die?",
+    "options": [
+      "1918",
+      "1919",
+      "1920",
+      "1921"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Mabel Normand's frequent collaborator (director)?",
+    "options": [
+      "D.W. Griffith",
+      "Mack Sennett",
+      "Charlie Chaplin",
+      "Buster Keaton"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Mabel Normand die?",
+    "options": [
+      "1928",
+      "1929",
+      "1930",
+      "1931"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was known as 'The King of Hollywood' in the silent era?",
+    "options": [
+      "Douglas Fairbanks",
+      "Rudolph Valentino",
+      "John Gilbert",
+      "Ramon Novarro"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Douglas Fairbanks die?",
+    "options": [
+      "1937",
+      "1938",
+      "1939",
+      "1940"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Wallace Reid's wife (actress)?",
+    "options": [
+      "Dorothy Davenport",
+      "Mabel Normand",
+      "Olive Thomas",
+      "Clara Bow"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Wallace Reid die?",
+    "options": [
+      "1921",
+      "1922",
+      "1923",
+      "1924"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Roscoe 'Fatty' Arbuckle accused of murdering?",
+    "options": [
+      "Virginia Rappe",
+      "Olive Thomas",
+      "Mabel Normand",
+      "Thelma Todd"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did the Fatty Arbuckle scandal occur?",
+    "options": [
+      "1919",
+      "1920",
+      "1921",
+      "1922"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Pola Negri's most famous romantic interest?",
+    "options": [
+      "Charlie Chaplin",
+      "Rudolph Valentino",
+      "Both A and B",
+      "Douglas Fairbanks"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is Ramon Novarro's real name?",
+    "options": [
+      "José Ramón Gil Samaniego",
+      "Ramon Samaniego",
+      "Ramon Gil",
+      "José Novarro"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Ramon Novarro die?",
+    "options": [
+      "1966",
+      "1967",
+      "1968",
+      "1969"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Norma Talmadge's sister (also an actress)?",
+    "options": [
+      "Constance Talmadge",
+      "Natalie Talmadge",
+      "Both A and B",
+      "Neither"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Natalie Talmadge married to?",
+    "options": [
+      "Charlie Chaplin",
+      "Buster Keaton",
+      "Harold Lloyd",
+      "Douglas Fairbanks"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did John Gilbert die?",
+    "options": [
+      "1934",
+      "1935",
+      "1936",
+      "1937"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was William Desmond Taylor?",
+    "options": [
+      "Silent film director",
+      "Actor",
+      "Producer",
+      "All of the above"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  }, {
+    "text": "Who is known as 'The King of Pop'?",
+    "options": [
+      "Elvis Presley",
+      "Michael Jackson",
+      "Prince",
+      "Justin Timberlake"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer is known for the hit song 'Hello'?",
+    "options": [
+      "Adele",
+      "Taylor Swift",
+      "Lady Gaga",
+      "Katy Perry"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Jack in the movie 'Titanic'?",
+    "options": [
+      "Brad Pitt",
+      "Tom Hanks",
+      "Leonardo DiCaprio",
+      "Matt Damon"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actress played Hermione in Harry Potter?",
+    "options": [
+      "Emma Stone",
+      "Emma Watson",
+      "Emma Roberts",
+      "Emily Blunt"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the host of 'The Tonight Show'?",
+    "options": [
+      "Jimmy Fallon",
+      "Jimmy Kimmel",
+      "Stephen Colbert",
+      "Conan O'Brien"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer is married to John Legend?",
+    "options": [
+      "Chrissy Teigen",
+      "Blake Lively",
+      "Jessica Biel",
+      "Gigi Hadid"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Rolling in the Deep'?",
+    "options": [
+      "Rihanna",
+      "Adele",
+      "Beyoncé",
+      "Alicia Keys"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actor is known as 'The Rock'?",
+    "options": [
+      "Vin Diesel",
+      "Jason Statham",
+      "Dwayne Johnson",
+      "John Cena"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is Kourtney Kardashian's famous sister?",
+    "options": [
+      "Kim Kardashian",
+      "Khloé Kardashian",
+      "Kylie Jenner",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer performed at the 2020 Super Bowl halftime show?",
+    "options": [
+      "Shakira and Jennifer Lopez",
+      "Beyoncé",
+      "Lady Gaga",
+      "Bruno Mars"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Captain America in the Marvel movies?",
+    "options": [
+      "Chris Hemsworth",
+      "Chris Evans",
+      "Chris Pratt",
+      "Chris Pine"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which talk show host has a dance segment?",
+    "options": [
+      "Ellen DeGeneres",
+      "Oprah Winfrey",
+      "Kelly Clarkson",
+      "Wendy Williams"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Wrecking Ball'?",
+    "options": [
+      "Selena Gomez",
+      "Miley Cyrus",
+      "Demi Lovato",
+      "Ariana Grande"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actor played Thor in the MCU?",
+    "options": [
+      "Chris Evans",
+      "Chris Hemsworth",
+      "Chris Pratt",
+      "Liam Hemsworth"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is married to Ryan Reynolds?",
+    "options": [
+      "Scarlett Johansson",
+      "Blake Lively",
+      "Anna Kendrick",
+      "Jennifer Lawrence"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer is known for '24K Magic'?",
+    "options": [
+      "The Weeknd",
+      "Bruno Mars",
+      "Justin Timberlake",
+      "Usher"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Wonder Woman in the DC movies?",
+    "options": [
+      "Margot Robbie",
+      "Gal Gadot",
+      "Scarlett Johansson",
+      "Brie Larson"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which comedian starred in 'Kevin Hart: Seriously Funny'?",
+    "options": [
+      "Kevin Hart",
+      "Chris Rock",
+      "Dave Chappelle",
+      "Eddie Murphy"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Roar'?",
+    "options": [
+      "Taylor Swift",
+      "Katy Perry",
+      "Miley Cyrus",
+      "Kesha"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actor is married to Amal Clooney?",
+    "options": [
+      "Brad Pitt",
+      "George Clooney",
+      "Matt Damon",
+      "Ben Affleck"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the lead singer of Maroon 5?",
+    "options": [
+      "Adam Levine",
+      "Nick Jonas",
+      "Bruno Mars",
+      "John Mayer"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actress played Rachel in 'Friends'?",
+    "options": [
+      "Jennifer Aniston",
+      "Courteney Cox",
+      "Lisa Kudrow",
+      "Jennifer Love Hewitt"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Someone Like You'?",
+    "options": [
+      "Sam Smith",
+      "Ed Sheeran",
+      "Adele",
+      "Amy Winehouse"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which reality star is known for 'Keeping Up with the Kardashians'?",
+    "options": [
+      "Kim Kardashian",
+      "Paris Hilton",
+      "Nicole Richie",
+      "Lauren Conrad"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Harry Potter?",
+    "options": [
+      "Daniel Radcliffe",
+      "Rupert Grint",
+      "Tom Felton",
+      "Matthew Lewis"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer is known as 'Queen B'?",
+    "options": [
+      "Britney Spears",
+      "Beyoncé",
+      "Rihanna",
+      "Brandy"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the founder of SpaceX?",
+    "options": [
+      "Jeff Bezos",
+      "Elon Musk",
+      "Richard Branson",
+      "Mark Zuckerberg"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actress starred in 'The Hunger Games'?",
+    "options": [
+      "Emma Stone",
+      "Jennifer Lawrence",
+      "Shailene Woodley",
+      "Kristen Stewart"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Umbrella'?",
+    "options": [
+      "Beyoncé",
+      "Rihanna",
+      "Alicia Keys",
+      "Mary J. Blige"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actor played Wolverine?",
+    "options": [
+      "Ryan Reynolds",
+      "Hugh Jackman",
+      "Russell Crowe",
+      "Christian Bale"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the most-followed person on TikTok?",
+    "options": [
+      "Charli D'Amelio",
+      "Addison Rae",
+      "Bella Poarch",
+      "Khaby Lame"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer performed 'Firework'?",
+    "options": [
+      "Kesha",
+      "Katy Perry",
+      "Lady Gaga",
+      "Pink"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played the Joker in 'The Dark Knight'?",
+    "options": [
+      "Jared Leto",
+      "Heath Ledger",
+      "Joaquin Phoenix",
+      "Jack Nicholson"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which rapper is married to Kim Kardashian (as of 2021)?",
+    "options": [
+      "Kanye West",
+      "Jay-Z",
+      "Drake",
+      "Travis Scott"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Happy'?",
+    "options": [
+      "Bruno Mars",
+      "Pharrell Williams",
+      "Justin Timberlake",
+      "Usher"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actor is known for the 'Mission: Impossible' series?",
+    "options": [
+      "Tom Cruise",
+      "Brad Pitt",
+      "Will Smith",
+      "Matt Damon"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is Selena Gomez's ex-boyfriend?",
+    "options": [
+      "The Weeknd",
+      "Justin Bieber",
+      "Both A and B",
+      "Nick Jonas"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer is known as 'The Material Girl'?",
+    "options": [
+      "Cher",
+      "Madonna",
+      "Janet Jackson",
+      "Cyndi Lauper"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Deadpool?",
+    "options": [
+      "Ryan Gosling",
+      "Ryan Reynolds",
+      "Chris Pratt",
+      "Paul Rudd"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which talk show did Oprah Winfrey host?",
+    "options": [
+      "The Oprah Winfrey Show",
+      "Live with Kelly",
+      "The View",
+      "The Ellen Show"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Blinding Lights'?",
+    "options": [
+      "Drake",
+      "Post Malone",
+      "The Weeknd",
+      "Travis Scott"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actress played Katniss Everdeen?",
+    "options": [
+      "Emma Stone",
+      "Jennifer Lawrence",
+      "Emma Watson",
+      "Kristen Stewart"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the founder of Microsoft?",
+    "options": [
+      "Steve Jobs",
+      "Bill Gates",
+      "Mark Zuckerberg",
+      "Larry Page"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actor played James Bond most recently?",
+    "options": [
+      "Pierce Brosnan",
+      "Daniel Craig",
+      "Sean Connery",
+      "Roger Moore"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Poker Face'?",
+    "options": [
+      "Madonna",
+      "Lady Gaga",
+      "Britney Spears",
+      "Christina Aguilera"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which NBA player is known as 'King James'?",
+    "options": [
+      "Michael Jordan",
+      "Kobe Bryant",
+      "LeBron James",
+      "Stephen Curry"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the voice of Groot in 'Guardians of the Galaxy'?",
+    "options": [
+      "Chris Pratt",
+      "Vin Diesel",
+      "Bradley Cooper",
+      "Dave Bautista"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer is known for 'Toxic'?",
+    "options": [
+      "Christina Aguilera",
+      "Britney Spears",
+      "Jessica Simpson",
+      "Mandy Moore"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Forrest Gump?",
+    "options": [
+      "Tom Hanks",
+      "Tom Cruise",
+      "Brad Pitt",
+      "Robin Williams"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which rapper is known for 'Hotline Bling'?",
+    "options": [
+      "Kendrick Lamar",
+      "Drake",
+      "J. Cole",
+      "The Weeknd"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the host of 'America's Got Talent'?",
+    "options": [
+      "Nick Cannon",
+      "Terry Crews",
+      "Howie Mandel",
+      "Simon Cowell"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actress played Bella Swan in 'Twilight'?",
+    "options": [
+      "Anna Kendrick",
+      "Kristen Stewart",
+      "Emma Stone",
+      "Dakota Fanning"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Can't Stop the Feeling'?",
+    "options": [
+      "Bruno Mars",
+      "Justin Timberlake",
+      "Pharrell Williams",
+      "Mark Ronson"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which soccer player is known as 'CR7'?",
+    "options": [
+      "Lionel Messi",
+      "Cristiano Ronaldo",
+      "Neymar",
+      "Kylian Mbappé"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the founder of Apple?",
+    "options": [
+      "Bill Gates",
+      "Steve Jobs",
+      "Mark Zuckerberg",
+      "Larry Page"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actress played Monica in 'Friends'?",
+    "options": [
+      "Jennifer Aniston",
+      "Courteney Cox",
+      "Lisa Kudrow",
+      "Maggie Wheeler"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Royals'?",
+    "options": [
+      "Lorde",
+      "Lana Del Rey",
+      "Halsey",
+      "Sia"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actor played Superman in recent DC movies?",
+    "options": [
+      "Brandon Routh",
+      "Henry Cavill",
+      "Tom Welling",
+      "Tyler Hoechlin"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the highest-paid YouTuber?",
+    "options": [
+      "PewDiePie",
+      "MrBeast",
+      "Ryan Kaji",
+      "Dude Perfect"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer is known for 'Sorry Not Sorry'?",
+    "options": [
+      "Selena Gomez",
+      "Demi Lovato",
+      "Ariana Grande",
+      "Camila Cabello"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Neo in 'The Matrix'?",
+    "options": [
+      "Tom Cruise",
+      "Keanu Reeves",
+      "Brad Pitt",
+      "Will Smith"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which rapper is known for 'God's Plan'?",
+    "options": [
+      "J. Cole",
+      "Drake",
+      "Kendrick Lamar",
+      "Travis Scott"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the creator of 'The Simpsons'?",
+    "options": [
+      "Seth MacFarlane",
+      "Matt Groening",
+      "Mike Judge",
+      "Trey Parker"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actress played Mia in 'La La Land'?",
+    "options": [
+      "Emma Watson",
+      "Emma Stone",
+      "Emma Roberts",
+      "Emily Blunt"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Tik Tok'?",
+    "options": [
+      "Ke$ha",
+      "Katy Perry",
+      "Lady Gaga",
+      "Pink"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actor is known for playing Captain Jack Sparrow?",
+    "options": [
+      "Orlando Bloom",
+      "Johnny Depp",
+      "Geoffrey Rush",
+      "Javier Bardem"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is married to David Beckham?",
+    "options": [
+      "Victoria Beckham",
+      "Kate Moss",
+      "Naomi Campbell",
+      "Geri Halliwell"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer performed 'Blank Space'?",
+    "options": [
+      "Katy Perry",
+      "Taylor Swift",
+      "Ariana Grande",
+      "Selena Gomez"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Hermione's friend Ron in Harry Potter?",
+    "options": [
+      "Tom Felton",
+      "Rupert Grint",
+      "Daniel Radcliffe",
+      "Matthew Lewis"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which rapper is known for 'In Da Club'?",
+    "options": [
+      "Eminem",
+      "50 Cent",
+      "Dr. Dre",
+      "Snoop Dogg"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the founder of Virgin Group?",
+    "options": [
+      "Elon Musk",
+      "Richard Branson",
+      "Jeff Bezos",
+      "Mark Cuban"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actress played Eleven in 'Stranger Things'?",
+    "options": [
+      "Sadie Sink",
+      "Millie Bobby Brown",
+      "Natalia Dyer",
+      "Maya Hawke"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Firework'?",
+    "options": [
+      "Lady Gaga",
+      "Katy Perry",
+      "Pink",
+      "Kesha"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actor played Batman in 'The Dark Knight' trilogy?",
+    "options": [
+      "Ben Affleck",
+      "Christian Bale",
+      "Michael Keaton",
+      "George Clooney"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the daughter of Will Smith?",
+    "options": [
+      "Willow Smith",
+      "Zendaya",
+      "Skai Jackson",
+      "Yara Shahidi"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer is known for 'Halo'?",
+    "options": [
+      "Rihanna",
+      "Beyoncé",
+      "Alicia Keys",
+      "Jennifer Hudson"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Iron Man in the Marvel movies?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Mark Ruffalo",
+      "Chris Hemsworth"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which rapper is married to Beyoncé?",
+    "options": [
+      "Kanye West",
+      "Jay-Z",
+      "Nas",
+      "Drake"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Lose Yourself'?",
+    "options": [
+      "50 Cent",
+      "Eminem",
+      "Dr. Dre",
+      "Ice Cube"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actress played Harley Quinn in 'Suicide Squad'?",
+    "options": [
+      "Cara Delevingne",
+      "Margot Robbie",
+      "Scarlett Johansson",
+      "Emma Stone"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the founder of Blue Origin?",
+    "options": [
+      "Elon Musk",
+      "Jeff Bezos",
+      "Richard Branson",
+      "Mark Zuckerberg"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer performed 'Love Story'?",
+    "options": [
+      "Carrie Underwood",
+      "Taylor Swift",
+      "Miranda Lambert",
+      "Shania Twain"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Luke Skywalker in Star Wars?",
+    "options": [
+      "Harrison Ford",
+      "Mark Hamill",
+      "Alec Guinness",
+      "Ewan McGregor"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which rapper is known for 'Sicko Mode'?",
+    "options": [
+      "Drake",
+      "Travis Scott",
+      "Post Malone",
+      "Lil Baby"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is married to Prince Harry?",
+    "options": [
+      "Kate Middleton",
+      "Meghan Markle",
+      "Pippa Middleton",
+      "Princess Beatrice"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actress played Black Widow?",
+    "options": [
+      "Scarlett Johansson",
+      "Emily Blunt",
+      "Charlize Theron",
+      "Jennifer Lawrence"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Dynamite'?",
+    "options": [
+      "EXO",
+      "BTS",
+      "BLACKPINK",
+      "Stray Kids"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actor is known as 'The Fresh Prince'?",
+    "options": [
+      "Denzel Washington",
+      "Will Smith",
+      "Jamie Foxx",
+      "Eddie Murphy"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Watermelon Sugar'?",
+    "options": [
+      "Shawn Mendes",
+      "Harry Styles",
+      "Zayn Malik",
+      "Niall Horan"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actress played Captain Marvel?",
+    "options": [
+      "Scarlett Johansson",
+      "Brie Larson",
+      "Gal Gadot",
+      "Emily Blunt"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is the son of Jaden Smith's father?",
+    "options": [
+      "Jaden Smith",
+      "Will Smith",
+      "Trey Smith",
+      "Both A and C"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer performed 'Senorita' with Camila Cabello?",
+    "options": [
+      "Justin Bieber",
+      "Shawn Mendes",
+      "Charlie Puth",
+      "Ed Sheeran"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Groot in 'Guardians of the Galaxy'?",
+    "options": [
+      "Chris Pratt",
+      "Vin Diesel",
+      "Bradley Cooper",
+      "Dave Bautista"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which tennis player has won the most Grand Slam titles?",
+    "options": [
+      "Roger Federer",
+      "Novak Djokovic",
+      "Rafael Nadal",
+      "Pete Sampras"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who sang 'Levitating'?",
+    "options": [
+      "Ariana Grande",
+      "Dua Lipa",
+      "Billie Eilish",
+      "Doja Cat"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which actor played Star-Lord?",
+    "options": [
+      "Chris Hemsworth",
+      "Chris Pratt",
+      "Chris Evans",
+      "Chris Pine"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who is married to Justin Timberlake?",
+    "options": [
+      "Britney Spears",
+      "Jessica Biel",
+      "Cameron Diaz",
+      "Scarlett Johansson"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which singer is known for 'Drivers License'?",
+    "options": [
+      "Billie Eilish",
+      "Olivia Rodrigo",
+      "Taylor Swift",
+      "Sabrina Carpenter"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Who played Aquaman?",
+    "options": [
+      "Chris Hemsworth",
+      "Jason Momoa",
+      "Dwayne Johnson",
+      "Vin Diesel"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },
+  {
+    "text": "Which rapper is known for 'Old Town Road'?",
+    "options": [
+      "Lil Nas X",
+      "Post Malone",
+      "Travis Scott",
+      "Tyler, The Creator"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Rookie"
+  },{
+    "text": "What is Rihanna's real first name?",
+    "options": [
+      "Robyn",
+      "Robin",
+      "Rihanna",
+      "Rebecca"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor won an Oscar for 'The Revenant'?",
+    "options": [
+      "Brad Pitt",
+      "Leonardo DiCaprio",
+      "Tom Hardy",
+      "Matthew McConaughey"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Britney Spears release 'Baby One More Time'?",
+    "options": [
+      "1997",
+      "1998",
+      "1999",
+      "2000"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is the youngest Kardashian-Jenner sibling?",
+    "options": [
+      "Kendall Jenner",
+      "Kylie Jenner",
+      "Khloé Kardashian",
+      "Rob Kardashian"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is The Weeknd's real name?",
+    "options": [
+      "Abel Tesfaye",
+      "Adam Levine",
+      "Andrew Smith",
+      "Anthony Davis"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actress won an Oscar for 'Silver Linings Playbook'?",
+    "options": [
+      "Emma Stone",
+      "Jennifer Lawrence",
+      "Anne Hathaway",
+      "Amy Adams"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Eminem's real name?",
+    "options": [
+      "Marshall Mathers",
+      "Martin Matthews",
+      "Michael Masters",
+      "Marcus Miller"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Ariana Grande's ex-fiancé who was a comedian?",
+    "options": [
+      "Mac Miller",
+      "Pete Davidson",
+      "Big Sean",
+      "Dalton Gomez"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year was Taylor Swift born?",
+    "options": [
+      "1988",
+      "1989",
+      "1990",
+      "1991"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor played the title role in 'The Truman Show'?",
+    "options": [
+      "Tom Hanks",
+      "Jim Carrey",
+      "Robin Williams",
+      "Steve Carell"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Cardi B's real first name?",
+    "options": [
+      "Belcalis",
+      "Carla",
+      "Carmen",
+      "Carolina"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who was Jennifer Aniston married to before Justin Theroux?",
+    "options": [
+      "Vince Vaughn",
+      "Brad Pitt",
+      "John Mayer",
+      "Tate Donovan"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Nicki Minaj's birth country?",
+    "options": [
+      "Jamaica",
+      "Trinidad and Tobago",
+      "Barbados",
+      "Haiti"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor played the Grinch in the 2000 live-action film?",
+    "options": [
+      "Robin Williams",
+      "Jim Carrey",
+      "Mike Myers",
+      "Eddie Murphy"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Lady Gaga's birth name?",
+    "options": [
+      "Stefani Germanotta",
+      "Stephanie Germanotta",
+      "Stella Germanotta",
+      "Sarah Germanotta"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who did Prince Harry marry in 2018?",
+    "options": [
+      "Kate Middleton",
+      "Meghan Markle",
+      "Chelsy Davy",
+      "Cressida Bonas"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Michael Jackson die?",
+    "options": [
+      "2007",
+      "2008",
+      "2009",
+      "2010"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor played the lead in 'The Wolf of Wall Street'?",
+    "options": [
+      "Matt Damon",
+      "Leonardo DiCaprio",
+      "Brad Pitt",
+      "Christian Bale"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Post Malone's real name?",
+    "options": [
+      "Austin Post",
+      "Anthony Post",
+      "Andrew Post",
+      "Aaron Malone"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Miley Cyrus's godmother?",
+    "options": [
+      "Reba McEntire",
+      "Dolly Parton",
+      "Shania Twain",
+      "Faith Hill"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actress won an Oscar for 'La La Land'?",
+    "options": [
+      "Emma Stone",
+      "Emma Watson",
+      "Emma Roberts",
+      "None - she didn't win"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Billie Eilish's last name?",
+    "options": [
+      "O'Connell",
+      "Eilish",
+      "Baird",
+      "Pirate"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who was Brad Pitt married to before Jennifer Aniston?",
+    "options": [
+      "Gwyneth Paltrow",
+      "No one",
+      "Juliette Lewis",
+      "Robin Givens"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Elvis Presley die?",
+    "options": [
+      "1975",
+      "1976",
+      "1977",
+      "1978"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor played Edward in 'Twilight'?",
+    "options": [
+      "Taylor Lautner",
+      "Robert Pattinson",
+      "Kellan Lutz",
+      "Jackson Rathbone"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Dwayne Johnson's wrestling nickname?",
+    "options": [
+      "The Boulder",
+      "The Rock",
+      "The Stone",
+      "The Mountain"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Travis Scott's daughter's mother?",
+    "options": [
+      "Kendall Jenner",
+      "Kylie Jenner",
+      "Khloé Kardashian",
+      "Kourtney Kardashian"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Whitney Houston die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor played Hannibal Lecter in 'The Silence of the Lambs'?",
+    "options": [
+      "Robert De Niro",
+      "Anthony Hopkins",
+      "Al Pacino",
+      "Jack Nicholson"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Drake's hometown?",
+    "options": [
+      "New York",
+      "Toronto",
+      "Los Angeles",
+      "Atlanta"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Gigi Hadid's supermodel sister?",
+    "options": [
+      "Bella Hadid",
+      "Kendall Jenner",
+      "Hailey Bieber",
+      "Cara Delevingne"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Prince die?",
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor played Andy in 'The Devil Wears Prada'?",
+    "options": [
+      "Emma Stone",
+      "Anne Hathaway",
+      "Emily Blunt",
+      "Rachel McAdams"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Halsey's real first name?",
+    "options": [
+      "Ashley",
+      "Hailey",
+      "Hannah",
+      "Harper"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who was married to Tom Cruise before Katie Holmes?",
+    "options": [
+      "Nicole Kidman",
+      "Penélope Cruz",
+      "Cameron Diaz",
+      "Renée Zellweger"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Amy Winehouse die?",
+    "options": [
+      "2009",
+      "2010",
+      "2011",
+      "2012"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor played the lead in 'Django Unchained'?",
+    "options": [
+      "Samuel L. Jackson",
+      "Jamie Foxx",
+      "Denzel Washington",
+      "Idris Elba"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Zayn Malik's birth name?",
+    "options": [
+      "Zain Malik",
+      "Zayn Javadd Malik",
+      "Zayne Michael Malik",
+      "Zayn James Malik"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Kourtney Kardashian's ex-partner and father of her children?",
+    "options": [
+      "Scott Disick",
+      "Travis Barker",
+      "Younes Bendjima",
+      "Quincy Brown"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did David Bowie die?",
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actress played Katniss's sister Prim?",
+    "options": [
+      "Willow Shields",
+      "Amandla Stenberg",
+      "Isabelle Fuhrman",
+      "Saoirse Ronan"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Lana Del Rey's real name?",
+    "options": [
+      "Elizabeth Grant",
+      "Laura Grant",
+      "Linda Grant",
+      "Lisa Grant"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Hailey Bieber's famous father?",
+    "options": [
+      "Alec Baldwin",
+      "Stephen Baldwin",
+      "Billy Baldwin",
+      "Daniel Baldwin"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Kurt Cobain die?",
+    "options": [
+      "1992",
+      "1993",
+      "1994",
+      "1995"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor won an Oscar for 'Dallas Buyers Club'?",
+    "options": [
+      "Brad Pitt",
+      "Matthew McConaughey",
+      "Jared Leto",
+      "Both B and C"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Shawn Mendes's birthplace?",
+    "options": [
+      "Toronto",
+      "Vancouver",
+      "Montreal",
+      "Ottawa"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who was Ben Affleck married to from 2005-2018?",
+    "options": [
+      "Gwyneth Paltrow",
+      "Jennifer Garner",
+      "Jennifer Lopez",
+      "Ana de Armas"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Tupac Shakur die?",
+    "options": [
+      "1995",
+      "1996",
+      "1997",
+      "1998"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor played the Joker in 'Suicide Squad'?",
+    "options": [
+      "Heath Ledger",
+      "Jared Leto",
+      "Joaquin Phoenix",
+      "Jack Nicholson"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Dua Lipa's nationality?",
+    "options": [
+      "Albanian",
+      "British",
+      "Both A and B",
+      "American"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Jaden Smith's famous sister?",
+    "options": [
+      "Willow Smith",
+      "Zendaya",
+      "Skai Jackson",
+      "Yara Shahidi"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did The Beatles break up?",
+    "options": [
+      "1968",
+      "1969",
+      "1970",
+      "1971"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actress played Rey in the Star Wars sequel trilogy?",
+    "options": [
+      "Felicity Jones",
+      "Daisy Ridley",
+      "Emilia Clarke",
+      "Natalie Portman"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Camila Cabello's birth country?",
+    "options": [
+      "Mexico",
+      "Cuba",
+      "Puerto Rico",
+      "Colombia"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who was Johnny Depp married to from 2015-2017?",
+    "options": [
+      "Winona Ryder",
+      "Amber Heard",
+      "Vanessa Paradis",
+      "Kate Moss"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Robin Williams die?",
+    "options": [
+      "2012",
+      "2013",
+      "2014",
+      "2015"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor played the lead in 'Birdman'?",
+    "options": [
+      "Edward Norton",
+      "Michael Keaton",
+      "Zach Galifianakis",
+      "Naomi Watts"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Lizzo's real first name?",
+    "options": [
+      "Melissa",
+      "Lisa",
+      "Liza",
+      "Elizabeth"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Ashton Kutcher married to?",
+    "options": [
+      "Demi Moore",
+      "Mila Kunis",
+      "January Jones",
+      "Brittany Murphy"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Kobe Bryant die?",
+    "options": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor played Freddie Mercury in 'Bohemian Rhapsody'?",
+    "options": [
+      "Eddie Redmayne",
+      "Rami Malek",
+      "Ben Whishaw",
+      "Joseph Mazzello"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is SZA's real name?",
+    "options": [
+      "Solána Rowe",
+      "Samantha Rowe",
+      "Sara Rowe",
+      "Susan Rowe"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Channing Tatum's ex-wife?",
+    "options": [
+      "Zoë Kravitz",
+      "Jenna Dewan",
+      "Jessie J",
+      "Amber Heard"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Mac Miller die?",
+    "options": [
+      "2016",
+      "2017",
+      "2018",
+      "2019"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actress won an Oscar for 'The Blind Side'?",
+    "options": [
+      "Julia Roberts",
+      "Sandra Bullock",
+      "Reese Witherspoon",
+      "Nicole Kidman"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Megan Thee Stallion's real name?",
+    "options": [
+      "Megan Pete",
+      "Megan Peters",
+      "Megan Peterson",
+      "Megan Petersen"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Chris Hemsworth's actor brother?",
+    "options": [
+      "Luke Hemsworth",
+      "Liam Hemsworth",
+      "Both A and B",
+      "Neither"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Paul Walker die?",
+    "options": [
+      "2012",
+      "2013",
+      "2014",
+      "2015"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor played Patrick Bateman in 'American Psycho'?",
+    "options": [
+      "Leonardo DiCaprio",
+      "Christian Bale",
+      "Ryan Gosling",
+      "Jake Gyllenhaal"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Machine Gun Kelly's real name?",
+    "options": [
+      "Colson Baker",
+      "Richard Baker",
+      "George Baker",
+      "Kelly Baker"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Jason Momoa married to?",
+    "options": [
+      "Zoe Kravitz",
+      "Lisa Bonet",
+      "Amber Heard",
+      "Eiza González"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Avicii die?",
+    "options": [
+      "2016",
+      "2017",
+      "2018",
+      "2019"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor played the lead in 'Nightcrawler'?",
+    "options": [
+      "Ryan Gosling",
+      "Jake Gyllenhaal",
+      "Christian Bale",
+      "Michael Fassbender"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Doja Cat's real name?",
+    "options": [
+      "Amala Dlamini",
+      "Amanda Dlamini",
+      "Angela Dlamini",
+      "Amara Dlamini"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Sophie Turner married to?",
+    "options": [
+      "Kit Harington",
+      "Joe Jonas",
+      "Nick Jonas",
+      "Kevin Jonas"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did George Michael die?",
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actress won an Oscar for 'Black Swan'?",
+    "options": [
+      "Mila Kunis",
+      "Natalie Portman",
+      "Winona Ryder",
+      "None of them"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is 21 Savage's real first name?",
+    "options": [
+      "Shéyaa",
+      "Sean",
+      "Samuel",
+      "Savage"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Priyanka Chopra married to?",
+    "options": [
+      "Joe Jonas",
+      "Nick Jonas",
+      "Kevin Jonas",
+      "Frankie Jonas"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Chester Bennington die?",
+    "options": [
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor played Newt Scamander in 'Fantastic Beasts'?",
+    "options": [
+      "Eddie Redmayne",
+      "Colin Farrell",
+      "Dan Fogler",
+      "Ezra Miller"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Offset's relationship to Cardi B?",
+    "options": [
+      "Boyfriend",
+      "Husband",
+      "Ex-husband",
+      "Fiancé"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Alec Baldwin married to?",
+    "options": [
+      "Kim Basinger",
+      "Hilaria Baldwin",
+      "Cheri Oteri",
+      "Janine Turner"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Stan Lee die?",
+    "options": [
+      "2016",
+      "2017",
+      "2018",
+      "2019"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actress played Jyn Erso in 'Rogue One'?",
+    "options": [
+      "Daisy Ridley",
+      "Felicity Jones",
+      "Emilia Clarke",
+      "Alicia Vikander"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Ice Cube's real name?",
+    "options": [
+      "O'Shea Jackson",
+      "Oscar Jackson",
+      "Otis Jackson",
+      "Oliver Jackson"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Zooey Deschanel's sister?",
+    "options": [
+      "Emily Deschanel",
+      "Katy Perry",
+      "Kate Hudson",
+      "Kat Dennings"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Carrie Fisher die?",
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor won an Oscar for 'Joker'?",
+    "options": [
+      "Heath Ledger",
+      "Joaquin Phoenix",
+      "Jared Leto",
+      "Jack Nicholson"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Tyler, The Creator's real name?",
+    "options": [
+      "Tyler Okonma",
+      "Tyler Gregory",
+      "Tyler Williams",
+      "Tyler Johnson"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Katy Perry married to?",
+    "options": [
+      "Russell Brand",
+      "Orlando Bloom",
+      "John Mayer",
+      "Diplo"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did XXXTentacion die?",
+    "options": [
+      "2016",
+      "2017",
+      "2018",
+      "2019"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actor played T'Challa in 'Black Panther'?",
+    "options": [
+      "Michael B. Jordan",
+      "Chadwick Boseman",
+      "Winston Duke",
+      "Daniel Kaluuya"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What is Frank Ocean's real name?",
+    "options": [
+      "Christopher Breaux",
+      "Frank Breaux",
+      "Charles Ocean",
+      "Franklin Ocean"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Who is Dax Shepard married to?",
+    "options": [
+      "Kate Hudson",
+      "Kristen Bell",
+      "Anna Faris",
+      "Reese Witherspoon"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "What year did Alan Rickman die?",
+    "options": [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  },
+  {
+    "text": "Which actress won an Oscar for 'Room'?",
+    "options": [
+      "Jennifer Lawrence",
+      "Brie Larson",
+      "Alicia Vikander",
+      "Saoirse Ronan"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Amateur"
+  }, {
+    "text": "What is Alicia Keys's birth name?",
+    "options": [
+      "Alicia Cook",
+      "Alicia Dean",
+      "Alicia Augello Cook",
+      "Alicia Keys"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which actress was married to both Mickey Rooney and Artie Shaw?",
+    "options": [
+      "Lana Turner",
+      "Ava Gardner",
+      "Judy Garland",
+      "Rita Hayworth"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Heath Ledger die?",
+    "options": [
+      "2006",
+      "2007",
+      "2008",
+      "2009"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Reese Witherspoon's real first name?",
+    "options": [
+      "Rachel",
+      "Rebecca",
+      "Laura Jeanne",
+      "Reese"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Brad Pitt engaged to before marrying Jennifer Aniston?",
+    "options": [
+      "Gwyneth Paltrow",
+      "Juliette Lewis",
+      "Robin Givens",
+      "Jill Schoelen"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Joaquin Phoenix's birth name?",
+    "options": [
+      "Joaquin Bottom",
+      "Joaquin Phoenix",
+      "Joaquin Rafael Bottom",
+      "Joaquin River Phoenix"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which comedian did Ellen DeGeneres marry in 2008?",
+    "options": [
+      "Anne Heche",
+      "Portia de Rossi",
+      "Alexandra Hedison",
+      "Melissa Etheridge"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Philip Seymour Hoffman die?",
+    "options": [
+      "2012",
+      "2013",
+      "2014",
+      "2015"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Vin Diesel's real name?",
+    "options": [
+      "Mark Vincent",
+      "Vincent Diesel",
+      "Mark Sinclair",
+      "Vincent Sinclair"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Cameron Diaz married to from 2015-present?",
+    "options": [
+      "Alex Rodriguez",
+      "Benji Madden",
+      "Joel Madden",
+      "Justin Timberlake"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Childish Gambino's real name?",
+    "options": [
+      "Donald Glover",
+      "Daniel Glover",
+      "David Glover",
+      "Dwayne Glover"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which actor was engaged to Jennifer Lopez before Ben Affleck?",
+    "options": [
+      "Marc Anthony",
+      "Sean Combs",
+      "Ojani Noa",
+      "Cris Judd"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did River Phoenix die?",
+    "options": [
+      "1991",
+      "1992",
+      "1993",
+      "1994"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Tina Fey's real first name?",
+    "options": [
+      "Christina",
+      "Tina",
+      "Elizabeth",
+      "Katrina"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Nicole Kidman married to before Keith Urban?",
+    "options": [
+      "Lenny Kravitz",
+      "Tom Cruise",
+      "Russell Crowe",
+      "Ewan McGregor"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Charlie Sheen's birth name?",
+    "options": [
+      "Carlos Estevez",
+      "Charlie Estevez",
+      "Carlos Irwin Estévez",
+      "Charles Estévez"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which supermodel was married to David Bowie?",
+    "options": [
+      "Jerry Hall",
+      "Iman",
+      "Naomi Campbell",
+      "Kate Moss"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Anna Nicole Smith die?",
+    "options": [
+      "2005",
+      "2006",
+      "2007",
+      "2008"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Natalie Portman's birth name?",
+    "options": [
+      "Natalie Hershlag",
+      "Natalie Portman",
+      "Neta-Lee Hershlag",
+      "Natalie Hershlager"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Angelina Jolie married to before Brad Pitt?",
+    "options": [
+      "Jonny Lee Miller",
+      "Billy Bob Thornton",
+      "Both A and B",
+      "Timothy Hutton"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Awkwafina's real name?",
+    "options": [
+      "Nora Lum",
+      "Anna Lum",
+      "Nicole Lum",
+      "Nancy Lum"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which actress was married to Brad Pitt for 55 hours?",
+    "options": [
+      "Jennifer Aniston",
+      "Gwyneth Paltrow",
+      "No one - this was Britney Spears and Jason Alexander",
+      "Robin Givens"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Brittany Murphy die?",
+    "options": [
+      "2007",
+      "2008",
+      "2009",
+      "2010"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Mindy Kaling's birth name?",
+    "options": [
+      "Mindy Chokalingam",
+      "Vera Chokalingam",
+      "Mindiyar Chokalingam",
+      "Vera Mindy Chokalingam"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Jennifer Lopez's first husband?",
+    "options": [
+      "Ojani Noa",
+      "Cris Judd",
+      "Marc Anthony",
+      "Sean Combs"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Action Bronson's real name?",
+    "options": [
+      "Ariyan Arslani",
+      "Anthony Bronson",
+      "Aaron Bronson",
+      "Adam Arslani"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which actress was Tom Cruise married to before Nicole Kidman?",
+    "options": [
+      "Mimi Rogers",
+      "Penélope Cruz",
+      "Rebecca De Mornay",
+      "Kelly McGillis"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Chris Farley die?",
+    "options": [
+      "1995",
+      "1996",
+      "1997",
+      "1998"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Rami Malek's twin brother's name?",
+    "options": [
+      "Sam Malek",
+      "Sami Malek",
+      "Simon Malek",
+      "Samuel Malek"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Drew Barrymore married to from 2012-2016?",
+    "options": [
+      "Tom Green",
+      "Will Kopelman",
+      "Jeremy Thomas",
+      "Justin Long"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Chance the Rapper's real name?",
+    "options": [
+      "Chancelor Bennett",
+      "Chance Bennett",
+      "Charles Bennett",
+      "Chancellor Bennett"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which model was married to Nicolas Cage?",
+    "options": [
+      "Patricia Arquette",
+      "Lisa Marie Presley",
+      "Alice Kim",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did John Ritter die?",
+    "options": [
+      "2001",
+      "2002",
+      "2003",
+      "2004"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Meghan Trainor's husband's name?",
+    "options": [
+      "Daryl Sabara",
+      "Frankie Muniz",
+      "Justin Long",
+      "Aaron Paul"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Katy Perry married to from 2010-2012?",
+    "options": [
+      "John Mayer",
+      "Russell Brand",
+      "Travis McCoy",
+      "Diplo"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is H.E.R.'s real name?",
+    "options": [
+      "Gabriella Wilson",
+      "Gabrielle Wilson",
+      "Gabi Hernandez",
+      "Hannah Wilson"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which actress was engaged to Johnny Depp in the 1990s?",
+    "options": [
+      "Winona Ryder",
+      "Kate Moss",
+      "Sherilyn Fenn",
+      "Jennifer Grey"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did James Gandolfini die?",
+    "options": [
+      "2011",
+      "2012",
+      "2013",
+      "2014"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Kevin Hart's height?",
+    "options": [
+      "5'2\"",
+      "5'4\"",
+      "5'6\"",
+      "5'8\""
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Scarlett Johansson married to from 2008-2011?",
+    "options": [
+      "Ryan Reynolds",
+      "Sean Penn",
+      "Romain Dauriac",
+      "Colin Jost"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Logic's real name?",
+    "options": [
+      "Sir Robert Bryson Hall II",
+      "Robert Logic Hall",
+      "Logan Hall",
+      "Lucas Hall"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which actress dated Brad Pitt in the late 1980s?",
+    "options": [
+      "Robin Givens",
+      "Jill Schoelen",
+      "Juliette Lewis",
+      "Christina Applegate"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Corey Monteith die?",
+    "options": [
+      "2011",
+      "2012",
+      "2013",
+      "2014"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Michelle Obama's maiden name?",
+    "options": [
+      "Robinson",
+      "Johnson",
+      "Williams",
+      "Brown"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Julia Roberts married to from 1993-1995?",
+    "options": [
+      "Kiefer Sutherland",
+      "Lyle Lovett",
+      "Daniel Moder",
+      "Dylan McDermott"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is J. Cole's real name?",
+    "options": [
+      "Jermaine Cole",
+      "Jerome Cole",
+      "Jason Cole",
+      "Jermaine Lamarr Cole"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which actress was married to Sean Penn twice?",
+    "options": [
+      "Madonna",
+      "Robin Wright",
+      "Charlize Theron",
+      "No one - he married Madonna once"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Aaliyah die?",
+    "options": [
+      "1999",
+      "2000",
+      "2001",
+      "2002"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is John Legend's real name?",
+    "options": [
+      "John Stephens",
+      "John Legend",
+      "John Roger Stephens",
+      "Jonathan Stephens"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Anne Hathaway married to in 2012?",
+    "options": [
+      "Adam Shulman",
+      "Raffaello Follieri",
+      "Jake Gyllenhaal",
+      "James McAvoy"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Childish Gambino's birth name?",
+    "options": [
+      "Donald McKinley Glover Jr.",
+      "Daniel Glover",
+      "Donald Glover",
+      "Donovan Glover"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which actor was Uma Thurman married to from 1998-2005?",
+    "options": [
+      "Gary Oldman",
+      "Ethan Hawke",
+      "Quentin Tarantino",
+      "Andre Balazs"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Don Cornelius die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Tessa Thompson's middle name?",
+    "options": [
+      "Lynn",
+      "Marie",
+      "Lynne",
+      "None"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Demi Moore married to before Ashton Kutcher?",
+    "options": [
+      "Bruce Willis",
+      "Emilio Estevez",
+      "Freddy Moore",
+      "Both A and C"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Anderson .Paak's real name?",
+    "options": [
+      "Brandon Anderson",
+      "Brandon Paak Anderson",
+      "Anderson Paak",
+      "Andrew Anderson"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which model was married to Seal?",
+    "options": [
+      "Heidi Klum",
+      "Naomi Campbell",
+      "Tyra Banks",
+      "Gisele Bündchen"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Bernie Mac die?",
+    "options": [
+      "2006",
+      "2007",
+      "2008",
+      "2009"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Wiz Khalifa's real name?",
+    "options": [
+      "Cameron Thomaz",
+      "Charles Thomaz",
+      "Cameron Jibril Thomaz",
+      "Carl Thomaz"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Kate Hudson engaged to before Matt Bellamy?",
+    "options": [
+      "Owen Wilson",
+      "Chris Robinson",
+      "Alex Rodriguez",
+      "Lance Armstrong"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Big Sean's real name?",
+    "options": [
+      "Sean Anderson",
+      "Sean Michael Anderson",
+      "Sean Michael Leonard Anderson",
+      "Sean Leonard"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which actress was married to Jim Carrey?",
+    "options": [
+      "Renée Zellweger",
+      "Lauren Holly",
+      "Jenny McCarthy",
+      "Both B and C"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Gary Coleman die?",
+    "options": [
+      "2008",
+      "2009",
+      "2010",
+      "2011"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is A$AP Rocky's real name?",
+    "options": [
+      "Rakim Mayers",
+      "Robert Mayers",
+      "Rakim Nakache Mayers",
+      "Rocky Mayers"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Scarlett Johansson married to from 2014-2017?",
+    "options": [
+      "Ryan Reynolds",
+      "Romain Dauriac",
+      "Sean Penn",
+      "Colin Jost"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Miguel's last name?",
+    "options": [
+      "Pimentel",
+      "Miguel",
+      "Rodriguez",
+      "Hernandez"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which actress was Macaulay Culkin married to?",
+    "options": [
+      "Mila Kunis",
+      "Rachel Miner",
+      "Brenda Song",
+      "Amanda Bynes"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did DJ AM die?",
+    "options": [
+      "2007",
+      "2008",
+      "2009",
+      "2010"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Schoolboy Q's real name?",
+    "options": [
+      "Quincy Hanley",
+      "Quincy Matthew Hanley",
+      "Quentin Hanley",
+      "Quinn Hanley"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Pamela Anderson married to from 2006-2007?",
+    "options": [
+      "Tommy Lee",
+      "Kid Rock",
+      "Rick Salomon",
+      "Both B and C"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Janelle Monáe's middle name?",
+    "options": [
+      "Marie",
+      "Monáe",
+      "Lynn",
+      "None"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which actress was engaged to Ben Affleck before Jennifer Garner?",
+    "options": [
+      "Gwyneth Paltrow",
+      "Jennifer Lopez",
+      "Both A and B",
+      "None"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Dennis Hopper die?",
+    "options": [
+      "2008",
+      "2009",
+      "2010",
+      "2011"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Jhené Aiko's full name?",
+    "options": [
+      "Jhené Aiko Chilombo",
+      "Jhené Aiko Efuru Chilombo",
+      "Jhené Chilombo",
+      "Jhené Aiko Smith"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Madonna married to from 2000-2008?",
+    "options": [
+      "Sean Penn",
+      "Guy Ritchie",
+      "Carlos Leon",
+      "Jean-Michel Basquiat"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Kendrick Lamar's full name?",
+    "options": [
+      "Kendrick Lamar",
+      "Kendrick Lamar Duckworth",
+      "Kenneth Duckworth",
+      "Kendrick Lee Duckworth"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which actress was married to Lenny Kravitz?",
+    "options": [
+      "Nicole Kidman",
+      "Lisa Bonet",
+      "Vanessa Paradis",
+      "Kylie Minogue"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Michael Clarke Duncan die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is FKA twigs' real name?",
+    "options": [
+      "Tahliah Barnett",
+      "Tahlia Barnett",
+      "Tahliah Debrett Barnett",
+      "Talia Barnett"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Drew Barrymore's first husband?",
+    "options": [
+      "Tom Green",
+      "Jeremy Thomas",
+      "Will Kopelman",
+      "Justin Long"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Pusha T's real name?",
+    "options": [
+      "Terrence Thornton",
+      "Timothy Thornton",
+      "Terrence Louis Thornton",
+      "Terry Thornton"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which actor was Winona Ryder engaged to in the 1990s?",
+    "options": [
+      "Matt Damon",
+      "Johnny Depp",
+      "Both A and B",
+      "Christian Slater"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Tony Scott die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Tinashe's last name?",
+    "options": [
+      "Kachingwe",
+      "Tinashe",
+      "Johnson",
+      "Williams"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Jennifer Aniston engaged to before Justin Theroux?",
+    "options": [
+      "Brad Pitt",
+      "Vince Vaughn",
+      "John Mayer",
+      "Tate Donovan"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Ty Dolla $ign's real name?",
+    "options": [
+      "Tyrone Griffin",
+      "Tyler Griffin",
+      "Tyrone Griffin Jr.",
+      "Ty Griffin"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which actress was married to David Arquette?",
+    "options": [
+      "Drew Barrymore",
+      "Courteney Cox",
+      "Christina Applegate",
+      "Neve Campbell"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Nora Ephron die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Kehlani's full name?",
+    "options": [
+      "Kehlani Parrish",
+      "Kehlani Ashley Parrish",
+      "Kehlani Marie Parrish",
+      "Kehlani Nicole Parrish"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Who was Reese Witherspoon married to from 1999-2008?",
+    "options": [
+      "Jake Gyllenhaal",
+      "Ryan Phillippe",
+      "Jim Toth",
+      "Matthew McConaughey"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What is Vince Staples's middle name?",
+    "options": [
+      "None",
+      "Vincent",
+      "Jamal",
+      "Michael"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "Which supermodel was married to Rod Stewart?",
+    "options": [
+      "Rachel Hunter",
+      "Jerry Hall",
+      "Christie Brinkley",
+      "Linda Evangelista"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  },
+  {
+    "text": "What year did Sage Stallone die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Pro"
+  }, {
+    "text": "What is Timothée Chalamet's middle name?",
+    "options": [
+      "Hal",
+      "Henry",
+      "Hugo",
+      "Harris"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Elizabeth Taylor's second husband?",
+    "options": [
+      "Conrad Hilton Jr.",
+      "Michael Wilding",
+      "Mike Todd",
+      "Eddie Fisher"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Natasha Richardson die?",
+    "options": [
+      "2007",
+      "2008",
+      "2009",
+      "2010"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Zendaya's full birth name?",
+    "options": [
+      "Zendaya Coleman",
+      "Zendaya Maree Stoermer Coleman",
+      "Zendaya Marie Coleman",
+      "Zendaya Stoermer"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Grace Kelly's husband?",
+    "options": [
+      "Prince Rainier III of Monaco",
+      "Prince Albert II of Monaco",
+      "Prince Charles",
+      "Aristotle Onassis"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Oscar Isaac's birth name?",
+    "options": [
+      "Oscar Isaac",
+      "Oscar Isaac Hernández",
+      "Óscar Isaac Hernández Estrada",
+      "Oscar Estrada"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to both Frank Sinatra and Artie Shaw?",
+    "options": [
+      "Lana Turner",
+      "Ava Gardner",
+      "Marilyn Monroe",
+      "Lauren Bacall"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Joan Rivers die?",
+    "options": [
+      "2012",
+      "2013",
+      "2014",
+      "2015"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Troye Sivan's full name?",
+    "options": [
+      "Troye Sivan Mellet",
+      "Troy Sivan",
+      "Troye Sivan van Mellet",
+      "Troy van Mellet"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Humphrey Bogart's last wife?",
+    "options": [
+      "Mary Philips",
+      "Mayo Methot",
+      "Lauren Bacall",
+      "Helen Menken"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Shailene Woodley's middle name?",
+    "options": [
+      "Marie",
+      "Diann",
+      "Lynn",
+      "Anne"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to Orson Welles?",
+    "options": [
+      "Rita Hayworth",
+      "Virginia Nicholson",
+      "Paola Mori",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Davy Jones die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Saoirse Ronan's middle name?",
+    "options": [
+      "Una",
+      "Eileen",
+      "Moira",
+      "None"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Marilyn Monroe's first husband?",
+    "options": [
+      "Joe DiMaggio",
+      "Arthur Miller",
+      "James Dougherty",
+      "Charlie Chaplin Jr."
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Florence Pugh's middle name?",
+    "options": [
+      "Rose",
+      "May",
+      "Grace",
+      "None"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to Charlie Chaplin last?",
+    "options": [
+      "Mildred Harris",
+      "Lita Grey",
+      "Paulette Goddard",
+      "Oona O'Neill"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Etta James die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Mahershala Ali's birth first name?",
+    "options": [
+      "Mahershala",
+      "Mahershalalhashbaz",
+      "Marshal",
+      "Mahesh"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Audrey Hepburn's first husband?",
+    "options": [
+      "Mel Ferrer",
+      "Andrea Dotti",
+      "James Hanson",
+      "William Holden"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Lupita Nyong'o's full name?",
+    "options": [
+      "Lupita Nyong'o",
+      "Lupita Amondi Nyong'o",
+      "Lupita Marie Nyong'o",
+      "Lupita Anna Nyong'o"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to Douglas Fairbanks?",
+    "options": [
+      "Mary Pickford",
+      "Lillian Gish",
+      "Gloria Swanson",
+      "Clara Bow"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Donna Summer die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Gal Gadot's maiden name?",
+    "options": [
+      "Gadot",
+      "Varsano",
+      "Greenstein",
+      "Cohen"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Judy Garland's first husband?",
+    "options": [
+      "Vincente Minnelli",
+      "David Rose",
+      "Sid Luft",
+      "Mark Herron"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Dev Patel's full name?",
+    "options": [
+      "Dev Patel",
+      "Devendra Patel",
+      "Dev Chandraprakash Patel",
+      "Devan Patel"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to John Derek?",
+    "options": [
+      "Ursula Andress",
+      "Linda Evans",
+      "Bo Derek",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Mindy McCready die?",
+    "options": [
+      "2011",
+      "2012",
+      "2013",
+      "2014"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Yara Shahidi's middle name?",
+    "options": [
+      "None",
+      "Sayeh",
+      "Marie",
+      "Lynn"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Spencer Tracy's longtime partner?",
+    "options": [
+      "Joan Crawford",
+      "Katharine Hepburn",
+      "Bette Davis",
+      "Barbara Stanwyck"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is John Boyega's full name?",
+    "options": [
+      "John Boyega",
+      "John Adedayo Boyega",
+      "John David Boyega",
+      "Adedayo John Boyega"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to Rex Harrison?",
+    "options": [
+      "Lilli Palmer",
+      "Kay Kendall",
+      "Rachel Roberts",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Richard Pryor die?",
+    "options": [
+      "2003",
+      "2004",
+      "2005",
+      "2006"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Letitia Wright's middle name?",
+    "options": [
+      "Michelle",
+      "Marie",
+      "None",
+      "Lynn"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Clark Gable married to when he died?",
+    "options": [
+      "Carole Lombard",
+      "Kay Williams Spreckels",
+      "Maria Franklin",
+      "Josephine Dillon"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Ansel Elgort's full name?",
+    "options": [
+      "Ansel Elgort",
+      "Anselm Elgort",
+      "Ansel Breewood Elgort",
+      "Anselm Breewood Elgort"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to George Sanders?",
+    "options": [
+      "Zsa Zsa Gabor",
+      "Magda Gabor",
+      "Both A and B",
+      "Eva Gabor"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Sherman Hemsley die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is KJ Apa's full name?",
+    "options": [
+      "Keneti James Apa",
+      "Kevin James Apa",
+      "Kenneth Apa",
+      "Keneti Apa"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Vivien Leigh married to?",
+    "options": [
+      "Laurence Olivier",
+      "Herbert Leigh Holman",
+      "Both A and B",
+      "Clark Gable"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Taron Egerton's full name?",
+    "options": [
+      "Taron Egerton",
+      "Taron David Egerton",
+      "Taron Michael Egerton",
+      "David Taron Egerton"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to Mel Ferrer?",
+    "options": [
+      "Audrey Hepburn",
+      "Frances Pilchard",
+      "Both A and B",
+      "Grace Kelly"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Neil Armstrong die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Riz Ahmed's full name?",
+    "options": [
+      "Rizwan Ahmed",
+      "Riz Ahmed",
+      "Rizwan Alim Ahmed",
+      "Rizwan Ali Ahmed"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Ingrid Bergman's first husband?",
+    "options": [
+      "Roberto Rossellini",
+      "Peter Lindström",
+      "Lars Schmidt",
+      "Cary Grant"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Thomasin McKenzie's middle name?",
+    "options": [
+      "None",
+      "Harcourt",
+      "Marie",
+      "Rose"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to Laurence Olivier?",
+    "options": [
+      "Vivien Leigh",
+      "Joan Plowright",
+      "Jill Esmond",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Larry Hagman die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Lakeith Stanfield's birth first name?",
+    "options": [
+      "Lakeith",
+      "LaKeith Lee",
+      "Keith",
+      "Lake"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Joan Crawford's first husband?",
+    "options": [
+      "Douglas Fairbanks Jr.",
+      "Franchot Tone",
+      "Phillip Terry",
+      "Alfred Steele"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Hailee Steinfeld's middle name?",
+    "options": [
+      "Marie",
+      "None",
+      "Renee",
+      "Rose"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to Tony Curtis?",
+    "options": [
+      "Janet Leigh",
+      "Christine Kaufmann",
+      "Leslie Allen",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Sally Ride die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Daniel Kaluuya's middle name?",
+    "options": [
+      "None",
+      "Kaluuya",
+      "James",
+      "Lee"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Rita Hayworth married to first?",
+    "options": [
+      "Orson Welles",
+      "Aly Khan",
+      "Edward Judson",
+      "Dick Haymes"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Lili Reinhart's middle name?",
+    "options": [
+      "Pauline",
+      "Marie",
+      "None",
+      "Rose"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to Billy Bob Thornton before Angelina Jolie?",
+    "options": [
+      "Pietra Dawn Cherniak",
+      "Toni Lawrence",
+      "Melissa Lee Gatlin",
+      "Cynda Williams"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Marvin Hagler die?",
+    "options": [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Jacob Elordi's full name?",
+    "options": [
+      "Jacob Elordi",
+      "Jacob Nathaniel Elordi",
+      "Jacob Michael Elordi",
+      "Jake Elordi"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Lana Turner married to first?",
+    "options": [
+      "Artie Shaw",
+      "Stephen Crane",
+      "Henry J. Topping Jr.",
+      "Lex Barker"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Amandla Stenberg's middle name?",
+    "options": [
+      "None",
+      "Marie",
+      "None",
+      "Rose"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to Frank Sinatra first?",
+    "options": [
+      "Ava Gardner",
+      "Nancy Barbato",
+      "Mia Farrow",
+      "Barbara Marx"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Dick Clark die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Caleb McLaughlin's middle name?",
+    "options": [
+      "Reginald",
+      "None",
+      "James",
+      "Lee"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Elizabeth Taylor married to for the shortest time?",
+    "options": [
+      "Conrad Hilton Jr.",
+      "Eddie Fisher",
+      "Richard Burton",
+      "Larry Fortensky"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Gaten Matarazzo's middle name?",
+    "options": [
+      "John",
+      "None",
+      "Joseph",
+      "James"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to Cary Grant?",
+    "options": [
+      "Virginia Cherrill",
+      "Barbara Hutton",
+      "Betsy Drake",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Dick Van Patten die?",
+    "options": [
+      "2013",
+      "2014",
+      "2015",
+      "2016"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Noah Schnapp's middle name?",
+    "options": [
+      "Cameron",
+      "None",
+      "Michael",
+      "James"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Katharine Hepburn engaged to before Spencer Tracy?",
+    "options": [
+      "Howard Hughes",
+      "Ludlow Ogden Smith",
+      "John Ford",
+      "She was never engaged to Spencer Tracy"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Sadie Sink's middle name?",
+    "options": [
+      "Elizabeth",
+      "None",
+      "Marie",
+      "Rose"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to Tyrone Power?",
+    "options": [
+      "Annabella",
+      "Linda Christian",
+      "Deborah Ann Minardos",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Levon Helm die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Finn Wolfhard's middle name?",
+    "options": [
+      "None",
+      "Michael",
+      "James",
+      "Lee"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Bette Davis married to first?",
+    "options": [
+      "Harmon Nelson",
+      "Arthur Farnsworth",
+      "William Grant Sherry",
+      "Gary Merrill"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Dacre Montgomery's full name?",
+    "options": [
+      "Dacre Montgomery",
+      "Dacre Kayd Montgomery-Harvey",
+      "Dacre Harvey",
+      "David Montgomery"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to Peter Sellers?",
+    "options": [
+      "Anne Howe",
+      "Britt Ekland",
+      "Lynne Frederick",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Andy Griffith die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Joe Keery's full name?",
+    "options": [
+      "Joe Keery",
+      "Joseph David Keery",
+      "Joseph Keery",
+      "Joey Keery"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Marlene Dietrich's only husband?",
+    "options": [
+      "Rudolf Sieber",
+      "Jean Gabin",
+      "Erich Maria Remarque",
+      "She never married"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Natalia Dyer's middle name?",
+    "options": [
+      "None",
+      "Marie",
+      "Danielle",
+      "Lynn"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to Ronald Reagan?",
+    "options": [
+      "Jane Wyman",
+      "Nancy Davis",
+      "Both A and B",
+      "Doris Day"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Ernest Borgnine die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Charlie Heaton's full name?",
+    "options": [
+      "Charlie Heaton",
+      "Charles Heaton",
+      "Charles Ross Heaton",
+      "Charlie Ross Heaton"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Who was Greta Garbo's frequent co-star and rumored lover?",
+    "options": [
+      "John Gilbert",
+      "Clark Gable",
+      "Melvyn Douglas",
+      "Robert Taylor"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What is Maya Hawke's full name?",
+    "options": [
+      "Maya Hawke",
+      "Maya Ray Thurman Hawke",
+      "Maya Thurman Hawke",
+      "Maya Ray Hawke"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "Which actress was married to Artie Shaw five times?",
+    "options": [
+      "Ava Gardner",
+      "Lana Turner",
+      "Neither - he married each once",
+      "Evelyn Keyes"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },
+  {
+    "text": "What year did Gore Vidal die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Master"
+  },{
+    "text": "What was Joan Crawford's birth name?",
+    "options": [
+      "Lucille LeSueur",
+      "Lucille Fay LeSueur",
+      "Joan Cassin",
+      "Billie Cassin"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Mary Pickford's second husband?",
+    "options": [
+      "Owen Moore",
+      "Douglas Fairbanks",
+      "Charles 'Buddy' Rogers",
+      "D.W. Griffith"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Rodney Dangerfield die?",
+    "options": [
+      "2002",
+      "2003",
+      "2004",
+      "2005"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Greta Garbo's birth name?",
+    "options": [
+      "Greta Gustafsson",
+      "Greta Lovisa Gustafsson",
+      "Margareta Gustafsson",
+      "Greta Maria Gustafsson"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Rudolph Valentino's second wife?",
+    "options": [
+      "Jean Acker",
+      "Natacha Rambova",
+      "Pola Negri",
+      "He only married once"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Rue McClanahan die?",
+    "options": [
+      "2008",
+      "2009",
+      "2010",
+      "2011"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Clara Bow's nickname?",
+    "options": [
+      "The Vamp",
+      "The It Girl",
+      "America's Sweetheart",
+      "The Flapper"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Jean Harlow married to when he died?",
+    "options": [
+      "Paul Bern",
+      "Harold Rosson",
+      "William Powell",
+      "She was never married when someone died"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Peter Falk die?",
+    "options": [
+      "2009",
+      "2010",
+      "2011",
+      "2012"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Theda Bara's birth name?",
+    "options": [
+      "Theodosia Goodman",
+      "Theda Goodman",
+      "Theodora Bara",
+      "Theresa Goodman"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Carole Lombard married to when she died?",
+    "options": [
+      "William Powell",
+      "Clark Gable",
+      "Russ Columbo",
+      "Gary Cooper"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Elizabeth Montgomery die?",
+    "options": [
+      "1993",
+      "1994",
+      "1995",
+      "1996"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Bette Davis's birth name?",
+    "options": [
+      "Betty Davis",
+      "Ruth Elizabeth Davis",
+      "Elizabeth Davis",
+      "Barbara Elizabeth Davis"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Lon Chaney known as?",
+    "options": [
+      "The Man of a Thousand Faces",
+      "The Phantom",
+      "The Monster Man",
+      "The Horror King"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Yvette Vickers die?",
+    "options": [
+      "2009",
+      "2010",
+      "2011",
+      "Body found in 2011, estimated death 2009"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Rita Hayworth's birth name?",
+    "options": [
+      "Margarita Cansino",
+      "Rita Cansino",
+      "Margarita Carmen Cansino",
+      "Margaret Cansino"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Mabel Normand's frequent director?",
+    "options": [
+      "D.W. Griffith",
+      "Mack Sennett",
+      "Charlie Chaplin",
+      "Buster Keaton"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Ben Gazzara die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Lillian Gish's birth name?",
+    "options": [
+      "Lillian de Guiche",
+      "Lillian Diana Gish",
+      "Lillian Dorothy Gish",
+      "Lillian Grace Gish"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Florence Lawrence known as?",
+    "options": [
+      "The Biograph Girl",
+      "The Vitagraph Girl",
+      "The It Girl",
+      "The Vamp"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Larry Hagman's mother die?",
+    "options": [
+      "1988",
+      "1990",
+      "1992",
+      "1994"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Tina Turner's birth name?",
+    "options": [
+      "Anna Mae Bullock",
+      "Tina Bullock",
+      "Annie Bullock",
+      "Angela Mae Bullock"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Wallace Reid's wife?",
+    "options": [
+      "Dorothy Davenport",
+      "Mabel Normand",
+      "Olive Thomas",
+      "Clara Bow"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Fess Parker die?",
+    "options": [
+      "2008",
+      "2009",
+      "2010",
+      "2011"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Cher's maiden name?",
+    "options": [
+      "Sarkisian",
+      "LaPiere",
+      "Bono",
+      "All are surnames she's used"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Roscoe 'Fatty' Arbuckle accused of killing?",
+    "options": [
+      "Virginia Rappe",
+      "Olive Thomas",
+      "Mabel Normand",
+      "Thelma Todd"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did James Arness die?",
+    "options": [
+      "2009",
+      "2010",
+      "2011",
+      "2012"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Freddie Mercury's birth name?",
+    "options": [
+      "Farrokh Bulsara",
+      "Frederick Bulsara",
+      "Francis Bulsara",
+      "Fernando Bulsara"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Pola Negri romantically linked to?",
+    "options": [
+      "Charlie Chaplin",
+      "Rudolph Valentino",
+      "Both A and B",
+      "Douglas Fairbanks"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Farley Granger die?",
+    "options": [
+      "2009",
+      "2010",
+      "2011",
+      "2012"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Elton John's birth name?",
+    "options": [
+      "Reginald Dwight",
+      "Reginald Kenneth Dwight",
+      "Richard Dwight",
+      "Ronald Dwight"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Ramon Novarro allegedly murdered by?",
+    "options": [
+      "The Ferguson brothers",
+      "His business partner",
+      "A jealous lover",
+      "Random burglars"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Phyllis Diller die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Bob Dylan's birth name?",
+    "options": [
+      "Robert Zimmerman",
+      "Robert Dylan",
+      "Robert Allen Zimmerman",
+      "Robert Smith"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Norma Talmadge's sister who married Buster Keaton?",
+    "options": [
+      "Constance Talmadge",
+      "Natalie Talmadge",
+      "Both were her sisters but Natalie married Keaton",
+      "Margaret Talmadge"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Celeste Holm die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Buster Keaton's real first name?",
+    "options": [
+      "Joseph",
+      "James",
+      "Joseph Francis",
+      "Jack"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was William Desmond Taylor?",
+    "options": [
+      "Silent film director who was murdered",
+      "Silent film actor",
+      "Producer",
+      "Studio executive"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Nora Ephron's sister Delia die?",
+    "options": [
+      "Delia is still alive",
+      "2012",
+      "2013",
+      "2014"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Janis Joplin's middle name?",
+    "options": [
+      "Lyn",
+      "None",
+      "Marie",
+      "She went by just Janis"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Olive Thomas married to?",
+    "options": [
+      "Jack Pickford",
+      "Douglas Fairbanks",
+      "Charlie Chaplin",
+      "Rudolph Valentino"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Herbert Lom die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Marilyn Monroe's birth name?",
+    "options": [
+      "Norma Jean Baker",
+      "Norma Jeane Mortenson",
+      "Norma Jean Mortensen",
+      "Norma Jean Dougherty"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Douglas Fairbanks known as in the silent era?",
+    "options": [
+      "The King of Hollywood",
+      "America's Sweetheart",
+      "The Swashbuckler",
+      "The Action King"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Jonathan Frid die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was John Wayne's birth name?",
+    "options": [
+      "Marion Morrison",
+      "Marion Robert Morrison",
+      "Marion Michael Morrison",
+      "John Morrison"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was the first major film star identified by name?",
+    "options": [
+      "Mary Pickford",
+      "Florence Lawrence",
+      "Theda Bara",
+      "Lillian Gish"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Jan-Michael Vincent die?",
+    "options": [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Rock Hudson's birth name?",
+    "options": [
+      "Roy Scherer",
+      "Roy Harold Scherer Jr.",
+      "Roy Fitzgerald",
+      "Rock Scherer"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was the 'Vitagraph Girl'?",
+    "options": [
+      "Florence Lawrence",
+      "Florence Turner",
+      "Mary Pickford",
+      "Lillian Gish"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Robert Hegyes die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Cary Grant's birth name?",
+    "options": [
+      "Archibald Leach",
+      "Archibald Alexander Leach",
+      "Cary Leach",
+      "Archie Leach"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Theda Bara known as?",
+    "options": [
+      "The It Girl",
+      "The Vamp",
+      "America's Sweetheart",
+      "The Flapper"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Jack Klugman die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Fred Astaire's birth name?",
+    "options": [
+      "Frederick Austerlitz",
+      "Fred Austerlitz",
+      "Frederick Astaire",
+      "Francis Austerlitz"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Mary Pickford known as?",
+    "options": [
+      "The It Girl",
+      "The Vamp",
+      "America's Sweetheart",
+      "The Flapper"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Ravi Shankar die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Tony Curtis's birth name?",
+    "options": [
+      "Bernard Schwartz",
+      "Bernard Herschel Schwartz",
+      "Bernard Curtis",
+      "Anthony Schwartz"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Gloria Swanson's most famous director?",
+    "options": [
+      "Cecil B. DeMille",
+      "D.W. Griffith",
+      "Erich von Stroheim",
+      "Billy Wilder"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Charles Durning die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Kirk Douglas's birth name?",
+    "options": [
+      "Issur Danielovitch",
+      "Isadore Demsky",
+      "Issur Danielovitch Demsky",
+      "Kirk Demsky"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was John Gilbert's frequent co-star?",
+    "options": [
+      "Greta Garbo",
+      "Norma Shearer",
+      "Joan Crawford",
+      "Marion Davies"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Harry Carey Jr. die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Dean Martin's birth name?",
+    "options": [
+      "Dino Crocetti",
+      "Dean Crocetti",
+      "Dino Paul Crocetti",
+      "Dean Martin Crocetti"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Marlene Dietrich's frequent collaborator?",
+    "options": [
+      "Ernst Lubitsch",
+      "Josef von Sternberg",
+      "Fritz Lang",
+      "Billy Wilder"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Miguel Ferrer die?",
+    "options": [
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Judy Garland's birth name?",
+    "options": [
+      "Frances Gumm",
+      "Frances Ethel Gumm",
+      "Judy Gumm",
+      "Frances Gayne"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Colleen Moore known for popularizing?",
+    "options": [
+      "The bob haircut",
+      "The flapper look",
+      "Both A and B",
+      "The vamp look"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Davy Jones of The Monkees actually die?",
+    "options": [
+      "2010",
+      "2011",
+      "2012",
+      "2013"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Sophia Loren's birth name?",
+    "options": [
+      "Sofia Scicolone",
+      "Sofia Villani Scicolone",
+      "Sophia Scicolone",
+      "Sofia Loren"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who did William Powell have a long relationship with after Jean Harlow?",
+    "options": [
+      "Carole Lombard",
+      "Diana Lewis",
+      "Myrna Loy",
+      "No one significant"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Jean Stapleton die?",
+    "options": [
+      "2011",
+      "2012",
+      "2013",
+      "2014"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Gregory Peck's birth name?",
+    "options": [
+      "Eldred Peck",
+      "Eldred Gregory Peck",
+      "Gregory Eldred Peck",
+      "Gregory Peck"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Louise Brooks's signature look?",
+    "options": [
+      "The bob haircut",
+      "The shingle cut",
+      "The Lulu bob",
+      "All refer to her style"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Annette Funicello die?",
+    "options": [
+      "2011",
+      "2012",
+      "2013",
+      "2014"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Lauren Bacall's birth name?",
+    "options": [
+      "Betty Bacall",
+      "Betty Joan Perske",
+      "Lauren Perske",
+      "Betty Lauren Perske"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Pola Negri's greatest rival?",
+    "options": [
+      "Gloria Swanson",
+      "Clara Bow",
+      "Greta Garbo",
+      "Theda Bara"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Bonnie Franklin die?",
+    "options": [
+      "2011",
+      "2012",
+      "2013",
+      "2014"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Ingrid Bergman's daughter's name?",
+    "options": [
+      "Pia Lindström",
+      "Isabella Rossellini",
+      "Both A and B",
+      "Ingrid Rossellini"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Norma Shearer married to?",
+    "options": [
+      "Irving Thalberg",
+      "Martin Arrouge",
+      "Both A and B",
+      "Louis B. Mayer"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Esther Williams die?",
+    "options": [
+      "2011",
+      "2012",
+      "2013",
+      "2014"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Doris Day's birth name?",
+    "options": [
+      "Doris Kappelhoff",
+      "Doris Mary Kappelhoff",
+      "Doris von Kappelhoff",
+      "Doris Day Kappelhoff"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Marion Davies's longtime partner?",
+    "options": [
+      "William Randolph Hearst",
+      "Charlie Chaplin",
+      "Irving Thalberg",
+      "Louis B. Mayer"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Van Cliburn die?",
+    "options": [
+      "2011",
+      "2012",
+      "2013",
+      "2014"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Audrey Hepburn's birth name?",
+    "options": [
+      "Audrey Ruston",
+      "Audrey Kathleen Ruston",
+      "Audrey Hepburn-Ruston",
+      "Edda van Heemstra"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Constance Bennett's famous sister?",
+    "options": [
+      "Joan Bennett",
+      "Barbara Bennett",
+      "Both A and B",
+      "She had no famous sisters"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What year did Patrice O'Neal die?",
+    "options": [
+      "2009",
+      "2010",
+      "2011",
+      "2012"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "What was Katharine Hepburn's middle name?",
+    "options": [
+      "None",
+      "Houghton",
+      "Martha",
+      "Augusta"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Legend"
+  },
+  {
+    "text": "Who was Gloria Swanson's most famous director?",
+    "options": [
+      "Cecil B. DeMille",
+      "Erich von Stroheim",
+      "D.W. Griffith",
+      "Billy Wilder"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Gloria Swanson die?",
+    "options": [
+      "1981",
+      "1982",
+      "1983",
+      "1984"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who created Betty Boop?",
+    "options": [
+      "Max Fleischer",
+      "Walt Disney",
+      "Ub Iwerks",
+      "Walter Lantz"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Ub Iwerks?",
+    "options": [
+      "Animator",
+      "Walt Disney's partner",
+      "Created Mickey Mouse",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Ub Iwerks die?",
+    "options": [
+      "1968",
+      "1969",
+      "1970",
+      "1971"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Paul Terry?",
+    "options": [
+      "Animator",
+      "Founded Terrytoons",
+      "Created Mighty Mouse",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Paul Terry die?",
+    "options": [
+      "1969",
+      "1970",
+      "1971",
+      "1972"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Colleen Moore known as?",
+    "options": [
+      "The Flapper Queen",
+      "The Jazz Baby",
+      "The It Girl",
+      "America's Sweetheart"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was Harold Lloyd's trademark prop?",
+    "options": [
+      "Cane",
+      "Horn-rimmed glasses",
+      "Bowler hat",
+      "Mustache"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Harold Lloyd die?",
+    "options": [
+      "1969",
+      "1970",
+      "1971",
+      "1972"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Louise Brooks's most famous director?",
+    "options": [
+      "G.W. Pabst",
+      "Fritz Lang",
+      "F.W. Murnau",
+      "Ernst Lubitsch"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What was Louise Brooks's iconic hairstyle called?",
+    "options": [
+      "The Bob",
+      "The Shingle",
+      "The Dutch Boy",
+      "The Eton Crop"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was ZaSu Pitts's frequent comedy partner?",
+    "options": [
+      "Thelma Todd",
+      "Patsy Kelly",
+      "Both A and B",
+      "Marion Davies"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Thelma Todd die?",
+    "options": [
+      "1933",
+      "1934",
+      "1935",
+      "1936"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Marion Davies's longtime partner?",
+    "options": [
+      "William Randolph Hearst",
+      "Charlie Chaplin",
+      "Douglas Fairbanks",
+      "Louis B. Mayer"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Marion Davies die?",
+    "options": [
+      "1959",
+      "1960",
+      "1961",
+      "1962"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Erich von Stroheim known as?",
+    "options": [
+      "The Man You Love to Hate",
+      "The King of Hollywood",
+      "The Man of a Thousand Faces",
+      "The Iron Man"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What is Erich von Stroheim's real name?",
+    "options": [
+      "Erich Oswald Stroheim",
+      "Erich von Nordenwall",
+      "Erich Oswald von Stroheim",
+      "Hans Erich Maria Stroheim von Nordenwall"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Vilma Bánky's frequent co-star?",
+    "options": [
+      "Ronald Colman",
+      "John Gilbert",
+      "Ramon Novarro",
+      "Douglas Fairbanks"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Vilma Bánky die?",
+    "options": [
+      "1989",
+      "1990",
+      "1991",
+      "1992"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Fatty Arbuckle's protégé?",
+    "options": [
+      "Charlie Chaplin",
+      "Buster Keaton",
+      "Harold Lloyd",
+      "Harry Langdon"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Fatty Arbuckle die?",
+    "options": [
+      "1931",
+      "1932",
+      "1933",
+      "1934"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was William S. Hart known as?",
+    "options": [
+      "The Good Bad Man",
+      "The King of Cowboys",
+      "The Silent Cowboy",
+      "The Western Star"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did William S. Hart die?",
+    "options": [
+      "1944",
+      "1945",
+      "1946",
+      "1947"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Tom Mix's horse?",
+    "options": [
+      "Tony",
+      "Silver",
+      "Champion",
+      "Trigger"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Tom Mix die?",
+    "options": [
+      "1938",
+      "1939",
+      "1940",
+      "1941"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Harry Langdon's most successful director?",
+    "options": [
+      "Frank Capra",
+      "Mack Sennett",
+      "Hal Roach",
+      "Leo McCarey"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Harry Langdon die?",
+    "options": [
+      "1942",
+      "1943",
+      "1944",
+      "1945"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Dolores Costello married to?",
+    "options": [
+      "John Barrymore",
+      "Lionel Barrymore",
+      "John Drew Barrymore",
+      "Maurice Costello"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Dolores Costello die?",
+    "options": [
+      "1977",
+      "1978",
+      "1979",
+      "1980"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Alla Nazimova's nationality?",
+    "options": [
+      "Russian",
+      "Polish",
+      "Ukrainian",
+      "Romanian"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Alla Nazimova die?",
+    "options": [
+      "1943",
+      "1944",
+      "1945",
+      "1946"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Nita Naldi's most famous role opposite?",
+    "options": [
+      "Rudolph Valentino",
+      "John Gilbert",
+      "Ramon Novarro",
+      "Ronald Colman"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Nita Naldi die?",
+    "options": [
+      "1959",
+      "1960",
+      "1961",
+      "1962"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Barbara La Marr known as?",
+    "options": [
+      "The Girl Who Was Too Beautiful",
+      "The Most Beautiful Girl in the World",
+      "The Girl with the Million Dollar Face",
+      "The Divine One"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Barbara La Marr die?",
+    "options": [
+      "1923",
+      "1924",
+      "1925",
+      "1926"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Alma Rubens's frequent co-star?",
+    "options": [
+      "Francis X. Bushman",
+      "Wallace Reid",
+      "Antonio Moreno",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Alma Rubens die?",
+    "options": [
+      "1929",
+      "1930",
+      "1931",
+      "1932"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Francis X. Bushman's most famous role?",
+    "options": [
+      "Messala in Ben-Hur",
+      "Judah Ben-Hur",
+      "Mark Antony",
+      "Julius Caesar"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Francis X. Bushman die?",
+    "options": [
+      "1964",
+      "1965",
+      "1966",
+      "1967"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Blanche Sweet's director husband?",
+    "options": [
+      "D.W. Griffith",
+      "Marshall Neilan",
+      "Cecil B. DeMille",
+      "Mack Sennett"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Blanche Sweet die?",
+    "options": [
+      "1984",
+      "1985",
+      "1986",
+      "1987"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Mae Murray known as?",
+    "options": [
+      "The Girl with the Bee-Stung Lips",
+      "The Gardenia of the Screen",
+      "Both A and B",
+      "The Queen of the Silver Screen"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Mae Murray die?",
+    "options": [
+      "1963",
+      "1964",
+      "1965",
+      "1966"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Corinne Griffith known as?",
+    "options": [
+      "The Orchid Lady of the Screen",
+      "The Most Beautiful Woman in Hollywood",
+      "The Orchid of the Silver Screen",
+      "All of the above"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Corinne Griffith die?",
+    "options": [
+      "1977",
+      "1978",
+      "1979",
+      "1980"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Alice Terry married to?",
+    "options": [
+      "Rex Ingram",
+      "Rudolph Valentino",
+      "Ramon Novarro",
+      "Antonio Moreno"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Alice Terry die?",
+    "options": [
+      "1985",
+      "1986",
+      "1987",
+      "1988"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Conrad Veidt's nationality?",
+    "options": [
+      "German",
+      "Austrian",
+      "Hungarian",
+      "Czech"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Conrad Veidt die?",
+    "options": [
+      "1941",
+      "1942",
+      "1943",
+      "1944"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Emil Jannings's nationality?",
+    "options": [
+      "German",
+      "Swiss",
+      "Austrian",
+      "Dutch"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Emil Jannings die?",
+    "options": [
+      "1948",
+      "1949",
+      "1950",
+      "1951"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Sessue Hayakawa's nationality?",
+    "options": [
+      "Chinese",
+      "Japanese",
+      "Korean",
+      "Filipino"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Sessue Hayakawa die?",
+    "options": [
+      "1971",
+      "1972",
+      "1973",
+      "1974"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Anna May Wong's ethnicity?",
+    "options": [
+      "Chinese-American",
+      "Japanese-American",
+      "Korean-American",
+      "Filipino-American"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Anna May Wong die?",
+    "options": [
+      "1959",
+      "1960",
+      "1961",
+      "1962"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Antonio Moreno's nationality?",
+    "options": [
+      "Spanish",
+      "Mexican",
+      "Italian",
+      "Portuguese"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Antonio Moreno die?",
+    "options": [
+      "1965",
+      "1966",
+      "1967",
+      "1968"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Lupe Vélez known as?",
+    "options": [
+      "The Mexican Spitfire",
+      "The Hot Pepper",
+      "The Whoopee Girl",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Lupe Vélez die?",
+    "options": [
+      "1942",
+      "1943",
+      "1944",
+      "1945"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Lupe Vélez married to?",
+    "options": [
+      "Johnny Weissmuller",
+      "Gary Cooper",
+      "John Gilbert",
+      "Clark Gable"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Dolores del Río's nationality?",
+    "options": [
+      "Spanish",
+      "Mexican",
+      "Argentine",
+      "Cuban"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Dolores del Río die?",
+    "options": [
+      "1981",
+      "1982",
+      "1983",
+      "1984"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Dolores del Río married to (art director)?",
+    "options": [
+      "Cedric Gibbons",
+      "Orson Welles",
+      "Edwin Carewe",
+      "Jaime del Río"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Ivor Novello's nationality?",
+    "options": [
+      "English",
+      "Welsh",
+      "Scottish",
+      "Irish"
+    ],
+    "correctAnswer": 1,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Ivor Novello die?",
+    "options": [
+      "1949",
+      "1950",
+      "1951",
+      "1952"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Mack Sennett known as?",
+    "options": [
+      "The King of Comedy",
+      "The Father of Slapstick",
+      "Both A and B",
+      "The Comedy Genius"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Mack Sennett die?",
+    "options": [
+      "1958",
+      "1959",
+      "1960",
+      "1961"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who founded Keystone Studios?",
+    "options": [
+      "Mack Sennett",
+      "Hal Roach",
+      "D.W. Griffith",
+      "Thomas Ince"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Thomas Ince's profession?",
+    "options": [
+      "Director",
+      "Producer",
+      "Screenwriter",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Thomas Ince die?",
+    "options": [
+      "1922",
+      "1923",
+      "1924",
+      "1925"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was June Mathis?",
+    "options": [
+      "Screenwriter",
+      "Producer",
+      "Studio executive",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did June Mathis die?",
+    "options": [
+      "1925",
+      "1926",
+      "1927",
+      "1928"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Anita Loos?",
+    "options": [
+      "Screenwriter",
+      "Novelist",
+      "Both A and B",
+      "Actress"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Anita Loos die?",
+    "options": [
+      "1979",
+      "1980",
+      "1981",
+      "1982"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who wrote 'Gentlemen Prefer Blondes'?",
+    "options": [
+      "Anita Loos",
+      "June Mathis",
+      "Frances Marion",
+      "Adela Rogers St. Johns"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Frances Marion?",
+    "options": [
+      "Screenwriter",
+      "Director",
+      "Journalist",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Frances Marion die?",
+    "options": [
+      "1971",
+      "1972",
+      "1973",
+      "1974"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Mary Pickford's screenwriter friend?",
+    "options": [
+      "Frances Marion",
+      "Anita Loos",
+      "June Mathis",
+      "Bess Meredyth"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Lois Weber?",
+    "options": [
+      "Director",
+      "Screenwriter",
+      "Producer",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Lois Weber die?",
+    "options": [
+      "1937",
+      "1938",
+      "1939",
+      "1940"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Alice Guy-Blaché?",
+    "options": [
+      "First female film director",
+      "French pioneer filmmaker",
+      "Founded Solax Studios",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Alice Guy-Blaché die?",
+    "options": [
+      "1966",
+      "1967",
+      "1968",
+      "1969"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Dorothy Arzner?",
+    "options": [
+      "Film director",
+      "Film editor",
+      "Screenwriter",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Dorothy Arzner die?",
+    "options": [
+      "1977",
+      "1978",
+      "1979",
+      "1980"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Gene Gauntier?",
+    "options": [
+      "Actress",
+      "Screenwriter",
+      "Both A and B",
+      "Director"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Gene Gauntier die?",
+    "options": [
+      "1964",
+      "1965",
+      "1966",
+      "1967"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Nell Shipman?",
+    "options": [
+      "Actress",
+      "Writer",
+      "Producer",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Nell Shipman die?",
+    "options": [
+      "1968",
+      "1969",
+      "1970",
+      "1971"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Lotte Reiniger?",
+    "options": [
+      "Animation pioneer",
+      "German filmmaker",
+      "Silhouette animator",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Lotte Reiniger die?",
+    "options": [
+      "1979",
+      "1980",
+      "1981",
+      "1982"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who created the first animated feature film?",
+    "options": [
+      "Lotte Reiniger",
+      "Walt Disney",
+      "Max Fleischer",
+      "Winsor McCay"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Winsor McCay?",
+    "options": [
+      "Cartoonist",
+      "Animator",
+      "Both A and B",
+      "Film director"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "What year did Winsor McCay die?",
+    "options": [
+      "1932",
+      "1933",
+      "1934",
+      "1935"
+    ],
+    "correctAnswer": 2,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who created Gertie the Dinosaur?",
+    "options": [
+      "Winsor McCay",
+      "Walt Disney",
+      "Max Fleischer",
+      "Ub Iwerks"
+    ],
+    "correctAnswer": 0,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  },
+  {
+    "text": "Who was Max Fleischer?",
+    "options": [
+      "Animator",
+      "Inventor",
+      "Producer",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "category": "Celebrities",
+    "difficulty": "Genius"
+  }
+  
+  ]
