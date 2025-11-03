@@ -277,8 +277,10 @@ struct GameView: View {
                     timeRemaining <= 10 ? Color.red : Color.yellow,
                     style: StrokeStyle(lineWidth: 8, lineCap: .round)
                 )
+            
                 .rotationEffect(.degrees(-90))
-                .animation(.linear(duration: 1), value: timeRemaining)
+                .animation(.linear(duration: 0.25), value: timeRemaining)
+                .drawingGroup() 
             
             // Timer content
             VStack(spacing: 2) {

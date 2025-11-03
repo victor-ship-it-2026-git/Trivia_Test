@@ -18,12 +18,12 @@ class FirebaseLeaderboardManager: ObservableObject {
     
     // MARK: - Observe Leaderboard (Real-time Updates)
     
-    func observeLeaderboard() {
+    func observeLeaderboard(limit: Int = 20) {
         isLoading = true
         
         leaderboardHandle = database.child("leaderboard")
             .queryOrdered(byChild: "percentage")
-            .queryLimited(toLast: 100)
+            .queryLimited(toLast: UInt(limit))
             .observe(.value) { [weak self] snapshot in
                 guard let self = self else { return }
                 

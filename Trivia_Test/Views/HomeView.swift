@@ -90,6 +90,7 @@ struct HomeView: View {
                                         AnalyticsManager.shared.logCategorySelected(category: item.2)
                                     }
                                 )
+                                
                                 .opacity(appearAnimation ? 1 : 0)
                                 .offset(y: appearAnimation ? 0 : 30)
                                 .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2 + Double(index) * 0.08), value: appearAnimation)
@@ -140,6 +141,7 @@ struct HomeView: View {
             }
         }
         .onAppear {
+            
             AnalyticsManager.shared.logScreenView(screenName: "Home")
             
             // Initialize category order
@@ -270,7 +272,11 @@ struct CategoryCardModern: View {
                 RoundedRectangle(cornerRadius: 16)
                     .stroke(isSelected ? Color.orange : Color.gray.opacity(0.2), lineWidth: isSelected ? 2 : 1)
             )
-            .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 2)
+            .background(
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(Color.white)
+                    .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 2)
+            )
             .scaleEffect(isPressed ? 0.95 : 1.0)
             .scaleEffect(isSelected ? 1.05 : 1.0)
             .animation(.spring(response: 0.3, dampingFraction: 0.6), value: isSelected)

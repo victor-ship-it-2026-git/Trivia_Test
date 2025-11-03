@@ -11,7 +11,11 @@ struct QuestionJSON: Codable {
 
 class QuestionsManager {
     static let shared = QuestionsManager()
-    private var allQuestions: [Question] = []
+    
+    // Cache management
+    private var questionCache: [String: [Question]] = [:]
+    private var cacheAccessOrder: [String] = [] // Track access order for LRU
+    private let cacheLimit = 200 // Only keep 200 questions in memory
     
     // Map each category to its JSON filename
     private let categoryFileNames: [QuizCategory: String] = [
@@ -30,72 +34,136 @@ class QuestionsManager {
     ]
     
     private init() {
-        loadQuestions()
+        // No initial loading - load on demand
+        print("📚 QuestionsManager initialized with lazy loading")
     }
     
-    func loadQuestions() {
-        allQuestions.removeAll()
+    // MARK: - Public Methods
+    
+    func getFilteredQuestions(category: QuizCategory, difficulty: Difficulty) -> [Question] {
+        let key = makeCacheKey(category: category, difficulty: difficulty)
         
-        // Load questions from each category file
-        for (category, fileName) in categoryFileNames {
-            loadQuestionsFromFile(fileName: fileName, expectedCategory: category)
+        // Check cache first
+        if let cached = questionCache[key] {
+            updateCacheAccess(key: key)
+            print("✅ Cache hit for \(key): \(cached.count) questions")
+            return cached
         }
         
-        print("✅ Successfully loaded \(allQuestions.count) total questions from all category files")
-        printBreakdown()
+        // Load only needed questions
+        print("📂 Cache miss for \(key), loading from file...")
+        let questions = loadQuestionsForCategory(category, difficulty: difficulty)
+        
+        // Add to cache with LRU management
+        addToCache(key: key, questions: questions)
+        
+        return questions
     }
     
-    private func loadQuestionsFromFile(fileName: String, expectedCategory: QuizCategory) {
+    func getQuestions() -> [Question] {
+        // For diagnostic purposes - load all questions
+        var allQuestions: [Question] = []
+        
+        for category in QuizCategory.allCases {
+            for difficulty in Difficulty.allCases {
+                let questions = getFilteredQuestions(category: category, difficulty: difficulty)
+                allQuestions.append(contentsOf: questions)
+            }
+        }
+        
+        return allQuestions
+    }
+    
+    // MARK: - Cache Management
+    
+    private func makeCacheKey(category: QuizCategory, difficulty: Difficulty) -> String {
+        return "\(category.rawValue)_\(difficulty.rawValue)"
+    }
+    
+    private func updateCacheAccess(key: String) {
+        // Move key to end (most recently used)
+        if let index = cacheAccessOrder.firstIndex(of: key) {
+            cacheAccessOrder.remove(at: index)
+        }
+        cacheAccessOrder.append(key)
+    }
+    
+    private func addToCache(key: String, questions: [Question]) {
+        // Implement LRU eviction if cache is full
+        if questionCache.count >= cacheLimit {
+            evictLeastRecentlyUsed()
+        }
+        
+        questionCache[key] = questions
+        updateCacheAccess(key: key)
+        
+        print("💾 Added to cache: \(key) (\(questions.count) questions)")
+        print("📊 Cache size: \(questionCache.count)/\(cacheLimit)")
+    }
+    
+    private func evictLeastRecentlyUsed() {
+        guard let lruKey = cacheAccessOrder.first else { return }
+        
+        questionCache.removeValue(forKey: lruKey)
+        cacheAccessOrder.removeFirst()
+        
+        print("🗑️ Evicted from cache: \(lruKey)")
+    }
+    
+    func clearCache() {
+        questionCache.removeAll()
+        cacheAccessOrder.removeAll()
+        print("🧹 Cache cleared")
+    }
+    
+    // MARK: - Loading Methods
+    
+    private func loadQuestionsForCategory(_ category: QuizCategory, difficulty: Difficulty) -> [Question] {
+        guard let fileName = categoryFileNames[category] else {
+            print("⚠️ No file mapping found for category: \(category.rawValue)")
+            return []
+        }
+        
         guard let url = Bundle.main.url(forResource: fileName, withExtension: "json") else {
-            print("⚠️ Warning: \(fileName).json not found - skipping this category")
-            return
+            print("⚠️ Warning: \(fileName).json not found")
+            return []
         }
         
         do {
             let data = try Data(contentsOf: url)
             let decoder = JSONDecoder()
-            
-            // Decode as QuestionJSON first
             let questionsJSON = try decoder.decode([QuestionJSON].self, from: data)
             
-            var loadedCount = 0
-            var skippedCount = 0
-            
-            // Convert to Question objects
-            for questionJSON in questionsJSON {
-                if let question = convertToQuestion(questionJSON, expectedCategory: expectedCategory) {
-                    allQuestions.append(question)
-                    loadedCount += 1
-                } else {
-                    skippedCount += 1
-                    print("⚠️ Skipped question in \(fileName): '\(questionJSON.text)' - Category: \(questionJSON.category), Difficulty: \(questionJSON.difficulty)")
+            // Filter by difficulty and convert
+            let questions = questionsJSON.compactMap { questionJSON -> Question? in
+                guard let question = convertToQuestion(questionJSON, expectedCategory: category) else {
+                    return nil
                 }
+                return question.difficulty == difficulty ? question : nil
             }
             
-            print("✅ Loaded \(loadedCount) questions from \(fileName).json" + (skippedCount > 0 ? " (skipped \(skippedCount))" : ""))
+            print("✅ Loaded \(questions.count) questions for \(category.rawValue) - \(difficulty.rawValue)")
+            return questions
             
         } catch {
             print("❌ Error loading questions from \(fileName).json: \(error)")
-            print("❌ Error details: \(error.localizedDescription)")
+            return []
         }
     }
     
     private func convertToQuestion(_ json: QuestionJSON, expectedCategory: QuizCategory) -> Question? {
         // Convert string category to enum
         guard let category = mapCategory(json.category) else {
-            print("⚠️ Unknown category: '\(json.category)'")
             return nil
         }
         
         // Validate category matches expected file
         if category != expectedCategory {
-            print("⚠️ Category mismatch in file: Expected \(expectedCategory.rawValue), got \(category.rawValue)")
             return nil
         }
         
         // Convert string difficulty to enum
         guard let difficulty = mapDifficulty(json.difficulty) else {
-            print("⚠️ Unknown difficulty: '\(json.difficulty)'")
             return nil
         }
         
@@ -139,83 +207,40 @@ class QuestionsManager {
         }
     }
     
-    private func printBreakdown() {
-        print("\n=== QUESTIONS BREAKDOWN ===")
-        
-        // By category
-        print("\n📂 By Category:")
-        for category in QuizCategory.allCases {
-            let count = allQuestions.filter { $0.category == category }.count
-            if count > 0 {
-                print("   \(category.emoji) \(category.rawValue): \(count)")
-            }
-        }
-        
-        // By difficulty
-        print("\n⚡️ By Difficulty:")
-        for difficulty in Difficulty.allCases {
-            let count = allQuestions.filter { $0.difficulty == difficulty }.count
-            if count > 0 {
-                print("   \(difficulty.emoji) \(difficulty.rawValue): \(count)")
-            }
-        }
-        print("========================\n")
-    }
+    // MARK: - Utility Methods
     
-    func getQuestions() -> [Question] {
-        return allQuestions
-    }
-    
-    func getFilteredQuestions(category: QuizCategory, difficulty: Difficulty) -> [Question] {
-        var filtered = allQuestions
-        
-        // Filter by category (if not "All")
-        if category != .all {
-            filtered = filtered.filter { $0.category == category }
-            print("🔍 Filtered by category \(category.rawValue): \(filtered.count) questions")
-        }
-        
-        // Filter by difficulty
-        filtered = filtered.filter { $0.difficulty == difficulty }
-        print("🔍 Filtered by difficulty \(difficulty.rawValue): \(filtered.count) questions")
-        
-        if filtered.isEmpty {
-            print("⚠️ WARNING: No questions found for \(category.rawValue) - \(difficulty.rawValue)")
-            print("   Total questions in manager: \(allQuestions.count)")
-            print("   Questions for this category: \(allQuestions.filter { $0.category == category }.count)")
-            print("   Questions for this difficulty: \(allQuestions.filter { $0.difficulty == difficulty }.count)")
-        }
-        
-        return filtered
-    }
-    
-    // Reload specific category (useful for updates)
     func reloadCategory(_ category: QuizCategory) {
-        guard let fileName = categoryFileNames[category] else {
-            print("⚠️ No file mapping found for category: \(category.rawValue)")
-            return
+        // Clear cache entries for this category
+        let keysToRemove = cacheAccessOrder.filter { $0.hasPrefix(category.rawValue) }
+        for key in keysToRemove {
+            questionCache.removeValue(forKey: key)
+            if let index = cacheAccessOrder.firstIndex(of: key) {
+                cacheAccessOrder.remove(at: index)
+            }
         }
         
-        // Remove existing questions for this category
-        allQuestions.removeAll { $0.category == category }
-        
-        // Reload from file
-        loadQuestionsFromFile(fileName: fileName, expectedCategory: category)
-        
-        print("🔄 Reloaded category: \(category.rawValue)")
+        print("🔄 Cleared cache for category: \(category.rawValue)")
     }
     
-    // Get statistics for a specific category
     func getCategoryStats(_ category: QuizCategory) -> [Difficulty: Int] {
         var stats: [Difficulty: Int] = [:]
         
-        let categoryQuestions = allQuestions.filter { $0.category == category }
-        
         for difficulty in Difficulty.allCases {
-            let count = categoryQuestions.filter { $0.difficulty == difficulty }.count
-            stats[difficulty] = count
+            let questions = getFilteredQuestions(category: category, difficulty: difficulty)
+            stats[difficulty] = questions.count
         }
         
         return stats
+    }
+    
+    func printCacheStats() {
+        print("\n=== CACHE STATISTICS ===")
+        print("Total cached combinations: \(questionCache.count)/\(cacheLimit)")
+        print("Cache access order:")
+        for (index, key) in cacheAccessOrder.enumerated() {
+            let count = questionCache[key]?.count ?? 0
+            print("  \(index + 1). \(key): \(count) questions")
+        }
+        print("========================\n")
     }
 }
