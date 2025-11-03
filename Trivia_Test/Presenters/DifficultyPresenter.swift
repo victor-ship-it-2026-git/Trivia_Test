@@ -10,9 +10,11 @@ class DifficultyPresenter: ObservableObject {
     }
     
     func getAvailableQuestions(category: QuizCategory, difficulty: Difficulty) -> Int {
-        return QuestionsManager.shared.getFilteredQuestions(
-            category: category,
-            difficulty: difficulty
-        ).count
-    }
+           let allQuestions = QuestionsManager.shared.getFilteredQuestions(
+               category: category,
+               difficulty: difficulty
+           ).count
+           // Show maximum of 50 questions
+           return min(allQuestions, 50)
+       }
 }

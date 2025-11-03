@@ -128,15 +128,16 @@ struct DifficultySelectionView: View {
                     VStack(spacing: 12) {
                         // Available Questions
                         HStack(spacing: 6) {
-                            Image(systemName: "info.circle.fill")
-                                .font(.system(size: 12))
-                                .foregroundColor(.orange)
-                            Text("\(presenter.getFilteredQuestions().count) questions available")
-                                .font(.system(size: 14))
-                                .foregroundColor(Color.gray)
-                        }
-                        .opacity(appearAnimation ? 1 : 0)
-                        .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.7), value: appearAnimation)
+                                                    Image(systemName: "info.circle.fill")
+                                                        .font(.system(size: 12))
+                                                        .foregroundColor(.orange)
+                                                    let availableQuestions = min(presenter.getFilteredQuestions().count, 50)
+                                                    Text("\(availableQuestions) questions per session")
+                                                        .font(.system(size: 14))
+                                                        .foregroundColor(Color.gray)
+                                                }
+                                                .opacity(appearAnimation ? 1 : 0)
+                                                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.7), value: appearAnimation)
                         
                         // Start Game Button
                         Button(action: {

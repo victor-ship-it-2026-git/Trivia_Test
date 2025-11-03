@@ -45,44 +45,49 @@ class GamePresenter: ObservableObject {
     }
     
     init() {
-        let filteredQuestions = QuestionsManager.shared.getFilteredQuestions(
-            category: selectedCategory,
-            difficulty: selectedDifficulty
-        )
-        self.questions = filteredQuestions.shuffled()
-        self.totalQuestions = self.questions.count
-        self.streak = Streak()
-        quizStartTime = Date()
-        CrashlyticsManager.shared.logQuizStarted(
-                category: selectedCategory.rawValue,
-                difficulty: selectedDifficulty.rawValue
-            )
-    }
-    
-    func getFilteredQuestions() -> [Question] {
-        return QuestionsManager.shared.getFilteredQuestions(
-            category: selectedCategory,
-            difficulty: selectedDifficulty
-        )
-    }
-    
-    func resetGame() {
-        let filteredQuestions = getFilteredQuestions()
-        questions = filteredQuestions.shuffled()
-        currentQuestionIndex = 0
-        score = 0
-        selectedAnswer = nil
-        showingAnswer = false
-        totalQuestions = questions.count
-        needsToWatchAd = false
-        timeExpired = false
-        streak = Streak()
-        hiddenOptions = []
-        bonusPoints = 0
-        coinsEarned = 0
-        quizStartTime = Date()
-
-    }
+           let filteredQuestions = QuestionsManager.shared.getFilteredQuestions(
+               category: selectedCategory,
+               difficulty: selectedDifficulty
+           )
+           // Limit to 50 random questions
+           let limitedQuestions = Array(filteredQuestions.shuffled().prefix(50))
+           self.questions = limitedQuestions
+           self.totalQuestions = self.questions.count
+           self.streak = Streak()
+           quizStartTime = Date()
+           CrashlyticsManager.shared.logQuizStarted(
+                   category: selectedCategory.rawValue,
+                   difficulty: selectedDifficulty.rawValue
+               )
+           print("🎯 Quiz initialized with \(totalQuestions) questions (max 50)")
+       }
+       
+       func getFilteredQuestions() -> [Question] {
+           let allQuestions = QuestionsManager.shared.getFilteredQuestions(
+               category: selectedCategory,
+               difficulty: selectedDifficulty
+           )
+           // Limit to 50 random questions
+           return Array(allQuestions.shuffled().prefix(50))
+       }
+       
+       func resetGame() {
+           let filteredQuestions = getFilteredQuestions()
+           questions = filteredQuestions
+           currentQuestionIndex = 0
+           score = 0
+           selectedAnswer = nil
+           showingAnswer = false
+           totalQuestions = questions.count
+           needsToWatchAd = false
+           timeExpired = false
+           streak = Streak()
+           hiddenOptions = []
+           bonusPoints = 0
+           coinsEarned = 0
+           quizStartTime = Date()
+           print("🎯 Game reset with \(totalQuestions) questions (max 50)")
+       }
     
     func selectAnswer(_ index: Int) {
         guard !showingAnswer else { return }
