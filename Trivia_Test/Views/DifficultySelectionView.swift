@@ -1,3 +1,4 @@
+
 import SwiftUI
 
 struct DifficultySelectionView: View {
@@ -7,6 +8,7 @@ struct DifficultySelectionView: View {
     @StateObject private var unlockManager = DifficultyUnlockManager.shared
     @Environment(\.colorScheme) var colorScheme
     @State private var appearAnimation = false
+    @State private var isNavigating = false
     @State private var showLockedAlert = false
     @State private var lockedMessage = ""
     
@@ -20,13 +22,8 @@ struct DifficultySelectionView: View {
                     // Top Navigation Bar
                     HStack {
                         Button(action: {
-                            HapticManager.shared.selection()
-                            withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
-                                appearAnimation = false
-                            }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                                goBack()
-                            }
+                            guard !isNavigating else { return }
+                            handleBackNavigation()
                         }) {
                             HStack(spacing: 5) {
                                 Image(systemName: "chevron.left")
@@ -36,6 +33,7 @@ struct DifficultySelectionView: View {
                             }
                             .foregroundColor(Color.orange)
                         }
+                        .disabled(isNavigating)
                         
                         Spacer()
                         
@@ -56,8 +54,8 @@ struct DifficultySelectionView: View {
                     .padding(.horizontal, 16)
                     .padding(.top, 8)
                     .padding(.bottom, 16)
-                    .opacity(appearAnimation ? 1 : 0)
-                    .offset(y: appearAnimation ? 0 : -20)
+                    .opacity(appearAnimation && !isNavigating ? 1 : 0)
+                    .offset(y: appearAnimation && !isNavigating ? 0 : -20)
                     
                     // Content Area
                     ScrollView(showsIndicators: false) {
@@ -86,9 +84,10 @@ struct DifficultySelectionView: View {
                             }
                             .padding(.horizontal, 16)
                             .padding(.top, 8)
-                            .opacity(appearAnimation ? 1 : 0)
-                            .offset(y: appearAnimation ? 0 : 20)
+                            .opacity(appearAnimation && !isNavigating ? 1 : 0)
+                            .offset(y: appearAnimation && !isNavigating ? 0 : 20)
                             .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.1), value: appearAnimation)
+                            .animation(.easeOut(duration: 0.2), value: isNavigating)
                             
                             // Difficulty Grid - 3x2 layout
                             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
@@ -98,6 +97,8 @@ struct DifficultySelectionView: View {
                                         isSelected: presenter.selectedDifficulty == difficulty,
                                         isLocked: !unlockManager.isDifficultyAvailable(category: presenter.selectedCategory, difficulty: difficulty),
                                         action: {
+                                            guard !isNavigating else { return }
+                                            
                                             if unlockManager.isDifficultyAvailable(category: presenter.selectedCategory, difficulty: difficulty) {
                                                 HapticManager.shared.selection()
                                                 withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
@@ -114,46 +115,38 @@ struct DifficultySelectionView: View {
                                             }
                                         }
                                     )
-                                    .opacity(appearAnimation ? 1 : 0)
-                                    .offset(y: appearAnimation ? 0 : 30)
+                                    .opacity(appearAnimation && !isNavigating ? 1 : 0)
+                                    .offset(y: appearAnimation && !isNavigating ? 0 : 30)
                                     .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2 + Double(index) * 0.08), value: appearAnimation)
+                                    .animation(.easeOut(duration: 0.2), value: isNavigating)
                                 }
                             }
                             .padding(.horizontal, 16)
-                            .padding(.bottom, 120) // Space for fixed button at bottom
+                            .padding(.bottom, 120)
                         }
                     }
+                    .disabled(isNavigating)
                     
                     // Bottom Info & Button (Fixed)
                     VStack(spacing: 12) {
                         // Available Questions
                         HStack(spacing: 6) {
-                                                    Image(systemName: "info.circle.fill")
-                                                        .font(.system(size: 12))
-                                                        .foregroundColor(.orange)
-                                                    let availableQuestions = min(presenter.getFilteredQuestions().count, 50)
-                                                    Text("\(availableQuestions) questions per session")
-                                                        .font(.system(size: 14))
-                                                        .foregroundColor(Color.gray)
-                                                }
-                                                .opacity(appearAnimation ? 1 : 0)
-                                                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.7), value: appearAnimation)
+                            Image(systemName: "info.circle.fill")
+                                .font(.system(size: 12))
+                                .foregroundColor(.orange)
+                            let availableQuestions = min(presenter.getFilteredQuestions().count, 50)
+                            Text("\(availableQuestions) questions per session")
+                                .font(.system(size: 14))
+                                .foregroundColor(Color.gray)
+                        }
+                        .opacity(appearAnimation && !isNavigating ? 1 : 0)
+                        .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.7), value: appearAnimation)
+                        .animation(.easeOut(duration: 0.2), value: isNavigating)
                         
                         // Start Game Button
                         Button(action: {
-                            AnalyticsManager.shared.logQuizStarted(
-                                category: presenter.selectedCategory,
-                                difficulty: presenter.selectedDifficulty,
-                                totalQuestions: presenter.getFilteredQuestions().count
-                            )
-                            
-                            HapticManager.shared.selection()
-                            withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
-                                appearAnimation = false
-                            }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                                startGame()
-                            }
+                            guard !isNavigating else { return }
+                            handleStartGame()
                         }) {
                             HStack(spacing: 10) {
                                 Image(systemName: "play.fill")
@@ -176,14 +169,23 @@ struct DifficultySelectionView: View {
                             .cornerRadius(16)
                         }
                         .disabled(presenter.getFilteredQuestions().isEmpty ||
-                                 !unlockManager.isDifficultyAvailable(category: presenter.selectedCategory, difficulty: presenter.selectedDifficulty))
-                        .opacity(appearAnimation ? 1 : 0)
-                        .offset(y: appearAnimation ? 0 : 20)
+                                 !unlockManager.isDifficultyAvailable(category: presenter.selectedCategory, difficulty: presenter.selectedDifficulty) ||
+                                 isNavigating)
+                        .opacity(appearAnimation && !isNavigating ? 1 : 0)
+                        .offset(y: appearAnimation && !isNavigating ? 0 : 20)
                         .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.8), value: appearAnimation)
+                        .animation(.easeOut(duration: 0.2), value: isNavigating)
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 16)
                     .background(Color(red: 0.97, green: 0.97, blue: 0.96))
+                }
+                
+                // Fade overlay during navigation
+                if isNavigating {
+                    Color(red: 0.97, green: 0.97, blue: 0.96)
+                        .ignoresSafeArea()
+                        .transition(.opacity)
                 }
             }
         }
@@ -196,7 +198,10 @@ struct DifficultySelectionView: View {
                 presenter.selectedDifficulty = highestUnlocked
             }
             
-            withAnimation {
+            // Reset navigation state
+            isNavigating = false
+            
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
                 appearAnimation = true
             }
         }
@@ -204,6 +209,36 @@ struct DifficultySelectionView: View {
             Button("OK", role: .cancel) { }
         } message: {
             Text(lockedMessage)
+        }
+    }
+    
+    private func handleBackNavigation() {
+        HapticManager.shared.selection()
+        
+        withAnimation(.easeOut(duration: 0.2)) {
+            isNavigating = true
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            goBack()
+        }
+    }
+    
+    private func handleStartGame() {
+        AnalyticsManager.shared.logQuizStarted(
+            category: presenter.selectedCategory,
+            difficulty: presenter.selectedDifficulty,
+            totalQuestions: presenter.getFilteredQuestions().count
+        )
+        
+        HapticManager.shared.selection()
+        
+        withAnimation(.easeOut(duration: 0.2)) {
+            isNavigating = true
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            startGame()
         }
     }
     

@@ -12,6 +12,7 @@ struct HomeView: View {
     @State private var showSettings = false
     @State private var selectedCategory: QuizCategory? = nil
     @State private var appearAnimation = false
+    @State private var isNavigating = false
     @State private var showAdminReports = false
     @State private var showSuggestCategory = false
     @State private var categoryOrder: [(String, String, QuizCategory)] = []
@@ -26,122 +27,34 @@ struct HomeView: View {
             
             VStack(spacing: 0) {
                 // Top Navigation Bar
-                HStack {
-                    Spacer()
-                        .frame(width: 44)
-                    
-                    Spacer()
-                    
-                    Text("Trivia Quest")
-                        .font(.system(size: 20, weight: .bold))
-                        .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        showSettings = true
-                    }) {
-                        ZStack {
-                            Circle()
-                                .fill(Color.orange.opacity(0.1))
-                                .frame(width: 44, height: 44)
-                            
-                            Image(systemName: "gearshape.fill")
-                                .font(.system(size: 20))
-                                .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
-                        }
-                    }
-                }
-                .padding(.horizontal, 16)
-                .padding(.top, 8)
-                .padding(.bottom, 16)
-                .opacity(appearAnimation ? 1 : 0)
-                .offset(y: appearAnimation ? 0 : -20)
+                topNavigationBar
                 
                 // Enhanced ScrollView with smooth scrolling
                 ScrollView(showsIndicators: false) {
                     VStack(spacing: 20) {
                         // Title
-                        Text("Categories to choose from")
-                            .font(.system(size: 20, weight: .bold))
-                            .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(.horizontal, 16)
-                            .padding(.top, 8)
-                            .opacity(appearAnimation ? 1 : 0)
-                            .offset(y: appearAnimation ? 0 : 20)
-                            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.1), value: appearAnimation)
+                        titleSection
                         
                         // Category Grid
-                        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
-                            ForEach(Array(categoryOrder.enumerated()), id: \.offset) { index, item in
-                                CategoryCardModern(
-                                    title: item.0,
-                                    imageName: item.1,
-                                    isSelected: selectedCategory == item.2,
-                                    action: {
-                                        AnalyticsManager.shared.logCategoryClicked(category: item.2)
-                                        
-                                        withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
-                                            selectedCategory = item.2
-                                        }
-                                        gamePresenter.selectedCategory = item.2
-                                        
-                                        AnalyticsManager.shared.logCategorySelected(category: item.2)
-                                    }
-                                )
-                                
-                                .opacity(appearAnimation ? 1 : 0)
-                                .offset(y: appearAnimation ? 0 : 30)
-                                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2 + Double(index) * 0.08), value: appearAnimation)
-                            }
-                        }
-                        .padding(.horizontal, 16)
-                        .padding(.bottom, 100)
+                        categoryGrid
                     }
                 }
-                .scrollBounceBehavior(.basedOnSize) // Smooth bounce behavior
-                .scrollClipDisabled(false) // Better clipping for smooth appearance
+                .scrollBounceBehavior(.basedOnSize)
+                .scrollClipDisabled(false)
+                .disabled(isNavigating)
                 
                 // Next Button (Fixed at bottom)
-                VStack {
-                    Button(action: {
-                        if selectedCategory != nil {
-                            AnalyticsManager.shared.logScreenView(screenName: "DifficultySelection")
-                            
-                            HapticManager.shared.selection()
-                            withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) {
-                                appearAnimation = false
-                            }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                                startGame()
-                            }
-                        }
-                    }) {
-                        Text("Next")
-                            .font(.system(size: 18, weight: .bold))
-                            .foregroundColor(selectedCategory != nil ? .white : Color.gray.opacity(0.5))
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 56)
-                            .background(
-                                selectedCategory != nil ?
-                                    Color.orange :
-                                    Color.gray.opacity(0.3)
-                            )
-                            .cornerRadius(16)
-                    }
-                    .disabled(selectedCategory == nil)
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 16)
-                    .opacity(appearAnimation ? 1 : 0)
-                    .offset(y: appearAnimation ? 0 : 30)
-                    .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.7), value: appearAnimation)
-                }
-                .background(Color(red: 0.97, green: 0.97, blue: 0.96))
+                nextButton
+            }
+            
+            // Fade overlay during navigation
+            if isNavigating {
+                Color(red: 0.97, green: 0.97, blue: 0.96)
+                    .ignoresSafeArea()
+                    .transition(.opacity)
             }
         }
         .onAppear {
-            
             AnalyticsManager.shared.logScreenView(screenName: "Home")
             
             // Initialize category order
@@ -150,7 +63,11 @@ struct HomeView: View {
             }
             
             selectedCategory = gamePresenter.selectedCategory
-            withAnimation {
+            
+            // Reset navigation state
+            isNavigating = false
+            
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
                 appearAnimation = true
             }
         }
@@ -173,7 +90,137 @@ struct HomeView: View {
         }
     }
     
-    // Setup category order - randomize on first launch
+    // MARK: - View Components
+    
+    private var topNavigationBar: some View {
+        HStack {
+            Spacer()
+                .frame(width: 44)
+            
+            Spacer()
+            
+            Text("Trivia Quest")
+                .font(.system(size: 20, weight: .bold))
+                .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+            
+            Spacer()
+            
+            Button(action: {
+                HapticManager.shared.selection()
+                showSettings = true
+            }) {
+                ZStack {
+                    Circle()
+                        .fill(Color.orange.opacity(0.1))
+                        .frame(width: 44, height: 44)
+                    
+                    Image(systemName: "gearshape.fill")
+                        .font(.system(size: 20))
+                        .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+                }
+            }
+            .disabled(isNavigating)
+        }
+        .padding(.horizontal, 16)
+        .padding(.top, 8)
+        .padding(.bottom, 16)
+        .opacity(appearAnimation && !isNavigating ? 1 : 0)
+        .offset(y: appearAnimation && !isNavigating ? 0 : -20)
+        .animation(.spring(response: 0.5, dampingFraction: 0.8), value: appearAnimation)
+        .animation(.easeOut(duration: 0.2), value: isNavigating)
+    }
+    
+    private var titleSection: some View {
+        Text("Categories to choose from")
+            .font(.system(size: 20, weight: .bold))
+            .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal, 16)
+            .padding(.top, 8)
+            .opacity(appearAnimation && !isNavigating ? 1 : 0)
+            .offset(y: appearAnimation && !isNavigating ? 0 : 20)
+            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.1), value: appearAnimation)
+            .animation(.easeOut(duration: 0.2), value: isNavigating)
+    }
+    
+    private var categoryGrid: some View {
+        LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 16) {
+            ForEach(Array(categoryOrder.enumerated()), id: \.offset) { index, item in
+                CategoryCardModern(
+                    title: item.0,
+                    imageName: item.1,
+                    isSelected: selectedCategory == item.2,
+                    action: {
+                        guard !isNavigating else { return }
+                        
+                        HapticManager.shared.selection()
+                        AnalyticsManager.shared.logCategoryClicked(category: item.2)
+                        
+                        withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+                            selectedCategory = item.2
+                        }
+                        gamePresenter.selectedCategory = item.2
+                        
+                        AnalyticsManager.shared.logCategorySelected(category: item.2)
+                    }
+                )
+                .opacity(appearAnimation && !isNavigating ? 1 : 0)
+                .offset(y: appearAnimation && !isNavigating ? 0 : 30)
+                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2 + Double(index) * 0.08), value: appearAnimation)
+                .animation(.easeOut(duration: 0.2), value: isNavigating)
+            }
+        }
+        .padding(.horizontal, 16)
+        .padding(.bottom, 100)
+    }
+    
+    private var nextButton: some View {
+        VStack {
+            Button(action: {
+                if selectedCategory != nil && !isNavigating {
+                    handleNavigation()
+                }
+            }) {
+                Text("Next")
+                    .font(.system(size: 18, weight: .bold))
+                    .foregroundColor(selectedCategory != nil ? .white : Color.gray.opacity(0.5))
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 56)
+                    .background(
+                        selectedCategory != nil ?
+                            Color.orange :
+                            Color.gray.opacity(0.3)
+                    )
+                    .cornerRadius(16)
+            }
+            .disabled(selectedCategory == nil || isNavigating)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 16)
+            .opacity(appearAnimation && !isNavigating ? 1 : 0)
+            .offset(y: appearAnimation && !isNavigating ? 0 : 30)
+            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.7), value: appearAnimation)
+            .animation(.easeOut(duration: 0.2), value: isNavigating)
+        }
+        .background(Color(red: 0.97, green: 0.97, blue: 0.96))
+    }
+    
+    // MARK: - Helper Methods
+    
+    private func handleNavigation() {
+        AnalyticsManager.shared.logScreenView(screenName: "DifficultySelection")
+        HapticManager.shared.selection()
+        
+        // Start fade out
+        withAnimation(.easeOut(duration: 0.2)) {
+            isNavigating = true
+        }
+        
+        // Navigate after fade out completes
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            startGame()
+        }
+    }
+    
     private func setupCategoryOrder() {
         let allCategory = ("All Categories", "general_image", QuizCategory.all)
         
@@ -204,7 +251,7 @@ struct HomeView: View {
     }
 }
 
-// Modern Category Card with smooth interactions
+// MARK: - Category Card Modern
 struct CategoryCardModern: View {
     let title: String
     let imageName: String

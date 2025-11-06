@@ -14,6 +14,8 @@ struct ResultsView: View {
     @State private var saveError: String?
     @State private var showSaveSuccess = false
     @State private var isGeneratingShare = false
+    @State private var isNavigating = false
+    @State private var appearAnimation = false
     @StateObject private var unlockManager = DifficultyUnlockManager.shared
     @StateObject private var firebaseManager = FirebaseLeaderboardManager.shared
     @Environment(\.colorScheme) var colorScheme
@@ -40,7 +42,10 @@ struct ResultsView: View {
             VStack(spacing: 0) {
                 // Top Navigation Bar
                 HStack {
-                    Button(action: goHome) {
+                    Button(action: {
+                        guard !isNavigating else { return }
+                        handleHomeNavigation()
+                    }) {
                         Image(systemName: "xmark")
                             .font(.system(size: 18, weight: .semibold))
                             .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
@@ -49,10 +54,14 @@ struct ResultsView: View {
                             .clipShape(Circle())
                             .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
                     }
+                    .disabled(isNavigating)
                     
                     Spacer()
                     
-                    Button(action: showLeaderboard) {
+                    Button(action: {
+                        guard !isNavigating else { return }
+                        handleLeaderboardNavigation()
+                    }) {
                         Image(systemName: "trophy.fill")
                             .font(.system(size: 18, weight: .semibold))
                             .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
@@ -61,9 +70,13 @@ struct ResultsView: View {
                             .clipShape(Circle())
                             .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
                     }
+                    .disabled(isNavigating)
                 }
                 .padding(.horizontal, 16)
                 .padding(.top, 8)
+                .opacity(appearAnimation && !isNavigating ? 1 : 0)
+                .animation(.spring(response: 0.5, dampingFraction: 0.8), value: appearAnimation)
+                .animation(.easeOut(duration: 0.2), value: isNavigating)
                 
                 ScrollView(showsIndicators: false) {
                     VStack(spacing: 24) {
@@ -78,6 +91,9 @@ struct ResultsView: View {
                                 .foregroundColor(.white)
                         }
                         .padding(.top, 12)
+                        .opacity(appearAnimation ? 1 : 0)
+                        .scaleEffect(appearAnimation ? 1 : 0.5)
+                        .animation(.spring(response: 0.6, dampingFraction: 0.7).delay(0.1), value: appearAnimation)
                         
                         // Title
                         Text("\(presenter.selectedDifficulty.rawValue) - \(presenter.selectedCategory.rawValue) Passed!")
@@ -85,6 +101,9 @@ struct ResultsView: View {
                             .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 32)
+                            .opacity(appearAnimation ? 1 : 0)
+                            .offset(y: appearAnimation ? 0 : 20)
+                            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2), value: appearAnimation)
                         
                         // Stats Cards
                         HStack(spacing: 16) {
@@ -103,6 +122,9 @@ struct ResultsView: View {
                             .background(Color.white)
                             .cornerRadius(16)
                             .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 2)
+                            .opacity(appearAnimation ? 1 : 0)
+                            .offset(y: appearAnimation ? 0 : 30)
+                            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.3), value: appearAnimation)
                             
                             // Current Streaks
                             VStack(spacing: 8) {
@@ -125,6 +147,9 @@ struct ResultsView: View {
                             .background(Color.white)
                             .cornerRadius(16)
                             .shadow(color: Color.black.opacity(0.08), radius: 8, x: 0, y: 2)
+                            .opacity(appearAnimation ? 1 : 0)
+                            .offset(y: appearAnimation ? 0 : 30)
+                            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.4), value: appearAnimation)
                         }
                         .padding(.horizontal, 16)
                         
@@ -182,7 +207,10 @@ struct ResultsView: View {
                         VStack(spacing: 12) {
                             // Play Now (if unlocked)
                             if unlockedDifficulty != nil && showUnlockAnimation {
-                                Button(action: playAgain) {
+                                Button(action: {
+                                    guard !isNavigating else { return }
+                                    handlePlayAgain()
+                                }) {
                                     Text("Play Now")
                                         .font(.system(size: 17, weight: .bold))
                                         .foregroundColor(Color.purple)
@@ -191,6 +219,9 @@ struct ResultsView: View {
                                         .background(Color.purple.opacity(0.15))
                                         .cornerRadius(16)
                                 }
+                                .disabled(isNavigating)
+                                .opacity(appearAnimation ? 1 : 0)
+                                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.5), value: appearAnimation)
                             }
                             
                             // Save to Leaderboard
@@ -211,11 +242,16 @@ struct ResultsView: View {
                                     .background(Color.purple)
                                     .cornerRadius(16)
                                 }
-                                .disabled(isSavingToFirebase)
+                                .disabled(isSavingToFirebase || isNavigating)
+                                .opacity(appearAnimation ? 1 : 0)
+                                .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.6), value: appearAnimation)
                             }
                             
                             // Next Difficulty
-                            Button(action: playAgain) {
+                            Button(action: {
+                                guard !isNavigating else { return }
+                                handlePlayAgain()
+                            }) {
                                 Text("Next Difficulty")
                                     .font(.system(size: 17, weight: .bold))
                                     .foregroundColor(.white)
@@ -224,6 +260,9 @@ struct ResultsView: View {
                                     .background(Color.blue)
                                     .cornerRadius(16)
                             }
+                            .disabled(isNavigating)
+                            .opacity(appearAnimation ? 1 : 0)
+                            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.7), value: appearAnimation)
                             
                             // Share Score
                             Button(action: shareAchievement) {
@@ -243,12 +282,22 @@ struct ResultsView: View {
                                 .background(Color.orange)
                                 .cornerRadius(16)
                             }
-                            .disabled(isGeneratingShare)
+                            .disabled(isGeneratingShare || isNavigating)
+                            .opacity(appearAnimation ? 1 : 0)
+                            .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.8), value: appearAnimation)
                         }
                         .padding(.horizontal, 16)
                         .padding(.bottom, 24)
                     }
                 }
+                .disabled(isNavigating)
+            }
+            
+            // Fade overlay during navigation
+            if isNavigating {
+                Color(red: 0.97, green: 0.97, blue: 0.96)
+                    .ignoresSafeArea()
+                    .transition(.opacity)
             }
         }
         .onAppear {
@@ -260,6 +309,13 @@ struct ResultsView: View {
                 totalQuestions: presenter.totalQuestions,
                 percentage: percentage
             )
+            
+            isNavigating = false
+            
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
+                appearAnimation = true
+            }
+            
             checkAndUnlockNextDifficulty()
         }
         .sheet(isPresented: $showNameInput) {
@@ -279,6 +335,42 @@ struct ResultsView: View {
             if let error = saveError {
                 Text(error)
             }
+        }
+    }
+    
+    private func handleHomeNavigation() {
+        HapticManager.shared.selection()
+        
+        withAnimation(.easeOut(duration: 0.2)) {
+            isNavigating = true
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            goHome()
+        }
+    }
+    
+    private func handleLeaderboardNavigation() {
+        HapticManager.shared.selection()
+        
+        withAnimation(.easeOut(duration: 0.2)) {
+            isNavigating = true
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            showLeaderboard()
+        }
+    }
+    
+    private func handlePlayAgain() {
+        HapticManager.shared.selection()
+        
+        withAnimation(.easeOut(duration: 0.2)) {
+            isNavigating = true
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            playAgain()
         }
     }
     

@@ -1,4 +1,6 @@
+
 import SwiftUI
+internal import Combine
 
 @MainActor
 class TransitionCoordinator: ObservableObject {

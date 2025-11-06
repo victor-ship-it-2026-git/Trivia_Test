@@ -1,11 +1,11 @@
-
 import SwiftUI
 
-// ContentView
+// MARK: - ContentView
 struct ContentView: View {
     @StateObject private var gamePresenter = GamePresenter()
     @ObservedObject private var adMobManager = AdMobManager.shared
     @StateObject private var ratingManager = RatingManager.shared
+    @StateObject private var transitionCoordinator = TransitionCoordinator()
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
     @State private var showSplash = true
     @State private var currentScreen: Screen = .home
@@ -26,6 +26,7 @@ struct ContentView: View {
             if showSplash {
                 SplashView()
                     .transition(.opacity)
+                    .zIndex(1000)
             } else if !hasSeenOnboarding {
                 OnboardingView(onComplete: {
                     withAnimation(.easeInOut(duration: 0.5)) {
@@ -33,21 +34,22 @@ struct ContentView: View {
                     }
                 })
                 .transition(.opacity)
+                .zIndex(999)
             } else {
                 mainContent
-                    .transition(.asymmetric(
-                        insertion: .move(edge: .trailing).combined(with: .opacity),
-                        removal: .move(edge: .leading).combined(with: .opacity)
-                    ))
+                    .zIndex(1)
             }
             
             // Rating Popup Overlay
             if showRatingPopup {
                 RatingPopupView(isPresented: $showRatingPopup)
-                    .transition(.opacity)
-                    .zIndex(1000)
+                    .transition(.opacity.combined(with: .scale(scale: 0.9)))
+                    .zIndex(2000)
             }
         }
+        .animation(.easeInOut(duration: 0.3), value: showSplash)
+        .animation(.easeInOut(duration: 0.3), value: hasSeenOnboarding)
+        .animation(.spring(response: 0.5, dampingFraction: 0.8), value: showRatingPopup)
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                 withAnimation(.easeInOut(duration: 0.5)) {
@@ -55,7 +57,6 @@ struct ContentView: View {
                 }
             }
         }
-        
         .onChange(of: ratingManager.shouldShowRating) { oldValue, newValue in
             if newValue {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
@@ -74,142 +75,72 @@ struct ContentView: View {
             switch currentScreen {
             case .home:
                 HomeView(
-                    startGame: {
-                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
-                            currentScreen = .difficultySelection
-                        }
-                    },
-                    showLeaderboard: {
-                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
-                            currentScreen = .leaderboard
-                        }
-                    },
-                    showShop: {
-                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
-                            currentScreen = .shop
-                        }
-                    },
+                    startGame: { navigateTo(.difficultySelection) },
+                    showLeaderboard: { navigateTo(.leaderboard) },
+                    showShop: { navigateTo(.shop) },
                     gamePresenter: gamePresenter
                 )
-                .transition(.asymmetric(
-                    insertion: .move(edge: .leading).combined(with: .opacity),
-                    removal: .move(edge: .leading).combined(with: .opacity)
-                ))
+                .transition(.opacity)
                 
             case .categorySelection:
                 CategorySelectionView(
-                    goHome: {
-                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
-                            currentScreen = .home
-                        }
-                    },
-                    goNext: {
-                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
-                            currentScreen = .difficultySelection
-                        }
-                    },
+                    goHome: { navigateTo(.home) },
+                    goNext: { navigateTo(.difficultySelection) },
                     presenter: gamePresenter
                 )
-                .transition(.asymmetric(
-                    insertion: .move(edge: .trailing).combined(with: .opacity),
-                    removal: .move(edge: .leading).combined(with: .opacity)
-                ))
+                .transition(.opacity)
                 
             case .difficultySelection:
                 DifficultySelectionView(
-                    goBack: {
-                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
-                            currentScreen = .home
-                        }
-                    },
+                    goBack: { navigateTo(.home) },
                     startGame: {
                         gamePresenter.resetGame()
-                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
-                            currentScreen = .game
-                        }
+                        navigateTo(.game)
                     },
                     presenter: gamePresenter
                 )
-                .transition(.asymmetric(
-                    insertion: .move(edge: .trailing).combined(with: .opacity),
-                    removal: .move(edge: .leading).combined(with: .opacity)
-                ))
+                .transition(.opacity)
                 
             case .game:
                 GameView(
                     presenter: gamePresenter,
                     adMobManager: adMobManager,
                     showResults: {
-                        // Check and show rating when moving to results
                         RatingManager.shared.checkAndShowRating(difficulty: gamePresenter.selectedDifficulty)
-                        
-                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
-                            currentScreen = .results
-                        }
+                        navigateTo(.results)
                     },
-                    goHome: {
-                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
-                            currentScreen = .home
-                        }
-                    }
+                    goHome: { navigateTo(.home) }
                 )
-                .transition(.asymmetric(
-                    insertion: .scale(scale: 0.9).combined(with: .opacity),
-                    removal: .scale(scale: 1.1).combined(with: .opacity)
-                ))
+                .transition(.opacity)
                 
             case .results:
                 ResultsView(
                     presenter: gamePresenter,
-                    playAgain: {
-                        // Keep the current category, just go back to difficulty selection
-                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
-                            currentScreen = .difficultySelection
-                        }
-                    },
-                    goHome: {
-                        // Reset to home (category selection)
-                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
-                            currentScreen = .home
-                        }
-                    },
-                    showLeaderboard: {
-                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
-                            currentScreen = .leaderboard
-                        }
-                    }
+                    playAgain: { navigateTo(.difficultySelection) },
+                    goHome: { navigateTo(.home) },
+                    showLeaderboard: { navigateTo(.leaderboard) }
                 )
-                .transition(.asymmetric(
-                    insertion: .move(edge: .bottom).combined(with: .opacity),
-                    removal: .move(edge: .bottom).combined(with: .opacity)
-                ))
+                .transition(.opacity)
                 
             case .leaderboard:
                 LeaderboardView(
-                    goHome: {
-                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
-                            currentScreen = .home
-                        }
-                    }
+                    goHome: { navigateTo(.home) }
                 )
-                .transition(.asymmetric(
-                    insertion: .move(edge: .trailing).combined(with: .opacity),
-                    removal: .move(edge: .trailing).combined(with: .opacity)
-                ))
+                .transition(.opacity)
                 
             case .shop:
                 ShopScreenView(
-                    goBack: {
-                        withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
-                            currentScreen = .home
-                        }
-                    }
+                    goBack: { navigateTo(.home) }
                 )
-                .transition(.asymmetric(
-                    insertion: .move(edge: .trailing).combined(with: .opacity),
-                    removal: .move(edge: .trailing).combined(with: .opacity)
-                ))
+                .transition(.opacity)
             }
+        }
+        .animation(.spring(response: 0.5, dampingFraction: 0.8), value: currentScreen)
+    }
+    
+    private func navigateTo(_ screen: Screen) {
+        transitionCoordinator.performTransition(duration: 0.5) {
+            currentScreen = screen
         }
     }
 }

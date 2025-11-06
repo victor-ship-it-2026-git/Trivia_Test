@@ -9,6 +9,8 @@ struct LeaderboardView: View {
     @State private var isGeneratingShare = false
     @State private var selectedEntryForShare: LeaderboardEntry?
     @State private var currentUserName: String = ""
+    @State private var isNavigating = false
+    @State private var appearAnimation = false
     @Environment(\.colorScheme) var colorScheme
     
     enum LeaderboardFilter: String, CaseIterable {
@@ -42,8 +44,8 @@ struct LeaderboardView: View {
                 // Top Navigation Bar
                 HStack {
                     Button(action: {
-                        HapticManager.shared.selection()
-                        goHome()
+                        guard !isNavigating else { return }
+                        handleHomeNavigation()
                     }) {
                         Image(systemName: "chevron.left")
                             .font(.system(size: 18, weight: .semibold))
@@ -53,6 +55,7 @@ struct LeaderboardView: View {
                             .clipShape(Circle())
                             .shadow(color: Color.black.opacity(0.08), radius: 4, x: 0, y: 2)
                     }
+                    .disabled(isNavigating)
                     
                     Spacer()
                     
@@ -73,10 +76,14 @@ struct LeaderboardView: View {
                         .background(Color.purple.opacity(0.15))
                         .cornerRadius(22)
                     }
+                    .disabled(isNavigating)
                 }
                 .padding(.horizontal, 16)
                 .padding(.top, 8)
                 .padding(.bottom, 16)
+                .opacity(appearAnimation && !isNavigating ? 1 : 0)
+                .animation(.spring(response: 0.5, dampingFraction: 0.8), value: appearAnimation)
+                .animation(.easeOut(duration: 0.2), value: isNavigating)
                 
                 // Trophy Icon
                 ZStack {
@@ -89,12 +96,18 @@ struct LeaderboardView: View {
                         .foregroundColor(.white)
                 }
                 .padding(.bottom, 16)
+                .opacity(appearAnimation ? 1 : 0)
+                .scaleEffect(appearAnimation ? 1 : 0.5)
+                .animation(.spring(response: 0.6, dampingFraction: 0.7).delay(0.1), value: appearAnimation)
                 
                 // Title
                 Text("Global Leaderboard")
                     .font(.system(size: 32, weight: .bold))
                     .foregroundColor(Color(red: 0.1, green: 0.1, blue: 0.2))
                     .padding(.bottom, 20)
+                    .opacity(appearAnimation ? 1 : 0)
+                    .offset(y: appearAnimation ? 0 : 20)
+                    .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2), value: appearAnimation)
                 
                 // Loading Indicator
                 if firebaseManager.isLoading && filteredLeaderboard.isEmpty {
@@ -121,18 +134,31 @@ struct LeaderboardView: View {
                             .font(.subheadline)
                             .foregroundColor(Color.gray)
                     }
+                    .opacity(appearAnimation ? 1 : 0)
+                    .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.3), value: appearAnimation)
                     Spacer()
                 } else {
                     ScrollView(showsIndicators: false) {
                         VStack(spacing: 12) {
                             ForEach(Array(filteredLeaderboard.enumerated()), id: \.element.id) { index, entry in
                                 makeLeaderboardRow(entry: entry, rank: index + 1)
+                                    .opacity(appearAnimation ? 1 : 0)
+                                    .offset(y: appearAnimation ? 0 : 30)
+                                    .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.3 + Double(index) * 0.05), value: appearAnimation)
                             }
                         }
                         .padding(.horizontal, 16)
                         .padding(.bottom, 20)
                     }
+                    .disabled(isNavigating)
                 }
+            }
+            
+            // Fade overlay during navigation
+            if isNavigating {
+                Color(red: 0.97, green: 0.97, blue: 0.96)
+                    .ignoresSafeArea()
+                    .transition(.opacity)
             }
         }
         .onAppear {
@@ -142,6 +168,12 @@ struct LeaderboardView: View {
             // Get current user name from UserDefaults
             currentUserName = UserDefaults.standard.string(forKey: "LastSavedPlayerName") ?? ""
             print("🔍 Current user name from UserDefaults: '\(currentUserName)'")
+            
+            isNavigating = false
+            
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
+                appearAnimation = true
+            }
             
             applyFilter()
         }
@@ -181,6 +213,18 @@ struct LeaderboardView: View {
             }
         )
         .transition(.opacity.combined(with: .move(edge: .top)))
+    }
+    
+    private func handleHomeNavigation() {
+        HapticManager.shared.selection()
+        
+        withAnimation(.easeOut(duration: 0.2)) {
+            isNavigating = true
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            goHome()
+        }
     }
     
     private func applyFilter() {

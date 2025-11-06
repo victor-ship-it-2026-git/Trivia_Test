@@ -1,4 +1,3 @@
-
 import SwiftUI
 internal import Combine
 
@@ -15,6 +14,7 @@ struct ShopScreenView: View {
     @State private var showAdRewardAlert = false
     @State private var pendingAdReward: ShopAdReward?
     @State private var appearAnimation = false
+    @State private var isNavigating = false
     
     var body: some View {
         ZStack {
@@ -25,12 +25,8 @@ struct ShopScreenView: View {
                 // Top Navigation Bar
                 HStack {
                     Button(action: {
-                        withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
-                            appearAnimation = false
-                        }
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                            goBack()
-                        }
+                        guard !isNavigating else { return }
+                        handleBackNavigation()
                     }) {
                         HStack(spacing: 5) {
                             Image(systemName: "chevron.left")
@@ -39,6 +35,7 @@ struct ShopScreenView: View {
                         .font(.headline)
                         .foregroundColor(.blue)
                     }
+                    .disabled(isNavigating)
                     
                     Spacer()
                     
@@ -57,8 +54,10 @@ struct ShopScreenView: View {
                     .opacity(0)
                 }
                 .padding()
-                .opacity(appearAnimation ? 1 : 0)
-                .offset(y: appearAnimation ? 0 : -20)
+                .opacity(appearAnimation && !isNavigating ? 1 : 0)
+                .offset(y: appearAnimation && !isNavigating ? 0 : -20)
+                .animation(.spring(response: 0.5, dampingFraction: 0.8), value: appearAnimation)
+                .animation(.easeOut(duration: 0.2), value: isNavigating)
                 
                 ScrollView(showsIndicators: false) {
                     VStack(spacing: 25) {
@@ -77,13 +76,24 @@ struct ShopScreenView: View {
                         Spacer(minLength: 50)
                     }
                 }
+                .disabled(isNavigating)
+            }
+            
+            // Fade overlay during navigation
+            if isNavigating {
+                Color.dynamicBackground
+                    .ignoresSafeArea()
+                    .transition(.opacity)
             }
         }
-        .preferredColorScheme(.light) 
+        .preferredColorScheme(.light)
         .onAppear {
             AnalyticsManager.shared.logScreenView(screenName: "Shop")
-               AnalyticsManager.shared.logShopViewed()
-            withAnimation {
+            AnalyticsManager.shared.logShopViewed()
+            
+            isNavigating = false
+            
+            withAnimation(.spring(response: 0.5, dampingFraction: 0.8)) {
                 appearAnimation = true
             }
         }
@@ -114,9 +124,10 @@ struct ShopScreenView: View {
             Text("Lifeline Shop")
                 .font(.system(size: 32, weight: .bold))
                 .foregroundColor(.dynamicText)
-                .opacity(appearAnimation ? 1 : 0)
-                .offset(y: appearAnimation ? 0 : 20)
+                .opacity(appearAnimation && !isNavigating ? 1 : 0)
+                .offset(y: appearAnimation && !isNavigating ? 0 : 20)
                 .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.2), value: appearAnimation)
+                .animation(.easeOut(duration: 0.2), value: isNavigating)
             
             HStack(spacing: 8) {
                 Image(systemName: "dollarsign.circle.fill")
@@ -126,8 +137,9 @@ struct ShopScreenView: View {
             }
             .font(.title3)
             .foregroundColor(.dynamicText)
-            .opacity(appearAnimation ? 1 : 0)
+            .opacity(appearAnimation && !isNavigating ? 1 : 0)
             .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.3), value: appearAnimation)
+            .animation(.easeOut(duration: 0.2), value: isNavigating)
         }
         .padding(.top, 20)
         .padding(.horizontal)
@@ -153,9 +165,10 @@ struct ShopScreenView: View {
                     isAdReady: adManager.isAdReady,
                     onWatchAd: { watchAdForReward(reward) }
                 )
-                .opacity(appearAnimation ? 1 : 0)
-                .offset(x: appearAnimation ? 0 : -20)
+                .opacity(appearAnimation && !isNavigating ? 1 : 0)
+                .offset(x: appearAnimation && !isNavigating ? 0 : -20)
                 .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.4 + Double(index) * 0.1), value: appearAnimation)
+                .animation(.easeOut(duration: 0.2), value: isNavigating)
             }
         }
         .padding()
@@ -165,8 +178,9 @@ struct ShopScreenView: View {
                 .shadow(color: Color.black.opacity(colorScheme == .dark ? 0.3 : 0.1), radius: 8)
         )
         .padding(.horizontal)
-        .opacity(appearAnimation ? 1 : 0)
+        .opacity(appearAnimation && !isNavigating ? 1 : 0)
         .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.4), value: appearAnimation)
+        .animation(.easeOut(duration: 0.2), value: isNavigating)
     }
     
     private var dividerSection: some View {
@@ -185,8 +199,9 @@ struct ShopScreenView: View {
                 .frame(height: 1)
         }
         .padding(.horizontal)
-        .opacity(appearAnimation ? 1 : 0)
+        .opacity(appearAnimation && !isNavigating ? 1 : 0)
         .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.7), value: appearAnimation)
+        .animation(.easeOut(duration: 0.2), value: isNavigating)
     }
     
     private var coinsShopSection: some View {
@@ -202,9 +217,10 @@ struct ShopScreenView: View {
             
             ForEach(Array(LifelineType.allCases.enumerated()), id: \.element) { index, lifelineType in
                 lifelineSection(for: lifelineType)
-                    .opacity(appearAnimation ? 1 : 0)
-                    .offset(y: appearAnimation ? 0 : 20)
+                    .opacity(appearAnimation && !isNavigating ? 1 : 0)
+                    .offset(y: appearAnimation && !isNavigating ? 0 : 20)
                     .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.8 + Double(index) * 0.1), value: appearAnimation)
+                    .animation(.easeOut(duration: 0.2), value: isNavigating)
             }
         }
     }
@@ -243,86 +259,98 @@ struct ShopScreenView: View {
     
     // Helper Methods
     
+    private func handleBackNavigation() {
+        HapticManager.shared.selection()
+        
+        withAnimation(.easeOut(duration: 0.2)) {
+            isNavigating = true
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            goBack()
+        }
+    }
+    
     private func purchaseItem(_ item: ShopItem) {
-          print("💰 Attempting purchase: \(item.lifelineType.rawValue) x\(item.quantity) for \(item.price) coins")
-          print("💰 Current coins: \(coinsManager.coins)")
-          
-          if shopManager.purchaseItem(item) {
-              print("✅ Purchase successful!")
-              AnalyticsManager.shared.logLifelinePurchased(
-                         lifelineType: item.lifelineType,
-                         quantity: item.quantity,
-                         cost: item.price
-                     )
-              HapticManager.shared.success()
-              withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
-                  purchaseSuccess = true
-              }
-              // Force refresh the UI
-              coinsManager.objectWillChange.send()
-              lifelineManager.objectWillChange.send()
-          } else {
-              print("❌ Purchase failed - insufficient coins")
-              HapticManager.shared.error()
-              withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
-                  showInsufficientCoins = true
-              }
-          }
-      }
-    
-    private func watchAdForReward(_ reward: ShopAdReward) {
-        Task { @MainActor in
-            guard adManager.isAdReady else {
-                print("❌ Ad not ready yet. Current state: \(adManager.isAdReady)")
-                return
-            }
-            
-            guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-                  let rootViewController = windowScene.windows.first?.rootViewController else {
-                print("❌ Could not get root view controller")
-                return
-            }
-            
-            print("🎯 Starting ad for reward: \(reward.lifelineType.rawValue)")
-            pendingAdReward = reward
-            
-            adManager.onAdRewarded = {
-                Task { @MainActor in
-                    if let reward = self.pendingAdReward {
-                        // Grant the reward
-                        AnalyticsManager.shared.logAdWatchedForReward(rewardType: reward.lifelineType)
-                        LifelineManager.shared.addLifeline(type: reward.lifelineType, quantity: reward.quantity)
-                        
-                        
-                        // Show success message
-                        self.adRewardMessage = "You received \(reward.quantity)x \(reward.lifelineType.rawValue)!"
-                        self.showAdRewardAlert = true
-                        
-                        self.pendingAdReward = nil
-                        print("✅ Reward granted: \(reward.quantity)x \(reward.lifelineType.rawValue)")
+        print("💰 Attempting purchase: \(item.lifelineType.rawValue) x\(item.quantity) for \(item.price) coins")
+                print("💰 Current coins: \(coinsManager.coins)")
+                
+                if shopManager.purchaseItem(item) {
+                    print("✅ Purchase successful!")
+                    AnalyticsManager.shared.logLifelinePurchased(
+                        lifelineType: item.lifelineType,
+                        quantity: item.quantity,
+                        cost: item.price
+                    )
+                    HapticManager.shared.success()
+                    withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+                        purchaseSuccess = true
+                    }
+                    // Force refresh the UI
+                    coinsManager.objectWillChange.send()
+                    lifelineManager.objectWillChange.send()
+                } else {
+                    print("❌ Purchase failed - insufficient coins")
+                    HapticManager.shared.error()
+                    withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+                        showInsufficientCoins = true
                     }
                 }
             }
             
-            adManager.onAdDismissed = {
+            private func watchAdForReward(_ reward: ShopAdReward) {
                 Task { @MainActor in
-                    if self.pendingAdReward != nil {
-                        print("⚠️ Ad dismissed without reward")
-                        self.pendingAdReward = nil
+                    guard adManager.isAdReady else {
+                        print("❌ Ad not ready yet. Current state: \(adManager.isAdReady)")
+                        return
                     }
+                    
+                    guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                          let rootViewController = windowScene.windows.first?.rootViewController else {
+                        print("❌ Could not get root view controller")
+                        return
+                    }
+                    
+                    print("🎯 Starting ad for reward: \(reward.lifelineType.rawValue)")
+                    pendingAdReward = reward
+                    
+                    adManager.onAdRewarded = {
+                        Task { @MainActor in
+                            if let reward = self.pendingAdReward {
+                                // Grant the reward
+                                AnalyticsManager.shared.logAdWatchedForReward(rewardType: reward.lifelineType)
+                                LifelineManager.shared.addLifeline(type: reward.lifelineType, quantity: reward.quantity)
+                                
+                                // Show success message
+                                self.adRewardMessage = "You received \(reward.quantity)x \(reward.lifelineType.rawValue)!"
+                                self.showAdRewardAlert = true
+                                
+                                self.pendingAdReward = nil
+                                print("✅ Reward granted: \(reward.quantity)x \(reward.lifelineType.rawValue)")
+                            }
+                        }
+                    }
+                    
+                    adManager.onAdDismissed = {
+                        Task { @MainActor in
+                            if self.pendingAdReward != nil {
+                                print("⚠️ Ad dismissed without reward")
+                                self.pendingAdReward = nil
+                            }
+                        }
+                    }
+                    
+                    print("🎬 Showing ad from ShopScreen...")
+                    adManager.showAd(from: rootViewController)
                 }
             }
             
-            print("🎬 Showing ad from ShopScreen...")
-            adManager.showAd(from: rootViewController)
+            private func getColor(for type: LifelineType) -> Color {
+                switch type {
+                case .fiftyFifty: return .blue
+                case .skip: return .orange
+                case .extraTime: return .green
+                }
+            }
         }
-    }
-    
-    private func getColor(for type: LifelineType) -> Color {
-        switch type {
-        case .fiftyFifty: return .blue
-        case .skip: return .orange
-        case .extraTime: return .green
-        }
-    }
-}
+              
