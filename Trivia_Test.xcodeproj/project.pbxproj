@@ -17,6 +17,9 @@
 		7DB101D82EA5251E00CBDA3F /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7DB101D72EA5251E00CBDA3F /* FirebaseInAppMessaging-Beta */; };
 		7DB101DA2EA5251E00CBDA3F /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 7DB101D92EA5251E00CBDA3F /* FirebaseMessaging */; };
 		7DB101DD2EA5255D00CBDA3F /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 7DB101DC2EA5255D00CBDA3F /* GoogleMobileAds */; };
+		7DEC47522EBCC375000EF308 /* GoogleAppMeasurement in Frameworks */ = {isa = PBXBuildFile; productRef = 7DEC47512EBCC375000EF308 /* GoogleAppMeasurement */; };
+		7DEC47542EBCC375000EF308 /* GoogleAppMeasurementCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7DEC47532EBCC375000EF308 /* GoogleAppMeasurementCore */; };
+		7DEC47562EBCC375000EF308 /* GoogleAppMeasurementIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 7DEC47552EBCC375000EF308 /* GoogleAppMeasurementIdentitySupport */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -52,12 +55,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DB101DA2EA5251E00CBDA3F /* FirebaseMessaging in Frameworks */,
+				7DEC47542EBCC375000EF308 /* GoogleAppMeasurementCore in Frameworks */,
 				7DB101CC2EA5251E00CBDA3F /* FirebaseAnalytics in Frameworks */,
 				7DB101DD2EA5255D00CBDA3F /* GoogleMobileAds in Frameworks */,
 				7DB101D22EA5251E00CBDA3F /* FirebaseCore in Frameworks */,
 				7DB101CE2EA5251E00CBDA3F /* FirebaseAppCheck in Frameworks */,
+				7DEC47522EBCC375000EF308 /* GoogleAppMeasurement in Frameworks */,
 				7DB101D82EA5251E00CBDA3F /* FirebaseInAppMessaging-Beta in Frameworks */,
 				7DB101D42EA5251E00CBDA3F /* FirebaseCrashlytics in Frameworks */,
+				7DEC47562EBCC375000EF308 /* GoogleAppMeasurementIdentitySupport in Frameworks */,
 				7DB101C72EA520A200CBDA3F /* StoreKit.framework in Frameworks */,
 				7DB101D62EA5251E00CBDA3F /* FirebaseDatabase in Frameworks */,
 				7DB101D02EA5251E00CBDA3F /* FirebaseAuth in Frameworks */,
@@ -122,6 +128,9 @@
 				7DB101D72EA5251E00CBDA3F /* FirebaseInAppMessaging-Beta */,
 				7DB101D92EA5251E00CBDA3F /* FirebaseMessaging */,
 				7DB101DC2EA5255D00CBDA3F /* GoogleMobileAds */,
+				7DEC47512EBCC375000EF308 /* GoogleAppMeasurement */,
+				7DEC47532EBCC375000EF308 /* GoogleAppMeasurementCore */,
+				7DEC47552EBCC375000EF308 /* GoogleAppMeasurementIdentitySupport */,
 			);
 			productName = Trivia_Test;
 			productReference = 7DDC9ACD2E8BC9A00078B359 /* Trivia_Test.app */;
@@ -154,6 +163,7 @@
 			packageReferences = (
 				7DB101CA2EA5251E00CBDA3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				7DB101DB2EA5255D00CBDA3F /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				7DEC47502EBCC375000EF308 /* XCRemoteSwiftPackageReference "GoogleAppMeasurement" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7DDC9ACE2E8BC9A00078B359 /* Products */;
@@ -437,6 +447,14 @@
 				minimumVersion = 12.12.0;
 			};
 		};
+		7DEC47502EBCC375000EF308 /* XCRemoteSwiftPackageReference "GoogleAppMeasurement" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleAppMeasurement.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -484,6 +502,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7DB101DB2EA5255D00CBDA3F /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
 			productName = GoogleMobileAds;
+		};
+		7DEC47512EBCC375000EF308 /* GoogleAppMeasurement */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DEC47502EBCC375000EF308 /* XCRemoteSwiftPackageReference "GoogleAppMeasurement" */;
+			productName = GoogleAppMeasurement;
+		};
+		7DEC47532EBCC375000EF308 /* GoogleAppMeasurementCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DEC47502EBCC375000EF308 /* XCRemoteSwiftPackageReference "GoogleAppMeasurement" */;
+			productName = GoogleAppMeasurementCore;
+		};
+		7DEC47552EBCC375000EF308 /* GoogleAppMeasurementIdentitySupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DEC47502EBCC375000EF308 /* XCRemoteSwiftPackageReference "GoogleAppMeasurement" */;
+			productName = GoogleAppMeasurementIdentitySupport;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
