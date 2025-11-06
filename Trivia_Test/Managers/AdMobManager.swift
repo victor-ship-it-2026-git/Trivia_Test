@@ -18,7 +18,8 @@ class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
     var onAdRewarded: (() -> Void)?
     
     // Replace this with Real Admob Ad Unit ID
-    private let adUnitID = "ca-app-pub-3940256099942544/1712485313"  // This is Admob Test ID
+    private let adUnitID = "ca-app-pub-2560859326208528/7265988790" // This is real ID
+  //  private let adUnitID = "ca-app-pub-3940256099942544/1712485313"  // This is Admob Test ID
     
     override init() {
         super.init()
