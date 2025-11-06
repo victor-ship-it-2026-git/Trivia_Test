@@ -2,8 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+<key>NSUserTrackingUsageDescription</key>
+<string>We use your data to provide personalized ads and improve your experience.</string>
 	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-2560859326208528/7265988790</string>
+	<string>ca-app-pub-2560859326208528~5567971738</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>

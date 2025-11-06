@@ -20,6 +20,7 @@
 		7DEC47522EBCC375000EF308 /* GoogleAppMeasurement in Frameworks */ = {isa = PBXBuildFile; productRef = 7DEC47512EBCC375000EF308 /* GoogleAppMeasurement */; };
 		7DEC47542EBCC375000EF308 /* GoogleAppMeasurementCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7DEC47532EBCC375000EF308 /* GoogleAppMeasurementCore */; };
 		7DEC47562EBCC375000EF308 /* GoogleAppMeasurementIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 7DEC47552EBCC375000EF308 /* GoogleAppMeasurementIdentitySupport */; };
+		7DEC47582EBCC962000EF308 /* FirebaseAnalyticsIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 7DEC47572EBCC962000EF308 /* FirebaseAnalyticsIdentitySupport */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -64,6 +65,7 @@
 				7DB101D82EA5251E00CBDA3F /* FirebaseInAppMessaging-Beta in Frameworks */,
 				7DB101D42EA5251E00CBDA3F /* FirebaseCrashlytics in Frameworks */,
 				7DEC47562EBCC375000EF308 /* GoogleAppMeasurementIdentitySupport in Frameworks */,
+				7DEC47582EBCC962000EF308 /* FirebaseAnalyticsIdentitySupport in Frameworks */,
 				7DB101C72EA520A200CBDA3F /* StoreKit.framework in Frameworks */,
 				7DB101D62EA5251E00CBDA3F /* FirebaseDatabase in Frameworks */,
 				7DB101D02EA5251E00CBDA3F /* FirebaseAuth in Frameworks */,
@@ -131,6 +133,7 @@
 				7DEC47512EBCC375000EF308 /* GoogleAppMeasurement */,
 				7DEC47532EBCC375000EF308 /* GoogleAppMeasurementCore */,
 				7DEC47552EBCC375000EF308 /* GoogleAppMeasurementIdentitySupport */,
+				7DEC47572EBCC962000EF308 /* FirebaseAnalyticsIdentitySupport */,
 			);
 			productName = Trivia_Test;
 			productReference = 7DDC9ACD2E8BC9A00078B359 /* Trivia_Test.app */;
@@ -517,6 +520,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7DEC47502EBCC375000EF308 /* XCRemoteSwiftPackageReference "GoogleAppMeasurement" */;
 			productName = GoogleAppMeasurementIdentitySupport;
+		};
+		7DEC47572EBCC962000EF308 /* FirebaseAnalyticsIdentitySupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DB101CA2EA5251E00CBDA3F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsIdentitySupport;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -20,51 +20,61 @@ class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
     private let adUnitID = "ca-app-pub-2560859326208528/7265988790" // Real ID
     // private let adUnitID = "ca-app-pub-3940256099942544/1712485313"  // Test ID
     
+    private var isInitialized = false
+    
     override init() {
         super.init()
+        // DON'T check tracking or load ads here!
+        // Wait for explicit initialization after ATT is granted
+        print("📦 AdMobManager created (waiting for ATT permission)")
+    }
+    
+    // MARK: - Initialize After ATT
+    func initializeAfterATT() {
+        guard !isInitialized else {
+            print("⚠️ AdMobManager already initialized")
+            return
+        }
+        
+        isInitialized = true
+        
+        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+        print("🎯 AdMobManager: Initializing AFTER ATT")
+        
         configureTestDevices()
         checkTrackingStatus()
         loadRewardedAd()
+        
+        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
     }
     
     // MARK: - Configure Test Devices
     private func configureTestDevices() {
         let requestConfiguration = MobileAds.shared.requestConfiguration
         
-        // For Simulator testing
         #if targetEnvironment(simulator)
         requestConfiguration.testDeviceIdentifiers = ["SIMULATOR"]
         print("📱 Test Mode: SIMULATOR enabled")
         #else
-        // For Real Device testing - Add your device's test ID here
-        // To find your test device ID, run the app once and check console for:
-        // "To get test ads on this device, set: GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = @[ @\"YOUR_DEVICE_ID\" ];"
         requestConfiguration.testDeviceIdentifiers = [
-            "AB56990C-0263-4083-8600-7CC9F100A369"
+            // "YOUR_DEVICE_TEST_ID_HERE" // Add your device test ID if needed
         ]
-        print("📱 Test Mode: Real device - Add your test device ID if needed")
+        print("📱 Test Mode: Real device")
         #endif
-        
-        // Enable debug logging (remove in production)
-        MobileAds.shared.requestConfiguration.testDeviceIdentifiers?.forEach { deviceID in
-            print("📱 Test Device ID: \(deviceID)")
-        }
     }
     
     func checkTrackingStatus() {
         if #available(iOS 14.5, *) {
             trackingStatus = ATTrackingManager.trackingAuthorizationStatus
-            print("📊 Current ATT Status: \(trackingStatus.description)")
+            print("📊 AdMob - ATT Status: \(trackingStatus.rawValue)")
             
-            // Print IDFA for debugging
-            let idfa = ASIdentifierManager.shared().advertisingIdentifier
-            let idfaString = idfa.uuidString
-            print("📱 IDFA: \(idfaString)")
+            let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
+            print("📱 AdMob - IDFA: \(idfa)")
             
-            if idfaString == "00000000-0000-0000-0000-000000000000" {
-                print("⚠️ IDFA is zeroed out - user denied tracking or limit ad tracking is enabled")
+            if idfa == "00000000-0000-0000-0000-000000000000" {
+                print("⚠️ AdMob - IDFA is zeroed (will use non-personalized ads)")
             } else {
-                print("✅ IDFA is available for ad targeting")
+                print("✅ AdMob - IDFA is available (will use personalized ads)")
             }
         }
     }
@@ -74,14 +84,13 @@ class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
         
         // Set request parameters based on tracking status
         if #available(iOS 14.5, *), trackingStatus == .denied {
-            // User denied tracking - request non-personalized ads
             let extras = Extras()
             extras.additionalParameters = ["npa": "1"]
             request.register(extras)
             print("📢 Requesting non-personalized ads")
         }
         
-        print("📥 Starting to load rewarded ad...")
+        print("📥 Loading rewarded ad...")
         print("📥 Ad Unit ID: \(adUnitID)")
         
         RewardedAd.load(with: adUnitID, request: request) { [weak self] ad, error in
@@ -92,10 +101,8 @@ class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
                     let nsError = error as NSError
                     print("❌ Failed to load rewarded ad")
                     print("❌ Error code: \(nsError.code)")
-                    print("❌ Error domain: \(nsError.domain)")
-                    print("❌ Error description: \(error.localizedDescription)")
+                    print("❌ Error: \(error.localizedDescription)")
                     
-                    // Log specific error codes
                     self.handleAdLoadError(nsError)
                     
                     CrashlyticsManager.shared.logError(error, additionalInfo: [
@@ -118,36 +125,20 @@ class AdMobManager: NSObject, ObservableObject, FullScreenContentDelegate {
     
     // MARK: - Error Handling
     private func handleAdLoadError(_ error: NSError) {
-        // GADErrorCode enum values
         switch error.code {
-        case 0: // kGADErrorInvalidRequest
-            print("⚠️ Invalid ad request - Check ad unit ID and request parameters")
-        case 1: // kGADErrorNoFill
-            print("⚠️ No ad to show - Ad inventory is empty. This is common in testing.")
-            print("💡 Try using test ads or wait a few minutes")
-        case 2: // kGADErrorNetworkError
+        case 0:
+            print("⚠️ Invalid ad request - Check ad unit ID")
+        case 1:
+            print("⚠️ No ad to show - Ad inventory empty (common in testing)")
+            print("💡 This is normal! Ads will work better in production")
+        case 2:
             print("⚠️ Network error - Check internet connection")
-        case 3: // kGADErrorServerError
-            print("⚠️ Server error - Ad server is having issues")
-        case 8: // kGADErrorInvalidArgument
+        case 3:
+            print("⚠️ Server error - Ad server issues")
+        case 8:
             print("⚠️ Invalid argument - Check ad unit ID format")
-        case 9: // kGADErrorReceivedInvalidResponse
-            print("⚠️ Invalid response from ad server")
-        case 10: // kGADErrorMediationDataError
-            print("⚠️ Mediation data error")
-        case 11: // kGADErrorMediationAdapterError
-            print("⚠️ Mediation adapter error")
-        case 15: // kGADErrorTimeout
-            print("⚠️ Ad request timed out")
         default:
             print("⚠️ Unknown error code: \(error.code)")
-        }
-        
-        // Check if this is a test device issue
-        if error.code == 0 {
-            print("💡 If testing on a real device, add your test device ID:")
-            print("💡 1. Check console for 'To get test ads on this device' message")
-            print("💡 2. Add the ID to testDeviceIdentifiers array in configureTestDevices()")
         }
     }
     

@@ -1,28 +1,25 @@
 import SwiftUI
 import GoogleMobileAds
 import Firebase
+import FirebaseAnalytics
 import FirebaseMessaging
 import UserNotifications
 import FirebaseCrashlytics
 import AppTrackingTransparency
 import AdSupport
 
-
-
 @main
 struct Trivia_TestApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @State private var hasRequestedATT = false
     
-
-    
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .onAppear {
-                    // To Request ATT permission after a short delay
                     if !hasRequestedATT {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        // Wait for UI to be fully ready
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                             requestTrackingPermission()
                             hasRequestedATT = true
                         }
@@ -31,93 +28,127 @@ struct Trivia_TestApp: App {
         }
     }
     
-
-    
     private func requestTrackingPermission() {
         if #available(iOS 14.5, *) {
-            ATTrackingManager.requestTrackingAuthorization { status in
-                DispatchQueue.main.async {
-                    switch status {
-                    case .authorized:
-                        print("✅ Tracking authorized - User accepted")
-                        // User accepted tracking - initialize AdMob
-                        initializeAdMob()
+            let currentStatus = ATTrackingManager.trackingAuthorizationStatus
+            
+            if currentStatus == .notDetermined {
+                print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+                print("🔔 Requesting ATT permission...")
+                print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+                
+                ATTrackingManager.requestTrackingAuthorization { status in
+                    DispatchQueue.main.async {
+                        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+                        print("✅ ATT Response: \(status.rawValue) (\(status.statusDescription))")
                         
-                    case .denied:
-                        print("❌ Tracking denied - User declined")
-                        // User declined - still initialize AdMob but with limited ads
-                        initializeAdMob()
-                        
-                    case .notDetermined:
-                        print("⚠️ Tracking not determined")
-                        
-                    case .restricted:
-                        print("⚠️ Tracking restricted")
-                        initializeAdMob()
-                        
-                    @unknown default:
-                        print("⚠️ Unknown tracking status")
-                        initializeAdMob()
+                        // Wait for system to update IDFA
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                            self.checkIDFAStatus()
+                            self.initializeAdMob()
+                        }
+                        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
                     }
-                    
-                    // Print IDFA for debugging
-                    let idfa = ASIdentifierManager.shared().advertisingIdentifier
-                    print("📱 IDFA: \(idfa)")
                 }
+            } else {
+                print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+                print("📊 ATT already determined: \(currentStatus.statusDescription)")
+                print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+                checkIDFAStatus()
+                initializeAdMob()
             }
         } else {
-            // iOS 14.4 or earlier - no ATT required
+            print("📊 iOS 14.4 or earlier - No ATT required")
+            checkIDFAStatus()
             initializeAdMob()
         }
     }
     
+    private func checkIDFAStatus() {
+        let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
+        
+        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+        print("📱 IDFA CHECK:")
+        print("   IDFA: \(idfa)")
+        
+        if #available(iOS 14.5, *) {
+            let attStatus = ATTrackingManager.trackingAuthorizationStatus
+            print("   ATT Status: \(attStatus.rawValue) (\(attStatus.statusDescription))")
+        }
+        
+        if idfa == "00000000-0000-0000-0000-000000000000" {
+            print("❌ IDFA IS ZEROED")
+            if #available(iOS 14.5, *) {
+                let attStatus = ATTrackingManager.trackingAuthorizationStatus
+                switch attStatus {
+                case .denied:
+                    print("   → User denied tracking")
+                case .authorized:
+                    print("   → ATT authorized but IDFA still zeroed!")
+                    print("   → Check: GoogleAppMeasurementIdentitySupport linked?")
+                    print("   → Check: Settings → Privacy → Apple Advertising → Personalized Ads ON?")
+                case .restricted:
+                    print("   → Tracking restricted by device policy")
+                default:
+                    print("   → ATT not determined yet")
+                }
+            }
+        } else {
+            print("✅ IDFA AVAILABLE: \(idfa)")
+        }
+        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+    }
     
+    private func initializeAdMob() {
+        print("🎯 Initializing AdMob SDK...")
+        
+        MobileAds.shared.start { status in
+            print("✅ AdMob SDK Initialized")
+            
+            Task { @MainActor in
+                // CRITICAL: Only NOW initialize AdMobManager
+                // This ensures ATT permission was already handled
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    print("🎯 Initializing AdMobManager...")
+                    AdMobManager.shared.initializeAfterATT()
+                }
+            }
+        }
+    }
+}
+
 class AppDelegate: NSObject, UIApplicationDelegate {
     private var appOpenedTime: Date?
     
-    func application(_ application: UIApplication,
-                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        // Existing Firebase config
-        FirebaseApp.configure()
-        configureCrashlytics()
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
+    ) -> Bool {
         
-        // Track app opened
+        print("🚀 ========================================")
+        print("🚀 App Starting - iOS \(UIDevice.current.systemVersion)")
+        print("🚀 ========================================")
+        
+        // Configure Firebase
+        FirebaseApp.configure()
+        Analytics.setAnalyticsCollectionEnabled(true)
+        
+        print("✅ Firebase Configured")
+        print("⏳ Waiting for ATT permission...")
+        
+        configureCrashlytics()
         AnalyticsManager.shared.logAppOpened()
         appOpenedTime = Date()
         
-        print("📱 Bundle ID from Info.plist: \(Bundle.main.bundleIdentifier ?? "nil")")
-
-        if let path = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist"),
-           let dict = NSDictionary(contentsOfFile: path),
-           let bundleId = dict["BUNDLE_ID"] as? String {
-            print("📱 Bundle ID from GoogleService-Info.plist: \(bundleId)")
-            
-            if bundleId != Bundle.main.bundleIdentifier {
-                print("⚠️ WARNING: Bundle IDs don't match!")
-            } else {
-                print("✅ Bundle IDs match!")
-            }
-        }
-
         return true
     }
-    private func configureCrashlytics() {
-                // Enable Crashlytics collection
-                Crashlytics.crashlytics().setCrashlyticsCollectionEnabled(true)
-                
-                // Set user identifier which helps track crashes per user
-                let deviceId = UIDevice.current.identifierForVendor?.uuidString ?? "unknown"
-                Crashlytics.crashlytics().setUserID(deviceId)
-                
-                // Log that Crashlytics is configured
-                print("🔥 Firebase Crashlytics configured successfully")
-                
-                // Optional: Test crash (REMOVE THIS IN PRODUCTION!)
-                // Uncomment the line below to test if Crashlytics is working
-                // fatalError("Test Crashlytics - This is a test crash!")
-            }
     
-    // Track when app goes to background
+    private func configureCrashlytics() {
+        Crashlytics.crashlytics().setCrashlyticsCollectionEnabled(true)
+        let deviceId = UIDevice.current.identifierForVendor?.uuidString ?? "unknown"
+        Crashlytics.crashlytics().setUserID(deviceId)
+    }
+    
     func applicationDidEnterBackground(_ application: UIApplication) {
         if let startTime = appOpenedTime {
             let sessionDuration = Date().timeIntervalSince(startTime)
@@ -131,17 +162,15 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     }
 }
 
-
-   
-    
-    private func initializeAdMob() {
-        MobileAds.shared.start { status in
-            print("✅ AdMob initialized with status: \(status)")
+@available(iOS 14.5, *)
+extension ATTrackingManager.AuthorizationStatus {
+    var statusDescription: String {
+        switch self {
+        case .notDetermined: return "Not Determined"
+        case .restricted: return "Restricted"
+        case .denied: return "Denied"
+        case .authorized: return "Authorized ✅"
+        @unknown default: return "Unknown"
         }
     }
-    
 }
-
-
-
-
